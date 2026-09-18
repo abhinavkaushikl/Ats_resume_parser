@@ -1,0 +1,30 @@
+{
+  "job_id": "zalando_20260918-072309_3ad6",
+  "company": "zalando",
+  "role": "Senior Applied Scientist",
+  "industry": "Marketing Analytics / Advertising",
+  "files": {
+    "resume_tex": "Abhinav_Kaushik_zalando_Resume.tex",
+    "cover_letter_tex": "Abhinav_Kaushik_zalando_Cover_Letter.tex",
+    "resume_pdf": "Abhinav_Kaushik_zalando_Resume.pdf",
+    "cover_letter_pdf": "Abhinav_Kaushik_zalando_Cover_Letter.pdf"
+  },
+  "warnings": [
+    "Resume \u2014 'JPMorgan' is missing from the resume; it must be kept.",
+    "1 new experience bullet(s) added \u2014 review them: Automated performance testing with Selenium and Python, reducing testing effort by 90%.",
+    "JD requirements not covered by your resume (not claimed): AWS, Redshift, Tableau, Bayesian, Causal Inference, Media Mix Modeling, Incrementality, Geo-Lift"
+  ],
+  "keywords": [
+    "Media Mix Modeling",
+    "Incrementality Testing",
+    "Causal Inference",
+    "Bayesian",
+    "Python",
+    "SQL",
+    "Databricks",
+    "AWS",
+    "Redshift",
+    "Time-series forecasting"
+  ],
+  "resume_pages": 2
+}

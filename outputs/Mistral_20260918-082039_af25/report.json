@@ -1,0 +1,38 @@
+{
+  "job_id": "Mistral_20260918-082039_af25",
+  "company": "Mistral",
+  "role": "Senior AI Engineer",
+  "industry": "Healthcare/AI",
+  "files": {
+    "resume_tex": "Abhinav_Kaushik_Mistral_Resume.tex",
+    "cover_letter_tex": "Abhinav_Kaushik_Mistral_Cover_Letter.tex",
+    "resume_pdf": "Abhinav_Kaushik_Mistral_Resume.pdf",
+    "cover_letter_pdf": "Abhinav_Kaushik_Mistral_Cover_Letter.pdf"
+  },
+  "added": {
+    "skills": 3,
+    "experience bullets": 4,
+    "project bullets": 4,
+    "education notes": 1,
+    "additional info": 1
+  },
+  "keywords": [
+    "Applied AI Engineer",
+    "customer facing",
+    "pre-sales",
+    "production deployment",
+    "GenAI",
+    "LLM",
+    "fine-tuning",
+    "RAG",
+    "agentic AI",
+    "Python",
+    "API development",
+    "open-source contribution",
+    "PyTorch",
+    "communication"
+  ],
+  "not_covered": [],
+  "warnings": [],
+  "resume_pages": 2
+}

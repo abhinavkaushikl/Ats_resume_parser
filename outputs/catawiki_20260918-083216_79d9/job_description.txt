@@ -1,0 +1,32 @@
+With ten-thousands of active items on auction every day, hundred-thousands of bids, millions of users, and billions of events, the Catawiki platform generates vast amounts of data. We collect this data centrally, using it to generate business insights, as well as powering machine learning models that enhance our user experience, optimize our workflows, and keep our platform safe. We believe in creating flexible models that can be applied to a variety of use cases, and in experimentation and iteration to hit the ground running and continually improve the tools we build. The Data Team, which covers the full data spectrum of Machine Learning, Analysis and Data Engineering, has a clear a mission within Catawiki:
+
+Why: We believe that by using data in a smart way, we can build the best Catawiki possible. We want to have impact and see opportunities everywhere.
+
+How: We are builders, thinkers and talkers. We collaborate closely with every department to create value for our customers. We think big and hold ourselves to high standards, because our work really matters for the future of the company.
+
+What: As a result we create business value by delivering scalable, robust models and actionable insights and predictions. We help the company to find opportunities and understand success, and we empower everyone to use data to be successful.
+
+
+What You'll Do
+As a Machine Learning Data Scientist in the Data Team at Catawiki you will focus on delivering scalable and impactful data products. You’ll work closely with our product and development teams while implementing your work. This includes:
+
+Building production-ready models that apply machine learning and advanced data science techniques within our product offering by writing robust and scalable code.
+Finding data science opportunities by exploring our extensive mobile and web data, and applying machine learning and advanced statistics to tackle these real-world business problems.
+Being pragmatic when needed but also able to go deep into a problem, applying your expert knowledge of machine learning techniques
+Working with cross-disciplinary teams involving product owners, developers, UX designers, and business analysts in identifying improvements and new use cases for ML 
+Deploy scalable models using Kubernetes on cloud infrastructure, producing real-time, asynchronous, and batch predictions
+
+What You'll Bring
+Are an all-around data scientist with 3+ years of experience who is as comfortable diving into the internals of a model implementation as discussing new opportunities for ML with product stakeholders
+Understand and apply standard and widespread ML techniques in your area with little support. 
+Have a strong quantitative background (statistics, ML, sciences, etc.)
+Are fluent in Python and capable with SQL
+Have deployed ML models in production serving real time responses on a large scale
+Are able to effectively communicate about your models to a non tech-savvy audience 
+Have demonstrable experience in building robust data products that created value for the company you worked for
+The following are a plus:
+
+Experience with one or more of the following: Google cloud platform, Kubernetes, Git, CI/CD, Recommender systems, PyTorch, Kafka, nginx
+Experience working on developing ML products for online marketplaces / ecommerce platforms
+An entrepreneurial mindset that enables you to get things done, even if that requires actions outside your own area or comfort zone.
+Proven ability to extract meaning from very big datasets with little engineering support.

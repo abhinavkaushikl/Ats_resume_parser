@@ -1,0 +1,89 @@
+((# ATS-friendly single-column resume. No tables, columns, icons or graphics. #))
+\documentclass[10pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+\fi
+\usepackage[margin=0.55in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={((( profile.name|tex ))) - Resume}, pdfauthor={((( profile.name|tex )))}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=2pt, parsep=0pt, label=\textbullet}
+
+\newcommand{\role}[4]{\textbf{#1} \textbar{} #2 \hfill #3 \textbar{} #4\par}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries ((( profile.name|upper|tex )))}\\[2pt]
+  {\large ((( r.headline|tex )))}\\[2pt]
+  ((( profile.contact )))  ((# pre-escaped in latex._profile #))
+
+\end{center}
+
+\section{Summary}
+((( r.summary|tex )))
+
+\section{Technical Skills}
+((* for g in r.skills *))
+\textbf{((( g.category|tex ))):} ((( g.items|join(', ')|tex )))\par
+((* endfor *))
+
+\section{Professional Experience}
+((* for e in r.experience *))
+\role{((( e.title|tex )))}{((( e.company|tex )))}{((( e.location|tex )))}{((( e.start|tex ))) - ((( e.end|tex )))}
+\begin{itemize}
+((* for b in e.bullets *))
+  \item ((( b|tex )))
+((* endfor *))
+\end{itemize}
+((* if not loop.last *))\vspace{3pt}((* endif *))
+
+((* endfor *))
+
+\section{Projects}
+((* for item in projects *))
+\textbf{((( item.p.name|tex )))}((* if item.p.meta *)) \textbar{} ((( item.p.meta|tex )))((* endif *))((* if item.url *)) \textbar{} \href{((( item.url|url )))}{((( item.url|tex )))}((* endif *))\par
+\begin{itemize}
+((* for b in item.p.bullets *))
+  \item ((( b|tex )))
+((* endfor *))
+((* if item.p.technologies *))
+  \item \textbf{Technologies:} ((( item.p.technologies|join(', ')|tex )))
+((* endif *))
+\end{itemize}
+((* endfor *))
+
+\section{Education}
+((* for ed in r.education *))
+\textbf{((( ed.degree|tex )))} \textbar{} ((( ed.institution|tex ))) \hfill ((( ed.start|tex ))) - ((( ed.end|tex )))\par
+((* endfor *))
+((* for n in r.education_notes *))
+((( n|tex )))\par
+((* endfor *))
+
+((* if r.additional_info *))
+\section{Additional Information}
+\begin{itemize}
+((* for a in r.additional_info *))
+  \item ((( a|tex )))
+((* endfor *))
+\end{itemize}
+((* endif *))
+
+\end{document}

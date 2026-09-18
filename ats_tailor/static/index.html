@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ATS Resume Tailor</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
+<style>
+  :root {
+    --bg: #f6f7f9; --panel: #ffffff; --text: #16181d; --muted: #5f6673;
+    --line: #e2e5ea; --accent: #2f5bea; --accent-ink: #ffffff; --accent-soft: #eaf0ff;
+    --warn-bg: #fff7e6; --warn-line: #f0c36d; --err-bg: #fdecec; --err-line: #e79a9a; --ok: #1f8a4c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115; --panel: #171a21; --text: #e8eaef; --muted: #9aa2b1;
+      --line: #2a2f3a; --accent: #6d8dff; --accent-ink: #0f1115; --accent-soft: #1d2540;
+      --warn-bg: #2a2314; --warn-line: #7a5f22; --err-bg: #2c1717; --err-line: #7a3434; --ok: #4cc382;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+  main { max-width: 880px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+  .tabs { display: flex; gap: 6px; margin-bottom: 14px; }
+  .tab { border: 1px solid var(--line); background: transparent; color: var(--muted);
+         padding: 6px 12px; border-radius: 8px; cursor: pointer; font: inherit; }
+  .tab[aria-selected="true"] { background: var(--accent-soft); color: var(--text); border-color: var(--accent); }
+  .drop { border: 2px dashed var(--line); border-radius: 10px; padding: 36px 16px; text-align: center;
+          cursor: pointer; transition: border-color .15s, background .15s; }
+  .drop:hover, .drop.over { border-color: var(--accent); background: var(--accent-soft); }
+  .drop strong { display: block; font-size: 16px; margin-bottom: 4px; }
+  .drop small { color: var(--muted); }
+  .file-chip { margin-top: 10px; font-weight: 600; }
+  .company { width: 100%; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px;
+             background: transparent; color: var(--text); font: inherit; margin-bottom: 12px; }
+  textarea { width: 100%; min-height: 240px; resize: vertical; border: 1px solid var(--line); border-radius: 10px;
+             padding: 12px; background: transparent; color: var(--text); font: 14px/1.5 ui-monospace, Menlo, monospace; }
+  .actions { display: flex; align-items: center; gap: 14px; margin-top: 16px; flex-wrap: wrap; }
+  .btn { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 9px; padding: 11px 20px;
+         font: 600 15px/1 inherit; cursor: pointer; }
+  .btn:disabled { opacity: .5; cursor: not-allowed; }
+  .status { color: var(--muted); }
+  .spinner { display: inline-block; width: 14px; height: 14px; border: 2px solid var(--line);
+             border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite;
+             vertical-align: -2px; margin-right: 8px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .hidden { display: none !important; }
+  .alert { border-radius: 10px; padding: 12px 14px; margin-top: 16px; border: 1px solid; }
+  .alert.err { background: var(--err-bg); border-color: var(--err-line); }
+  .alert.warn { background: var(--warn-bg); border-color: var(--warn-line); }
+  .alert ul { margin: 6px 0 0; padding-left: 18px; }
+  #result { margin-top: 20px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); margin-bottom: 14px; }
+  .meta b { color: var(--text); }
+  .downloads { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; }
+  .dl { display: block; text-decoration: none; color: var(--text); border: 1px solid var(--line);
+        border-radius: 10px; padding: 12px 14px; }
+  .dl:hover { border-color: var(--accent); }
+  .dl span { display: block; color: var(--muted); font-size: 13px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  .chip.miss { background: var(--warn-bg); }
+  .label { font-size: 13px; font-weight: 600; color: var(--muted); margin: 18px 0 0; text-transform: uppercase; letter-spacing: .04em; }
+  .added { margin-top: 14px; color: var(--muted); }
+  .added b { color: var(--text); }
+  .chip { background: var(--accent-soft); border-radius: 999px; padding: 3px 10px; font-size: 13px; }
+  .preview-tabs { margin-top: 20px; }
+  iframe { width: 100%; height: 900px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
+  @media (max-width: 600px) { iframe { height: 560px; } main { padding-top: 24px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>ATS Resume Tailor</h1>
+  <p class="sub">Paste a job description and hit Generate. You get a tailored, ATS-friendly resume and cover letter (PDF + LaTeX), named after the company.</p>
+
+  <section class="panel">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-mode="text">Paste JD</button>
+      <button class="tab" role="tab" aria-selected="false" data-mode="file">Upload file</button>
+    </div>
+
+    <input id="company" class="company" type="text" maxlength="120" autocomplete="off"
+           placeholder="Company name (optional, used for file names; auto-detected if empty)">
+
+    <label id="drop" class="drop hidden" for="file">
+      <strong>Drop the JD here or click to browse</strong>
+      <small>.pdf, .docx, .txt or .md, up to 5 MB</small>
+      <div id="fileName" class="file-chip hidden"></div>
+      <input id="file" type="file" accept=".pdf,.docx,.txt,.md" hidden>
+    </label>
+
+    <textarea id="jdText" placeholder="Paste the full job description here…  (⌘/Ctrl + Enter to generate)" autofocus></textarea>
+
+    <div class="actions">
+      <button id="go" class="btn" disabled>Generate resume + cover letter</button>
+      <span id="status" class="status"></span>
+    </div>
+    <div id="error" class="alert err hidden"></div>
+  </section>
+
+  <section id="result" class="panel hidden">
+    <div class="meta" id="meta"></div>
+    <div class="downloads" id="downloads"></div>
+    <div id="added" class="added"></div>
+    <h3 class="label">JD keywords covered</h3>
+    <div class="chips" id="keywords"></div>
+    <div id="notCovered" class="hidden">
+      <h3 class="label">JD requirements not covered (not claimed)</h3>
+      <div class="chips" id="missing"></div>
+    </div>
+    <div id="warnings" class="alert warn hidden"></div>
+    <div class="preview-tabs">
+      <div class="tabs" role="tablist" id="previewTabs"></div>
+      <iframe id="preview" title="PDF preview"></iframe>
+    </div>
+  </section>
+</main>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let mode = "text", file = null, timer = null;
+
+function refresh() {
+  $("go").disabled = mode === "file" ? !file : $("jdText").value.trim().length < 50;
+}
+
+document.querySelectorAll('.tabs[role="tablist"] > .tab[data-mode]').forEach((tab) => {
+  tab.addEventListener("click", () => {
+    mode = tab.dataset.mode;
+    document.querySelectorAll(".tab[data-mode]").forEach((t) => t.setAttribute("aria-selected", t === tab));
+    $("drop").classList.toggle("hidden", mode !== "file");
+    $("jdText").classList.toggle("hidden", mode !== "text");
+    refresh();
+  });
+});
+
+function setFile(f) {
+  file = f || null;
+  $("fileName").textContent = file ? `📎 ${file.name}` : "";
+  $("fileName").classList.toggle("hidden", !file);
+  refresh();
+}
+$("file").addEventListener("change", (e) => setFile(e.target.files[0]));
+$("jdText").addEventListener("input", refresh);
+document.addEventListener("keydown", (e) => {
+  if ((e.metaKey || e.ctrlKey) && e.key === "Enter" && !$("go").disabled) $("go").click();
+});
+const drop = $("drop");
+["dragenter", "dragover"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.add("over"); }));
+["dragleave", "drop"].forEach((ev) => drop.addEventListener(ev, (e) => { e.preventDefault(); drop.classList.remove("over"); }));
+drop.addEventListener("drop", (e) => setFile(e.dataTransfer.files[0]));
+
+const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+function busy(on) {
+  $("go").disabled = on;
+  clearInterval(timer);
+  if (!on) { $("status").textContent = ""; return refresh(); }
+  const start = Date.now();
+  const tick = () => {
+    const s = Math.round((Date.now() - start) / 1000);
+    const step = s < 30 ? "Finding gaps between your resume and the JD" : s < 75 ? "Merging additions, writing summary and cover letter" : s < 120 ? "Fact-checking the cover letter" : "Compiling PDFs";
+    $("status").innerHTML = `<span class="spinner"></span>${step}… ${s}s`;
+  };
+  tick(); timer = setInterval(tick, 1000);
+}
+
+$("go").addEventListener("click", async () => {
+  if ($("go").disabled) return;
+  $("error").classList.add("hidden");
+  $("result").classList.add("hidden");
+  const form = new FormData();
+  if (mode === "file") form.append("jd_file", file); else form.append("jd_text", $("jdText").value);
+  form.append("company", $("company").value.trim());
+  busy(true);
+  try {
+    const res = await fetch("/api/generate", { method: "POST", body: form });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(data.detail || `Request failed (${res.status})`);
+    render(data);
+  } catch (err) {
+    $("error").textContent = err.message;
+    $("error").classList.remove("hidden");
+  } finally {
+    busy(false);
+  }
+});
+
+const LABELS = {
+  resume_pdf: ["Resume", "PDF"], cover_letter_pdf: ["Cover letter", "PDF"],
+  resume_tex: ["Resume", "LaTeX source"], cover_letter_tex: ["Cover letter", "LaTeX source"],
+};
+
+function render(d) {
+  $("meta").innerHTML =
+    `<span>Company: <b>${esc(d.company)}</b></span><span>Role: <b>${esc(d.role)}</b></span>` +
+    `<span>Industry: <b>${esc(d.industry)}</b></span>` +
+    (d.resume_pages ? `<span>Resume: <b>${d.resume_pages} page${d.resume_pages > 1 ? "s" : ""}</b></span>` : "");
+
+  $("downloads").innerHTML = Object.keys(LABELS).filter((k) => d.downloads[k]).map((k) =>
+    `<a class="dl" href="${d.downloads[k]}" download>⬇ ${LABELS[k][0]}<span>${LABELS[k][1]}</span></a>`).join("");
+
+  const w = d.warnings || [];
+  $("warnings").innerHTML = w.length ? `<b>Review before sending</b><ul>${w.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "";
+  $("warnings").classList.toggle("hidden", !w.length);
+
+  $("keywords").innerHTML = (d.keywords || []).map((k) => `<span class="chip">${esc(k)}</span>`).join("");
+  const miss = d.not_covered || [];
+  $("missing").innerHTML = miss.map((k) => `<span class="chip miss">${esc(k)}</span>`).join("");
+  $("notCovered").classList.toggle("hidden", !miss.length);
+  const added = Object.entries(d.added || {});
+  $("added").innerHTML = added.length
+    ? "Added to your base resume: " + added.map(([k, n]) => `<b>${n}</b> ${esc(k)}`).join(", ")
+    : "No additions were needed.";
+
+  const previews = ["resume_pdf", "cover_letter_pdf"].filter((k) => d.downloads[k]);
+  $("previewTabs").innerHTML = previews.map((k, i) =>
+    `<button class="tab" aria-selected="${i === 0}" data-src="${d.downloads[k]}?inline=true">${LABELS[k][0]}</button>`).join("");
+  $("previewTabs").querySelectorAll(".tab").forEach((t) => t.addEventListener("click", () => {
+    $("previewTabs").querySelectorAll(".tab").forEach((x) => x.setAttribute("aria-selected", x === t));
+    $("preview").src = t.dataset.src;
+  }));
+  $("preview").classList.toggle("hidden", !previews.length);
+  if (previews.length) $("preview").src = `${d.downloads[previews[0]]}?inline=true`;
+
+  $("result").classList.remove("hidden");
+  $("result").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+\fi
+\usepackage[margin=0.55in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Resume}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{8pt}{4pt}
+\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=2pt, parsep=0pt, label=\textbullet}
+
+\newcommand{\role}[4]{\textbf{#1} \textbar{} #2 \hfill #3 \textbar{} #4\par}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries ABHINAV KAUSHIK}\\[2pt]
+  {\large Senior AI/ML Engineer}\\[2pt]
+  Bengaluru, India \textbar{} +91 87005 71859 \textbar{} \href{mailto:abhinav.kaushik@gmail.com}{abhinav.kaushik@gmail.com}
+\end{center}
+
+\section{Summary}
+Senior AI/ML Engineer with 8+ years delivering production AI solutions across healthcare, telecom, and AIOps. Holds a Master of Science in Machine Learning and AI from Liverpool John Moores University. Experienced in building large-scale forecasting and anomaly-detection systems using Python, SQL, Databricks, and advanced ML models such as LightGBM and Random Forest. Recent work includes a LangGraph analytics platform that cut manual effort by 98\% and a production SLA breach predictor that reduced downtime by 67\%, demonstrating the ability to create data-driven insights that guide business decisions.
+
+\section{Technical Skills}
+\textbf{AI / GenAI:} GenAI, LLM, RAG, Agentic AI, LangChain, LangGraph, Claude, OpenAI, Embeddings, Tool Orchestration, Cross-Encoder, Transformers, NLP, Generative AI\par
+\textbf{Machine Learning:} XGBoost, LightGBM, Random Forest, LSTM, SBERT, DBSCAN, Time Series Forecasting, Demand Forecasting, Anomaly Detection, Statistical Modeling, Regression, Deep Learning\par
+\textbf{Programming / Data:} Python, SQL, PySpark, Pandas, NumPy, Flask, Hive, SparkQL, REST API, Pydantic, Unix\par
+\textbf{MLOps / Cloud:} MLflow, Docker, Kubernetes, Jenkins, Bamboo, Bitbucket, DVC, Terraform, Airflow, GCP, Azure, NCI Servers\par
+\textbf{Search / Observability:} Elasticsearch, Kibana, Logging, Log Analysis, Apache Solr, Lucene Indexing, Search and Information Retrieval\par
+\textbf{Data Platforms:} Databricks, Apache Spark, Airflow\par
+\textbf{Databases:} TimescaleDB, MySQL, Vector DB, pgvector, ArangoDB, Cosmos DB\par
+\textbf{BI / Testing:} Power BI, QlikSense, SAP HANA, Selenium\par
+
+\section{Professional Experience}
+\role{Senior AI Engineer}{Optum.AI}{Bengaluru, India}{Nov 2025 - Present}
+\begin{itemize}
+  \item Engineered a LangGraph-based analytics system for AARP medical plans, combining stateful multi-agent reasoning with real-time chart generation and reducing manual analysis effort by 98\%.
+  \item Enhanced dense retrieval performance by training a cross-encoder for AARP survey data, achieving a 20\% increase in retrieval accuracy.
+  \item Built and integrated a lab extraction agent with a LIMS using Claude Opus 4.7 and Amazon Textract, automating work associated with 800 Jira tickets and PRD tasks.
+\end{itemize}
+\vspace{3pt}
+\role{Senior Machine Learning Engineer}{Viavi Solutions}{Chennai, India}{Sep 2024 - Nov 2025}
+\begin{itemize}
+  \item Deployed a production-grade SLA breach prediction system using Random Forest and LightGBM with FastAPI and MLflow, integrating GPT-4 reasoning for real-time root-cause analysis, resulting in a 67\% reduction in downtime.
+  \item Facilitated development of an AI-powered Project Discovery Assistant that analyzes client transcripts and documents with LangChain and LangGraph, achieving a 90\% match rate of technical use cases with existing solutions.
+  \item Built 30+ AI application prototypes and mockups for AIOps and GeoPerformance clients, translating requirements into functional POCs for validation and demonstration.
+\end{itemize}
+\vspace{3pt}
+\role{Data Scientist}{Viavi Solutions}{Bengaluru, India}{Nov 2021 - Sep 2024}
+\begin{itemize}
+  \item Applied Sentence-BERT and DBSCAN to enhance semantic alarm classification, achieving a 73.5\% improvement across graph-based AIOps infrastructure.
+  \item Used Isolation Forest and Holt-Winters for anomaly detection and demand forecasting across 500+ telecom network devices with 15+ KPIs, enabling proactive network planning.
+  \item Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11\% increase in POC and mentoring revenue.
+\end{itemize}
+\vspace{3pt}
+\role{Data Analyst}{United Health Group}{Gurugram, India}{Jun 2021 - Nov 2021}
+\begin{itemize}
+  \item Collaborated with stakeholders on ad-hoc analysis and customer-retention dashboards using Hive, SQL, and Power BI.
+  \item Developed a Python- and Flask-based parser to automate data extraction and transformation, supporting downstream analytics and reporting.
+\end{itemize}
+\vspace{3pt}
+\role{Data Engineer}{Nippon Data Systems}{Gurugram, India}{Nov 2019 - May 2021}
+\begin{itemize}
+  \item Engineered SQL and PySpark pipelines to automate BAU medical-audit reporting, reducing manual effort by 95\%.
+  \item Built real-time observability using Elasticsearch and Kibana, improving traceability efficiency by 80\% for the COVID QRT team.
+  \item Developed a Flask-based enterprise search engine with Apache Solr and Lucene indexing, enabling centralized search across organizational data.
+\end{itemize}
+\vspace{3pt}
+\role{Associate Consultant}{Saksoft}{Gurugram, India}{Dec 2017 - Nov 2019}
+\begin{itemize}
+  \item Conceptualized customer dashboards with QlikSense, SQL, and SAP HANA, increasing user engagement by 40\%.
+  \item Developed an XGBoost propensity model to predict personal loan initiation within 7 days, enabling targeted outreach.
+  \item Automated performance testing with Selenium and Python, reducing testing effort by 90\%.
+\end{itemize}
+
+
+\section{Projects}
+\textbf{Think Tree - ML Study Platform} \textbar{} Live Platform \textbar{} \href{https://think-tree-ai.vercel.app/}{https://think-tree-ai.vercel.app/}\par
+\begin{itemize}
+  \item Built a non-profit AI-powered ML study platform for people with ADHD, helping users organize learning and maintain study context.
+\end{itemize}
+
+\section{Education}
+\textbf{Master of Science, Machine Learning and AI} \textbar{} Liverpool John Moores University \hfill Jan 2020 - Jan 2022\par
+\textbf{Bachelor of Technology, Information Technology} \textbar{} Jamia Hamdard \hfill Aug 2013 - Aug 2017\par
+
+\section{Additional Information}
+\begin{itemize}
+  \item German: A1 (in progress)
+  \item Network Intern, Airport Authority of India
+  \item Hadoop Intern, Ducat Technologies
+\end{itemize}
+
+\end{document}

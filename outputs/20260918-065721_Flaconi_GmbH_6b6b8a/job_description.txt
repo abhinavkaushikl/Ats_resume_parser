@@ -1,0 +1,28 @@
+Senior Machine Learning Engineer – Personalization & Search (m/f/d)
+Flaconi GmbH, Berlin, Germany (Hybrid)
+
+About Flaconi
+Flaconi is one of Europe's leading online beauty retailers, offering more than 65,000 products from 1,300 brands in perfume, skincare, makeup and haircare. We serve millions of customers across Germany, Austria, Switzerland, Poland, France, Italy and Belgium and are part of ProSiebenSat.1's commerce portfolio.
+
+Your Role
+As a Senior Machine Learning Engineer in our Data & AI team you will build and scale the ML systems that power product discovery: search ranking, recommendations and personalization across our shop and app. You will own models end to end, from exploration to production, and work closely with product managers, data engineers and analysts.
+
+Your Responsibilities
+- Design, train and deploy recommendation and ranking models (candidate retrieval, re-ranking) for personalized product discovery.
+- Improve on-site search relevance using embeddings, semantic search and learning-to-rank.
+- Build LLM-powered features such as conversational shopping assistants and product content generation using RAG.
+- Develop demand forecasting models to support assortment and inventory planning.
+- Own ML pipelines and MLOps: experiment tracking, CI/CD, containerization, monitoring and A/B testing.
+- Mentor engineers and collaborate with stakeholders to translate business problems into ML solutions.
+
+Your Profile
+- 5+ years of experience building and deploying machine learning systems in production.
+- Strong Python and SQL; experience with PySpark or Databricks.
+- Hands-on experience with recommender systems, search/retrieval, embeddings and ranking.
+- Experience with LLMs, RAG and frameworks such as LangChain or LangGraph.
+- Solid MLOps experience: MLflow, Docker, Kubernetes, Airflow; cloud experience with GCP or AWS (SageMaker a plus).
+- Experience with A/B testing and experimentation.
+- Excellent English communication skills; German is a plus.
+
+What We Offer
+- Hybrid work from our Berlin office, 30 vacation days, learning budget, and beauty product discounts.

@@ -1,0 +1,47 @@
+{
+  "job_id": "KAKE_20260918-075012_f8ee",
+  "company": "KAKE",
+  "role": "Data Engineer",
+  "industry": "Telecommunications",
+  "files": {
+    "resume_tex": "Abhinav_Kaushik_KAKE_Resume.tex",
+    "cover_letter_tex": "Abhinav_Kaushik_KAKE_Cover_Letter.tex",
+    "resume_pdf": "Abhinav_Kaushik_KAKE_Resume.pdf",
+    "cover_letter_pdf": "Abhinav_Kaushik_KAKE_Cover_Letter.pdf"
+  },
+  "added": {
+    "skills": 12,
+    "experience bullets": 3,
+    "project bullets": 3,
+    "new project": 1,
+    "education notes": 1,
+    "additional info": 1
+  },
+  "keywords": [
+    "SQL",
+    "Python",
+    "data pipelines",
+    "ETL",
+    "data warehouse",
+    "data modeling",
+    "data quality",
+    "Power BI",
+    "Tableau",
+    "Snowflake",
+    "BigQuery",
+    "dbt",
+    "Airflow",
+    "AWS",
+    "GCP",
+    "Azure",
+    "scikit-learn",
+    "TensorFlow",
+    "PyTorch",
+    "Claude",
+    "GitHub Copilot",
+    "Cursor"
+  ],
+  "not_covered": [],
+  "warnings": [],
+  "resume_pages": 2
+}

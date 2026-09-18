@@ -1,0 +1,39 @@
+{
+  "job_id": "20260918-065721_Flaconi_GmbH_6b6b8a",
+  "company": "Flaconi GmbH",
+  "role": "Senior Machine Learning Engineer \u2013 Personalization & Search",
+  "industry": "E-commerce / Online Beauty Retail",
+  "files": {
+    "resume_tex": "Abhinav_Kaushik_Flaconi_GmbH_Resume.tex",
+    "cover_letter_tex": "Abhinav_Kaushik_Flaconi_GmbH_Cover_Letter.tex",
+    "resume_pdf": "Abhinav_Kaushik_Flaconi_GmbH_Resume.pdf",
+    "cover_letter_pdf": "Abhinav_Kaushik_Flaconi_GmbH_Cover_Letter.pdf"
+  },
+  "warnings": [
+    "JD requirements not covered by your resume (not claimed): SageMaker, AWS, A/B testing"
+  ],
+  "keywords": [
+    "Python",
+    "SQL",
+    "PySpark",
+    "Databricks",
+    "recommendation",
+    "ranking",
+    "search",
+    "embeddings",
+    "semantic search",
+    "LLMs",
+    "RAG",
+    "LangChain",
+    "LangGraph",
+    "MLflow",
+    "Docker",
+    "Kubernetes",
+    "Airflow",
+    "GCP",
+    "MLOps",
+    "CI/CD",
+    "experiment tracking"
+  ],
+  "resume_pages": 2
+}
