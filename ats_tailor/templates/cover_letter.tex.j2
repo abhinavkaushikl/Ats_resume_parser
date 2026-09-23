@@ -9,6 +9,9 @@
   \pdfgentounicode=1
 \else
   \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
 \fi
 \usepackage[margin=0.9in]{geometry}
 \usepackage[hidelinks]{hyperref}
@@ -28,8 +31,12 @@
 
 ((( today|tex )))
 
+((* if letter.company *))
 Hiring Team\\
 ((( letter.company|tex )))
+((* else *))
+Hiring Team
+((* endif *))
 
 \textbf{Re: ((( letter.role|tex )))}
 

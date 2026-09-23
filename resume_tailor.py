@@ -23,6 +23,7 @@ def main() -> int:
     group.add_argument("--serve", action="store_true", help="Run the web UI")
     group.add_argument("--show-base", action="store_true", help="Print the parsed base resume and exit")
     parser.add_argument("--company", help="Company name for file names (default: detected from the JD)")
+    parser.add_argument("--city", help="Job city for the cover letter, e.g. Brussels or Remote (default: detected from the JD)")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8000)
     args = parser.parse_args()
@@ -36,11 +37,11 @@ def main() -> int:
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)-7s %(message)s")
     settings = get_settings()
     if args.show_base:
-        print(load_base(settings.base_resume_path).as_text())
+        print(load_base(settings.base_resume_path, settings.base_resume_fixes).as_text())
         return 0
     try:
         jd = extract_jd_text(args.jd.name, args.jd.read_bytes())
-        result = TailoringPipeline(settings).run(jd, company=args.company)
+        result = TailoringPipeline(settings).run(jd, company=args.company, city=args.city)
     except (DocumentError, FileNotFoundError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1

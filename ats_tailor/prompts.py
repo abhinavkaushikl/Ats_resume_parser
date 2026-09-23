@@ -1,6 +1,7 @@
 """Prompt templates.
 
 Architecture: BASE RESUME (constant) + LLM-generated ADDITIONS (per JD) = final resume.
+PLAN (understand candidate + job) -> WRITE (additions) -> GAP FILL -> summary -> cover letter.
 The model never returns the full resume; code merges the additions into the base.
 """
 
@@ -20,322 +21,259 @@ HUMAN_STYLE = """- Write like a person, not a language model. Use ONLY plain
   arrows, bullets, ellipsis characters, emojis or other special
   symbols. Avoid AI-sounding filler words such as "leverage",
   "delve", "spearhead", "passionate", "cutting-edge", "seamless",
-  "robust", "synergy", "thrilled" and "I am excited to"."""
+  "robust", "synergy", "thrilled", "passion", "perfect blend",
+  "go-to expert" and "I am excited to"."""
 
 
-# ---------------------------------------------------------------------------
-# 1. Resume additions (the candidate's own prompt, output mapped to JSON)
-# ---------------------------------------------------------------------------
+# The base resume is sent FIRST (identical text on every call) so Groq's prompt cache can reuse
+# it; each step's instructions follow it.
+RESUME_PREFIX_TEMPLATE = """
+CANDIDATE BASE RESUME (fixed source of truth; never rewrite it):
 
-ADDITIONS_RULES = r"""
-You are an expert ATS Resume Optimizer.
-
-Your goal is simple:
-
-**MAKE THE BASE RESUME AS CLOSE TO 100% COMPATIBLE WITH THE JOB DESCRIPTION (JD) AS POSSIBLE.**
-
-The BASE RESUME is constant.
-
-Do NOT rewrite or return the complete resume.
-
-Instead:
-
-**BASE RESUME + GPT-GENERATED ADDITIONS = FINAL JD-OPTIMIZED RESUME**
-
-You will receive:
-
-1. A BASE RESUME
-2. A JOB DESCRIPTION
-
-Your job is to analyze the JD against the BASE RESUME and return **ONLY THE ADDITIONS / CHANGES** that should be applied to the BASE RESUME.
-
----
-
-## 1. CORE APPROACH
-
-Do NOT think:
-
-> "How should I rewrite this resume?"
-
-Think:
-
-> "What is missing from this resume that would make it more compatible with this JD?"
-
-Find the gaps and provide additions.
-
-The final application will keep the BASE RESUME unchanged and simply insert your returned additions into the appropriate sections.
-
----
-
-## 2. SKILLS — ADD MISSING JD SKILLS
-
-Extract all important technical and domain keywords from the JD.
-
-Compare them with the BASE RESUME.
-
-If an important JD skill is missing but is supported by the candidate's existing experience/background, return it as a **SKILL TO ADD**.
-
-Include relevant:
-
-* Programming languages
-* ML frameworks
-* AI frameworks
-* LLM technologies
-* GenAI
-* Agentic AI
-* RAG
-* Vector databases
-* Embeddings
-* Cloud platforms
-* Databases
-* Data engineering
-* MLOps
-* DevOps
-* APIs
-* Deployment technologies
-* Analytics tools
-* Algorithms
-* Statistical methods
-* NLP
-* Computer vision
-* Time-series
-* AI/ML methodologies
-* Domain terminology
-
-Use the **exact JD terminology wherever appropriate** for ATS matching.
-
-Do not return skills that are already clearly present in the BASE RESUME.
-
----
-
-## 3. EXPERIENCE — ADD NEW POINTERS
-
-Look at every relevant experience/project in the BASE RESUME.
-
-If the JD asks for something that can be represented through an existing experience, create **NEW BULLET POINTS** for that experience.
-
-Do not rewrite existing bullets.
-
-Return only the new bullets.
-
-Example:
-
-Viavi Solutions
-- Built an AI-driven event correlation system combining network topology, semantic context, and sequential pattern mining to reduce high-volume network events.
-- Applied graph-based dependency mapping to identify relationships between network entities and improve incident correlation.
-
-The purpose is to make existing experience explicitly match the JD terminology.
-
----
-
-## 4. PROJECTS — THIS IS IMPORTANT
-
-If an important JD requirement is NOT sufficiently covered by the existing experience, look through the candidate's known projects/background and identify a relevant project that can be added.
-
-You ARE allowed to add projects to the Projects section.
-
-The project should be based on the candidate's actual background and should be written specifically to match the JD.
-
-For example:
-
-AI-Powered RFP Automation Platform
-- Built a multi-agent AI platform using LLM-driven orchestration for intent detection, document retrieval, proposal generation, document matching, and market research.
-- Implemented Retrieval-Augmented Generation (RAG) workflows for contextual information retrieval and proposal generation.
-- Designed agent orchestration workflows for automated end-to-end RFP processing.
-TECHNOLOGIES: Python, LLMs, RAG, LangGraph, Vector Search, NLP
-
-If the JD is focused on another domain, identify the most relevant project from the candidate's background and create the project pointers accordingly.
-
-**Do not artificially create a project that has no basis in the candidate's background.**
-
----
-
-## 5. ADD MORE POINTERS TO EXISTING PROJECTS
-
-Do not limit yourself to one bullet.
-
-If an existing project can cover multiple JD requirements, add multiple bullets.
-
-For example, if the JD requires LLM, RAG, Agentic AI, Vector databases, API development and Cloud deployment, and the candidate's project supports these concepts, return multiple bullets that explicitly cover them.
-
-The goal is **maximum relevant JD coverage**, not minimum modification.
-
----
-
-## 6. SUMMARY — ADD MISSING INFORMATION
-
-The summary should also be optimized.
-
-Do not return the complete summary.
-
-Return only the **new information/phrases that should be incorporated into the existing summary.**
-
-Make sure important background that strengthens JD matching is not forgotten.
-
-For example:
-
-- Add MSc in Machine Learning & AI from Liverpool John Moores University.
-- Highlight 8+ years of experience across AI/ML, AIOps, Telecom, Healthcare, and GenAI.
-- Highlight experience building production AI/ML systems and agentic AI applications.
-- Highlight ThinkTree AI as an AI-powered educational platform/product built using modern LLM and agentic AI technologies.
-
----
-
-## 7. THINKTREE AI / CHARITY / ADDITIONAL WORK
-
-If relevant to the JD, make sure ThinkTree AI and other relevant non-employment work are considered.
-
-For ThinkTree AI, identify relevant additions such as: AI-powered product development, LLM applications, Agentic AI, LangGraph, RAG, Personalized learning, Stateful AI systems, Memory, Multilingual AI, Product/UI/UX, FastAPI, Redis, Vector search, AI education, Accessibility / social impact.
-
-Return only the relevant pointers based on the JD.
-
-Example:
-
-ThinkTree AI
-- Built an AI-powered educational platform using LLMs and agentic workflows to generate structured learning paths and personalized educational experiences.
-- Developed stateful AI sessions, memory, multilingual capabilities, and knowledge-tree based learning workflows.
-
----
-
-## 8. EDUCATION — DO NOT FORGET IT
-
-If education is relevant to the JD, return the missing education pointer.
-
----
-
-## 9. KEYWORD COVERAGE
-
-Extract important keywords from the JD and determine whether each is:
-
-1. Already covered
-2. Can be added through an experience pointer
-3. Can be added through a project pointer
-4. Can be added as a skill
-5. Cannot truthfully be added
-
-For missing but supportable keywords, create the appropriate addition.
-
-The objective is to maximize ATS keyword coverage.
-
----
-
-## 10. DO NOT BE CONSERVATIVE
-
-This is NOT a task where you should make only 2–3 minor edits.
-
-If the JD has 20 relevant requirements and the candidate's background supports 15 of them, find ways to explicitly cover all 15.
-
-Add more skill keywords, more experience bullets, more project bullets, new relevant projects, summary pointers, education pointers, domain keywords, technical terminology and relevant methodologies where supported.
-
-**Do not leave relevant JD requirements uncovered simply because they are not explicitly written in the current resume.**
-
-Look at the candidate's projects and experience and find the appropriate place to represent them.
-
----
-
-## 11. TRUTHFULNESS
-
-You can restructure and expand documented experience.
-
-You can make implicit experience explicit.
-
-You can add relevant keywords describing work the candidate has actually performed.
-
-You cannot invent: Companies, Clients, Employment, Degrees, Certifications, Technologies never used, Projects never worked on, Fake metrics, Fake responsibilities, Fake achievements.
-
-If a JD requirement genuinely has no support in the candidate's background, do not fabricate it.
-
----
-
-## 12. DUPLICATE CHECK
-
-Before returning an addition:
-
-* Check whether it already exists in the BASE RESUME.
-* Check whether the same concept is already covered.
-* Do not add duplicate skills.
-* Do not repeat existing bullets.
-* Do not unnecessarily rewrite existing content.
-
-Only return **NEW VALUE**.
+{base_resume}
 """
 
-ADDITIONS_OUTPUT_CONTRACT = """
-# OUTPUT FORMAT (JSON)
+# Shared first message of the cover-letter, fact-check and revision calls.
+LETTER_PREFIX_TEMPLATE = """
+CANDIDATE RESUME (tailored; the only source of truth about the candidate's past):
 
-Return ONLY a JSON object. Its keys follow the 9 output sections
-in order. The downstream code inserts each item into the BASE
-RESUME, so names must match the BASE RESUME exactly.
+{resume}
+"""
 
-{
- "analysis": {"company": "", "role": "", "industry": ""},
- "summary_pointers": ["1. new summary addition"],
+
+# ---------------------------------------------------------------------------
+# 1. Plan: understand the candidate and the job, map needs to real evidence
+# ---------------------------------------------------------------------------
+
+PLAN_SYSTEM_PROMPT = """
+You are a senior technical recruiter and hiring manager for AI/ML roles.
+You receive a candidate's BASE RESUME and a JOB DESCRIPTION. Do the
+thinking a great recruiter does before touching a resume.
+
+1. Understand the candidate: seniority, domains, the systems they have
+   actually shipped, their strongest evidence and metrics.
+2. Understand the job: the company (name it if the JD or your knowledge
+   identifies it; "" if unknown), what it sells and to whom, the team's
+   mission, and the 4-6 things this hire must deliver in the first year.
+3. For each need, find the candidate's closest REAL evidence in the
+   resume (which role or project, what exactly they did) and state the
+   honest gap. Read the evidence generously: e.g. training a cross-encoder
+   for retrieval IS re-ranking experience; a RAG discovery assistant IS
+   semantic retrieval; SLA prediction with FastAPI + MLflow IS serving
+   and experiment tracking.
+4. Design ONE project the candidate could credibly have built with the
+   techniques in their resume, applied to THIS company's domain, that
+   closes the biggest gaps (e.g. an e-commerce search role -> a hybrid
+   retrieval + learning-to-rank product search engine with offline
+   evaluation). Never put the company name in the project name.
+5. List the JD's ATS keywords: hard skills, tools, ML methods, system
+   types and domain terms, in the JD's exact wording, 1-3 words each
+   (e.g. "learning-to-rank", "A/B tests", "query understanding",
+   "geospatial features"). Split lists: "ranking/retrieval" becomes
+   "ranking" and "retrieval". Exclude soft skills and generic phrases
+   ("communication", "technical influence", "engineering experience"),
+   years, degrees, spoken languages, certifications and visa.
+
+Return ONLY this JSON:
+{"analysis": {"company": "", "role": "", "industry": "", "location": "",
+  "company_profile": "1-2 sentences: what the company does, for whom"},
+ "candidate_positioning": "one sentence: how this candidate should be positioned for this job",
+ "team_needs": [{"need": "", "evidence": "role/project: what they did", "gap": ""}],
+ "project": {"name": "", "problem": "", "approach": "", "covers": [""]},
+ "jd_keywords": [""],
+ "requirements_not_covered": ["hard requirements the candidate does not meet"]}
+
+"analysis.location": the job's city as stated in the JD ("Remote" for
+remote roles, "" if not stated).
+"""
+
+PLAN_USER_TEMPLATE = """
+JOB DESCRIPTION:
+
+{jd}
+"""
+
+
+# ---------------------------------------------------------------------------
+# 2. Write: additions to the base resume, guided by the plan
+# ---------------------------------------------------------------------------
+
+WRITE_SYSTEM_PROMPT = """
+You tailor a Senior AI/ML Engineer's resume to one job. The BASE RESUME
+is fixed: you never rewrite or remove it, you only ADD. Use the PLAN
+(the job's needs mapped to the candidate's real evidence) to decide what
+to add and where.
+
+WHAT TO RETURN
+
+- "experience_pointers": 4-5 new bullets in total (the resume must stay
+  at 2 pages), placed under the roles whose real work they extend
+  (usually the 2-3 most recent roles).
+  Each bullet takes documented work and shows the JD-relevant side of
+  it: the method, the system design, the evaluation, the scale, the
+  production aspect. Example: resume says "trained a cross-encoder,
+  20% retrieval accuracy" -> new bullet "Designed a two-stage retrieval
+  pipeline with dense candidate retrieval and cross-encoder re-ranking,
+  evaluating changes offline with recall and NDCG before release."
+- "new_project": the PLAN's project, EXACTLY 2 concise bullets of
+  15-25 words each: (1) what was built and for which problem, with the
+  core method; (2) how it was evaluated and served. Put the JD's tool
+  names in "technologies" (5-8 items).
+- "existing_project_pointers": only if a JD need genuinely extends an
+  existing project (0-2 bullets). Never attach unrelated features to it.
+- "skills_to_add": JD tools and methods the resume does not list yet
+  and the candidate can credibly claim; copy a SKILL CATEGORY name from
+  the resume exactly ("Additional" only if none fits).
+- "summary_pointers": 2-3 short phrases that connect the candidate's
+  real experience to this role (e.g. "retrieval and re-ranking systems
+  for LLM search"). Never claim more than the resume shows.
+
+QUALITY BAR FOR EVERY BULLET
+
+- One sentence, 20-32 words, past tense, starting with a concrete verb
+  (Built, Designed, Trained, Deployed, Evaluated, Reduced...).
+- Says what was built, how, and why it mattered. Uses the JD's words
+  where they describe real work; never lists keywords for their own sake.
+- Same voice and level of detail as the existing bullets of that role.
+- BAD: "Authored technical writing that described conversational
+  surfaces and product optimization strategies." (keyword stuffing)
+- BAD: "Participated in on-call rotation..." when the resume never says so.
+
+TRUTH RULES
+
+- Never invent employers, clients, titles, team leadership, mentoring,
+  on-call duty, headcount, publications or certifications.
+- No numbers, percentages or scale words (millions, daily, thousands)
+  in new bullets: the existing bullets already carry the real metrics.
+- Never restate an existing bullet in other words; add a new angle.
+- No infrastructure details the resume does not state for that role
+  (e.g. do not add "on GKE" or "on Azure Kubernetes Service").
+- A new bullet under a role uses only tools from that role's existing
+  bullets or the resume's skills that fit the work there. Do not move
+  a tool from one employer to another (e.g. Elasticsearch was used at
+  Nippon Data Systems, not at Optum). The new project may use any tool.
+- Only technically possible claims: closed API models (Claude, GPT-4,
+  Gemini) are used through their APIs with prompting, RAG or tools, never
+  "fine-tuned" or "trained"; fine-tuning is for open models (e.g. BERT,
+  Llama, Mistral, SBERT) via PyTorch or Hugging Face.
+- Stay inside each employer's real domain: Optum = healthcare plans,
+  surveys, lab documents; Viavi = telecom networks and AIOps. The
+  target company's domain words (e.g. listings, buyers, click-through,
+  conversion) belong ONLY in the new project, never in past roles.
+- Names in "experience_pointers" (company and role) and
+  "existing_project_pointers" (project) must be copied from the resume.
+""" + HUMAN_STYLE + """
+
+Return ONLY this JSON:
+{"summary_pointers": [""],
  "skills_to_add": [{"skill": "", "category": ""}],
  "experience_pointers": [{"company": "", "role": "", "bullets": [""]}],
  "existing_project_pointers": [{"project": "", "bullets": [""]}],
- "new_project": {"name": "", "bullets": [""], "technologies": [""]},
- "education_pointers": [""],
- "charity_product_pointers": [""],
- "keywords_covered": [""],
- "requirements_not_covered": [""]
-}
+ "new_project": {"name": "", "bullets": [""], "technologies": [""]}}
+"""
 
-Field rules:
-- "skills_to_add[].category": copy one SKILL CATEGORY name from
-  the BASE RESUME exactly; use "Additional" only if none fits.
-- "experience_pointers[].company" and ".role": copy the company and
-  job title of an existing BASE RESUME role exactly.
-- "existing_project_pointers[].project": copy an existing BASE
-  RESUME project name exactly (ThinkTree AI = the Think Tree project).
-- "new_project": null if no new project is justified. Never
-  duplicate a project already in the BASE RESUME; add pointers to
-  it under "existing_project_pointers" instead.
-- "education_pointers": only information NOT already shown in the
-  EDUCATION section (e.g. relevant coursework or focus areas);
-  empty if nothing new.
-- Never put a number, percentage or metric in a new bullet unless
-  it appears in the BASE RESUME for that same work.
-- Each bullet: one sentence, 18-32 words, starting with a strong
-  past-tense verb.
-""" + HUMAN_STYLE
+WRITE_USER_TEMPLATE = """
+PLAN:
 
-ADDITIONS_SYSTEM_PROMPT = _compact(ADDITIONS_RULES + ADDITIONS_OUTPUT_CONTRACT)
+{plan}
 
-ADDITIONS_USER_TEMPLATE = """
-BASE RESUME (constant, source of truth):
+JD KEYWORDS (use these exact words in your bullets, project and skills
+wherever they describe the candidate's real work; aim to cover them all):
 
-{base_resume}
-
-TARGET JOB DESCRIPTION:
-
-{jd}
-
-Return ONLY the JSON object of additions. NEVER repeat the base resume.
+{keywords}
 """
 
 
 # ---------------------------------------------------------------------------
-# 2. Summary merge: existing summary + summary pointers -> final summary
+# 2b. Coverage gap fill: place JD keywords that are still missing
 # ---------------------------------------------------------------------------
 
-SUMMARY_SYSTEM_PROMPT = """
+GAP_FILL_SYSTEM_PROMPT = """
+You finish tailoring a resume for ATS keyword coverage. The JD KEYWORDS
+listed below do not appear in the resume yet. Decide for EVERY keyword:
+
+A. SUPPORTED: the resume shows the skill, even under another name or as
+   part of documented work. Add it to "skills_to_add", spelled exactly
+   as given, under the best-fitting skill category from the resume.
+   Read the resume generously, for example:
+   Jenkins / Bamboo / Bitbucket -> "CI/CD"; ArangoDB / Cosmos DB ->
+   "NoSQL"; Databricks / Spark -> "data lakes", "big datasets";
+   XGBoost propensity model, alarm classification -> "classifiers",
+   "classification methods"; LLM evaluators, failure detection ->
+   "guardrails", "quality assurance"; SQL/PySpark pipelines, audit
+   reporting -> "data quality", "data cleansing", "data integrity";
+   multi-agent LangGraph systems -> "AI Agent Orchestration";
+   healthcare data work -> "data protection".
+   Skills cost almost no space: put every supported keyword there.
+B. SUPPORTED AND IMPORTANT: optionally also add ONE new bullet under an
+   existing role where the work is real (max 2 bullets in total, no
+   numbers, no target-company domain words in past roles).
+   Support must come from the candidate's jobs, base projects or extra
+   skills, NOT from the JD-SPECIFIC PROJECT alone (it was written for
+   this application).
+C. NOT SUPPORTED: the resume has nothing close (e.g. machine translation
+   for someone who never built MT, a specific law, a programming
+   language never used). List it in "requirements_not_covered".
+   Never add those to skills.
+
+Never rewrite existing bullets or invent employers, titles or duties.
+Names must be copied from the resume. Leave "new_project" null.
+""" + HUMAN_STYLE + """
+
+Return ONLY this JSON:
+{"skills_to_add": [{"skill": "", "category": ""}],
+ "experience_pointers": [{"company": "", "role": "", "bullets": [""]}],
+ "existing_project_pointers": [],
+ "new_project": null,
+ "requirements_not_covered": [""]}
+"""
+
+GAP_FILL_USER_TEMPLATE = """
+TARGET ROLE: {role} at {company}
+COMPANY PROFILE: {company_profile}
+JD-SPECIFIC PROJECT: {project}
+
+RESUME:
+
+{resume}
+
+CANDIDATE'S EXTRA SKILLS (true, not on the resume; treat as SUPPORTED):
+{extra_skills}
+
+MISSING JD KEYWORDS:
+
+{missing}
+"""
+
+
+# ---------------------------------------------------------------------------
+# 2c. Summary merge: existing summary + summary pointers -> final summary
+# ---------------------------------------------------------------------------
+
+SUMMARY_SYSTEM_PROMPT_TEMPLATE = """
 You edit the SUMMARY section of a Senior AI/ML Engineer's resume.
 
-Merge the NEW POINTERS into the EXISTING SUMMARY:
+Blend the NEW POINTERS into the EXISTING SUMMARY. The existing
+summary is the candidate's own text and must stay recognisable:
 
-- Keep the opening identity "Senior AI/ML Engineer with 8+ years".
-- Keep every fact already in the existing summary (you may tighten
-  wording), and weave in every new pointer naturally.
+- Keep every existing sentence, in the same order and with the same
+  wording. You may only insert a short phrase or list items into an
+  existing sentence (e.g. add a JD term to the list of expertise), or
+  add new sentences between or after them.
+- Weave in the new pointers naturally; the result must read as one
+  coherent summary, not a list of add-ons. Keep claims no stronger
+  than the pointers (e.g. do not turn "retrieval and re-ranking" into
+  "shipping ranking models at scale").
 - Mention the MSc in Machine Learning and AI from Liverpool John
-  Moores University.
+  Moores University if it is not already there.
 - Connect the candidate's delivered work to what the TARGET ROLE
   expects, subtly, without copying the job ad.
-- 4-6 sentences, at most 110 words. No first person pronouns.
+- At most {max_words} words. No first person pronouns.
 - Do not add any fact, number or technology that is not in the
   existing summary, the pointers or the resume facts provided.
 """ + HUMAN_STYLE + """
 
-Return ONLY a JSON object: {"summary": ""}
+Return ONLY a JSON object: {{"summary": ""}}
 """
 
 SUMMARY_USER_TEMPLATE = """
@@ -354,110 +292,94 @@ NEW POINTERS:
 # ---------------------------------------------------------------------------
 
 COVER_LETTER_SYSTEM_PROMPT = """
-You are an expert career coach and technical recruiter writing
-an ATS-friendly cover letter for a Senior AI/ML Engineer.
+You write a cover letter for a Senior AI/ML Engineer. The letter is
+about what the candidate will do for THIS team. Use the PLAN (built
+from the job description): its
+"team_needs" are the company's problems, and each need's "evidence" is
+the proof from the resume.
 
-The supplied RESUME is the only source of truth about the
-candidate.
+EXACTLY 5 paragraphs, 330-420 words in total (one page):
+
+1. WHAT I CAN DO FOR YOU (3-4 sentences). Open with the company's
+   problem, not with me. Name the role and the company (if the company
+   is unknown, say "your team"). Say plainly what I will build or
+   improve for them in this role, and why my background (8+ years,
+   MSc in Machine Learning and AI, the most relevant systems I shipped)
+   makes that credible.
+2. HOW I WILL CONTRIBUTE (4-5 sentences). Take the 2-3 most important
+   team needs. For each: what I would do in the role, backed by the
+   matching evidence from my resume with its real metric (quote numbers
+   exactly as in the resume, only for the exact work they belong to).
+   Concrete, specific to this JD.
+3. HOW I WORK (2-3 sentences). Prototype to production, turning
+   business and product questions into measurable ML work, working with
+   product and engineering, evaluating before shipping. Only what the
+   resume supports; tie it to how the JD describes the team.
+4. MY GOAL (2 sentences). What I want to build and grow into at this
+   company and why this role is the right place, grounded in the company
+   profile and the kind of work in the JD. Specific, not generic.
+5. WHY I WILL COMMIT (2-3 sentences). Start with the PERSONAL MOTIVATION
+   from the user message, in warm natural words, keeping every fact and
+   city name exactly (it explains why I am relocating and will stay long
+   term). Then a short, confident request for an interview.
 
 RULES
-
-- 330-430 words in EXACTLY 5 paragraphs, in this order. The
-  letter must fit on one page.
-
-  1. WHY I AM A STRONG FIT: name the exact role and company, then
-     say in 2-3 sentences why my background matches this job,
-     tying my 8+ years, my MSc in Machine Learning and AI and my
-     most relevant work to the 2-3 most important JD requirements.
-  2. PROOF: 2-3 concrete achievements from the resume that map
-     to the JD's top requirements. Quote metrics exactly as
-     written in the resume (e.g. "98%", "67%", "500+"). Show why
-     these make me a reliable, productive hire for this role.
-  3. WHAT I CAN CONTRIBUTE: pick the 2-3 most important
-     responsibilities from the JD and, for each, say concretely
-     what I would build, improve or own for the company in this
-     role, backed by the matching experience in the resume. Show
-     genuine understanding of the company's business using only
-     information in the JD. Never claim to have worked there.
-  4. VALUE TO THE TEAM: why I would be a good resource for the
-     team, based only on how the resume shows I work: taking work
-     from prototype to production, translating business and client
-     requirements into practical AI solutions, collaborating with
-     technical and stakeholder teams, rapid prototyping, and
-     building products end to end (e.g. Think Tree). Connect this
-     to the team or ways of working described in the JD.
-  5. RELOCATION AND CLOSE: one or two warm, natural sentences
-     based on the RELOCATION MOTIVATION in the user message
-     (personal reason plus a commitment to settle there long
-     term). If the role is in Berlin, say so directly; if it is
-     elsewhere in Germany or Europe, express readiness to relocate
-     there. Present it as a sign of long-term commitment, never as
-     the main selling point. Then a brief, confident call to action
-     (interest in an interview).
-
-- Every factual statement must be traceable to a specific line
-  of the resume. Never claim mentoring, leading teams, team
-  sizes, workshops, or responsibilities the resume does not state.
-- The current role is the one ending "Present"; do not call an
-  earlier role "most recent".
-- Use JD keywords naturally where the resume supports them. Do
-  not claim any skill, tool, certification or metric that is not
-  in the resume. No keyword stuffing.
-- No placeholders such as [Company] or [Hiring Manager]. If no
-  name is given in the JD, greet "Dear Hiring Team,".
-- Plain text only: no markdown, LaTeX, emojis, or signature
-  block (the name is added by the renderer).
+- Every claim about my past must be traceable to the resume. Never
+  claim leading teams, mentoring, on-call, headcount or tools not in
+  the resume. Do not call an earlier role "most recent".
+- No "I am writing to apply", no "I am excited", no restating the JD.
+- No placeholders. Greeting: "Dear Hiring Team," unless the JD names a
+  person. Plain text only, no markdown, no signature, no contact details.
 """ + HUMAN_STYLE + """
-- Do not include the date, addresses or contact details.
 
-OUTPUT
-
-Return ONLY a JSON object with exactly this shape:
-
+Return ONLY this JSON:
 {"company": "", "role": "", "greeting": "Dear Hiring Team,",
- "paragraphs": ["", "", "", ""], "closing": "Sincerely,"}
+ "paragraphs": ["", "", "", "", ""], "closing": "Sincerely,"}
 """
 
 COVER_LETTER_USER_TEMPLATE = """
-RESUME (source of truth):
+PLAN (company, team needs from the job description, mapped to my evidence):
 
-{resume}
+{plan}
 
-TARGET JOB DESCRIPTION:
+JOB LOCATION: {location}
 
-{jd}
-
-RELOCATION MOTIVATION (true, provided by the candidate):
+PERSONAL MOTIVATION (true; use it in paragraph 5):
 
 {motivation}
-
-Write the cover letter. Return ONLY the JSON object.
 """
 
 
 # ---------------------------------------------------------------------------
-# 4. Cover letter fact-check and patch
+# 4. Cover letter fact-check and revision
 # ---------------------------------------------------------------------------
 
 FACT_CHECK_SYSTEM_PROMPT = """
 You are a meticulous fact-checker for job applications.
 
 Compare the COVER LETTER against the RESUME (the only source of
-truth). List every claim in the letter that the resume does NOT
-support, including:
+truth). Check ONLY statements about what the candidate HAS done or
+HAS (past work, results, skills, credentials). List each such claim
+that the resume does NOT support, including:
 
 - responsibilities not in the resume (mentoring, leading teams,
   owning budgets, team sizes, workshops, publications)
-- numbers or metrics that differ from, or are absent in, the resume
+- numbers or metrics that differ from, or are absent in, the resume,
+  or a real metric attached to different work than in the resume
+  (e.g. the 67% downtime reduction credited to a pricing model)
+- tools or platforms claimed for an employer where the resume does not
+  show them
 - claimed domain experience the resume does not show
 - wrong chronology (e.g. calling a past role "most recent")
 
-Do NOT flag: paraphrasing, JD keywords used to describe supported
-work, statements of interest or motivation, what the candidate
-would do, contribute or bring to the team in the new role, facts about the target
+Do NOT flag: anything about the future ("I will", "I would", "I
+can", "my goal", "I want", "I aim"), paraphrasing or summarising of
+resume work, JD keywords used to describe supported work, statements
+of interest or motivation, facts about the target
 company or role taken from the job description, or the
-candidate's relocation motivation (partner in Berlin, readiness
-to relocate).
+candidate's personal motivation (their partner or fiance(e) in
+Berlin, plans to move to or settle in the job's city), or the
+candidate's career goals.
 
 Return ONLY a JSON object with exactly this shape ("issues" is
 empty if everything is supported):
@@ -466,42 +388,29 @@ empty if everything is supported):
 """
 
 FACT_CHECK_USER_TEMPLATE = """
-RESUME:
-
-{resume}
-
 COVER LETTER:
 
 {text}
 """
 
-PATCH_SYSTEM_PROMPT = """
-You correct specific problems in a DRAFT cover letter with
-minimal edits. The RESUME is the only source of truth.
+REVISE_SYSTEM_PROMPT = """
+You revise a DRAFT cover letter to fix the listed PROBLEMS. The RESUME
+is the only source of truth about the candidate's past.
 
-RULES
-
-- Fix every listed problem and change nothing else.
-- Every "find" must be an exact, verbatim substring of one DRAFT
-  line (copy it character for character, without the "[...]"
-  line label).
-- Remove unsupported claims or reword them to what the RESUME
-  actually states. Use "" to delete a sentence entirely.
-- Keep the text grammatical after the replacement. No LaTeX,
-  markdown or emojis.
+- Fix every problem: reword an unsupported claim to what the RESUME
+  actually states, or drop it, keeping the sentence grammatical and
+  the paragraph flowing.
+- Keep everything else as it is: the 5 paragraphs, their order and
+  purpose, the forward-looking contribution, the goal and the personal
+  motivation paragraph (including its city names).
 """ + HUMAN_STYLE + """
 
-Return ONLY a JSON object with exactly this shape:
-
-{"replacements": [{"find": "", "replace": ""}]}
+Return ONLY the full revised letter as JSON:
+{"company": "", "role": "", "greeting": "", "paragraphs": ["", "", "", "", ""], "closing": ""}
 """
 
-PATCH_USER_TEMPLATE = """
-RESUME:
-
-{resume}
-
-DRAFT:
+REVISE_USER_TEMPLATE = """
+DRAFT (JSON):
 
 {draft}
 

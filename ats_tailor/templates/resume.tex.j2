@@ -1,4 +1,5 @@
-((# ATS-friendly single-column resume. No tables, columns, icons or graphics. #))
+((# ATS-friendly single-column resume. No tables, columns, icons or graphics.
+   Section order mirrors the base resume PDF. #))
 \documentclass[10pt,a4paper]{article}
 \usepackage{iftex}
 \ifPDFTeX
@@ -9,8 +10,11 @@
   \pdfgentounicode=1
 \else
   \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
 \fi
-\usepackage[margin=0.55in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage[margin=0.5in,top=0.4in,bottom=0.4in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
@@ -22,8 +26,8 @@
 \raggedright
 
 \titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\vspace{1pt}\hrule]
-\titlespacing*{\section}{0pt}{8pt}{4pt}
-\setlist[itemize]{leftmargin=1.2em, itemsep=1pt, topsep=2pt, parsep=0pt, label=\textbullet}
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\setlist[itemize]{leftmargin=1.2em, itemsep=0pt, topsep=1pt, parsep=0pt, label=\textbullet}
 
 \newcommand{\role}[4]{\textbf{#1} \textbar{} #2 \hfill #3 \textbar{} #4\par}
 
@@ -38,11 +42,6 @@
 
 \section{Summary}
 ((( r.summary|tex )))
-
-\section{Technical Skills}
-((* for g in r.skills *))
-\textbf{((( g.category|tex ))):} ((( g.items|join(', ')|tex )))\par
-((* endfor *))
 
 \section{Professional Experience}
 ((* for e in r.experience *))
@@ -76,6 +75,18 @@
 ((* for n in r.education_notes *))
 ((( n|tex )))\par
 ((* endfor *))
+
+\section{Technical Skills}
+((* for g in r.skills *))
+\textbf{((( g.category|tex ))):} ((( g.items|join(', ')|tex )))\par
+((* endfor *))
+
+((* if r.languages *))
+\section{Languages}
+((* for l in r.languages *))
+((( l|tex )))\par
+((* endfor *))
+((* endif *))
 
 ((* if r.additional_info *))
 \section{Additional Information}

@@ -37,7 +37,7 @@ app = FastAPI(title="ATS Resume Tailor", version=__version__)
 
 @app.get("/api/health")
 def health() -> dict:
-    load_base(settings.base_resume_path)  # fails fast if the base PDF cannot be parsed
+    load_base(settings.base_resume_path, settings.base_resume_fixes)  # fails fast if the base PDF cannot be parsed
     return {"status": "ok", "model": settings.groq_model, "version": __version__}
 
 
@@ -46,6 +46,7 @@ def generate(
     jd_file: UploadFile | None = File(default=None),
     jd_text: str = Form(default=""),
     company: str = Form(default="", max_length=120),
+    city: str = Form(default="", max_length=80),
 ) -> dict:
     # Sync endpoint: FastAPI runs it in a worker thread, so the event loop stays free.
     if jd_file and jd_file.filename:
@@ -64,7 +65,7 @@ def generate(
 
     with _generation_lock:
         try:
-            result = pipeline.run(text, company=company)
+            result = pipeline.run(text, company=company, city=city)
         except DocumentError as exc:
             raise HTTPException(400, str(exc)) from exc
         except AuthenticationError as exc:

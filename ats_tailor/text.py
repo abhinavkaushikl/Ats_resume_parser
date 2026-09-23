@@ -44,3 +44,28 @@ def unsupported_numbers(text: str, source: str) -> list[str]:
     """Numeric tokens (with their %/+ suffix) in `text` that never appear in `source`."""
     known = {n.replace(" ", "") for n in NUMBER_RE.findall(source)}
     return sorted({n.replace(" ", "") for n in NUMBER_RE.findall(text)} - known)
+
+
+def has_keyword(keyword: str, text: str) -> bool:
+    """True if `keyword` appears in `text`, ignoring case, spacing and punctuation.
+
+    Short keywords ("R", "Go", "AWS") must match as whole words to avoid false hits.
+    """
+    k = key(keyword)
+    if not k:
+        return True
+    if len(k) <= 3:
+        return re.search(rf"(?<![a-z0-9]){re.escape(norm(keyword))}(?![a-z0-9])", norm(text)) is not None
+    haystack = key(text)
+    # Singular/plural variants count ("Recommender systems" ~ "recommender system").
+    return k in haystack or (k.endswith("s") and k[:-1] in haystack)
+
+
+def missing_keywords(keywords: list[str], text: str) -> list[str]:
+    seen, missing = set(), []
+    for kw in keywords:
+        if (k := key(kw)) and k not in seen:
+            seen.add(k)
+            if not has_keyword(kw, text):
+                missing.append(kw.strip())
+    return missing

@@ -49,6 +49,7 @@ class Resume(BaseModel):
     projects: list[Project]
     education: list[Education]
     education_notes: list[str] = Field(default_factory=list)
+    languages: list[str] = Field(default_factory=list)
     additional_info: list[str] = Field(default_factory=list)
 
     def as_text(self) -> str:
@@ -68,8 +69,36 @@ class Resume(BaseModel):
         out.append("EDUCATION")
         out += [f"{d.degree} | {d.institution} | {d.start} - {d.end}" for d in self.education]
         out += self.education_notes
+        if self.languages:
+            out.append("LANGUAGES")
+            out += self.languages
         out.append("ADDITIONAL INFORMATION")
         out += [f"- {a}" for a in self.additional_info]
+        return "\n".join(out)
+
+
+    def evidence_text(self, recent_roles: int = 3) -> str:
+        """Shorter view for the cover-letter calls (~600 tokens less than `as_text`).
+
+        Keeps what a letter cites: the latest roles in full, projects, skills and degrees.
+        Older roles keep only their header line; the summary is cut to its first sentence.
+        """
+        out = [f"HEADLINE: {self.headline}", "SUMMARY", self.summary.split(". ")[0].rstrip(".") + "."]
+        out.append("SKILL CATEGORIES")
+        out += [f"{g.category}: {', '.join(g.items)}" for g in self.skills]
+        out.append("PROFESSIONAL EXPERIENCE")
+        for i, e in enumerate(self.experience):
+            out.append(f"{e.title} | {e.company} | {e.location} | {e.start} - {e.end}")
+            if i < recent_roles:
+                out += [f"- {b}" for b in e.bullets]
+        out.append("PROJECTS")
+        for p in self.projects:
+            out.append(f"{p.name} | {p.meta}".rstrip(" |"))
+            out += [f"- {b}" for b in p.bullets]
+            if p.technologies:
+                out.append(f"Technologies: {', '.join(p.technologies)}")
+        out.append("EDUCATION")
+        out += [f"{d.degree} | {d.institution} | {d.start} - {d.end}" for d in self.education]
         return "\n".join(out)
 
 
@@ -77,9 +106,41 @@ class Resume(BaseModel):
 
 
 class JobAnalysis(BaseModel):
-    company: str = "Company"
+    company: str = ""
     role: str = ""
     industry: str = ""
+    # City of the job as stated in the JD ("" if not stated, "Remote" for remote roles).
+    location: str = ""
+    # What the company does: products, customers, domain. Drives the JD-specific project.
+    company_profile: str = ""
+
+
+class TeamNeed(BaseModel):
+    need: str
+    evidence: str = ""  # the candidate's closest real work for this need
+    gap: str = ""
+
+
+class ProjectPlan(BaseModel):
+    name: str = ""
+    problem: str = ""
+    approach: str = ""
+    covers: list[str] = Field(default_factory=list)
+
+
+class JobPlan(BaseModel):
+    """Step 1: what the job needs and how the candidate's real work maps onto it."""
+
+    analysis: JobAnalysis = Field(default_factory=JobAnalysis)
+    candidate_positioning: str = ""
+    team_needs: list[TeamNeed] = Field(default_factory=list)
+    project: ProjectPlan = Field(default_factory=ProjectPlan)
+    jd_keywords: list[str] = Field(default_factory=list)
+    requirements_not_covered: list[str] = Field(default_factory=list)
+
+    def brief(self) -> str:
+        """Compact JSON for later prompts (no keyword list, to save tokens)."""
+        return self.model_dump_json(exclude={"jd_keywords"}, exclude_defaults=True)
 
 
 class SkillAddition(BaseModel):
@@ -106,6 +167,8 @@ class NewProject(BaseModel):
 
 class ResumeAdditions(BaseModel):
     analysis: JobAnalysis = Field(default_factory=JobAnalysis)
+    # Every skill, tool, method and domain term the JD asks for, in the JD's own wording.
+    jd_keywords: list[str] = Field(default_factory=list)
     summary_pointers: list[str] = Field(default_factory=list)
     skills_to_add: list[SkillAddition] = Field(default_factory=list)
     experience_pointers: list[ExperiencePointers] = Field(default_factory=list)
@@ -113,7 +176,6 @@ class ResumeAdditions(BaseModel):
     new_project: NewProject | None = None
     education_pointers: list[str] = Field(default_factory=list)
     charity_product_pointers: list[str] = Field(default_factory=list)
-    keywords_covered: list[str] = Field(default_factory=list)
     requirements_not_covered: list[str] = Field(default_factory=list)
 
 
@@ -139,12 +201,3 @@ class UnsupportedClaim(BaseModel):
 
 class FactCheck(BaseModel):
     issues: list[UnsupportedClaim] = Field(default_factory=list)
-
-
-class Replacement(BaseModel):
-    find: str
-    replace: str
-
-
-class Patch(BaseModel):
-    replacements: list[Replacement] = Field(default_factory=list)
