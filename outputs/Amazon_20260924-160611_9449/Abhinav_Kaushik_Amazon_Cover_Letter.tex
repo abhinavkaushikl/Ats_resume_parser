@@ -1,0 +1,52 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Amazon}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior AI Engineer\\
+Bengaluru, India \textbar{} +91 87005 71859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 24, 2026
+
+Hiring Team\\
+Amazon
+
+\textbf{Re: Applied Scientist}
+
+Dear Hiring Team,
+
+Audible needs a unified system that can ingest new audio titles, extract semantic metadata, and deliver personalized recommendations and on-demand summarizations for millions of listeners. In this Applied Scientist role I will build a LangGraph-orchestrated pipeline that generates transcripts, creates chapter summaries, embeds segments with a fine-tuned SBERT model, re-ranks results with a cross-encoder, and serves recommendations through a FastAPI service tracked in MLflow. My eight-year track record, a MSc in Machine Learning and AI, and multiple production GenAI systems give me the credibility to deliver at this scale.
+
+I will first invent the retrieval and reasoning models needed for poorly defined content-understanding problems, replicating the cross-encoder re-ranking pipeline I built at Optum that raised dense-retrieval accuracy by 20 \%. Next, I will productionize the end-to-end service, as I did at Viavi where I deployed an SLA-breach predictor with FastAPI, MLflow, and GPT-4 reasoning, cutting downtime by 67 \%. Finally, I will create reusable, architecture-aware components such as the automated evaluation and observability pipelines I delivered for QA agents at Optum, ensuring continuous monitoring of relevance drift via Elasticsearch and Kibana. Each of these actions directly addresses Audible's need for scientific models, production-grade services, and reusable components.
+
+My workflow moves from rapid prototype to production by translating business questions into measurable ML experiments, collaborating with product managers and engineers, and validating performance before release. I have repeatedly turned proof-of-concepts into shipped services, using Docker, Kubernetes, and CI/CD pipelines that the team expects.
+
+My goal is to own the core content-understanding and recommendation engine for Audible, expanding it into a platform that powers personalized experiences across the entire catalog. This role offers the ideal environment to apply my GenAI and MLOps expertise while growing deeper into large-scale media recommendation challenges.
+
+My fiancée already lives in Berlin, so this role lets me build my career in the city where we are making our home, and I am committed to settling in Berlin long term. I would welcome the opportunity to discuss how my experience can accelerate Audible's vision.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

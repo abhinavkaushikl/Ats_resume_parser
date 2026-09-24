@@ -1,0 +1,45 @@
+{
+  "job_id": "Amazon_20260924-160611_9449",
+  "company": "Amazon",
+  "role": "Applied Scientist",
+  "industry": "Audio streaming / entertainment",
+  "files": {
+    "resume_tex": "Abhinav_Kaushik_Amazon_Resume.tex",
+    "cover_letter_tex": "Abhinav_Kaushik_Amazon_Cover_Letter.tex",
+    "resume_pdf": "Abhinav_Kaushik_Amazon_Resume.pdf",
+    "cover_letter_pdf": "Abhinav_Kaushik_Amazon_Cover_Letter.pdf"
+  },
+  "added": {
+    "skills": 6,
+    "experience bullets": 3,
+    "new project": 1
+  },
+  "location": "Berlin",
+  "keywords": [
+    "ML",
+    "NLP",
+    "Deep Learning",
+    "GenAI",
+    "large-scale distributed computation",
+    "productionize",
+    "models",
+    "scalable",
+    "efficient",
+    "automated",
+    "content understanding",
+    "recommendations",
+    "GenAI-based product features",
+    "methodologies",
+    "experimental",
+    "innovation"
+  ],
+  "not_covered": [
+    "Peer-reviewed publications",
+    "Explicit large-scale distributed training experience (e.g., PyTorch Distributed, Horovod)",
+    "Direct experience with media/content recommendation systems at Amazon scale",
+    "Hands-on work with Amazon-specific services such as SageMaker, DynamoDB, or internal feature stores"
+  ],
+  "coverage": 100.0,
+  "warnings": [],
+  "resume_pages": 2
+}

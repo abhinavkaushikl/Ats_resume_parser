@@ -17,9 +17,11 @@ How it works
   4. SCREEN    Optional Claude pass drops irrelevant postings and tags level + focus.
   5. WRITE     jobs/latest.md (+ a timestamped copy), grouped by city, new jobs marked 🆕.
 
-Search API (pick one, set as environment variables)
+Search backend (first one configured wins)
   Serper.dev  (2,500 free searches):        SERPER_API_KEY
   Google Programmable Search (100/day free): GOOGLE_API_KEY + GOOGLE_CSE_ID
+  Bing (free, no key - default):             slow and paced (BING_DELAY seconds between searches);
+                                             no date filter, so dates come from the company feeds
 
 Usage
   python job_hunter.py                 # last 24h, all cities
@@ -32,6 +34,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import random
 import re
 import sys
 import time
@@ -58,6 +61,9 @@ CITIES: dict[str, tuple[str, list[str]]] = {
     "Copenhagen": ("(Copenhagen OR København)", ["copenhagen", "københavn", "kobenhavn", "herlev", "lyngby"]),
     "Warsaw":     ("(Warsaw OR Warszawa)", ["warsaw", "warszawa"]),
     "Austria":    ("(Vienna OR Wien OR Austria)", ["austria", "österreich", "vienna", "wien", "graz", "linz", "salzburg", "innsbruck"]),
+    "London":     ("London", ["london"]),
+    "Romania":    ("(Romania OR Bucharest OR București)", ["romania", "românia", "bucharest", "bucurești", "bucuresti", "cluj", "iași", "timișoara", "timisoara", "brașov", "brasov"]),
+    "Norway":     ("(Norway OR Oslo OR Norge)", ["norway", "norge", "oslo", "bergen", "trondheim", "stavanger"]),
 }
 
 # Career-portal sites searched on Google.
@@ -78,7 +84,7 @@ SEARCH_TITLES = [
     "data scientist", "data science", "machine learning", "ML engineer", "AI engineer",
     "artificial intelligence", "applied scientist", "research scientist", "MLOps",
     "GenAI", "generative AI", "LLM", "NLP", "computer vision", "deep learning",
-    "AI developer", "AI specialist", "forward deployed",
+    "AI developer", "AI specialist", "AI consultant", "forward deployed",
 ]
 
 # Final title filter: must match one of these ...
@@ -217,17 +223,42 @@ def search_google_cse(query: str, hours: int, key: str, cx: str) -> list[dict]:
     return results
 
 
+def search_bing(query: str, delay: float) -> list[dict]:
+    """Free Bing search (via the ddgs library). Paced, because Bing throttles fast repeated searches."""
+    from ddgs import DDGS
+    from ddgs.exceptions import DDGSException
+    time.sleep(delay + random.uniform(0, delay / 2))
+    for attempt in range(2):
+        try:
+            res = DDGS().text(query, max_results=50, backend="bing")
+            return [{"url": r.get("href", ""), "title": r.get("title", ""), "date": None} for r in res]
+        except DDGSException as ex:
+            if "no results" in str(ex).lower():
+                return []
+            if attempt == 0:
+                time.sleep(60)                     # throttled: back off once, then give up on this query
+            else:
+                raise
+    return []
+
+
+def on_portal(url: str) -> bool:
+    return any(site in url for site in PORTAL_SITES)
+
+
 def discover(cities, hours, senior_only, xing_all=False) -> list[tuple[str, dict]]:
     serper = os.environ.get("SERPER_API_KEY")
     gkey, gcx = os.environ.get("GOOGLE_API_KEY"), os.environ.get("GOOGLE_CSE_ID")
+    queries = build_queries(cities, senior_only, xing_all)
     if serper:
         run = lambda q: search_serper(q, hours, serper); backend = "Serper"
     elif gkey and gcx:
         run = lambda q: search_google_cse(q, hours, gkey, gcx); backend = "Google CSE"
     else:
-        sys.exit("No search API configured. Set SERPER_API_KEY, or GOOGLE_API_KEY + GOOGLE_CSE_ID. See README.")
-
-    queries = build_queries(cities, senior_only, xing_all)
+        delay = float(os.environ.get("BING_DELAY", 20))
+        run = lambda q: search_bing(q, delay); backend = f"Bing (free, ~{delay:.0f}s between searches)"
+        # Bing handles "a" OR "b" better than ("a" OR "b").
+        queries = [(c, re.sub(r"site:(\S+) \((.*?)\) ", r"site:\1 \2 ", q)) for c, q in queries]
     print(f"Discovering via {backend}: {len(queries)} searches")
     hits = []
     with ThreadPoolExecutor(max_workers=4 if serper else 1) as pool:
@@ -235,7 +266,7 @@ def discover(cities, hours, senior_only, xing_all=False) -> list[tuple[str, dict
         for f in as_completed(futs):
             city, q = futs[f]
             try:
-                res = f.result()
+                res = [r for r in f.result() if on_portal(r["url"])]   # Bing also returns non-portal pages
                 hits += [(city, r) for r in res]
                 if res:
                     print(f"  ✓ {len(res):>3}  {q[:95]}")
@@ -527,7 +558,7 @@ def claude_screen(jobs: list[Job], model: str) -> list[Job]:
         batch = jobs[i:i + 40]
         listing = "\n".join(f"{n}. {j.title} | {j.company} | {j.location}" for n, j in enumerate(batch))
         prompt = ("You screen job postings for someone seeking AI engineering, data science, machine "
-                  "learning engineering and forward-deployed engineering roles. For each numbered job "
+                  "learning engineering, forward-deployed engineering and AI consultant roles. For each numbered job "
                   "return {\"i\": number, \"relevant\": true/false (false for sales, recruiting, "
                   "non-technical, tutoring or data-annotation gigs), \"level\": \"Junior/Intern\"|\"Mid\"|"
                   "\"Senior+\", \"note\": max 8 words on the role focus}. Respond with ONLY a JSON array.\n\n"
@@ -622,33 +653,25 @@ def save_known(path: Path, companies: set[tuple[str, str]]):
                     + yaml.safe_dump(out, sort_keys=True))
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--hours", type=int, default=24)
-    ap.add_argument("--cities", nargs="*", default=list(CITIES), help="subset of: " + ", ".join(CITIES))
-    ap.add_argument("--senior-only", action="store_true")
-    ap.add_argument("--out-dir", default="jobs")
-    ap.add_argument("--extra-companies", default="companies.yaml",
-                    help="optional YAML of companies to always check (not required)")
-    ap.add_argument("--xing-all-cities", action="store_true",
-                    help="search XING for every city, not only Berlin/Munich/Austria")
-    ap.add_argument("--no-memory", action="store_true", help="don't re-check previously discovered companies")
-    ap.add_argument("--claude", action="store_true", help="screen with Claude (needs ANTHROPIC_API_KEY)")
-    ap.add_argument("--model", default=os.environ.get("CLAUDE_MODEL", "claude-sonnet-5"))
-    a = ap.parse_args()
-    if bad := [c for c in a.cities if c not in CITIES]:
-        sys.exit(f"Unknown city {bad}; choose from {list(CITIES)}")
+def run(hours: int = 24, cities: list[str] | None = None, senior_only: bool = False, out_dir: str = "jobs",
+        extra_companies: str = "companies.yaml", xing_all_cities: bool = False, no_memory: bool = False,
+        claude: bool = False, model: str = "claude-sonnet-5", write_files: bool = True) -> dict:
+    """Run the whole search and write the Markdown files (unless write_files=False).
+    Returns the paths and matching jobs."""
+    cities = list(CITIES) if cities is None else cities
+    if bad := [c for c in cities if c not in CITIES]:
+        raise ValueError(f"Unknown city {bad}; choose from {list(CITIES)}")
 
-    out_dir = Path(a.out_dir); out_dir.mkdir(exist_ok=True)
+    out_dir = Path(out_dir); out_dir.mkdir(exist_ok=True)
     memory = out_dir / "discovered_companies.yaml"
 
     # 1. discover
-    hits = discover(a.cities, a.hours, a.senior_only, a.xing_all_cities)
+    hits = discover(cities, hours, senior_only, xing_all_cities)
 
     # 2. verify: feeds for discovered + remembered + extra companies
     found = {x for _, r in hits if (x := identify(r["url"]))}
-    known = set() if a.no_memory else load_known(memory)
-    extra = load_known(Path(a.extra_companies))
+    known = set() if no_memory else load_known(memory)
+    extra = load_known(Path(extra_companies))
     feed_jobs, ok, errors = fetch_feeds(found | known | extra)
     print(f"  new companies this run: {len(found - known)}")
 
@@ -669,10 +692,10 @@ def main():
     enrich_from_pages(google_jobs)
 
     # 3/4. filter + screen
-    jobs = filter_jobs(feed_jobs + google_jobs, a.hours, a.cities, a.senior_only)
+    jobs = filter_jobs(feed_jobs + google_jobs, hours, cities, senior_only)
     print(f"{len(feed_jobs) + len(google_jobs)} postings -> {len(jobs)} matching")
-    if a.claude:
-        jobs = claude_screen(jobs, a.model)
+    if claude:
+        jobs = claude_screen(jobs, model)
 
     # remember companies & seen jobs
     save_known(memory, known | ok)
@@ -681,11 +704,38 @@ def main():
     new_keys = {j.key() for j in jobs} - seen
     seen_file.write_text(json.dumps(sorted(seen | new_keys)))
 
+    result = {"jobs": jobs, "new_keys": new_keys, "companies_checked": len(ok), "feed_errors": len(errors)}
+    if not write_files:
+        return result
+
     # 5. write
     path = out_dir / f"jobs_{datetime.now():%Y-%m-%d_%H%M}.md"
-    write_markdown(jobs, path, a.hours, a.cities, new_keys, {"companies": len(ok)})
-    (out_dir / "latest.md").write_text(path.read_text(encoding="utf-8"), encoding="utf-8")
-    print(f"Saved {path} and {out_dir / 'latest.md'}")
+    write_markdown(jobs, path, hours, cities, new_keys, {"companies": len(ok)})
+    latest = out_dir / "latest.md"
+    latest.write_text(path.read_text(encoding="utf-8"), encoding="utf-8")
+    print(f"Saved {path} and {latest}")
+    return {**result, "path": path, "latest": latest}
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--hours", type=int, default=24)
+    ap.add_argument("--cities", nargs="*", default=list(CITIES), help="subset of: " + ", ".join(CITIES))
+    ap.add_argument("--senior-only", action="store_true")
+    ap.add_argument("--out-dir", default="jobs")
+    ap.add_argument("--extra-companies", default="companies.yaml",
+                    help="optional YAML of companies to always check (not required)")
+    ap.add_argument("--xing-all-cities", action="store_true",
+                    help="search XING for every city, not only Berlin/Munich/Austria")
+    ap.add_argument("--no-memory", action="store_true", help="don't re-check previously discovered companies")
+    ap.add_argument("--claude", action="store_true", help="screen with Claude (needs ANTHROPIC_API_KEY)")
+    ap.add_argument("--model", default=os.environ.get("CLAUDE_MODEL", "claude-sonnet-5"))
+    a = ap.parse_args()
+    try:
+        run(a.hours, a.cities, a.senior_only, a.out_dir, a.extra_companies, a.xing_all_cities,
+            a.no_memory, a.claude, a.model)
+    except (ValueError, RuntimeError) as ex:
+        sys.exit(str(ex))
 
 
 if __name__ == "__main__":
