@@ -177,6 +177,8 @@ class ResumeAdditions(BaseModel):
     education_pointers: list[str] = Field(default_factory=list)
     charity_product_pointers: list[str] = Field(default_factory=list)
     requirements_not_covered: list[str] = Field(default_factory=list)
+    # Reflection only: headline aligned with the JD title; must keep the base headline.
+    headline: str = ""
 
 
 class MergedSummary(BaseModel):
@@ -201,3 +203,25 @@ class UnsupportedClaim(BaseModel):
 
 class FactCheck(BaseModel):
     issues: list[UnsupportedClaim] = Field(default_factory=list)
+
+
+# --------------------------------------------------------------------------- reflection (HR judge)
+
+
+class CriterionScore(BaseModel):
+    score: int = Field(default=0, ge=0)
+    reason: str = ""
+
+
+class JudgeVerdict(BaseModel):
+    """HR / ATS review of a tailored resume against the JD and company profile."""
+
+    tech_stack: CriterionScore = Field(default_factory=CriterionScore)
+    experience: CriterionScore = Field(default_factory=CriterionScore)
+    company_project: CriterionScore = Field(default_factory=CriterionScore)
+    ats_keywords: CriterionScore = Field(default_factory=CriterionScore)
+    credibility: CriterionScore = Field(default_factory=CriterionScore)
+    decision: str = ""
+    strengths: list[str] = Field(default_factory=list)
+    gaps: list[str] = Field(default_factory=list)
+    fixes: list[str] = Field(default_factory=list)

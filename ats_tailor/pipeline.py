@@ -27,6 +27,7 @@ from .documents import DocumentError
 from .latex import LatexError, compile_pdf, pdf_page_count, render_cover_letter, render_resume
 from .llm import LLMClient, LLMError
 from .merge import MergeReport, merge
+from .reflection import ResumeReflector
 from .prompts import (
     COVER_LETTER_SYSTEM_PROMPT,
     COVER_LETTER_USER_TEMPLATE,
@@ -61,6 +62,8 @@ SUMMARY_EXTRA_WORDS = 45
 SUMMARY_KEEP_RATIO = 0.75
 # The JD-specific project keeps at least this many bullets when trimming for page length.
 MIN_JD_PROJECT_BULLETS = 2
+# HR judge score the rubric anchors as "would get an interview"; below it the UI warns.
+INTERVIEW_SCORE = 80
 
 
 @dataclass
@@ -77,6 +80,9 @@ class GenerationResult:
     coverage: float | None = None  # % of JD keywords present in the final resume
     warnings: list[str] = field(default_factory=list)
     resume_pages: int | None = None
+    hr_score: int | None = None  # HR / ATS judge score out of 100 for the final resume
+    hr_rounds: list[dict] = field(default_factory=list)  # every judged version: score, feedback, changes
+    hr_pass_score: int | None = None
 
 
 def _slug(text: str, limit: int = 40) -> str:
@@ -173,6 +179,7 @@ class TailoringPipeline:
     def __init__(self, settings: Settings):
         self.settings = settings
         self.llm = LLMClient(settings)
+        self.reflector = ResumeReflector(settings, self.llm)
 
     # ------------------------------------------------------------------ LLM steps
 
@@ -414,6 +421,23 @@ class TailoringPipeline:
         planned = {b for e in (*resume.experience, *resume.projects) for b in e.bullets}
         resume = self._gap_fill(resume, adds, report)
 
+        hr_score, hr_rounds = None, []
+        if self.settings.judge_enabled:
+            try:
+                resume, rounds, lacking = self.reflector.run(resume, adds, jd_text, report)
+            except LLMError as exc:
+                log.warning("HR judge failed; keeping the resume as is: %s", exc)
+                report.dropped.append(f"HR / ATS review could not run: {exc}")
+            else:
+                hr_score, hr_rounds = max(r.score for r in rounds), [asdict(r) for r in rounds]
+                adds.requirements_not_covered += [k for k in lacking if k not in adds.requirements_not_covered]
+                if hr_score < INTERVIEW_SCORE:
+                    best = next(r for r in rounds if r.outcome == "selected")
+                    report.dropped.append(
+                        f"HR / ATS review: {hr_score}/100, below the "
+                        f"{INTERVIEW_SCORE} an interview usually needs. Main gaps: " + "; ".join(best.gaps[:3])
+                    )
+
         # Summary (light model) and cover letter (main model) use separate rate-limit buckets.
         with ThreadPoolExecutor(max_workers=2) as pool:
             summary_future = pool.submit(self._summary, resume, adds)
@@ -478,6 +502,9 @@ class TailoringPipeline:
             coverage=coverage,
             warnings=warnings,
             resume_pages=pages,
+            hr_score=hr_score,
+            hr_rounds=hr_rounds,
+            hr_pass_score=self.settings.judge_pass_score if hr_score is not None else None,
         )
         (out / "report.json").write_text(json.dumps(asdict(result), indent=2), encoding="utf-8")
         log.info("Job %s complete: %s", job_id, files)

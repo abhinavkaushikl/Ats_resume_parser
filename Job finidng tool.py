@@ -32,6 +32,8 @@ Usage
 from __future__ import annotations
 
 import argparse
+import hashlib
+import html
 import json
 import os
 import random
@@ -42,6 +44,7 @@ import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
+from functools import lru_cache
 from pathlib import Path
 
 import requests
@@ -122,6 +125,7 @@ class Job:
     level: str = ""
     note: str = ""
     verified: bool = True
+    slug: str = ""          # company's board name on its portal (used to fetch the full JD)
 
     def key(self) -> str:
         return self.url.split("?")[0].split("#")[0].rstrip("/").lower()
@@ -400,6 +404,8 @@ def fetch_feeds(companies: set[tuple[str, str]]) -> tuple[list[Job], set[tuple[s
             a, s = futs[f]
             try:
                 got = f.result(); jobs += got; ok.add((a, s))
+                for j in got:
+                    j.slug = s
             except Exception as ex:
                 errors.append(f"{a}/{s}: {ex}")
     print(f"  {len(ok)} feeds ok, {len(errors)} failed, {len(jobs)} postings")
@@ -497,6 +503,58 @@ def enrich_from_pages(jobs: list[Job], limit: int = 400) -> None:
     print(f"  structured data found on {ok} of {len(todo)} pages")
 
 
+# LinkedIn public (logged-out) job search. Paced, and stops quietly if LinkedIn rate-limits.
+LINKEDIN_LOCATIONS = {
+    "Berlin": "Berlin, Germany", "Munich": "Munich, Bavaria, Germany",
+    "Amsterdam": "Amsterdam, North Holland, Netherlands", "Brussels": "Brussels Region, Belgium",
+    "Paris": "Paris, Île-de-France, France", "Copenhagen": "Copenhagen, Capital Region of Denmark, Denmark",
+    "Warsaw": "Warsaw, Mazowieckie, Poland", "Austria": "Austria", "London": "London, England, United Kingdom",
+    "Romania": "Romania", "Norway": "Norway",
+}
+LINKEDIN_PAGES = 4          # 10 jobs per page
+
+
+def _li_field(pattern: str, s: str) -> str:
+    m = re.search(pattern, s, re.S)
+    return html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", m.group(1)))).strip() if m else ""
+
+
+def fetch_linkedin(cities: list[str], hours: int) -> list[Job]:
+    keywords = " OR ".join(f'"{t}"' if " " in t else t for t in SEARCH_TITLES)
+    out = []
+    print(f"Searching LinkedIn in {len(cities)} locations")
+    for city in cities:
+        n = 0
+        for page in range(LINKEDIN_PAGES):
+            time.sleep(random.uniform(1, 2))
+            r = requests.get("https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search",
+                             params={"keywords": keywords, "location": LINKEDIN_LOCATIONS[city],
+                                     "f_TPR": f"r{hours * 3600}", "start": page * 10},
+                             headers=BROWSER_HEADERS, timeout=TIMEOUT)
+            if r.status_code == 429:
+                print("  ! LinkedIn rate limit reached; skipping the remaining LinkedIn searches")
+                return out
+            if r.status_code != 200:
+                break
+            cards = re.findall(r"<li>(.*?)</li>", r.text, re.S)
+            for c in cards:
+                url = _li_field(r'href="(https://[^"]*linkedin\.com/jobs/view/[^"?]*)', c)
+                if not url:
+                    continue
+                t = re.search(r'<time[^>]*datetime="([^"]*)"[^>]*>(.*?)</time>', c, re.S)
+                posted = (parse_date(t.group(2).strip()) or parse_date(t.group(1))) if t else None   # "5 hours ago"
+                # city stays empty: only jobs whose location really is one of the cities are kept
+                out.append(Job(_li_field(r'base-search-card__title[^>]*>(.*?)</h3>', c),
+                               _li_field(r'base-search-card__subtitle[^>]*>(.*?)</h4>', c),
+                               _li_field(r'job-search-card__location[^>]*>(.*?)</span>', c),
+                               url, "LinkedIn", posted))
+                n += 1
+            if len(cards) < 10:
+                break
+        print(f"  {city}: {n}")
+    return out
+
+
 def company_from_url(url: str) -> str:
     m = re.search(r"//([\w-]+)\.(?:teamtailor|wd\d+\.myworkdayjobs)\.com", url) \
         or re.search(r"join\.com/companies/([\w-]+)", url)
@@ -585,6 +643,124 @@ def claude_screen(jobs: list[Job], model: str) -> list[Job]:
     return kept
 
 # ==========================================================================
+# 4b. DETAILS - full job description of every match, one Markdown file per job
+# ==========================================================================
+
+def html_to_text(s: str | None) -> str:
+    s = html.unescape(s or "")                      # Greenhouse sends escaped HTML
+    s = re.sub(r"(?i)<h\d[^>]*>", "\n\n", s)
+    s = re.sub(r"(?i)<li[^>]*>", "\n- ", s)
+    s = re.sub(r"(?i)<br\s*/?>|</(p|div|h\d|ul|ol|li)>", "\n", s)
+    s = html.unescape(re.sub(r"<[^>]+>", "", s))
+    s = re.sub(r"[ \t\xa0]+", " ", s)
+    return re.sub(r"\n\s*\n\s*(\n\s*)+", "\n\n", s).strip()
+
+
+@lru_cache(maxsize=None)
+def _ashby_board(slug: str) -> dict:
+    return {j["id"]: j for j in get_json(f"https://api.ashbyhq.com/posting-api/job-board/{slug}").get("jobs", [])}
+
+
+@lru_cache(maxsize=None)
+def _personio_board(host: str) -> dict:
+    r = requests.get(f"https://{host}/xml", headers=HEADERS, timeout=TIMEOUT)
+    r.raise_for_status()
+    return {p.findtext("id"): p for p in ET.fromstring(r.content).iter("position")}
+
+
+def fetch_description(j: Job) -> str:
+    """The job's full description as plain text, from the portal's API (or the page's schema.org data)."""
+    last = j.key().split("/")[-1]
+    if j.slug and j.source == "Greenhouse":
+        jid = re.search(r"gh_jid=(\d+)|/jobs/(\d+)", j.url)
+        d = get_json(f"https://boards-api.greenhouse.io/v1/boards/{j.slug}/jobs/{jid.group(1) or jid.group(2)}")
+        return html_to_text(d.get("content"))
+    if j.slug and j.source == "Lever":
+        for host in ("api.lever.co", "api.eu.lever.co"):
+            try:
+                d = get_json(f"https://{host}/v0/postings/{j.slug}/{last}")
+            except requests.HTTPError:
+                continue
+            parts = [d.get("descriptionPlain", "")]
+            parts += [f"{x.get('text', '')}\n{html_to_text(x.get('content'))}" for x in d.get("lists") or []]
+            return "\n\n".join(filter(None, parts + [d.get("additionalPlain", "")])).strip()
+    if j.slug and j.source == "Ashby":
+        d = _ashby_board(j.slug).get(last) or {}
+        return d.get("descriptionPlain") or html_to_text(d.get("descriptionHtml"))
+    if j.slug and j.source == "SmartRecruiters":
+        secs = get_json(f"https://api.smartrecruiters.com/v1/companies/{j.slug}/postings/{last}")["jobAd"]["sections"]
+        return "\n\n".join(f"{s.get('title', '')}\n{html_to_text(s.get('text'))}".strip()
+                           for s in secs.values() if isinstance(s, dict) and s.get("text"))
+    if j.slug and j.source == "Recruitee":
+        d = get_json(f"https://{j.slug}.recruitee.com/api/offers/{last}")["offer"]
+        return "\n\n".join(filter(None, [html_to_text(d.get("description")), html_to_text(d.get("requirements"))]))
+    if j.slug and j.source == "Workable":
+        d = get_json(f"https://apply.workable.com/api/v2/accounts/{j.slug}/jobs/{last}")
+        return "\n\n".join(filter(None, (html_to_text(d.get(k)) for k in ("description", "requirements", "benefits"))))
+    if j.slug and j.source == "Personio":
+        p = _personio_board(j.url.split("/")[2]).get(last)
+        if p is not None:
+            return "\n\n".join(f"{d.findtext('name') or ''}\n{html_to_text(d.findtext('value'))}".strip()
+                               for d in p.findall("jobDescriptions/jobDescription"))
+    if j.source == "LinkedIn":
+        time.sleep(random.uniform(1.5, 3))
+        r = requests.get(f"https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{re.search(r'(\d+)$', j.key()).group(1)}",
+                         headers=BROWSER_HEADERS, timeout=TIMEOUT)
+        r.raise_for_status()
+        m = re.search(r'show-more-less-html__markup[^>]*>(.*?)</div>', r.text, re.S)
+        return html_to_text(m.group(1)) if m else ""
+    jp = read_jobposting(j.url)                     # XING, Teamtailor, Join, Workday, Google-only results
+    return html_to_text(jp.get("description")) if jp else ""
+
+
+def jd_filename(j: Job) -> str:
+    name = re.sub(r"[^\w]+", "_", f"{j.company}_{j.title}").strip("_")[:80]
+    return f"{name}_{hashlib.md5(j.key().encode()).hexdigest()[:6]}.md"
+
+
+def write_details(jobs: list[Job], out_dir: Path) -> None:
+    """Write out_dir/jd/<Company>_<Title>_<id>.md for each job: position, place, opening date, link, full JD.
+    Usable directly as `resume_tailor.py --jd <file>`."""
+    jd_dir = Path(out_dir) / "jd"
+    jd_dir.mkdir(parents=True, exist_ok=True)
+    todo = [j for j in jobs if not (jd_dir / jd_filename(j)).exists()]
+    if not todo:
+        return
+    print(f"Fetching {len(todo)} job descriptions")
+
+    def work(j: Job):
+        try:
+            text = fetch_description(j)
+        except requests.HTTPError as ex:
+            if ex.response is not None and ex.response.status_code == 429:
+                raise                                   # rate-limited: write nothing, retry on the next run
+            text = f"_Could not fetch the description ({ex}); open the link above._"
+        except Exception as ex:
+            text = f"_Could not fetch the description ({ex}); open the link above._"
+        opened = f"{j.posted.astimezone(timezone.utc):%Y-%m-%d %H:%M} UTC ({age(j.posted)})" if j.posted else "unknown"
+        (jd_dir / jd_filename(j)).write_text(
+            f"# {j.title}\n\n"
+            f"- **Company:** {j.company}\n- **Location:** {j.location or j.city}\n- **Opened:** {opened}\n"
+            f"- **Level:** {j.level}\n- **Apply:** {j.url} ({j.source})\n\n"
+            f"## Job description\n\n{text or '_No description published; open the link above._'}\n",
+            encoding="utf-8")
+
+    linkedin = [j for j in todo if j.source == "LinkedIn"]
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        list(pool.map(work, [j for j in todo if j.source != "LinkedIn"]))
+    for i, j in enumerate(linkedin):                    # LinkedIn only tolerates slow, one-at-a-time reads
+        for attempt in range(2):
+            try:
+                work(j)
+                break
+            except requests.HTTPError:
+                if attempt == 0:
+                    time.sleep(60)
+        else:
+            print(f"  ! LinkedIn rate limit: {len(linkedin) - i} descriptions left for the next run")
+            break
+
+# ==========================================================================
 # 5. WRITE MARKDOWN
 # ==========================================================================
 
@@ -620,12 +796,15 @@ def write_markdown(jobs, path, hours, cities, new_keys, stats):
         if not items:
             L += ["_No matching jobs in this window._", ""]; continue
         items.sort(key=lambda j: (j.posted or now), reverse=True)
-        head = "| | Title | Company | Level | Location | Posted | Source |" + (" Focus |" if notes else "")
+        head = "| | Title | Company | Level | Location | Opened | JD | Source |" + (" Focus |" if notes else "")
         L += [head, "|" + "---|" * (head.count("|") - 1)]
         for j in items:
             src = j.source if j.verified else f"{j.source} (unverified)"
+            opened = f"{j.posted.astimezone(timezone.utc):%Y-%m-%d %H:%M} UTC ({age(j.posted)})" if j.posted else age(j.posted)
+            jd = next((Path(os.path.relpath(d / "jd" / jd_filename(j), path.parent)).as_posix()
+                       for d in (path.parent, path.parent.parent) if (d / "jd" / jd_filename(j)).exists()), "")
             row = (f"| {'🆕' if j.key() in new_keys else ''} | [{esc(j.title)}]({j.url}) | {esc(j.company)} | "
-                   f"{j.level} | {esc(j.location)[:60]} | {age(j.posted)} | {src} |")
+                   f"{j.level} | {esc(j.location)[:60]} | {opened} | {f'[JD]({jd})' if jd else '-'} | {src} |")
             L.append(row + (f" {esc(j.note)} |" if notes else ""))
         L.append("")
     L += ["---", "",
@@ -655,7 +834,8 @@ def save_known(path: Path, companies: set[tuple[str, str]]):
 
 def run(hours: int = 24, cities: list[str] | None = None, senior_only: bool = False, out_dir: str = "jobs",
         extra_companies: str = "companies.yaml", xing_all_cities: bool = False, no_memory: bool = False,
-        claude: bool = False, model: str = "claude-sonnet-5", write_files: bool = True) -> dict:
+        claude: bool = False, model: str = "claude-sonnet-5", write_files: bool = True,
+        linkedin: bool = False) -> dict:
     """Run the whole search and write the Markdown files (unless write_files=False).
     Returns the paths and matching jobs."""
     cities = list(CITIES) if cities is None else cities
@@ -690,10 +870,11 @@ def run(hours: int = 24, cities: list[str] | None = None, senior_only: bool = Fa
             google_jobs.append(job)
 
     enrich_from_pages(google_jobs)
+    linkedin_jobs = fetch_linkedin(cities, hours) if linkedin else []
 
     # 3/4. filter + screen
-    jobs = filter_jobs(feed_jobs + google_jobs, hours, cities, senior_only)
-    print(f"{len(feed_jobs) + len(google_jobs)} postings -> {len(jobs)} matching")
+    jobs = filter_jobs(feed_jobs + google_jobs + linkedin_jobs, hours, cities, senior_only)
+    print(f"{len(feed_jobs) + len(google_jobs) + len(linkedin_jobs)} postings -> {len(jobs)} matching")
     if claude:
         jobs = claude_screen(jobs, model)
 
@@ -709,6 +890,7 @@ def run(hours: int = 24, cities: list[str] | None = None, senior_only: bool = Fa
         return result
 
     # 5. write
+    write_details(jobs, out_dir)
     path = out_dir / f"jobs_{datetime.now():%Y-%m-%d_%H%M}.md"
     write_markdown(jobs, path, hours, cities, new_keys, {"companies": len(ok)})
     latest = out_dir / "latest.md"
@@ -729,11 +911,12 @@ def main():
                     help="search XING for every city, not only Berlin/Munich/Austria")
     ap.add_argument("--no-memory", action="store_true", help="don't re-check previously discovered companies")
     ap.add_argument("--claude", action="store_true", help="screen with Claude (needs ANTHROPIC_API_KEY)")
+    ap.add_argument("--linkedin", action="store_true", help="also search LinkedIn's public job search")
     ap.add_argument("--model", default=os.environ.get("CLAUDE_MODEL", "claude-sonnet-5"))
     a = ap.parse_args()
     try:
         run(a.hours, a.cities, a.senior_only, a.out_dir, a.extra_companies, a.xing_all_cities,
-            a.no_memory, a.claude, a.model)
+            a.no_memory, a.claude, a.model, linkedin=a.linkedin)
     except (ValueError, RuntimeError) as ex:
         sys.exit(str(ex))
 

@@ -37,7 +37,8 @@ def key(text: str) -> str:
     return re.sub(r"[^a-z0-9]", "", text.lower())
 
 
-NUMBER_RE = re.compile(r"(?<![\w.])\d+(?:[.,]\d+)?(?:\s?%|\+)?")
+# Version suffixes of names ("GPT-4", "Llama-3.1") are part of the name, not metrics.
+NUMBER_RE = re.compile(r"(?<![\w.])(?<![A-Za-z]-)\d+(?:[.,]\d+)?(?:\s?%|\+)?")
 
 
 def unsupported_numbers(text: str, source: str) -> list[str]:

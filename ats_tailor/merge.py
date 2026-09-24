@@ -28,6 +28,14 @@ SCALE_RE = re.compile(r"\b(millions?|billions?|thousands|daily|per day|hourly|pe
 # Skill categories holding concrete platforms/tools. A new bullet under a past role may name one
 # only if that role's own bullets already do (the model likes to move tools between employers).
 PLATFORM_CATEGORY_RE = re.compile(r"mlops|cloud|observab|search|database|platform|bi|testing|devops|infra", re.I)
+# Credentials and compliance claims are never added (technology keywords are fine): a skill or
+# new bullet naming one is dropped unless the base resume already contains that term.
+CREDENTIAL_RE = re.compile(
+    r"\b(certifi\w*|certified|licen[cs]\w*|accredit\w*|clearance|chartered|diploma|degree|bachelor\w*|"
+    r"master'?s|mba|ph\.?d|gdpr|hipaa|sox|pci[- ]?dss|iso[- ]?\d{4,5}|fluent|native speaker|"
+    r"\d+\+?\s*years?)\b",
+    re.I,
+)
 _STOPWORDS = {
     "the", "and", "for", "with", "that", "into", "from", "using", "across", "via", "its", "their",
     "this", "was", "were", "of", "to", "a", "an", "in", "on", "by", "as", "at", "or", "is", "be",
@@ -107,6 +115,9 @@ class _BulletFilter:
         if bad := unsupported_numbers(bullet, entry_text):
             log.info(f"{where}: dropped bullet with numbers not from this entry ({', '.join(bad)}): {bullet}")
             return None
+        if (m := CREDENTIAL_RE.search(bullet)) and m.group().lower() not in self.source.lower():
+            log.info(f"{where}: dropped bullet with a credential or domain claim ('{m.group()}'): {bullet}")
+            return None
         if (m := SCALE_RE.search(bullet)) and m.group().lower() not in self.source.lower():
             log.info(f"{where}: dropped bullet with an unsupported scale claim ('{m.group()}'): {bullet}")
             return None
@@ -134,6 +145,9 @@ def merge(base: Resume, adds: ResumeAdditions) -> tuple[Resume, MergeReport]:
     for s in adds.skills_to_add:
         skill = plain_text(s.skill).strip(" .")
         if not skill or key(skill) in existing:
+            continue
+        if (m := CREDENTIAL_RE.search(skill)) and m.group().lower() not in base.as_text().lower():
+            report.dropped.append(f"Not added (credential, not a skill): {skill}")
             continue
         cat_key = key(s.category)
         group = categories.get(cat_key)

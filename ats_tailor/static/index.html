@@ -124,6 +124,38 @@
   .coverage .pct { font: 800 40px/1 var(--display); letter-spacing: -0.03em; }
   .coverage .cap { color: var(--muted); font-size: 14px; }
 
+  /* ---------- HR review journey (quiet: collapsed by default) ---------- */
+  .journey { margin: -8px 0 22px; }
+  .journey > summary { cursor: pointer; color: var(--muted); font-size: 13.5px; list-style: none; display: inline-flex; gap: 6px; align-items: center; }
+  .journey > summary::-webkit-details-marker { display: none; }
+  .journey > summary::before { content: "›"; display: inline-block; transition: transform .15s; font-size: 16px; line-height: 1; }
+  .journey[open] > summary::before { transform: rotate(90deg); }
+  .journey > summary:hover { color: var(--ink); }
+  .journey .path b { color: var(--ink); font-weight: 600; }
+  .tl { list-style: none; margin: 14px 0 0; padding: 0 0 0 18px; border-left: 1px solid var(--line); }
+  .tl > li { position: relative; padding: 0 0 18px 4px; }
+  .tl > li:last-child { padding-bottom: 2px; }
+  .tl > li::before { content: ""; position: absolute; left: -24px; top: 5px; width: 11px; height: 11px; border-radius: 50%;
+                     background: var(--surface); border: 2px solid var(--muted); }
+  .tl > li.selected::before { background: var(--ok); border-color: var(--ok); }
+  .tl > li.discarded { opacity: .62; }
+  .tl .head { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+  .tl .head b { font-weight: 600; }
+  .tl .sc { font: 700 15px/1 var(--display); font-variant-numeric: tabular-nums; }
+  .tl .note { font-size: 13px; color: var(--muted); margin: 2px 0 8px; }
+  .tl li.selected .note { color: var(--ok); }
+  .tl .changes { font-size: 13px; margin: 0 0 8px; padding: 8px 10px; background: var(--paper); border-radius: 8px; }
+  .tl .changes div + div { margin-top: 4px; }
+  .crit { display: grid; grid-template-columns: 1fr; gap: 3px; margin: 0 0 6px; }
+  .crit .c { display: grid; grid-template-columns: 118px 1fr 42px; gap: 8px; align-items: center; font-size: 12.5px; color: var(--muted); }
+  .crit .bar { height: 5px; border-radius: 3px; background: var(--line); overflow: hidden; }
+  .crit .bar i { display: block; height: 100%; background: var(--action); }
+  .crit .n { text-align: right; font-variant-numeric: tabular-nums; }
+  .tl .fb { font-size: 13px; color: var(--muted); }
+  .tl .fb summary { cursor: pointer; }
+  .tl .fb ul { margin: 4px 0 0; padding-left: 18px; }
+  .tl .fb .plus { color: var(--ok); } .tl .fb .minus { color: var(--miss); }
+
   .downloads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   @media (max-width: 480px) { .downloads { grid-template-columns: 1fr; } }
   .dl { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink);
@@ -232,6 +264,18 @@
           </div>
         </div>
 
+        <div class="coverage hidden" id="hrBox">
+          <div class="row">
+            <span class="pct" id="hrScore"></span>
+            <span class="cap" id="hrCap"></span>
+          </div>
+        </div>
+
+        <details class="journey hidden" id="journey">
+          <summary><span class="path" id="journeyPath"></span></summary>
+          <ol class="tl" id="journeyList"></ol>
+        </details>
+
         <div class="downloads" id="downloads"></div>
 
         <div id="warnings" class="alert warn hidden"></div>
@@ -263,9 +307,10 @@ const STEPS = [
   [0, "Reading the JD and finding gaps in your resume"],
   [25, "Adding bullets, skills and a project for the company"],
   [55, "Filling in missing JD keywords"],
-  [80, "Blending the summary and writing the cover letter"],
-  [110, "Fact-checking the cover letter"],
-  [140, "Compiling PDFs"],
+  [70, "HR review: scoring the resume, revising if below the pass mark"],
+  [110, "Blending the summary and writing the cover letter"],
+  [140, "Fact-checking the cover letter"],
+  [170, "Compiling PDFs"],
 ];
 
 function refresh() {
@@ -365,6 +410,30 @@ const LABELS = {
 };
 const DL_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16"/></svg>`;
 
+function renderJourney(rounds) {
+  $("journey").classList.toggle("hidden", !rounds.length);
+  if (!rounds.length) return;
+  $("journey").open = false;
+  const sel = rounds.find((r) => r.outcome === "selected");
+  $("journeyPath").innerHTML = "Review journey: " + rounds.map((r) =>
+    r.outcome === "selected" ? `<b>${r.score}</b>` : `${r.score}`).join(" → ") +
+    (sel ? ` · ${esc(sel.label.toLowerCase())} selected` : "");
+  const list = (cls, sign, items) => items.map((x) => `<li class="${cls}">${sign} ${esc(x)}</li>`).join("");
+  $("journeyList").innerHTML = rounds.map((r) => `
+    <li class="${r.outcome}">
+      <div class="head"><b>${esc(r.label)}</b><span class="sc">${r.score}<small>/100</small></span></div>
+      <div class="note">${esc(r.note)}${r.decision ? ` HR call: ${esc(r.decision)}.` : ""}</div>
+      ${r.changes.length ? `<div class="changes">${r.changes.map((c) => `<div>${esc(c)}</div>`).join("")}</div>` : ""}
+      <div class="crit">${r.breakdown.map((c) => `
+        <div class="c" title="${esc(c.reason)}"><span>${esc(c.name)}</span>
+          <span class="bar"><i style="width:${Math.round(100 * c.score / c.max)}%"></i></span>
+          <span class="n">${c.score}/${c.max}</span></div>`).join("")}</div>
+      <details class="fb"><summary>What HR said</summary>
+        <ul>${list("plus", "+", r.strengths)}${list("minus", "−", r.gaps)}</ul>
+      </details>
+    </li>`).join("");
+}
+
 function render(d) {
   $("company-out").textContent = d.company;
   $("role-out").textContent = d.role;
@@ -385,6 +454,13 @@ function render(d) {
     $("coverageBox").classList.add("hidden");
     setTape("empty");
   }
+
+  if (d.hr_score != null) {
+    $("hrScore").textContent = `${d.hr_score}/100`;
+    $("hrCap").textContent = `HR / ATS review score (target ${d.hr_pass_score})`;
+  }
+  $("hrBox").classList.toggle("hidden", d.hr_score == null);
+  renderJourney(d.hr_rounds || []);
 
   $("downloads").innerHTML = Object.keys(LABELS).filter((k) => d.downloads[k]).map((k) =>
     `<a class="dl${LABELS[k][2] ? " primary" : ""}" href="${d.downloads[k]}" download>${DL_ICON}<div><b>${LABELS[k][0]}</b><span>${LABELS[k][1]}</span></div></a>`).join("");

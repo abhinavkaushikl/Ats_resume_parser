@@ -51,6 +51,8 @@ class _KeyPool:
 
     def __init__(self, settings: Settings):
         keys = settings.all_groq_keys()
+        if not keys:
+            raise LLMError("No Groq API key configured. Set GROQ_API_KEY (and optionally GROQ_API_KEYS) in .env.")
         # Rate limits are handled here (switch key); the SDK still retries 5xx / connection errors.
         self.clients = [
             OpenAI(
@@ -138,6 +140,7 @@ class LLMClient:
         *,
         model: str | None = None,
         reasoning_effort: str | None = None,
+        temperature: float | None = None,
         prefix: str = "",
         attempts: int = 2,
     ) -> T:
@@ -162,7 +165,7 @@ class LLMClient:
             try:
                 response = self._create(
                     model=model,
-                    temperature=self.settings.llm_temperature,
+                    temperature=self.settings.llm_temperature if temperature is None else temperature,
                     max_completion_tokens=self._output_budget(messages),
                     reasoning_effort=effort,
                     response_format={"type": "json_object"},

@@ -25,6 +25,37 @@ HUMAN_STYLE = """- Write like a person, not a language model. Use ONLY plain
   "go-to expert" and "I am excited to"."""
 
 
+# Which JD keywords may be added. Technology is transferable; credentials and domain are not.
+KEYWORD_POLICY = """JD KEYWORD POLICY
+- ADD generously: JD technology terms that are a transferable
+  equivalent of something the candidate really used. Examples: other
+  LLMs (Mistral, LLaMA, Gemini) next to GPT-4 or Claude, since the same
+  inference, prompting and RAG work applies; vector databases
+  (Pinecone, Weaviate, BigQuery Vector Search) next to the stores the
+  candidate used; ML frameworks (TensorFlow next to PyTorch); model
+  serving, deployment and MLOps tools; cloud equivalents (AWS next to
+  GCP or Azure); ways of working (Agile, Scrum, Kanban, CI/CD). Put
+  them in skills. In a bullet, name the JD term ALONGSIDE the
+  candidate's own tool ("served GPT-4 and Mistral models for
+  inference"), in work that role really did.
+- TOOLS YES, NEW WORK NO: a new bullet for a past role must describe a
+  system or task that role's existing bullets already show. A JD term
+  may name the tool or method used for that work, but never a new
+  kind of system the role did not build (e.g. do not claim a
+  recommendation engine, personalization, fraud model or ad ranking
+  at an employer whose bullets show none). Such JD needs go into the
+  company-specific project, which is where new work belongs.
+- KEEP THE MAIN TERMINOLOGY: never rename, replace or drop the
+  candidate's own tools, models, methods or titles. The JD term is
+  added next to them, never instead of them.
+- NEVER ADD domain-specific credentials or claims: certifications,
+  licences, degrees, courses, security clearances, regulations or
+  legal frameworks (GDPR, HIPAA, ISO standards), industry experience
+  the candidate lacks (e.g. automotive, banking, insurance), spoken
+  languages, years of experience, team leadership or numbers. List
+  those in "requirements_not_covered"."""
+
+
 # The base resume is sent FIRST (identical text on every call) so Groq's prompt cache can reuse
 # it; each step's instructions follow it.
 RESUME_PREFIX_TEMPLATE = """
@@ -121,9 +152,9 @@ WHAT TO RETURN
   names in "technologies" (5-8 items).
 - "existing_project_pointers": only if a JD need genuinely extends an
   existing project (0-2 bullets). Never attach unrelated features to it.
-- "skills_to_add": JD tools and methods the resume does not list yet
-  and the candidate can credibly claim; copy a SKILL CATEGORY name from
-  the resume exactly ("Additional" only if none fits).
+- "skills_to_add": every JD technology, tool and method the resume does
+  not list yet and the KEYWORD POLICY allows; copy a SKILL CATEGORY name
+  from the resume exactly ("Additional" only if none fits).
 - "summary_pointers": 2-3 short phrases that connect the candidate's
   real experience to this role (e.g. "retrieval and re-ranking systems
   for LLM search"). Never claim more than the resume shows.
@@ -162,6 +193,8 @@ TRUTH RULES
   conversion) belong ONLY in the new project, never in past roles.
 - Names in "experience_pointers" (company and role) and
   "existing_project_pointers" (project) must be copied from the resume.
+
+""" + KEYWORD_POLICY + """
 """ + HUMAN_STYLE + """
 
 Return ONLY this JSON:
@@ -211,13 +244,18 @@ B. SUPPORTED AND IMPORTANT: optionally also add ONE new bullet under an
    Support must come from the candidate's jobs, base projects or extra
    skills, NOT from the JD-SPECIFIC PROJECT alone (it was written for
    this application).
-C. NOT SUPPORTED: the resume has nothing close (e.g. machine translation
-   for someone who never built MT, a specific law, a programming
-   language never used). List it in "requirements_not_covered".
-   Never add those to skills.
+   JD technology terms that are a transferable equivalent of the
+   candidate's tools (see KEYWORD POLICY) also count as SUPPORTED.
+C. NOT SUPPORTED: credentials and domain claims the KEYWORD POLICY
+   forbids (a certification, a degree, a specific law, industry
+   experience the candidate lacks) or work the candidate never did
+   (e.g. machine translation for someone who never built MT). List it
+   in "requirements_not_covered". Never add those to skills.
 
 Never rewrite existing bullets or invent employers, titles or duties.
 Names must be copied from the resume. Leave "new_project" null.
+
+""" + KEYWORD_POLICY + """
 """ + HUMAN_STYLE + """
 
 Return ONLY this JSON:
@@ -417,4 +455,137 @@ DRAFT (JSON):
 PROBLEMS TO FIX:
 
 {problems}
+"""
+
+
+# ---------------------------------------------------------------------------
+# 4. Reflection: HR / ATS judge scores the tailored resume, then a revision
+# ---------------------------------------------------------------------------
+
+JUDGE_SYSTEM_PROMPT = """
+You are the hiring manager and HR recruiter at {company}, screening
+applications for the role below. You know the company profile and the
+job description. Your company's ATS has already parsed the RESUME
+under review. Decide how well it matches THIS job, strictly and
+consistently, using the rubric. Score only what the resume shows;
+do not give credit for skills the JD needs but the resume lacks.
+
+RUBRIC (points per criterion):
+{rubric}
+
+Scoring anchors for each criterion: full points = clearly and
+concretely shown, in context, as the JD asks; about half = mentioned
+or adjacent but thin, only in the skills list, or at lower depth than
+asked; near zero = missing or contradicted. A resume that would get an
+interview for this role scores 80 or more; 90 or more means nearly
+every must-have of the JD is shown in the work, not just listed.
+
+Be consistent: every gap you list must cost points in its criterion
+(a missing JD tool or method costs tech_stack or ats_keywords points;
+a missing kind of work costs experience points). Give a criterion full
+points only if you list no gap for it. Score the resume before writing
+the gaps, then check the two agree.
+
+Then give:
+- "decision": "shortlist", "maybe" or "reject".
+- "strengths": up to 4 short points a recruiter would like.
+- "gaps": up to 5 short points that cost points, most costly first.
+- "fixes": up to 5 concrete edits that would raise the score, each
+  naming the section (skills, a role by company name, or the
+  company-specific project). Only suggest edits the candidate's REAL
+  work supports: surfacing a JD term they already use, showing a tool
+  in the role where they used it, or sharpening the company-specific
+  project toward the company's product. Never suggest inventing
+  employers, degrees, years or numbers.
+
+Return ONLY this JSON:
+{{"tech_stack": {{"score": 0, "reason": ""}},
+ "experience": {{"score": 0, "reason": ""}},
+ "company_project": {{"score": 0, "reason": ""}},
+ "ats_keywords": {{"score": 0, "reason": ""}},
+ "credibility": {{"score": 0, "reason": ""}},
+ "decision": "", "strengths": [""], "gaps": [""], "fixes": [""]}}
+"""
+
+JUDGE_USER_TEMPLATE = """
+ROLE: {role} at {company}
+COMPANY PROFILE: {company_profile}
+
+JOB DESCRIPTION:
+
+{jd}
+
+RESUME UNDER REVIEW:
+
+{resume}
+"""
+
+REFLECT_SYSTEM_PROMPT = """
+You improve a tailored resume after an HR / ATS review, to raise its
+score toward the TARGET. POINTS LOST shows where the score goes,
+biggest loss first: win those points back first. Apply every fix the
+candidate's real work supports. Do NOT repeat the changes listed under
+ALREADY TRIED: they did not raise the score; try a different edit.
+
+What you may return:
+- "headline": the JD's job title combined with the CURRENT HEADLINE,
+  e.g. "Data Scientist | Senior AI Engineer", only if the candidate's
+  work fits that title. It must contain the current headline exactly.
+  "" to keep it.
+- "skills_to_add": JD terms the resume already supports (or listed in
+  the candidate's extra skills), spelled as in the JD, under the best
+  existing skill category.
+- "experience_pointers": at most 2 new bullets in total, under
+  existing roles (copy the company name exactly), only where that role
+  really did the work. No new numbers, no target-company words.
+- "existing_project_pointers": new bullets for the candidate's own
+  projects (copy the project name), only for work that project did.
+- "new_project": a REWRITE of the company-specific project, only if
+  the review marks it weak: 2 concise bullets that solve a real
+  problem of the company's product (see COMPANY PROFILE) with the JD's
+  stack and the candidate's proven techniques, plus its technologies.
+  Keep the current project name unless it is off-target. Set null if
+  the project is fine.
+- "requirements_not_covered": credentials, domain experience and work
+  the candidate truly lacks (see KEYWORD POLICY). Do not fake them.
+
+Never rewrite base bullets or invent employers, titles, degrees, years
+or metrics. Missing JD technology is usually the cheapest win: add it
+as the KEYWORD POLICY allows.
+
+""" + KEYWORD_POLICY + """
+""" + HUMAN_STYLE + """
+
+Return ONLY this JSON:
+{"headline": "",
+ "skills_to_add": [{"skill": "", "category": ""}],
+ "experience_pointers": [{"company": "", "role": "", "bullets": [""]}],
+ "existing_project_pointers": [{"project": "", "bullets": [""]}],
+ "new_project": {"name": "", "bullets": ["", ""], "technologies": [""]},
+ "requirements_not_covered": [""]}
+"""
+
+REFLECT_USER_TEMPLATE = """
+TARGET ROLE: {role} at {company}
+COMPANY PROFILE: {company_profile}
+CURRENT HEADLINE: {headline}
+JD KEYWORDS STILL MISSING: {missing}
+
+SCORE: {score}/100, TARGET: {target}/100
+POINTS LOST (biggest first):
+{losses}
+
+HR / ATS REVIEW:
+
+{review}
+
+ALREADY TRIED (did not raise the score):
+{failed}
+
+CANDIDATE'S EXTRA SKILLS (true, not on the resume):
+{extra_skills}
+
+CURRENT RESUME:
+
+{resume}
 """

@@ -1,0 +1,179 @@
+# Companies with AI / ML / data-science openings in the target cities, found via web search
+# (Claude, 2026-09-24). The job finder downloads each company's public job feed and keeps
+# only matching titles in the chosen cities and time window. Add or remove slugs freely.
+
+greenhouse:
+  - intercom
+  - intercomreferrals
+  - awin
+  - bloomreach
+  - realtimeboardglobal   # Miro
+  - braze
+  - cresta
+  - bluefishai
+  - decathlontechnologyen
+  - dashlane
+  - fireworksai
+  - physicsx
+  - adyen
+  - togetherai
+  - wayve
+  - isomorphiclabs
+  - anthropic
+  - graphcore
+  - idnow
+  - celonis
+  - autoscout24
+  - commercetools
+  - headborneai
+  - databricks
+  - collibra
+  - artefactlinkedin
+  - datacamp
+  - capco
+  - xebiacee
+  - wargamingen
+  - cognite
+  - crayon
+  - boltv2
+  - monzo
+  - nttdatausa
+  - project44
+  - 2k
+  - flohealth
+  - dept
+  - jetbrains
+  - terraquantum
+  - surfai
+  - bitpanda
+  - paradoxcatgmbh
+  - brainrocketltd
+  - deepmind
+  - helsing
+  - n26
+  - sumup
+  - traderepublicbank
+  - getyourguide
+  - contentful
+  - exadelinc
+  - smartlyio
+  - prolificacademicltd
+  - prolific
+  - clarityai
+  - lightningai
+  - speechify
+  - aisi
+  - bioptimus-careers
+  - ketryx
+
+lever:
+  - researchgate
+  - mistral
+  - vestiairecollective
+  - sonarsource
+  - veepee
+  - theodo
+  - payjoy
+  - hive
+  - amanotes
+  - veo
+  - h1
+  - Nomagic
+  - capital
+  - brillio-2
+  - aeratechnology
+  - MunichElectrification
+  - quantco-
+  - netlight
+  - valgenesis
+  - miteksystems-2
+  - alimentiv-2
+  - sambatv
+
+ashby:
+  - airapps
+  - perplexity
+  - featherlessai
+  - hipeople-official
+  - melotech
+  - brainco
+  - cohere
+  - holonomy
+  - harmattan-ai
+  - openai
+  - mistral.ai
+  - parspec
+  - gen-digital
+  - abridge
+  - adaption
+  - suno
+  - crosby
+  - cradlebio
+  - edra
+  - meticulous
+  - protege
+  - reflectionai
+  - lorikeet
+  - webai
+  - elevenlabs
+  - synthesia
+  - n8n
+  - langfuse
+  - zauber
+  - supermodular.ai
+  - DehazeLabs
+  - palo-it
+  - almedia
+  - nelly
+  - techtorch
+  - Distyl
+  - percepta
+  - baseten
+  - savvymoney
+
+smartrecruiters:
+  - SIXT
+  - smartrecruiters
+  - AntonPaar1
+  - JobTeaser
+  - Talan
+  - Redcare-Pharmacy
+  - SMGSwissMarketplaceGroup
+  - IFS1
+  - NielsenIQ
+  - DeliveryHero
+  - Nexthink
+  - SiaPartners
+  - Cint
+  - Sportradar
+
+workable:
+  - enjins
+  - unitary
+  - huggingface
+  - qodeworld
+  - quantumloopai
+
+personio:
+  - aconium
+  - mediaire
+  - nia
+  - circula
+  - icb-gmbh
+  - perelyn
+  - statworx
+  - alexander-thamm-gmbh
+  - cosuno
+  - jobleads
+  - cofinproag
+  - ommax
+
+recruitee:
+  - kaizo
+  - sentiance1
+  - adesso1
+  - machinelearningreply
+  - nextaillabs
+  - faktionbv1
+  - addepto
+  - innodatainc

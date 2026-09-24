@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     )
 
     # --- LLM ---------------------------------------------------------------
-    groq_api_key: SecretStr
+    groq_api_key: SecretStr = SecretStr("")
     # Extra keys (comma-separated), used when a key hits its rate limit, e.g. its daily token cap.
     groq_api_keys: SecretStr = SecretStr("")
     groq_base_url: str = "https://api.groq.com/openai/v1"
@@ -49,6 +49,14 @@ class Settings(BaseSettings):
     # --- JD coverage -------------------------------------------------------
     # Extra LLM rounds that place JD keywords still missing from the resume.
     coverage_rounds: int = 1
+
+    # --- Reflection (HR / ATS judge) ----------------------------------------
+    # The judge scores the tailored resume out of 100; below the pass mark it is revised and re-judged.
+    judge_enabled: bool = True
+    judge_pass_score: int = 95
+    judge_max_revisions: int = 4
+    # Stop early after this many revisions in a row that did not raise the score.
+    judge_patience: int = 2
 
     # --- Candidate (personal data lives in .env, never in code) ------------
     candidate_name: str

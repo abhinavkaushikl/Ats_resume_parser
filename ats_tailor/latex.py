@@ -1,6 +1,7 @@
 """LaTeX rendering (Jinja2 templates with safe escaping) and PDF compilation."""
 
 import logging
+import os
 import re
 import shutil
 import subprocess
@@ -103,6 +104,12 @@ def render_cover_letter(letter: CoverLetter, headline: str, settings: Settings) 
     )
 
 
+# Install locations often missing from PATH (e.g. when the server starts from an IDE or launcher).
+_EXTRA_BIN_DIRS = os.pathsep.join(
+    str(Path(d).expanduser()) for d in ("~/.local/bin", "~/.cargo/bin", "/opt/homebrew/bin", "/Library/TeX/texbin")
+)
+
+
 def _engine_command(settings: Settings, tex_name: str) -> list[str]:
     engines = {
         "tectonic": ["tectonic", "--keep-logs", "--chatter", "minimal", tex_name],
@@ -110,8 +117,8 @@ def _engine_command(settings: Settings, tex_name: str) -> list[str]:
     }
     order = [settings.latex_engine] if settings.latex_engine != "auto" else ["tectonic", "pdflatex"]
     for name in order:
-        if name in engines and shutil.which(name):
-            return engines[name]
+        if name in engines and (path := shutil.which(name) or shutil.which(name, path=_EXTRA_BIN_DIRS)):
+            return [path, *engines[name][1:]]
     raise LatexError(
         "No LaTeX engine found. Install one with `brew install tectonic` "
         "(or MacTeX for pdflatex). The .tex file was still generated."
