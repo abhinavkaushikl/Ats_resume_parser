@@ -1,0 +1,14 @@
+{
+ "score": 62,
+ "matched": [
+  "Designing/deploying AI solutions for clients",
+  "Multi-industry client-facing delivery",
+  "Cross-functional team collaboration"
+ ],
+ "missing": [
+  "No concrete tech-stack requirements stated to verify against",
+  "NL-market/client language context unclear"
+ ],
+ "blockers": [],
+ "reason": "Candidate's client-facing AI delivery background fits the general AI Engineer profile, but this listing is a thin recruiting page without concrete requirements to score against confidently."
+}

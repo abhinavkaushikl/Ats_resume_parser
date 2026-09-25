@@ -1,0 +1,18 @@
+{
+ "score": 78,
+ "matched": [
+  "LangChain/LangGraph agentic and RAG workflows",
+  "Python production code",
+  "MLOps (Docker, MLflow)",
+  "Cloud platforms (GCP, Azure)",
+  "GenAI evaluation/observability",
+  "FastAPI",
+  "MS in Machine Learning and AI"
+ ],
+ "missing": [
+  "Named frameworks TensorFlow/PyTorch/Scikit-learn not shown",
+  "Named cloud AI services (SageMaker/Vertex AI/Azure ML)"
+ ],
+ "blockers": [],
+ "reason": "Strong overlap on GenAI, RAG, and MLOps must-haves, with only a few specifically named frameworks and cloud AI services unconfirmed in the resume."
+}

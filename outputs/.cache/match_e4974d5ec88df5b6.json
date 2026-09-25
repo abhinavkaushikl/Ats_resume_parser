@@ -1,0 +1,17 @@
+{
+ "score": 78,
+ "matched": [
+  "Python proficiency",
+  "ML and deep learning methods",
+  "GenAI/LLM agent experience",
+  "Production ML/GenAI deployment",
+  "STEM (MSc ML & AI) degree",
+  "Cross-functional collaboration"
+ ],
+ "missing": [
+  "AWS SageMaker/EKS cloud tooling",
+  "Java/C/C++ programming"
+ ],
+ "blockers": [],
+ "reason": "Resume shows strong applied ML/GenAI production experience matching most requirements, with only AWS-specific tooling and secondary languages missing."
+}

@@ -15,3 +15,6 @@ langgraph>=1.0
 langchain-groq>=1.0
 langchain-openai>=1.0
 ddgs>=9.0
+# Job description extraction
+playwright>=1.45
+markdownify>=0.12

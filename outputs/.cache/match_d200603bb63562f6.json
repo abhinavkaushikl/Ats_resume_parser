@@ -1,0 +1,23 @@
+{
+ "score": 45,
+ "matched": [
+  "Master's degree in ML/AI",
+  "8+ years relevant experience",
+  "Python proficiency",
+  "GCP experience",
+  "SQL/BigQuery knowledge",
+  "Spark/PySpark experience",
+  "Cross‑functional collaboration",
+  "Experience with large data sets and end‑to‑end ML pipelines"
+ ],
+ "missing": [
+  "Knowledge of large‑scale optimisation techniques / auction theory / mechanism design",
+  "Evidence of innovative ML/optimisation work via publications, patents or open‑source contributions",
+  "Direct experience with online bidding or advertising optimisation"
+ ],
+ "blockers": [
+  "Missing required auction theory/large‑scale optimisation expertise",
+  "No demonstrated record of peer‑reviewed publications, patents or comparable evidence"
+ ],
+ "reason": "Key must‑haves (auction theory/optimisation knowledge and proven innovative record) are absent, limiting fit despite strong ML and engineering background."
+}

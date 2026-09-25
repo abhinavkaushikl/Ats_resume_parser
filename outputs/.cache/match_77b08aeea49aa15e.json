@@ -1,0 +1,17 @@
+{
+ "score": 78,
+ "matched": [
+  "Python and SQL",
+  "machine learning and GenAI techniques",
+  "LLMs, prompt engineering, agentic AI workflows",
+  "end-to-end data solution delivery",
+  "communicating insights to stakeholders",
+  "STEM-equivalent Master's degree"
+ ],
+ "missing": [
+  "insurance/finance domain experience",
+  "GCP exposure limited to general cloud, not insurance-specific tooling"
+ ],
+ "blockers": [],
+ "reason": "Strong general data-science and GenAI skill match against the requirements, with insurance-domain experience being a nice-to-have gap only."
+}

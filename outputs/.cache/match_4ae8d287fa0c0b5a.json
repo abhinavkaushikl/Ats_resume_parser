@@ -1,0 +1,16 @@
+{
+ "score": 78,
+ "matched": [
+  "5+ years as Data Scientist",
+  "strong SQL",
+  "Python (pandas/numpy/ML libs)",
+  "propensity/predictive modeling experience",
+  "large dataset/ETL work"
+ ],
+ "missing": [
+  "marketing/consumer analytics domain",
+  "CLV/segmentation modeling specifics"
+ ],
+ "blockers": [],
+ "reason": "Directly relevant predictive-modeling (including a prior propensity model) and strong SQL/Python skills closely match the core requirements."
+}

@@ -1,0 +1,17 @@
+{
+ "score": 68,
+ "matched": [
+  "Strong ML/AI knowledge",
+  "LLM experience",
+  "Python programming",
+  "Data science workflow (prep, training, evaluation, deployment)",
+  "Ability to translate business requirements into technical solutions",
+  "Cloud experience with Azure"
+ ],
+ "missing": [
+  "Low-code AI agent development with Microsoft Copilot Studio",
+  "Automation using Power Automate"
+ ],
+ "blockers": [],
+ "reason": "Strong AI/ML background but lacks required low‑code Copilot Studio and Power Automate experience."
+}

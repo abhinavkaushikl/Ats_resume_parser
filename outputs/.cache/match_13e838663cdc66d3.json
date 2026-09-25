@@ -1,0 +1,18 @@
+{
+ "score": 68,
+ "matched": [
+  "8+ years AI/ML experience",
+  "Python proficiency",
+  "cloud services (GCP, Azure)",
+  "production ML deployment",
+  "statistical modeling",
+  "collaborative team work"
+ ],
+ "missing": [
+  "TensorFlow/PyTorch or equivalent deep‑learning framework experience",
+  "mobile application experience (model optimization for mobile)",
+  "computer vision experience"
+ ],
+ "blockers": [],
+ "reason": "Strong AI/ML background and production experience but lacks mobile‑focused and deep‑learning framework expertise required for the role."
+}

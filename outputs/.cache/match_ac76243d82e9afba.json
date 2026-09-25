@@ -1,0 +1,17 @@
+{
+ "score": 32,
+ "matched": [
+  "real-time ML systems",
+  "anomaly detection",
+  "Python",
+  "some deep learning (LSTM)"
+ ],
+ "missing": [
+  "Staff-level architecture-strategy ownership",
+  "graph neural networks",
+  "PyTorch/distributed training depth",
+  "FinCrime/fraud/AML domain"
+ ],
+ "blockers": [],
+ "reason": "Staff-level role demands deep-learning architecture leadership, GNNs and fraud-domain expertise beyond what the resume demonstrates."
+}

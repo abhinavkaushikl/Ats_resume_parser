@@ -1,0 +1,21 @@
+{
+ "score": 42,
+ "matched": [
+  "agentic AI systems (LangGraph)",
+  "RAG architectures",
+  "Python",
+  "Docker/Kubernetes",
+  "FastAPI model deployment",
+  "CI/CD"
+ ],
+ "missing": [
+  "12+ years professional experience (candidate has ~8)",
+  "PyTorch hands-on fine-tuning of LLMs",
+  "financial services/credit analysis domain",
+  "mentoring/technical leadership at Associate Director scale"
+ ],
+ "blockers": [
+  "explicit 12+ years experience requirement not met"
+ ],
+ "reason": "Good technical overlap on agentic AI/RAG but the role explicitly requires 12+ years of experience versus the candidate's roughly 8."
+}

@@ -1,0 +1,18 @@
+{
+ "score": 32,
+ "matched": [
+  "Python",
+  "ML models for business application",
+  "Master's degree in ML/AI"
+ ],
+ "missing": [
+  "patents or top-tier publications",
+  "Java/C++",
+  "algorithms/data structures/numerical optimization research",
+  "recommendation systems / RL research"
+ ],
+ "blockers": [
+  "no publications or patents at top-tier venues (explicit basic qualification)"
+ ],
+ "reason": "Solid applied ML production experience but lacks the research-publication track record and CS-fundamentals depth this Amazon research scientist role requires."
+}

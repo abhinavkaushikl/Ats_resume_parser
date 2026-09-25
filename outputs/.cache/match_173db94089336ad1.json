@@ -1,0 +1,18 @@
+{
+ "score": 70,
+ "matched": [
+  "GenAI/Agentic AI/LLM",
+  "RAG/embeddings/vector DB",
+  "POC-to-production experience",
+  "Azure/GCP",
+  "Python",
+  "MLOps"
+ ],
+ "missing": [
+  "PyTorch/TensorFlow/HuggingFace explicitly",
+  "multimodal AI",
+  "fintech domain"
+ ],
+ "blockers": [],
+ "reason": "Good overall fit for an applied GenAI/agentic AI engineer role with matching production and cloud experience."
+}

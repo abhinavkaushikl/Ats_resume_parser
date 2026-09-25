@@ -1,0 +1,17 @@
+{
+ "score": 55,
+ "matched": [
+  "LLM/agentic systems (LangGraph)",
+  "Tool orchestration",
+  "Evaluation/observability pipelines",
+  "Python",
+  "Cloud experience"
+ ],
+ "missing": [
+  "TypeScript/NestJS backend engineering",
+  "Event-driven microservices",
+  "MCP protocol experience"
+ ],
+ "blockers": [],
+ "reason": "Strong agentic-AI and evaluation experience but lacks the production backend/TypeScript microservices engineering this role centers on."
+}

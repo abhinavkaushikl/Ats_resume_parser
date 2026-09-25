@@ -1,0 +1,20 @@
+{
+ "score": 38,
+ "matched": [
+  "Degree in related discipline",
+  "2+ years consulting experience",
+  "Hands‑on AI tool experience",
+  "Machine learning expertise",
+  "English proficiency"
+ ],
+ "missing": [
+  "German language proficiency at professional level",
+  "Cyber resilience experience",
+  "Robotics knowledge",
+  "Explicit agile methodology experience"
+ ],
+ "blockers": [
+  "German proficiency only A1, not sufficient for client‑facing role"
+ ],
+ "reason": "Strong AI and consulting background but lacks required professional German fluency, a hard blocker for this client‑facing position"
+}

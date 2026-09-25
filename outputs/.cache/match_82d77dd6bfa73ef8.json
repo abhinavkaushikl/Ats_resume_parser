@@ -1,0 +1,14 @@
+{
+ "score": 90,
+ "matched": [
+  "Master's degree in ML/AI",
+  "5+ years applied ML experience",
+  "Production ML systems design/deployment",
+  "Python/SQL",
+  "Docker/Kubernetes/CI",
+  "Stakeholder communication"
+ ],
+ "missing": [],
+ "blockers": [],
+ "reason": "Candidate meets all core must-haves with directly relevant production ML experience across forecasting, anomaly detection, and search domains."
+}

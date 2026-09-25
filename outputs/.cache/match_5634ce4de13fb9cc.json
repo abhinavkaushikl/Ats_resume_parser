@@ -1,0 +1,17 @@
+{
+ "score": 90,
+ "matched": [
+  "Advanced NLP/LLM experience",
+  "Agentic AI architectures (LangGraph, tool orchestration, RAG)",
+  "Production-grade agentic/conversational AI systems",
+  "LLM evaluation and optimization pipelines",
+  "MSc in Machine Learning/AI with 8+ years experience",
+  "Strong Python and ML/AI frameworks",
+  "Cross‑functional collaboration"
+ ],
+ "missing": [
+  "Peer‑reviewed publications/patents/open‑source contributions (nice‑to‑have)"
+ ],
+ "blockers": [],
+ "reason": "The candidate’s resume demonstrates extensive, production‑scale work on LLM‑based agents, LangGraph, RAG and evaluation, matching the core requirements, with only minor nice‑to‑have gaps."
+}

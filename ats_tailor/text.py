@@ -43,8 +43,10 @@ NUMBER_RE = re.compile(r"(?<![\w.])(?<![A-Za-z]-)\d+(?:[.,]\d+)?(?:\s?%|\+)?")
 
 def unsupported_numbers(text: str, source: str) -> list[str]:
     """Numeric tokens (with their %/+ suffix) in `text` that never appear in `source`."""
-    known = {n.replace(" ", "") for n in NUMBER_RE.findall(source)}
-    return sorted({n.replace(" ", "") for n in NUMBER_RE.findall(text)} - known)
+    def norm(n: str) -> str:  # "30+" and "30" are the same claim ("more than 30" vs "30+ prototypes")
+        return n.replace(" ", "").rstrip("+")
+    known = {norm(n) for n in NUMBER_RE.findall(source)}
+    return sorted({n.replace(" ", "") for n in NUMBER_RE.findall(text) if norm(n) not in known})
 
 
 def has_keyword(keyword: str, text: str) -> bool:

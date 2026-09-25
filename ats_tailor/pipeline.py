@@ -38,6 +38,7 @@ from .prompts import (
     PLAN_USER_TEMPLATE,
     RESUME_PREFIX_TEMPLATE,
     SUMMARY_SYSTEM_PROMPT_TEMPLATE,
+    SUBTLE_WRITE_NOTE,
     SUMMARY_USER_TEMPLATE,
     WRITE_SYSTEM_PROMPT,
     WRITE_USER_TEMPLATE,
@@ -161,6 +162,50 @@ def _keeps_base(summary: str, base_summary: str) -> bool:
     )
 
 
+def _scrub_company(project, company: str):
+    """Remove the company's name (and its first word, e.g. "Picnic" of "Picnic Technologies") from the project."""
+    names = {company.strip()} | ({company.split()[0]} if company.split() and len(company.split()[0]) > 3 else set())
+    names = [n for n in names if len(n) > 2]
+    if not names:
+        return project
+    alts = "|".join(re.escape(n) for n in sorted(names, key=len, reverse=True))
+    # The name plus a preposition in front of it ("at Picnic", "for Picnic's"), so no "at" is left behind.
+    pat = re.compile(r"(?:\b(?:at|for|by|with|from|of|to)\s+)?\b(?:" + alts + r")(?:'s)?\b", re.I)
+
+    def clean(t: str) -> str:
+        t = re.sub(r"\s{2,}", " ", pat.sub("", t))
+        t = re.sub(r"\s+(?:at|for|by|with|from|of)\s*(?=[.,;]|$)", "", t)  # "... at ." left behind
+        return re.sub(r"\s+([.,;])", r"\1", t).strip(" -,")
+    project.name = clean(project.name)
+    project.bullets = [clean(b) for b in project.bullets]
+    project.technologies = [t for t in (clean(t) for t in project.technologies) if t]
+    return project
+
+
+def _project_brief(resume: Resume, adds: ResumeAdditions, plan: JobPlan) -> str:
+    """Prep notes for the added project: what to be able to explain if the interview goes into it."""
+    proj = next((p for p in resume.projects if p.is_new), None)
+    if proj is None:
+        return ""
+    a = plan.analysis
+    return "\n".join([
+        f"# Project prep - {proj.name}", "",
+        f"Added for: {a.role or 'this role'} at {a.company or 'the company'} ({a.location or 'location not stated'})",
+        *([f"Apply: {a.apply_url}"] if getattr(a, "apply_url", None) else []),
+        f"Company profile: {a.company_profile or 'not stated'}", "",
+        "## On the resume", "", *[f"- {b}" for b in proj.bullets], "",
+        f"**Technologies:** {', '.join(proj.technologies)}", "",
+        "## Prepare before the interview", "",
+        "- Sketch the architecture end to end: data in, model / retrieval, evaluation, serving.",
+        "- For each technology above: why it was the right choice and one alternative you considered.",
+        "- How you evaluated it (offline metrics, test set) and how you would monitor it in production.",
+        "- One hard problem and how you solved it; one thing you would do differently.",
+        "- Ideally build a small working version and put it on GitHub before the interview.", "",
+        "## JD needs this project speaks to", "",
+        *[f"- {k}" for k in adds.jd_keywords[:12]], "",
+    ])
+
+
 def _city(location: str) -> str:
     """'Munich, Germany' -> 'Munich'; '' for unknown or remote roles."""
     city = re.split(r"[,(/|;]| or ", location)[0].strip()
@@ -175,6 +220,10 @@ class TailoringPipeline:
         self.reflector = ResumeReflector(settings, self.llm)
 
     # ------------------------------------------------------------------ LLM steps
+
+    @property
+    def subtle(self) -> bool:
+        return self.settings.tailor_mode.strip().lower() != "full"
 
     def _plan(self, base: Resume, jd: str) -> JobPlan:
         """Understand the job and map its needs to the candidate's real evidence.
@@ -202,7 +251,8 @@ class TailoringPipeline:
         """Write the resume additions from the plan (the JD itself is summarised in the plan)."""
         adds = self.llm.structured(
             WRITE_SYSTEM_PROMPT,
-            WRITE_USER_TEMPLATE.format(plan=plan.brief(), keywords=", ".join(plan.jd_keywords)),
+            WRITE_USER_TEMPLATE.format(plan=plan.brief(), keywords=", ".join(plan.jd_keywords))
+            + (SUBTLE_WRITE_NOTE if self.subtle else ""),
             ResumeAdditions,
             reasoning_effort=self.settings.writing_reasoning_effort,
             prefix=RESUME_PREFIX_TEMPLATE.format(base_resume=base.as_text()),
@@ -387,6 +437,14 @@ class TailoringPipeline:
         log.info("Plan: %s", plan.brief())
         adds = _clean(self._additions(base, plan))
         company = plan.analysis.company or ""
+        if self.subtle:
+            # Only the title, the summary and one new project change; experience, skills and the other
+            # projects (Think Tree above all) stay exactly as in the base resume.
+            adds.skills_to_add = []
+            adds.experience_pointers, adds.existing_project_pointers = [], []
+            adds.education_pointers, adds.charity_product_pointers = [], []
+            if adds.new_project:
+                adds.new_project = _scrub_company(adds.new_project, company)
         resume, report = merge(base, adds)
         if headline := _aligned_headline(base, adds.headline):
             resume.headline = headline  # job title alignment counts toward the ATS score
@@ -397,12 +455,14 @@ class TailoringPipeline:
         if not any(p.is_new for p in resume.projects):
             report.dropped.append("No company-specific project was added for this JD.")
         planned = {b for e in (*resume.experience, *resume.projects) for b in e.bullets}
-        resume = self._gap_fill(resume, adds, report)
+        if not self.subtle:
+            resume = self._gap_fill(resume, adds, report)
 
         hr_score, hr_rounds = None, []
         if self.settings.judge_enabled:
             try:
-                resume, rounds, lacking = self.reflector.run(resume, adds, jd_text, report)
+                resume, rounds, lacking = self.reflector.run(
+                    resume, adds, jd_text, report, max_revisions=0 if self.subtle else None)
             except LLMError as exc:
                 log.warning("HR judge failed; keeping the resume as is: %s", exc)
                 report.dropped.append(f"HR / ATS review could not run: {exc}")
@@ -433,10 +493,13 @@ class TailoringPipeline:
         resume_tex = out / f"{stem}_Resume.tex"
         letter_tex = out / f"{stem}_Cover_Letter.tex"
         (out / "job_description.txt").write_text(jd_text, encoding="utf-8")
+        if brief := _project_brief(resume, adds, plan):
+            (out / "project_brief.md").write_text(brief, encoding="utf-8")
 
         resume_tex.write_text(render_resume(resume, self.settings), encoding="utf-8")
         letter_tex.write_text(render_cover_letter(letter, resume.headline, self.settings), encoding="utf-8")
-        files = {"resume_tex": resume_tex.name, "cover_letter_tex": letter_tex.name}
+        files = {"resume_tex": resume_tex.name, "cover_letter_tex": letter_tex.name,
+                 **({"project_brief": "project_brief.md"} if (out / "project_brief.md").exists() else {})}
         pages = None
 
         try:

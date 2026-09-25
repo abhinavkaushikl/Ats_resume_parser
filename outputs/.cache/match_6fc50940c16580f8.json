@@ -1,0 +1,16 @@
+{
+ "score": 55,
+ "matched": [
+  "Agentic/LLM workflow design (LangGraph, tool orchestration)",
+  "REST API integration with third-party platforms",
+  "Cloud and CI/CD experience",
+  "Python backend development"
+ ],
+ "missing": [
+  "MCP (Model Context Protocol) experience",
+  "TypeScript/full-stack development",
+  "Finance/procurement domain exposure (Coupa, ERP, P2P)"
+ ],
+ "blockers": [],
+ "reason": "Agentic AI and backend integration skills are relevant, but the resume shows no MCP, TypeScript, or finance-process experience this role specifically needs."
+}

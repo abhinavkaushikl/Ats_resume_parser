@@ -1,0 +1,16 @@
+{
+ "score": 85,
+ "matched": [
+  "Strong Python engineering",
+  "LLM/AI agents/RAG/embeddings",
+  "Evaluation frameworks & observability (built at Optum)",
+  "Data analysis & ML concepts",
+  "English fluency (native)",
+  "Git/reproducible workflows"
+ ],
+ "missing": [
+  "Cyber security / Cyber Hygiene domain experience"
+ ],
+ "blockers": [],
+ "reason": "Resume closely matches the required Python plus LLM/agent plus evaluation-framework skillset, with only security-domain specificity missing."
+}

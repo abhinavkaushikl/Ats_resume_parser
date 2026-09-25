@@ -1,0 +1,17 @@
+{
+ "score": 25,
+ "matched": [
+  "Generative AI / LLM familiarity",
+  "cloud platform experience (GCP)",
+  "Python"
+ ],
+ "missing": [
+  "backend software development in Go or similar systems language",
+  "core backend/distributed systems engineering track record",
+  "production developer-tools platform experience"
+ ],
+ "blockers": [
+  "role is fundamentally a backend software engineering position; resume shows no Go and no backend platform engineering background"
+ ],
+ "reason": "Candidate is an AI/ML engineer, not a backend software engineer, and this role's core requirement is backend development skill the resume does not demonstrate."
+}

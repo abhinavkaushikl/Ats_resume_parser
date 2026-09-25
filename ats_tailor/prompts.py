@@ -521,7 +521,7 @@ COMPANY PROFILE: {company_profile}
 CURRENT HEADLINE: {headline}
 JD KEYWORDS STILL MISSING: {missing}
 
-SCORE: {score}/100, TARGET: {target}/100
+CURRENT SCORE: {score}/100
 POINTS LOST (biggest first):
 {losses}
 
@@ -538,4 +538,23 @@ CANDIDATE'S EXTRA SKILLS (true, not on the resume):
 CURRENT RESUME:
 
 {resume}
+"""
+
+
+SUBTLE_WRITE_NOTE = """
+
+SUBTLE MODE - read this first, it overrides the field rules above:
+- Only three fields are used: "headline" (the JD's job title, rules above), "summary_pointers" (2-3
+  phrases linking the candidate's real experience to this job, for a clearer summary) and "new_project".
+  Return every other field empty ("" or []): experience, skills and the existing projects stay exactly
+  as they are. Never touch the Think Tree project.
+- The summary phrases describe the candidate, not the company: no company name, no product names.
+- The project must read like an ordinary portfolio project the candidate chose to build, not like
+  something written for one employer. Describe the problem at industry level (e.g. "demand forecasting
+  for last-mile delivery", not the company's own product), and never use the company's name, its product
+  or brand names, or sentences copied from the job description.
+- Build it from techniques the resume already shows, so the candidate can explain every part of it, and
+  use the job description's technologies where they fit that work (in the bullets and in
+  "technologies"). No numbers, percentages or scale claims.
+- Name: 2-5 plain words describing what it does (e.g. "Delivery Demand Forecasting Engine").
 """

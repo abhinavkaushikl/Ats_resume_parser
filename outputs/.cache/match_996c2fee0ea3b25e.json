@@ -1,0 +1,22 @@
+{
+ "score": 72,
+ "matched": [
+  "3+ years AI/ML engineering experience",
+  "production AI/GenAI deployments",
+  "GenAI, LLM, RAG, AI agents",
+  "Python proficiency",
+  "MLflow, Docker, Kubernetes",
+  "CI/CD pipelines (Jenkins/Bamboo)",
+  "REST API integration",
+  "Git version control",
+  "Higher technical degree (MSc)",
+  "English B2+"
+ ],
+ "missing": [
+  "explicit Azure Machine Learning experience",
+  "Azure DevOps or GitHub CI/CD integration",
+  "specific Azure AI services"
+ ],
+ "blockers": [],
+ "reason": "Strong AI/GenAI background and MLOps skills, but lacks demonstrated Azure ML and Azure DevOps experience required by the role."
+}

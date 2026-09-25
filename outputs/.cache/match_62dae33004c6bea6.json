@@ -1,0 +1,18 @@
+{
+ "score": 25,
+ "matched": [
+  "Masters degree",
+  "LLM/GenAI experience",
+  "Python",
+  "Production LLM systems"
+ ],
+ "missing": [
+  "Large-scale LLM systems research experience",
+  "Publications in top-tier venues (NeurIPS/ICML/ICLR)",
+  "Algorithmic research background"
+ ],
+ "blockers": [
+  "No research publication track record or frontier LLM research experience required for FAIR"
+ ],
+ "reason": "Solid applied LLM engineering background but lacks the research publication track record and large-scale systems research experience FAIR requires."
+}

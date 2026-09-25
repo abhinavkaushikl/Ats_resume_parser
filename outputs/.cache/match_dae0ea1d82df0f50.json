@@ -1,0 +1,18 @@
+{
+ "score": 15,
+ "matched": [
+  "Deep learning",
+  "Python",
+  "cloud exposure (GCP/Azure)"
+ ],
+ "missing": [
+  "meteorological modeling domain",
+  "GraphCast/Aurora/FourCastNet experience",
+  "HPC/Slurm"
+ ],
+ "blockers": [
+  "French and English both required, no French shown",
+  "no weather-forecasting domain experience"
+ ],
+ "reason": "Highly specialized meteorological deep-learning role requiring domain expertise and French fluency the resume does not show."
+}

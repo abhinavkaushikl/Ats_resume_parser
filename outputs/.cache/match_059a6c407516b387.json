@@ -1,0 +1,17 @@
+{
+ "score": 90,
+ "matched": [
+  "6+ years industry experience",
+  "Master's degree in quantitative discipline",
+  "Hands‑on LLM/Generative AI experience (Claude, LangGraph, RAG)",
+  "End‑to‑end AI/ML lifecycle and productionization (Python, FastAPI, MLflow, Docker, K8s)",
+  "Design of AI architectures integrated with product systems",
+  "Agentic coding workflows (Claude, LangGraph)",
+  "Track record of delivering impactful data‑science projects"
+ ],
+ "missing": [
+  "Explicit documented mentorship of scientists/engineers"
+ ],
+ "blockers": [],
+ "reason": "The candidate meets all core experience, education, LLM, production and architecture requirements, with only minor gaps in stated mentorship."
+}

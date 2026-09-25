@@ -1,0 +1,22 @@
+{
+ "score": 15,
+ "matched": [
+  "GenAI/ML solution design",
+  "Python",
+  "SQL",
+  "stakeholder communication"
+ ],
+ "missing": [
+  "18-20+ yrs experience",
+  "HR/Talent Analytics domain",
+  "Microsoft Fabric/Copilot Studio",
+  "leading multidisciplinary global teams",
+  "executive advisory experience"
+ ],
+ "blockers": [
+  "candidate has ~8 yrs vs required 18-20+ yrs",
+  "no HR/Talent Intelligence domain background",
+  "no team leadership shown"
+ ],
+ "reason": "Role is a senior HR/Talent-analytics executive leadership position requiring double the candidate's experience and a domain (workforce analytics) he has not worked in."
+}

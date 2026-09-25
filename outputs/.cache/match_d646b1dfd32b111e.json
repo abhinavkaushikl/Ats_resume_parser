@@ -1,0 +1,19 @@
+{
+ "score": 25,
+ "matched": [
+  "Python",
+  "ML/DL modeling",
+  "Docker",
+  "MLOps lifecycle"
+ ],
+ "missing": [
+  "TensorFlow/PyTorch",
+  "embedded/defense ML domain",
+  "French language"
+ ],
+ "blockers": [
+  "French required",
+  "French defense security clearance (habilitation) required"
+ ],
+ "reason": "Defense-sector data scientist role requiring French fluency and national security clearance, neither shown in the resume."
+}

@@ -1,0 +1,18 @@
+{
+ "score": 74,
+ "matched": [
+  "Python production ML",
+  "XGBoost/LightGBM",
+  "Airflow pipelines",
+  "Docker/Kubernetes",
+  "REST API (Flask)",
+  "RAG/vector DB"
+ ],
+ "missing": [
+  "Dagster specifically",
+  "FastAPI specifically",
+  "publication record (plus only)"
+ ],
+ "blockers": [],
+ "reason": "Solid match for a production ML engineer role, with matching pipeline, deployment and modeling tools despite exceeding the 3+ year requirement."
+}

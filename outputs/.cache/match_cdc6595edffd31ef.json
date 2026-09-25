@@ -1,0 +1,18 @@
+{
+ "score": 52,
+ "matched": [
+  "Python",
+  "ML fundamentals (training, evaluation)",
+  "Kubernetes",
+  "LLM evaluation/embeddings experience",
+  "Production ML deployment"
+ ],
+ "missing": [
+  "Web fundamentals (HTTP/DNS)",
+  "Go and Perl",
+  "Adversarial/cybercrime ML domain",
+  "LLM serving at scale (vLLM)"
+ ],
+ "blockers": [],
+ "reason": "Solid ML engineering overlap but lacks the web fundamentals and Go/Perl skills the role explicitly requires."
+}

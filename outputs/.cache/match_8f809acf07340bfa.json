@@ -1,0 +1,17 @@
+{
+ "score": 55,
+ "matched": [
+  "5-8 years applied ML",
+  "strong programming (Python)",
+  "clustering (DBSCAN), classic ML (XGBoost, LightGBM)",
+  "NLP (SBERT, cross-encoder)",
+  "shipping ML to production"
+ ],
+ "missing": [
+  "primary technical leader for a team",
+  "staff-level product-ML ownership track record",
+  "advanced research/PhD background"
+ ],
+ "blockers": [],
+ "reason": "Experience level and applied-ML breadth fit, but resume does not clearly show staff-level technical leadership of a team, which is a core requirement."
+}

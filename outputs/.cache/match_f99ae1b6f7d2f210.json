@@ -1,0 +1,18 @@
+{
+ "score": 48,
+ "matched": [
+  "Degree in related discipline (MSc Machine Learning & AI, BTech IT)",
+  "2+ years IT consulting/software development experience",
+  "Hands‑on AI tools and AI‑integrated architectures (LangChain, LangGraph, Claude, OpenAI)",
+  "DevOps/MLOps experience (Docker, Kubernetes, Jenkins, CI/CD)",
+  "Broad technical expertise in ML, cloud, data platforms"
+ ],
+ "missing": [
+  "Proficient German language skills (required for client communication)",
+  "Explicit cyber‑resilience experience"
+ ],
+ "blockers": [
+  "Insufficient German proficiency (only A1 level)"
+ ],
+ "reason": "Strong AI and consulting background but lacks the required German fluency and cyber‑resilience experience, which are essential for the role."
+}

@@ -1,0 +1,21 @@
+{
+ "score": 35,
+ "matched": [
+  "4+ years relevant experience in IT/software development",
+  "Relevant degree (MSc in Machine Learning and AI, BTech in IT)",
+  "Hands‑on knowledge of cloud, microservices, AI",
+  "Practical DevOps/CI‑CD experience (Docker, Kubernetes, Jenkins, Terraform)",
+  "Experience with modern IT architectures and enterprise solutions"
+ ],
+ "missing": [
+  "Fluent Polish language",
+  "Explicit evidence of leading tech project teams",
+  "Demonstrated above‑average academic grades",
+  "Documented experience evaluating client digital capabilities and producing architectural recommendations",
+  "Stated willingness to travel"
+ ],
+ "blockers": [
+  "Lack of Polish fluency, a required language"
+ ],
+ "reason": "Missing required Polish language proficiency makes the candidate unsuitable despite strong technical background."
+}

@@ -1,0 +1,16 @@
+{
+ "score": 80,
+ "matched": [
+  "Master's degree in Machine Learning/AI",
+  "Python programming experience",
+  "Built production ML models for business applications",
+  "8+ years of experience with deep learning and ML methods",
+  "Experience with data pipelines, parsing (Amazon Textract), and distributed computing (PySpark, Spark)"
+ ],
+ "missing": [
+  "Explicit Java or C++ experience",
+  "Research publications or patents"
+ ],
+ "blockers": [],
+ "reason": "Strong alignment with required education, deep learning experience, and applied ML work, but lacks demonstrated Java/C++ skills and research publication record."
+}

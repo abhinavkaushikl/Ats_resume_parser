@@ -1,0 +1,16 @@
+{
+ "score": 38,
+ "matched": [
+  "Master's degree in ML/AI",
+  "Python programming",
+  "Experience with algorithms/data structures, parsing, distributed computing (Spark, PySpark)",
+  "Built ML models for business applications"
+ ],
+ "missing": [
+  "Patents or peer‑reviewed publications"
+ ],
+ "blockers": [
+  "No evidence of patents or top‑tier peer‑reviewed publications, a stated basic qualification"
+ ],
+ "reason": "Missing required patents/publications despite strong relevant experience lowers fit significantly"
+}

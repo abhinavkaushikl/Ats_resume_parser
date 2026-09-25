@@ -1,0 +1,19 @@
+{
+ "score": 48,
+ "matched": [
+  "MS in Machine Learning/AI",
+  "8+ years applied ML/AI engineering",
+  "LLM/agent evaluation pipelines and quality metrics",
+  "LangGraph multi-agent and RAG systems",
+  "Production ML engineering (Docker, K8s, MLflow)",
+  "Strong Python"
+ ],
+ "missing": [
+  "PhD or equivalent deep research background",
+  "Hands-on LLM/agent post-training data creation (the most heavily weighted requirement)",
+  "Setting technical research direction for a team",
+  "Distributed training/GPU infrastructure experience"
+ ],
+ "blockers": [],
+ "reason": "Candidate's LLM evaluation and production engineering work is relevant, but the role's core requirement - hands-on post-training data creation with PhD-level research ownership - is not shown in the resume."
+}

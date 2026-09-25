@@ -1,0 +1,19 @@
+{
+ "score": 35,
+ "matched": [
+  "Master's degree in ML/AI",
+  "Python programming",
+  "Algorithms/data structures and parsing experience",
+  "Built ML models for business applications",
+  "Unix/Linux experience",
+  "Professional software development"
+ ],
+ "missing": [
+  "Patents or peer‑reviewed publications",
+  "Explicit Java/C++ experience"
+ ],
+ "blockers": [
+  "Missing required patents or top‑tier peer‑reviewed publications"
+ ],
+ "reason": "Key basic qualification of publications/patents is absent, making the candidate a poor fit despite relevant ML and production experience."
+}

@@ -157,10 +157,12 @@ class ResumeReflector:
         self.graph = graph.compile()
 
     def run(
-        self, resume: Resume, adds: ResumeAdditions, jd: str, report: MergeReport
+        self, resume: Resume, adds: ResumeAdditions, jd: str, report: MergeReport, max_revisions: int | None = None
     ) -> tuple[Resume, list[Round], list[str]]:
-        """Judge and revise; returns the best resume, the score per round and new uncovered needs."""
+        """Judge and revise; returns the best resume, the score per round and new uncovered needs.
+        max_revisions=0 only judges (subtle mode: the resume is not rewritten after the judge)."""
         self._adds, self._jd, self._report = adds, jd, report
+        self._max_revisions = self.settings.judge_max_revisions if max_revisions is None else max_revisions
         state = self.graph.invoke(
             {"resume": resume, "best": resume, "best_score": -1, "revisions": 0, "history": [], "not_covered": [],
              "stale": 0, "failed": []}
@@ -249,7 +251,7 @@ class ResumeReflector:
     def _route(self, state: ReflectionState) -> str:
         if state["best_score"] >= self.settings.judge_pass_score:
             return "done"
-        if state["revisions"] >= self.settings.judge_max_revisions:
+        if state["revisions"] >= self._max_revisions:
             return "done"
         if state["stale"] >= self.settings.judge_patience:
             log.info("No improvement in %d revisions; stopping at %d/100", state["stale"], state["best_score"])

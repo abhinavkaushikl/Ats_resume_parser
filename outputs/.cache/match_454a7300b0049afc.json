@@ -1,0 +1,16 @@
+{
+ "score": 55,
+ "matched": [
+  "Strong Python (alternate track explicitly welcomed)",
+  "RAG/LangChain/LLM agentic workflows",
+  "Docker/Kubernetes/GCP",
+  "CI/CD experience (Jenkins)"
+ ],
+ "missing": [
+  "Java 17/21 + Spring Boot (primary track)",
+  "Kafka/IBM MQ streaming platforms",
+  "TDD/BDD backend testing practices"
+ ],
+ "blockers": [],
+ "reason": "Meets the explicitly-welcomed enterprise-Python alternate path with strong GenAI/RAG experience, but lacks the primary Java/Spring backend and messaging-platform skills."
+}

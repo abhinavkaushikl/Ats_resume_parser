@@ -54,6 +54,15 @@ class Settings(BaseSettings):
     latex_timeout_seconds: int = 180
     max_resume_pages: int = 2
 
+    # --- Tailoring mode ----------------------------------------------------
+    # subtle: only the title (the JD's job title), the summary (tweaked toward the JD) and ONE new project
+    #         fitting the company's profile change. Experience, skills and the other projects - Think Tree
+    #         above all - stay exactly as in the base resume. No company name anywhere. The judge scores it
+    #         once (no revision loop). About 5 LLM calls per job.
+    # full:   rewrites across the resume (headline, summary, experience bullets, skills, project) and runs
+    #         the judge / revision loop. About 6-11 LLM calls per job.
+    tailor_mode: str = "subtle"
+
     # --- JD coverage -------------------------------------------------------
     # Extra LLM rounds that place JD keywords still missing from the resume.
     coverage_rounds: int = 1
