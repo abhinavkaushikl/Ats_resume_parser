@@ -38,23 +38,33 @@ def jd_text(j) -> str:
 
 
 def write_daily(jobs, hours: int, cities: list[str]):
+    """One file, two parts: jobs from company career sites / job boards first, then LinkedIn."""
     now = datetime.now(timezone.utc)
     path = OUT / "daily" / f"jobs_{datetime.now():%Y-%m-%d}.md"
     path.parent.mkdir(parents=True, exist_ok=True)
     jobs = sorted(jobs, key=lambda j: (cities.index(j.city), -(j.posted or now).timestamp()))
+    direct = [j for j in jobs if not finder.is_linkedin(j)]
+    linkedin = [j for j in jobs if finder.is_linkedin(j)]
     counts = ", ".join(f"{c} {n}" for c in cities if (n := sum(j.city == c for j in jobs)))
     L = [f"# AI / ML jobs - last {hours}h - {datetime.now():%Y-%m-%d}", "",
-         f"{len(jobs)} jobs" + (f" · {counts}" if counts else "") + f" · generated {now:%H:%M} UTC", ""]
-    for n, j in enumerate(jobs, 1):
-        posted = f"{j.posted.astimezone(timezone.utc):%Y-%m-%d %H:%M} UTC ({finder.age(j.posted)})" if j.posted else "unknown"
-        L += ["---", "", f"## {n}. {j.title}", "",
-              f"- **Company:** {j.company}", f"- **Location:** {j.location or j.city}",
-              f"- **Posted:** {posted}", f"- **Link:** {j.url}", ""]
-        jd = jd_text(j)
-        L += ["<details><summary>Job description</summary>", "", jd,
-              "", "</details>", ""] if jd else ["_Job description not available - open the link._", ""]
-    if not jobs:
-        L += ["_No matching jobs posted in this window._"]
+         f"{len(jobs)} jobs ({len(direct)} company sites, {len(linkedin)} LinkedIn)"
+         + (f" · {counts}" if counts else "") + f" · generated {now:%H:%M} UTC", "",
+         "**Jump to:** [Company career sites](#part-1-company-career-sites) · [LinkedIn](#part-2-linkedin)", ""]
+    n = 0
+    for heading, part in (("# Part 1: Company career sites", direct), ("# Part 2: LinkedIn", linkedin)):
+        L += [heading, "", f"{len(part)} jobs", ""]
+        if not part:
+            L += ["_No matching jobs posted in this window._", ""]
+        for j in part:
+            n += 1
+            posted = f"{j.posted.astimezone(timezone.utc):%Y-%m-%d %H:%M} UTC ({finder.age(j.posted)})" if j.posted else "unknown"
+            L += ["---", "", f"## {n}. {j.title}", "",
+                  f"- **Company:** {j.company}", f"- **Location:** {j.location or j.city}",
+                  f"- **Posted:** {posted}", f"- **Visa / relocation:** {finder.visa_cell(j)}",
+                  f"- **Link:** {j.url}", ""]
+            jd = jd_text(j)
+            L += ["<details><summary>Job description</summary>", "", jd,
+                  "", "</details>", ""] if jd else ["_Job description not available - open the link._", ""]
     path.write_text("\n".join(L), encoding="utf-8")
     return path
 

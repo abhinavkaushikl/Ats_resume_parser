@@ -155,6 +155,12 @@ WHAT TO RETURN
 - "skills_to_add": every JD technology, tool and method the resume does
   not list yet and the KEYWORD POLICY allows; copy a SKILL CATEGORY name
   from the resume exactly ("Additional" only if none fits).
+- "headline": the JD's job title exactly as the JD writes it, without
+  gender tags like "(m/f/d)" or locations, e.g. "Senior Machine Learning
+  Engineer". It replaces only the headline at the top; role titles
+  stay as they are. Use it if the candidate's work fits that title and
+  its seniority (no Staff, Principal, Lead or Head unless the resume
+  shows it); otherwise "" to keep the current headline.
 - "summary_pointers": 2-3 short phrases that connect the candidate's
   real experience to this role (e.g. "retrieval and re-ranking systems
   for LLM search"). Never claim more than the resume shows.
@@ -166,6 +172,9 @@ QUALITY BAR FOR EVERY BULLET
 - Says what was built, how, and why it mattered. Uses the JD's words
   where they describe real work; never lists keywords for their own sake.
 - Same voice and level of detail as the existing bullets of that role.
+- Where a JD technology was really used, show it in the bullet for that
+  work, not only in the skills list. Never add a term just to match
+  the JD: if the candidate did not do the work, leave it out.
 - BAD: "Authored technical writing that described conversational
   surfaces and product optimization strategies." (keyword stuffing)
 - BAD: "Participated in on-call rotation..." when the resume never says so.
@@ -198,7 +207,8 @@ TRUTH RULES
 """ + HUMAN_STYLE + """
 
 Return ONLY this JSON:
-{"summary_pointers": [""],
+{"headline": "",
+ "summary_pointers": [""],
  "skills_to_add": [{"skill": "", "category": ""}],
  "experience_pointers": [{"company": "", "role": "", "bullets": [""]}],
  "existing_project_pointers": [{"project": "", "bullets": [""]}],
@@ -361,10 +371,18 @@ EXACTLY 5 paragraphs, 330-420 words in total (one page):
    city name exactly (it explains why I am relocating and will stay long
    term). Then a short, confident request for an interview.
 
-RULES
+TRUTH RULES (this letter is not fact-checked afterwards: get it right
+in one go, and check every sentence against the resume before answering)
 - Every claim about my past must be traceable to the resume. Never
-  claim leading teams, mentoring, on-call, headcount or tools not in
-  the resume. Do not call an earlier role "most recent".
+  claim leading teams, mentoring, on-call, headcount, budgets,
+  workshops, publications or tools not in the resume.
+- Quote each metric exactly as the resume states it, and only for the
+  work it belongs to (never credit a metric to a different system).
+- Name a tool for an employer only if the resume shows it there; claim
+  no domain experience the resume lacks.
+- Correct chronology: do not call an earlier role "most recent".
+- Future plans ("I will", "I would") may go beyond the resume; past
+  facts may not.
 - No "I am writing to apply", no "I am excited", no restating the JD.
 - No placeholders. Greeting: "Dear Hiring Team," unless the JD names a
   person. Plain text only, no markdown, no signature, no contact details.
@@ -385,76 +403,6 @@ JOB LOCATION: {location}
 PERSONAL MOTIVATION (true; use it in paragraph 5):
 
 {motivation}
-"""
-
-
-# ---------------------------------------------------------------------------
-# 4. Cover letter fact-check and revision
-# ---------------------------------------------------------------------------
-
-FACT_CHECK_SYSTEM_PROMPT = """
-You are a meticulous fact-checker for job applications.
-
-Compare the COVER LETTER against the RESUME (the only source of
-truth). Check ONLY statements about what the candidate HAS done or
-HAS (past work, results, skills, credentials). List each such claim
-that the resume does NOT support, including:
-
-- responsibilities not in the resume (mentoring, leading teams,
-  owning budgets, team sizes, workshops, publications)
-- numbers or metrics that differ from, or are absent in, the resume,
-  or a real metric attached to different work than in the resume
-  (e.g. the 67% downtime reduction credited to a pricing model)
-- tools or platforms claimed for an employer where the resume does not
-  show them
-- claimed domain experience the resume does not show
-- wrong chronology (e.g. calling a past role "most recent")
-
-Do NOT flag: anything about the future ("I will", "I would", "I
-can", "my goal", "I want", "I aim"), paraphrasing or summarising of
-resume work, JD keywords used to describe supported work, statements
-of interest or motivation, facts about the target
-company or role taken from the job description, or the
-candidate's personal motivation (their partner or fiance(e) in
-Berlin, plans to move to or settle in the job's city), or the
-candidate's career goals.
-
-Return ONLY a JSON object with exactly this shape ("issues" is
-empty if everything is supported):
-
-{"issues": [{"claim": "exact sentence or phrase", "reason": ""}]}
-"""
-
-FACT_CHECK_USER_TEMPLATE = """
-COVER LETTER:
-
-{text}
-"""
-
-REVISE_SYSTEM_PROMPT = """
-You revise a DRAFT cover letter to fix the listed PROBLEMS. The RESUME
-is the only source of truth about the candidate's past.
-
-- Fix every problem: reword an unsupported claim to what the RESUME
-  actually states, or drop it, keeping the sentence grammatical and
-  the paragraph flowing.
-- Keep everything else as it is: the 5 paragraphs, their order and
-  purpose, the forward-looking contribution, the goal and the personal
-  motivation paragraph (including its city names).
-""" + HUMAN_STYLE + """
-
-Return ONLY the full revised letter as JSON:
-{"company": "", "role": "", "greeting": "", "paragraphs": ["", "", "", "", ""], "closing": ""}
-"""
-
-REVISE_USER_TEMPLATE = """
-DRAFT (JSON):
-
-{draft}
-
-PROBLEMS TO FIX:
-
-{problems}
 """
 
 
@@ -522,22 +470,24 @@ RESUME UNDER REVIEW:
 
 REFLECT_SYSTEM_PROMPT = """
 You improve a tailored resume after an HR / ATS review, to raise its
-score toward the TARGET. POINTS LOST shows where the score goes,
-biggest loss first: win those points back first. Apply every fix the
-candidate's real work supports. Do NOT repeat the changes listed under
+score toward the TARGET. There are only 2-3 rounds, so apply every
+fix the candidate's real work supports in this revision, not one at a
+time. If a gap needs experience the candidate does not have, leave it:
+an honest lower score is the right result. POINTS LOST shows where the
+score goes, biggest loss first. Do NOT repeat the changes listed under
 ALREADY TRIED: they did not raise the score; try a different edit.
 
 What you may return:
-- "headline": the JD's job title combined with the CURRENT HEADLINE,
-  e.g. "Data Scientist | Senior AI Engineer", only if the candidate's
-  work fits that title. It must contain the current headline exactly.
-  "" to keep it.
+- "headline": the JD's job title exactly as the JD writes it (no
+  gender tags or locations), only if the candidate's work and seniority
+  fit it and the CURRENT HEADLINE is not already that title. "" to keep it.
 - "skills_to_add": JD terms the resume already supports (or listed in
   the candidate's extra skills), spelled as in the JD, under the best
   existing skill category.
-- "experience_pointers": at most 2 new bullets in total, under
-  existing roles (copy the company name exactly), only where that role
-  really did the work. No new numbers, no target-company words.
+- "experience_pointers": at most 4 new bullets in total (at most 2 per
+  role), under existing roles (copy the company name exactly), only
+  where that role really did the work. No new numbers, no
+  target-company words.
 - "existing_project_pointers": new bullets for the candidate's own
   projects (copy the project name), only for work that project did.
 - "new_project": a REWRITE of the company-specific project, only if

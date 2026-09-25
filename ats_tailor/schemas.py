@@ -177,7 +177,7 @@ class ResumeAdditions(BaseModel):
     education_pointers: list[str] = Field(default_factory=list)
     charity_product_pointers: list[str] = Field(default_factory=list)
     requirements_not_covered: list[str] = Field(default_factory=list)
-    # Reflection only: headline aligned with the JD title; must keep the base headline.
+    # The JD's job title as the headline (role titles are never changed).
     headline: str = ""
 
 
@@ -194,15 +194,6 @@ class CoverLetter(BaseModel):
     greeting: str = "Dear Hiring Team,"
     paragraphs: list[str] = Field(min_length=3, max_length=6)
     closing: str = "Sincerely,"
-
-
-class UnsupportedClaim(BaseModel):
-    claim: str
-    reason: str
-
-
-class FactCheck(BaseModel):
-    issues: list[UnsupportedClaim] = Field(default_factory=list)
 
 
 # --------------------------------------------------------------------------- reflection (HR judge)

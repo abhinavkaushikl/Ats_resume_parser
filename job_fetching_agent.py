@@ -9,7 +9,7 @@ Graph
   calls the fetch_jobs tool, and summarises the result. The tool writes
   jobs/jobs_<timestamp>.md and jobs/latest.md.
 
-Needs in .env: GROQ_API_KEY. Search uses free Bing unless SERPER_API_KEY (or GOOGLE_API_KEY + GOOGLE_CSE_ID) is set.
+Needs in .env: GROQ_API_KEY and/or FALLBACK_LLM_API_KEY + FALLBACK_LLM_MODEL (fallback, OpenAI by default). Search uses free Bing unless SERPER_API_KEY (or GOOGLE_API_KEY + GOOGLE_CSE_ID) is set.
 
 Usage
   .venv/bin/python job_fetching_agent.py
@@ -112,12 +112,25 @@ class AgentState(TypedDict):
     messages: Annotated[list[AnyMessage], add_messages]
 
 
-def build_graph():
+def build_llm():
+    """Groq, falling back to the FALLBACK_LLM_* model (OpenAI by default) when Groq fails."""
+    llms = []
     key = os.environ.get("GROQ_API_KEY") or os.environ.get("GROQ_API_KEYS", "").split(",")[0].strip()
-    if not key:
-        sys.exit("Set GROQ_API_KEY in .env")
-    llm = ChatGroq(model=os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b"), api_key=key,
-                   temperature=0).bind_tools(TOOLS)
+    if key:
+        llms.append(ChatGroq(model=os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b"), api_key=key,
+                             temperature=0).bind_tools(TOOLS))
+    if fallback_key := os.environ.get("FALLBACK_LLM_API_KEY"):
+        from langchain_openai import ChatOpenAI
+        llms.append(ChatOpenAI(base_url=os.environ.get("FALLBACK_LLM_BASE_URL", "https://api.openai.com/v1"),
+                               model=os.environ.get("FALLBACK_LLM_MODEL", ""), api_key=fallback_key,
+                               timeout=float(os.environ.get("FALLBACK_LLM_TIMEOUT_SECONDS", 300))).bind_tools(TOOLS))
+    if not llms:
+        sys.exit("Set GROQ_API_KEY or FALLBACK_LLM_API_KEY in .env")
+    return llms[0].with_fallbacks(llms[1:]) if len(llms) > 1 else llms[0]
+
+
+def build_graph():
+    llm = build_llm()
 
     def agent(state: AgentState):
         return {"messages": [llm.invoke([SystemMessage(SYSTEM_PROMPT)] + state["messages"])]}

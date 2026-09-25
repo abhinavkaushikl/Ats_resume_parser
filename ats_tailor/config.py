@@ -34,6 +34,14 @@ class Settings(BaseSettings):
     llm_tpm_limit: int = 8000
     llm_timeout_seconds: float = 180.0
     llm_max_retries: int = 6
+    # Without a fallback model: how long to wait for a capped Groq key to reset instead of failing.
+    llm_max_wait_minutes: int = 240
+    # Fallback model (OpenAI, or any OpenAI-compatible API). Used when Groq is unavailable or not configured;
+    # it is enabled by setting FALLBACK_LLM_API_KEY.
+    fallback_llm_base_url: str = "https://api.openai.com/v1"
+    fallback_llm_model: str = ""
+    fallback_llm_api_key: SecretStr = SecretStr("")
+    fallback_llm_timeout_seconds: float = 300.0
 
     # --- Files -------------------------------------------------------------
     base_resume_path: Path = PROJECT_ROOT / "base_resume.pdf"
@@ -54,7 +62,7 @@ class Settings(BaseSettings):
     # The judge scores the tailored resume out of 100; below the pass mark it is revised and re-judged.
     judge_enabled: bool = True
     judge_pass_score: int = 95
-    judge_max_revisions: int = 4
+    judge_max_revisions: int = 3
     # Stop early after this many revisions in a row that did not raise the score.
     judge_patience: int = 2
 

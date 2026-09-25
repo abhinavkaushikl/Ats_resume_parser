@@ -13,6 +13,7 @@ Every revision starts from the best-scoring resume so far, and the best one is r
 """
 
 import logging
+import re
 from dataclasses import dataclass, field
 from typing import TypedDict
 
@@ -58,12 +59,24 @@ def _losses(verdict: JudgeVerdict) -> str:
     return "\n".join(f"- {LABELS[n]}: -{loss} of {pts}. {getattr(verdict, n).reason}" for loss, n, pts in lost if loss)
 
 
-def _aligned_headline(base: str, proposed: str) -> str | None:
-    """Accept a JD-aligned headline only if it keeps the candidate's own headline."""
-    proposed = plain_text(proposed).strip(" |")
-    if not proposed or key(proposed) == key(base) or key(base) not in key(proposed) or len(proposed) > 80:
+# Title words that claim more seniority than a role title; the JD title is used only if the
+# resume's own headline or role titles already show them.
+SENIORITY_WORDS = ("staff", "principal", "lead", "head", "director", "manager", "vp", "chief", "distinguished", "architect")
+# "(m/w/d)", "(f/m/x)", "(all genders)"... are job-ad tags, not part of the title.
+_GENDER_TAG_RE = re.compile(r"\s*[(\[]\s*(?:[a-z]{1,3}\s*/\s*){1,3}[a-z.]{1,4}\s*[)\]]|\s*\(all genders\)", re.I)
+
+
+def _aligned_headline(base: Resume, proposed: str) -> str | None:
+    """The JD's job title as the headline (role titles below stay unchanged), unless it claims
+    seniority the resume does not show."""
+    title = plain_text(_GENDER_TAG_RE.sub("", proposed)).strip(" |-,")
+    if not title or key(title) == key(base.headline) or len(title) > 60:
         return None
-    return proposed
+    shown = " ".join([base.headline, *(e.title for e in base.experience)]).lower()
+    if over := [w for w in SENIORITY_WORDS if re.search(rf"\b{w}\b", title, re.I) and not re.search(rf"\b{w}\b", shown)]:
+        log.info("Headline '%s' not used: the resume shows no %s title", title, "/".join(over))
+        return None
+    return title
 
 
 def review_text(verdict: JudgeVerdict) -> str:
@@ -278,7 +291,7 @@ class ResumeReflector:
             base = best.model_copy(deep=True)
             base.projects = [p for p in base.projects if not p.is_new]
         revised, round_report = merge(base, fix)
-        if headline := _aligned_headline(best.headline, fix.headline):
+        if headline := _aligned_headline(best, fix.headline):
             revised.headline = headline
         for e in revised.experience:
             while e.added > MAX_ADDED_PER_ROLE:

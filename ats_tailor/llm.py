@@ -1,4 +1,4 @@
-"""Groq client (OpenAI-compatible) returning validated Pydantic models.
+"""Groq client (OpenAI-compatible) returning validated Pydantic models, with an optional fallback model.
 
 Several API keys can be configured; on a rate limit the call moves to the key that is
 available soonest, so one exhausted key (e.g. its daily token cap) does not stop the run.
@@ -11,7 +11,9 @@ import threading
 import time
 from typing import TypeVar
 
-from openai import APIConnectionError, APITimeoutError, BadRequestError, InternalServerError, OpenAI, RateLimitError
+
+from openai import (APIConnectionError, APITimeoutError, AuthenticationError, BadRequestError, InternalServerError,
+                    OpenAI, RateLimitError)
 from pydantic import BaseModel, ValidationError
 
 from .config import Settings
@@ -24,6 +26,7 @@ CHARS_PER_TOKEN = 3.8  # measured ~4.5 on this workload; kept slightly conservat
 MIN_OUTPUT_TOKENS = 1500
 # If every key is blocked for longer than this (daily caps), fail instead of waiting.
 MAX_RATE_LIMIT_WAIT_SECONDS = 120
+FALLBACK_RATE_LIMIT_RETRIES = 3
 _TRY_AGAIN_RE = re.compile(r"try again in (?:(\d+)h)?(?:(\d+)m)?(?:([\d.]+)s)?", re.I)
 
 
@@ -51,8 +54,9 @@ class _KeyPool:
 
     def __init__(self, settings: Settings):
         keys = settings.all_groq_keys()
-        if not keys:
-            raise LLMError("No Groq API key configured. Set GROQ_API_KEY (and optionally GROQ_API_KEYS) in .env.")
+        if not keys and not settings.fallback_llm_api_key.get_secret_value():
+            raise LLMError("No Groq API key configured. Set GROQ_API_KEY (and optionally GROQ_API_KEYS) "
+                           "or FALLBACK_LLM_API_KEY in .env.")
         # Rate limits are handled here (switch key); the SDK still retries 5xx / connection errors.
         self.clients = [
             OpenAI(
@@ -78,7 +82,8 @@ class _KeyPool:
 
 
 def _extract_json(text: str) -> str:
-    """Strip accidental markdown fences / prose around a JSON object."""
+    """Strip reasoning (<think> blocks of reasoning models), markdown fences and prose around a JSON object."""
+    text = re.sub(r"<think>.*?</think>", "", text, flags=re.S)
     text = re.sub(r"^```(?:json)?\s*|\s*```$", "", text.strip())
     start, end = text.find("{"), text.rfind("}")
     if start == -1 or end == -1:
@@ -90,20 +95,79 @@ class LLMClient:
     def __init__(self, settings: Settings):
         self.settings = settings
         self._keys = _KeyPool(settings)
-        log.info("Groq keys configured: %d", len(self._keys.clients))
+        self._fallback = (
+            OpenAI(
+                api_key=settings.fallback_llm_api_key.get_secret_value(),
+                base_url=settings.fallback_llm_base_url,
+                timeout=settings.fallback_llm_timeout_seconds,
+                max_retries=1,
+            )
+            if settings.fallback_llm_api_key.get_secret_value()
+            else None
+        )
+        log.info("Groq keys configured: %d; fallback model: %s", len(self._keys.clients),
+                 settings.fallback_llm_model if self._fallback else "none")
 
-    def _create(self, **kwargs):
+    def _create(self, *, use_groq: bool = True, **kwargs):
+        """Groq first; the fallback model when Groq is exhausted, failing or not configured."""
+        if use_groq and self._keys.clients:
+            try:
+                return self._create_groq(**kwargs)
+            except (LLMError, AuthenticationError) as exc:
+                if not self._fallback:
+                    raise
+                log.warning("Groq unavailable (%s); using fallback model %s", exc, self.settings.fallback_llm_model)
+        if not self._fallback:
+            raise LLMError("Request too large for Groq and no FALLBACK_LLM_API_KEY is configured.")
+        return self._create_fallback(**kwargs)
+
+    def _create_fallback(self, *, model, reasoning_effort=None, **kwargs):
+        """Same request on the fallback API (OpenAI by default). Parameters a model rejects (e.g. a custom
+        temperature on reasoning models, or reasoning_effort on non-reasoning ones) are dropped and the call
+        is retried; rate limits are retried with a pause."""
+        kwargs["model"] = self.settings.fallback_llm_model
+        if reasoning_effort:
+            kwargs["reasoning_effort"] = reasoning_effort
+        for attempt in range(FALLBACK_RATE_LIMIT_RETRIES + 1):
+            try:
+                return self._fallback.chat.completions.create(**kwargs)
+            except BadRequestError as exc:
+                bad = next((p for p in ("reasoning_effort", "temperature", "response_format") if p in kwargs and p in str(exc)), None)
+                if "max_completion_tokens" in str(exc) and "max_completion_tokens" in kwargs:
+                    kwargs["max_tokens"] = kwargs.pop("max_completion_tokens")   # older OpenAI-compatible servers
+                elif bad:
+                    log.info("Fallback model does not accept %s; retrying without it", bad)
+                    kwargs.pop(bad)
+                else:
+                    raise
+            except RateLimitError:
+                if attempt == FALLBACK_RATE_LIMIT_RETRIES:
+                    raise LLMError(f"Fallback model {self.settings.fallback_llm_model} is rate-limited; try again later.")
+                log.warning("Fallback model rate-limited; retrying in %ds", 15 * (attempt + 1))
+                time.sleep(15 * (attempt + 1))
+            except (APIConnectionError, APITimeoutError) as exc:
+                raise LLMError(f"Fallback model at {self.settings.fallback_llm_base_url} is unreachable: {exc}") from exc
+        raise LLMError("Fallback request kept failing.")
+
+    def _create_groq(self, **kwargs):
         """chat.completions.create with key rotation on 429 and backoff on transient errors."""
         for attempt in range(self.settings.llm_max_retries * len(self._keys.clients) + 1):
             idx, wait = self._keys.pick()
-            if wait > MAX_RATE_LIMIT_WAIT_SECONDS:
+            # With a fallback model, switch to it quickly; without one, wait for the cap to reset
+            # (up to LLM_MAX_WAIT_MINUTES) rather than fail, so the run finishes at full quality.
+            max_wait = MAX_RATE_LIMIT_WAIT_SECONDS if self._fallback else self.settings.llm_max_wait_minutes * 60
+            if wait > max_wait:
                 raise LLMError(
                     f"All {len(self._keys.clients)} Groq key(s) are rate-limited (daily cap reached); "
                     f"the next one is free in about {wait / 60:.0f} minutes. Add another key to "
                     "GROQ_API_KEYS in .env or try later."
                 )
-            if wait:
+            if wait > MAX_RATE_LIMIT_WAIT_SECONDS:
+                log.warning("All Groq keys hit their cap; waiting %.0f minutes (until %s) and continuing",
+                            wait / 60, time.strftime("%H:%M", time.localtime(time.time() + wait)))
+            elif wait:
                 log.info("All keys cooling down; waiting %.0fs", wait)
+            if wait:
                 time.sleep(wait)
             try:
                 return self._keys.clients[idx].chat.completions.create(**kwargs)
@@ -163,10 +227,17 @@ class LLMClient:
             ]
             started = time.perf_counter()
             try:
+                budget, use_groq = self._output_budget(messages), True
+            except LLMError:
+                if not self._fallback:
+                    raise
+                budget, use_groq = self.settings.llm_max_tokens, False  # too large for Groq's per-minute limit
+            try:
                 response = self._create(
+                    use_groq=use_groq,
                     model=model,
                     temperature=self.settings.llm_temperature if temperature is None else temperature,
-                    max_completion_tokens=self._output_budget(messages),
+                    max_completion_tokens=budget,
                     reasoning_effort=effort,
                     response_format={"type": "json_object"},
                     messages=messages,
@@ -188,7 +259,7 @@ class LLMClient:
             log.info(
                 "LLM %s via %s attempt %d: %.1fs, tokens in=%s (cached=%s) out=%s",
                 model_cls.__name__,
-                model,
+                getattr(response, "model", None) or model,
                 attempt,
                 time.perf_counter() - started,
                 getattr(usage, "prompt_tokens", "?"),

@@ -27,34 +27,28 @@ from .documents import DocumentError
 from .latex import LatexError, compile_pdf, pdf_page_count, render_cover_letter, render_resume
 from .llm import LLMClient, LLMError
 from .merge import MergeReport, merge
-from .reflection import ResumeReflector
+from .reflection import ResumeReflector, _aligned_headline
 from .prompts import (
     COVER_LETTER_SYSTEM_PROMPT,
     COVER_LETTER_USER_TEMPLATE,
-    FACT_CHECK_SYSTEM_PROMPT,
-    FACT_CHECK_USER_TEMPLATE,
     GAP_FILL_SYSTEM_PROMPT,
     GAP_FILL_USER_TEMPLATE,
     LETTER_PREFIX_TEMPLATE,
     PLAN_SYSTEM_PROMPT,
     PLAN_USER_TEMPLATE,
-    REVISE_SYSTEM_PROMPT,
     RESUME_PREFIX_TEMPLATE,
-    REVISE_USER_TEMPLATE,
     SUMMARY_SYSTEM_PROMPT_TEMPLATE,
     SUMMARY_USER_TEMPLATE,
     WRITE_SYSTEM_PROMPT,
     WRITE_USER_TEMPLATE,
 )
-from .schemas import CoverLetter, FactCheck, JobPlan, MergedSummary, Project, Resume, ResumeAdditions
+from .schemas import CoverLetter, JobPlan, MergedSummary, Project, Resume, ResumeAdditions
 from .text import has_keyword, key, missing_keywords, norm, plain_text, unsupported_numbers
 
 log = logging.getLogger(__name__)
 
 M = TypeVar("M", bound=BaseModel)
 
-# One revision, then a final check whose findings become warnings (each round costs ~6k tokens).
-MAX_REPAIR_ROUNDS = 1
 JOB_ID_RE = re.compile(r"^[A-Za-z0-9_-]{8,80}$")
 # How many words the blended summary may add on top of the base summary.
 SUMMARY_EXTRA_WORDS = 45
@@ -111,7 +105,6 @@ def _clean(doc: M) -> M:
 
 
 # Fact-check "claims" that are really about the future (what the candidate will do) are not errors.
-_FORWARD_RE = re.compile(r"^\W*(i will|i would|i can|i aim|i want|i plan|i hope|my goal|to build|to lead|to grow)\b", re.I)
 
 
 def _unique_keywords(bullet: str, resume: Resume, keywords: list[str]) -> int:
@@ -292,21 +285,20 @@ class TailoringPipeline:
             text += f" {extra}"
         return text
 
-    def _letter_problems(self, letter: CoverLetter, resume_text: str, jd: str, prefix: str) -> list[str]:
-        text = "\n\n".join(letter.paragraphs)
-        errors = [
-            f"Number '{n}' does not appear in the resume or JD; remove it or quote the resume exactly."
-            for n in unsupported_numbers(text, f"{resume_text}\n{jd}")
-        ]
-        check = self.llm.structured(
-            FACT_CHECK_SYSTEM_PROMPT,
-            FACT_CHECK_USER_TEMPLATE.format(text=text),
-            FactCheck,
-            prefix=prefix,
-        )
-        return errors + [
-            f'Unsupported claim: "{i.claim}" ({i.reason})' for i in check.issues if not _FORWARD_RE.match(i.claim)
-        ]
+    def _drop_unsupported_numbers(self, letter: CoverLetter, source: str) -> tuple[CoverLetter, list[str]]:
+        """Remove sentences whose numbers appear in neither the resume nor the JD (no LLM call)."""
+        paragraphs, dropped = [], []
+        for para in letter.paragraphs:
+            sentences = _sentences(para)
+            keep = [x for x in sentences if not unsupported_numbers(x, source)]
+            if len(keep) == len(sentences) or not keep:   # never empty a paragraph
+                paragraphs.append(para)
+                if not keep:
+                    dropped += [f"Cover letter: number(s) {unsupported_numbers(para, source)} not in the resume; check this paragraph"]
+                continue
+            dropped += [f"Cover letter: removed a sentence with a number not in the resume: {x}" for x in sentences if x not in keep]
+            paragraphs.append(" ".join(keep))
+        return CoverLetter(**{**letter.model_dump(), "paragraphs": paragraphs}), dropped
 
     def _ensure_motivation(self, letter: CoverLetter, location: str) -> CoverLetter:
         """Guarantee the personal motivation is in the letter, with the right cities."""
@@ -330,7 +322,6 @@ class TailoringPipeline:
 
     def _cover_letter(self, resume: Resume, jd: str, plan: JobPlan) -> tuple[CoverLetter, list[str]]:
         resume_text = resume.as_text()
-        # Same first message for the letter, fact-check and revision calls (prompt-cache friendly).
         prefix = LETTER_PREFIX_TEMPLATE.format(resume=resume.evidence_text())
         location = plan.analysis.location
         # Low reasoning: the plan already did the thinking (needs mapped to evidence). At medium
@@ -346,26 +337,11 @@ class TailoringPipeline:
             prefix=prefix,
         ))
         letter = self._ensure_motivation(letter, location)
-        for round_no in range(1, MAX_REPAIR_ROUNDS + 1):
-            errors = self._letter_problems(letter, resume_text, jd, prefix)
-            if not errors:
-                return letter, []
-            log.warning("Cover letter round %d: %d problem(s): %s", round_no, len(errors), errors)
-            try:
-                revised = self.llm.structured(
-                    REVISE_SYSTEM_PROMPT,
-                    REVISE_USER_TEMPLATE.format(
-                        draft=letter.model_dump_json(),
-                        problems="\n".join(f"- {e}" for e in errors),
-                    ),
-                    CoverLetter,
-                    prefix=prefix,
-                )
-            except LLMError as exc:
-                log.warning("Cover letter revision failed; keeping previous draft: %s", exc)
-                break
-            letter = self._ensure_motivation(_clean(revised), location)
-        return letter, [f"Cover letter: {e}" for e in self._letter_problems(letter, resume_text, jd, prefix)]
+        # One LLM call: the prompt carries the fact-check rules; numbers are verified in code.
+        letter, notes = self._drop_unsupported_numbers(letter, f"{resume_text}\n{jd}")
+        if notes:
+            log.warning("Cover letter: %s", notes)
+        return letter, notes
 
     # ------------------------------------------------------------------ output
 
@@ -412,6 +388,8 @@ class TailoringPipeline:
         adds = _clean(self._additions(base, plan))
         company = plan.analysis.company or ""
         resume, report = merge(base, adds)
+        if headline := _aligned_headline(base, adds.headline):
+            resume.headline = headline  # job title alignment counts toward the ATS score
         if not company:
             report.dropped.append(
                 "The JD does not name the company. Enter it in the Company field for a sharper project and letter."

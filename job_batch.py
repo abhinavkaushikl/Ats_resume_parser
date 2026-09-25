@@ -39,10 +39,11 @@ STATE = BATCH / "state.json"
 
 
 def save_city(city: str, jobs, new_keys) -> None:
+    finder.write_details(jobs, OUT)
+    finder.check_visa_relocation(jobs, OUT)            # before saving, so latest.md keeps the marks
     rows = [{**asdict(j), "posted": j.posted.isoformat() if j.posted else None, "new": j.key() in new_keys}
             for j in jobs]
     (BATCH / f"{city}.json").write_text(json.dumps(rows, indent=1), encoding="utf-8")
-    finder.write_details(jobs, OUT)
     finder.write_markdown(jobs, BATCH / f"{city}.md", HOURS, [city], new_keys, {"companies": "-"})
 
 

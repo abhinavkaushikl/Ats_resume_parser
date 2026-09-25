@@ -15,7 +15,13 @@ How it works
   3. REMEMBER  Every company it finds is saved to jobs/discovered_companies.yaml and checked
                directly on every future run, so coverage grows by itself.
   4. SCREEN    Optional Claude pass drops irrelevant postings and tags level + focus.
-  5. WRITE     jobs/latest.md (+ a timestamped copy), grouped by city, new jobs marked 🆕.
+  4b. VISA     Marks visa sponsorship and relocation support per job: first from the job description
+               ("visa sponsorship", "relocation package", "no sponsorship", "must have the right to
+               work"), then, where the JD is silent, one web search per company (cached 30 days in
+               jobs/visa_companies.json; VISA_WEB_LIMIT new companies per run, default 25;
+               VISA_SEARCH_DELAY seconds between free Bing searches, default 10). --no-visa-check skips it.
+  5. WRITE     jobs/latest.md (+ a timestamped copy): company career sites and LinkedIn in separate
+               parts, grouped by city, new jobs marked 🆕, with a Visa / Relocation column.
 
 Search backend (first one configured wins)
   Serper.dev  (2,500 free searches):        SERPER_API_KEY
@@ -126,6 +132,10 @@ class Job:
     note: str = ""
     verified: bool = True
     slug: str = ""          # company's board name on its portal (used to fetch the full JD)
+    visa: str = ""          # visa sponsorship: "yes" / "no" / "" (unknown), see check_visa_relocation
+    relocation: str = ""    # relocation support: "yes" / "no" / ""
+    visa_src: str = ""      # where `visa` came from: "JD", or the web page of the company's answer
+    reloc_src: str = ""     # where `relocation` came from
 
     def key(self) -> str:
         return self.url.split("?")[0].split("#")[0].rstrip("/").lower()
@@ -606,10 +616,35 @@ def filter_jobs(jobs, hours, cities, senior_only):
     return out
 
 
+def llm_text(prompt: str, model: str) -> str:
+    """Claude if ANTHROPIC_API_KEY is set; otherwise, or if Claude fails, the fallback model
+    (FALLBACK_LLM_API_KEY / FALLBACK_LLM_MODEL, OpenAI by default)."""
+    key, fallback_key = os.environ.get("ANTHROPIC_API_KEY"), os.environ.get("FALLBACK_LLM_API_KEY")
+    if key:
+        try:
+            r = requests.post("https://api.anthropic.com/v1/messages", timeout=120,
+                              headers={"x-api-key": key, "anthropic-version": "2023-06-01",
+                                       "content-type": "application/json"},
+                              json={"model": model, "max_tokens": 4000,
+                                    "messages": [{"role": "user", "content": prompt}]})
+            r.raise_for_status()
+            return "".join(b.get("text", "") for b in r.json()["content"])
+        except Exception as ex:
+            if not fallback_key:
+                raise
+            print(f"  ! Claude failed ({ex}); using the fallback model")
+    base = os.environ.get("FALLBACK_LLM_BASE_URL", "https://api.openai.com/v1")
+    r = requests.post(base.rstrip("/") + "/chat/completions", timeout=float(os.environ.get("FALLBACK_LLM_TIMEOUT_SECONDS", 300)),
+                      headers={"Authorization": f"Bearer {fallback_key}"},
+                      json={"model": os.environ.get("FALLBACK_LLM_MODEL", ""),
+                            "messages": [{"role": "user", "content": prompt}]})
+    r.raise_for_status()
+    return re.sub(r"<think>.*?</think>", "", r.json()["choices"][0]["message"]["content"] or "", flags=re.S)
+
+
 def claude_screen(jobs: list[Job], model: str) -> list[Job]:
-    key = os.environ.get("ANTHROPIC_API_KEY")
-    if not key:
-        print("  ! ANTHROPIC_API_KEY not set; skipping Claude screening")
+    if not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("FALLBACK_LLM_API_KEY")):
+        print("  ! ANTHROPIC_API_KEY / FALLBACK_LLM_API_KEY not set; skipping screening")
         return jobs
     kept = []
     for i in range(0, len(jobs), 40):
@@ -622,24 +657,17 @@ def claude_screen(jobs: list[Job], model: str) -> list[Job]:
                   "\"Senior+\", \"note\": max 8 words on the role focus}. Respond with ONLY a JSON array.\n\n"
                   + listing)
         try:
-            r = requests.post("https://api.anthropic.com/v1/messages", timeout=120,
-                              headers={"x-api-key": key, "anthropic-version": "2023-06-01",
-                                       "content-type": "application/json"},
-                              json={"model": model, "max_tokens": 4000,
-                                    "messages": [{"role": "user", "content": prompt}]})
-            r.raise_for_status()
-            text = "".join(b.get("text", "") for b in r.json()["content"])
-            text = re.sub(r"^```(?:json)?|```$", "", text.strip(), flags=re.M).strip()
-            verdicts = {v["i"]: v for v in json.loads(text)}
+            text = llm_text(prompt, model)
+            verdicts = {v["i"]: v for v in json.loads(text[text.find("["):text.rfind("]") + 1])}
         except Exception as ex:
-            print(f"  ! Claude batch failed ({ex}); keeping it unscreened")
+            print(f"  ! Screening batch failed ({ex}); keeping it unscreened")
             kept += batch; continue
         for n, j in enumerate(batch):
             v = verdicts.get(n, {})
             if v.get("relevant", True):
                 j.level, j.note = v.get("level", j.level), v.get("note", "")
                 kept.append(j)
-    print(f"  Claude kept {len(kept)} of {len(jobs)}")
+    print(f"  Screening kept {len(kept)} of {len(jobs)}")
     return kept
 
 # ==========================================================================
@@ -761,6 +789,163 @@ def write_details(jobs: list[Job], out_dir: Path) -> None:
             break
 
 # ==========================================================================
+# 4b. VISA SPONSORSHIP / RELOCATION
+# ==========================================================================
+
+# Phrases in a JD (English + German). Negative phrases are checked first: "we cannot offer visa
+# sponsorship" also contains "visa sponsorship".
+# "<thing> (support) is not available / will not be provided ..."
+_NOT_OFFERED = r"{}\s+(\w+\s+){{0,2}}(is\s+|are\s+|will\s+)?not\s+(be\s+)?(available|offered|provided|possible|supported|covered)"
+VISA_NO_RE = re.compile(
+    r"(no|not|cannot|can't|can ?not|unable to|do not|don't|won't|will not|are not able to)\s+(\w+\s+){0,4}"
+    r"(visa\s+)?sponsor|without\s+(the\s+need\s+for\s+)?(visa\s+)?sponsorship|"
+    r"(must|should)\s+(already\s+)?(have|hold|possess)\s+(the\s+|a\s+|an\s+)?(valid\s+)?"
+    r"(right|eligibility|authori[sz]ation|work permit|permission)\s+to\s+work|"
+    r"must\s+(already\s+)?be\s+(legally\s+)?(eligible|authori[sz]ed|entitled|permitted)\s+to\s+work|"
+    r"keine\s+(visa|visum)|kein(e)?\s+sponsoring|" + _NOT_OFFERED.format(r"(visa\s+)?sponsorship"), re.I)
+VISA_YES_RE = re.compile(
+    r"visa\s+sponsor|sponsor(ship|ing)?\s+(of\s+)?(your\s+|a\s+|the\s+)?(work\s+)?(visa|permit)|"
+    r"(visa|work permit|blue card)\s+(support|assistance|process|application|help)|"
+    r"(support|help|assist)\w*\s+(you\s+)?with\s+(your\s+|the\s+)?(visa|work permit|blue card)|"
+    r"visum(s)?unterstützung|unterstützung\s+(beim|bei der)\s+visum", re.I)
+RELOC_NO_RE = re.compile(r"(no|not|cannot|unable to|do not|don't|without)\s+(\w+\s+){0,3}relocation|"
+                         r"keine\s+umzugs|" + _NOT_OFFERED.format("relocation"), re.I)
+RELOC_YES_RE = re.compile(
+    r"relocation\s+(support|package|assistance|bonus|allowance|budget|help|costs?|benefits?|"
+    r"is\s+(provided|offered|available|possible|supported)|(will\s+be\s+)?covered)|"
+    r"(support|help|assist)\w*\s+(you\s+)?(with\s+)?(your\s+)?relocat|relocate\s+you|"
+    r"umzugs(unterstützung|kosten|pauschale|hilfe)|relocation\s+&\s+visa|visa\s+&\s+relocation", re.I)
+
+VISA_CACHE_DAYS = 30
+
+
+def _visa_from_text(text: str) -> tuple[str, str]:
+    """(visa, relocation) stated in `text`: "yes", "no" or ""."""
+    visa = "no" if VISA_NO_RE.search(text) else "yes" if VISA_YES_RE.search(text) else ""
+    reloc = "no" if RELOC_NO_RE.search(text) else "yes" if RELOC_YES_RE.search(text) else ""
+    return visa, reloc
+
+
+def _web_snippets(query: str) -> list[dict]:
+    """Search results with snippets: Serper if configured, else free Bing (paced)."""
+    if key := os.environ.get("SERPER_API_KEY"):
+        r = requests.post("https://google.serper.dev/search", timeout=TIMEOUT,
+                          headers={"X-API-KEY": key, "Content-Type": "application/json"}, json={"q": query, "num": 10})
+        r.raise_for_status()
+        return [{"url": o.get("link", ""), "text": f"{o.get('title', '')} {o.get('snippet', '')}"}
+                for o in r.json().get("organic", [])]
+    from ddgs import DDGS
+    time.sleep(float(os.environ.get("VISA_SEARCH_DELAY", 10)) * random.uniform(1, 1.5))
+    res = DDGS().text(query, max_results=10, backend="bing")
+    return [{"url": r.get("href", ""), "text": f"{r.get('title', '')} {r.get('body', '')}"} for r in res]
+
+
+# Job city -> country, for country-specific web evidence (sponsorship rules differ per country).
+CITY_COUNTRY = {"Berlin": "Germany", "Munich": "Germany", "Amsterdam": "Netherlands", "Brussels": "Belgium",
+                "Paris": "France", "Copenhagen": "Denmark", "Warsaw": "Poland", "Austria": "Austria",
+                "London": "UK", "Romania": "Romania", "Norway": "Norway"}
+# US-only evidence (H-1B data, US career pages) says nothing about a European job.
+US_ONLY_RE = re.compile(r"\bh-?1b\b|\busa\b|united states|\bu\.s\.|/en[_-]us/", re.I)
+US_ONLY_SITES = ("myvisajobs.com", "h1bdata.info", "h1bgrader.com", "h1bsponsors", "usponsor")
+
+
+def _company_visa_web(company: str, country: str = "") -> dict:
+    """Ask the web whether `company` sponsors visas / helps relocate in `country`.
+
+    Evidence must name the company, and US-only pages are ignored for non-US jobs. The company's own
+    site is preferred over aggregators.
+    """
+    name = re.sub(r"\b(gmbh|ag|se|ltd|limited|inc|plc|bv|b\.v\.|sas|sa|s\.a\.|ab|as|oy|llc)\b\.?", "", company, flags=re.I)
+    tokens = [t for t in re.findall(r"\w+", name.lower()) if len(t) > 2] or [company.lower()]
+    out = {"visa": "", "relocation": "", "src": "", "official": False, "checked": datetime.now(timezone.utc).isoformat()}
+    domain = lambda u: u.split("/")[2].lower() if u.count("/") >= 2 else ""
+    results = sorted(_web_snippets(f'"{name.strip()}" visa sponsorship relocation {country}'.strip()),
+                     key=lambda r: tokens[0] not in domain(r["url"]))
+    for r in results:
+        text, url = r["text"], r["url"]
+        if not all(t in f"{text} {url}".lower() for t in tokens[:2]):
+            continue                                    # about another company
+        if country != "USA" and (any(site in url for site in US_ONLY_SITES) or US_ONLY_RE.search(f"{text} {url}")):
+            continue                                    # US sponsorship, not this country's
+        visa, reloc = _visa_from_text(text)
+        if (visa and not out["visa"]) or (reloc and not out["relocation"]):
+            if not out["src"]:
+                out["src"], out["official"] = url, tokens[0] in domain(url)
+            out["visa"] = out["visa"] or visa
+            out["relocation"] = out["relocation"] or reloc
+        if out["visa"] and out["relocation"]:
+            break
+    return out
+
+
+def check_visa_relocation(jobs: list[Job], out_dir: Path, web_limit: int | None = None) -> None:
+    """Mark each job's visa sponsorship and relocation support.
+
+    1. The job description (reliable, free): explicit "visa sponsorship" / "relocation package" / "no
+       sponsorship" / "must have the right to work" phrases.
+    2. Where the JD is silent: one web search per company and country, cached for VISA_CACHE_DAYS in
+       out_dir/visa_companies.json. At most `web_limit` new searches per run (free Bing is slow);
+       the rest are checked on later runs. Web answers are company-level hints, shown as "likely".
+    """
+    jd_dir = Path(out_dir) / "jd"
+    for j in jobs:
+        f = jd_dir / jd_filename(j)
+        if f.exists():
+            j.visa, j.relocation = _visa_from_text(f.read_text(encoding="utf-8").split("## Job description", 1)[-1])
+            j.visa_src = "JD" if j.visa else ""
+            j.reloc_src = "JD" if j.relocation else ""
+
+    cache_file = Path(out_dir) / "visa_companies.json"
+    cache = json.loads(cache_file.read_text()) if cache_file.exists() else {}
+    ckey = lambda j: f"{j.company}|{CITY_COUNTRY.get(j.city, '')}"
+    fresh = lambda k: k in cache and datetime.now(timezone.utc) - datetime.fromisoformat(cache[k]["checked"]) < timedelta(days=VISA_CACHE_DAYS)
+    unknown = [j for j in jobs if (not j.visa or not j.relocation) and j.company]
+    # Company-site jobs first (fewer, direct), then by how many open jobs the company has there.
+    counts: dict[str, int] = {}
+    for j in unknown:
+        counts[ckey(j)] = counts.get(ckey(j), 0) + 1
+    todo = sorted({ckey(j) for j in unknown if not fresh(ckey(j))},
+                  key=lambda k: (all(is_linkedin(j) for j in unknown if ckey(j) == k), -counts[k]))
+    limit = int(os.environ.get("VISA_WEB_LIMIT", 25)) if web_limit is None else web_limit
+    if todo and limit:
+        print(f"Checking visa sponsorship / relocation on the web for {min(len(todo), limit)} of {len(todo)} companies")
+    for k in todo[:limit]:
+        company, country = k.split("|", 1)
+        try:
+            cache[k] = _company_visa_web(company, country)
+        except Exception as ex:
+            print(f"  ✗ {company}: {ex}")
+            continue
+        cache_file.write_text(json.dumps(cache, indent=1, ensure_ascii=False))
+    for j in unknown:
+        c = cache.get(ckey(j))
+        if not c or not c["src"]:
+            continue
+        src = c["src"] if c.get("official") else f"3rd:{c['src']}"
+        if not j.visa and c["visa"]:
+            j.visa, j.visa_src = c["visa"], src
+        if not j.relocation and c["relocation"]:
+            j.relocation, j.reloc_src = c["relocation"], src
+
+
+def _mark(value: str, src: str) -> str:
+    """✅ / ❌ when the JD says so; 'likely' / 'unlikely' + link when it is the company's answer online."""
+    if not value:
+        return "❔"
+    if src == "JD":
+        return ("✅" if value == "yes" else "❌") + " (JD)"
+    site = f"[other site]({src[4:]})" if src.startswith("3rd:") else f"[company site]({src})"
+    return f"{'likely' if value == 'yes' else 'unlikely'} ({site})"
+
+
+def visa_cell(j: Job) -> str:
+    """Compact table cell, e.g. 'Visa ✅ (JD) · Reloc likely ([company site](...))'."""
+    if not (j.visa or j.relocation):
+        return "❔"
+    return f"Visa {_mark(j.visa, j.visa_src)} · Reloc {_mark(j.relocation, j.reloc_src)}"
+
+
+# ==========================================================================
 # 5. WRITE MARKDOWN
 # ==========================================================================
 
@@ -774,29 +959,57 @@ def age(dt):
     return f"{max(h, 0):.0f}h ago" if h < 48 else f"{h / 24:.0f}d ago"
 
 
+def is_linkedin(j) -> bool:
+    return j.source == "LinkedIn"
+
+
 def write_markdown(jobs, path, hours, cities, new_keys, stats):
+    """One file, two parts: jobs from company career sites / job boards first, then LinkedIn."""
     now = datetime.now(timezone.utc)
+    direct = [j for j in jobs if not is_linkedin(j)]
+    linkedin = [j for j in jobs if is_linkedin(j)]
     L = [f"# AI / ML / Data Science jobs - last {hours}h", "",
-         f"Generated {now:%Y-%m-%d %H:%M} UTC · {len(jobs)} jobs · {len(new_keys)} new since last run (🆕) · "
+         f"Generated {now:%Y-%m-%d %H:%M} UTC · {len(jobs)} jobs ({len(direct)} company sites, "
+         f"{len(linkedin)} LinkedIn) · {len(new_keys)} new since last run (🆕) · "
          f"{stats['companies']} companies checked", "",
-         "| City | Jobs |", "|---|---|"]
-    by_city = {c: [] for c in cities}
-    for j in jobs:
-        by_city[j.city].append(j)
-    L += [f"| {c} | {len(v)} |" for c, v in by_city.items()] + [""]
+         "| City | Company sites | LinkedIn |", "|---|---|---|"]
+    L += [f"| {c} | {sum(j.city == c for j in direct)} | {sum(j.city == c for j in linkedin)} |" for c in cities] + [""]
     by_src: dict[str, int] = {}
     for j in jobs:
         by_src[j.source] = by_src.get(j.source, 0) + 1
     if by_src:
         L += ["| Source | Jobs |", "|---|---|"]
         L += [f"| {s} | {n} |" for s, n in sorted(by_src.items(), key=lambda x: -x[1])] + [""]
+    visa_yes = sum(j.visa == "yes" and j.visa_src == "JD" for j in jobs)
+    reloc_yes = sum(j.relocation == "yes" and j.reloc_src == "JD" for j in jobs)
+    visa_likely = sum(j.visa == "yes" and j.visa_src != "JD" for j in jobs)
+    L += [f"**Visa sponsorship:** {visa_yes} jobs say yes, {visa_likely} more likely · "
+          f"**Relocation support:** {reloc_yes} jobs say yes. Marks: "
+          "stated in the job description (✅ yes / ❌ no). Where the JD is silent, the company's answer "
+          "online for that country is shown as likely / unlikely: [company site] = its own website, "
+          "[other site] = a third-party page (weakest, check it). ❔ = nothing found.", ""]
+    L += ["**Jump to:** [Company career sites](#part-1-company-career-sites) · [LinkedIn](#part-2-linkedin)", ""]
+    L += _job_part("# Part 1: Company career sites", direct, path, cities, new_keys, now)
+    L += _job_part("# Part 2: LinkedIn", linkedin, path, cities, new_keys, now)
+    L += ["---", "",
+          "Jobs marked **(unverified)** had no readable posting date or location on the page "
+          "(often Workday, or XING pages that blocked the request), so those details come from Google - "
+          "double-check them."]
+    path.write_text("\n".join(L), encoding="utf-8")
+
+
+def _job_part(heading, jobs, path, cities, new_keys, now) -> list[str]:
+    """One part of the report: its jobs grouped by city (cities without jobs are skipped)."""
+    L = [heading, "", f"{len(jobs)} jobs", ""]
+    if not jobs:
+        return L + ["_No matching jobs in this window._", ""]
     notes = any(j.note for j in jobs)
-    for city, items in by_city.items():
-        L += [f"## {city} ({len(items)})", ""]
+    for city in cities:
+        items = sorted((j for j in jobs if j.city == city), key=lambda j: (j.posted or now), reverse=True)
         if not items:
-            L += ["_No matching jobs in this window._", ""]; continue
-        items.sort(key=lambda j: (j.posted or now), reverse=True)
-        head = "| | Title | Company | Level | Location | Opened | JD | Source |" + (" Focus |" if notes else "")
+            continue
+        L += [f"## {city} ({len(items)})", ""]
+        head = "| | Title | Company | Level | Location | Opened | Visa / Relocation | JD | Source |" + (" Focus |" if notes else "")
         L += [head, "|" + "---|" * (head.count("|") - 1)]
         for j in items:
             src = j.source if j.verified else f"{j.source} (unverified)"
@@ -804,14 +1017,11 @@ def write_markdown(jobs, path, hours, cities, new_keys, stats):
             jd = next((Path(os.path.relpath(d / "jd" / jd_filename(j), path.parent)).as_posix()
                        for d in (path.parent, path.parent.parent) if (d / "jd" / jd_filename(j)).exists()), "")
             row = (f"| {'🆕' if j.key() in new_keys else ''} | [{esc(j.title)}]({j.url}) | {esc(j.company)} | "
-                   f"{j.level} | {esc(j.location)[:60]} | {opened} | {f'[JD]({jd})' if jd else '-'} | {src} |")
+                   f"{j.level} | {esc(j.location)[:60]} | {opened} | {visa_cell(j)} | {f'[JD]({jd})' if jd else '-'} | {src} |")
             L.append(row + (f" {esc(j.note)} |" if notes else ""))
         L.append("")
-    L += ["---", "",
-          "Jobs marked **(unverified)** had no readable posting date or location on the page "
-          "(often Workday, or XING pages that blocked the request), so those details come from Google - "
-          "double-check them."]
-    path.write_text("\n".join(L), encoding="utf-8")
+    return L
+
 
 # ==========================================================================
 # Main
@@ -835,7 +1045,7 @@ def save_known(path: Path, companies: set[tuple[str, str]]):
 def run(hours: int = 24, cities: list[str] | None = None, senior_only: bool = False, out_dir: str = "jobs",
         extra_companies: str = "companies.yaml", xing_all_cities: bool = False, no_memory: bool = False,
         claude: bool = False, model: str = "claude-sonnet-5", write_files: bool = True,
-        linkedin: bool = False) -> dict:
+        linkedin: bool = False, visa_check: bool = True) -> dict:
     """Run the whole search and write the Markdown files (unless write_files=False).
     Returns the paths and matching jobs."""
     cities = list(CITIES) if cities is None else cities
@@ -891,6 +1101,8 @@ def run(hours: int = 24, cities: list[str] | None = None, senior_only: bool = Fa
 
     # 5. write
     write_details(jobs, out_dir)
+    if visa_check:
+        check_visa_relocation(jobs, out_dir)
     path = out_dir / f"jobs_{datetime.now():%Y-%m-%d_%H%M}.md"
     write_markdown(jobs, path, hours, cities, new_keys, {"companies": len(ok)})
     latest = out_dir / "latest.md"
@@ -910,13 +1122,15 @@ def main():
     ap.add_argument("--xing-all-cities", action="store_true",
                     help="search XING for every city, not only Berlin/Munich/Austria")
     ap.add_argument("--no-memory", action="store_true", help="don't re-check previously discovered companies")
-    ap.add_argument("--claude", action="store_true", help="screen with Claude (needs ANTHROPIC_API_KEY)")
+    ap.add_argument("--claude", action="store_true", help="screen with Claude (ANTHROPIC_API_KEY) or the fallback model (FALLBACK_LLM_*)")
     ap.add_argument("--linkedin", action="store_true", help="also search LinkedIn's public job search")
+    ap.add_argument("--no-visa-check", action="store_true",
+                    help="skip marking visa sponsorship / relocation support (JD scan + web search)")
     ap.add_argument("--model", default=os.environ.get("CLAUDE_MODEL", "claude-sonnet-5"))
     a = ap.parse_args()
     try:
         run(a.hours, a.cities, a.senior_only, a.out_dir, a.extra_companies, a.xing_all_cities,
-            a.no_memory, a.claude, a.model, linkedin=a.linkedin)
+            a.no_memory, a.claude, a.model, linkedin=a.linkedin, visa_check=not a.no_visa_check)
     except (ValueError, RuntimeError) as ex:
         sys.exit(str(ex))
 
