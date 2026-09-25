@@ -9,10 +9,11 @@ Wait until nothing is still running: `pgrep -fl "jd_extractor|job_match|unclear_
 .venv/bin/python job_report.py jobs/visa_jobs_<today>.json
 ```
 
-`JOB_RESULTS.md` (project root) now has: summary, shortlist 60%+ (company sites and LinkedIn separately)
-with job link, visa + source, matched and missing skills and a link to the saved JD file, a separate
-"Visa unclear - match 60%+" section (same columns), the below-60% list, the not-scored jobs with their
-LinkedIn / company links, the visa research, and an "Analysis data" section.
+`JOB_RESULTS.md` (project root) now has: summary, shortlist 50%+ of the **visa-confirmed** jobs (company
+sites and LinkedIn separately) with job link, visa + source, matched and missing skills and a link to the
+saved JD file, the **"Visa unsure - waiting for your review"** table (company, job, city, visa evidence,
+posting link - not scored), the below-50% list, the not-scored jobs, the visa research, and an
+"Analysis data" section.
 
 ## b. Write the analysis
 
@@ -25,11 +26,10 @@ one italic line saying how many jobs it is based on. Then:
 - **Recurring gaps** - gaps that come up across several good matches. Say which are real skill gaps and
   which may be wording: check the resume text first. Only suggest adding something if I really have that
   experience; never suggest claiming skills I don't have.
-- **Visa risk** - shortlisted jobs with weak visa evidence, the visa-unclear matches, and the question to
-  ask the recruiter.
+- **Visa unsure to review** - how many are waiting, by city; point out the ones whose titles look like
+  the best fits (from the title only - they have no JD or score) so I can pick quickly.
 - **Cities** - where today's best matches are.
-- **Apply first** - top 5 in order, one line each on why. Visa-unclear jobs can be in it if they match
-  well - mark them "visa unclear".
+- **Apply first** - top 5 visa-confirmed jobs in order, one line each on why.
 
 Keep it short and honest.
 

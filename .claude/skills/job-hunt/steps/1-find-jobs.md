@@ -1,7 +1,7 @@
 # Step 1 - Find today's jobs
 
 **Cities:** Berlin, Munich, Amsterdam, Brussels, Paris, Copenhagen, Warsaw, Austria (Vienna, Graz, Linz),
-London, Romania (Bucharest, Cluj), Norway (Oslo, Bergen).
+London, Romania (Bucharest, Cluj), Norway (Oslo, Bergen), Barcelona (Spain).
 
 **Roles:** data scientist, ML engineer, AI engineer, applied scientist, research scientist, MLOps, GenAI,
 LLM, NLP, computer vision, deep learning, AI developer, AI specialist, AI consultant, forward deployed

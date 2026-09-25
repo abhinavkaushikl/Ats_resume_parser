@@ -54,6 +54,7 @@ don't need to open those.)
 | Script | Does |
 |---|---|
 | `daily_jobs.py` | Last-24h jobs from company feeds + LinkedIn, resume-match filter |
+| `sponsor_registers.py` | Visa sponsor lists: UK / NL / DK official registers + Germany / Spain employer lists, refreshed weekly; answers those companies without web searches |
 | `jd_extractor.py` | Full JDs: company site (Playwright), else LinkedIn public page; scored on save |
 | `job_match.py` | Resume vs JD score (cached in `outputs/.cache/`); `job_match.py <folder>` re-scores a JD folder and writes SHORTLIST.md |
 | `unclear_visa_match.py` | Lists the unclear-visa jobs so they get JDs and scores too (60%+ kept, flagged) |

@@ -1,6 +1,6 @@
 ---
 name: job-hunt
-description: Daily AI/ML job hunt for Abhinav, end to end - find jobs posted in the last 24 hours, keep only companies that sponsor visas (with a Google check and deeper research), get the full job descriptions (company site first, else LinkedIn public page), score each against the base resume (60%+ shortlisted), write one results file with analysis, and generate a subtly tailored resume + cover letter for every shortlisted job. Use when the user asks to run the job hunt, fetch today's jobs, or runs /job-hunt.
+description: Daily AI/ML job hunt for Abhinav, end to end - find jobs posted in the last 24 hours, keep only companies that sponsor visas (with a Google check and deeper research), get the full job descriptions (company site first, else LinkedIn public page), score the visa-confirmed ones against the base resume, write one results file with analysis, and generate a subtly tailored resume + cover letter for every visa-confirmed job at 50%+ (visa-unsure jobs are only listed for review). Use when the user asks to run the job hunt, fetch today's jobs, or runs /job-hunt.
 ---
 
 # Daily job hunt
@@ -10,8 +10,14 @@ questions along the way. If I added notes when starting (e.g. "only Berlin and A
 
 Base resume: `Abhinav_kaushik_AI_ML.pdf` (Senior AI / GenAI / LLM engineer).
 The end result is ONE file: `JOB_RESULTS.md` in the project root, plus the job-description files of the
-shortlisted jobs and a tailored resume + cover letter for each (`applications/<date>/`). Shortlisted = 60%+ resume match, for visa-sponsoring companies AND for companies whose
-visa status is unclear (those are flagged, not dropped - I apply to them too). Everything else is working data and is cleaned up at the end.
+shortlisted jobs and a tailored resume + cover letter for each (`applications/<date>/`).
+- **Visa confirmed** (`Visa: yes`): JD fetched and scored; **50%+ match -> resume + cover letter**, below
+  50% -> no resume (still listed).
+- **Visa unsure** (⚠️ weak evidence or unclear): **no JD, no score, no resume** - listed in JOB_RESULTS.md
+  under "Visa unsure - waiting for your review". I review them myself and name the ones to process
+  (step 3 e), then those get the same treatment.
+- Dropped: company says no, existing right to work required, or a recruitment agency hiding the employer.
+Everything else is working data and is cleaned up at the end.
 
 ## How to run
 
@@ -50,6 +56,7 @@ Long scripts (job search, extraction) run in the background; wait for them to fi
 | Script | Does |
 |---|---|
 | `daily_jobs.py` | Last-24h jobs from company feeds + LinkedIn; writes `jobs/jobs_<date>_<HHMM>.md` (table + JD links to `jobs/jd/`) and `jobs/daily/jobs_<date>.md` (scored, below-60% listed as skipped) |
+| `sponsor_registers.py <list.md>` | Step 2 first: matches companies against the UK / NL / DK sponsor registers and the DE / ES employer lists (auto-downloaded weekly to `jobs/registers/`), caches hits in `jobs/visa_companies.json` |
 | `jd_extractor.py <list.md>` | Full JDs: company site (Playwright), else LinkedIn's public page (no login); each scored on save: 60%+ -> `jobs/jd_visa/<date>/`, below -> `skipped/` |
 | `job_match.py <folder>` | Re-scores every JD file in a folder (cached) |
 | `unclear_visa_match.py <visa.md>` | Writes `jobs/unclear_<date>.md`: the jobs whose visa status stayed unclear, for `jd_extractor.py` - so they're processed like the rest |

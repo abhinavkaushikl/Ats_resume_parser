@@ -3,6 +3,25 @@
 Input: `jobs/jobs_<today>_<HHMM>.md` from step 1, minus the jobs the daily file skipped below 60%.
 Check once per company and country, not once per job.
 
+## 0. Sponsor lists first (script, no tokens)
+
+```
+.venv/bin/python sponsor_registers.py jobs/jobs_<today>_<HHMM>.md
+```
+
+It matches every company against the official registers (UK -> London, Dutch IND -> Amsterdam, Danish
+SIRI -> Copenhagen) and the employer lists for Germany (Berlin, Munich) and Spain (Barcelona), downloads
+them if older than 7 days, caches every listed company in `jobs/visa_companies.json` and writes
+`jobs/register_hits_<today>.json`. Use it like this - don't research what it already answered:
+- **exact, official register** -> Visa: yes, source = the register. Done, no web search.
+- **exact, DE / ES employer list** -> Visa: yes ⚠️ weak (source = the list entry). Germany is the main
+  target: for every Berlin / Munich job marked weak, try one search for a stronger source (company
+  careers page, the JD, an official statement) to drop the ⚠️ - weak jobs are not scored or tailored.
+- **candidate** (similar name, e.g. "Amazon Science" vs "Amazon UK Services Ltd") -> decide by eye; one
+  search only if unclear.
+- **none** -> research as below. In London, not being on the register usually means no Skilled Worker
+  sponsorship - check the legal entity name once before removing.
+
 ## a. Evidence, strongest first
 
 1. **The job description** says visa sponsorship / relocation is offered, or not.
@@ -88,7 +107,9 @@ register). Save one entry per company and city (agencies and "says no" without s
 ```
 
 For every `yes` / `weak` company, copy its rows from the input file into
-`jobs/research_<today>_sponsors.md` (same table format as the visa file, visa cell replaced by the verdict
-and source, one `## <City> (n)` section per city).
+`jobs/research_<today>_sponsors.md` (same table format as the visa file, one `## <City> (n)` section per
+city). The visa cell must use the visa file's format - `Visa: yes · Relocation: ... · Source: [...](...)`,
+with ` ⚠️ weak source, confirm with recruiter` appended for weak ones - the scripts read it to tell
+confirmed from unsure.
 
 Status line: "Step 2 done - K of N jobs kept (W weak), R added back by deeper research, X removed."

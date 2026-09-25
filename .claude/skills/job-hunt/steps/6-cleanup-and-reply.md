@@ -21,12 +21,13 @@ Then check that every `[JD](...)` and `[Resume](...)` link in JOB_RESULTS.md poi
 ## b. Reply
 
 Reply in the chat with:
-- The funnel: jobs found -> after resume filter -> after visa check (+ added back by deeper research) ->
-  JDs found -> shortlisted 60%+.
-- The shortlist: match %, company, job (linked), city, visa (yes / weak), top matched and missing skills,
-  judge score and a link to the tailored resume.
+- The funnel: jobs found -> after resume filter -> after visa check (confirmed / unsure / dropped) ->
+  visa-confirmed JDs found -> 50%+ with a resume made.
+- The shortlist (visa confirmed, 50%+): match %, company, job (linked), city, top matched and missing
+  skills, judge score and a link to the tailored resume.
 - The "Apply first" list and 2-3 lines of the analysis.
-- The visa-unclear jobs matching 60%+, marked "visa unclear" (they're to apply to as well).
+- **Waiting for your review:** the visa-unsure jobs (company, job, city, weak / unclear) - not scored, no
+  resume. Ask me which ones to process.
 - Anything that failed or was skipped, and why (e.g. Claude in Chrome not connected, LinkedIn rate-limited).
 - The link to JOB_RESULTS.md - the only file I need to open.
 

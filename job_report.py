@@ -22,6 +22,8 @@ from pathlib import Path
 from jd_extractor import slug
 from job_match import MIN_MATCH
 
+TAILOR_MIN = 50   # resume + cover letter for visa-confirmed jobs at this match or above (tailor-resumes rule)
+
 ROOT = Path(__file__).resolve().parent
 JOBS = ROOT / "jobs"
 STOP = set("""a an and or the of in to for with on at by from as is are be experience experienced explicit explicitly
@@ -75,48 +77,49 @@ def main():
     src = a.json_file or max(JOBS.glob("visa_jobs_*.json"), key=lambda p: p.stat().st_mtime)
     d = json.loads(src.read_text(encoding="utf-8"))
     everything = d["jobs"]
-    jobs = [j for j in everything if j["visa"]["verdict"] != "unclear"]          # visa yes / weak
-    unclear = [j for j in everything if j["visa"]["verdict"] == "unclear"]
-    unclear_scored = [j for j in unclear if j["resume_match"]]
-    unclear_top = sorted((j for j in unclear_scored if j["resume_match"]["score"] >= MIN_MATCH),
-                         key=lambda j: -j["resume_match"]["score"])
+    # My rule: only visa-confirmed jobs are scored and tailored (resume at TAILOR_MIN%+). Visa-unsure jobs
+    # (weak evidence or unclear) get no JD, score or resume - they are listed for me to review.
+    jobs = [j for j in everything if j["visa"]["verdict"] == "yes"]
+    unsure = sorted((j for j in everything if j["visa"]["verdict"] != "yes"),
+                    key=lambda j: (j["city"], j["company"], j["title"]))
     scored = [j for j in jobs if j["resume_match"]]
-    top = sorted((j for j in scored if j["resume_match"]["score"] >= MIN_MATCH), key=lambda j: -j["resume_match"]["score"])
-    low = sorted((j for j in scored if j["resume_match"]["score"] < MIN_MATCH), key=lambda j: -j["resume_match"]["score"])
+    top = sorted((j for j in scored if j["resume_match"]["score"] >= TAILOR_MIN), key=lambda j: -j["resume_match"]["score"])
+    low = sorted((j for j in scored if j["resume_match"]["score"] < TAILOR_MIN), key=lambda j: -j["resume_match"]["score"])
     unscored = [j for j in jobs if not j["resume_match"]]
     head = "| Match | Company | Job | City | Visa | Matched | Missing |\n|---|---|---|---|---|---|---|"
 
     L = [f"# Job results - {d['date']}", "",
          f"Visa-sponsoring AI/ML jobs matched against {d['base_resume']}. Generated {d['generated']}.", "",
          "## Summary", "",
-         f"- Visa-sponsoring jobs: **{len(jobs)}** ({d['counts']['from_visa_check']} from the visa check, "
-         f"{d['counts']['from_deeper_research']} added by deeper research; "
-         f"{d['counts']['visa_weak']} rest on weak visa evidence)",
-         f"- Scored against the resume: **{len(scored)}** · **{len(top)} match {MIN_MATCH}%+** · "
-         f"{len(low)} below {MIN_MATCH}% · {len(unscored)} not scored (no description found)",
-         f"- Visa unclear (no public info): **{len(unclear)}** jobs · {len(unclear_scored)} scored · "
-         f"**{len(unclear_top)} match {MIN_MATCH}%+** - listed separately, confirm visa with the recruiter",
-         f"- **To apply: {len(top) + len(unclear_top)}** ({len(top)} visa yes/weak + {len(unclear_top)} visa unclear)",
+         f"- Visa confirmed: **{len(jobs)}** jobs · scored **{len(scored)}** · "
+         f"**{len(top)} match {TAILOR_MIN}%+ (resume made)** · {len(low)} below {TAILOR_MIN}% · "
+         f"{len(unscored)} not scored (no description found)",
+         f"- Visa unsure (weak evidence or unclear): **{len(unsure)}** jobs - not scored, no resume. "
+         "Review them below and tell me which to process.",
+         f"- **To apply: {len(top)}**",
          ""]
     for title, part in (("Company career sites", "company_site"), ("LinkedIn", "linkedin")):
         rows = [row(j, d["date"]) for j in top if j["section"] == part]
-        L += [f"## Shortlist {MIN_MATCH}%+ - {title} ({len(rows)})", ""]
+        L += [f"## Shortlist {TAILOR_MIN}%+ - {title} ({len(rows)})", ""]
         L += [head.replace(" |\n|", " | JD | Resume | Judge | Apply |\n|", 1) + "---|---|---|---|", *rows, ""] if rows else ["_None._", ""]
 
-    L += [f"## Visa unclear - match {MIN_MATCH}%+ ({len(unclear_top)} of {len(unclear_scored)} scored)", "",
-          "No public visa info found for these companies, but the resume matches. Apply, and ask the "
-          "recruiter early: \"Do you sponsor a work permit / Blue Card for non-EU hires for this role?\"", ""]
-    L += [head.replace(" |\n|", " | JD | Resume | Judge | Apply |\n|", 1) + "---|---|---|---|", *[row(j, d["date"]) for j in unclear_top], ""] \
-        if unclear_top else ["_None._", ""]
+    L += [f"## Visa unsure - waiting for your review ({len(unsure)})", "",
+          "Not scored and no resume made (no job description fetched). Tell me which ones to process, e.g. "
+          "\"process Peter Park and Luxoft\" - I then fetch the JD, score it, and make a resume if it's 50%+.", "",
+          "| Company | Job | City | Visa evidence | Posting |", "|---|---|---|---|---|"]
+    L += [f"| {cell(j['company'])} | {cell(j['title'])} | {j['city']} | "
+          f"{'⚠️ weak' if j['visa']['verdict'] == 'weak' else '❔ unclear'}: {cell(j['visa']['detail'])[:160]} | "
+          f"[{'LinkedIn' if 'linkedin.' in j['listing_url'] else 'Company site'}]({j['listing_url']}) |"
+          for j in unsure] or ["| _None._ | | | | |"]
+    L += [""]
 
-    L += [f"## Below {MIN_MATCH}% ({len(low)})", ""]
+    L += [f"## Below {TAILOR_MIN}% - no resume ({len(low)})", ""]
     L += [head, *[row(j) for j in low], ""] if low else ["_None._", ""]
 
     L += [f"## Not scored - no job description found ({len(unscored)})", "",
           "Open the posting to read the description yourself.", "",
           "| Company | Job | City | Visa | Posting |", "|---|---|---|---|---|"]
-    L += [f"| {cell(j['company'])} | {cell(j['title'])} | {j['city']} | "
-          f"{'yes' if j['visa']['verdict'] == 'yes' else '⚠️ weak'} | "
+    L += [f"| {cell(j['company'])} | {cell(j['title'])} | {j['city']} | yes | "
           f"[{'LinkedIn' if 'linkedin.' in j['listing_url'] else 'Company site'}]({j['listing_url']}) |"
           for j in sorted(unscored, key=lambda j: (j["city"], j["company"]))]
 
@@ -138,8 +141,8 @@ def main():
           "**Score bands:** " + " · ".join(f"{b}: {bands.get(b, 0)}" for b in ("85-100", "70-84", "60-69", "40-59", "0-39")),
           "",
           "**Shortlist by city:** " + (" · ".join(f"{c} {n}" for c, n in by_city.most_common()) or "none"), "",
-          "**Shortlisted jobs with weak visa evidence:** "
-          + (", ".join(f"{j['company']} ({j['city']})" for j in top if j["visa"]["verdict"] != "yes") or "none"), "",
+          "**Visa-unsure jobs by city (waiting for review):** "
+          + (" · ".join(f"{c} {n}" for c, n in Counter(j["city"] for j in unsure).most_common()) or "none"), "",
           "**Most common gaps (words in 'missing', jobs scoring 50%+):** "
           + ", ".join(f"{w} ({n})" for w, n in gap_terms([j for j in scored if j["resume_match"]["score"] >= 50])),
           "", "**Blockers seen:** "
@@ -153,7 +156,8 @@ def main():
         i = text.index("\n## Shortlist")
         text = f"{text[:i]}\n## Analysis\n\n{analysis}\n{text[i:]}"
     out.write_text(text, encoding="utf-8")
-    print(f"{len(top)} shortlisted of {len(scored)} scored ({len(jobs)} visa jobs) -> {out}")
+    print(f"{len(top)} at {TAILOR_MIN}%+ of {len(scored)} scored ({len(jobs)} visa-confirmed jobs), "
+          f"{len(unsure)} visa-unsure listed for review -> {out}")
 
 
 if __name__ == "__main__":

@@ -1,5 +1,9 @@
 # Step 3 - Full job descriptions (company site first, then LinkedIn)
 
+**Only visa-confirmed jobs** (visa cell `Visa: yes`, no ⚠️) get a job description and a score. The
+extractor skips visa-unsure jobs (⚠️ weak or unclear) by itself - don't fetch, score or research their
+JDs. They are listed in JOB_RESULTS.md for me to review; see "d. On request" below.
+
 ## a. Run the extractor (background, about 30 seconds per job)
 
 Check first that no other copy is running: `pgrep -fl jd_extractor`. Then run both lists, one after the
@@ -41,24 +45,32 @@ Then score the new files (cached ones are not re-scored):
 .venv/bin/python job_match.py jobs/jd_visa/<today>
 ```
 
-## c. Unclear-visa jobs - processed too
+## c. Unclear-visa jobs - list only
 
-Jobs from companies with no public visa info (even after the deeper research) get the same treatment, so
-good matches aren't missed:
+Write the list of jobs whose visa stayed unclear, so they appear in the review list - but **don't run the
+extractor on it**:
 
 ```
 .venv/bin/python unclear_visa_match.py jobs/jobs_<today>_<HHMM>_visa.md
-.venv/bin/python jd_extractor.py jobs/unclear_<today>.md
 ```
-
-The first writes the job list `jobs/unclear_<today>.md` (visa cell "unclear - confirm with recruiter");
-the second extracts and scores their JDs into the same `jobs/jd_visa/<today>/` folder (60%+ kept,
-below in `skipped/`). Run it after the other two extractor runs, not at the same time.
 
 ## d. Spot-check
 
 Open 3 saved files: the description must be the real role text, not a cookie banner, a job list or a
 different role. Fix or delete bad ones.
 
-Status line: "Step 3 done - J JDs saved of K jobs (L from LinkedIn), S shortlisted 60%+ (U of them visa
-unclear), M not found."
+## e. On request - visa-unsure jobs I pick
+
+Only when I name jobs from the "Visa unsure - waiting for your review" list (e.g. "process Peter Park and
+Luxoft"):
+
+```
+.venv/bin/python jd_extractor.py jobs/jobs_<date>_<HHMM>_visa.md --only "Peter Park" "Luxoft"
+.venv/bin/python jd_extractor.py jobs/unclear_<date>.md --only "<company>"      # for unclear ones
+```
+
+Then rebuild the results (step 4 a) and tailor the ones that reach 50%+ (tailor-resumes skill - my
+naming them counts as the decision to tailor).
+
+Status line: "Step 3 done - J JDs saved of K visa-confirmed jobs (L from LinkedIn), S match 50%+, M not
+found; U visa-unsure jobs listed for review (not processed)."

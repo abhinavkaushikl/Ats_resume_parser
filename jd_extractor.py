@@ -74,6 +74,12 @@ class Job:
     visa: str
 
 
+def visa_unsure(visa_cell: str) -> bool:
+    """Weak (⚠️) or unclear visa evidence - anything but a confirmed yes."""
+    v = visa_cell.lower()
+    return "⚠️" in visa_cell or "weak" in v or "unclear" in v or not v.startswith("visa: yes")
+
+
 def parse_visa_file(path: Path) -> list[Job]:
     jobs, city = [], ""
     for line in path.read_text(encoding="utf-8").splitlines():
@@ -126,7 +132,8 @@ CITY_WORDS = {
     "Warsaw": ["warsaw", "warszawa", "poland", "polska"], "London": ["london", "united kingdom", " uk"],
     "Austria": ["austria", "österreich", "vienna", "wien", "graz", "linz", "villach"],
     "Romania": ["romania", "românia", "bucharest", "bucurești", "bucuresti", "cluj", "iasi", "iași", "timisoara"],
-    "Norway": ["norway", "norge", "oslo", "bergen", "trondheim"]}
+    "Norway": ["norway", "norge", "oslo", "bergen", "trondheim"],
+    "Barcelona": ["barcelona", "spain", "españa", "catalonia", "cataluña", "catalunya"]}
 
 
 def right_place(city: str, text: str, url: str) -> bool:
@@ -237,9 +244,22 @@ def main():
     ap.add_argument("--no-match", action="store_true",
                     help="only extract JDs; score them later with: job_match.py jobs/jd_visa/<date>")
     ap.add_argument("--no-linkedin", action="store_true", help="never fall back to LinkedIn's public job page")
+    ap.add_argument("--only", nargs="+", metavar="TEXT",
+                    help="process only jobs whose 'company title city' contains one of these (any visa status) - "
+                         "for the visa-unsure jobs I pick after reviewing them")
     a = ap.parse_args()
     src = Path(a.visa_file) if a.visa_file else max(JOBS.glob("*_visa.md"), key=lambda p: p.stat().st_mtime)
-    jobs = parse_visa_file(src)[: a.limit or None]
+    jobs = parse_visa_file(src)
+    if a.only:
+        jobs = [j for j in jobs if any(t.lower() in f"{j.company} {j.title} {j.city}".lower() for t in a.only)]
+    else:
+        # My rule: visa-unsure jobs (weak evidence or unclear) are not extracted, scored or tailored - they
+        # are listed in JOB_RESULTS.md for me to review, and processed later with --only.
+        unsure = [j for j in jobs if visa_unsure(j.visa)]
+        jobs = [j for j in jobs if not visa_unsure(j.visa)]
+        if unsure:
+            print(f"{len(unsure)} visa-unsure jobs skipped (listed for review; process chosen ones with --only)")
+    jobs = jobs[: a.limit or None]
     out = JOBS / "jd_visa" / datetime.now().strftime("%Y-%m-%d")
     out.mkdir(parents=True, exist_ok=True)
     print(f"{len(jobs)} jobs from {src.name} -> {out}")

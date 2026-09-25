@@ -31,9 +31,20 @@ mkdir -p applications/<date>
 .venv/bin/python resume_tailor.py --show-base > applications/<date>/_base_resume.txt
 ```
 
-Jobs = every `.md` file directly in `jobs/jd_visa/<date>/` (not `skipped/`, not README/SHORTLIST).
-For each, the output folder is `applications/<date>/<file stem>/` (create it). Skip jobs whose folder
-already has `build.json` unless I asked to redo them. Give me a status line: "N jobs to tailor".
+**Which jobs get a resume (my rule).** Look at every JD `.md` file in `jobs/jd_visa/<date>/` **and** in
+`jobs/jd_visa/<date>/skipped/` (not README/SHORTLIST) and read two header lines:
+- **Visa confirmed:** the `Visa / relocation` line says `Visa: yes` and has no `⚠️` / "weak" / "unclear".
+- **Resume match 50% or more** (the `Resume match` line) - note 50, not the 60% shortlist cut, so 50-59%
+  jobs in `skipped/` count too.
+
+Tailor only jobs that meet **both**. Do **not** tailor jobs whose visa is unsure (weak evidence ⚠️, or
+unclear) - normally they have no JD at all (the job hunt only lists them in JOB_RESULTS.md under "Visa
+unsure - waiting for your review"). Tailor one only when I have named it (then its JD is fetched and
+scored first, job-hunt step 3 e, and it needs 50%+ like the rest). Jobs below 50% are never tailored.
+
+For each job to tailor, the output folder is `applications/<date>/<file stem>/` (create it). Skip jobs
+whose folder already has `build.json` unless I asked to redo them. Give me a status line: "N jobs to
+tailor (visa confirmed, 50%+)".
 
 ### 2. Write (writer agents, parallel)
 

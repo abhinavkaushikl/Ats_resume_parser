@@ -73,6 +73,7 @@ CITIES: dict[str, tuple[str, list[str]]] = {
     "London":     ("London", ["london"]),
     "Romania":    ("(Romania OR Bucharest OR București)", ["romania", "românia", "bucharest", "bucurești", "bucuresti", "cluj", "iași", "timișoara", "timisoara", "brașov", "brasov"]),
     "Norway":     ("(Norway OR Oslo OR Norge)", ["norway", "norge", "oslo", "bergen", "trondheim", "stavanger"]),
+    "Barcelona":  ("Barcelona", ["barcelona", "catalonia", "cataluña", "catalunya"]),
 }
 
 # Career-portal sites searched on Google.
@@ -519,7 +520,7 @@ LINKEDIN_LOCATIONS = {
     "Amsterdam": "Amsterdam, North Holland, Netherlands", "Brussels": "Brussels Region, Belgium",
     "Paris": "Paris, Île-de-France, France", "Copenhagen": "Copenhagen, Capital Region of Denmark, Denmark",
     "Warsaw": "Warsaw, Mazowieckie, Poland", "Austria": "Austria", "London": "London, England, United Kingdom",
-    "Romania": "Romania", "Norway": "Norway",
+    "Romania": "Romania", "Norway": "Norway", "Barcelona": "Barcelona, Catalonia, Spain",
 }
 LINKEDIN_PAGES = 4          # 10 jobs per page
 
@@ -843,7 +844,8 @@ def _web_snippets(query: str) -> list[dict]:
 # Job city -> country, for country-specific web evidence (sponsorship rules differ per country).
 CITY_COUNTRY = {"Berlin": "Germany", "Munich": "Germany", "Amsterdam": "Netherlands", "Brussels": "Belgium",
                 "Paris": "France", "Copenhagen": "Denmark", "Warsaw": "Poland", "Austria": "Austria",
-                "London": "UK", "Romania": "Romania", "Norway": "Norway"}
+                "London": "UK", "Romania": "Romania", "Norway": "Norway",
+                "Barcelona": "Spain"}
 # US-only evidence (H-1B data, US career pages) says nothing about a European job.
 US_ONLY_RE = re.compile(r"\bh-?1b\b|\busa\b|united states|\bu\.s\.|/en[_-]us/", re.I)
 US_ONLY_SITES = ("myvisajobs.com", "h1bdata.info", "h1bgrader.com", "h1bsponsors", "usponsor")
