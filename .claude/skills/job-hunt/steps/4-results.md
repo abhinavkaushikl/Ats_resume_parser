@@ -9,9 +9,9 @@ Wait until nothing is still running: `pgrep -fl "jd_extractor|job_match|unclear_
 .venv/bin/python job_report.py jobs/visa_jobs_<today>.json
 ```
 
-`JOB_RESULTS.md` (project root) now has: summary, shortlist 50%+ of the **visa-confirmed** jobs (company
+`JOB_RESULTS.md` (project root) now has: summary, shortlist 50%+ of the **visa yes / weak-yes** jobs (weak flagged ⚠️) (company
 sites and LinkedIn separately) with job link, visa + source, matched and missing skills and a link to the
-saved JD file, the **"Visa unsure - waiting for your review"** table (company, job, city, visa evidence,
+saved JD file, the **"Visa unclear - sent to GPT"** table (company, job, city, visa evidence,
 posting link - not scored), the below-50% list, the not-scored jobs, the visa research, and an
 "Analysis data" section.
 
@@ -26,8 +26,8 @@ one italic line saying how many jobs it is based on. Then:
 - **Recurring gaps** - gaps that come up across several good matches. Say which are real skill gaps and
   which may be wording: check the resume text first. Only suggest adding something if I really have that
   experience; never suggest claiming skills I don't have.
-- **Visa unsure to review** - how many are waiting, by city; point out the ones whose titles look like
-  the best fits (from the title only - they have no JD or score) so I can pick quickly.
+- **Visa unclear (for GPT)** - how many went to `gpt_automation/company_list.txt`, by city; point out the ones whose
+  titles look like the best fits (from the title only - they have no JD or score).
 - **Cities** - where today's best matches are.
 - **Apply first** - top 5 visa-confirmed jobs in order, one line each on why.
 

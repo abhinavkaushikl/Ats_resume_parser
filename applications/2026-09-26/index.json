@@ -1,0 +1,30 @@
+{
+ "Redcare_Pharmacy_Senior_Forward_Deployed_AI_Engineer_m_f_d_Berlin": {
+  "company": "Redcare Pharmacy",
+  "city": "Berlin",
+  "role": "(Senior) Forward Deployed AI Engineer",
+  "pages": 2,
+  "warnings": [],
+  "apply_url": "https://jobs.smartrecruiters.com/Redcare-Pharmacy/744000151901499",
+  "listing_url": "https://jobs.smartrecruiters.com/Redcare-Pharmacy/744000151901499",
+  "resume": "Redcare_Pharmacy_Senior_Forward_Deployed_AI_Engineer_m_f_d_Berlin/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Redcare_Pharmacy_Senior_Forward_Deployed_AI_Engineer_m_f_d_Berlin/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Redcare_Pharmacy_Senior_Forward_Deployed_AI_Engineer_m_f_d_Berlin/project_brief.md",
+  "hr_score": 89
+ },
+ "Zalando_Senior_Applied_Scientist_Demand_Forecast_all_genders_Berlin": {
+  "company": "Zalando",
+  "city": "Berlin",
+  "role": "Senior Applied Scientist - Demand Forecast",
+  "pages": 2,
+  "warnings": [
+   "Experience variant: timeseries"
+  ],
+  "apply_url": "https://jobs.zalando.com/en/jobs/2725145",
+  "listing_url": "https://de.linkedin.com/jobs/view/senior-applied-scientist-demand-forecast-all-genders-at-zalando-4461160904",
+  "resume": "Zalando_Senior_Applied_Scientist_Demand_Forecast_all_genders_Berlin/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Zalando_Senior_Applied_Scientist_Demand_Forecast_all_genders_Berlin/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Zalando_Senior_Applied_Scientist_Demand_Forecast_all_genders_Berlin/project_brief.md",
+  "hr_score": 81
+ }
+}

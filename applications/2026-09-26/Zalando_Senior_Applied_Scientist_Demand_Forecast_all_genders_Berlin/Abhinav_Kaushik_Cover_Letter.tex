@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Zalando}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Applied Scientist - Demand Forecast\\
++91 87005 71859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 26, 2026
+
+Hiring Team\\
+Zalando
+
+\textbf{Re: Senior Applied Scientist - Demand Forecast}
+
+Dear Hiring Team,
+
+I am writing to apply for the Senior Applied Scientist - Demand Forecast role at Zalando. My background combines statistical and machine learning approaches to forecasting with hands-on experience taking models from prototype to production, which matches what this role calls for. I hold a Master's degree in Machine Learning and AI, which gave me a grounding in the statistics and time-series methods the role is built on.
+
+At Viavi Solutions, I developed time-series forecasting of base-station call handover and SMS handover volumes using LSTM and XGBoost, and built a forecasting feature for an AIOps monitoring product that forecasts univariate KPIs across the network. Earlier, as a Data Scientist, I applied Isolation Forest and Holt-Winters for anomaly detection and demand forecasting across 500+ telecommunications network devices using 15+ KPIs, which gave me a close look at the tradeoffs between statistical and ML-based forecasting methods at scale. Throughout, I have worked daily in Python, SQL, and PySpark, and delivered technical POCs and consulting sessions for 15+ clients.
+
+Zalando's demand forecast engine sits at the center of how partners plan assortment and inventory, and moving beyond simple accuracy metrics toward real incrementality is exactly the kind of problem I want to work on. I like that the team owns the whole development cycle of its algorithms, from opportunity discovery to production, rather than handing models off after a proof of concept.
+
+My fiancée already lives in Berlin, so this role lets me build my career in the city where we are making our home, and I am committed to settling in Berlin long term. I would welcome the chance to talk about how my forecasting background could contribute to the Partner Tech Applied Science team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

@@ -1,0 +1,640 @@
+[
+ {
+  "company": "Redcare Pharmacy",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "awin",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "perplexity",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "commercetools",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "capco",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "ommax",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "melotech",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "almedia",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "getyourguide",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "n26",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "exact",
+  "names": [
+   "N26 GmbH"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "jetbrains",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Scalable GmbH",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "mistral.ai",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Delivery Hero",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "exact",
+  "names": [
+   "Delivery Hero SE"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "databricks",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Databricks"
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "adyen",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Adyen N.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "mistral.ai",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "candidate",
+  "names": [
+   "Mistral AI NL B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "adjoe",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "exact",
+  "names": [
+   "adjoe"
+  ],
+  "source": "https://relocate.me/companies-hiring/adjoe"
+ },
+ {
+  "company": "Deloitte",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "candidate",
+  "names": [
+   "Deloitte GmbH Wirtschaftsprüfungsgesellschaft"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "sennder",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "European Tech Recruit",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Capgemini Invent",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "BAUMLINK",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "AI Futures",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "mobile.de",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Machine Learning Reply GmbH",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Audible",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "BCG X",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "GRID esports",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "HERE Technologies",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "GetYourGuide",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "erg group",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "4flow",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "flaconi",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Discover International",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Simon-Kucher",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Zeta Global",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Publicis Sapient",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Vinted",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "aconium GmbH",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Moss",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Limebit GmbH",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "NC GROUP GmbH",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Impala Search",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "team.blue",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Annapurna",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "NET CHECK GmbH",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Fin",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Diconium",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Samba",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Booking.com",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Booking.com B.V.",
+   "Booking.com Holding",
+   "Booking.com International B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Picnic Technologies",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Picnic Technologies B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Just Eat Takeaway.com",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "candidate",
+  "names": [
+   "Just Audit B.V.",
+   "Just Brands B.V.",
+   "Just Ride Logistics B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "CGI Nederland",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "CGI Nederland B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Xccelerated / Part of Xebia",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Wundermart",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "BCG X",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Xomnia",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Xomnia B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Huxley",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "QuantumBlack, AI by McKinsey",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Moss",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ }
+]

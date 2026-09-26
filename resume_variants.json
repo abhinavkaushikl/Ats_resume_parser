@@ -1,0 +1,17 @@
+{
+ "timeseries": {
+  "use_when": "The JD is heavy on time series / forecasting (forecasting in the title, or forecasting / time-series terms clearly outweigh LLM / GenAI terms).",
+  "experience": [
+   {
+    "company": "Viavi Solutions",
+    "title": "Senior Machine Learning Engineer",
+    "replace": {
+     "Deployed a production-grade SLA breach prediction system": "Developed time-series forecasting of base-station call handover and SMS handover volumes using LSTM and XGBoost."
+    },
+    "add": [
+     "Developed a forecasting feature for the AIOps monitoring product, forecasting univariate KPIs across the network."
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+  "status": "submit_unconfirmed",
+  "reason": "Clicked Submit Application once; no confirmation message, error, or page change appeared afterward (form still shown filled, same URL). Not re-clicked.",
+  "questions_unanswered": [],
+  "answers_given": {
+    "First Name": "Abhinav",
+    "Last Name": "Kaushik",
+    "Email": "aabhinav.kaushik@gmail.com",
+    "Country Code": "India (+91)",
+    "Phone Number": "8700571859",
+    "LinkedIn Profile": "https://www.linkedin.com/in/abhinav-kaushik10/",
+    "How did you hear about this job?": "Company careers page",
+    "Earliest possible starting date": "2026-11-15",
+    "Salary expectations (annual gross)": "100000 (no pay range in JD or posting - profile default)",
+    "Based in EU / valid work permit?": "No, I would require visa/a work permit to work.",
+    "Employed by any Zalando entities?": "No",
+    "I identify as": "Prefer not to say",
+    "Sensitive data consent checkbox": "checked"
+  },
+  "files_uploaded": [
+    "Abhinav_Kaushik_Resume.pdf",
+    "Abhinav_Kaushik_Cover_Letter.pdf"
+  ],
+  "url_used": "https://jobs.zalando.com/en/jobs/2725145",
+  "ats": "company",
+  "confirmation": "",
+  "timestamp": "2026-09-26T11:15",
+  "notes": "Tab 102197605 left open on the still-filled form for manual check/submit. read_network_requests/read_console_messages were only attached after the click so they show no history - inconclusive either way."
+}

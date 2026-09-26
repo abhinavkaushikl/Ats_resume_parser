@@ -8,6 +8,9 @@ What changes (subtle tailoring):
   title    -> the JD's job title (kept only if it fits the resume's seniority)
   summary  -> the tweaked summary
   project  -> ONE new project, inserted right after the first project (Think Tree), company name removed
+  variant  -> for a JD heavy on time series / forecasting, the fixed time-series experience bullets from
+              resume_variants.json (written by Abhinav, not an LLM); "experience_variant" in
+              tailoring.json overrides the automatic pick ("timeseries" or "base")
 Everything else - experience, skills, education, the other projects, Think Tree - is the base resume.
 
 Folder per job: applications/<date>/<jd-file-stem>/
@@ -20,7 +23,7 @@ tailoring.json
    "title": "", "summary": "",
    "project": {"name": "", "bullets": ["", ""], "technologies": [""]},
    "cover_letter": {"greeting": "Dear Hiring Team,", "paragraphs": ["", "", ""], "closing": "Sincerely,"},
-   "jd_keywords": [""]}
+   "jd_keywords": [""], "experience_variant": "timeseries | base (optional)"}
 judge.json
   {"score": 0, "decision": "", "strengths": [""], "gaps": [""]}
 
@@ -28,6 +31,8 @@ Usage
   .venv/bin/python build_resume.py --date 2026-09-25            # build every job not built yet + index
   .venv/bin/python build_resume.py --date 2026-09-25 --rebuild  # rebuild all
   .venv/bin/python build_resume.py --date 2026-09-25 --index    # only refresh index.json (after judging)
+  .venv/bin/python build_resume.py --dir gpt_automation/tailored_applications_2026-09-26   # any folder of
+      job folders (e.g. GPT's tailoring.json files); each job's JD is <job>/job_description.md
 """
 from __future__ import annotations
 
@@ -45,6 +50,7 @@ from ats_tailor.pipeline import TailoringPipeline, _project_brief, _scrub_compan
 from ats_tailor.reflection import _aligned_headline
 from ats_tailor.schemas import CoverLetter, Project
 from ats_tailor.text import plain_text
+from ats_tailor.variants import apply_variant, pick_variant
 
 ROOT = Path(__file__).resolve().parent
 APPS = ROOT / "applications"
@@ -55,12 +61,26 @@ def _no_company(text: str, company: str) -> str:
     return _scrub_company(SimpleNamespace(name=text, bullets=[], technologies=[]), company).name
 
 
+def _jd_path(folder: Path) -> Path:
+    """The job's JD file: jobs/jd_visa/<date>/<job>.md, skipped/ for 50-59% jobs, or job_description.md in
+    the application folder (where cleanup.py moves it)."""
+    day = ROOT / "jobs" / "jd_visa" / folder.parent.name
+    candidates = (day / f"{folder.name}.md", day / "skipped" / f"{folder.name}.md", folder / "job_description.md")
+    return next((p for p in candidates if p.exists()), candidates[0])
+
+
 def build(folder: Path, settings) -> dict:
     t = json.loads((folder / "tailoring.json").read_text(encoding="utf-8"))
     company, city = t.get("company", ""), t.get("city", "")
-    base = load_base(settings.base_resume_path, settings.base_resume_fixes)
+    jd_file = _jd_path(folder)
+    jd_text = jd_file.read_text(encoding="utf-8") if jd_file.exists() else ""
+    # Experience variant (resume_variants.json): tailoring.json's "experience_variant" ("base" = none),
+    # else picked from the JD, the same way job_match.py picks it for scoring.
+    variant = t.get("experience_variant") or pick_variant(jd_text)
+    variant = None if variant == "base" else variant
+    base = apply_variant(load_base(settings.base_resume_path, settings.base_resume_fixes), variant)
     resume = base.model_copy(deep=True)
-    warnings = []
+    warnings = [f"Experience variant: {variant}"] if variant else []
 
     if t.get("title") and (headline := _aligned_headline(base, _no_company(t["title"], company))):
         resume.headline = headline
@@ -108,8 +128,7 @@ def build(folder: Path, settings) -> dict:
         helper = SimpleNamespace(settings=settings)
         helper._motivation = lambda loc: TailoringPipeline._motivation(helper, loc)
         letter = TailoringPipeline._ensure_motivation(helper, letter, city)
-        jd_file = ROOT / "jobs" / "jd_visa" / folder.parent.name / f"{folder.name}.md"
-        jd = jd_file.read_text(encoding="utf-8") if jd_file.exists() else ""
+        jd = jd_text
         letter, notes = TailoringPipeline._drop_unsupported_numbers(helper, letter, f"{resume.as_text()}\n{jd}")
         warnings += notes
         letter_tex = folder / f"{stem}_Cover_Letter.tex"
@@ -122,8 +141,7 @@ def build(folder: Path, settings) -> dict:
             except LatexError as exc:
                 warnings.append(f"Cover letter PDF failed: {exc}")
 
-    jd_head = (ROOT / "jobs" / "jd_visa" / folder.parent.name / f"{folder.name}.md")
-    jd_head = jd_head.read_text(encoding="utf-8")[:3000] if jd_head.exists() else ""
+    jd_head = jd_text[:3000]
     link = lambda k: (m.group(1).strip() if (m := re.search(rf"^- \*\*{re.escape(k)}:\*\* (\S+)", jd_head, re.M)) else None)
     listing_url, apply_url = link("Original listing"), link("JD source (Playwright)")
     plan = SimpleNamespace(analysis=SimpleNamespace(role=t.get("role", ""), company=company, location=city,
@@ -164,12 +182,15 @@ def refresh_index(day: Path) -> dict:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--date", required=True)
+    ap.add_argument("--date")
+    ap.add_argument("--dir", type=Path, help="folder of job folders to build instead of applications/<date>/")
     ap.add_argument("--rebuild", action="store_true")
     ap.add_argument("--index", action="store_true", help="only refresh index.json")
     a = ap.parse_args()
     logging.basicConfig(level=logging.WARNING)
-    day = APPS / a.date
+    if not (a.date or a.dir):
+        ap.error("give --date or --dir")
+    day = a.dir.resolve() if a.dir else APPS / a.date
     if not a.index:
         settings = get_settings()
         todo = [p for p in sorted(day.iterdir()) if (p / "tailoring.json").exists()

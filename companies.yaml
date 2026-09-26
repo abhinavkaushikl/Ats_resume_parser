@@ -89,6 +89,7 @@ lever:
   - miteksystems-2
   - alimentiv-2
   - sambatv
+  - palantir
 
 ashby:
   - airapps
@@ -146,6 +147,9 @@ smartrecruiters:
   - SiaPartners
   - Cint
   - Sportradar
+  - RepRiskAG
+  - scalablegmbh
+  - Endava
 
 workable:
   - enjins
@@ -167,6 +171,9 @@ personio:
   - jobleads
   - cofinproag
   - ommax
+  - verivox
+  - humanoo
+  - feld-m
 
 recruitee:
   - kaizo
@@ -177,3 +184,5 @@ recruitee:
   - faktionbv1
   - addepto
   - innodatainc
+  - nucsai
+  - trustedshops

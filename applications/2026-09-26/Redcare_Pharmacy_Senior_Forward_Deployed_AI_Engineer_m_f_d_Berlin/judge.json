@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "tech_stack": 28,
+    "experience": 22,
+    "company_project": 16,
+    "ats_keywords": 13,
+    "credibility": 10
+  },
+  "score": 89,
+  "decision": "shortlist",
+  "strengths": [
+    "Exact role match - headline is 'Senior Forward Deployed AI Engineer' with 8+ years production agentic AI experience",
+    "Complete tech stack - LangGraph, GenAI, agentic systems, evaluation/observability, Docker, Kubernetes, CI/CD all demonstrated in production",
+    "Healthcare domain knowledge - Optum lab extraction agent, AARP medical plans, past UnitedHealth role show healthcare operations understanding",
+    "Stakeholder and discovery skills - translating business requirements to solutions, 30+ POC/prototypes, process-to-technology pipeline demonstrated"
+  ],
+  "gaps": [
+    "Automated testing practice not emphasized - only Selenium mentioned once; JD requires 'core engineering practices such as... automated testing' but resume doesn't show TDD or continuous testing",
+    "E-pharmacy/pharmacy domain not addressed - background is general healthcare, AIOps, telecom; no e-commerce, retail, or pharmacy operations shown",
+    "Personal projects lack healthcare focus - fraud detection, restaurant feedback, RFP automation don't showcase healthcare problem-solving despite strong professional healthcare background",
+    "Cloud infrastructure depth unclear - GCP/Azure mentioned but cloud-native patterns and infrastructure-as-code experience (Terraform) not detailed",
+    "German language limited to A1 level while role based in Berlin (though not explicitly required)"
+  ]
+}

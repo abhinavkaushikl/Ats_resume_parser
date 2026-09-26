@@ -1,0 +1,49 @@
+# Company list - run 2026-09-26 (last 4 weeks, Berlin + Amsterdam)
+# 31 jobs, 27 companies - visa unclear: no sponsorship evidence found yet.
+# Checked so far: official sponsor registers + the job search's own visa guess (no Google deep research yet).
+# Format: Company | Job | City | Source | What was checked | Link
+# Sorted by resume match (best first) - scores and JDs: jd_scores_2026-09-26.md, jds/2026-09-26/
+
+Moss | Senior Data Scientist (f/m/d) | Amsterdam | LinkedIn | not on IND register; job ad and web search: nothing found | https://nl.linkedin.com/jobs/view/senior-data-scientist-f-m-d-at-moss-4436409854
+Moss | Senior Data Scientist (f/m/d) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/senior-data-scientist-f-m-d-at-moss-4436346725
+getyourguide | Senior Data Scientist, Central Data Products | Berlin | company site | not on Germany sponsor lists; job ad and web search: nothing found | https://job-boards.greenhouse.io/getyourguide/jobs/8203717
+mobile.de | Data Scientist (d/f/m) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/data-scientist-d-f-m-at-mobile-de-4441652928
+flaconi | (Senior) Data Scientist (all genders) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/senior-data-scientist-all-genders-at-flaconi-4460324391
+Samba | Senior Data Scientist | Amsterdam | LinkedIn | not on IND register; job ad and web search: nothing found | https://nl.linkedin.com/jobs/view/senior-data-scientist-at-samba-4426388047
+Fin | Senior Machine Learning Scientist | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/senior-machine-learning-scientist-at-fin-4463367691
+Xccelerated / Part of Xebia | Senior ML Engineer / GEN AI | Amsterdam | LinkedIn | not on IND register; job ad and web search: nothing found | https://nl.linkedin.com/jobs/view/senior-ml-engineer-gen-ai-at-xccelerated-part-of-xebia-4468613602
+Zeta Global | Senior Data Scientist — Data Cloud Acceleration | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/senior-data-scientist-%E2%80%94-data-cloud-acceleration-at-zeta-global-4463514158
+QuantumBlack, AI by McKinsey | Data Scientist - QuantumBlack, AI by McKinsey | Amsterdam | LinkedIn | not on IND register; job ad and web search: nothing found | https://nl.linkedin.com/jobs/view/data-scientist-quantumblack-ai-by-mckinsey-at-quantumblack-ai-by-mckinsey-4219666091
+NC GROUP GmbH | Applied AI Scientist(m/f/d) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/applied-ai-scientist-m-f-d-at-nc-group-gmbh-4461171510
+NET CHECK GmbH | Applied AI Scientist(m/f/d) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/applied-ai-scientist-m-f-d-at-net-check-gmbh-4462313516
+Wundermart | Senior Data Scientist | Amsterdam | LinkedIn | not on IND register; job ad and web search: nothing found | https://nl.linkedin.com/jobs/view/senior-data-scientist-at-wundermart-4466850484
+Audible | Applied Scientist | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/applied-scientist-at-audible-4471122627
+sennder | Machine Learning Engineer | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: guess Visa unlikely · Reloc ❔ | https://de.linkedin.com/jobs/view/machine-learning-engineer-at-sennder-4453109774
+melotech | Data Scientist | Berlin | company site | not on Germany sponsor lists; job ad and web search: nothing found | https://jobs.ashbyhq.com/melotech/35bdfd24-a05f-4c2d-8c55-79d7b394499f
+Vinted | Senior Data Scientist, Buyer | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/senior-data-scientist-buyer-at-vinted-4456753596
+GRID esports | Senior Data Scientist - Real-Time Esports Predictions (m/f/x) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/senior-data-scientist-real-time-esports-predictions-m-f-x-at-grid-esports-4469875654
+BCG X | Forward Deployed AI Scientist, Netherlands - BCG X | Amsterdam | LinkedIn | not on IND register; job ad and web search: nothing found | https://nl.linkedin.com/jobs/view/forward-deployed-ai-scientist-netherlands-bcg-x-at-bcg-x-4390725143
+Diconium | Senior Data Scientist (all genders) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/senior-data-scientist-all-genders-at-diconium-4414698081
+Publicis Sapient | Data Scientist - Manager - Energy & Commodities | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/data-scientist-manager-energy-commodities-at-publicis-sapient-4451201634
+Simon-Kucher | Manager Data Science & (Gen)AI – Healthcare & Life Sciences (m/f/d) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/manager-data-science-gen-ai-%E2%80%93-healthcare-life-sciences-m-f-d-at-simon-kucher-4432350306
+aconium GmbH | AI Engineer (m/w/d) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/ai-engineer-m-w-d-at-aconium-gmbh-4462232645
+BCG X | Forward Deployed AI Scientist, Germany & Austria - BCG X | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/forward-deployed-ai-scientist-germany-austria-bcg-x-at-bcg-x-4424676642
+Capgemini Invent | Senior Consultant / Manager (Gen) AI & Data Scientist / AI Garage (w/m/d) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: guess Visa unlikely · Reloc ❔ | https://de.linkedin.com/jobs/view/senior-consultant-manager-gen-ai-data-scientist-ai-garage-w-m-d-at-capgemini-invent-4471896244
+Capgemini Invent | (Associate) Consultant Data Science & AI (m/w/d) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: guess Visa unlikely · Reloc ❔ | https://de.linkedin.com/jobs/view/associate-consultant-data-science-ai-m-w-d-at-capgemini-invent-4471878892
+Limebit GmbH | Data Science & Machine Learning for Life-Science (m/w/d) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/data-science-machine-learning-for-life-science-m-w-d-at-limebit-gmbh-4459279094
+perplexity | Member of Technical Staff (Machine Learning Research Engineer) | Berlin | company site | not on Germany sponsor lists; job ad and web search: guess Visa unlikely · Reloc ❔ | https://jobs.ashbyhq.com/perplexity/1a3df802-9238-4827-ab1f-12a9d1e4b81c
+awin | Head of Product, AI Enablement (f/m/d) | Berlin | company site | not on Germany sponsor lists; job ad and web search: guess Visa unlikely · Reloc ❔ | https://job-boards.greenhouse.io/awin/jobs/8004490003
+HERE Technologies | Principal ML & AI Engineer (Spatial AI & Perception) | Berlin | LinkedIn | not on Germany sponsor lists; job ad and web search: nothing found | https://de.linkedin.com/jobs/view/principal-ml-ai-engineer-spatial-ai-perception-at-here-technologies-4467741600
+perplexity | Internship - Machine Learning Research Engineer | Berlin | company site | not on Germany sponsor lists; job ad and web search: guess Visa unlikely · Reloc ❔ | https://jobs.ashbyhq.com/perplexity/b9e1ff15-d52a-46d5-abf0-26460f2a116c
+
+# Not for processing (dropped: agency hiding the employer, or says no sponsorship):
+# Annapurna (Berlin) - recruitment agency, the real employer isn't named
+# BAUMLINK (Berlin) - recruitment agency, the real employer isn't named
+# Discover International (Berlin) - recruitment agency, the real employer isn't named
+# European Tech Recruit (Berlin) - recruitment agency, the real employer isn't named
+# European Tech Recruit (Berlin) - recruitment agency, the real employer isn't named
+# Huxley (Amsterdam) - recruitment agency, the real employer isn't named
+# Impala Search (Berlin) - recruitment agency, the real employer isn't named
+# Not for processing (dropped: agency hiding the employer, or says no sponsorship):
+# erg group (Berlin) - recruitment agency, the real employer isn't named
+# team.blue (Berlin) - says no visa sponsorship

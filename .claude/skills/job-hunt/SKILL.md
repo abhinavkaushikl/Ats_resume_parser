@@ -1,6 +1,7 @@
 ---
 name: job-hunt
-description: Daily AI/ML job hunt for Abhinav, end to end - find jobs posted in the last 24 hours, keep only companies that sponsor visas (with a Google check and deeper research), get the full job descriptions (company site first, else LinkedIn public page), score the visa-confirmed ones against the base resume, write one results file with analysis, and generate a subtly tailored resume + cover letter for every visa-confirmed job at 50%+ (visa-unsure jobs are only listed for review). Use when the user asks to run the job hunt, fetch today's jobs, or runs /job-hunt.
+description: Daily AI/ML job hunt for Abhinav, end to end - find jobs posted in the last 24 hours, keep only companies that sponsor visas (with a Google check and deeper research), get the full job descriptions (company site first, else LinkedIn public page), score the visa yes / weak-yes ones against the base resume, write one results file with analysis, and generate a subtly tailored resume + cover letter for every one at 50%+ (visa-unclear jobs only go to a company list for GPT). Use when the user asks to run the job hunt, fetch today's jobs, or runs /job-hunt.
+model: sonnet
 ---
 
 # Daily job hunt
@@ -11,11 +12,12 @@ questions along the way. If I added notes when starting (e.g. "only Berlin and A
 Base resume: `Abhinav_kaushik_AI_ML.pdf` (Senior AI / GenAI / LLM engineer).
 The end result is ONE file: `JOB_RESULTS.md` in the project root, plus the job-description files of the
 shortlisted jobs and a tailored resume + cover letter for each (`applications/<date>/`).
-- **Visa confirmed** (`Visa: yes`): JD fetched and scored; **50%+ match -> resume + cover letter**, below
-  50% -> no resume (still listed).
-- **Visa unsure** (⚠️ weak evidence or unclear): **no JD, no score, no resume** - listed in JOB_RESULTS.md
-  under "Visa unsure - waiting for your review". I review them myself and name the ones to process
-  (step 3 e), then those get the same treatment.
+- **Visa yes or weak yes** (`Visa: yes`, with or without ⚠️ weak): Claude handles these - JD fetched
+  and scored; **50%+ match -> resume + cover letter**, below 50% -> no resume (still listed). Weak ones
+  stay flagged ⚠️ (confirm with the recruiter).
+- **Visa unclear** (no evidence even after the Google question and deeper research): **handed to GPT,
+  not Claude** - no JD, no score, no resume. Claude only writes `gpt_automation/company_list.txt`
+  (step 3 c) and I run GPT on it from the `gpt_automation/` folder. If I hand a job back, step 3 e.
 - Dropped: company says no, existing right to work required, or a recruitment agency hiding the employer.
 Everything else is working data and is cleaned up at the end.
 
@@ -42,6 +44,12 @@ Long scripts (job search, extraction) run in the background; wait for them to fi
   and stop using LinkedIn for the rest of the run if it rate-limits (the extractor does this by itself).
 - **Honest scores.** Never make the scorer more lenient, never pick a higher re-score, never tell the scorer
   what score to aim for. A job that needs experience I don't have should score low - report it as it is.
+- **Right resume version before judging.** A JD heavy on time series / forecasting (forecasting in the
+  title, or time-series terms clearly outweigh LLM / GenAI terms) is scored against the **time-series
+  version** of my resume (`resume_variants.json`: the Viavi SLA bullet swapped for base-station call /
+  SMS handover forecasting with LSTM and XGBoost, plus the univariate AIOps KPI forecasting feature) -
+  that is real experience the base resume leaves out. Don't reject a forecasting job just because the
+  base resume under-shows it; reject only when it's still a genuine misfit with that version.
 - **Visa: keep any hope.** Keep a company with even slight public evidence of sponsorship (flag weak
   evidence); drop only explicit "no", "must already have work rights", or agencies hiding the employer.
 - **Don't destroy work mid-run.** Never delete `jobs/jd_visa/<today>/` while the run is going; re-run steps
@@ -49,6 +57,7 @@ Long scripts (job search, extraction) run in the background; wait for them to fi
   check with `pgrep -fl <script>` before starting one. If another session is running the same scripts,
   stop and tell me instead of starting a second copy.
 - **One results file.** Don't create other report files for me; everything I need goes in JOB_RESULTS.md.
+  The only other file is `gpt_automation/company_list.txt`, the company list for GPT.
 - If a step fails, say what failed and why, continue with what you have, and list it in the final reply.
 
 ## Scripts (all in the project root, run with `.venv/bin/python`)

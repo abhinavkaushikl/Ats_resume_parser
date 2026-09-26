@@ -1,6 +1,7 @@
 ---
 name: tailor-resumes
 description: Tailored resume + cover letter for every shortlisted job, written by Claude (no Groq) - for each job description in jobs/jd_visa/<date>/ Claude writes the new title, a tweaked summary and one new company-fit project, a script builds the LaTeX/PDF, and a separate Claude judge scores it. Use when the user asks to tailor / generate resumes for the shortlisted jobs, or runs /tailor-resumes; also step 5 of /job-hunt.
+model: sonnet
 ---
 
 # Tailor resumes (Claude)
@@ -15,7 +16,18 @@ compiles the PDF. No Groq is used.
 
 - **Changes:** title (the JD's job title), summary (tweaked toward the JD, clear), ONE new project fitting
   the company's profile, and the cover letter.
-- **Never changes:** experience bullets, skills, education, the other projects. **Think Tree** (my free
+- **Common thread - Think Tree:** the summary always ends with one sentence on ThinkTree.AI (non-profit
+  AI learning platform used by NGO teachers to support students with ADHD), and the cover letter's last
+  paragraph tells the same story.
+- **Cover letter = a story in 4 short paragraphs** (each max 4 lines): intro tweaked to the JD ->
+  motivation + the company (with the fiancée / Berlin story) -> contribution -> Think Tree + close.
+  Details in `writer.md`. It must not read as AI-generated.
+- **Experience version:** for a JD heavy on time series / forecasting, the build swaps in the fixed
+  time-series bullets from `resume_variants.json` (Viavi: call / SMS handover forecasting with LSTM and
+  XGBoost instead of the SLA bullet, plus the univariate AIOps KPI forecasting feature). These are my own
+  words - writers never write or edit experience bullets. The build picks the version from the JD the
+  same way the scorer does; `"experience_variant"` in tailoring.json overrides it.
+- **Never changes:** other experience bullets, skills, education, the other projects. **Think Tree** (my free
   ADHD app, a charity tool) is never edited, trimmed or moved - the build keeps it first.
 - **Invisible:** the company's name appears nowhere in the resume or in the file names, and no company
   product / brand words. The build also removes the name if it slips in.
@@ -33,14 +45,14 @@ mkdir -p applications/<date>
 
 **Which jobs get a resume (my rule).** Look at every JD `.md` file in `jobs/jd_visa/<date>/` **and** in
 `jobs/jd_visa/<date>/skipped/` (not README/SHORTLIST) and read two header lines:
-- **Visa confirmed:** the `Visa / relocation` line says `Visa: yes` and has no `⚠️` / "weak" / "unclear".
+- **Visa yes or weak yes:** the `Visa / relocation` line starts `Visa: yes` (a `⚠️ weak` flag is fine)
+  and does not say "unclear".
 - **Resume match 50% or more** (the `Resume match` line) - note 50, not the 60% shortlist cut, so 50-59%
   jobs in `skipped/` count too.
 
-Tailor only jobs that meet **both**. Do **not** tailor jobs whose visa is unsure (weak evidence ⚠️, or
-unclear) - normally they have no JD at all (the job hunt only lists them in JOB_RESULTS.md under "Visa
-unsure - waiting for your review"). Tailor one only when I have named it (then its JD is fetched and
-scored first, job-hunt step 3 e, and it needs 50%+ like the rest). Jobs below 50% are never tailored.
+Tailor only jobs that meet **both**. Do **not** tailor visa-unclear jobs - they have no JD (the job
+hunt sends them to GPT via `gpt_automation/company_list.txt`). Tailor one only when I hand it back
+(then its JD is fetched and scored first, job-hunt step 3 e, and it needs 50%+ like the rest). Jobs below 50% are never tailored.
 
 For each job to tailor, the output folder is `applications/<date>/<file stem>/` (create it). Skip jobs
 whose folder already has `build.json` unless I asked to redo them. Give me a status line: "N jobs to
@@ -49,7 +61,7 @@ tailor (visa confirmed, 50%+)".
 ### 2. Write (writer agents, parallel)
 
 Split the jobs into batches of about 8 and start one writer agent per batch with the Agent tool,
-`model: "sonnet"`, all in the same message so they run in parallel. Prompt for each (fill in the lists):
+`model: "opus"` (always Opus - the resume and cover letter are what recruiters read), all in the same message so they run in parallel. Prompt for each (fill in the lists):
 
 > Read `.claude/skills/tailor-resumes/writer.md` and follow it exactly. Base resume:
 > `applications/<date>/_base_resume.txt`. For each job below, read the job description file and write
@@ -72,7 +84,7 @@ build is not - fix that job's `tailoring.json` and run the command again (it onl
 
 ### 4. Judge (judge agents, parallel)
 
-Batches of about 10, one judge agent per batch with the Agent tool, `model: "haiku"` (never the writer's
+Batches of about 10, one judge agent per batch with the Agent tool, `model: "sonnet"` (never the writer's
 model), all in one message:
 
 > Read `.claude/skills/tailor-resumes/judge.md` and follow it exactly. For each folder below, read

@@ -1,0 +1,59 @@
+HEADLINE: Senior Forward Deployed AI Engineer
+SUMMARY
+Senior AI/ML Engineer with 8+ years of experience building production agentic AI systems and translating business and client requirements into working solutions, across Healthcare, Telecom, and client-facing technology environments. Experienced across the full lifecycle from rapid prototypes and proof-of-concepts to production deployment, with hands-on work in GenAI, RAG, LangGraph, tool orchestration, and automated evaluation and observability for AI agents. Comfortable working closely with stakeholders to understand a process end to end before building the technology that changes it. Looking for opportunities in Berlin and willing to relocate.
+SKILL CATEGORIES
+AI / GenAI: GenAI, LLM, RAG, Agentic AI, LangChain, LangGraph, Claude, OpenAI, Embeddings, Tool Orchestration, Cross-Encoder, Transformers, NLP, Generative AI
+Machine Learning: XGBoost, LightGBM, Random Forest, LSTM, SBERT, DBSCAN, Time Series Forecasting, Demand Forecasting, Anomaly Detection, Statistical Modeling, Regression, Deep Learning
+Programming / Data: Python, SQL, PySpark, Pandas, NumPy, Flask, Hive, SparkQL, REST API, Pydantic, Unix
+MLOps / Cloud: MLflow, Docker, Kubernetes, Jenkins, Bamboo, Bitbucket, DVC, Terraform, Airflow, GCP, Azure, NCI Servers
+Search / Observability: Elasticsearch, Kibana, Logging, Log Analysis, Apache Solr, Lucene Indexing, Search and Information Retrieval, AI Evaluation, LLM Evaluators, Agent Tracing
+Data Platforms: Databricks, Apache Spark, Airflow
+Databases: TimescaleDB, MySQL, Vector DB, pgvector, ArangoDB, Cosmos DB
+BI / Testing: Power BI, QlikSense, SAP HANA, Selenium
+PROFESSIONAL EXPERIENCE
+Senior AI Engineer | Optum | Bengaluru, India | Nov 2025 - Present
+- Built and integrated a lab extraction agent with an existing Laboratory Information Management System (LIMS) using Claude Opus 4.7 and Amazon Textract, automating work associated with 800 Jira tickets and PRD tasks.
+- Engineered a LangGraph-based analytics system for AARP medical plans, combining stateful multi-agent reasoning with real-time chart generation and reducing manual analysis effort by 98%.
+- Built automated evaluation and observability pipelines for Question Answering and Summary Agents, leveraging LLM evaluators, quality metrics, tracing, and failure detection to reduce human-in-the-loop review.
+- Enhanced dense retrieval performance by training and evaluating a cross-encoder with positive and negative examples for AARP survey data, achieving a 20% increase in retrieval accuracy.
+Senior Machine Learning Engineer | Viavi Solutions | Chennai, India | Sep 2024 - Nov 2025
+- Built 30+ AI application prototypes and mockups for clients across AIOps and GeoPerformance, translating client requirements into functional POCs for solution validation and demonstrations.
+- Developed an AI-powered RAG-based Project Discovery Assistant using LangGraph, combining semantic retrieval and LLM reasoning to achieve a 90% match rate with existing organizational solutions.
+- Deployed a production-grade SLA breach prediction system using Random Forest and LightGBM with FastAPI and MLflow, integrating GPT-4-powered reasoning for real-time root-cause analysis and remediation guidance, resulting in a 67% reduction in downtime.
+Data Scientist | Viavi Solutions | Bengaluru, India | Nov 2021 - Sep 2024
+- Applied Sentence-BERT and DBSCAN to enhance semantic understanding and cluster alarm messages across graph-based AIOps infrastructure, achieving a 73.5% improvement in semantic alarm classification.
+- Applied Isolation Forest and Holt-Winters for anomaly detection and demand forecasting across 500+ telecommunications network devices using 15+ KPIs, supporting earlier identification of abnormal time-series behavior and proactive network planning.
+- Delivered technical POCs and consulting sessions on data services and products for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.
+Data Analyst | United Health Group | Gurugram, India | Jun 2021 - Nov 2021
+- Collaborated with stakeholders on ad-hoc analysis and customer-retention dashboards using Hive, SQL, and Power BI.
+- Developed a Python- and Flask-based parser to automate data extraction, parsing, and transformation into structured data, supporting downstream analytics and reporting.
+Data Engineer | Nippon Data Systems | Gurugram, India | Nov 2019 - May 2021
+- Engineered SQL and PySpark-based data pipelines to automate BAU medical-audit reporting, transforming and aggregating large healthcare datasets and reducing manual reporting effort by 95%.
+- Built real-time observability using Elasticsearch for centralized log ingestion and analysis, with Kibana dashboards for monitoring system activity and user events, improving traceability efficiency by 80% for the COVID QRT team.
+- Developed a Flask-based enterprise search engine using Apache Solr and Lucene indexing, enabling centralized search and retrieval across organizational data for enterprise-wide use cases.
+Associate Consultant | Saksoft | Gurugram, India | Dec 2017 - Nov 2019
+- Conceptualized customer dashboards using QlikSense, SQL, and SAP HANA for financial and product insights, resulting in a 40% increase in user engagement.
+- Developed an XGBoost-based propensity model to predict the probability of customers initiating a personal loan application within 7 days of contact, enabling targeted outreach and customer prioritization.
+- Leveraged Selenium and Python to automate performance testing and evaluate application response times, resulting in a 90% reduction in testing effort.
+PROJECTS
+Think Tree | ML Study Platform
+- Built a non-profit AI-powered ML study platform for people with ADHD and context-switching challenges, designed to help users organize learning and maintain study context.
+Business Process Automation Agent
+- Built a multi-agent workflow automation system using LangGraph and tool orchestration to turn a manual business process into an API-driven agentic pipeline.
+- Evaluated agent outputs with automated test suites and LLM evaluators, then containerized and deployed the service through a CI/CD pipeline for production monitoring.
+Technologies: LangGraph, Agentic AI, FastAPI, Docker, Kubernetes, CI/CD, REST API, LLM Evaluators
+Financial Fraud Detection | Mar 2025
+- Developed an AI-driven fraud detection and reasoning workflow using the JPMorgan Synthetic Dataset, combining LightGBM-based modeling with LLM explanations to support interpretable financial-risk analysis.
+Restaurant Feedback Analyzer | Aspect-Based Sentiment Analysis
+- Built an NLP pipeline to extract review aspects and determine sentiment at the aspect level, enabling granular insights into customer experience.
+RFP Multi-Agent Proposal Automation Platform
+- Built a multi-agent RFP automation platform using an LLM-driven supervisor to orchestrate intent detection, retrieval, proposal generation, document matching, and market research with RAG over historical proposals.
+EDUCATION
+Master of Science, Machine Learning and AI | Liverpool John Moores University | Jan 2021 - Jan 2023
+Bachelor of Technology, Information Technology | Jamia Hamdard | Aug 2013 - Aug 2017
+LANGUAGES
+English: Native
+German: A1, Pursuing
+ADDITIONAL INFORMATION
+- Network Intern, Airport Authority of India
+- Hadoop Intern, Ducat Technologies

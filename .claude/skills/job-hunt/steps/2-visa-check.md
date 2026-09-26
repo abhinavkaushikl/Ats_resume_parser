@@ -16,7 +16,7 @@ them if older than 7 days, caches every listed company in `jobs/visa_companies.j
 - **exact, official register** -> Visa: yes, source = the register. Done, no web search.
 - **exact, DE / ES employer list** -> Visa: yes ⚠️ weak (source = the list entry). Germany is the main
   target: for every Berlin / Munich job marked weak, try one search for a stronger source (company
-  careers page, the JD, an official statement) to drop the ⚠️ - weak jobs are not scored or tailored.
+  careers page, the JD, an official statement) to drop the ⚠️ (weak jobs are still processed, but flagged).
 - **candidate** (similar name, e.g. "Amazon Science" vs "Amazon UK Services Ltd") -> decide by eye; one
   search only if unclear.
 - **none** -> research as below. In London, not being on the register usually means no Skilled Worker
@@ -24,10 +24,11 @@ them if older than 7 days, caches every listed company in `jobs/visa_companies.j
 
 ## a. Evidence, strongest first
 
-1. **The job description** says visa sponsorship / relocation is offered, or not.
+1. **The job description** says visa sponsorship / relocation / expat support is offered ("visa",
+   "relocation", "expat package", "30% ruling", "Blue Card"), or not.
 2. **Official sponsor registers:** UK Home Office register of licensed sponsors (London), Dutch IND
    recognised sponsors (Amsterdam), Danish SIRI fast-track list (Copenhagen).
-3. **The company's own** careers / benefits / FAQ pages.
+3. **The company's own** careers / benefits / FAQ pages (visa, relocation, expat, Blue Card).
 4. **Third-party pages:** Relocate.me, Glassdoor, Make it in Germany, employee reviews.
 
 Ignore US-only H-1B data. Reuse answers in `jobs/visa_companies.json` that are under 30 days old and have
@@ -52,7 +53,7 @@ English is a reasonable "weak yes" only if some page actually says it hires inte
 ## c. Decide
 
 - **Keep** if there is even slight public evidence: register, JD, company page, Google verdict,
-  third-party page, relocation support. Mark it weak when it rests only on a third-party page or on
+  third-party page, relocation or expat support. Mark it weak when it rests only on a third-party page or on
   relocation support without a visa mention.
 - **Remove** only if: the company says it does not sponsor, the job requires existing work rights, or it's
   a recruitment agency / job board that hides the employer.
@@ -97,8 +98,8 @@ Save new answers to `jobs/visa_companies.json` (key `"<company>|<country>"`, wit
 ## e. Deeper research on the removed companies
 
 For every company in "No public visa-sponsorship info found", do a second, deeper round: the Google
-question again plus company-specific searches (careers page, "relocation", "Blue Card", the national
-register). Save one entry per company and city (agencies and "says no" without searching) to
+question again plus company-specific searches (careers page, "visa", "relocation", "expat",
+"Blue Card", the national register). Save one entry per company and city (agencies and "says no" without searching) to
 `jobs/visa_research_<today>.json`:
 
 ```json
@@ -110,6 +111,6 @@ For every `yes` / `weak` company, copy its rows from the input file into
 `jobs/research_<today>_sponsors.md` (same table format as the visa file, one `## <City> (n)` section per
 city). The visa cell must use the visa file's format - `Visa: yes · Relocation: ... · Source: [...](...)`,
 with ` ⚠️ weak source, confirm with recruiter` appended for weak ones - the scripts read it to tell
-confirmed from unsure.
+confirmed from weak.
 
 Status line: "Step 2 done - K of N jobs kept (W weak), R added back by deeper research, X removed."

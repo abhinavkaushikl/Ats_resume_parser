@@ -75,9 +75,9 @@ class Job:
 
 
 def visa_unsure(visa_cell: str) -> bool:
-    """Weak (⚠️) or unclear visa evidence - anything but a confirmed yes."""
+    """Unclear visa - no evidence at all. Weak (⚠️) evidence still counts as a yes and is processed."""
     v = visa_cell.lower()
-    return "⚠️" in visa_cell or "weak" in v or "unclear" in v or not v.startswith("visa: yes")
+    return "unclear" in v or not v.startswith("visa: yes")
 
 
 def parse_visa_file(path: Path) -> list[Job]:
@@ -253,12 +253,12 @@ def main():
     if a.only:
         jobs = [j for j in jobs if any(t.lower() in f"{j.company} {j.title} {j.city}".lower() for t in a.only)]
     else:
-        # My rule: visa-unsure jobs (weak evidence or unclear) are not extracted, scored or tailored - they
-        # are listed in JOB_RESULTS.md for me to review, and processed later with --only.
+        # My rule: visa-unclear jobs are not extracted, scored or tailored - they go to GPT
+        # (gpt_automation/company_list.txt). Weak-evidence jobs are processed like confirmed ones.
         unsure = [j for j in jobs if visa_unsure(j.visa)]
         jobs = [j for j in jobs if not visa_unsure(j.visa)]
         if unsure:
-            print(f"{len(unsure)} visa-unsure jobs skipped (listed for review; process chosen ones with --only)")
+            print(f"{len(unsure)} visa-unclear jobs skipped (they go to GPT; process one here with --only)")
     jobs = jobs[: a.limit or None]
     out = JOBS / "jd_visa" / datetime.now().strftime("%Y-%m-%d")
     out.mkdir(parents=True, exist_ok=True)

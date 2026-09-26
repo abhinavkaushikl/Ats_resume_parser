@@ -815,7 +815,9 @@ RELOC_YES_RE = re.compile(
     r"relocation\s+(support|package|assistance|bonus|allowance|budget|help|costs?|benefits?|"
     r"is\s+(provided|offered|available|possible|supported)|(will\s+be\s+)?covered)|"
     r"(support|help|assist)\w*\s+(you\s+)?(with\s+)?(your\s+)?relocat|relocate\s+you|"
-    r"umzugs(unterstützung|kosten|pauschale|hilfe)|relocation\s+&\s+visa|visa\s+&\s+relocation", re.I)
+    r"umzugs(unterstützung|kosten|pauschale|hilfe)|relocation\s+&\s+visa|visa\s+&\s+relocation|"
+    r"expat(riate)?\s+(package|support|program(me)?|allowance|benefits?|services?|assistance|community)|"
+    r"(support|help|assist)\w*\s+(for\s+)?expat|30\s*%\s*(tax\s+)?(ruling|regeling|facility)", re.I)
 
 VISA_CACHE_DAYS = 30
 
@@ -861,7 +863,7 @@ def _company_visa_web(company: str, country: str = "") -> dict:
     tokens = [t for t in re.findall(r"\w+", name.lower()) if len(t) > 2] or [company.lower()]
     out = {"visa": "", "relocation": "", "src": "", "official": False, "checked": datetime.now(timezone.utc).isoformat()}
     domain = lambda u: u.split("/")[2].lower() if u.count("/") >= 2 else ""
-    results = sorted(_web_snippets(f'"{name.strip()}" visa sponsorship relocation {country}'.strip()),
+    results = sorted(_web_snippets(f'"{name.strip()}" visa sponsorship relocation expat {country}'.strip()),
                      key=lambda r: tokens[0] not in domain(r["url"]))
     for r in results:
         text, url = r["text"], r["url"]

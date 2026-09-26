@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Redcare Pharmacy}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Forward Deployed AI Engineer\\
++91 87005 71859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 26, 2026
+
+Hiring Team\\
+Redcare Pharmacy
+
+\textbf{Re: (Senior) Forward Deployed AI Engineer}
+
+Dear Hiring Team,
+
+I'm applying for the Senior Forward Deployed AI Engineer role at Redcare Pharmacy. The job asks for someone who can sit with business stakeholders, understand how a process actually works, and then build the agentic AI system that changes it, which is close to what I've been doing at Optum and Viavi Solutions for the past few years.
+
+At Optum, I built a lab extraction agent that integrates with an existing Laboratory Information Management System using Claude and Amazon Textract, and a LangGraph-based multi-agent analytics system for medical plans that combines stateful reasoning with real-time chart generation. I also built automated evaluation and observability pipelines for our agents, using LLM evaluators, tracing, and failure detection to catch problems before they reach production. Earlier at Viavi, I built more than 30 AI application prototypes directly from client requirements, working with business teams to turn operational problems into working proofs of concept and then into production systems with FastAPI and MLflow.
+
+Redcare Pharmacy's Forward Deployed AI Engineer team sits inside a central Data \& AI organisation and is meant to work across many parts of the business, redesigning real processes rather than shipping isolated models. That structure, and the emphasis on staying involved from discovery through production, is the part of AI work I find most useful: it forces you to understand the problem well enough that the technology choice becomes secondary.
+
+My fiancée already lives in Berlin, so this role lets me build my career in the city where we are making our home, and I am committed to settling in Berlin long term. I would welcome the chance to talk about how my background in agentic systems, evaluation, and client-facing AI work could fit this role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

@@ -70,7 +70,8 @@ SUFFIX = re.compile(r"\b(ltd|limited|plc|llp|lp|inc|incorporated|corp|corporatio
                     r"international|t a|germany|deutschland|spain|espana|danmark|denmark)\b")
 VISA_YES = re.compile(r"visa\s+sponsor|sponsor(ship|ing)?\s+(of\s+)?(your\s+|a\s+|the\s+)?(work\s+)?(visa|permit)|"
                       r"(visa|work permit|blue card)\s+(support|assistance|process|application|help)|"
-                      r"relocation\s+(and|&)\s+visa|visa\s+(and|&)\s+relocation", re.I)
+                      r"relocation\s+(and|&)\s+visa|visa\s+(and|&)\s+relocation|"
+                      r"expat(riate)?\s+(package|support|program(me)?|visa)", re.I)
 VISA_NO = re.compile(r"(no|not|cannot|can't|unable to|do not|don't|without)\s+(\w+\s+){0,3}(visa\s+)?sponsor|"
                      r"must (already )?have (the )?(right|permission) to work|keine\s+(visa|visum)", re.I)
 

@@ -21,13 +21,13 @@ Then check that every `[JD](...)` and `[Resume](...)` link in JOB_RESULTS.md poi
 ## b. Reply
 
 Reply in the chat with:
-- The funnel: jobs found -> after resume filter -> after visa check (confirmed / unsure / dropped) ->
+- The funnel: jobs found -> after resume filter -> after visa check (yes / weak / unclear / dropped) ->
   visa-confirmed JDs found -> 50%+ with a resume made.
 - The shortlist (visa confirmed, 50%+): match %, company, job (linked), city, top matched and missing
   skills, judge score and a link to the tailored resume.
 - The "Apply first" list and 2-3 lines of the analysis.
-- **Waiting for your review:** the visa-unsure jobs (company, job, city, weak / unclear) - not scored, no
-  resume. Ask me which ones to process.
+- **For GPT:** the link to `gpt_automation/company_list.txt` and its count by city - no JDs, not
+  scored, no resume.
 - Anything that failed or was skipped, and why (e.g. Claude in Chrome not connected, LinkedIn rate-limited).
 - The link to JOB_RESULTS.md - the only file I need to open.
 

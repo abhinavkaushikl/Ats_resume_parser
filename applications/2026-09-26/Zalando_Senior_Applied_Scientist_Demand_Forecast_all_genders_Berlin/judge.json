@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "tech_stack": 28,
+    "experience": 16,
+    "company_project": 15,
+    "ats_keywords": 13,
+    "credibility": 9
+  },
+  "score": 81,
+  "decision": "maybe",
+  "strengths": [
+    "Strong production ML skills: FastAPI, MLflow, model lifecycle ownership from prototype to production",
+    "Direct forecasting experience with both statistical (Holt-Winters) and ML methods (LSTM, XGBoost)",
+    "Proven communication and consulting: 15+ client POCs, presentations, mentoring experience",
+    "Concrete outcomes across all roles with quantified impact metrics"
+  ],
+  "gaps": [
+    "Only ~4 years of forecasting experience vs 5+ years required (shortfall of ~1 year)",
+    "Deep theoretical foundation in time-series analysis and advanced forecasting methodologies not demonstrated; lacks mention of probabilistic/hierarchical forecasting",
+    "Retail e-commerce demand forecasting not in primary work history (generic retail forecasting project lacks specificity and is not recent)",
+    "Job title misalignment: Senior AI/ML Engineer/Scientist vs Senior Applied Scientist role",
+    "Newest projects (Fraud Detection, RFP Automation) are GenAI/LLM-focused rather than forecasting domain-focused"
+  ]
+}

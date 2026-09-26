@@ -133,11 +133,11 @@
   "checked": "2026-09-24T22:26:36.114485+00:00"
  },
  "Deloitte|Germany": {
-  "visa": "no",
+  "visa": "weak",
   "relocation": "yes",
-  "src": "https://www.deloitte.com/uk/en/careers/early-careers/work-permits-and-sponsorship.html",
-  "official": true,
-  "checked": "2026-09-24T22:26:52.575124+00:00"
+  "src": "https://www.casestar.io",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
  },
  "Intellias|Romania": {
   "visa": "",
@@ -166,5 +166,385 @@
   "src": "",
   "official": false,
   "checked": "2026-09-24T22:27:55.814741+00:00"
+ },
+ "Redcare Pharmacy|Germany": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://www.redcare-pharmacy.com/en/careers/faqs",
+  "official": true,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "awin|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://www.arbeitnow.com/jobs/companies/awin",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "PwC Deutschland|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "LawZero|Germany": {
+  "visa": "weak",
+  "relocation": "yes",
+  "src": "https://builtin.com/company/lawzero/jobs",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "Bayer|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "Capgemini Invent|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://www.capgemini.com/careers/career-paths/experienced-professionals/",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "Doctolib|Germany": {
+  "visa": "weak",
+  "relocation": "yes",
+  "src": "https://www.arbeitnow.com/jobs/companies/doctolib",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "Pfizer|Germany": {
+  "visa": "weak",
+  "relocation": "yes",
+  "src": "https://jaabz.com/jobs/52242-senior-computational-scientist",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "BAUMLINK|Germany": {
+  "visa": "no",
+  "relocation": "",
+  "src": "https://talents.studysmarter.de",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "genua gmbh|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-25T20:04:51.434049+00:00"
+ },
+ "Intric|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-25T20:05:06.301171+00:00"
+ },
+ "GREEN BUSINESS DEVELOPMENT GmbH|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-25T20:05:25.008653+00:00"
+ },
+ "IU International University of Applied Sciences|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://workmotion.com/blog/iu-builds-a-strong-international-onboarding-policy/",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "idealo internet GmbH|Germany": {
+  "visa": "weak",
+  "relocation": "yes",
+  "src": "https://startup.jobs/fullstack-software-engineer-m-f-d-price-alert-idealo",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "adjoe|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://relocate.me/companies-hiring/adjoe",
+  "official": false,
+  "register": "known sponsor list (Germany)",
+  "checked": "2026-09-26T06:48:21.511918+00:00"
+ },
+ "Atlantic|Germany": {
+  "visa": "",
+  "relocation": "yes",
+  "src": "https://valoratlantico.com/en/relocation-visas/",
+  "official": true,
+  "checked": "2026-09-25T20:06:33.704197+00:00"
+ },
+ "Centric Software|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-25T20:06:48.625444+00:00"
+ },
+ "CoolPeople Technology|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-25T20:07:07.428813+00:00"
+ },
+ "Zalando|Germany": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://jobs.zalando.com/en/where-we-work",
+  "official": true,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "Amazon|Germany": {
+  "visa": "weak",
+  "relocation": "yes",
+  "src": "https://relocate.me/search/amazon/germany",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "GetYourGuide|Germany": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://www.getyourguide.careers/posts/relocation-guide-moving-abroad-for-work",
+  "official": true,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "Atos|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-25T20:08:13.804286+00:00"
+ },
+ "EY|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://www.ey.com/en_us/careers/frequently-asked-questions",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "Universal Music Deutschland|Germany": {
+  "visa": "weak",
+  "relocation": "yes",
+  "src": "https://www.jobzmall.com/universal-music-group/faqs/does-universal-music-group-provide-relocation-assistance",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "sennder|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://jaabz.com/jobs/25034-staff-machine-learning-engineer",
+  "official": false,
+  "checked": "2026-09-25T20:14:52.752027+00:00"
+ },
+ "Delivery Hero|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json",
+  "official": false,
+  "register": "known sponsor list (Germany)",
+  "checked": "2026-09-26T06:48:21.511918+00:00"
+ },
+ "jetbrains|Germany": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://www.jetbrains.com/careers/locations/germany/",
+  "official": true,
+  "checked": "2026-09-26T03:56:36.792818+00:00"
+ },
+ "perplexity|Germany": {
+  "visa": "no",
+  "relocation": "",
+  "src": "https://www.perplexity.ai/hub/careers",
+  "official": true,
+  "checked": "2026-09-26T03:56:54.261642+00:00"
+ },
+ "mistral.ai|Germany": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.arbeitnow.com/jobs/companies/mistralai/public-affairs-head-of-germany-berlin-68880",
+  "official": false,
+  "checked": "2026-09-26T03:57:09.608174+00:00"
+ },
+ "Scalable GmbH|Germany": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://findvisasponsors.com/company/scalable-capital",
+  "official": false,
+  "checked": "2026-09-26T03:57:27.235278+00:00"
+ },
+ "melotech|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-26T03:57:44.885420+00:00"
+ },
+ "mistral.ai|Netherlands": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-26T03:58:01.004952+00:00"
+ },
+ "getyourguide|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-26T03:58:17.063475+00:00"
+ },
+ "databricks|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-26T06:48:21.511918+00:00"
+ },
+ "ommax|Germany": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://huntukvisasponsors.com/company/ommax-gmbh-qgmsfj5rbbq4",
+  "official": false,
+  "checked": "2026-09-26T03:58:55.045364+00:00"
+ },
+ "capco|Germany": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://employers.immigration-consultant.de/capco-the-capital-markets-company-gmbh",
+  "official": false,
+  "checked": "2026-09-26T03:59:09.179838+00:00"
+ },
+ "commercetools|Germany": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://findvisasponsors.com/company/commercetools",
+  "official": false,
+  "checked": "2026-09-26T03:59:28.240351+00:00"
+ },
+ "adyen|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-26T06:48:21.511918+00:00"
+ },
+ "almedia|Germany": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.arbeitnow.com/jobs/companies/almedia/ai-engineer-data-berlin-457327",
+  "official": false,
+  "checked": "2026-09-26T04:00:01.029197+00:00"
+ },
+ "Booking.com|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-26T06:48:21.511918+00:00"
+ },
+ "BCG X|Netherlands": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-26T04:00:33.301183+00:00"
+ },
+ "Xomnia|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-26T06:48:21.511918+00:00"
+ },
+ "erg group|Germany": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://jaabz.com/jobs/249386-forward-deployed-engineer",
+  "official": false,
+  "checked": "2026-09-26T04:01:10.259416+00:00"
+ },
+ "aconium GmbH|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-26T04:01:27.061197+00:00"
+ },
+ "Vinted|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-26T04:01:41.261203+00:00"
+ },
+ "mobile.de|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-26T04:01:57.318334+00:00"
+ },
+ "4flow|Germany": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://relocate.me/germany/berlin/4flow/java-developer-junior-4422",
+  "official": false,
+  "checked": "2026-09-26T04:02:11.424688+00:00"
+ },
+ "QuantumBlack, AI by McKinsey|Netherlands": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-26T04:02:29.352521+00:00"
+ },
+ "Limebit GmbH|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-26T04:02:44.684221+00:00"
+ },
+ "AI Futures|Germany": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://jaabz.com/jobs/186628-senior-data-engineer",
+  "official": false,
+  "checked": "2026-09-26T04:03:01.707673+00:00"
+ },
+ "n26|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json",
+  "official": false,
+  "register": "known sponsor list (Germany)",
+  "checked": "2026-09-26T06:48:21.511918+00:00"
+ },
+ "Picnic Technologies|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-26T06:48:21.511918+00:00"
+ },
+ "CGI Nederland|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-26T06:48:21.511918+00:00"
  }
 }

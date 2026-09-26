@@ -25,6 +25,7 @@ from pydantic import BaseModel, Field
 from ats_tailor.base_resume import load_base
 from ats_tailor.config import get_settings
 from ats_tailor.llm import LLMClient
+from ats_tailor.variants import apply_variant, pick_variant
 
 MIN_MATCH = 60
 MAX_JD_CHARS = 9000
@@ -58,16 +59,19 @@ class Match(BaseModel):
 
 
 @lru_cache
-def _ctx() -> tuple[LLMClient, str]:
+def _ctx(variant: str | None = None) -> tuple[LLMClient, str]:
+    """The LLM client and the resume text - with the experience variant for this kind of JD, e.g. the
+    time-series bullets for a forecasting-heavy JD (resume_variants.json), so the job is scored against
+    the same resume that would be sent."""
     s = get_settings()
-    resume = load_base(s.base_resume_path, s.base_resume_fixes).as_text()
+    resume = apply_variant(load_base(s.base_resume_path, s.base_resume_fixes), variant).as_text()
     if s.extra_skills:
         resume += f"\n\nOther skills the candidate has: {s.extra_skills}"
     return LLMClient(s), resume
 
 
 def _cache_file(jd: str) -> Path:
-    _, resume = _ctx()
+    _, resume = _ctx(pick_variant(jd))
     key = hashlib.sha256(f"{SYSTEM}\n{resume}\n{jd.strip()[:MAX_JD_CHARS]}".encode()).hexdigest()[:16]
     return CACHE / f"match_{key}.json"
 
@@ -82,7 +86,7 @@ def score(jd: str) -> Match:
     """Fit of this JD to the base resume. Cached per (resume, JD) so re-runs give the same answer."""
     if (m := cached(jd)) is not None:
         return m
-    llm, resume = _ctx()
+    llm, resume = _ctx(pick_variant(jd))
     jd = jd.strip()[:MAX_JD_CHARS]
     f = _cache_file(jd)
     m = llm.structured(SYSTEM, f"JOB DESCRIPTION:\n{jd}", Match, prefix=f"CANDIDATE RESUME:\n{resume}",

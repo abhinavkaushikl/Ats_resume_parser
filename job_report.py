@@ -47,6 +47,13 @@ def jd_link(j: dict, date: str) -> str:
         return f"{jd} | – | – | –"
     judge = f"{t['hr_score']}/100" if t.get("hr_score") is not None else "–"
     apply = f"[Apply]({t['apply_url']})" if t.get("apply_url") else "–"
+    app_file = ROOT / "applications" / date / stem / "application.json"   # written by the apply-jobs skill
+    if app_file.exists():
+        a = json.loads(app_file.read_text(encoding="utf-8"))
+        badge = {"applied": "✅ applied", "needs_review": "🔍 review", "skipped": "⏭ skipped",
+                 "submit_unconfirmed": "❓ unconfirmed"}.get(a.get("status"), a.get("status", ""))
+        reason = "" if a.get("status") == "applied" else f": {cell(a.get('reason', ''))[:80]}"
+        apply = f"{badge} {a.get('timestamp', '')[:10]}{reason} ({apply})".replace(" (–)", "")
     return f"{jd} | [Resume](applications/{date}/{t['resume']}) | {judge} | {apply}"
 
 
@@ -77,10 +84,10 @@ def main():
     src = a.json_file or max(JOBS.glob("visa_jobs_*.json"), key=lambda p: p.stat().st_mtime)
     d = json.loads(src.read_text(encoding="utf-8"))
     everything = d["jobs"]
-    # My rule: only visa-confirmed jobs are scored and tailored (resume at TAILOR_MIN%+). Visa-unsure jobs
-    # (weak evidence or unclear) get no JD, score or resume - they are listed for me to review.
-    jobs = [j for j in everything if j["visa"]["verdict"] == "yes"]
-    unsure = sorted((j for j in everything if j["visa"]["verdict"] != "yes"),
+    # My rule: visa yes and weak yes are scored and tailored (resume at TAILOR_MIN%+; weak flagged ⚠️).
+    # Visa-unclear jobs get no JD, score or resume - they go to GPT (gpt_automation/company_list.txt).
+    jobs = [j for j in everything if j["visa"]["verdict"] in ("yes", "weak")]
+    unsure = sorted((j for j in everything if j["visa"]["verdict"] not in ("yes", "weak")),
                     key=lambda j: (j["city"], j["company"], j["title"]))
     scored = [j for j in jobs if j["resume_match"]]
     top = sorted((j for j in scored if j["resume_match"]["score"] >= TAILOR_MIN), key=lambda j: -j["resume_match"]["score"])
@@ -91,11 +98,11 @@ def main():
     L = [f"# Job results - {d['date']}", "",
          f"Visa-sponsoring AI/ML jobs matched against {d['base_resume']}. Generated {d['generated']}.", "",
          "## Summary", "",
-         f"- Visa confirmed: **{len(jobs)}** jobs · scored **{len(scored)}** · "
+         f"- Visa yes or weak yes (⚠️): **{len(jobs)}** jobs · scored **{len(scored)}** · "
          f"**{len(top)} match {TAILOR_MIN}%+ (resume made)** · {len(low)} below {TAILOR_MIN}% · "
          f"{len(unscored)} not scored (no description found)",
-         f"- Visa unsure (weak evidence or unclear): **{len(unsure)}** jobs - not scored, no resume. "
-         "Review them below and tell me which to process.",
+         f"- Visa unclear: **{len(unsure)}** jobs - not scored, no resume; sent to GPT "
+         "(gpt_automation/company_list.txt).",
          f"- **To apply: {len(top)}**",
          ""]
     for title, part in (("Company career sites", "company_site"), ("LinkedIn", "linkedin")):
@@ -103,12 +110,12 @@ def main():
         L += [f"## Shortlist {TAILOR_MIN}%+ - {title} ({len(rows)})", ""]
         L += [head.replace(" |\n|", " | JD | Resume | Judge | Apply |\n|", 1) + "---|---|---|---|", *rows, ""] if rows else ["_None._", ""]
 
-    L += [f"## Visa unsure - waiting for your review ({len(unsure)})", "",
-          "Not scored and no resume made (no job description fetched). Tell me which ones to process, e.g. "
-          "\"process Peter Park and Luxoft\" - I then fetch the JD, score it, and make a resume if it's 50%+.", "",
+    L += [f"## Visa unclear - sent to GPT ({len(unsure)})", "",
+          "Not scored and no resume made (no job description fetched). They are in "
+          "gpt_automation/company_list.txt for the GPT process.", "",
           "| Company | Job | City | Visa evidence | Posting |", "|---|---|---|---|---|"]
     L += [f"| {cell(j['company'])} | {cell(j['title'])} | {j['city']} | "
-          f"{'⚠️ weak' if j['visa']['verdict'] == 'weak' else '❔ unclear'}: {cell(j['visa']['detail'])[:160]} | "
+          f"❔ unclear: {cell(j['visa']['detail'])[:160]} | "
           f"[{'LinkedIn' if 'linkedin.' in j['listing_url'] else 'Company site'}]({j['listing_url']}) |"
           for j in unsure] or ["| _None._ | | | | |"]
     L += [""]
@@ -119,7 +126,7 @@ def main():
     L += [f"## Not scored - no job description found ({len(unscored)})", "",
           "Open the posting to read the description yourself.", "",
           "| Company | Job | City | Visa | Posting |", "|---|---|---|---|---|"]
-    L += [f"| {cell(j['company'])} | {cell(j['title'])} | {j['city']} | yes | "
+    L += [f"| {cell(j['company'])} | {cell(j['title'])} | {j['city']} | {'⚠️ weak' if j['visa']['verdict'] == 'weak' else 'yes'} | "
           f"[{'LinkedIn' if 'linkedin.' in j['listing_url'] else 'Company site'}]({j['listing_url']}) |"
           for j in sorted(unscored, key=lambda j: (j["city"], j["company"]))]
 
@@ -141,7 +148,7 @@ def main():
           "**Score bands:** " + " · ".join(f"{b}: {bands.get(b, 0)}" for b in ("85-100", "70-84", "60-69", "40-59", "0-39")),
           "",
           "**Shortlist by city:** " + (" · ".join(f"{c} {n}" for c, n in by_city.most_common()) or "none"), "",
-          "**Visa-unsure jobs by city (waiting for review):** "
+          "**Visa-unclear jobs by city (sent to GPT):** "
           + (" · ".join(f"{c} {n}" for c, n in Counter(j["city"] for j in unsure).most_common()) or "none"), "",
           "**Most common gaps (words in 'missing', jobs scoring 50%+):** "
           + ", ".join(f"{w} ({n})" for w, n in gap_terms([j for j in scored if j["resume_match"]["score"] >= 50])),
@@ -157,7 +164,7 @@ def main():
         text = f"{text[:i]}\n## Analysis\n\n{analysis}\n{text[i:]}"
     out.write_text(text, encoding="utf-8")
     print(f"{len(top)} at {TAILOR_MIN}%+ of {len(scored)} scored ({len(jobs)} visa-confirmed jobs), "
-          f"{len(unsure)} visa-unsure listed for review -> {out}")
+          f"{len(unsure)} visa-unclear sent to GPT -> {out}")
 
 
 if __name__ == "__main__":

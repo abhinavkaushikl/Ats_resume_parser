@@ -110,6 +110,7 @@ lever:
 - hive
 - miteksystems-2
 - netlight
+- palantir
 - payjoy
 - quantco-
 - researchgate
@@ -124,12 +125,15 @@ personio:
 - alexander-thamm-gmbh
 - circula
 - cosuno
+- feld-m
+- humanoo
 - icb-gmbh
 - jobleads
 - mediaire
 - nia
 - ommax
 - statworx
+- verivox
 recruitee:
 - addepto
 - adesso1
@@ -138,20 +142,25 @@ recruitee:
 - kaizo
 - machinelearningreply
 - nextaillabs
+- nucsai
+- trustedshops
 smartrecruiters:
 - AntonPaar1
 - Cint
 - DeliveryHero
+- Endava
 - IFS1
 - JobTeaser
 - Nexthink
 - NielsenIQ
 - Redcare-Pharmacy
+- RepRiskAG
 - SIXT
 - SMGSwissMarketplaceGroup
 - SiaPartners
 - Sportradar
 - Talan
+- scalablegmbh
 - smartrecruiters
 workable:
 - enjins

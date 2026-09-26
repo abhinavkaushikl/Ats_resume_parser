@@ -1,0 +1,27 @@
+{
+  "company": "Redcare Pharmacy",
+  "role": "(Senior) Forward Deployed AI Engineer",
+  "city": "Berlin",
+  "company_profile": "Europe's largest online pharmacy, building AI and software to redesign business processes across the company.",
+  "title": "Senior Forward Deployed AI Engineer",
+  "summary": "Senior AI/ML Engineer with 8+ years of experience building production agentic AI systems and translating business and client requirements into working solutions, across Healthcare, Telecom, and client-facing technology environments. Experienced across the full lifecycle from rapid prototypes and proof-of-concepts to production deployment, with hands-on work in GenAI, RAG, LangGraph, tool orchestration, and automated evaluation and observability for AI agents. Comfortable working closely with stakeholders to understand a process end to end before building the technology that changes it. Looking for opportunities in Berlin and willing to relocate.",
+  "project": {
+    "name": "Business Process Automation Agent",
+    "bullets": [
+      "Built a multi-agent workflow automation system using LangGraph and tool orchestration to turn a manual business process into an API-driven agentic pipeline.",
+      "Evaluated agent outputs with automated test suites and LLM evaluators, then containerized and deployed the service through a CI/CD pipeline for production monitoring."
+    ],
+    "technologies": ["LangGraph", "Agentic AI", "FastAPI", "Docker", "Kubernetes", "CI/CD", "REST API", "LLM Evaluators"]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "paragraphs": [
+      "I'm applying for the Senior Forward Deployed AI Engineer role at Redcare Pharmacy. The job asks for someone who can sit with business stakeholders, understand how a process actually works, and then build the agentic AI system that changes it, which is close to what I've been doing at Optum and Viavi Solutions for the past few years.",
+      "At Optum, I built a lab extraction agent that integrates with an existing Laboratory Information Management System using Claude and Amazon Textract, and a LangGraph-based multi-agent analytics system for medical plans that combines stateful reasoning with real-time chart generation. I also built automated evaluation and observability pipelines for our agents, using LLM evaluators, tracing, and failure detection to catch problems before they reach production. Earlier at Viavi, I built more than 30 AI application prototypes directly from client requirements, working with business teams to turn operational problems into working proofs of concept and then into production systems with FastAPI and MLflow.",
+      "Redcare Pharmacy's Forward Deployed AI Engineer team sits inside a central Data & AI organisation and is meant to work across many parts of the business, redesigning real processes rather than shipping isolated models. That structure, and the emphasis on staying involved from discovery through production, is the part of AI work I find most useful: it forces you to understand the problem well enough that the technology choice becomes secondary.",
+      "I would welcome the chance to talk about how my background in agentic systems, evaluation, and client-facing AI work could fit this role."
+    ],
+    "closing": "Sincerely,"
+  },
+  "jd_keywords": ["Forward Deployed AI Engineer", "agentic AI", "Generative AI", "tool use", "evaluation", "observability", "production-grade software", "software engineering practices", "automated testing", "CI/CD", "containers", "Git", "stakeholder collaboration", "business processes", "cloud infrastructure"]
+}

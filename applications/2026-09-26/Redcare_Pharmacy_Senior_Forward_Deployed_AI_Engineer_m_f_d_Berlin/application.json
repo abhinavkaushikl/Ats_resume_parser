@@ -1,0 +1,15 @@
+{
+  "status": "needs_review",
+  "reason": "required fields City and Phone unknown (.env missing); stopped before filling, nothing submitted",
+  "questions_unanswered": [
+    {"label": "City*", "type": "text (autocomplete)", "options": []},
+    {"label": "Phone number*", "type": "country code (+49 default) + number", "options": []}
+  ],
+  "form_fields_seen": ["First name*", "Last name*", "Email*", "Confirm your email*", "City*", "Phone number*", "Experience (add)", "Education (add)", "Resume*", "Message to the Hiring Team", "Next (more steps may follow)"],
+  "answers_given": {},
+  "files_uploaded": [],
+  "url_used": "https://jobs.smartrecruiters.com/oneclick-ui/company/Redcare-Pharmacy/publication/8c809f35-fda8-4da4-ac35-d9d83f3b002a?dcr_ci=Redcare-Pharmacy",
+  "ats": "smartrecruiters",
+  "notes": "Form fields are inside SmartRecruiters web components: read_page only sees the Indeed button, so filling needs clicks on screenshot coordinates, not form_input.",
+  "timestamp": "2026-09-26T10:45"
+}

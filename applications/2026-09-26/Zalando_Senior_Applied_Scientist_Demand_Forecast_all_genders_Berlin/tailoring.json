@@ -1,0 +1,50 @@
+{
+  "company": "Zalando",
+  "role": "Senior Applied Scientist - Demand Forecast",
+  "city": "Berlin",
+  "company_profile": "Zalando is a European e-commerce platform connecting customers with fashion and lifestyle brands, and builds forecasting tools that help partner brands plan demand.",
+  "title": "Senior Applied Scientist - Demand Forecast",
+  "summary": "Senior AI/ML Engineer with 8+ years of experience across Telecom, AIOps, and Healthcare, with hands-on experience in time-series and demand forecasting using both statistical methods and machine learning techniques such as Holt-Winters, LSTM, and XGBoost. Owns models across the full lifecycle, from prototyping to production deployment with FastAPI and MLflow, working daily in Python, SQL, and PySpark. Experienced in client-facing consulting, translating business requirements into practical, production-ready solutions. Currently building ThinkTree.AI, a non-profit AI-powered learning platform, and looking for opportunities in Berlin.",
+  "project": {
+    "name": "Retail Demand Forecasting Pipeline",
+    "bullets": [
+      "Built a hierarchical demand forecasting pipeline for retail product-level sales data, combining XGBoost and LSTM models to capture cross-product and temporal patterns.",
+      "Evaluated forecast accuracy against statistical baseline methods and served predictions through a FastAPI service with MLflow for model tracking and versioning."
+    ],
+    "technologies": [
+      "Python",
+      "SQL",
+      "PySpark",
+      "XGBoost",
+      "LSTM",
+      "FastAPI",
+      "MLflow",
+      "Pandas"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "paragraphs": [
+      "I am writing to apply for the Senior Applied Scientist - Demand Forecast role at Zalando. My background combines statistical and machine learning approaches to forecasting with hands-on experience taking models from prototype to production, which matches what this role calls for. I hold a Master's degree in Machine Learning and AI, which gave me a grounding in the statistics and time-series methods the role is built on.",
+      "At Viavi Solutions, I developed time-series forecasting of base-station call handover and SMS handover volumes using LSTM and XGBoost, and built a forecasting feature for an AIOps monitoring product that forecasts univariate KPIs across the network. Earlier, as a Data Scientist, I applied Isolation Forest and Holt-Winters for anomaly detection and demand forecasting across 500+ telecommunications network devices using 15+ KPIs, which gave me a close look at the tradeoffs between statistical and ML-based forecasting methods at scale. Throughout, I have worked daily in Python, SQL, and PySpark, and delivered technical POCs and consulting sessions for 15+ clients.",
+      "Zalando's demand forecast engine sits at the center of how partners plan assortment and inventory, and moving beyond simple accuracy metrics toward real incrementality is exactly the kind of problem I want to work on. I like that the team owns the whole development cycle of its algorithms, from opportunity discovery to production, rather than handing models off after a proof of concept.",
+      "I would welcome the chance to talk about how my forecasting background could contribute to the Partner Tech Applied Science team."
+    ],
+    "closing": "Sincerely,"
+  },
+  "jd_keywords": [
+    "demand forecast",
+    "forecasting models",
+    "statistical methods",
+    "machine learning techniques",
+    "time series analysis",
+    "Python",
+    "SQL",
+    "PySpark",
+    "model pipelines",
+    "incrementality",
+    "code reviews",
+    "mentor junior scientists"
+  ],
+  "experience_variant": "timeseries"
+}
