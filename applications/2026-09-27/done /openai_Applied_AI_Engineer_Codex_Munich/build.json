@@ -1,0 +1,39 @@
+{
+ "company": "openai",
+ "city": "Munich",
+ "role": "Applied AI Engineer, Codex",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4",
+  "The company name 'openai' still appears in the resume - check it."
+ ],
+ "headline": "Applied AI Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior AI Engineer",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, automating the work behind 800 Jira tickets and PRD tasks while handling about 1,800 lab documents."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation harnesses and observability for Question Answering and Summary Agents, using LLM evaluators as graders plus tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Prototyped 15+ AI applications from AIOps and GeoPerformance client requirements, taking 7 from prototype into production or paid client work."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical deep dives, POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "apply_url": "https://jobs.ashbyhq.com/openai/6a7cedbd-0a7c-4f3e-8389-55357ad444b3",
+ "listing_url": "https://jobs.ashbyhq.com/openai/6a7cedbd-0a7c-4f3e-8389-55357ad444b3",
+ "resume": "openai_Applied_AI_Engineer_Codex_Munich/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "openai_Applied_AI_Engineer_Codex_Munich/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "openai_Applied_AI_Engineer_Codex_Munich/project_brief.md"
+}

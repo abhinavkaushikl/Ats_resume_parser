@@ -1,0 +1,36 @@
+{
+ "company": "Fin",
+ "city": "Dublin",
+ "role": "Staff Machine Learning Scientist",
+ "pages": 2,
+ "warnings": [
+  "Edit skipped (company name): 'Prototyped 15+ AI applications for AIOps and GeoPerformance'",
+  "Experience bullets reworded: 3",
+  "Title 'Staff Machine Learning Scientist' not used (seniority/fit check); kept 'Senior AI Engineer'.",
+  "The company name 'Fin' still appears in the resume - check it."
+ ],
+ "headline": "Senior AI Engineer",
+ "current_role_title": "Senior Applied Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Applied Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built the evaluation and observability pipelines that set the quality bar for Question Answering and Summary Agents, using LLM evaluators, tracing and failure detection to reduce human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical POCs, consulting and mentoring for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine that clustered network alarms with Sentence-BERT and DBSCAN, tracing alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  }
+ ],
+ "apply_url": "https://job-boards.greenhouse.io/intercom/jobs/6654793",
+ "listing_url": "https://ie.linkedin.com/jobs/view/staff-machine-learning-scientist-at-fin-4338754694",
+ "resume": "Fin_Staff_Machine_Learning_Scientist_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Fin_Staff_Machine_Learning_Scientist_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Fin_Staff_Machine_Learning_Scientist_Ireland/project_brief.md"
+}

@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 15, "experience": 13, "company_project": 15, "ats_keywords": 7, "credibility": 7},
+ "score": 57,
+ "decision": "reject",
+ "strengths": ["New Neural Search Ranking Model project hits Two-Tower architecture, pairwise LTR, NDCG/MRR offline evaluation and drift/latency monitoring", "8+ years of production ML clearly exceeds the 4+ year bar", "Reranking and dense-embedding retrieval experience shown across two roles", "Comfortable with Python, PyTorch, scikit-learn, PySpark, GCP/Azure, MLOps tooling"],
+ "gaps": ["DCN-V2 and MMoE architectures never appear - only Two-Tower, and only in a project, not production", "No high-throughput (80M+ searches/day) production ranking-stack ownership shown", "Claude Code / Gemini not shown as agentic coding tools for autonomous experimentation, which is a named must-have", "No Scala, dbt, or Metaflow; TensorFlow absent (PyTorch only)", "No evidence of mentoring junior/mid data scientists or driving org-wide LTR strategy"]}

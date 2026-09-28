@@ -1,0 +1,71 @@
+{
+ "company": "Catawiki",
+ "role": "Data Scientist - Machine Learning",
+ "city": "Lisbon",
+ "company_profile": "Catawiki is an online marketplace where people buy and sell special objects through weekly auctions curated by in-house experts.",
+ "title": "Data Scientist - Machine Learning",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Data Scientist with 8+ years building production ML and data products across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Works from exploration in Python, SQL and PySpark to models served behind FastAPI with Docker, Kubernetes and MLflow, including a recommendation reranker, propensity models and LLM applications. Explains models plainly to product stakeholders and ties them to business value. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Implemented a reranker for an existing recommendation system",
+   "new": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, improving the renewal suggestions customers saw and increasing conversion by 2%."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system",
+   "new": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, pairing each prediction with real-time GPT-3.5 root-cause analysis and remediation recommendations, reducing downtime by 67%."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph that answered stakeholders' business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan",
+   "new": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, turning predictions into targeted outreach and customer prioritization for the business."
+  }
+ ],
+ "project": {
+  "name": "Marketplace Recommendation Ranking Service",
+  "bullets": [
+   "Built a two-stage recommender for an online marketplace, retrieving candidate items with SBERT embeddings and re-ranking them with a LightGBM model trained on user browsing and bidding events.",
+   "Evaluated ranking quality offline with time-based splits and recall and NDCG metrics, then served real-time and batch predictions through FastAPI on Kubernetes with MLflow model versioning."
+  ],
+  "technologies": [
+   "Python",
+   "PyTorch",
+   "Kubernetes",
+   "GCP",
+   "SQL",
+   "LightGBM",
+   "FastAPI",
+   "MLflow"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist - Machine Learning role at Catawiki. I am most at home when a model leaves the notebook: I have built a recommendation reranker, prediction systems and LLM applications that run in production and that product teams rely on. The thread through my work is data products that change a decision, not just a report.",
+   "A marketplace of special objects is an unusual ML problem, because almost every item is one of a kind and recommendations cannot lean on popularity alone. That puzzle is what draws me to your Data Team. My fiancée lives in Berlin, and we plan to move to Lisbon together and settle there long term.",
+   "I would bring an all-round approach, from exploring the data to serving the model. At Optum I added a reranker to a recommendation system that raised conversion by 2%, and at Viavi I deployed an SLA breach prediction system with LightGBM, FastAPI and MLflow that cut downtime by 67%. In both, explaining the model to non-technical colleagues mattered as much as the code.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Working with teachers taught me to test ideas with the people who use them and keep what helps. I would be glad to talk about how I could contribute to the Data Team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "production-ready models",
+  "machine learning",
+  "advanced statistics",
+  "Python",
+  "SQL",
+  "real-time predictions",
+  "batch predictions",
+  "Kubernetes",
+  "Google Cloud Platform",
+  "recommender systems",
+  "PyTorch",
+  "CI/CD",
+  "data products",
+  "product stakeholders"
+ ],
+ "experience_variant": "base"
+}

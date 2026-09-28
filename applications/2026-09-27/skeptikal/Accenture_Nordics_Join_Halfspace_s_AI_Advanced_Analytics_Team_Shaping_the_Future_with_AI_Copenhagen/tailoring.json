@@ -1,0 +1,70 @@
+{
+ "company": "Accenture Nordics",
+ "role": "Ind & Func AI Decision Science New Associate",
+ "city": "Copenhagen",
+ "company_profile": "Halfspace, part of Accenture's Center for Advanced AI, builds AI agents, generative AI and advanced analytics that help organisations make better decisions faster.",
+ "title": "AI Decision Science Associate",
+ "current_role_title": "Senior GenAI Engineer",
+ "summary": "AI engineer with 8+ years building Generative AI applications, AI agents and statistical ML models from prototype to production across Healthcare, Telecom and AIOps. Designs LangGraph multi-agent and RAG systems with automated LLM evaluation, and fine-tunes models such as cross-encoders for retrieval. Grounds this in statistical modeling for prediction, anomaly detection and forecasting, with MLOps and model deployment through MLflow, FastAPI and Docker. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent AI system in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated evaluation pipelines for Generative AI Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped statistical models for anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling proactive network planning."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed a production SLA breach prediction model with LightGBM, served through FastAPI and tracked in MLflow, using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67%."
+  }
+ ],
+ "project": {
+  "name": "Agentic Experiment Analysis Assistant",
+  "bullets": [
+   "Built a LangGraph agent that helps analysts design and read controlled experiments, calling statistical tools for power analysis, significance testing and regression instead of letting the LLM guess.",
+   "Evaluated its answers against hand-checked experiment results with LLM evaluators and tracing, then served the agent through FastAPI with MLflow tracking inside Docker containers."
+  ],
+  "technologies": [
+   "Python",
+   "LangGraph",
+   "Claude",
+   "Scikit-learn",
+   "Pandas",
+   "FastAPI",
+   "MLflow",
+   "Docker"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying to join the AI & Advanced Analytics team at Halfspace. My work sits where you describe it, between statistics, machine learning and software: more than eight years of building models and, more recently, Generative AI agents that run in production. What ties it together is turning a messy question into a system people can rely on.",
+   "Halfspace began by predicting live football matches and now helps companies make better decisions faster, and I like that the edge comes from careful modelling rather than noise. There is a personal reason as well. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.",
+   "I would bring both sides your two units need. At United Health Group I built a LangGraph multi-agent analytics chatbot that cut manual analysis by 98%, with evaluation pipelines that reduced human review by 43%. At Viavi I shipped anomaly detection and Holt-Winters forecasting across 500+ network devices, the statistical side of the same craft.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and checking that a tool truly helps them. I would be glad to talk about where I could contribute."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "Python",
+  "core AI libraries",
+  "Generative AI",
+  "AI Agents",
+  "fine-tuning large language models",
+  "agentic systems",
+  "analytical pipelines",
+  "statistical modeling",
+  "machine learning",
+  "optimization",
+  "experimental design",
+  "MLOps",
+  "model deployment"
+ ],
+ "experience_variant": "base"
+}

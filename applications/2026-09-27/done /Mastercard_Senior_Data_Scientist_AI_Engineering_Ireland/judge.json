@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 27, "experience": 21, "company_project": 19, "ats_keywords": 13, "credibility": 8},
+ "score": 88,
+ "decision": "shortlist",
+ "strengths": ["Resume headline 'Senior Data Scientist, AI Engineering' matches the JD title exactly", "New Merchant Recommendation Ranking System project fits Mastercard's transaction/merchant domain precisely, using transaction embeddings plus a LightGBM ranker evaluated with NDCG", "Broad predictive-modelling coverage (propensity, forecasting, recommendation, fraud, anomaly detection) lines up with the JD's stated typical use cases", "Databricks, Spark, embeddings and transformer familiarity are all shown in real production bullets, matching the required technical skills list closely"],
+ "gaps": ["No payments/fintech/financial-services domain history in the actual work experience (only in the added project)", "Representation-learning depth is demonstrated mainly through one new project rather than a sustained thread across roles", "No publications, patents or thought-leadership evidence (a preferred, not required, qualification)"]}

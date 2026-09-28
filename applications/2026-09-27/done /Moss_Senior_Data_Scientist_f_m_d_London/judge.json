@@ -1,0 +1,14 @@
+{"criteria": {"tech_stack": 28, "experience": 22, "company_project": 19, "ats_keywords": 14, "credibility": 9},
+ "score": 92,
+ "decision": "shortlist",
+ "strengths": [
+   "Invoice Extraction and Anomaly Pipeline project mirrors Moss's core product almost exactly: LLM extraction into Pydantic structured outputs, LightGBM classification, Isolation Forest anomaly flags",
+   "Evaluation and monitoring practice (gold set, automated tests, robustness checks, cost/latency tracking) matches the JD's 'Define evaluation & monitoring' responsibility nearly verbatim",
+   "LLM agent tool use, RAG and structured outputs shown in production, alongside scikit-learn, XGBoost, LightGBM and PyTorch",
+   "8+ years of end-to-end production ownership across multiple roles matches the 5-10+ years and 'End-to-End Executor' requirements",
+   "Headline 'Senior Data Scientist' matches the JD title exactly"
+ ],
+ "gaps": [
+   "No prior finance or invoice-processing domain experience outside the single tailored project",
+   "Guardrails for LLM agents in production not explicitly called out (only implied via evaluation/robustness checks)"
+ ]}

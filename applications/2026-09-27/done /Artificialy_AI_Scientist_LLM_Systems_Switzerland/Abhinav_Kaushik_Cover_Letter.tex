@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Artificialy}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+AI Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Artificialy
+
+\textbf{Re: AI Scientist - LLM Systems}
+
+Dear Hiring Team,
+
+I am applying for the AI Scientist - LLM Systems role at Artificialy. My work has moved from classical ML to LLM systems, and I now spend most of my time designing them and, just as importantly, deciding how to evaluate them. Owning a solution from the first experiment to delivery is the part I enjoy most.
+
+Artificialy builds transparent AI shaped to real industry needs, and financial clients, where every answer must be traceable, bring exactly the discipline I want in my work. My fiancée lives in Berlin, and we plan to move to Switzerland together and settle there long term, working onsite with the team in Lugano or Zurich.
+
+I would bring evaluation methods already tested in production. At United Health Group I built pipelines with LLM evaluators, tracing and failure detection that reduced human-in-the-loop review by 43\%. At Viavi I built a RAG assistant in LangGraph that reached a 90\% match rate against existing solutions, and I have paired LightGBM with LLM explanations for fraud detection.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers and students has made me careful about checking that an AI answer really helps before it ships. I would be glad to talk about how I could contribute.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

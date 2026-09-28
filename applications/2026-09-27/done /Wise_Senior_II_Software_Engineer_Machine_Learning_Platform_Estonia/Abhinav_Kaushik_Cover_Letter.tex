@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Wise}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior II Software Engineer - Machine Learning Platform\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Wise
+
+\textbf{Re: Senior II Software Engineer - Machine Learning Platform}
+
+Dear Hiring Team,
+
+I am applying for the Senior II Software Engineer role on the Machine Learning Platform team. As a machine learning engineer I have spent much of my time on the engineering around models: serving, tracking, pipelines and the monitoring that tells you when something drifts. The thread in my work is making models easy to ship and easy to trust.
+
+Wise moves money across borders for a very large customer base, and a platform that helps data scientists learn quickly which model is better shapes real decisions. My fiancée lives in Berlin, and we plan to move to Tallinn together and settle there long term. A team that treats its data scientists as customers is where I want to grow.
+
+I have been one of those customers, which shapes how I build. I deployed an SLA breach prediction service with LightGBM, FastAPI and MLflow that reduced downtime by 67\%, and built evaluation and tracing pipelines that cut human review by 43\%. Backend depth on Kubernetes and AWS at your scale is where I would push myself hardest.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It is a small platform with real users, and it has made me care about developer and user experience as much as the code. I would be glad to talk about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

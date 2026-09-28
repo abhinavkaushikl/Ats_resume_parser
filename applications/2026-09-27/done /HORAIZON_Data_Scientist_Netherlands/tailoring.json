@@ -1,0 +1,73 @@
+{
+ "company": "HORAIZON",
+ "role": "Data Scientist",
+ "city": "Delft",
+ "company_profile": "HORAIZON is a biomedical AI company that turns microbiome and other omics data into near real-time insights and decision support for its customers.",
+ "title": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years building ML models, data pipelines and backend services end to end, much of it on healthcare data, with an MSc in Machine Learning and AI. Develops models with PyTorch and scikit-learn, builds REST APIs with FastAPI and Flask, and automates data pipelines with SQL and PySpark. Explains results clearly to technical and non-technical stakeholders and takes work into production. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+   "new": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, turning about 1,800 lab documents into structured data and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Developed a Python and Flask parser that automated",
+   "new": "Developed a Python and Flask backend parser that automated extraction and transformation of raw data into structured datasets for downstream analytics and reporting."
+  },
+  {
+   "original": "Engineered SQL and PySpark data pipelines automating BAU",
+   "new": "Built SQL and PySpark data pipelines on large healthcare datasets that automated BAU medical-audit reporting, cutting manual reporting effort by 95%."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with",
+   "new": "Deployed a production SLA breach prediction system with LightGBM, served as a REST API with FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans that explains data through PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  }
+ ],
+ "project": {
+  "name": "Microbiome Profile Classification Service",
+  "bullets": [
+   "Built a pipeline that classifies health outcomes from microbiome abundance profiles, combining feature filtering with scikit-learn and PyTorch models suited to sparse, high-dimensional biological data.",
+   "Evaluated models with cross-validation and clear visual reports for non-technical readers, then served predictions through a REST API built with Django REST Framework in Docker."
+  ],
+  "technologies": [
+   "Python",
+   "PyTorch",
+   "scikit-learn",
+   "Django REST Framework",
+   "Pandas",
+   "Matplotlib",
+   "Docker"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist role at HORAIZON. I am a data scientist with a background in healthcare data, and much of my work has been end to end: the pipeline, the model and the REST API that serves it. What connects it is turning messy data into something a person can act on.",
+   "HORAIZON turns microbiome and omics data into decisions for its customers, and working closer to biology is where my healthcare work has been heading. A small team where each person's work is visible suits how I like to work. My fiancée lives in Berlin, and we plan to move to Delft together and settle there long term.",
+   "At United Health Group I deployed an extraction agent with Amazon Textract that turns about 1,800 lab documents into structured data, integrated with the lab system. Earlier I built SQL and PySpark pipelines that cut manual reporting by 95%. I would bring the same care for reliable pipelines and clear results to your team.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Working with teachers has taught me to explain results plainly and to build for the people who use them. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "Python",
+  "backend development",
+  "REST APIs",
+  "Django",
+  "PyTorch",
+  "scikit-learn",
+  "machine learning",
+  "data pipelines",
+  "analytics workflows",
+  "databases",
+  "visualisation",
+  "healthcare",
+  "deploying models into production"
+ ],
+ "experience_variant": "base"
+}

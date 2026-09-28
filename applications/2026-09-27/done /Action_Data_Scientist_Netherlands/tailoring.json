@@ -1,0 +1,74 @@
+{
+ "company": "Action",
+ "role": "Data Scientist",
+ "city": "Zwaagdijk-Oost",
+ "company_profile": "Action is a European non-food discount retailer with stores across Europe, whose central Data Analytics team builds models for supply chain, commerce, store operations and real estate.",
+ "title": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Data Scientist with 8+ years working end-to-end, from scoping and exploratory analysis to modelling, deployment and monitoring, across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds regression, classification, clustering and time-series forecasting models with Python, PySpark and SQL on Databricks, productionised with MLflow, Docker and CI/CD, and applies LLMs through RAG, agentic workflows and fine-tuning where they help. Works closely with business teams. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped anomaly detection and time-series demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system",
+   "new": "Productionised an SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+   "new": "Built an event-correlation engine clustering network alarms with Sentence-BERT and DBSCAN, tracing the cascading effect of alarm floods to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan applications",
+   "new": "Developed an XGBoost classification model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization for the business."
+  }
+ ],
+ "project": {
+  "name": "Store Demand Forecasting Engine",
+  "bullets": [
+   "Built a store and product-level demand forecasting engine for discount retail, combining Holt-Winters baselines with LightGBM on PySpark features to support replenishment planning for supply chain teams.",
+   "Evaluated forecasts with rolling backtests against the baseline, tracked runs in MLflow on Databricks, and served forecasts through a Dockerised FastAPI service with drift and accuracy monitoring."
+  ],
+  "technologies": [
+   "Databricks",
+   "MLflow",
+   "PySpark",
+   "Python",
+   "SQL",
+   "Azure",
+   "LightGBM",
+   "Docker"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist role in Action's central Data Analytics team. For more than eight years I have worked on data science end-to-end, from scoping with business teams and exploring messy data to deploying models and watching them in production, most recently as a senior data scientist on healthcare data.",
+   "A retailer built on low prices lives or dies by good forecasts and lean operations, which is exactly where models make a visible difference to stores and supply chain. My fiancée lives in Berlin, and we plan to move to Zwaagdijk-Oost together and settle there long term.",
+   "I would bring forecasting and production habits. At Viavi I shipped anomaly detection and Holt-Winters demand forecasting on 15+ KPIs across 500+ network devices, and deployed a LightGBM SLA breach model with FastAPI and MLflow that reduced downtime by 67%. More recently I have built RAG and agentic workflows, useful for teams that want LLMs on top of their data.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to build for the people who use a tool every day, and to keep things simple enough that they do. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "machine learning",
+  "clustering",
+  "regression",
+  "time-series",
+  "classification",
+  "forecasting",
+  "Azure",
+  "Databricks",
+  "MLflow",
+  "MLOps",
+  "CI/CD",
+  "monitoring",
+  "Python",
+  "PySpark",
+  "SQL",
+  "RAG",
+  "agentic workflows"
+ ],
+ "experience_variant": "base"
+}

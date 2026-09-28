@@ -1,0 +1,14 @@
+{"criteria": {"tech_stack": 22, "experience": 22, "company_project": 17, "ats_keywords": 13, "credibility": 8},
+ "score": 82,
+ "decision": "shortlist",
+ "strengths": [
+   "Network Reliability Insights Assistant project matches Verizon's telecom domain directly, hitting several 'even better' bonus items at once (Looker, BigQuery, GenAI, agentic systems)",
+   "8+ years as a data scientist/statistical modeler satisfies the core requirement, and telecom anomaly-detection/forecasting work at Viavi is directly on point",
+   "Dashboards (Looker, Power BI, QlikSense) and big-data tooling (SQL, PySpark) match the 'developing systems, applications and visual dashboards' responsibility",
+   "Title matches exactly (Senior Data Science Engineer)"
+ ],
+ "gaps": [
+   "No R anywhere in the resume, despite it being one of the 'even better' bonus languages",
+   "No security-threat handling experience, though the JD explicitly lists handling security threats as a responsibility",
+   "Google BigQuery and Looker only appear in one tailored project, not shown as broad, repeated experience"
+ ]}

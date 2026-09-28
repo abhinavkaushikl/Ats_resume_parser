@@ -1,0 +1,43 @@
+{
+ "company": "Redcare Pharmacy",
+ "city": "Germany",
+ "role": "Senior ML Engineer, Retail Media",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior ML Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "experience_edits": [
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a ranking model on top of an existing recommendation system for individual and child plans, optimizing renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval results over AARP survey data, improving ranking and retrieval accuracy."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed and operated a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling audience targeting and customer prioritization for outreach."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered SQL and PySpark data pipelines on large healthcare datasets automating BAU medical-audit reporting, cutting manual reporting effort by 95%."
+  }
+ ],
+ "apply_url": "https://jobs.smartrecruiters.com/Redcare-Pharmacy/744000150623869",
+ "listing_url": "https://jobs.smartrecruiters.com/Redcare-Pharmacy/744000150623869",
+ "resume": "Redcare_Pharmacy_Senior_ML_Engineer_Retail_Media_m_f_d_Germany/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Redcare_Pharmacy_Senior_ML_Engineer_Retail_Media_m_f_d_Germany/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Redcare_Pharmacy_Senior_ML_Engineer_Retail_Media_m_f_d_Germany/project_brief.md"
+}

@@ -1,0 +1,74 @@
+{
+  "company": "Picnic Technologies",
+  "role": "Senior Machine Learning Engineer",
+  "city": "Amsterdam",
+  "company_profile": "Picnic is an app-only online grocery service with its own electric delivery fleet and warehouses, using machine learning across forecasting, delivery and recommendations.",
+  "title": "Senior Machine Learning Engineer",
+  "current_role_title": "Senior Machine Learning Engineer",
+  "summary": "Senior Machine Learning Engineer with 8+ years designing, deploying and maintaining production ML systems across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Has built demand forecasting, anomaly detection, LightGBM and XGBoost prediction models, recommendation reranking and fraud detection, alongside LLM applications in LangGraph. Brings strong Python and SQL with MLflow, Docker, Kubernetes and CI, and works closely with business stakeholders to solve the right problem. Currently building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Deployed a production SLA breach prediction system with LightGBM",
+      "new": "Designed and deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+    },
+    {
+      "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+      "new": "Shipped demand forecasting and anomaly detection on 15+ KPIs across 500+ telecom network devices using Holt-Winters and Isolation Forest, enabling proactive network planning and earlier detection."
+    },
+    {
+      "original": "Implemented a reranker for an existing recommendation system",
+      "new": "Implemented a reranker for an existing recommendation system serving individual and child plan suggestions, improving the ranking of renewal recommendations and increasing conversion by 2%."
+    },
+    {
+      "original": "Engineered SQL and PySpark data pipelines automating BAU",
+      "new": "Engineered SQL and PySpark data pipelines for business stakeholders, automating BAU medical-audit reporting on large healthcare datasets and cutting manual reporting effort by 95%."
+    },
+    {
+      "original": "Developed an XGBoost propensity model predicting personal-loan",
+      "new": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, helping business teams prioritise customers and target outreach."
+    }
+  ],
+  "project": {
+    "name": "Delivery Time Prediction Service",
+    "bullets": [
+      "Built a model predicting drop-off times for last-mile grocery delivery, training LightGBM on route, order and time-of-day features prepared with SQL and pandas.",
+      "Evaluated the model with time-based backtesting against a historical-average baseline, tracked experiments in MLflow and served predictions through FastAPI on Kubernetes with CI checks and drift monitoring."
+    ],
+    "technologies": [
+      "Python",
+      "SQL",
+      "LightGBM",
+      "MLflow",
+      "FastAPI",
+      "Docker",
+      "Kubernetes",
+      "Jenkins"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "paragraphs": [
+      "I am applying for the Senior Machine Learning Engineer role. I have spent recent years building ML systems that sit inside operations: forecasting demand on telecom networks, predicting SLA breaches before they happen, reranking recommendations. The thread through all of it is simple: a model only matters once it is monitored and wired into the process it is meant to improve.",
+      "Picnic runs its own fleet, warehouses and app, so ML touches every step from forecasting orders to getting drivers to the door on time, and clean, logged data like yours is rare. My fiancée lives in Berlin, and we plan to move to Amsterdam together and settle there long term.",
+      "I would bring production ML with the stakeholder side included. At Viavi I shipped anomaly detection and Holt-Winters demand forecasting on 15+ KPIs across 500+ network devices, and a LightGBM SLA breach prediction system served with FastAPI and MLflow that reduced downtime by 67%. Both began with operations teams explaining what they actually needed.",
+      "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me focused on whether a system really helps the person using it. I would be glad to talk about how I could contribute to your team."
+    ],
+    "closing": "Sincerely,"
+  },
+  "jd_keywords": [
+    "production ML systems",
+    "Python",
+    "SQL",
+    "demand forecasting",
+    "fraud detection",
+    "recommendation systems",
+    "search and ranking",
+    "monitoring",
+    "Docker",
+    "Kubernetes",
+    "CI",
+    "business stakeholders",
+    "ML architecture"
+  ],
+  "experience_variant": "base"
+}

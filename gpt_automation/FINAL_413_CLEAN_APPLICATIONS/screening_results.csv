@@ -1,0 +1,414 @@
+id,company,title,city,score,decision,visa_status,compile_validation
+1,[at] Group,Senior Generative AI Engineer (m/w/d),Munich,70,tailor,unclear/not independently verified,validated
+2,[at] Group,Principal Data Scientist (m/w/d),Munich,70,tailor,unclear/not independently verified,validated
+3,A.P. Moller - Maersk,Lead Engineer - Data & AI,Copenhagen,70,tailor,unclear/not independently verified,validated
+4,A11,Principal Data Scientist (m/f/d),Germany,70,tailor,unclear/not independently verified,validated
+5,ABOUT YOU,Senior Data Scientist - Search (all genders),Germany,70,tailor,unclear/not independently verified,validated
+6,Accenture DACH,AI Engineer for Generative AI (all genders),Austria,65,tailor,unclear/not independently verified,validated
+7,Accenture DACH,AI & Data Science Consultant (all genders),Austria,65,tailor,unclear/not independently verified,validated
+8,Accenture España,Desarrollador senior IA Generativa - LLM y Machine Learning,Barcelona,70,tailor,unclear/not independently verified,validated
+9,Accenture España,Data Scientist/Data Engineer Analyst/Consultant for Supply Chain,Barcelona,65,tailor,unclear/not independently verified,validated
+10,Accenture Italia,Data Science Generative AI Consultant,Italy,65,tailor,unclear/not independently verified,validated
+11,Accenture Italia,AI/ML Computational Scientist Manager,Italy,65,tailor,unclear/not independently verified,validated
+12,Accenture Nordics,Vil du være med på å utvikle AI-løsninger som brukes av tusenvis av mennesker?,Norway,65,tailor,unclear/not independently verified,validated
+13,Accenture Nordics,AI-utvikler søkes – bli med på å forme morgendagens teknologi,Norway,65,tailor,unclear/not independently verified,validated
+14,Accenture Nordics,Graduate & Junior AI & Data Professionals,Sweden,40,reject,unclear/not independently verified,not generated
+15,Accenture Poland,Data Scientist (AI&Data),Warsaw,65,tailor,unclear/not independently verified,validated
+16,Accenture Poland,Data Scientist - Junior/Mid/Senior,Warsaw,45,reject,unclear/not independently verified,not generated
+17,ACT-ON DATA,Senior Data Scientist (F/H),Paris,70,tailor,unclear/not independently verified,validated
+18,ADMIRAL Technologies,Data Scientist (m/f/x),Austria,65,tailor,unclear/not independently verified,validated
+19,agap2 Spain,Data Scientist,Barcelona,65,tailor,unclear/not independently verified,validated
+20,Agile Robots SE,Forward Deployed AI Engineer,Munich,65,tailor,unclear/not independently verified,validated
+21,Ahold Delhaize,AI Engineer,Romania,65,tailor,unclear/not independently verified,validated
+22,ALGOTEQUE Innovation Hub,AI Developer – B2B,Warsaw,65,tailor,unclear/not independently verified,validated
+23,AllCloud,Machine Learning Engineer,Romania,65,tailor,unclear/not independently verified,validated
+24,Allegro,Junior Data Scientist,Warsaw,40,reject,unclear/not independently verified,not generated
+25,Altia,Data Scientist - European Agency,Italy,65,tailor,unclear/not independently verified,validated
+26,Amazon,"Applied Scientist, Amazon Compliance and Safety Services",Romania,65,tailor,unclear/not independently verified,validated
+27,Amazon Science,"Applied Scientist, Amazon Compliance and Safety Services",Romania,65,tailor,unclear/not independently verified,validated
+28,ANKÖ - Auftragnehmerkataster Österreich,AI Engineer / KI-Spezialist (w/m/d),Austria,65,tailor,unclear/not independently verified,validated
+29,Anton Paar,Senior AI Engineer (f/m/x),Austria,70,tailor,unclear/not independently verified,validated
+30,Anton Paar,Junior AI Engineer (f/m/x),Austria,40,reject,unclear/not independently verified,not generated
+31,Aptic AB,Full-Stack Machine Learning Engineer,Norway,65,tailor,unclear/not independently verified,validated
+32,Aramisauto,AI / Machine Learning Engineer – Generative AI,Paris,65,tailor,unclear/not independently verified,validated
+33,ARQ,"Senior Data Scientist, FinCrime",London,70,tailor,unclear/not independently verified,validated
+34,Artefact,Senior Data Scientist – MMM Expert,Brussels,70,tailor,unclear/not independently verified,validated
+35,Artefact,Data Scientist - GenAI,Brussels,65,tailor,unclear/not independently verified,validated
+36,Artefact,Junior Data Scientist - Casablanca,Paris,40,reject,unclear/not independently verified,not generated
+37,Artefact,Senior AI Engineer / Technical Consultant,Switzerland,70,tailor,unclear/not independently verified,validated
+38,artefactlinkedin,Partner AI Strategy & Transformation,Paris,65,tailor,unclear/not independently verified,validated
+39,artefactlinkedin,CDI - AI Designer  Motion & Génératif  - Artefact 3000 - Paris,Paris,65,tailor,unclear/not independently verified,validated
+40,Asana,Data Scientist,Warsaw,65,tailor,unclear/not independently verified,validated
+41,aspaara AG,"Senior Operations Research Engineer (Applied AI, B2B SaaS)",Switzerland,70,tailor,unclear/not independently verified,validated
+42,Astek,(K / M) Machine Learning Engineer - Praca zdalna,Warsaw,65,tailor,unclear/not independently verified,validated
+43,Astek,"Data Scientist - Warszawa (Mazowieckie), Polska K/M",Warsaw,65,tailor,unclear/not independently verified,validated
+44,Austrian Lotteries,Data Scientist (all genders),Austria,65,tailor,unclear/not independently verified,validated
+45,Austrian Lotteries,Data Scientist & AI Engineer (all genders),Austria,65,tailor,unclear/not independently verified,validated
+46,AutoScout24,Principal Data Scientist (m/f/d),Munich,70,tailor,unclear/not independently verified,validated
+47,AutoScout24,Senior Data Scientist (m/f/d),Munich,70,tailor,unclear/not independently verified,validated
+48,Auvaria,"Senior Solutions Architect - Data & AI Engineer (f/m/d, 4-Days-Week), German Speaking",Austria,70,tailor,unclear/not independently verified,validated
+49,AVEVA,Principal Research Scientist - Frontier Industrial AI,Italy,62,tailor,unclear/not independently verified,validated
+50,Avolta,Global Data Scientist,Italy,65,tailor,unclear/not independently verified,validated
+51,Avvale,Lead Data Scientist,Italy,70,tailor,unclear/not independently verified,validated
+52,Axelera AI,Staff/Principal Software Engineer – AI Applications,Norway,70,tailor,unclear/not independently verified,validated
+53,Axfood,"AI Engineer till Axfood IT, Stockholm",Sweden,65,tailor,unclear/not independently verified,validated
+54,Axpe Consulting,AI Engineer,Barcelona,65,tailor,unclear/not independently verified,validated
+55,Ayesa Digital,Data Scientist,Italy,65,tailor,unclear/not independently verified,validated
+56,B3 Consulting Group,Data Scientist,Sweden,65,tailor,unclear/not independently verified,validated
+57,Back Market,Senior Data Scientist - Pricing,Barcelona,70,tailor,unclear/not independently verified,validated
+58,Bank Millennium,Ekspert / Ekspertka ds. Data Science (Analiza Behawioralna i Modelowanie Predykcyjne),Warsaw,65,tailor,unclear/not independently verified,validated
+59,BAUMLINK,Senior Data Scientist (m/w/d),Berlin,70,tailor,unclear/not independently verified,validated
+60,Bayer,Senior Data Scientist,Barcelona,70,tailor,unclear/not independently verified,validated
+61,Bayer,Senior AI Engineer-1,Warsaw,70,tailor,unclear/not independently verified,validated
+62,BCG X,"Forward Deployed AI Scientist, Germany & Austria - BCG X",Austria,65,tailor,unclear/not independently verified,validated
+63,BCG X,"(Senior) Forward Deployed AI Scientist, Operations & Optimization, Germany & Austria - BCG X",Austria,70,tailor,unclear/not independently verified,validated
+64,BCG X,"Forward Deployed AI Engineer, Spain - BCG X",Barcelona,65,tailor,unclear/not independently verified,validated
+65,BCG X,"(Senior) Forward Deployed AI Scientist, Operations & Optimization, Germany & Austria - BCG X",Berlin,70,tailor,unclear/not independently verified,validated
+66,BCG X,"Forward Deployed AI Scientist, Germany & Austria - BCG X",Germany,65,tailor,unclear/not independently verified,validated
+67,BCG X,"Forward Deployed AI Scientist, Italy - BCG X",Italy,65,tailor,unclear/not independently verified,validated
+68,BCG X,"Forward Deployed AI Scientist, Germany & Austria - BCG X",Munich,65,tailor,unclear/not independently verified,validated
+69,BCG X,"(Senior) Forward Deployed AI Scientist, Operations & Optimization, Germany & Austria - BCG X",Munich,70,tailor,unclear/not independently verified,validated
+70,BCG X,"Forward Deployed AI Scientist, France - BCG X",Paris,65,tailor,unclear/not independently verified,validated
+71,BDO Norge,Vil du utvikle data- og AI-løsninger som skaper verdi?,Norway,65,tailor,unclear/not independently verified,validated
+72,BearingPoint,Data & AI Lead,Copenhagen,70,tailor,unclear/not independently verified,validated
+73,BearingPoint,Data Scientist – Senior Consultant,Italy,70,tailor,unclear/not independently verified,validated
+74,BearingPoint,Senior Data Scientist med fokus på Industry 4.0,Norway,70,tailor,unclear/not independently verified,validated
+75,BearingPoint,Senior Data Scientist,Norway,70,tailor,unclear/not independently verified,validated
+76,Belfius,Job / GenAI - Data Scientist / Brussel,Brussels,65,tailor,unclear/not independently verified,validated
+77,BETWEEN Group,AI Developer,Barcelona,65,tailor,unclear/not independently verified,validated
+78,BIP,Junior Data Scientist – BIP AI LAB,Italy,40,reject,unclear/not independently verified,not generated
+79,BIP,Senior Data Scientist – BIP AI LAB,Italy,70,tailor,unclear/not independently verified,validated
+80,BizAway,Data Scientist,Barcelona,65,tailor,unclear/not independently verified,validated
+81,Black Swans Exist,Senior Associate - Data Science,Copenhagen,70,tailor,unclear/not independently verified,validated
+82,BNP Paribas Fortis,Data Scientist,Brussels,65,tailor,unclear/not independently verified,validated
+83,Bolt,Staff Data Scientist,Romania,70,tailor,unclear/not independently verified,validated
+84,Booz Allen Hamilton,Data Scientist,Germany,65,tailor,unclear/not independently verified,validated
+85,bridge351,AI/ML Engineer (Brussels),Brussels,65,tailor,unclear/not independently verified,validated
+86,Brillio,AI Engineer Agentic AI Systems,Romania,65,tailor,unclear/not independently verified,validated
+87,bsport,Senior Applied Scientist,Paris,70,tailor,unclear/not independently verified,validated
+88,BULLIT MANAGEMENT SERVICES LIMITED,Lead Data Scientist,Paris,70,tailor,unclear/not independently verified,validated
+89,Bunge,Data Scientist,Warsaw,65,tailor,unclear/not independently verified,validated
+90,BWI GmbH,Consultant Data Management & Machine Learning (m/w/d),Berlin,65,tailor,unclear/not independently verified,validated
+91,BWI GmbH,Consultant Data Management & Machine Learning (m/w/d),Munich,65,tailor,unclear/not independently verified,validated
+92,C3 AI,Data Scientist / Senior Data Scientist (London),London,70,tailor,unclear/not independently verified,validated
+93,C3 AI,Data Scientist - Defence,London,65,tailor,unclear/not independently verified,validated
+94,Capgemini,AI Consultant (m/w/d),Austria,65,tailor,unclear/not independently verified,validated
+95,Capgemini,AI & Data Scientist,Sweden,65,tailor,unclear/not independently verified,validated
+96,Capgemini,Consultant Agentic AI,Warsaw,65,tailor,unclear/not independently verified,validated
+97,Capgemini Engineering,Data Scientist,Switzerland,65,tailor,unclear/not independently verified,validated
+98,Capitole,Machine Learning Engineer,Barcelona,65,tailor,unclear/not independently verified,validated
+99,Capitole,Machine Learning Engineer / AI Engineer,Barcelona,65,tailor,unclear/not independently verified,validated
+100,CGI,ML/AI Engineer,Sweden,65,tailor,unclear/not independently verified,validated
+101,Check Point Software,"Senior ML Engineer, AI Security",Switzerland,70,tailor,unclear/not independently verified,validated
+102,Checkout.com,Senior Data Scientist I,Paris,70,tailor,unclear/not independently verified,validated
+103,Ciklum,Senior Data Scientist,Romania,70,tailor,unclear/not independently verified,validated
+104,Ciklum,Expert AI Engineer,Romania,70,tailor,unclear/not independently verified,validated
+105,Circle K,Senior AI/ML Engineer,Warsaw,70,tailor,unclear/not independently verified,validated
+106,Citi,"Data Scientist and Model Developer fixed term contract till end of Dec 2027, Vice President",Warsaw,65,tailor,unclear/not independently verified,validated
+107,Clariness,AI Engineer (f/m/d),Berlin,65,tailor,unclear/not independently verified,validated
+108,Clarivate,Senior Data Scientist,Barcelona,70,tailor,unclear/not independently verified,validated
+109,Cofidis España,Data Scientist,Barcelona,65,tailor,unclear/not independently verified,validated
+110,Cognite,Data Scientist,Norway,65,tailor,unclear/not independently verified,validated
+111,Cognizant,Agentic AI Architect,Norway,65,tailor,unclear/not independently verified,validated
+112,Columbus,Senior AI Engineer - Center of Excellence,Norway,70,tailor,unclear/not independently verified,validated
+113,Comply365,Senior Machine Learning Engineer,Barcelona,70,tailor,unclear/not independently verified,validated
+114,Cream Consulting,AI engineer,Brussels,65,tailor,unclear/not independently verified,validated
+115,CrowdStrike,Sr. Data Scientist - Gen AI (Remote),Romania,65,tailor,unclear/not independently verified,validated
+116,CSEM,(Senior) R&D Engineer Industrial AI (F/M/D) 100%,Switzerland,70,tailor,unclear/not independently verified,validated
+117,Curamando,AI Engineer,Sweden,65,tailor,unclear/not independently verified,validated
+118,Daintta,Data Scientist,London,65,tailor,unclear/not independently verified,validated
+119,Data Wizards,Senior Data Scientist,Brussels,70,tailor,unclear/not independently verified,validated
+120,Databricks,AI Forward Deployed Engineer - Sweden,Sweden,65,tailor,unclear/not independently verified,validated
+121,Dataiku,Senior Data Scientist (German-speaking),Germany,50,tailor,unclear/not independently verified,validated
+122,Datatonic,Senior Machine Learning Engineer (Swedish Speaking),Sweden,50,tailor,unclear/not independently verified,validated
+123,Datision,AI Engineer,Barcelona,65,tailor,unclear/not independently verified,validated
+124,Davidson consulting,Data Scientist – Machine Deep learning (H/F),Paris,65,tailor,unclear/not independently verified,validated
+125,DCC Energi A/S,AI Lead,Copenhagen,70,tailor,unclear/not independently verified,validated
+126,Deloitte,Consultor/a de AI especializado/a en Generative AI & Azure,Barcelona,65,tailor,unclear/not independently verified,validated
+127,Deloitte,Experienced - Computer Vision Engineer - NextHub Bari,Italy,42,reject,unclear/not independently verified,not generated
+128,Deloitte,Experienced - AI Engineer - NextHub Bari,Italy,65,tailor,unclear/not independently verified,validated
+129,DHL,"Data Scientist AI (D/F/M), DHL Data & AI",Germany,65,tailor,unclear/not independently verified,validated
+130,Discover International,Senior Data Scientist — Berlin – Health Technology,Berlin,70,tailor,unclear/not independently verified,validated
+131,DNV,Graduate 2027 - Data Scientist,Norway,40,reject,unclear/not independently verified,not generated
+132,Domera Labs,Member of Technical Staff - AI/ML Engineer,Switzerland,70,tailor,unclear/not independently verified,validated
+133,DT,Senior Data Scientist,Warsaw,70,tailor,unclear/not independently verified,validated
+134,DXC Technology,AI & Data Science Consultant,Italy,65,tailor,unclear/not independently verified,validated
+135,E-Solutions,AI Architect,Norway,65,tailor,unclear/not independently verified,validated
+136,EcoVadis,Staff AI/ML Scientist (Conversational AI),Barcelona,70,tailor,unclear/not independently verified,validated
+137,EcoVadis,Staff AI/ML Scientist (Conversational AI),Warsaw,70,tailor,unclear/not independently verified,validated
+138,eGlue,Data Scientist,Italy,65,tailor,unclear/not independently verified,validated
+139,Elsevier,Senior Data Scientist I,London,70,tailor,unclear/not independently verified,validated
+140,Elsevier,Senior Data Scientist,London,70,tailor,unclear/not independently verified,validated
+141,emagine,Data Scientist Senior(RAG)-(h/f),Paris,70,tailor,unclear/not independently verified,validated
+142,Endava,Senior Data Science/AI Specialist,Romania,70,tailor,unclear/not independently verified,validated
+143,Epsilon France,Ingénieur Data Science confirmé(e) (F/H/X),Paris,65,tailor,unclear/not independently verified,validated
+144,Eraneos,Senior AI Engineer (w/m/d),Munich,70,tailor,unclear/not independently verified,validated
+145,Eraneos,(Senior) Forward Deployed Data & AI Engineer 80-100%,Switzerland,70,tailor,unclear/not independently verified,validated
+146,ERGO,Senior Data Engineer (Agentic AI) / f/m/d,Warsaw,70,tailor,unclear/not independently verified,validated
+147,Ericsson,Entry Level: Data Scientist,Sweden,65,tailor,unclear/not independently verified,validated
+148,Esprinet Italia,Data Scientist,Italy,65,tailor,unclear/not independently verified,validated
+149,Eulidia,Data Scientist / GenAI / CDI / H/F,Paris,65,tailor,unclear/not independently verified,validated
+150,Evollabs Tech,Senior AI Engineer – LLM Systems,Norway,70,tailor,unclear/not independently verified,validated
+151,Experts Inside AG,AI Expert – Generative AI & Agentic Workflows,Austria,70,tailor,unclear/not independently verified,validated
+152,Extia,Artificial Intelligence Engineer,Romania,50,tailor,unclear/not independently verified,validated
+153,EY,Data Engineer - AI & Data,Norway,65,tailor,unclear/not independently verified,validated
+154,Fabasoft,Senior AI Engineer,Austria,70,tailor,unclear/not independently verified,validated
+155,Faculty,Principal Data Scientist,London,70,tailor,unclear/not independently verified,validated
+156,Faculty,Senior Data Scientist,London,70,tailor,unclear/not independently verified,validated
+157,Fetcherr,Data Scientist - Deep Learning Forecasting,Warsaw,65,tailor,unclear/not independently verified,validated
+158,FIA – Fédération Internationale de l'Automobile,F1 Data Scientist,Switzerland,65,tailor,unclear/not independently verified,validated
+159,Findr,"Senior / Lead Data Scientist – Applied Statistics & Machine Learning – €100,000 – Hybrid – Frankfurt",Germany,70,tailor,unclear/not independently verified,validated
+160,Findr,"Senior / Lead Data Scientist – Applied Statistics & Machine Learning – €100,000 – Hybrid – Munich",Munich,70,tailor,unclear/not independently verified,validated
+161,Finom,Senior Machine Learning Engineer,Romania,70,tailor,unclear/not independently verified,validated
+162,Fives,Data Scientist Senior,Paris,70,tailor,unclear/not independently verified,validated
+163,Flower,Senior Data Scientist,Sweden,70,tailor,unclear/not independently verified,validated
+164,Forte,Data Engineer og AI-utvikler,Norway,65,tailor,unclear/not independently verified,validated
+165,Fronius Österreich,AI Engineer (m/w/d),Austria,65,tailor,unclear/not independently verified,validated
+166,Fødevarestyrelsen,Data Scientist til vores Machine Learning team,Copenhagen,65,tailor,unclear/not independently verified,validated
+167,Genentech,"Principal Machine Learning Scientist, Frontier Research, AI for Drug Discovery (AIDD)",Switzerland,70,tailor,unclear/not independently verified,validated
+168,GENOS,Data Scientist,Romania,65,tailor,unclear/not independently verified,validated
+169,Gjensidige,Prisanalytiker/Data Scientist,Norway,65,tailor,unclear/not independently verified,validated
+170,GlobalLogic,AI Developer & Data Scientist IRC303082,Sweden,65,tailor,unclear/not independently verified,validated
+171,Grab,Lead Edge AI Engineer,Romania,70,tailor,unclear/not independently verified,validated
+172,GRID esports,Senior Data Scientist - Real-Time Esports Predictions (m/f/x),Sweden,70,tailor,unclear/not independently verified,validated
+173,Harmattan AI,Machine Learning Engineer (Detect & Track Distillation),Switzerland,65,tailor,unclear/not independently verified,validated
+174,Harmattan AI,Computer Vision Engineer,Switzerland,42,reject,unclear/not independently verified,not generated
+175,HCLTech,Data Scientist - AI,London,65,tailor,unclear/not independently verified,validated
+176,hello again,AI Solutions Engineer (d/f/m),Austria,65,tailor,unclear/not independently verified,validated
+177,HelloFresh,"Senior Data Scientist, Growth Alliance (m/f/d)",Warsaw,70,tailor,unclear/not independently verified,validated
+178,HelloFresh,"Senior Data Scientist, Demand Forecasting, Food Systems",Warsaw,70,tailor,unclear/not independently verified,validated
+179,Helvetia Insurance Austria,AI Engineer (w/m/d).,Austria,65,tailor,unclear/not independently verified,validated
+180,Hexagon AB,Artificial Intelligence Engineer,Switzerland,50,tailor,unclear/not independently verified,validated
+181,Hipo.ro,Data Scientist / KYC @ING Hubs Romania,Romania,65,tailor,unclear/not independently verified,validated
+182,HiQ,Data & AI Consultant,Sweden,65,tailor,unclear/not independently verified,validated
+183,Hire Feed,Machine Learning Engineer - Computer Vision (Remote),Germany,57,tailor,unclear/not independently verified,validated
+184,Holcim,Process Data Scientist,Switzerland,65,tailor,unclear/not independently verified,validated
+185,Holcim Supplementary Pension Fund,Process Data Scientist,Switzerland,65,tailor,unclear/not independently verified,validated
+186,HOUSE OF ABY,Consultant Data / AI X/ F/H,Switzerland,65,tailor,unclear/not independently verified,validated
+187,HP,AI /ML Engineer,Barcelona,65,tailor,unclear/not independently verified,validated
+188,HSE - Home Shopping Europe GmbH,Expert Data Science (m/f/d),Germany,70,tailor,unclear/not independently verified,validated
+189,HUK-COBURG,Senior AI Scientist (w/m/d),Germany,70,tailor,unclear/not independently verified,validated
+190,Humans.tech,Artificial Intelligence Specialist,Italy,50,tailor,unclear/not independently verified,validated
+191,Huxley,Senior Data Scientist (GenAI/ML),Amsterdam,70,tailor,unclear/not independently verified,validated
+192,i3,Applied Scientist,London,65,tailor,unclear/not independently verified,validated
+193,If Insurance,(Senior) Data Scientist,Copenhagen,70,tailor,unclear/not independently verified,validated
+194,If Insurance,(Senior) Data Scientist,Norway,70,tailor,unclear/not independently verified,validated
+195,If Insurance,(Senior) Data Scientist,Sweden,70,tailor,unclear/not independently verified,validated
+196,IFS,"Senior Software Engineer, AI Agents",Germany,70,tailor,unclear/not independently verified,validated
+197,In4Matic,Data Scientist,Brussels,65,tailor,unclear/not independently verified,validated
+198,Infineon Technologies,Staff Specialist Artificial Intelligence (Generative AI & Large Language Models (LLM)) (f/m/div),Austria,70,tailor,unclear/not independently verified,validated
+199,Infosys,Senior AI Architect,Norway,70,tailor,unclear/not independently verified,validated
+200,ING Hubs Romania,Data Scientist / KYC @ING Hubs Romania,Romania,65,tailor,unclear/not independently verified,validated
+201,Intersnack IT KG,Data Scientist & ML Engineer - Predictive Analytics & Agentic AI,Germany,65,tailor,unclear/not independently verified,validated
+202,Intuitive,Senior Computer Vision & Machine Learning Engineer (Medical Imaging),Germany,62,tailor,unclear/not independently verified,validated
+203,IQVIA,Senior AI Solutions Engineer,Warsaw,70,tailor,unclear/not independently verified,validated
+204,IRiS Grupo Tecnológico,AI Engineer / Data Scientist,Barcelona,65,tailor,unclear/not independently verified,validated
+205,IT Factory,AI Developer,Warsaw,65,tailor,unclear/not independently verified,validated
+206,ITERIS,Forward Deployed AI Engineer - GenAI / Agentic AI,Switzerland,65,tailor,unclear/not independently verified,validated
+207,IXOPAY,Lead Data Scientist,Munich,70,tailor,unclear/not independently verified,validated
+208,Jems Group,Data Scientist H/F,Brussels,65,tailor,unclear/not independently verified,validated
+209,Jet HR,AI Software Engineer,Italy,65,tailor,unclear/not independently verified,validated
+210,Jet HR,AI Engineer,Italy,65,tailor,unclear/not independently verified,validated
+211,Jobloom,AI/ML Engineer,Brussels,65,tailor,unclear/not independently verified,validated
+212,Jobloom,Ingénieur IA/ML,Brussels,65,tailor,unclear/not independently verified,validated
+213,Joppy,Senior Machine Learning Engineer,Barcelona,70,tailor,unclear/not independently verified,validated
+214,Journi,Machine Learning Ops Engineer (all genders),Austria,65,tailor,unclear/not independently verified,validated
+215,Just Eat Takeaway.com,Senior Data Scientist,Amsterdam,70,tailor,unclear/not independently verified,validated
+216,Kaino,Senior Data Scientist GenAI,Paris,70,tailor,unclear/not independently verified,validated
+217,Kanton Luzern,KI-Engineer / KI-Plattform-Spezialist/in (a),Switzerland,50,tailor,unclear/not independently verified,validated
+218,Kicklox,Ingénieur Data scientist IA H/F,Paris,65,tailor,unclear/not independently verified,validated
+219,KICKS,AI Engineer,Sweden,65,tailor,unclear/not independently verified,validated
+220,Klarna,Senior Data Scientist - Fraud Model Validation,Italy,70,tailor,unclear/not independently verified,validated
+221,Kompetenzzentrum DOK GmbH,Senior AI Engineer/Lead AI Developer,Austria,70,tailor,unclear/not independently verified,validated
+222,KPMG Austria,Senior AI Expert:in,Austria,70,tailor,unclear/not independently verified,validated
+223,KTM AG,AI Solutions & Adoption Specialist*,Austria,65,tailor,unclear/not independently verified,validated
+224,Körber,Data Scientist (m/w/d),Switzerland,65,tailor,unclear/not independently verified,validated
+225,Körber Pharma,Data Scientist (m/w/d),Switzerland,65,tailor,unclear/not independently verified,validated
+226,La Fosse,Generative AI Engineer,Brussels,65,tailor,unclear/not independently verified,validated
+227,La Fosse,Data Scientist,London,65,tailor,unclear/not independently verified,validated
+228,Lam Research,Vision System Data Science Engineer (all genders),Austria,65,tailor,unclear/not independently verified,validated
+229,LCL,Data Scientist IA – Développeur Machine Learning H/F,Paris,65,tailor,unclear/not independently verified,validated
+230,Lighthouse,Data Science Engineer,Barcelona,65,tailor,unclear/not independently verified,validated
+231,Lutech,AI Data Scientist,Italy,65,tailor,unclear/not independently verified,validated
+232,Luxoft,Senior AI Data Science Engineer / Bucharest,Romania,70,tailor,unclear/not independently verified,validated
+233,Luxoft,Senior AI Data Science Engineer,Romania,70,tailor,unclear/not independently verified,validated
+234,LVMH,Data Scientist,Paris,65,tailor,unclear/not independently verified,validated
+235,Macadam,Senior Data Scientist,Barcelona,70,tailor,unclear/not independently verified,validated
+236,Machine Learning Architects Basel (MLAB),"AI & MLOps Engineering Consultant (Experienced, German-speaking)",Switzerland,45,reject,unclear/not independently verified,not generated
+237,Machine Learning Reply,GenAI Engineer (m/w/d),Munich,65,tailor,unclear/not independently verified,validated
+238,Machine Learning Reply,Data Scientist (m/w/d),Munich,65,tailor,unclear/not independently verified,validated
+239,Machine Learning Reply,Agentic AI Software Engineer,Munich,65,tailor,unclear/not independently verified,validated
+240,Machine Learning Reply,Machine Learning Consultant (m/w/d),Munich,65,tailor,unclear/not independently verified,validated
+241,Machine Learning Reply GmbH,Data Scientist (m/w/d),Berlin,65,tailor,unclear/not independently verified,validated
+242,Machine Learning Reply GmbH,Machine Learning Consultant (m/w/d),Berlin,65,tailor,unclear/not independently verified,validated
+243,Machine Learning Reply GmbH,Data Scientist (m/w/d),Munich,65,tailor,unclear/not independently verified,validated
+244,Machine Learning Reply GmbH,Machine Learning Consultant (m/w/d),Munich,65,tailor,unclear/not independently verified,validated
+245,Magna International,Advanced Machine Learning Engineer,Romania,65,tailor,unclear/not independently verified,validated
+246,Magnet Forensics,Senior AI/ML Engineer (Magnet-Griffeye),Sweden,70,tailor,unclear/not independently verified,validated
+247,Management Solutions,CONSULTOR DATA SCIENCE BARCELONA,Barcelona,65,tailor,unclear/not independently verified,validated
+248,MANGO,Senior Data Scientist,Barcelona,70,tailor,unclear/not independently verified,validated
+249,McKinsey & Company,Senior Data Science Analyst - OptimusAI,Brussels,70,tailor,unclear/not independently verified,validated
+250,McKinsey & Company,Data Scientist - McKinsey Transformation,Brussels,65,tailor,unclear/not independently verified,validated
+251,MedHelp Care,Machine Learning Engineer,Sweden,65,tailor,unclear/not independently verified,validated
+252,Mindera,Lead Data Scientist,Romania,70,tailor,unclear/not independently verified,validated
+253,Mitsui Chemicals Group,Machine Learning Innovation Engineer Automatisiertes Fahren (m/w/d),Munich,65,tailor,unclear/not independently verified,validated
+254,Mitsui Chemicals Group,Machine Learning Engineer Automatisiertes Fahren (m/w/d),Munich,65,tailor,unclear/not independently verified,validated
+255,MjAMjAM Petfood GmbH,Senior AI Specialist (m/w/d),Germany,70,tailor,unclear/not independently verified,validated
+256,MOTOR Ai,AI/ML Engineer (m/f/d) Autonomous Systems,Berlin,65,tailor,unclear/not independently verified,validated
+257,Mutualité chrétienne (MC),Data Scientist,Brussels,65,tailor,unclear/not independently verified,validated
+258,N-iX,Voice AI Engineer (Real-Time Speech),Warsaw,65,tailor,unclear/not independently verified,validated
+259,NAVAX,AI Consultant (m/w/d),Austria,65,tailor,unclear/not independently verified,validated
+260,NearTech Search,Senior Machine Learning Scientist,London,70,tailor,unclear/not independently verified,validated
+261,Nebius,Staff / Principal Applied AI Researcher (Agentic Search),Switzerland,70,tailor,unclear/not independently verified,validated
+262,Nebius,Senior Applied ML Engineer (Agentic Search),Switzerland,70,tailor,unclear/not independently verified,validated
+263,Neko Health,Data Science Pod Lead,Berlin,70,tailor,unclear/not independently verified,validated
+264,Neko Health,Data Science Pod Lead,Sweden,70,tailor,unclear/not independently verified,validated
+265,Netconomy,AI Engineer (f/m/x),Austria,65,tailor,unclear/not independently verified,validated
+266,Nexer Group,Senior Data Scientist,Sweden,70,tailor,unclear/not independently verified,validated
+267,Nexer Insight,Senior Data Scientist,Sweden,70,tailor,unclear/not independently verified,validated
+268,Niji,Lead IA GENERATIVE specialist - F/H,Paris,55,tailor,unclear/not independently verified,validated
+269,NOBA Bank Group,Data Scientist,Norway,65,tailor,unclear/not independently verified,validated
+270,Nordea,Senior & Expert Data Scientists - Build the Future of AI in Operations,Sweden,70,tailor,unclear/not independently verified,validated
+271,Nordea,Senior & Expert Data Scientists - Build the Future of AI in Operations,Warsaw,70,tailor,unclear/not independently verified,validated
+272,Nordnet Bank AB,"Data Scientist, AI platform",Sweden,65,tailor,unclear/not independently verified,validated
+273,Norsk helsenett SF,Data scientist,Norway,65,tailor,unclear/not independently verified,validated
+274,Norsk helsenett SF,Senior KI utvikler og data scientist,Norway,70,tailor,unclear/not independently verified,validated
+275,Norwegian University of Science and Technology (NTNU),PhD Candidate in AI-assisted medical imaging with MRI,Norway,65,tailor,unclear/not independently verified,validated
+276,NOV,Senior Software Engineer - AI,Norway,70,tailor,unclear/not independently verified,validated
+277,NSI,Data Scientist IA Générative H/F,Paris,65,tailor,unclear/not independently verified,validated
+278,NTT DATA Europe & Latam,Senior AI & GenAI Architect (w/m/x) in Innsbruck/Graz/Wien,Austria,70,tailor,unclear/not independently verified,validated
+279,NTT DATA Europe & Latam,Data Scientist Senior - GenAI Solutions,Italy,70,tailor,unclear/not independently verified,validated
+280,NTT DATA Europe & Latam,Data Scientist,Romania,65,tailor,unclear/not independently verified,validated
+281,NVIDIA,"Research Scientist, AI RL and LLMs",Switzerland,57,tailor,unclear/not independently verified,validated
+282,ODS Serbia,TechLead ML/CV Developer (MedTech),Norway,70,tailor,unclear/not independently verified,validated
+283,ODS Serbia,Senior Data Scientist / ML Engineer,Norway,70,tailor,unclear/not independently verified,validated
+284,OPSWAT,Senior Machine Learning Engineer (on-site),Romania,70,tailor,unclear/not independently verified,validated
+285,Orange Business,Medior/Senior AI Engineer - Consultant,Brussels,70,tailor,unclear/not independently verified,validated
+286,ORLEN S.A.,Ekspert / Ekspertka ds. AI w Dziale Data Science,Warsaw,65,tailor,unclear/not independently verified,validated
+287,ORLEN S.A.,Ekspert / Ekspertka ds. ML/AI w Dziale Data Science,Warsaw,65,tailor,unclear/not independently verified,validated
+288,OUTSCALE,"Design, develop & deploy ML/LLM models, data pipelines & agentic AI solutions for int/ext projects",Paris,65,tailor,unclear/not independently verified,validated
+289,Oventi,Data Scientist Senior H/F,Paris,70,tailor,unclear/not independently verified,validated
+290,Oventi,Data Scientist H/F,Paris,65,tailor,unclear/not independently verified,validated
+291,Oxigent Technologies,Data Scientist (80% teletrabajo),Barcelona,65,tailor,unclear/not independently verified,validated
+292,paretos,Data Scientist Applied AI (f/m/x),Germany,65,tailor,unclear/not independently verified,validated
+293,Partners Group,AI Engineer,Switzerland,65,tailor,unclear/not independently verified,validated
+294,Peter Park,Senior Data Scientist (m/f/d),Munich,70,tailor,unclear/not independently verified,validated
+295,Pfizer,Data Analyst / Data Scientist & Digital Solutions Specialist (m/w/d),Austria,65,tailor,unclear/not independently verified,validated
+296,Phoenix Technologies,Data Scientist,Brussels,65,tailor,unclear/not independently verified,validated
+297,PPC Romania,Junior Machine Learning Engineer,Romania,40,reject,unclear/not independently verified,not generated
+298,Predium,Associate Data Scientist (f/m/d),Munich,65,tailor,unclear/not independently verified,validated
+299,Preply,Senior Applied AI Scientist (AI Marketplace),Barcelona,70,tailor,unclear/not independently verified,validated
+300,Prima,Software / Machine Learning Engineer,Italy,65,tailor,unclear/not independently verified,validated
+301,Prima,Senior Data Scientist GenAI,Italy,70,tailor,unclear/not independently verified,validated
+302,Privatmolkerei Bauer GmbH & Co KG,"(Junior) AI Engineer (m/w/d) mit Schwerpunkt Generative AI, Daten und Automatisierung",Germany,40,reject,unclear/not independently verified,not generated
+303,Procter & Gamble,Senior Data Scientist,Warsaw,70,tailor,unclear/not independently verified,validated
+304,Publicis Sapient,Data Scientist - Senior Manager - Energy & Commodities,Berlin,70,tailor,unclear/not independently verified,validated
+305,PwC España,Senior Data Scientist Barcelona,Barcelona,70,tailor,unclear/not independently verified,validated
+306,PwC Italy,Machine Learning & Artificial Intelligence Engineer - Milano,Italy,65,tailor,unclear/not independently verified,validated
+307,"QuantumBlack, AI by McKinsey","Data Science Consultant - QuantumBlack, AI by McKinsey",Germany,65,tailor,unclear/not independently verified,validated
+308,"QuantumBlack, AI by McKinsey","Data Scientist II - QuantumBlack, AI by McKinsey",London,65,tailor,unclear/not independently verified,validated
+309,"QuantumBlack, AI by McKinsey","Data Scientist I - QuantumBlack, AI by McKinsey",London,65,tailor,unclear/not independently verified,validated
+310,"QuantumBlack, AI by McKinsey","Data Science Consultant - QuantumBlack, AI by McKinsey",Warsaw,65,tailor,unclear/not independently verified,validated
+311,Quickscale AI,Consultant(e) AI Engineer & Data Scientist,Paris,65,tailor,unclear/not independently verified,validated
+312,Quickscale AI,Consultant(e) Senior AI Engineer & Data Scientist,Paris,70,tailor,unclear/not independently verified,validated
+313,Raiffeisen Tech Poland,Data Scientist,Warsaw,65,tailor,unclear/not independently verified,validated
+314,Reale Mutua Assicurazioni,Data Scientist - Get Ready,Italy,65,tailor,unclear/not independently verified,validated
+315,Reckitt,AI Engineering Expert,Warsaw,70,tailor,unclear/not independently verified,validated
+316,Red Bull,Data Scientist – TV-Insight,Austria,65,tailor,unclear/not independently verified,validated
+317,RELEX Solutions,Senior/Lead/Staff Applied Scientist,Sweden,70,tailor,unclear/not independently verified,validated
+318,Renault Group,Senior Data Scientist / Data Analyst appliqué à la Conduite Autonome (H/F),Paris,70,tailor,unclear/not independently verified,validated
+319,RetInSight,AI Engineer,Austria,65,tailor,unclear/not independently verified,validated
+320,RetInSight,Senior AI Scientist,Austria,70,tailor,unclear/not independently verified,validated
+321,Revolut,Data Scientist (NLP Deep Learning Engineer),Romania,65,tailor,unclear/not independently verified,validated
+322,Rex.zone,AI Generalist,Norway,65,tailor,unclear/not independently verified,validated
+323,Roche,Machine Learning Scientist,Switzerland,65,tailor,unclear/not independently verified,validated
+324,Roche,Senior Computational & Applied AI - Scientist,Switzerland,70,tailor,unclear/not independently verified,validated
+325,Roche,Data Scientist,Warsaw,65,tailor,unclear/not independently verified,validated
+326,Safran.AI (ex Preligens),Senior Deep Learning Scientist,Paris,70,tailor,unclear/not independently verified,validated
+327,Safran.AI (ex Preligens),Senior Deep Learning Scientist - IMINT (H/F),Paris,70,tailor,unclear/not independently verified,validated
+328,Salesforce,Forward Deployed Engineer,Copenhagen,50,tailor,unclear/not independently verified,validated
+329,Salesforce,Forward Deployed Engineer - Denmark,Copenhagen,50,tailor,unclear/not independently verified,validated
+330,Scrambly,Senior Data Scientist,Austria,70,tailor,unclear/not independently verified,validated
+331,Scrambly,Senior Data Scientist,Norway,70,tailor,unclear/not independently verified,validated
+332,Scrambly,Senior Data Scientist,Romania,70,tailor,unclear/not independently verified,validated
+333,Scrambly,Senior Data Scientist,Sweden,70,tailor,unclear/not independently verified,validated
+334,SDG Group Italy,AI Engineer,Italy,65,tailor,unclear/not independently verified,validated
+335,Searchability NS&D,Data Scientist,London,65,tailor,unclear/not independently verified,validated
+336,Sedona Digital,Lead Data Scientist,Romania,70,tailor,unclear/not independently verified,validated
+337,SEGULA Technologies,Data Scientist,Italy,65,tailor,unclear/not independently verified,validated
+338,sennder,Machine Learning Engineer,Barcelona,65,tailor,unclear/not independently verified,validated
+339,Shift Technology,Data Scientist: France,Paris,65,tailor,unclear/not independently verified,validated
+340,Sia,Data Science Consultant,Amsterdam,65,tailor,unclear/not independently verified,validated
+341,Sia,Consultant in Data Science,Brussels,65,tailor,unclear/not independently verified,validated
+342,Sia,Data Scientist & AI Consultant,Paris,65,tailor,unclear/not independently verified,validated
+343,Sia,Senior - Data Scientist & AI Consultant,Paris,70,tailor,unclear/not independently verified,validated
+344,Siemens,Senior AI Engineer (f/m/d),Austria,70,tailor,unclear/not independently verified,validated
+345,Siemens,Consultant – Agentic & Artificial Intelligence (f/m/d) Siemens Advanta,Barcelona,65,tailor,unclear/not independently verified,validated
+346,Siemens,Senior Consultant in Agentic & Artificial Intelligence (f/m/d),Barcelona,70,tailor,unclear/not independently verified,validated
+347,Sii Poland,Data Scientist – Python & Cloud Data Platforms (f/m/x),Warsaw,65,tailor,unclear/not independently verified,validated
+348,Sii Poland,Senior Data Scientist – AdTech & Healthcare (f/m/x),Warsaw,70,tailor,unclear/not independently verified,validated
+349,Simon-Kucher,(Senior) Consultant Data Science (m/w/d),Munich,70,tailor,unclear/not independently verified,validated
+350,SINTEF,Analytics and AI; Junior Researcher (MSc) and Researcher (PhD),Norway,40,reject,unclear/not independently verified,not generated
+351,sizeless,AI Engineer,Switzerland,65,tailor,unclear/not independently verified,validated
+352,Skatteverket,Data Scientist / ML Engineer,Sweden,65,tailor,unclear/not independently verified,validated
+353,SLB,Data Scientist,Romania,65,tailor,unclear/not independently verified,validated
+354,Sogeti,Machine Learning Engineer,Sweden,65,tailor,unclear/not independently verified,validated
+355,Solirius Reply,Senior Data Scientist,London,70,tailor,unclear/not independently verified,validated
+356,STATION F,JUNIOR AI ENGINEER,Paris,40,reject,unclear/not independently verified,not generated
+357,Stott and May,AI Product Engineer,Norway,65,tailor,unclear/not independently verified,validated
+358,Super,Machine Learning Engineer - Applied ML & Research,Romania,65,tailor,unclear/not independently verified,validated
+359,supermodular.ai,AI Strategist,London,65,tailor,unclear/not independently verified,validated
+360,supermodular.ai,AI Strategist,Munich,65,tailor,unclear/not independently verified,validated
+361,Swiss Timing Ltd,Data Scientist (all genders) - On-Site Presence,Switzerland,65,tailor,unclear/not independently verified,validated
+362,Syntrace,Machine Learning Engineer,Sweden,65,tailor,unclear/not independently verified,validated
+363,T-Systems Austria,AI Solution Developer (m/w/d),Austria,65,tailor,unclear/not independently verified,validated
+364,TaDa,Machine Learning Engineer,Italy,65,tailor,unclear/not independently verified,validated
+365,Talan,AI Engineer,Warsaw,65,tailor,unclear/not independently verified,validated
+366,Tango,AI Engineer - Data & Analytics,Warsaw,65,tailor,unclear/not independently verified,validated
+367,TAS,Data Scientist / AI Specialist Categoria protetta (L.68/99),Italy,65,tailor,unclear/not independently verified,validated
+368,Teads,Data Scientist - IA & Data Science Team,Paris,65,tailor,unclear/not independently verified,validated
+369,Teamis,AI Scientist,Paris,65,tailor,unclear/not independently verified,validated
+370,Telenor,Tech Lead AI Services at Telenor AI Factory,Norway,70,tailor,unclear/not independently verified,validated
+371,Tenth Revolution Group,AI Engineer,Copenhagen,65,tailor,unclear/not independently verified,validated
+372,Tenth Revolution Group,Data Scientist,Sweden,65,tailor,unclear/not independently verified,validated
+373,The Net Value,Data Science & AI Specialist,Italy,65,tailor,unclear/not independently verified,validated
+374,The Tech Collective,Senior AI Engineer for The Tech Collective,Copenhagen,70,tailor,unclear/not independently verified,validated
+375,Thomson Reuters,"Lead Applied Scientist, Document Understanding",Switzerland,70,tailor,unclear/not independently verified,validated
+376,ThoughtLabs Belgium,Artificial Intelligence Engineer,Sweden,50,tailor,unclear/not independently verified,validated
+377,Tibber,Senior Data Scientist,Sweden,70,tailor,unclear/not independently verified,validated
+378,Tieto,Data Scientist - Tieto Tech Consulting (m/f/d),Sweden,65,tailor,unclear/not independently verified,validated
+379,Titan OS,AI Engineer,Barcelona,65,tailor,unclear/not independently verified,validated
+380,TMS Technology,Artificial Intelligence Engineer,Norway,50,tailor,unclear/not independently verified,validated
+381,Trackunit,Machine Learning Engineer,Copenhagen,65,tailor,unclear/not independently verified,validated
+382,Tri.Merge GmbH,Data Scientist – ML & Predictive Analytics *,Germany,65,tailor,unclear/not independently verified,validated
+383,twentyAI,AI Research Engineer / Enterprise AI / Hybrid / TWE46943,Barcelona,65,tailor,unclear/not independently verified,validated
+384,Twoday,AI Engineer - LLMs and On-Premise AI - Aarhus,Copenhagen,65,tailor,unclear/not independently verified,validated
+385,UCB,Data Science Lead,Brussels,70,tailor,unclear/not independently verified,validated
+386,UiPath,Senior Applied Scientist,Romania,70,tailor,unclear/not independently verified,validated
+387,Undelucram.ro,Senior AI Engineer,Romania,70,tailor,unclear/not independently verified,validated
+388,Undelucram.ro,Junior Machine Learning Engineer,Romania,40,reject,unclear/not independently verified,not generated
+389,UNIQA Polska,Specjalista/ka ds. Data Science (MLOps),Warsaw,65,tailor,unclear/not independently verified,validated
+390,Unique AI,Data Scientist,London,65,tailor,unclear/not independently verified,validated
+391,URBAN LINKER,Lead Data Scientist,Paris,70,tailor,unclear/not independently verified,validated
+392,Verti Versicherung AG,Data Scientist (m/w/d),Germany,65,tailor,unclear/not independently verified,validated
+393,VF Corporation,Associate Data Scientist,Switzerland,65,tailor,unclear/not independently verified,validated
+394,Viaplay Group,"Machine Learning Engineer - Data, ML & Applied AI",Sweden,65,tailor,unclear/not independently verified,validated
+395,Vincle,Data Scientist - AI & ML - Producto SaaS B2B,Barcelona,65,tailor,unclear/not independently verified,validated
+396,Vinted,"Lead Data Scientist, Revenue - Ads, Revenue",Berlin,70,tailor,unclear/not independently verified,validated
+397,VistaPrint,"Principal Data Scientist, Generative Recommendations & AI- Spain Remote",Barcelona,70,tailor,unclear/not independently verified,validated
+398,Voi Technology,Senior Machine Learning Engineer,Sweden,70,tailor,unclear/not independently verified,validated
+399,Volvo Financial Services,Senior Data Scientist,Sweden,70,tailor,unclear/not independently verified,validated
+400,W Hunt España,AI/ML Engineer with PhD,Barcelona,65,tailor,unclear/not independently verified,validated
+401,W3Global,Lead Data scientist,Paris,70,tailor,unclear/not independently verified,validated
+402,Wavestone,Manager - Lead Data Scientist (H/F),Paris,70,tailor,unclear/not independently verified,validated
+403,Welyk,Senior Data Scientist - Digital Pills,Italy,70,tailor,unclear/not independently verified,validated
+404,Winnow,Data Scientist,Romania,65,tailor,unclear/not independently verified,validated
+405,World,Senior Machine Learning Engineer,Munich,70,tailor,unclear/not independently verified,validated
+406,WPP,Junior Data Scientist,Copenhagen,40,reject,unclear/not independently verified,not generated
+407,Xcede,Senior AI ML Engineer,Berlin,70,tailor,unclear/not independently verified,validated
+408,XpertDirect,Machine Learning Engineer,Munich,65,tailor,unclear/not independently verified,validated
+409,XXXLdigital – Part of XXXL Group,Data Scientist (Digital Marketing) (m/w/d),Austria,65,tailor,unclear/not independently verified,validated
+410,Yves&Partners,AI Engineer,Italy,65,tailor,unclear/not independently verified,validated
+411,ZABEL,Data Scientist / Senior Data Scientist (m/f/d) – Machine Learning & AI,Munich,70,tailor,unclear/not independently verified,validated
+412,Zerolook,Senior ML Engineer (Technical Lead),Switzerland,70,tailor,unclear/not independently verified,validated
+413,ZS,Senior Data Analyst - Bioinformatics / AI,Copenhagen,70,tailor,unclear/not independently verified,validated

@@ -1,0 +1,75 @@
+{
+ "company": "Dexcom Ireland - Athenry",
+ "role": "Senior Research Scientist (AI)",
+ "city": "Athenry",
+ "company_profile": "Dexcom develops continuous glucose monitoring and biosensing technology that gives people with diabetes and other health needs personalised, actionable insights.",
+ "title": "Senior Research Scientist (AI)",
+ "current_role_title": "Senior Applied Scientist",
+ "summary": "Senior Applied Scientist with 8+ years taking ML and LLM systems from prototype to production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Designs experiments and evaluation pipelines for LLM and GenAI applications in healthcare, from automated LLM evaluators to fine-tuned retrieval models, alongside deep learning in PyTorch, prediction and time-series forecasting. Works with cross-functional stakeholders to turn prototypes into tools. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Designed automated evaluation and observability pipelines for Question Answering and Summary Agents using LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, running experiments that improved retrieval accuracy."
+  },
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+   "new": "Deployed a production lab-extraction agent for healthcare data with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps",
+   "new": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients, taking concept prototypes from client requirements to results, with 7 moving into production or paid client work."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant",
+   "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, combining semantic retrieval with LLM reasoning and evaluating it to a 90% match rate against existing organizational solutions."
+  }
+ ],
+ "project": {
+  "name": "Health Sensor Time-Series Forecasting",
+  "bullets": [
+   "Built a deep learning model in PyTorch that forecasts short-term glucose trends from wearable sensor time series, comparing an LSTM against XGBoost and statistical baselines on public health data.",
+   "Evaluated models with patient-level splits, error analysis across risk ranges and ablation experiments, then packaged the best model behind a FastAPI service with MLflow tracking for reproducible results."
+  ],
+  "technologies": [
+   "PyTorch",
+   "Python",
+   "LSTM",
+   "XGBoost",
+   "MLflow",
+   "FastAPI",
+   "Pandas",
+   "Matplotlib"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Research Scientist (AI) role at Dexcom. My work sits where applied research meets production: at United Health Group I design evaluation pipelines for LLM agents and fine-tune retrieval models on healthcare data. The thread through it is simple: a model in health is only useful once you can measure that it behaves safely.",
+   "Dexcom's move from glucose monitoring toward broader health insights is research I want to be part of, because sensor data people wear every day is where predictive health can make a real difference. My fiancée lives in Berlin, and we plan to move to Athenry together and settle there long term.",
+   "I would bring careful experiments and a builder's instinct. I built evaluation and observability pipelines with LLM evaluators that reduced human-in-the-loop review by 43%, and I fine-tuned a cross-encoder that improved retrieval accuracy on survey data. At Viavi I also shipped anomaly detection and forecasting on 15+ KPIs across 500+ network devices.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to build with the people who will depend on a system and to check its effect before claiming it works. I would welcome a conversation about your research program."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "health AI",
+  "large language models",
+  "Generative AI",
+  "predictive health outcomes",
+  "evaluation pipelines",
+  "experimental design",
+  "deep learning",
+  "PyTorch",
+  "TensorFlow",
+  "statistical inference",
+  "concept prototypes",
+  "model safety",
+  "data visualization",
+  "cross-functional teams"
+ ],
+ "experience_variant": "base"
+}

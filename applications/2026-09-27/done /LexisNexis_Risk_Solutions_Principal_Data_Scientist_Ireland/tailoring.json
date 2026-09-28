@@ -1,0 +1,76 @@
+{
+ "company": "LexisNexis Risk Solutions",
+ "role": "Principal Data Scientist",
+ "city": "Dublin",
+ "company_profile": "LexisNexis Risk Solutions gives insurers data, analytics and decision tools for pricing, underwriting, claims handling and fraud detection.",
+ "title": "Principal Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years building predictive models and end-to-end ML workflows from prototype to production across Healthcare, Telecom and AIOps. Develops statistical and machine learning models with LightGBM, XGBoost and embeddings on data pipelines built with SQL, PySpark, Databricks and MLflow, and applies Generative AI where it adds real value. Guides projects from requirements to deployment and presents results clearly to technical and non-technical stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Built and deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, adding GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting",
+   "new": "Engineered robust SQL and PySpark data pipelines over large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan applications",
+   "new": "Built an XGBoost predictive model scoring the propensity of personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization."
+  },
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Guided technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, presenting results to client stakeholders and contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients",
+   "new": "Explored and prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, taking 7 into production or paid client work."
+  }
+ ],
+ "project": {
+  "name": "Claim Frequency and Severity Models",
+  "bullets": [
+   "Built claim frequency and severity models for motor insurance pricing, combining LightGBM with Poisson and Gamma objectives and adding text embeddings of claim notes as extra features.",
+   "Evaluated the models with time-based validation, lift charts and SHAP explanations, then tracked experiments in MLflow and deployed scoring pipelines on Databricks with Apache Spark."
+  ],
+  "technologies": [
+   "Python",
+   "Azure ML",
+   "MLflow",
+   "Databricks",
+   "Apache Spark",
+   "LightGBM",
+   "SQL",
+   "Parquet"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Principal Data Scientist role at LexisNexis Risk Solutions. For more than eight years I have built predictive models and put them into production, from SLA breach prediction in telecom to data pipelines on healthcare records. The common thread is making models useful to the people who take decisions with them.",
+   "Your insurance team turns data into better decisions on pricing, underwriting, claims and fraud, and much of my own work has been on health insurance data at United Health Group and Optum, so the domain feels close. My fiancée lives in Berlin, and we plan to move to Dublin together and settle there long term.",
+   "I would bring hands-on depth in production modelling and the pipelines around it. At Viavi I built an SLA breach prediction system with LightGBM, FastAPI and MLflow that cut downtime by 67%, and I guided POCs for 15+ clients. Earlier, SQL and PySpark pipelines I engineered cut manual audit reporting by 95%.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to explain complex ideas simply and to build carefully for the people who rely on the result. I would welcome a conversation about how I could support your team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "predictive modelling",
+  "Python",
+  "SQL",
+  "Azure ML",
+  "MLflow",
+  "Apache Spark",
+  "Databricks",
+  "Generative AI",
+  "ETL pipelines",
+  "claim frequency and severity",
+  "embeddings",
+  "MLOps",
+  "Git",
+  "model governance",
+  "stakeholder communication"
+ ],
+ "experience_variant": "base"
+}

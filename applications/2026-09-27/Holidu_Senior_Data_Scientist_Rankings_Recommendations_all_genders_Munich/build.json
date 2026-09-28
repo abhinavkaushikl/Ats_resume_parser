@@ -1,0 +1,38 @@
+{
+ "company": "Holidu",
+ "city": "Munich",
+ "role": "Senior Data Scientist - Rankings & Recommendations",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior Data Scientist - Rankings & Recommendations",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, improving the ranking of renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder ranking model on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Built an XGBoost propensity model on tabular customer data predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow for real-time scoring, using GPT-3.5 for root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  }
+ ],
+ "apply_url": "https://de.linkedin.com/jobs/view/senior-data-scientist-rankings-recommendations-all-genders-at-holidu-4471898984",
+ "listing_url": "https://de.linkedin.com/jobs/view/senior-data-scientist-rankings-recommendations-all-genders-at-holidu-4471898984",
+ "resume": "Holidu_Senior_Data_Scientist_Rankings_Recommendations_all_genders_Munich/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Holidu_Senior_Data_Scientist_Rankings_Recommendations_all_genders_Munich/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Holidu_Senior_Data_Scientist_Rankings_Recommendations_all_genders_Munich/project_brief.md"
+}

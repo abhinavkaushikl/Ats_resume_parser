@@ -1,0 +1,76 @@
+{
+ "company": "Back Market",
+ "role": "Senior Data Scientist - Care AI",
+ "city": "Paris",
+ "company_profile": "Back Market is a global marketplace for refurbished devices that makes tech reliable, affordable and better for the planet.",
+ "title": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years developing, productionizing and operating ML models and LLM applications across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Owns LLM evaluation end to end, from metrics with LLM evaluators and tracing to production rollout, and integrates Claude and OpenAI APIs into LangGraph agents. Leads client POCs and mentoring, and presents work to technical and business stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Owned automated evaluation and observability pipelines for Question Answering and Summary Agents, measuring LLM behavior with evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph that answered stakeholders' business questions on AARP medical plans with PySpark analysis and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Led technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, mentoring client teams and contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Productionized an SLA breach prediction system with LightGBM, FastAPI and MLflow, integrating GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Implemented a reranker for an existing recommendation system",
+   "new": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing customer conversion by 2%."
+  }
+ ],
+ "project": {
+  "name": "Customer Support Troubleshooting Agent",
+  "bullets": [
+   "Built an LLM troubleshooting agent for e-commerce customer support that diagnoses device issues through guided questions and tool calls, suggesting fixes before a return is opened.",
+   "Evaluated it with LLM-as-judge scoring on labelled conversations and an offline A/B comparison against scripted flows, then served it through FastAPI with tracing and MLflow."
+  ],
+  "technologies": [
+   "Python",
+   "Claude",
+   "LangGraph",
+   "SQL",
+   "Pandas",
+   "FastAPI",
+   "MLflow",
+   "Docker"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist role on the AI for Care team. Most of my recent data science work comes back to one question: how do you know an LLM system is actually doing its job? I have built these systems and, more importantly, the evaluations that decide whether they ship.",
+   "Back Market gives devices a second life, and helping a customer fix a phone instead of returning it is a small change with a real effect on waste. That is work I want to be part of. My fiancée lives in Berlin, and we plan to move to Paris together and settle there long term.",
+   "At United Health Group I built evaluation and observability pipelines for Question Answering and Summary Agents that reduced human-in-the-loop review by 43%, and a LangGraph analytics chatbot that cut manual analysis by 98%. I would bring the same habit of measuring first to your troubleshooting and care agents, and share it with the wider team.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that an AI tool is only good if the person on the other side feels helped, which is the heart of customer care. I would be glad to talk further."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "LLM evaluation",
+  "LLMs",
+  "Generative AI APIs",
+  "A/B tests",
+  "ML lifecycle",
+  "productionize",
+  "Python",
+  "software engineering fundamentals",
+  "testing",
+  "deployment",
+  "AI and data architectures",
+  "agentic coding workflows",
+  "Claude Code",
+  "mentor",
+  "stakeholders"
+ ],
+ "experience_variant": "base"
+}

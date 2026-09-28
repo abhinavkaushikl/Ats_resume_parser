@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - ING Nederland}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior AI/LLM Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+ING Nederland
+
+\textbf{Re: Senior AI/LLM Data Scientist - Agentic AI}
+
+Dear Hiring Team,
+
+I am applying for the Senior AI/LLM Data Scientist role in Agentic AI. As a Senior Data Scientist at United Health Group, I build LLM agents, multi-agent systems and RAG pipelines and run them in production with evaluation and monitoring. The thread through my work is making these systems reliable enough that a business can depend on them.
+
+ING is putting agentic AI into banking, where every answer has to be traceable and correct, and that is the standard I already work to with healthcare data. My fiancée lives in Berlin, and we plan to move to Amsterdam together and settle there long term.
+
+I built a multi-agent analytics chatbot in LangGraph that calls PySpark tools and cut manual analysis by 98\%, and evaluation pipelines with LLM evaluators and tracing that reduced human review by 43\%. At Viavi my RAG assistant reached a 90\% match rate. I would bring those patterns, and the habit of sharing them, to your teams.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers and children has taught me to be careful about what an AI system says and who relies on it. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

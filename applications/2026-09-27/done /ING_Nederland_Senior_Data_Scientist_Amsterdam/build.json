@@ -1,0 +1,39 @@
+{
+ "company": "ING Nederland",
+ "city": "Amsterdam",
+ "role": "Senior AI/LLM Data Scientist - Agentic AI",
+ "pages": 2,
+ "warnings": [
+  "Edit skipped (longer than 225 characters): 'Engineered a production multi-agent analytics chatbot in Lan'",
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior AI/LLM Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Data Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Established evaluation, tracing and monitoring pipelines for production Question Answering and Summary Agents with LLM evaluators and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+   "after": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining embedding retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with the LIMS platform, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense embedding retrieval over AARP survey data, improving retrieval accuracy."
+  }
+ ],
+ "apply_url": "https://nl.linkedin.com/jobs/view/senior-data-scientist-at-ing-nederland-4470563668",
+ "listing_url": "https://nl.linkedin.com/jobs/view/senior-data-scientist-at-ing-nederland-4470563668",
+ "resume": "ING_Nederland_Senior_Data_Scientist_Amsterdam/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "ING_Nederland_Senior_Data_Scientist_Amsterdam/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "ING_Nederland_Senior_Data_Scientist_Amsterdam/project_brief.md"
+}

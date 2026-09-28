@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 22, "experience": 21, "company_project": 18, "ats_keywords": 10, "credibility": 9},
+ "score": 80,
+ "decision": "shortlist",
+ "strengths": ["Enterprise Knowledge Retrieval Assistant project matches the enterprise, compliance-aware retrieval domain closely: hybrid search, embeddings, cross-encoder reranking, citation grounding, access-aware retrieval and audit logging on Azure", "Deep, repeated multi-agent architecture and LLM application design experience in LangGraph across every role", "Strong RAG/vector search/embeddings depth covering the 'AI Infrastructure' track well", "Consistent production delivery with concrete, measurable outcomes"],
+ "gaps": ["Microsoft 365 ecosystem (Graph, Teams, SharePoint) is entirely absent, and this is a named requirement and one of the three specialization tracks", "AI Security and AI Governance are not explicitly addressed, only touched indirectly via audit logging and access-aware retrieval", "Event-driven architecture and enterprise compliance frameworks (DLP, retention) are not explicitly shown", "Cost optimization and context-window management are not called out explicitly as practices"]}

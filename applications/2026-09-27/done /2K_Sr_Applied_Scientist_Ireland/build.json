@@ -1,0 +1,43 @@
+{
+ "company": "2K",
+ "city": "Dublin",
+ "role": "Sr Applied Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior Applied Scientist",
+ "current_role_title": "Senior Applied Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Applied Scientist",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder embedding model on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving ranking and retrieval accuracy."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine that embedded alarms with Sentence-BERT and clustered them with DBSCAN, tracing cascading alarm floods to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a ranking model on top of an existing recommendation system serving individual and child plan recommendations, personalising renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients, turning ambiguous client requirements into well-defined ML tasks, with 7 moving into production or paid client work."
+  }
+ ],
+ "apply_url": "https://job-boards.greenhouse.io/2k/jobs/7784351003?ref=manaboard",
+ "listing_url": "https://ie.linkedin.com/jobs/view/sr-applied-scientist-at-2k-4433337349",
+ "resume": "2K_Sr_Applied_Scientist_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "2K_Sr_Applied_Scientist_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "2K_Sr_Applied_Scientist_Ireland/project_brief.md"
+}

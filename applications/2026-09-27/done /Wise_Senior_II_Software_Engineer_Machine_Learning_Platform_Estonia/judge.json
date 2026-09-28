@@ -1,0 +1,15 @@
+{"criteria": {"tech_stack": 14, "experience": 10, "company_project": 16, "ats_keywords": 10, "credibility": 7},
+ "score": 57,
+ "decision": "reject",
+ "strengths": [
+   "Self-Service Model Serving Platform project matches the MLP team's actual mission almost exactly (self-service platform, MLflow model registry, FastAPI deploys, Terraform, CI/CD, drift/latency dashboards)",
+   "Kubernetes, Docker, Terraform and Airflow are all present in both skills and the tailored project",
+   "Title matches exactly (Senior II Software Engineer - Machine Learning Platform)"
+ ],
+ "gaps": [
+   "The JD explicitly wants strong software engineers with significant production backend experience first and foremost; the resume's whole career is an ML/data-science engineering path, not backend/platform engineering",
+   "No evidence of building internal developer platforms or self-service tooling outside the one tailored project; the rest of the resume is ML modeling and GenAI work",
+   "No distributed-systems architecture depth (service design, API contracts, scaling backend services) beyond the ML-serving angle",
+   "No on-call/production-support ownership of a backend service shown",
+   "AWS cloud experience is thin, appearing only in one project's tech line"
+ ]}

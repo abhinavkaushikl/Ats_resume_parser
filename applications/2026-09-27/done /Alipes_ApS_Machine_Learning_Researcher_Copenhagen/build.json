@@ -1,0 +1,39 @@
+{
+ "company": "Alipes",
+ "city": "Copenhagen",
+ "role": "Machine Learning Researcher",
+ "pages": 2,
+ "warnings": [
+  "Experience variant: timeseries",
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Machine Learning Researcher",
+ "current_role_title": "Senior Applied Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Built SQL and PySpark data pipelines over large healthcare datasets that automated BAU medical-audit reporting, cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed and validated an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Built anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine that clusters network alarm streams with Sentence-BERT and DBSCAN, tracing alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  }
+ ],
+ "apply_url": "https://careers.alipes.dk/jobs/4881094-machine-learning-researcher",
+ "listing_url": "https://dk.linkedin.com/jobs/view/machine-learning-researcher-at-alipes-aps-4458096485",
+ "resume": "Alipes_ApS_Machine_Learning_Researcher_Copenhagen/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Alipes_ApS_Machine_Learning_Researcher_Copenhagen/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Alipes_ApS_Machine_Learning_Researcher_Copenhagen/project_brief.md"
+}

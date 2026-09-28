@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - anthropic}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Applied AI Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+anthropic
+
+\textbf{Re: Applied AI Engineer, Startups}
+
+Dear Hiring Team,
+
+I am applying for the Applied AI Engineer role on the Startups team. As a Senior AI Engineer I build LLM applications that go into production: agents, retrieval, evaluation and the plumbing around them. Much of my career has also been spent next to client engineers, scoping a problem with them and then writing the code together.
+
+Anthropic's focus on reliable, steerable models matches how I already work, since I build on Claude daily and care most about a system behaving the same on the hundredth run as on the first. On a personal note, my fiancée lives in Berlin, and we plan to move to London together and settle there long term.
+
+For startup teams building on Claude, I would bring practical agent design and evaluation. In my current role I shipped a lab-extraction agent on Claude Opus 4.7 that handles about 1,800 lab documents, and built evaluation pipelines that cut human review by 43\%. At Viavi I delivered POCs for 15+ clients, which taught me to explain trade-offs plainly.
+
+Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about safety and about building for people who depend on the tool. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

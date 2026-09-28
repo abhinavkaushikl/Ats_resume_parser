@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - sennder}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Machine Learning Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+sennder
+
+\textbf{Re: Machine Learning Engineer}
+
+Dear Hiring Team,
+
+I am applying for the Machine Learning Engineer role on your ML team. Most of my work sits between data science and engineering: exploring the data until the problem is clear, building the model, then taking it into production myself. That end-to-end habit is the thread through my 8+ years in Healthcare, Telecom and AIOps.
+
+What draws me to sennder is that it owns the platform, the operations and the data behind road freight, so a pricing or carrier forecasting model meets real outcomes quickly. My fiancée lives in Berlin, and we plan to move to Amsterdam together and settle there long term.
+
+I would bring models that people actually use. At Viavi I built an SLA breach prediction system with LightGBM, FastAPI and MLflow that cut downtime by 67\%, and at Optum I added a reranker to a live recommendation system that lifted conversion by 2\%. I also build LLM agents, so I know when an LLM helps and when a simple model wins.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Working with those teachers taught me to start from the user's workflow before writing any code. I would be glad to talk about how I could help your team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

@@ -133,7 +133,12 @@ CITY_WORDS = {
     "Austria": ["austria", "österreich", "vienna", "wien", "graz", "linz", "villach"],
     "Romania": ["romania", "românia", "bucharest", "bucurești", "bucuresti", "cluj", "iasi", "iași", "timisoara"],
     "Norway": ["norway", "norge", "oslo", "bergen", "trondheim"],
-    "Barcelona": ["barcelona", "spain", "españa", "catalonia", "cataluña", "catalunya"]}
+    "Barcelona": ["barcelona", "spain", "españa", "catalonia", "cataluña", "catalunya"],
+    "Germany": ["germany", "deutschland", "hamburg", "frankfurt", "cologne", "köln", "stuttgart", "düsseldorf",
+                "leipzig", "dresden", "hannover", "hanover", "nuremberg", "nürnberg", "karlsruhe", "bonn"],
+    "Switzerland": ["switzerland", "schweiz", "suisse", "zurich", "zürich", "geneva", "genève", "basel", "lausanne"],
+    "Sweden": ["sweden", "sverige", "stockholm", "gothenburg", "göteborg", "malmö", "malmo", "uppsala"],
+    "Italy": ["italy", "italia", "milan", "milano", "rome", "roma", "turin", "torino", "bologna"]}
 
 
 def right_place(city: str, text: str, url: str) -> bool:

@@ -1,0 +1,38 @@
+{
+ "company": "Accenture Nordics",
+ "city": "Copenhagen",
+ "role": "Ind & Func AI Decision Science New Associate",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "AI Decision Science Associate",
+ "current_role_title": "Senior GenAI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior GenAI Engineer",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent AI system in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior GenAI Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation pipelines for Generative AI Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped statistical models for anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling proactive network planning."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction model with LightGBM, served through FastAPI and tracked in MLflow, using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67%."
+  }
+ ],
+ "apply_url": "https://www.accenture.com/dk-en/careers/jobdetails?id=R00294499_en",
+ "listing_url": "https://dk.linkedin.com/jobs/view/join-halfspace%E2%80%99s-ai-advanced-analytics-team-shaping-the-future-with-ai-at-accenture-nordics-4453258941",
+ "resume": "Accenture_Nordics_Join_Halfspace_s_AI_Advanced_Analytics_Team_Shaping_the_Future_with_AI_Copenhagen/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Accenture_Nordics_Join_Halfspace_s_AI_Advanced_Analytics_Team_Shaping_the_Future_with_AI_Copenhagen/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Accenture_Nordics_Join_Halfspace_s_AI_Advanced_Analytics_Team_Shaping_the_Future_with_AI_Copenhagen/project_brief.md"
+}

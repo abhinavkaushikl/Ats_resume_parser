@@ -1,0 +1,16 @@
+{"criteria": {"tech_stack": 27, "experience": 21, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 89,
+ "decision": "shortlist",
+ "strengths": [
+   "Agentic Learner Analytics Assistant project is a near-exact domain and stack match: agentic analyst over training-outcome data, SQL over a governed data model, guardrails on data access, served on Databricks with PySpark and FastAPI",
+   "LangChain (an explicitly named required tool), PySpark, SQL and Databricks all shown in production",
+   "Search/retrieval skills (Apache Solr, Lucene Indexing, Information Retrieval, RAG) map directly to the 'efficient retrieval/search across our domain' requirement",
+   "Healthcare domain experience (UHG, Optum) matches Laerdal's optional healthcare/learning-systems preference",
+   "Headline 'Data AI Engineer' matches the JD title exactly"
+ ],
+ "gaps": [
+   "Mastra/Embabel ADKs not shown (LangChain covers the requirement, but breadth across multiple ADKs is untested)",
+   "No explicit 'context engineering' or 'harness engineering' terminology despite heavy agentic work",
+   "No semantic-model or metadata-governance experience called out (optional in the JD)",
+   "No explicit TDD or branching-strategy discussion"
+ ]}

@@ -44,7 +44,7 @@ class Settings(BaseSettings):
     fallback_llm_timeout_seconds: float = 300.0
 
     # --- Files -------------------------------------------------------------
-    base_resume_path: Path = PROJECT_ROOT / "base_resume.pdf"
+    base_resume_path: Path = PROJECT_ROOT / "Abhinav_kaushik_AI_ML.pdf"
     output_dir: Path = PROJECT_ROOT / "outputs"
     max_jd_bytes: int = 5 * 1024 * 1024
     min_jd_chars: int = 200
@@ -55,6 +55,8 @@ class Settings(BaseSettings):
     max_resume_pages: int = 2
 
     # --- Tailoring mode ----------------------------------------------------
+    # (Claude's /tailor-resumes via build_resume.py also retitles the current role and rewords experience
+    #  bullets; this setting is for the older Groq pipeline.)
     # subtle: only the title (the JD's job title), the summary (tweaked toward the JD) and ONE new project
     #         fitting the company's profile change. Experience, skills and the other projects - Think Tree
     #         above all - stay exactly as in the base resume. No company name anywhere. The judge scores it

@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 12, "experience": 10, "company_project": 15, "ats_keywords": 7, "credibility": 9},
+ "score": 53,
+ "decision": "reject",
+ "strengths": ["Hybrid Product Search Engine project matches the product-discovery domain: Elasticsearch keyword matching combined with vector/hybrid search, cross-encoder reranking, NDCG measurement", "Solid Solr, Lucene and Elasticsearch retrieval background covering the JD's 'nice to have' search-stack list", "REST API and Kubernetes delivery experience shown", "Consistent, credible outcomes throughout"],
+ "gaps": ["This role's core day-to-day is a Scala PaaS e-commerce backend; the resume shows zero Scala or backend-engineering-in-Scala experience", "JD's must-have is '5+ years as a Software Engineer working in search'; the candidate's career is AI/data science with search-adjacent skills, not a search SWE track", "No multi-tenant architecture, on-call production-systems rotation, or scalable event-driven infrastructure (queues, sharding, replication, failover) shown", "No experience with Helm or Rust mentioned"]}

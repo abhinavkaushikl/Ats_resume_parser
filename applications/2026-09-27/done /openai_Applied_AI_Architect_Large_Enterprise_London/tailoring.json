@@ -1,0 +1,36 @@
+{
+ "company": "openai",
+ "role": "Applied AI Architect, Large Enterprise",
+ "city": "London",
+ "company_profile": "OpenAI is an AI research and deployment company whose models, ChatGPT Enterprise, API and agentic tools are used by large organizations to build and run AI solutions.",
+ "title": "Applied AI Architect",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "Senior AI Engineer with 8+ years guiding ML and LLM systems from discovery and prototype to production across Healthcare, Telecom and AIOps. Designs agentic and RAG applications in LangGraph with evaluation, tracing and observability built in, and has guided 15+ clients through technical POCs and consulting. Works with stakeholders to turn business problems into use cases, architectures and measurable results. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {"original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients", "new": "Led discovery with AIOps and GeoPerformance clients and prototyped 15+ AI applications from their requirements, with 7 moving into production or paid client work."},
+  {"original": "Delivered technical POCs and consulting for 15+ clients", "new": "Guided 15+ clients through technical POCs, solution evaluations and consulting across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."},
+  {"original": "Deployed a production lab-extraction agent with Claude Opus 4.7", "new": "Took a lab-extraction agent with Claude Opus 4.7 and Amazon Textract into production, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."},
+  {"original": "Built automated evaluation and observability pipelines for Question Answering", "new": "Designed automated evaluation and observability for Question Answering and Summary Agents, using LLM evaluators, tracing and failure detection to reduce human-in-the-loop review by 43%."},
+  {"original": "Engineered a production multi-agent analytics chatbot in LangGraph", "new": "Engineered a production multi-agent analytics chatbot in LangGraph answering stakeholders' questions on AARP medical plans with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."}
+ ],
+ "project": {
+  "name": "Enterprise Knowledge Assistant Architecture",
+  "bullets": [
+   "Designed a reference architecture for enterprise knowledge assistants, combining RAG over internal documents with tool-calling agents and access controls, using GPT-4 through its API.",
+   "Evaluated answer quality with LLM evaluators and tracing against agreed business success criteria, and deployed the prototype with FastAPI and Docker alongside a documented path to production."
+  ],
+  "technologies": ["GPT-4", "LLM APIs", "LangGraph", "RAG", "LLM Evals", "Python", "FastAPI", "Docker"]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Applied AI Architect role on the Large Enterprise team. For the past few years my work has sat between a client's problem and a working AI system: finding the use case worth building, prototyping it, and staying with it until it runs in production. Getting from a promising demo to real adoption is the thread through my career.",
+   "OpenAI's models are now part of how large organizations plan their work, and helping those teams move from evaluation to durable value is where I want to put my experience. My fiancée lives in Berlin, and we plan to move to London together and settle there long term, building our life around this next step.",
+   "I would bring hands-on credibility to technical conversations. At Viavi I prototyped 15+ AI applications from client requirements, and 7 of them moved into production or paid client work. At United Health Group I took a lab-extraction agent into production, handling about 1,800 lab documents, with evaluation and tracing built in from the start.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that AI only counts when real people adopt it and it helps them. I would be glad to talk about how I could support your enterprise customers."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": ["Applied AI Architecture", "Technical Account Plan", "Discovery", "Use-Case Portfolio", "Proofs of Value", "Prototypes", "Agentic AI", "OpenAI API", "Model Evaluation", "Retrieval", "Enterprise AI Workflows", "Security and Privacy", "Production Adoption", "Stakeholder Management", "Python"],
+ "experience_variant": "base"
+}

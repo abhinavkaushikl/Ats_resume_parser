@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Emerging Travel Group}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Emerging Travel Group
+
+\textbf{Re: Senior Data Scientist (Look-2-Book)}
+
+Dear Hiring Team,
+
+I am applying for the Senior Data Scientist (Look-2-Book) role. I build classic ML end to end, from SQL and PySpark pipelines to LightGBM and XGBoost models running behind production APIs. What connects my work is turning a vague business question into a model that people can act on.
+
+Emerging Travel Group builds the booking platforms that hotels, agents and travellers rely on, and predicting whether a search turns into a booking is the kind of problem I like: a clear metric, real revenue and messy data. My fiancée lives in Berlin, and we plan to move to Portugal together and settle there long term.
+
+At Viavi I deployed a LightGBM system that predicted SLA breaches and reduced downtime by 67\%, served with FastAPI and MLflow. At Optum I built a reranker on top of an existing recommendation system that lifted renewal conversion by 2\%. I would bring the same habit of tying models to business outcomes to your look-to-book work.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers and children has taught me to check what a model does for real users before trusting a metric. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

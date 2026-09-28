@@ -1,0 +1,43 @@
+{
+ "company": "State Street",
+ "city": "Ireland",
+ "role": "Cybersecurity Data Scientist, Assistant Vice President",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Cybersecurity Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine clustering network alarms with Sentence-BERT and DBSCAN to trace the cascading effect of alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, surfacing risk signals earlier and supporting proactive network planning."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Built real-time log observability for the COVID QRT team with Elasticsearch and Kibana, improving traceability efficiency by 80%.",
+   "after": "Built real-time log observability for the COVID QRT team with Elasticsearch and Kibana, making operational events searchable and improving traceability efficiency by 80%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 to enrich each breach with real-time root-cause analysis and remediation, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and monitoring pipelines for GenAI Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  }
+ ],
+ "apply_url": "https://ie.linkedin.com/jobs/view/cybersecurity-data-scientist-assistant-vice-president-at-state-street-4465834206",
+ "listing_url": "https://ie.linkedin.com/jobs/view/cybersecurity-data-scientist-assistant-vice-president-at-state-street-4465834206",
+ "resume": "State_Street_Cybersecurity_Data_Scientist_Assistant_Vice_President_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "State_Street_Cybersecurity_Data_Scientist_Assistant_Vice_President_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "State_Street_Cybersecurity_Data_Scientist_Assistant_Vice_President_Ireland/project_brief.md"
+}

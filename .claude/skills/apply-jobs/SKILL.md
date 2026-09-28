@@ -1,7 +1,7 @@
 ---
 name: apply-jobs
 description: Apply automatically to the jobs that are already prepared in applications/<date>/ (tailored resume + cover letter built) - opens each company apply page in Chrome, fills the form from .env + apply_profile.yaml, uploads the tailored PDFs and submits when every required answer is known; otherwise stops and marks the job for my evaluation with the reason. Use only when the user runs /apply-jobs or asks to apply to the prepared applications.
-argument-hint: "[date, default today] [company filter, e.g. Redcare]"
+argument-hint: "[date, default today] [company filter, e.g. Redcare] [retry | accounts]"
 model: sonnet
 ---
 
@@ -19,9 +19,12 @@ applied to - not JOB_RESULTS rows without a folder, not visa-unclear / GPT jobs,
 - **Never guess.** Every answer comes from `.env`, `apply_profile.yaml` or the job's own folder
   (`resume.txt`, `tailoring.json`, cover letter). A required field with no known answer = stop, mark
   `needs_review`. Never invent salary, dates, legal declarations, years with a tool, or opinions.
-- **Never log in, never create an account, never LinkedIn.** Already signed in (Chrome session) = fine.
-  Login / signup / "create account" wall = `skipped`. LinkedIn Easy Apply or a LinkedIn-only path = `skipped`.
-  Never type a password.
+- **Accounts are mine to create; passwords are never typed by Claude.** Already signed in (Chrome session) =
+  fine. Login / signup / "create account" wall = hand-off (step 2.2b): fill the non-secret signup fields,
+  leave the tab open, mark `needs_account`, move on. I set the password (Chrome's password manager suggests
+  and saves a unique one), do the CAPTCHA / email code and sign in; then the job continues. Never type,
+  generate, store or reuse a password, never fill a password field, never read a verification code from my
+  mailbox. LinkedIn Easy Apply or a LinkedIn-only path = `skipped`.
 - **Never submit twice.** One click on the final Submit. If the result is unclear, mark
   `submit_unconfirmed` and leave the tab open - do not click again.
 - **Honest answers** to work-rights questions: I need visa sponsorship and do not have EU work rights
@@ -44,8 +47,9 @@ for d in sorted(pathlib.Path("applications", date).glob("*/build.json")):
     print(f"{st:18} {d.parent.name} | {b.get('apply_url') or '-'} | {b.get('listing_url') or '-'}")
 EOF
 ```
-(replace `<date>`, e.g. `2026-09-26`). Take the `pending` ones, plus `needs_review` / `skipped` ones only
-if I say "retry". `applied` and `submit_unconfirmed` are never redone.
+(replace `<date>`, e.g. `2026-09-26`). Take the `pending` ones, plus `needs_review` / `skipped` /
+`needs_account` ones only if I say "retry"; `accounts` (or "continue" after I've signed up in the open tabs)
+takes only the `needs_account` ones. `applied` and `submit_unconfirmed` are never redone.
 
 Preflight, stop with a clear message if any fails:
 - `.env` exists with `CANDIDATE_NAME`, `CANDIDATE_EMAIL`, `CANDIDATE_PHONE` (read them with
@@ -66,7 +70,18 @@ For each job:
    LinkedIn either; otherwise `skipped: linkedin_only`. Open it in a new tab.
 2. **Page check.** Posting closed / 404 -> `skipped: posting_closed`. Click the Apply button (company's own
    form). If the only way is "Apply with LinkedIn/Easy Apply", `skipped: linkedin_only` ("Apply with
-   LinkedIn" autofill buttons: ignore, use the manual form). Login/signup wall -> `skipped: login_required`.
+   LinkedIn" autofill buttons: ignore, use the manual form). Login/signup wall -> 2b.
+   **2b. Account hand-off.** First check whether I'm already signed in (my name / "My applications" / "Sign
+   out" visible) - then just continue. A "Continue as guest" / "Apply without account" option -> take it.
+   Otherwise open the "Create account" / "Sign up" form (not "Sign in", if I have an account I'll sign in
+   myself) and fill only the non-secret fields: email = `CANDIDATE_EMAIL`, first/last name, country, phone.
+   Leave password / confirm-password fields, CAPTCHA and terms-of-use checkboxes empty, do not submit. Mark
+   `needs_account` (reason: ATS + what is left for me, e.g. "Workday: set password, verify email"), keep
+   the tab open, go to the next job.
+   **On an `accounts` / "continue" run:** reuse that job's open tab if it is still there (it is mine only
+   because this skill opened it), else open the URL again. Signed in now -> go on with step 3 as usual
+   (profile pages the ATS asks for after signup - address, work history - come from `.env` / `resume.txt`
+   like any other field). Still not signed in -> leave it `needs_account`, say so.
 3. **Read the whole form first** (all steps/pages if you can see them) and map every field to an answer:
    - Name, email, phone, location, LinkedIn -> `.env`.
    - Resume upload -> `Abhinav_Kaushik_Resume.pdf`; cover letter upload -> `Abhinav_Kaushik_Cover_Letter.pdf`
@@ -99,7 +114,7 @@ Write `applications/<date>/<stem>/application.json` right after each job (before
 
 ```json
 {
-  "status": "applied | needs_review | skipped | submit_unconfirmed",
+  "status": "applied | needs_review | needs_account | skipped | submit_unconfirmed",
   "reason": "one line, e.g. 'required question: expected salary (no value in apply_profile.yaml)'",
   "questions_unanswered": [{"label": "...", "type": "select|text|checkbox", "options": ["..."]}],
   "answers_given": {"<field label>": "<value>"},
@@ -120,6 +135,9 @@ already removed it, leave JOB_RESULTS.md as is and say so.
 - **Applied (N):** company - job - city - ATS - confirmation (one line each).
 - **Needs your evaluation (N):** company - job - reason - the exact unanswered questions with options - link
   (tab left open).
-- **Skipped (N):** company - job - reason (linkedin_only, login_required, posting_closed, ...).
+- **Needs an account from you (N):** company - job - ATS - what's left (set password with Chrome's
+  suggested one, CAPTCHA, email code) - tab left open. Then: "Sign up / sign in in those tabs and say
+  **continue** (or later `/apply-jobs <date> accounts`) and I'll finish them."
+- **Skipped (N):** company - job - reason (linkedin_only, posting_closed, ...).
 - Offer: "Tell me the answers and I'll add them to `apply_profile.yaml`, then `/apply-jobs retry` finishes
   them." Add only what I actually answer; a job-specific answer goes under `per_company` in the profile.

@@ -1,0 +1,73 @@
+{
+ "company": "Revolut",
+ "role": "Data Scientist (NLP Deep Learning Engineer)",
+ "city": "Porto",
+ "company_profile": "Revolut is a global financial app offering spending, saving, investing and exchange products to retail customers.",
+ "title": "Data Scientist (NLP Deep Learning Engineer)",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years taking deep learning, NLP and LLM applications from research to production across Healthcare, Telecom and AIOps. Builds chatbots and assistants with LangGraph multi-agent and RAG designs, fine-tunes transformer models such as cross-encoders for retrieval, and evaluates LLM systems with automated evaluators and tracing. Productionises models with Python, SQL, FastAPI, Docker and MLflow, working closely with product owners and business stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Built a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business users' questions through multi-turn LLM reasoning, PySpark analysis and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated evaluation and observability pipelines for LLM-based Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a transformer cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN",
+   "new": "Built an NLP event-correlation engine clustering alarms with Sentence-BERT embeddings and DBSCAN to trace network alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant in LangGraph",
+   "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, pairing semantic retrieval with LLM reasoning to answer user queries and reaching a 90% match rate against existing organizational solutions."
+  }
+ ],
+ "project": {
+  "name": "Banking Support Copilot",
+  "bullets": [
+   "Built a customer support copilot for digital banking that classifies incoming chats with a fine-tuned BERT model and drafts grounded replies with an LLM using RAG over help articles.",
+   "Evaluated intent accuracy and answer quality with LLM evaluators and human-labelled samples, then served both models through FastAPI in Docker with MLflow tracking and tracing."
+  ],
+  "technologies": [
+   "Python",
+   "PyTorch",
+   "Hugging Face Transformers",
+   "BERT",
+   "LangGraph",
+   "FastAPI",
+   "Docker",
+   "MLflow"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist (NLP Deep Learning Engineer) role at Revolut. My recent work is building LLM and NLP products that real users rely on: a multi-agent analytics chatbot, a document-extraction agent and a fine-tuned cross-encoder for retrieval. The thread through it all is shipping models, not just prototypes.",
+   "Revolut puts assistants and copilots in front of customers who manage their money every day, and that is where careful NLP work pays off most. There is a personal side too: my fiancée lives in Berlin, and we plan to move to Porto together and settle there long term.",
+   "I would bring experience of the full path from idea to production. My LangGraph analytics chatbot for medical plans cut manual analysis by 98%, and the evaluation pipelines I built with LLM evaluators and tracing reduced human review by 43%. Both taught me to measure quality before scaling a feature.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me focused on how people actually use what I build, not just what the model can do. I would be glad to talk about how I could help your team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "deep learning",
+  "natural language processing",
+  "large language models",
+  "chatbots",
+  "copilots",
+  "personal assistants",
+  "Python",
+  "SQL",
+  "production tools",
+  "probability and statistics",
+  "productionise research",
+  "Product Owners"
+ ],
+ "experience_variant": "base"
+}

@@ -1,0 +1,43 @@
+{
+ "company": "Verizon",
+ "city": "Dublin",
+ "role": "Senior Data Science Engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior Data Science Engineer",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, enabling earlier detection of network issues and proactive planning."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 to generate real-time root-cause analysis and remediation per breach, reducing network downtime by 67%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine clustering network alarms with Sentence-BERT and DBSCAN, tracing the cascading effect of alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, turning business questions into PySpark analysis and live charts through multi-turn reasoning, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.",
+   "after": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc analyses and actionable insights for multiple stakeholder teams."
+  }
+ ],
+ "apply_url": "https://mycareer.verizon.com/jobs/r-1100318/senior-data-science-engineer/",
+ "listing_url": "https://ie.linkedin.com/jobs/view/senior-data-science-engineer-at-verizon-4462037066",
+ "resume": "Verizon_Senior_Data_Science_Engineer_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Verizon_Senior_Data_Science_Engineer_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Verizon_Senior_Data_Science_Engineer_Ireland/project_brief.md"
+}

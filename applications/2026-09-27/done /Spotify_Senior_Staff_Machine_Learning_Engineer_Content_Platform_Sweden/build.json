@@ -1,0 +1,39 @@
+{
+ "company": "Spotify",
+ "city": "Stockholm",
+ "role": "Senior Staff Machine Learning Engineer - Content Platform",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4",
+  "Title 'Senior Staff Machine Learning Engineer' not used (seniority/fit check); kept 'Senior AI Engineer'."
+ ],
+ "headline": "Senior AI Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Designed an event-correlation system clustering alarms with Sentence-BERT and DBSCAN, tracing cascading network alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production decisioning system predicting SLA breaches with LightGBM, FastAPI and MLflow, with GPT-3.5 giving real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and observability for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, balancing automation with quality and cutting human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a ranking model on top of an existing recommendation system for individual and child plans, improving renewal suggestions and increasing conversion by 2%."
+  }
+ ],
+ "apply_url": "https://se.linkedin.com/jobs/view/senior-staff-machine-learning-engineer-content-platform-at-spotify-4407885616",
+ "listing_url": "https://se.linkedin.com/jobs/view/senior-staff-machine-learning-engineer-content-platform-at-spotify-4407885616",
+ "resume": "Spotify_Senior_Staff_Machine_Learning_Engineer_Content_Platform_Sweden/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Spotify_Senior_Staff_Machine_Learning_Engineer_Content_Platform_Sweden/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Spotify_Senior_Staff_Machine_Learning_Engineer_Content_Platform_Sweden/project_brief.md"
+}

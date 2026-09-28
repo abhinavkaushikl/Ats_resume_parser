@@ -1,0 +1,39 @@
+{
+ "company": "Action",
+ "city": "Zwaagdijk-Oost",
+ "role": "Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4",
+  "The company name 'Action' still appears in the resume - check it."
+ ],
+ "headline": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and time-series demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Productionised an SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine clustering network alarms with Sentence-BERT and DBSCAN, tracing the cascading effect of alarm floods to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost classification model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization for the business."
+  }
+ ],
+ "apply_url": "https://nl.action.jobs/en/jobs/data-scientist-e110469",
+ "listing_url": "https://nl.linkedin.com/jobs/view/data-scientist-at-action-4415348772",
+ "resume": "Action_Data_Scientist_Netherlands/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Action_Data_Scientist_Netherlands/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Action_Data_Scientist_Netherlands/project_brief.md"
+}

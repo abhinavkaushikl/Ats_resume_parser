@@ -1,0 +1,77 @@
+{
+ "company": "NielsenIQ",
+ "role": "Senior Data Scientist",
+ "city": "Warsaw",
+ "company_profile": "NielsenIQ is a consumer intelligence company that measures retail sales and consumer buying behaviour for brands and retailers in 100+ markets.",
+ "title": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years turning large, imperfect datasets into reliable methods and measurable results across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds Python, Pandas and PySpark data processing pipelines, statistical models for prediction, trend analysis and anomaly detection, and clear dashboards for stakeholders. Also applies GenAI and agentic workflows to automate data processing, taking prototypes to production with Docker and MLflow. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Engineered SQL and PySpark data pipelines automating BAU",
+   "new": "Automated BAU medical-audit reporting with scalable SQL and PySpark data processing pipelines on large healthcare datasets, cutting manual reporting effort by 95%."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Analysed trends and anomalies across 15+ KPIs on 500+ telecom network devices with Holt-Winters demand forecasting and Isolation Forest, enabling earlier detection and proactive network planning."
+  },
+  {
+   "original": "Wrote complex SQL queries with multi-table joins",
+   "new": "Analysed and aggregated large data sources with complex SQL using multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses to multiple stakeholder teams."
+  },
+  {
+   "original": "Developed a Python and Flask parser that automated",
+   "new": "Automated data integration with a Python and Flask parser that extracted and transformed raw data into structured datasets, feeding downstream analytics and reporting."
+  },
+  {
+   "original": "Built customer dashboards for financial and product insights",
+   "new": "Designed clear data visualizations and customer dashboards for financial and product insights with QlikSense, SQL and SAP HANA, increasing user engagement by 40%."
+  }
+ ],
+ "project": {
+  "name": "Retail Sales Trend Estimation",
+  "bullets": [
+   "Built a trend-estimation pipeline for retail sales panels with incomplete store coverage, reweighting samples and imputing missing outlets with gradient boosting in PySpark and Pandas.",
+   "Validated estimates against held-out stores with unit-tested checks and bias diagnostics, then packaged the pipeline as a command-line tool in Docker for scheduled runs on Azure."
+  ],
+  "technologies": [
+   "Python",
+   "Apache Spark",
+   "Pandas",
+   "NumPy",
+   "Scikit-learn",
+   "LightGBM",
+   "Docker",
+   "Azure"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist role in the Data Science Methods team. For eight years my work has sat where your team works: turning large, imperfect datasets into methods that other teams can trust and run without me. That thread runs from healthcare audit reporting to telecom KPI analysis.",
+   "NIQ measures what people actually buy, and the quality of that picture depends on how carefully gaps and bias in the data are handled. That kind of methodological work, where a careful correction changes a retailer's decision, is what draws me. My fiancée lives in Berlin, and we plan to move to Warsaw together and settle there long term.",
+   "I would focus on prototyping and automating statistical procedures in Python and Spark. At Viavi I built anomaly detection and Holt-Winters forecasting on 15+ KPIs across 500+ network devices, and earlier I automated medical-audit reporting with SQL and PySpark, cutting manual effort by 95%. Both taught me to document methods so operations teams can rely on them.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Working with teachers has taught me to test an idea with the people who depend on it before calling it done. I would be glad to talk about how I could contribute to your team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "trend analyses",
+  "multivariate statistics",
+  "sampling",
+  "bias reduction",
+  "indirect estimation",
+  "data aggregation",
+  "automation",
+  "Python",
+  "Pandas",
+  "NumPy",
+  "Scikit-Learn",
+  "Apache Spark",
+  "MS Azure",
+  "data visualization",
+  "machine learning",
+  "GenAI"
+ ],
+ "experience_variant": "base"
+}

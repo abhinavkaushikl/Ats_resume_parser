@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 24, "experience": 22, "company_project": 16, "ats_keywords": 13, "credibility": 9},
+ "score": 84,
+ "decision": "shortlist",
+ "strengths": ["New Campaign A/B Test Analysis project directly covers the JD's 'experimental design' must-have with power calculations, bootstrap CIs and Power BI storytelling", "Python, SQL, PySpark, Power BI and Matplotlib all shown in context, not just listed", "Business-problem framing explicit ('framing the business question as a classification problem')", "8+ years well above the 3+ year bar, with classification, regression and clustering all evidenced"],
+ "gaps": ["Cloud platforms (GCP/Azure) appear only in the skills list, not tied to a DS-environment bullet", "No R experience (Python-only, though JD accepts either)", "The A/B-test project is generic analytics, not tied to a specific domain Devoteam serves", "Spark shown via Databricks/PySpark rather than raw large-scale distributed processing"]}

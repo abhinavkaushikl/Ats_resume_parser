@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - KONUX}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+KONUX
+
+\textbf{Re: Senior Data Scientist}
+
+Dear Hiring Team,
+
+I am applying for the Senior Data Scientist role. My data science work has mostly been on time-series signals from live systems, such as network KPIs, alarm streams and logs, where I built models, tested them and released them into production myself. The thread through it is taking a messy real-world problem all the way to a model people trust.
+
+KONUX applies AI to sensor data from railway infrastructure, so a good model means better maintenance decisions and fewer surprises on the track, which is work I find worth doing. My fiancée lives in Berlin, and we plan to move to Munich together and settle there long term.
+
+I would bring production experience on this kind of data. At Viavi I shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ network devices, and deployed an SLA breach prediction system with LightGBM, FastAPI and MLflow that reduced downtime by 67\%.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to test carefully and listen to the people using what I build. I would be glad to talk about how I could contribute to your team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

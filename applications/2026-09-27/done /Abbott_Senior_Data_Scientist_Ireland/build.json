@@ -1,0 +1,43 @@
+{
+ "company": "Abbott",
+ "city": "Sligo",
+ "role": "Senior Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production predictive model for SLA breaches with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped statistical anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, enabling earlier detection and proactive planning."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated validation and monitoring pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered SQL and PySpark data pipelines on large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Built customer dashboards for financial and product insights with QlikSense, SQL and SAP HANA, increasing user engagement by 40%.",
+   "after": "Built customer dashboards for financial and product insights with QlikSense, SQL and SAP HANA, turning data into clear business recommendations and increasing user engagement by 40%."
+  }
+ ],
+ "apply_url": "https://www.jobs.abbott/us/en/job/31158582/Senior-Data-Scientist",
+ "listing_url": "https://ie.linkedin.com/jobs/view/senior-data-scientist-at-abbott-4463398475",
+ "resume": "Abbott_Senior_Data_Scientist_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Abbott_Senior_Data_Scientist_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Abbott_Senior_Data_Scientist_Ireland/project_brief.md"
+}

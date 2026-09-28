@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - EY}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Forward Deployed AI Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+EY
+
+\textbf{Re: FS Technology Consulting - AI and Data - Forward Deployed AI Engineer - Manager}
+
+Dear Hiring Team,
+
+I am applying for the Forward Deployed AI Engineer role in your FS Technology Consulting team. As a Senior GenAI Engineer, I build multi-agent and RAG systems and take them from a first prototype into production alongside the people who will use them. Most of my work has started as a client problem and ended as software running in their environment.
+
+EY's Financial Services practice helps banks, insurers and asset managers build AI they can run themselves, and that hand-over is the part of the job I enjoy most. There is a personal side too. My fiancée lives in Berlin, and we plan to move to Dublin together and settle there long term.
+
+At United Health Group I deployed a lab-extraction agent with Claude and Amazon Textract that handles about 1,800 lab documents, and built the evaluation and tracing pipelines that cut human review by 43\%. At Viavi I prototyped 15+ AI applications for clients, and 7 went into production or paid work.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and testing carefully before anything ships. I would be glad to talk about how I could help your clients get their AI into production.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

@@ -1,0 +1,15 @@
+{"criteria": {"tech_stack": 25, "experience": 18, "company_project": 18, "ats_keywords": 10, "credibility": 8},
+ "score": 79,
+ "decision": "maybe",
+ "strengths": [
+   "Agentic Code Review Assistant project directly targets Codex's domain: an agent that reads diffs, runs tests and suggests fixes, evaluated with automated LLM graders and developer feedback",
+   "Strong evaluation-harness track record (LLM evaluators, tracing, observability, automated graders) matches the JD's systematic evaluation requirement",
+   "Hands-on Python, FastAPI, Docker and agent tool-calling shown across multiple production deployments",
+   "Client-facing prototyping background (15+ clients, discovery to production) fits the 'forward-deployed engineering' relevant-background note"
+ ],
+ "gaps": [
+   "No French fluency shown (Languages: English only) despite the JD's explicit requirement to speak English and French fluently",
+   "No JavaScript/TypeScript or developer-tooling/SDLC-platform experience beyond one tailored project",
+   "Experience is mostly data/analytics AI engineering, not software-engineering-organization enablement at scale",
+   "No mention of contributing to developer resources or cookbooks, or leading technical workshops for engineering orgs"
+ ]}

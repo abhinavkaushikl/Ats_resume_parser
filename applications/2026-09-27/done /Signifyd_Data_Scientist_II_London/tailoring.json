@@ -1,0 +1,70 @@
+{
+ "company": "Signifyd",
+ "role": "Data Scientist II",
+ "city": "London",
+ "company_profile": "Signifyd provides fraud protection and risk decisioning for e-commerce merchants, using production ML models to approve good orders and block fraudulent ones.",
+ "title": "Data Scientist II",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Data Scientist with 8+ years building production ML models and data pipelines across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds prediction and anomaly detection models with LightGBM, XGBoost and Isolation Forest, analyses data in Python, SQL and PySpark on Databricks, and owns models end to end from experiment to deployment with FastAPI and MLflow. Explains results clearly to business stakeholders. Currently building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, owning it end to end and using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, catching unusual behaviour earlier and supporting proactive network planning."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan applications",
+   "new": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, giving the business a score to prioritize customers and target outreach."
+  },
+  {
+   "original": "Engineered SQL and PySpark data pipelines automating BAU",
+   "new": "Engineered SQL and PySpark data pipelines on large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  }
+ ],
+ "project": {
+  "name": "E-commerce Fraud Risk Scoring",
+  "bullets": [
+   "Built a fraud risk model for online transactions with LightGBM on behavioural and order features engineered in PySpark, tuning decision thresholds to balance approvals against fraud losses.",
+   "Evaluated decisioning strategies through offline backtests and a simulated A/B test on holdout orders, tracked experiments in MLflow, and served scores through a FastAPI service."
+  ],
+  "technologies": [
+   "Python",
+   "SQL",
+   "Spark",
+   "Databricks",
+   "LightGBM",
+   "MLflow",
+   "FastAPI",
+   "GCP"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist II role in the Applied Decision Science team. Most of my work has been building prediction models and taking them all the way into production, from SLA breach prediction in telecom to analytics tools in healthcare. I like owning the full loop: the data, the model, the deployment and the numbers afterwards.",
+   "Fraud decisioning is a problem where a model's choices touch real customers every day, and a team that runs its own experiments end to end is where I do my best work. It also fits my life: my fiancée lives in Berlin, and we plan to move to London together and settle there long term.",
+   "I would bring a habit of shipping models, not just notebooks. I deployed a LightGBM breach prediction system with FastAPI and MLflow that reduced downtime by 67%, and earlier built an XGBoost propensity model that helped a lending team prioritize customers. I am comfortable in Python, SQL and PySpark on Databricks.",
+   "Beyond my day job I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Working with teachers taught me to test ideas against what actually helps people. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "production machine learning models",
+  "fraud",
+  "experiments",
+  "decisioning",
+  "statistics",
+  "Python",
+  "SQL",
+  "Spark",
+  "Databricks",
+  "GCP",
+  "A/B tests",
+  "automation",
+  "distributed data pipelines"
+ ],
+ "experience_variant": "base"
+}

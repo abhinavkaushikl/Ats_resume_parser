@@ -1,0 +1,72 @@
+{
+  "company": "Delivery Hero",
+  "role": "Staff Data Scientist, Dmarts - Quick Commerce",
+  "city": "Berlin",
+  "company_profile": "Delivery Hero is a Berlin-based local delivery platform whose quick commerce stores deliver groceries and everyday products in minutes.",
+  "title": "Staff Data Scientist",
+  "current_role_title": "Senior Data Scientist",
+  "summary": "Senior Data Scientist with 8+ years designing end-to-end data and ML workflows across Healthcare, Telecom and AIOps, with time-series and demand forecasting at the core, using LSTM, XGBoost and Holt-Winters. Takes forecasting and ML models into production with Python, Docker, Airflow and MLflow on GCP and Azure, and also builds recommendation rerankers and LLM agents. Works across product, engineering and business stakeholders to turn forecasts into measurable results. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+      "new": "Productionized demand forecasting and anomaly detection on 15+ KPIs across 500+ telecom network devices with Holt-Winters and Isolation Forest, enabling proactive network planning and earlier detection."
+    },
+    {
+      "original": "Implemented a reranker for an existing recommendation system",
+      "new": "Implemented a reranker for an existing personalized recommendation system serving individual and child plans, optimizing renewal suggestions and increasing conversion by 2%."
+    },
+    {
+      "original": "Engineered SQL and PySpark data pipelines automating BAU",
+      "new": "Designed end-to-end SQL and PySpark data workflows automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%."
+    },
+    {
+      "original": "Delivered technical POCs and consulting for 15+ clients",
+      "new": "Advised 15+ clients through technical POCs and consulting across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+    }
+  ],
+  "project": {
+    "name": "Store Demand Forecasting Engine",
+    "bullets": [
+      "Built a store and product-level demand forecasting engine for quick-commerce replenishment, combining Holt-Winters baselines with LightGBM and LSTM models on promotion, seasonality and stock-out features.",
+      "Evaluated forecasts with rolling backtests against statistical baselines, scheduled retraining in Airflow with MLflow tracking, and served forecasts to planners through FastAPI in Docker."
+    ],
+    "technologies": [
+      "Python",
+      "LightGBM",
+      "LSTM",
+      "Airflow",
+      "MLflow",
+      "Docker",
+      "GCP",
+      "PySpark"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "closing": "Sincerely,",
+    "paragraphs": [
+      "I am applying for the Staff Data Scientist role in Dmarts, Quick Commerce. Forecasting is the part of my data science work I return to most, and I have taken forecasting models from first analysis into production in telecom networks. The thread through it all is building models that operations teams can plan around.",
+      "In quick commerce a forecast turns directly into what sits on a shelf at Delivery Hero, and a wrong one means waste or an empty slot, so the work matters in a very concrete way. My fiancée lives in Berlin, and I am building my career in the city where we are making our home.",
+      "At Viavi I developed time-series forecasting of base-station call handover and SMS handover volumes with LSTM and XGBoost, and built a forecasting feature in our AIOps monitoring product that forecasts univariate KPIs across the network. I also ran Holt-Winters demand forecasting across 500+ network devices.",
+      "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It taught me to build for the people who depend on the output, and to change things carefully. I would welcome a conversation about the team's forecasting work."
+    ]
+  },
+  "jd_keywords": [
+    "forecasting algorithms",
+    "optimization models",
+    "statistical inference",
+    "personalized recommendations",
+    "end-to-end data workflows",
+    "ML platform",
+    "ML best practices",
+    "Python",
+    "Docker",
+    "AWS or GCP",
+    "PyTorch",
+    "LLMs",
+    "Airflow",
+    "MLflow",
+    "supply chain planning"
+  ],
+  "experience_variant": "timeseries"
+}

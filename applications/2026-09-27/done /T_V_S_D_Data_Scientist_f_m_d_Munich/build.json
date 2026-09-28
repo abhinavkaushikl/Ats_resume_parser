@@ -1,0 +1,38 @@
+{
+ "company": "TÜV SÜD",
+ "city": "Munich",
+ "role": "Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Data Scientist",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Deployed a production document-extraction agent with Claude Opus 4.7 and Amazon Textract OCR, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production conversational multi-agent chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built systematic evaluation and monitoring pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical POCs and data science consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "apply_url": "https://de.linkedin.com/jobs/view/data-scientist-f-m-d-at-t%C3%BCv-s%C3%BCd-4466655785",
+ "listing_url": "https://de.linkedin.com/jobs/view/data-scientist-f-m-d-at-t%C3%BCv-s%C3%BCd-4466655785",
+ "resume": "T_V_S_D_Data_Scientist_f_m_d_Munich/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "T_V_S_D_Data_Scientist_f_m_d_Munich/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "T_V_S_D_Data_Scientist_f_m_d_Munich/project_brief.md"
+}

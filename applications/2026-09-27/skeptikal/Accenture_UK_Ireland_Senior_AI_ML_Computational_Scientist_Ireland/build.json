@@ -1,0 +1,43 @@
+{
+ "company": "Accenture UK & Ireland",
+ "city": "Ireland",
+ "role": "Senior AI/ML Computational Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior AI/ML Computational Scientist",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Formulated SLA breaches as a prediction problem and deployed a production LightGBM system with FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and automatic failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients, formulating client requirements into practical ML solutions, with 7 moving into production or paid client work."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, explaining model approaches to client teams and contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered scalable SQL and PySpark data pipelines on large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  }
+ ],
+ "apply_url": "https://ie.linkedin.com/jobs/view/senior-ai-ml-computational-scientist-at-accenture-uk-ireland-4455468710",
+ "listing_url": "https://ie.linkedin.com/jobs/view/senior-ai-ml-computational-scientist-at-accenture-uk-ireland-4455468710",
+ "resume": "Accenture_UK_Ireland_Senior_AI_ML_Computational_Scientist_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Accenture_UK_Ireland_Senior_AI_ML_Computational_Scientist_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Accenture_UK_Ireland_Senior_AI_ML_Computational_Scientist_Ireland/project_brief.md"
+}

@@ -1,0 +1,71 @@
+{
+ "company": "Holidu",
+ "role": "Data Scientist - Mid-level/Senior",
+ "city": "Munich",
+ "company_profile": "A vacation rental technology company that helps hosts get more bookings and helps guests find holiday homes.",
+ "title": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years designing predictive models and taking them from first prototype to production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Works in Python and SQL with XGBoost and LightGBM on large tabular data, Holt-Winters demand forecasting and reranking for recommendations, running models with Airflow and MLflow. Builds LLM applications alongside classical ML and discusses model choices and trade-offs with stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Designed and deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped demand forecasting and anomaly detection models on 15+ KPIs across 500+ telecom network devices using Holt-Winters and Isolation Forest, enabling earlier detection and proactive network planning."
+  },
+  {
+   "original": "Implemented a reranker for an existing recommendation system",
+   "new": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, improving the ranking of renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan applications",
+   "new": "Built an XGBoost propensity model on tabular customer data predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization."
+  }
+ ],
+ "project": {
+  "name": "Rental Demand and Pricing Model",
+  "bullets": [
+   "Built a booking demand forecasting and price recommendation model for vacation rentals, combining LightGBM on listing, seasonality and lead-time features with price elasticity estimates per segment.",
+   "Validated forecasts with rolling time-based backtests and pricing through a simulated A/B test, then scheduled retraining in Airflow and tracked models and drift in MLflow."
+  ],
+  "technologies": [
+   "Python",
+   "SQL",
+   "Airflow",
+   "dbt",
+   "MLflow",
+   "LightGBM",
+   "XGBoost"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist role at Holidu at the senior level. As a data scientist I have owned predictive models from the first prototype to production, from gradient boosting on tabular data to demand forecasting. What connects that work is making a model earn its place in a real business decision.",
+   "Holidu sits in a marketplace where ranking, pricing and demand all shape whether a host gets booked, and that mix of modelling problems is what I enjoy most. I also like that the team owns its use cases end to end. My fiancée lives in Berlin, and we plan to move to Munich together and settle there long term.",
+   "I would bring hands-on depth in the modelling you use. At Viavi I shipped an SLA breach prediction model with LightGBM and MLflow that cut downtime by 67%, and demand forecasting with Holt-Winters across 500+ network devices. At Optum I added a reranker to a recommendation system that increased conversion by 2%.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to test ideas with real users and keep what works. I would be glad to talk about which problem area I could take on."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "predictive modelling",
+  "machine learning",
+  "statistics",
+  "Python",
+  "SQL",
+  "XGBoost",
+  "LightGBM",
+  "tabular data",
+  "demand forecasting",
+  "price optimization",
+  "rankings and recommendations",
+  "Airflow",
+  "dbt",
+  "MLflow",
+  "AWS SageMaker"
+ ],
+ "experience_variant": "base"
+}

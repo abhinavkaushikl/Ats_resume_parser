@@ -1,0 +1,43 @@
+{
+ "company": "Etsy",
+ "city": "Dublin",
+ "role": "Senior Machine Learning Engineer I, Search Ads",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior Machine Learning Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank candidates from dense retrieval over AARP survey data, improving retrieval relevance and accuracy."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, improving the relevance of renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine using Sentence-BERT embeddings and DBSCAN clustering to trace network alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed and monitored a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, prioritizing customers for targeted outreach."
+  }
+ ],
+ "apply_url": "https://careers.etsy.com/jobs/senior-machine-learning-engineer-i-search-ads-dublin-ireland",
+ "listing_url": "https://ie.linkedin.com/jobs/view/senior-machine-learning-engineer-i-search-ads-at-etsy-4468810396",
+ "resume": "Etsy_Senior_Machine_Learning_Engineer_I_Search_Ads_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Etsy_Senior_Machine_Learning_Engineer_I_Search_Ads_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Etsy_Senior_Machine_Learning_Engineer_I_Search_Ads_Ireland/project_brief.md"
+}

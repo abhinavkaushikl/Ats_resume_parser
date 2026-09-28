@@ -1,0 +1,11 @@
+{
+ "status": "needs_review",
+ "reason": "OpenAI limits candidates to 5 applications per 180 days and there are 6 OpenAI jobs - waiting for the user to choose which ones (answers are otherwise known now).",
+ "questions_unanswered": [],
+ "answers_given": {},
+ "files_uploaded": [],
+ "url_used": "https://jobs.ashbyhq.com/openai/840963bb-7b1a-4021-91a0-40baf71b7e20",
+ "ats": "ashby",
+ "confirmation": "",
+ "timestamp": "2026-09-28T09:14"
+}

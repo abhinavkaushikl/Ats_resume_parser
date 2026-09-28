@@ -1,0 +1,38 @@
+{
+ "company": "commercetools",
+ "city": "Berlin",
+ "role": "Senior AI Search engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior AI Search Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior AI Engineer",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder re-ranker on positive and negative pairs to reorder dense retrieval results over AARP survey data, improving search relevance and retrieval accuracy."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+   "after": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, pairing semantic retrieval over existing organizational solutions with LLM reasoning to reach a 90% match rate."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Built real-time log observability for the COVID QRT team with Elasticsearch and Kibana, improving traceability efficiency by 80%.",
+   "after": "Built real-time log search and observability on Elasticsearch and Kibana for the COVID QRT team, improving traceability efficiency by 80%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction system behind a FastAPI service with LightGBM and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  }
+ ],
+ "apply_url": "https://job-boards.greenhouse.io/commercetools/jobs/8003149003",
+ "listing_url": "https://job-boards.greenhouse.io/commercetools/jobs/8003149003",
+ "resume": "commercetools_Senior_AI_Search_engineer_m_f_x_Berlin/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "commercetools_Senior_AI_Search_engineer_m_f_x_Berlin/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "commercetools_Senior_AI_Search_engineer_m_f_x_Berlin/project_brief.md"
+}

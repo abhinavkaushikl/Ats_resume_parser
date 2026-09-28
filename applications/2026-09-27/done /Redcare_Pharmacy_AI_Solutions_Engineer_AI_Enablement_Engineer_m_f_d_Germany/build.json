@@ -1,0 +1,43 @@
+{
+ "company": "Redcare Pharmacy",
+ "city": "Germany",
+ "role": "AI Solutions Engineer/ AI Enablement Engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "AI Solutions Engineer / AI Enablement Engineer",
+ "current_role_title": "Senior GenAI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients, translating business needs into solution ideas, with 7 moving into production or paid client work."
+  },
+  {
+   "role": "Senior GenAI Engineer",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Deployed a production document-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the workflow behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "role": "Senior GenAI Engineer",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent AI assistant in LangGraph for AARP medical plans, answering business users' questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+   "after": "Developed an internal retrieval-augmented generation assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical proof-of-concepts and consulting for 15+ clients across 3+ AIOps and ML platforms, guiding stakeholders through adoption and contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "apply_url": "https://jobs.smartrecruiters.com/Redcare-Pharmacy/744000149299348",
+ "listing_url": "https://jobs.smartrecruiters.com/Redcare-Pharmacy/744000149299348",
+ "resume": "Redcare_Pharmacy_AI_Solutions_Engineer_AI_Enablement_Engineer_m_f_d_Germany/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Redcare_Pharmacy_AI_Solutions_Engineer_AI_Enablement_Engineer_m_f_d_Germany/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Redcare_Pharmacy_AI_Solutions_Engineer_AI_Enablement_Engineer_m_f_d_Germany/project_brief.md"
+}

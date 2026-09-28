@@ -1,0 +1,70 @@
+{
+  "company": "OpenAI",
+  "role": "Applied AI Engineer, Codex",
+  "city": "Paris",
+  "company_profile": "OpenAI is an AI research and deployment company whose Applied AI team helps engineering organizations adopt Codex across the software development lifecycle.",
+  "title": "Applied AI Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "summary": "Senior AI Engineer with 8+ years taking ML and LLM systems from prototype to production in enterprise settings across Healthcare, Telecom and AIOps. Builds agentic workflows in LangGraph, tool-using agents and RAG applications, with evaluation harnesses, LLM evaluators, tracing and observability that keep them reliable in production. Works hands-on in Python with FastAPI, Docker and MLflow, and turns client requirements into working prototypes and measurable results. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+      "new": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, automating the workflow behind 800 Jira tickets and PRD tasks across about 1,800 lab documents."
+    },
+    {
+      "original": "Built automated evaluation and observability pipelines for Question Answering",
+      "new": "Designed automated evaluation harnesses and observability for Question Answering and Summary Agents, with LLM evaluators as graders, tracing and failure detection, reducing human-in-the-loop review by 43%."
+    },
+    {
+      "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance",
+      "new": "Prototyped 15+ AI applications with AIOps and GeoPerformance clients, turning their requirements into working systems, with 7 moving into production or paid client work."
+    },
+    {
+      "original": "Delivered technical POCs and consulting for 15+ clients",
+      "new": "Led hands-on technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+    }
+  ],
+  "project": {
+    "name": "Agentic Code Review Assistant",
+    "bullets": [
+      "Built a LangGraph agent that reviews pull requests for software teams, calling tools to read diffs, run tests and suggest fixes, with RAG over past review comments.",
+      "Evaluated it on representative code-review tasks with automated LLM graders and developer feedback, and served it through FastAPI in Docker with tracing for failure analysis."
+    ],
+    "technologies": [
+      "Python",
+      "LLM APIs",
+      "LangGraph",
+      "LLM Evals",
+      "FastAPI",
+      "Docker",
+      "Agent Tracing",
+      "Pydantic"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "closing": "Sincerely,",
+    "paragraphs": [
+      "I am applying for the Applied AI Engineer role on the Codex team. For the past few years I have built LLM agents that real teams depend on, most recently a lab-extraction agent and a multi-agent analytics chatbot, each with its own evaluation harness. What ties my work together is taking an AI idea past the demo and into daily use.",
+      "OpenAI's Applied AI team sits where models meet real engineering organizations, and helping developers change how they plan, write and review code is the kind of adoption work I enjoy most. On the personal side, my fiancée lives in Berlin, and we plan to move to Paris together and settle there long term.",
+      "I would bring hands-on engineering and a habit of measuring things. The evaluation and observability pipelines I built with LLM evaluators and tracing cut human review by 43%, and of the 15+ client prototypes I built at Viavi, 7 reached production or paid work because we agreed on success criteria with the client first.",
+      "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users, one careful change at a time. I would welcome a conversation about the role."
+    ]
+  },
+  "jd_keywords": [
+    "Codex",
+    "AI coding workflows",
+    "agentic workflows",
+    "evaluation harnesses",
+    "automated graders",
+    "prototype to production",
+    "Python",
+    "TypeScript",
+    "reliability",
+    "observability",
+    "developer tooling integrations",
+    "workshops",
+    "engineering productivity"
+  ],
+  "experience_variant": "base"
+}

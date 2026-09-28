@@ -1,0 +1,43 @@
+{
+ "company": "Emerging Travel Group",
+ "city": "Portugal",
+ "role": "Senior Data Scientist (Look-2-Book)",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a LightGBM classification model predicting SLA breaches in production with FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, ranking renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting the probability of a personal-loan application within 7 days of contact, turning a business goal into a clear ML task for targeted outreach."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered SQL and PySpark data pipelines over large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense embedding retrieval over AARP survey data, improving ranking and retrieval accuracy."
+  }
+ ],
+ "apply_url": "https://www.emergingtravel.com/career/positions/153/",
+ "listing_url": "https://pt.linkedin.com/jobs/view/senior-data-scientist-look-2-book-at-emerging-travel-group-4470913890",
+ "resume": "Emerging_Travel_Group_Senior_Data_Scientist_Look_2_Book_Portugal/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Emerging_Travel_Group_Senior_Data_Scientist_Look_2_Book_Portugal/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Emerging_Travel_Group_Senior_Data_Scientist_Look_2_Book_Portugal/project_brief.md"
+}

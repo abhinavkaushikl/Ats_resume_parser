@@ -1,0 +1,38 @@
+{
+ "company": "Danske Bank",
+ "city": "Copenhagen",
+ "role": "Senior data scientist GenAI",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior Data Scientist GenAI",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Data Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation pipelines for Question Answering and Summary Agents with LLM judges, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense embedding retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an NLP event-correlation engine clustering alarms with Sentence-BERT embeddings and DBSCAN to trace network alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent conversational chatbot in LangGraph for AARP medical plans, handling multi-turn business questions with PySpark analysis and live charts, cutting manual analysis by 98%."
+  }
+ ],
+ "apply_url": "https://dk.linkedin.com/jobs/view/senior-data-scientist-genai-at-danske-bank-4466553403",
+ "listing_url": "https://dk.linkedin.com/jobs/view/senior-data-scientist-genai-at-danske-bank-4466553403",
+ "resume": "Danske_Bank_Senior_data_scientist_GenAI_Copenhagen/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Danske_Bank_Senior_data_scientist_GenAI_Copenhagen/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Danske_Bank_Senior_data_scientist_GenAI_Copenhagen/project_brief.md"
+}

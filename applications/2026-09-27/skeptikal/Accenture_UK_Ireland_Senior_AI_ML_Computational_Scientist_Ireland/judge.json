@@ -1,0 +1,14 @@
+{"criteria": {"tech_stack": 14, "experience": 10, "company_project": 10, "ats_keywords": 7, "credibility": 5},
+ "score": 46,
+ "decision": "reject",
+ "strengths": [
+   "Distributed Anomaly Model Training Pipeline shows real distributed-systems work (Spark, Kubernetes, PyTorch training across worker nodes)",
+   "Strong production ML/GenAI delivery record and consulting experience across 15+ clients"
+ ],
+ "gaps": [
+   "Role requires Senior Manager / Associate Director level with people leadership; resume shows only individual-contributor roles with no management or P&L evidence",
+   "JD calls for extensive experience in HPC, engineering simulations, scientific compute and grid computing; the resume's 'distributed' work is big-data/Spark, not HPC or scientific simulation",
+   "No C++, Java or R anywhere, despite being explicitly listed as preferred languages",
+   "No evidence of production monitoring/alerting/auditing at the scale and rigor the JD describes for this level",
+   "Company-fit project doesn't demonstrate client-facing consulting delivery at this seniority"
+ ]}

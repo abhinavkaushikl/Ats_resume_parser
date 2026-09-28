@@ -1,0 +1,27 @@
+{
+ "status": "applied",
+ "reason": "",
+ "questions_unanswered": [],
+ "answers_given": {
+  "First/Last name": "Abhinav Kaushik",
+  "Email": "aabhinav.kaushik@gmail.com",
+  "Phone": "+91 8700571859",
+  "In-person 25%": "Yes",
+  "AI Policy": "Yes",
+  "Why Anthropic": "cover letter paragraph 2 verbatim",
+  "Visa sponsorship": "Yes",
+  "Future sponsorship": "Yes",
+  "LinkedIn": "https://www.linkedin.com/in/abhinav-kaushik10/",
+  "Open to relocation": "Yes",
+  "Work address": "relocating",
+  "Interviewed before": "No"
+ },
+ "files_uploaded": [
+  "Abhinav_Kaushik_Resume.pdf"
+ ],
+ "url_used": "https://job-boards.greenhouse.io/anthropic/jobs/5432573008",
+ "ats": "greenhouse",
+ "confirmation": "Thank you for applying! Your application has been received. If there is a fit, someone from our Recruiting team will notify you.",
+ "browser": "chrome-devtools (separate Chrome session)",
+ "timestamp": "2026-09-28T09:00"
+}

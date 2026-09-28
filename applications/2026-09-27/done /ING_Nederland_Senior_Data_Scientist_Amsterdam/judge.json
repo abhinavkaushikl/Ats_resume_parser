@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 29, "experience": 21, "company_project": 19, "ats_keywords": 14, "credibility": 9},
+ "score": 92,
+ "decision": "shortlist",
+ "strengths": ["LangGraph, LangChain, OpenAI/Claude, RAG and vector databases all appear in production bullets across the current and prior roles, not only in skills", "New Policy Question Answering Agent project is a close, believable analogue of ING's own use case: regulated multi-agent RAG with tool calls, deployed on Azure with monitoring and guardrails", "Evaluation, tracing and monitoring for production AI agents is a real, demonstrated strength (UHG role) matching the JD's 'establish evaluation, monitoring, governance' ask", "Resume title matches the JD title exactly, and healthcare/insurance-regulated data experience maps well to ING's regulated environment"],
+ "gaps": ["No bullet shows mentoring or coaching of other data scientists specifically (only client-facing technical guidance), which the JD lists as a core responsibility", "Semantic Kernel, CrewAI, AutoGen and Vertex AI (the JD's other named bonus frameworks) are not present"]}

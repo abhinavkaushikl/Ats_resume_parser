@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - CHECK24}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Data Scientist - Generative AI\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+CHECK24
+
+\textbf{Re: (Junior) Data Scientist - Generative AI Mietwagen International}
+
+Dear Hiring Team,
+
+I am applying for the Data Scientist - Generative AI role on your international car rental team. In my current data science work I build LLM applications that people rely on, from a multi-turn analytics chatbot to a document-extraction agent, each with its own evaluation. What connects it all is moving an idea from first test to stable operation.
+
+Taking a comparison product into new languages and markets is a hard and interesting LLM problem, because answers have to stay reliable in every market. My fiancée lives in Berlin, and we plan to move to Munich together and settle there long term, and I am learning German to make it home.
+
+I would bring an evaluation-first way of working. The evaluation and monitoring pipelines I built with LLM evaluators and tracing cut human review of our Question Answering and Summary Agents by 43\%, and our analytics chatbot cut manual analysis by 98\% because it worked on real data through PySpark rather than guessing.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that an LLM feature only matters if the person on the other side can trust it. I would be glad to talk about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

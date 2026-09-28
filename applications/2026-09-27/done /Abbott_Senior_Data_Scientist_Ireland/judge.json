@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 16, "experience": 10, "company_project": 15, "ats_keywords": 5, "credibility": 8},
+ "score": 54,
+ "decision": "reject",
+ "strengths": ["Manufacturing Quality Deviation Predictor project is a believable fit for Abbott's medical-device manufacturing domain, on Databricks/Power BI/MLflow", "Strong production ML and predictive-analytics track record with concrete outcomes", "Healthcare-adjacent data experience (UHG, Optum) gives some domain credibility", "Databricks, Python, SQL are genuinely hands-on across multiple roles"],
+ "gaps": ["No AWS experience anywhere; JD lists \"strong hands-on experience with ... AWS\" as essential alongside Databricks", "No GxP, CSV, FDA 21 CFR Part 11, EU Annex 11, ALCOA+ or QMS experience — an explicit essential requirement for this regulated Life Sciences role", "No data/model governance framework named, only implied by monitoring practices", "No prior regulated Life Sciences / pharma / medical-device employer, only one tailored project simulates it", "Oracle, Tableau, QuickSight (listed JD tools) do not appear at all"]}

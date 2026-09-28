@@ -1,0 +1,14 @@
+{"criteria": {"tech_stack": 8, "experience": 14, "company_project": 10, "ats_keywords": 6, "credibility": 6},
+ "score": 44,
+ "decision": "reject",
+ "strengths": [
+   "Health Claims Risk Modelling project uses relevant techniques (logistic regression vs. tree-based ML) on health-insurance-flavored data",
+   "8+ years exceeds the 5-years-postgraduate requirement, with genuine healthcare-data background (UHG, Optum)"
+ ],
+ "gaps": [
+   "R is the JD's primary required language ('efficiently and effectively code in R'); the resume has zero R anywhere, in skills or projects",
+   "No survival analysis or mortality/morbidity modeling shown; only classification/regression on claim risk",
+   "No life or health (re)insurance underwriting experience; healthcare work is on claims/plans, not actuarial mortality modeling",
+   "No Shiny, and Linux/SQL familiarity not demonstrated beyond generic SQL",
+   "Company-fit project targets 'claim risk' rather than the JD's actual ask of morbidity/mortality driver estimation"
+ ]}

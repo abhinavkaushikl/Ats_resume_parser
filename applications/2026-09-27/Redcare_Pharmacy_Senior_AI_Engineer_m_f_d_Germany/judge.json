@@ -1,0 +1,15 @@
+{"criteria": {"tech_stack": 27, "experience": 21, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 89,
+ "decision": "shortlist",
+ "strengths": [
+   "New project (Medication Information Assistant) is a bespoke pharmacy RAG assistant with pharmacist-reviewed evaluation and guardrails - a credible, direct domain fit",
+   "'Regulated healthcare setting' is called out explicitly in the current-role bullet, directly answering the JD's regulated-environment/governance ask",
+   "Full-lifecycle ownership shown end to end: training, evaluation (LLM evaluators, tracing), deployment (FastAPI/Docker), monitoring",
+   "Consistent healthcare-plus-GenAI throughline across the current role, the new project, and the summary"
+ ],
+ "gaps": [
+   "'AI Technical Owner' shaping a technical roadmap is not evidenced - the resume shows project-level ownership, not roadmap or team-level technical leadership",
+   "Explicit governance/compliance practices (versioning policy, audit, regulatory compliance) beyond guardrails and pharmacist review are not detailed",
+   "No deployed system is tied to a stated patient-outcome or business-impact metric, only internal efficiency metrics",
+   "Cross-functional collaboration spanning product, engineering, data and business together is implied but not shown as one cohesive initiative"
+ ]}

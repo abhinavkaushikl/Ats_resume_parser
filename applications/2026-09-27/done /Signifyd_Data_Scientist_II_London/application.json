@@ -1,0 +1,28 @@
+{
+ "status": "applied",
+ "reason": "Greenhouse form submitted once; confirmation page shown",
+ "questions_unanswered": [],
+ "answers_given": {
+  "First/Last name": "Abhinav Kaushik",
+  "Email": "aabhinav.kaushik@gmail.com",
+  "Phone": "+91 8700571859",
+  "Preferred name": "Abhinav",
+  "LinkedIn": "https://www.linkedin.com/in/abhinav-kaushik10/",
+  "How did you hear": "Signifyd Website",
+  "Located within UK": "Other (per_company)",
+  "Authorized to work in UK": "No",
+  "Require sponsorship": "Yes",
+  "NI community / sex monitoring (optional)": "left blank",
+  "Gender/race/education/employment/disability": "I don't wish to answer",
+  "Data processing consent": "ticked",
+  "Demographic data consent": "ticked"
+ },
+ "files_uploaded": [
+  "Abhinav_Kaushik_Resume.pdf",
+  "Abhinav_Kaushik_Cover_Letter.pdf"
+ ],
+ "url_used": "https://job-boards.greenhouse.io/signifyd95/jobs/8103276",
+ "ats": "greenhouse",
+ "confirmation": "Thank you for applying to Signifyd! (job-boards.greenhouse.io/signifyd95/jobs/8103276/confirmation)",
+ "timestamp": "2026-09-28T12:10"
+}

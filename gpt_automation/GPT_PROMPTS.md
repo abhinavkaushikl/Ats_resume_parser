@@ -103,9 +103,10 @@ JOB DESCRIPTION:
 ## Prompt 3 - Tailored resume changes + cover letter
 
 ```
-You tailor Abhinav's resume to one job description. You write ONLY four things: the title, the summary,
-one new project, and the cover letter. Everything else in the resume (experience, skills, education,
-other projects) stays exactly as it is - never rewrite it.
+You tailor Abhinav's resume to one job description. You write: the title (plus the current role's
+title), the summary, rewordings of 3-6 existing experience bullets, one new project, and the cover
+letter. Everything else in the resume (skills, education, other projects, Think Tree) stays exactly as
+it is - never rewrite it.
 
 Inputs: the BASE RESUME and the JOB DESCRIPTION below. Company: <<< company >>>, City: <<< city >>>.
 
@@ -116,7 +117,24 @@ not be able to tell it was written for their company.
 TITLE
 The JD's job title exactly as the JD writes it, without gender tags "(m/f/d)", locations or team names,
 e.g. "Senior Machine Learning Engineer". If the JD title claims more seniority than the resume shows
-(Staff, Principal, Lead, Head), keep the base title "Senior AI Engineer".
+(Staff, Principal, Lead, Head), keep the base title "Senior AI Engineer". The same title heads the
+cover letter.
+
+CURRENT ROLE TITLE (current_role_title)
+The United Health Group role (base "Senior AI Engineer") takes the JD's title family, exactly one of:
+Data Scientist JD -> "Senior Data Scientist"; AI / GenAI / LLM Engineer JD -> "Senior AI Engineer" (or
+"Senior GenAI Engineer" when the JD says GenAI); Machine Learning / MLOps Engineer JD -> "Senior Machine
+Learning Engineer"; Applied / Research Scientist JD -> "Senior Applied Scientist"; anything else ->
+"Senior AI Engineer". Other roles' titles never change. The cover letter describes his current work in
+the same title family.
+
+EXPERIENCE BULLETS (blend the JD in)
+Reword the 3-6 bullets closest to the JD's must-haves so the JD's own words and priorities come through
+naturally: same system, tools and outcome in the JD's vocabulary ("stakeholders", "production ML",
+"LLM applications"). Never add a tool, domain, scale or claim the bullet doesn't show. Keep exactly the
+same numbers (none added or dropped - the builder skips any edit whose numbers differ). Max 225
+characters (2 lines), past tense, starts with a verb, no company name, no keyword chains. Never reword the
+time-series bullets from Appendix B.
 
 SUMMARY
 3-4 sentences, 60-90 words. Start from the base summary and re-aim it at this job: lead with the
@@ -187,14 +205,16 @@ Write like a person: plain words, no buzzword chains, no "leveraged", "spearhead
 OUTPUT - valid JSON only (it plugs straight into the resume builder as tailoring.json):
 {"company": "", "role": "<JD title>", "city": "",
  "company_profile": "<1 sentence: what the company does, for whom>",
- "title": "", "summary": "",
+ "title": "", "current_role_title": "Senior AI Engineer", "summary": "",
+ "experience_edits": [{"original": "<first 6-10 words of a base bullet, copied exactly>", "new": "<reworded bullet>"}],
  "project": {"name": "", "bullets": ["", ""], "technologies": [""]},
  "cover_letter": {"greeting": "Dear Hiring Team,", "paragraphs": ["<intro>", "<motivation + company>", "<contribution>", "<Think Tree + close>"], "closing": "Sincerely,"},
  "jd_keywords": ["<8-15 of the JD's key skills/tools, JD wording>"],
  "experience_variant": "timeseries | base"}
 
 Check before answering: the company name appears only in "company", "company_profile" and the cover
-letter; the project has exactly 2 bullets; the summary adds nothing the resume doesn't show (the Think
+letter; the project has exactly 2 bullets; current_role_title is one of the five titles; each experience
+edit's "original" is copied exactly and its "new" keeps the same numbers; the summary adds nothing the resume doesn't show (the Think
 Tree sentence is the one allowed addition); the summary's last sentence and the letter's 4th paragraph
 both mention Think Tree; the letter has exactly 4 paragraphs, none over about 65 words, and paragraph 2
 contains "fiancée", "Berlin" and the job's city.
@@ -205,6 +225,9 @@ BASE RESUME:
 JOB DESCRIPTION:
 <<< paste JD >>>
 ```
+
+The builder lists "German: A1" under Languages only for jobs in Germany / Austria / Switzerland or JDs
+that mention German (from the JD's Location line) - nothing to write for it.
 
 To turn the output into PDFs with this project: save the JSON as
 `applications/<date>/<Company>_<Title>_<City>/tailoring.json`, put the JD file in `jobs/jd_visa/<date>/`,
@@ -257,8 +280,8 @@ JOB DESCRIPTION:
 
 ## Appendix B - Time-series resume version
 
-Apply to the Viavi Solutions (Senior Machine Learning Engineer) role when the JD is forecasting-heavy:
-- Replace the bullet starting "Deployed a production-grade SLA breach prediction system" with:
+Apply to the Viavi Solutions (Data Scientist) role when the JD is forecasting-heavy:
+- Replace the bullet starting "Deployed a production SLA breach prediction system" with:
   "Developed time-series forecasting of base-station call handover and SMS handover volumes using LSTM
   and XGBoost."
 - Add: "Developed a forecasting feature for the AIOps monitoring product, forecasting univariate KPIs

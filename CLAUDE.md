@@ -14,7 +14,7 @@ cover letter for the good matches. Everything runs from this folder with `.venv/
 | `/job-hunt [notes]` | `.claude/skills/job-hunt/` | Daily run, last 24 hours, steps 1-6 below |
 | `/job-hunt-custom <1d-4w> [notes]` | `.claude/skills/job-hunt-custom/` | Same pipeline over a chosen window (max 672h); skips jobs already in `applications/*/` or `jobs/jd_visa/*/`; lean mode for windows > 7 days |
 | `/tailor-resumes [date]` | `.claude/skills/tailor-resumes/` | Step 5 on its own: resume + cover letter per shortlisted job |
-| `/apply-jobs [date] [company\|retry]` | `.claude/skills/apply-jobs/` | Step 7, run by hand: applies in Chrome to the prepared `applications/<date>/*/` jobs only; unknown answers -> marked for my review |
+| `/apply-jobs [date] [company\|retry\|accounts]` | `.claude/skills/apply-jobs/` | Step 7, run by hand: applies in Chrome to the prepared `applications/<date>/*/` jobs only; unknown answers -> marked for my review |
 
 Notes after a command (e.g. `only Berlin, Amsterdam`) are applied to the whole run
 (`daily_jobs.py --cities Berlin Amsterdam`).
@@ -24,7 +24,7 @@ Notes after a command (e.g. `only Berlin, Amsterdam`) are applied to the whole r
 ```
 1 find jobs      daily_jobs.py --hours H [--cities ...]   -> jobs/jobs_<date>_<HHMM>.md (+ jobs/jd/, jobs/daily/)
       |                                                       (drop jobs below 60% resume match)
-2 visa check     sponsor_registers.py <list>               -> register hits (NL IND / UK / DK official, DE / ES weak)
+2 visa check     sponsor_registers.py <list>               -> register hits (NL IND / UK / DK / IE / PT official, DE / ES / SE / EE weak)
       |          + Google question / web research           -> jobs/jobs_<date>_<HHMM>_visa.md, visa_research, research_<date>_sponsors.md
       |          yes | weak yes ⚠️ (both processed) | unclear (-> GPT) | dropped (says no, agency)
 3 full JDs       jd_extractor.py <visa.md> (company site, else LinkedIn public page, no login)
@@ -61,12 +61,19 @@ Step details live in `.claude/skills/job-hunt/steps/1-...6-*.md` - edit those to
 
 - Only jobs with a prepared folder in `applications/<date>/` (build.json + both PDFs). Answers only from `.env`,
   `apply_profile.yaml` (gitignored) and the job's folder - never guess; an unknown required answer = `needs_review`.
-- Company site only: never LinkedIn Easy Apply, never log in, create accounts or type passwords. Submit once, never twice.
+- Company site only: never LinkedIn Easy Apply. Signup/login walls -> Claude fills the non-secret signup
+  fields, leaves the tab open and marks `needs_account`; I set the password (Chrome's password manager),
+  CAPTCHA / email code, then `continue` or `/apply-jobs <date> accounts` finishes the job. Claude never types
+  a password. Submit once, never twice.
 
 ## Tailoring rules (tailor-resumes, `writer.md` / `judge.md`)
 
-- Changes only: title (JD title), summary, ONE new company-fit project, cover letter. Experience,
-  skills, education and other projects are untouched; **Think Tree** is never edited or moved.
+- Changes only: title (JD title, resume + cover letter), the current role's title by JD family (Data
+  Scientist JD -> Senior Data Scientist; AI Engineer JD -> Senior AI Engineer), summary, 3-6 experience
+  bullets reworded so the JD blends in (same facts, same numbers, max 2 lines), ONE new company-fit
+  project, cover letter. Skills, education, other projects and the time-series variant bullets are
+  untouched; **Think Tree** is never edited or moved. "German: A1" appears only for German-speaking
+  jobs (DE / AT / CH or a JD mentioning German) - `build_resume.py` drops it otherwise.
 - No company name anywhere in the resume or file names.
 - **Common thread - Think Tree:** the summary always ends with a sentence on ThinkTree.AI, a non-profit
   AI learning platform used by NGO teachers to support students with ADHD; the cover letter's last

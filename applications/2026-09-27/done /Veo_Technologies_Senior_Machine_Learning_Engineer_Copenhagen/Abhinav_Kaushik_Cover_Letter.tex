@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Veo Technologies}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Machine Learning Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Veo Technologies
+
+\textbf{Re: Senior Machine Learning Engineer}
+
+Dear Hiring Team,
+
+I am applying for the Senior Machine Learning Engineer role in the AI team. My work has always covered the whole ML lifecycle on real-world data: deciding what to label, training models, building evaluation that shows where they fall short, and shipping inference that holds up in production. That full-cycle ownership is the part I enjoy most.
+
+Veo turns a single camera into proof of what happened on the pitch, so a young player's run gets seen even when no scout was there. I like that the result of the modelling is fairness for players. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.
+
+I would bring careful evaluation habits and production experience. At United Health Group I built evaluation pipelines with LLM evaluators and failure detection that cut human review by 43\%, and fine-tuned a cross-encoder on positive and negative pairs. At Viavi I deployed a LightGBM prediction system with FastAPI and MLflow that reduced downtime by 67\%. Computer vision is where I would grow next.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It taught me to watch how people actually use a model before deciding it works. I would be glad to talk about joining your team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

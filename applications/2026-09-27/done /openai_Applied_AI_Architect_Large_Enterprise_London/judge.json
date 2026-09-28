@@ -1,0 +1,15 @@
+{"criteria": {"tech_stack": 18, "experience": 8, "company_project": 10, "ats_keywords": 5, "credibility": 8},
+ "score": 49,
+ "decision": "reject",
+ "strengths": [
+   "Enterprise Knowledge Assistant Architecture project shows genuine architectural thinking: RAG, tool-calling agents, access controls, and a documented path to production",
+   "General ability to take LLM systems from prototype to production and communicate with stakeholders",
+   "Consistent, credible track record with concrete metrics"
+ ],
+ "gaps": [
+   "No customer-facing account-ownership experience (solutions architecture, TAM, technical account leadership) — the core of this role",
+   "No experience building or managing technical account plans, executive relationships with CTOs/CIOs/CISOs, or expansion/adoption tracking",
+   "Resume is entirely hands-on engineering delivery, not the 'CTO of your book of business' commercial-technical hybrid the JD asks for",
+   "No ChatGPT Enterprise, OpenAI API or Codex-specific experience",
+   "Title mismatch: 'Senior AI Engineer' vs. 'Applied AI Architect' with no architect/TAM titles in the work history"
+ ]}

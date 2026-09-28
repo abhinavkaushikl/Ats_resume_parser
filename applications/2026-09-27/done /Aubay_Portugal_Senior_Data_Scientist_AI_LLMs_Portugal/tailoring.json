@@ -1,0 +1,73 @@
+{
+ "company": "Aubay Portugal",
+ "role": "Senior Data Scientist - AI & LLMs",
+ "city": "Portugal",
+ "company_profile": "Aubay Portugal is an IT consulting company that builds and evolves critical systems for banking, insurance, telecommunications and energy clients.",
+ "title": "Senior Data Scientist - AI & LLMs",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years deploying machine learning and AI solutions across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds multi-agent systems in LangGraph and LangChain with state handling and tool orchestration, RAG applications on vector databases, and fine-tuned models with Hugging Face and PyTorch, alongside classical ML with tree models and neural networks. Works from exploratory analysis and feature engineering to production. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, with multi-turn state handling, PySpark analysis and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant",
+   "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, combining vector retrieval with LLM reasoning and reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder model on positive and negative pairs to re-rank dense vector retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated evaluation and observability for Question Answering and Summary Agents with LLM evaluators, agent tracing and failure detection, reducing human-in-the-loop review by 43%."
+  }
+ ],
+ "project": {
+  "name": "Insurance Claims Multi-Agent Assistant",
+  "bullets": [
+   "Built a multi-agent assistant in LangGraph for insurance claims triage, where a supervisor agent routed work to retrieval, policy-check and summary agents exposed as MCP tools with shared memory.",
+   "Evaluated agent answers with LLM evaluators and trace reviews on a labelled claims set, and served the system through FastAPI in Docker with pgvector retrieval over policy documents."
+  ],
+  "technologies": [
+   "LangGraph",
+   "LangChain",
+   "MCP",
+   "Hugging Face",
+   "PyTorch",
+   "pgvector",
+   "FastAPI",
+   "Docker"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist - AI & LLMs role at Aubay Portugal. Over more than eight years I have gone from classical machine learning in telecom to multi-agent and RAG systems in healthcare, and what connects the work is building AI that holds up once real users depend on it.",
+   "Aubay's projects sit inside the systems that banks, insurers and telecom operators run on, which is the kind of setting where I have done my best work. My fiancée lives in Berlin, and we plan to move to Portugal together and settle there long term, so a team with a close, informal culture appeals to both of us.",
+   "In my current data science work at United Health Group I built a LangGraph multi-agent analytics chatbot that cut manual analysis by 98%, and fine-tuned a cross-encoder to re-rank vector retrieval. At Viavi I built a RAG assistant in LangGraph that reached a 90% match rate against existing solutions.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building it for teachers has made me careful about testing agents with the people who will use them. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "machine learning",
+  "LLMs",
+  "fine-tuning",
+  "RAG",
+  "vector databases",
+  "multi-agent systems",
+  "LangChain",
+  "LangGraph",
+  "MCP",
+  "agent memory",
+  "Python",
+  "PyTorch",
+  "Hugging Face",
+  "TensorFlow",
+  "feature engineering",
+  "decision trees"
+ ],
+ "experience_variant": "base"
+}

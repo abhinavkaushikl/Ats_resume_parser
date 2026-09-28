@@ -1,0 +1,43 @@
+{
+ "company": "Catawiki",
+ "city": "Amsterdam",
+ "role": "Senior Data Scientist - Machine Learning",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior Data Scientist - Machine Learning",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, improving the renewal suggestions customers saw and increasing conversion by 2%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, pairing each prediction with real-time GPT-3.5 root-cause analysis and remediation recommendations, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph that answered stakeholders' business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, turning predictions into targeted outreach and customer prioritization for the business."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, guiding teams on ML techniques and contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "apply_url": "https://nl.linkedin.com/jobs/view/senior-data-scientist-machine-learning-at-catawiki-4441560150",
+ "listing_url": "https://nl.linkedin.com/jobs/view/senior-data-scientist-machine-learning-at-catawiki-4441560150",
+ "resume": "Catawiki_Senior_Data_Scientist_Machine_Learning_Netherlands/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Catawiki_Senior_Data_Scientist_Machine_Learning_Netherlands/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Catawiki_Senior_Data_Scientist_Machine_Learning_Netherlands/project_brief.md"
+}

@@ -1,0 +1,72 @@
+{
+  "company": "Nexthink",
+  "role": "Senior AI Machine Learning Engineer",
+  "city": "Switzerland",
+  "company_profile": "Nexthink makes digital employee experience management software that lets IT teams see, diagnose and fix issues across applications, devices and networks before employees notice them.",
+  "title": "Senior AI Machine Learning Engineer",
+  "current_role_title": "Senior Machine Learning Engineer",
+  "summary": "Senior Machine Learning Engineer with 8+ years building LLM-powered production applications and classical ML across Healthcare, Telecom and AIOps. Designs agentic systems in LangGraph and LangChain, RAG and multi-agent architectures, with automated evaluations, success metrics, tracing and failure detection. Brings MLOps practice with MLflow, Docker, Kubernetes and CI/CD, fine-tuning with PyTorch, and strong data intuition from log analysis and anomaly detection on network KPIs. Currently building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+      "new": "Engineered a production agentic analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+    },
+    {
+      "original": "Built automated evaluation and observability pipelines for Question",
+      "new": "Created automated evaluations and success metrics for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+    },
+    {
+      "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+      "new": "Built an event-correlation engine over network alarm logs, clustering alarms with Sentence-BERT and DBSCAN to trace alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+    },
+    {
+      "original": "Deployed a production SLA breach prediction system with LightGBM",
+      "new": "Deployed a production SLA breach prediction system with LightGBM, served via FastAPI and tracked in MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+    }
+  ],
+  "project": {
+    "name": "IT Issue Triage Agent",
+    "bullets": [
+      "Built a multi-agent assistant that inspects endpoint and application logs, retrieves past fixes with RAG and proposes remediation steps for employee IT issues before tickets pile up.",
+      "Evaluated answers with automated LLM evaluations and regression metrics in a CI pipeline, versioned prompt and embedding configs in MLflow, and deployed the service on AWS with Docker."
+    ],
+    "technologies": [
+      "Python",
+      "LangChain",
+      "PyTorch",
+      "RAG",
+      "MLflow",
+      "AWS",
+      "Docker",
+      "Jenkins"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "paragraphs": [
+      "I am applying for the Senior AI Machine Learning Engineer role on the AI Agents team. As a Senior Machine Learning Engineer, I design agentic LLM systems and the evaluation and MLOps work that keeps them reliable in production. My background in AIOps, where I spent years reading network logs and alarms, is what ties it all together.",
+      "Nexthink helps IT teams find and fix problems before employees notice them, which is very close to the anomaly detection and root-cause work I did for telecom networks. My fiancée lives in Berlin, and we plan to move to Switzerland together and settle in Lausanne for the long term.",
+      "I would bring agents that are measured, not guessed at. In my current role I built evaluation pipelines with LLM evaluators and tracing that cut human review by 43%. At Viavi I shipped an SLA breach prediction system with LightGBM, FastAPI and MLflow that used GPT-3.5 for root-cause analysis and reduced downtime by 67%.",
+      "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building it has taught me to design for people who have no patience for tools that break. I would be glad to discuss how I could contribute to your AI Agents team."
+    ],
+    "closing": "Sincerely,"
+  },
+  "jd_keywords": [
+    "LLM-powered production applications",
+    "agentic systems",
+    "Python",
+    "LangChain",
+    "PyTorch",
+    "AWS",
+    "fine-tuning",
+    "evaluation",
+    "RAG",
+    "multi-agent AI architectures",
+    "MLOps",
+    "automated evaluations",
+    "CI/CD",
+    "mentoring",
+    "reinforcement learning"
+  ],
+  "experience_variant": "base"
+}

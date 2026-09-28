@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 27, "experience": 19, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 87,
+ "decision": "shortlist",
+ "strengths": ["Agent Memory and Planning Framework project is a near 1:1 match to the JD's core scope: session/long-term memory, iterative planning, self-correction and specialised sub-agents sharing context", "Deep, repeated production experience with agentic architectures, tool use, RAG and multi-agent patterns in LangGraph", "Systematic LLM evaluation and optimization (evaluators, tracing, failure detection) shown across every role", "Strong Python/ML framework depth with consistent, concrete production outcomes"],
+ "gaps": ["No peer-reviewed publications, patents or open-source contributions to evidence the R&D track record the JD asks for", "People leadership and team development (feedback, KPIs) only lightly shown via client mentoring", "Role titles read as applied/ML engineering rather than research scientist, leaving some ambiguity on pure-research depth", "End-to-end R&D planning is not distinctly called out as a practice"]}

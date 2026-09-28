@@ -1,0 +1,43 @@
+{
+ "company": "Accenture the Netherlands",
+ "city": "Amsterdam",
+ "role": "Data Science & Machine Learning Engineering Consultant",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Data Science & Machine Learning Engineering Consultant",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, translating business requirements into data solutions and contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from their business requirements, with 7 moving into production or paid client work."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered scalable SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Built a production multi-agent analytics chatbot in LangGraph that supports decision-making on AARP medical plans, answering business questions with PySpark analysis and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Productionized an SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  }
+ ],
+ "apply_url": "https://www.accenture.com/nl-en/careers/jobdetails?id=R00335621_en",
+ "listing_url": "https://nl.linkedin.com/jobs/view/data-science-machine-learning-engineering-consultant-%E2%80%93-strategy-consulting-at-accenture-the-netherlands-4453250888",
+ "resume": "Accenture_the_Netherlands_Data_Science_Machine_Learning_Engineering_Consultant_Strategy_Consulti_Amsterdam/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Accenture_the_Netherlands_Data_Science_Machine_Learning_Engineering_Consultant_Strategy_Consulti_Amsterdam/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Accenture_the_Netherlands_Data_Science_Machine_Learning_Engineering_Consultant_Strategy_Consulti_Amsterdam/project_brief.md"
+}

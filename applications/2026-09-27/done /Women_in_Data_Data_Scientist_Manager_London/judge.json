@@ -1,0 +1,16 @@
+{"criteria": {"tech_stack": 22, "experience": 17, "company_project": 18, "ats_keywords": 8, "credibility": 7},
+ "score": 72,
+ "decision": "maybe",
+ "strengths": [
+   "New project (Price Elasticity and Demand Forecasting) echoes the JD's own example ('pricing and forecasting') and its 'reusable across multiple client contexts' language almost word for word",
+   "Consulting background (15+ clients, POCs) matches PwC's cross-functional client-squad model",
+   "Full data-science lifecycle shown: feature engineering, validation, deployment on Azure with MLflow, monitoring",
+   "Explaining technical work to business stakeholders is a recurring theme across multiple roles"
+ ],
+ "gaps": [
+   "Resume headline reads 'Senior AI Engineer' while the JD is 'Data Scientist-Manager' and the current-role bullet itself says 'Senior Data Scientist' - an internal title inconsistency that isn't aligned to the JD family",
+   "No management or team-leadership evidence for what is titled a 'Manager' role - the work shown is all individual-contributor",
+   "No sector/go-to-market partnership or product-squad leadership (with AI Engineers, Product Designers, Sector Specialists) is demonstrated",
+   "Deep-learning framework depth (TensorFlow/Keras/MXNet) exists only in the skills list; PyTorch is the only one used in a bullet",
+   "No mention of onshore/offshore collaborative delivery, an explicit JD ask"
+ ]}

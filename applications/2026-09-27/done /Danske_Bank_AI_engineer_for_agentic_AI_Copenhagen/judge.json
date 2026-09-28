@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 27, "experience": 21, "company_project": 19, "ats_keywords": 14, "credibility": 9},
+ "score": 90,
+ "decision": "shortlist",
+ "strengths": ["Self-Service Multi-Agent Assistant project is a near word-for-word match: retail banking self-service, router delegating to specialist agents via MCP, RAG knowledge base, deployed on AWS Bedrock, evaluated for relevance/faithfulness/hallucination", "Deep, repeated production multi-agent, RAG and tool-orchestration experience in LangGraph across every role", "Explicit AWS Bedrock and MCP usage directly addresses the JD's named platform and protocol", "Systematic LLM evaluation (evaluators, tracing, failure detection) shown as a recurring practice, matching the JD's evaluation-framework ask"],
+ "gaps": ["AWS Agent Core (a named plus) is not shown", "Full test coverage, structured logging and CI/CD are not explicitly called out as engineering practices in the bullets", "Vector databases named in the JD (FAISS, Pinecone, OpenSearch) are not explicitly named, only 'RAG knowledge base' generically", "Financial-services domain depth is shown only through one project, not a sustained track record"]}

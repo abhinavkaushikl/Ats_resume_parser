@@ -1,0 +1,70 @@
+{
+  "company": "Alipes",
+  "role": "Machine Learning Researcher",
+  "city": "Copenhagen",
+  "company_profile": "Alipes is a Copenhagen trading firm that automates decisions in financial and energy markets with statistical and machine learning models.",
+  "title": "Machine Learning Researcher",
+  "current_role_title": "Senior Applied Scientist",
+  "summary": "Applied ML scientist with 8+ years building predictive models and running them across the full ML stack, from data preparation and dataset pipelines to validation and monitoring in production. Develops time-series forecasting with LSTM, XGBoost and Holt-Winters, alongside anomaly detection, propensity modelling and statistical modelling, backed by an MSc in Machine Learning and AI. Works in Python with Pandas, NumPy, PySpark and PyTorch, and tracks experiments in MLflow. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Engineered SQL and PySpark data pipelines automating BAU",
+      "new": "Built SQL and PySpark data pipelines over large healthcare datasets that automated BAU medical-audit reporting, cutting manual reporting effort by 95%."
+    },
+    {
+      "original": "Developed an XGBoost propensity model predicting personal-loan applications",
+      "new": "Developed and validated an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization."
+    },
+    {
+      "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+      "new": "Built anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning."
+    },
+    {
+      "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+      "new": "Built an event-correlation engine that clusters network alarm streams with Sentence-BERT and DBSCAN, tracing alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+    }
+  ],
+  "project": {
+    "name": "Equity Return Forecasting Pipeline",
+    "bullets": [
+      "Built a forecasting pipeline for equity price returns, generating lagged market and news-sentiment features and comparing LSTM, XGBoost and LightGBM models against statistical baselines.",
+      "Benchmarked the models with walk-forward backtesting, tracked every run and dataset version in MLflow, and monitored live prediction drift against realised returns."
+    ],
+    "technologies": [
+      "Python",
+      "PyTorch",
+      "XGBoost",
+      "LightGBM",
+      "Pandas",
+      "NumPy",
+      "LSTM",
+      "MLflow"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "closing": "Sincerely,",
+    "paragraphs": [
+      "I am applying for the Machine Learning Researcher role in your Equities Quant team. My strongest work is predictive modelling on time series, taken all the way from dataset generation to validation and monitoring in live systems. The thread through my career is building models that are judged by real outcomes.",
+      "Alipes has spent years turning financial news and market data into automated decisions, and a team where a model can go from idea to deployment in hours is where I learn fastest. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.",
+      "At Viavi I developed time-series forecasting of base-station call handover and SMS handover volumes with LSTM and XGBoost, and built a forecasting feature for our AIOps monitoring product that forecasts univariate KPIs across the network. Earlier I used Holt-Winters for demand forecasting across 500+ network devices, and I would bring that same rigour to your benchmarking work.",
+      "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to validate carefully before anything reaches a real user. I would be glad to discuss the role and the technical test."
+    ]
+  },
+  "jd_keywords": [
+    "time-series models",
+    "predictive modeling",
+    "model calibration",
+    "benchmarking frameworks",
+    "dataset generation pipelines",
+    "data preparation",
+    "validation and monitoring",
+    "Python",
+    "numerical programming",
+    "PyTorch",
+    "XGBoost",
+    "statistics",
+    "out-of-core datasets"
+  ],
+  "experience_variant": "timeseries"
+}

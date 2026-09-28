@@ -4,14 +4,19 @@ sponsor_registers.py - check companies against visa-sponsor lists, no LLM and no
 
 Official registers (strong evidence) - downloaded to jobs/registers/, refreshed when older than 7 days:
   UK  Home Office register of licensed sponsors (workers)         -> London
-  NL  IND public register of recognised sponsors                  -> Amsterdam
+  NL  IND public register of recognised sponsors                  -> Amsterdam, rest of Netherlands
   DK  SIRI fast-track scheme certified companies                  -> Copenhagen
+  IE  DETE employment permits issued to companies (this + last year) -> Ireland
+  PT  IAPMEI Tech Visa certified companies (still valid today)     -> Portugal
 Employer lists (weak evidence - Germany and Spain have no sponsor register, any employer can hire on a
 Blue Card, so these are public lists of employers known to sponsor / relocate):
   DE  Relocate.me employers hiring in Germany (every listing offers visa + relocation), Arbeitnow job ads
       whose own text offers visa sponsorship, and the community list SiaExplains/visa-sponsorship-companies
                                                                    -> Berlin, Munich
   ES  Relocate.me employers hiring in Spain + the community list  -> Barcelona
+  SE  the community list (Relocate.me has no Sweden page)          -> Sweden
+  EE  Relocate.me + the community list (small)                    -> Estonia
+(Switzerland, Italy and Luxembourg have no public list - their companies are researched on the web as usual.)
 
 For a job list (jobs/jobs_<date>_<HHMM>.md from step 1) it matches every company in those cities, saves
 each hit to jobs/visa_companies.json (register hits as official, list hits as weak) so step 2 only
@@ -34,10 +39,12 @@ from __future__ import annotations
 import argparse
 import csv
 import html
+import io
 import json
 import re
 import time
 import unicodedata
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -55,19 +62,29 @@ ARBEITNOW = "https://www.arbeitnow.com/api/job-board-api?page={}"
 REGISTERS = {
     "UK": {"official": True, "label": "UK sponsor register", "cities": {"London"}, "country": "UK",
            "page": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"},
-    "NL": {"official": True, "label": "IND recognised sponsor", "cities": {"Amsterdam"}, "country": "Netherlands",
+    "NL": {"official": True, "label": "IND recognised sponsor", "cities": {"Amsterdam", "Netherlands"}, "country": "Netherlands",
            "page": "https://ind.nl/en/public-register-recognised-sponsors/"
                    "public-register-regular-labour-and-highly-skilled-migrants"},
     "DK": {"official": True, "label": "SIRI fast-track certified", "cities": {"Copenhagen"}, "country": "Denmark",
            "page": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"},
-    "DE": {"official": False, "label": "known sponsor list (Germany)", "cities": {"Berlin", "Munich"},
+    "DE": {"official": False, "label": "known sponsor list (Germany)", "cities": {"Berlin", "Munich", "Germany"},
            "country": "Germany", "slug": "germany"},
     "ES": {"official": False, "label": "known sponsor list (Spain)", "cities": {"Barcelona"},
            "country": "Spain", "slug": "spain"},
+    "SE": {"official": False, "label": "known sponsor list (Sweden)", "cities": {"Sweden"},
+           "country": "Sweden", "slug": "sweden"},
+    "IE": {"official": True, "label": "Irish employment permits issued", "cities": {"Ireland"}, "country": "Ireland",
+           "page": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"},
+    "PT": {"official": True, "label": "Portugal Tech Visa certified", "cities": {"Portugal"}, "country": "Portugal",
+           "page": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"},
+    "EE": {"official": False, "label": "known sponsor list (Estonia)", "cities": {"Estonia"},
+           "country": "Estonia", "slug": "estonia"},
 }
 SUFFIX = re.compile(r"\b(ltd|limited|plc|llp|lp|inc|incorporated|corp|corporation|co|company|gmbh|mbh|ag|se|sa|"
                     r"sas|sl|slu|bv|b v|nv|n v|a s|as|aps|ab|oy|srl|spa|kg|holding|holdings|group|uk|"
-                    r"international|t a|germany|deutschland|spain|espana|danmark|denmark)\b")
+                    r"international|t a|germany|deutschland|spain|espana|danmark|denmark|switzerland|schweiz|suisse|"
+                    r"sweden|sverige|italy|italia|netherlands|nederland|ireland|portugal|estonia|luxembourg|"
+                    r"lda|limitada|unipessoal|sucursal em|dac|unlimited)\b")
 VISA_YES = re.compile(r"visa\s+sponsor|sponsor(ship|ing)?\s+(of\s+)?(your\s+|a\s+|the\s+)?(work\s+)?(visa|permit)|"
                       r"(visa|work permit|blue card)\s+(support|assistance|process|application|help)|"
                       r"relocation\s+(and|&)\s+visa|visa\s+(and|&)\s+relocation|"
@@ -98,6 +115,59 @@ def _html_names(text: str) -> list[str]:
         t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", c))).strip()
         if 2 < len(t) < 120 and re.search(r"[A-Za-z]", t) and not re.fullmatch(r"[\d\s./-]+", t):
             out.add(t)
+    return sorted(out)
+
+
+IE_XLSX = "https://enterprise.gov.ie/en/publications/publication-files/permits-issued-to-companies-{}.xlsx"
+
+
+def _xlsx_first_column(data: bytes) -> list[str]:
+    """First-column cell texts of every sheet in an .xlsx file (stdlib only)."""
+    z = zipfile.ZipFile(io.BytesIO(data))
+    shared = []
+    if "xl/sharedStrings.xml" in z.namelist():
+        for si in re.findall(r"<si>(.*?)</si>", z.read("xl/sharedStrings.xml").decode("utf-8"), flags=re.S):
+            shared.append(html.unescape("".join(re.findall(r"<t[^>]*>(.*?)</t>", si, flags=re.S))))
+    out = []
+    for name in sorted(n for n in z.namelist() if re.fullmatch(r"xl/worksheets/sheet\d+\.xml", n)):
+        for cell in re.findall(r'<c r="A\d+"([^>]*)>(.*?)</c>', z.read(name).decode("utf-8"), flags=re.S):
+            attrs, body = cell
+            v = re.search(r"<v>(.*?)</v>", body) or re.search(r"<t[^>]*>(.*?)</t>", body)
+            if not v:
+                continue
+            text = shared[int(v.group(1))] if 't="s"' in attrs else html.unescape(v.group(1))
+            out.append(text.strip())
+    return out
+
+
+def _ireland() -> list[str]:
+    """Companies issued Irish employment permits this year and last year (DETE company listings)."""
+    names, year = set(), datetime.now().year
+    for y in (year, year - 1):
+        try:
+            r = requests.get(IE_XLSX.format(y), headers=UA, timeout=120)
+            if r.status_code != 200 or not r.content.startswith(b"PK"):
+                continue
+            names |= {n for n in _xlsx_first_column(r.content)
+                      if len(n) > 2 and re.search(r"[A-Za-z]", n) and not re.match(r"(?i)(employer|company|total)\b", n)}
+        except Exception as exc:
+            print(f"IE: {y} list failed ({exc})")
+    return sorted(names)
+
+
+def _portugal() -> list[str]:
+    """IAPMEI Tech Visa certified companies whose certification is still valid today."""
+    from pypdf import PdfReader
+    page = _get(REGISTERS["PT"]["page"]).text
+    link = re.search(r'href="([^"]*EmpresasCertificadas[^"]*\.pdf)"', page, flags=re.I)
+    if not link:
+        raise RuntimeError("Tech Visa PDF link not found on the IAPMEI page")
+    url = requests.compat.urljoin(REGISTERS["PT"]["page"], html.unescape(link.group(1)))
+    text = "\n".join(p.extract_text() or "" for p in PdfReader(io.BytesIO(_get(url, timeout=120).content)).pages)
+    today, out = datetime.now().date(), set()
+    for m in re.finditer(r"^\s*\d{9}\s+(.+?)\s+\d{2}-\d{2}-\d{4}\s+(\d{2})-(\d{2})-(\d{4})\s*$", text, flags=re.M):
+        if datetime(int(m.group(4)), int(m.group(3)), int(m.group(2))).date() >= today:
+            out.add(re.sub(r"\s+", " ", m.group(1)).strip())
     return sorted(out)
 
 
@@ -144,6 +214,10 @@ def download(key: str) -> list[tuple[str, str]]:
         csv_url = re.search(r"https://assets\.publishing\.service\.gov\.uk/[^\"']+\.csv", page).group(0)
         rows = _get(csv_url, timeout=180).text.splitlines()[1:]
         entries = [(r[0].strip(), reg["page"]) for r in csv.reader(rows) if r and r[0].strip()]
+    elif key == "IE":
+        entries = [(n, reg["page"]) for n in _ireland()]
+    elif key == "PT":
+        entries = [(n, reg["page"]) for n in _portugal()]
     elif reg["official"]:
         entries = [(n, reg["page"]) for n in _html_names(_get(reg["page"]).text)]
     else:

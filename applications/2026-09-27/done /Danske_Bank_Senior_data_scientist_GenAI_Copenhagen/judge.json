@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 25, "experience": 21, "company_project": 17, "ats_keywords": 12, "credibility": 9},
+ "score": 84,
+ "decision": "shortlist",
+ "strengths": ["8+ years NLP/GenAI well above the 5+ bar, with RAG, embeddings and cross-encoder reranking shown in production bullets", "New Conversation Masking and Summarisation project directly mirrors the JD's NER/masking/summarisation-on-multi-turn-conversation ask", "Multi-agent conversational chatbot (LangGraph, multi-turn) parallels the bank's Conversational AI unit", "Concrete, consistent production outcomes (98%, 43%, 90% match rate, ROUGE/LLM-judge faithfulness)"],
+ "gaps": ["No AWS Bedrock or FAISS/Pinecone/Weaviate/OpenSearch named; vector work only shown via generic Vector DB/pgvector", "TensorFlow not listed alongside PyTorch/scikit-learn", "F1/exact-match and BLEU not shown, only ROUGE and faithfulness", "Banking domain absent - closest is healthcare/telecom, not finance", "No explicit mentoring of junior team members shown"]}

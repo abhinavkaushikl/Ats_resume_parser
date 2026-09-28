@@ -1,0 +1,34 @@
+{
+ "status": "applied",
+ "reason": "",
+ "questions_unanswered": [],
+ "answers_given": {
+  "Name": "Abhinav Kaushik",
+  "Email": "aabhinav.kaushik@gmail.com",
+  "Phone": "+91 8700571859",
+  "Location (City)": "New Delhi, Delhi, India",
+  "Work authorisation": "My current work authorisation requires sponsorship or renewal now or in the future.",
+  "Current Location": "India",
+  "Willing to relocate": "Yes",
+  "Previously worked for Fin/Salesforce": "No",
+  "Current company": "United Health Group",
+  "LinkedIn": "https://www.linkedin.com/in/abhinav-kaushik10/",
+  "How did you hear": "Company careers page",
+  "5+ years ML": "Yes",
+  "Hybrid 3 days": "Yes",
+  "Email about future openings": "Yes (talent_pool_consent)",
+  "Point of Data Transfer": "Acknowledged",
+  "Export control - Iran/Cuba/NK/Syria": "No",
+  "Export control - additional citizenship": "No",
+  "Export control - first citizenship": "N/A (form instruction when both answers are No)"
+ },
+ "files_uploaded": [
+  "Abhinav_Kaushik_Resume.pdf",
+  "Abhinav_Kaushik_Cover_Letter.pdf"
+ ],
+ "url_used": "https://job-boards.greenhouse.io/intercom/jobs/6654793",
+ "ats": "greenhouse",
+ "confirmation": "Thanks a lot for applying to Fin! We will review your application carefully and get in touch with you shortly.",
+ "browser": "chrome-devtools (separate Chrome session)",
+ "timestamp": "2026-09-28T09:08"
+}

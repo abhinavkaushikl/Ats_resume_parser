@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 24, "experience": 12, "company_project": 18, "ats_keywords": 12, "credibility": 8},
+ "score": 74,
+ "decision": "maybe",
+ "strengths": ["Health Sensor Time-Series Forecasting project (PyTorch LSTM vs XGBoost forecasting glucose trends from wearable sensor data) is a direct, believable fit for Dexcom's CGM domain", "PyTorch and deep learning implementation experience shown in context", "Experiment-style rigor demonstrated: patient-level splits, ablation experiments, error analysis across risk ranges", "8+ years and MSc in ML/AI satisfy the experience/education bar"],
+ "gaps": ["No first-author publications or research-community track record, which the JD lists as the core proof point for this Research Scientist role", "No evidence of designing novel model architectures or pushing state-of-the-art, as opposed to applying established techniques", "Role expects an independent researcher choosing long-running research problems; resume shows applied delivery work, not autonomous research", "No CGM/biosensor domain experience beyond the one fit project"]}

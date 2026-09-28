@@ -1,0 +1,38 @@
+{
+ "company": "Clera",
+ "city": "Munich",
+ "role": "AI/LLM Engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "AI/LLM Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior AI Engineer",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder on positive and negative pairs to rerank dense embedding retrieval over AARP survey data, improving search relevance and retrieval accuracy."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Built and deployed a production lab-extraction agent end to end with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating 800 Jira tickets and PRD tasks."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine using Sentence-BERT embeddings and DBSCAN to cluster alarms, tracing network alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Built SQL and PySpark data pipelines processing large healthcare datasets for BAU medical-audit reporting, cutting manual reporting effort by 95%."
+  }
+ ],
+ "apply_url": "https://de.linkedin.com/jobs/view/ai-llm-engineer-at-clera-4471107882",
+ "listing_url": "https://de.linkedin.com/jobs/view/ai-llm-engineer-at-clera-4471107882",
+ "resume": "Clera_AI_LLM_Engineer_Munich/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Clera_AI_LLM_Engineer_Munich/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Clera_AI_LLM_Engineer_Munich/project_brief.md"
+}

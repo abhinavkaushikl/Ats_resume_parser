@@ -1,0 +1,37 @@
+{
+ "status": "needs_review",
+ "reason": "guest application at step 3 of 6; one required legal question with no profile answer; tab left open, not submitted",
+ "questions_unanswered": [
+  {
+   "label": "Have you entered into any restrictive covenant, non-compete agreement, or non-disclosure agreement which could restrict you from performing any duties of any of the position(s) for which you intend to apply?",
+   "type": "select",
+   "options": [
+    "Yes",
+    "No"
+   ]
+  }
+ ],
+ "answers_given": {
+  "Location": "India",
+  "Name": "Abhinav Kaushik",
+  "City": "New Delhi",
+  "Email": "aabhinav.kaushik@gmail.com",
+  "Phone": "Mobile, India (+91) 8700571859",
+  "How did you hear": "Mastercard Website / Source: Mastercard Careers Site",
+  "Worked for Mastercard": "No",
+  "Talent Community": "ticked (talent_pool_consent Yes)",
+  "Experience": "5 slots (form max) from resume.txt, locations corrected; Saksoft not listed (no slot)",
+  "Education": "LJMU Masters; Jamia Hamdard Bachelors, Information Technology",
+  "Authorized to work": "No",
+  "Require sponsorship": "Yes",
+  "Gender": "Prefer Not To Self-Identify",
+  "Desired salary": "100000 EUR per year (default, no pay in JD)"
+ },
+ "files_uploaded": [
+  "Abhinav_Kaushik_Resume.pdf"
+ ],
+ "url_used": "https://careers.mastercard.com/us/en/apply?jobSeqNo=MASRUSR277460EXTERNALENUS",
+ "ats": "company",
+ "confirmation": "",
+ "timestamp": "2026-09-28T13:30"
+}

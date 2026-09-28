@@ -99,7 +99,8 @@ Steps:
 1. Read the user's request and work out the search settings:
    - hours: time window (default 24; "3 days" = 72, "a week" = 168).
    - cities: only from this exact list: {", ".join(LOCATIONS)}.
-     A city inside Austria/Romania/Norway maps to that country entry; "UK" maps to London.
+     A city inside Austria/Romania/Norway/Switzerland/Sweden/Italy maps to that country entry; a German
+     city other than Berlin or Munich maps to Germany; "UK" maps to London.
      Leave cities empty to search everything. If the user asks for a place not on the list, say so.
    - senior_only: true only if the user asks for senior roles.
 2. Call fetch_jobs exactly once with those settings. It saves the jobs to a Markdown file.

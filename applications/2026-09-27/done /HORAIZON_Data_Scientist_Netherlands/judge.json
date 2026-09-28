@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 26, "experience": 19, "company_project": 17, "ats_keywords": 11, "credibility": 8},
+ "score": 81,
+ "decision": "shortlist",
+ "strengths": ["Python + REST API backend work (FastAPI, Flask) and PyTorch/scikit-learn both shown in real bullets across multiple roles", "New Microbiome Profile Classification project uses Django REST Framework directly, closing the JD's named backend-framework example", "Healthcare-adjacent data (UHG, Optum) and a quantitative MSc support the 'strong interest in biology/healthcare' and degree requirements", "Clear communication of results to non-technical audiences is demonstrated, not just asserted"],
+ "gaps": ["No true bioinformatics/omics data experience (genetics, proteomics, metabolomics) - the new project simulates this rather than showing real domain history", "No deep learning on sound, image or video data anywhere in the resume", "Django appears only in the new project, not in the day-to-day experience bullets, so it reads a little added-on", "Varied-data-type breadth (signals/sound, images/video, free text, molecular) that the JD emphasizes is only partly covered"]}

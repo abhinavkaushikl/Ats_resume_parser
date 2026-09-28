@@ -1,0 +1,14 @@
+{"criteria": {"tech_stack": 27, "experience": 22, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 90,
+ "decision": "shortlist",
+ "strengths": [
+   "Conversation Intent and Summary Pipeline project is a near-exact match to the Conversation Intelligence team's mission of extracting meaning from voice and messaging data",
+   "PyTorch and Hugging Face Transformers appear in both skills and bullets, with fine-tuned BERT and cross-encoder models running in production",
+   "MLflow experiment tracking plus FastAPI/Docker cloud serving directly match the JD's model versioning, experiment tracking and cloud infrastructure ask",
+   "LangGraph agentic production experience and LLMOps-style evaluation/monitoring exceed the JD's desired (not required) bar"
+ ],
+ "gaps": [
+   "No TensorFlow or JAX experience; only PyTorch, which is fine but narrows the framework match",
+   "No explicit on-call, SLO or progressive-rollout experience mentioned",
+   "Conversational AI isn't named verbatim, only inferable from the chat/call transcript project"
+ ]}

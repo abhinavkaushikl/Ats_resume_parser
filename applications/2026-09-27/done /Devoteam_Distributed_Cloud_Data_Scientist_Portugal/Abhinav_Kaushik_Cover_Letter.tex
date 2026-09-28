@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Devoteam}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Devoteam
+
+\textbf{Re: Distributed Cloud / Data Scientist}
+
+Dear Hiring Team,
+
+I am applying for the Data Scientist role in Devoteam's Distributed Cloud team. My data science work has mostly been about framing a business question as a data problem, building the statistical or ML model that answers it, and explaining the result so people act on it. That last step is the one I care about most.
+
+Devoteam works across many client projects, and that variety suits me: at Viavi I delivered POCs and consulting for 15+ clients and enjoyed moving between domains. Your Tech for People idea also matches why I do this work. My fiancée lives in Berlin, and we plan to move to Portugal together and settle there long term.
+
+I would bring models that reach production and stories that land. At Viavi I shipped anomaly detection and forecasting on 15+ KPIs across 500+ network devices, and an SLA breach prediction system with LightGBM, FastAPI and MLflow that cut downtime by 67\%. Earlier, my QlikSense and SQL dashboards raised user engagement by 40\%.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that analysis only matters when it helps a real person decide something. I would be glad to talk about how I could support your clients.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

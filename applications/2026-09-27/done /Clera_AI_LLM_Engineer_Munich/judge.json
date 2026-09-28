@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 14, "experience": 19, "company_project": 19, "ats_keywords": 6, "credibility": 9},
+ "score": 67,
+ "decision": "reject",
+ "strengths": ["Order Document Processing Agent project is an almost exact domain match: unstructured purchase requests/order emails turned into structured quotes with embeddings and a fine-tuned reranker, mirroring Clera's actual product", "Solid large-scale unstructured data processing experience (Amazon Textract, PySpark, ~1,800 documents)", "Docker, Kubernetes and Terraform shown in production, matching the infra ask", "Consistent, concrete outcomes across 8+ years"],
+ "gaps": ["RLHF/DPO experience is completely absent; fine-tuning shown is embedding/cross-encoder reranking, not LLM alignment via human feedback, and this is an explicit 'what you'll do' bullet", "Full-stack development (React, TypeScript, Next.js) is entirely missing from the resume, and this is an explicit must-have, not a nice-to-have", "This is a small team building 'end-to-end across the full stack'; half of the role's stated scope is unaddressed", "No AWS experience shown (only Azure/GCP)"]}

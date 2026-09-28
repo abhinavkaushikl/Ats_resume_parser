@@ -1,0 +1,71 @@
+{
+ "company": "Intent HQ",
+ "role": "Senior Applied AI Scientist",
+ "city": "London",
+ "company_profile": "Intent HQ builds behavioural AI that turns enterprises' first party customer data into context and insight for personalisation and decisions.",
+ "title": "Senior Applied AI Scientist",
+ "current_role_title": "Senior Applied Scientist",
+ "summary": "Senior Applied Scientist with 8+ years building and evaluating ML and deep learning models and taking them to production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Works across clustering, sequence modelling with LSTM, transformers and NLP, and ships production-ready code with LangGraph agents. Prototypes with clients from their own requirements and explains results to non-technical stakeholders, using PySpark, Spark SQL and Databricks. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+   "new": "Built an event-correlation engine clustering alarm text with Sentence-BERT and DBSCAN, tracing the cascading effect of network alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients",
+   "new": "Prototyped 15+ AI applications with AIOps and GeoPerformance clients, turning their requirements into working prototypes, with 7 moving into production or paid client work."
+  },
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Delivered technical POCs and consulting to 15+ client stakeholders across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan applications",
+   "new": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact from customer behaviour, enabling targeted outreach and customer prioritization."
+  }
+ ],
+ "project": {
+  "name": "Customer Behaviour Segmentation Models",
+  "bullets": [
+   "Built behavioural segmentation for customer event data, embedding activity sequences with a transformer encoder and clustering them with DBSCAN to find groups that predict churn and engagement.",
+   "Evaluated segments with holdout XGBoost propensity models and stakeholder reviews, then served them as features through Databricks and FastAPI for use in downstream client models."
+  ],
+  "technologies": [
+   "PyTorch",
+   "Hugging Face Transformers",
+   "PySpark",
+   "Spark SQL",
+   "Databricks",
+   "XGBoost",
+   "DBSCAN",
+   "FastAPI"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Applied AI Scientist role at Intent HQ. My work spans clustering, sequence models, transformers and NLP, and more recently agents that ship as production code. The thread that runs through it is taking a model from a client's problem to something they actually use.",
+   "Intent HQ turns first party behavioural data into context that enterprises can act on, and the hard part is making that science pay off for each customer. Customer behaviour is where my modelling career began, with propensity models, and I want to go much deeper into it. My fiancée lives in Berlin, and we plan to move to London together and settle there long term.",
+   "At Viavi I clustered alarm text with Sentence-BERT and DBSCAN to trace alarm floods back to their root event, improving classification by 73.5%. I also prototyped 15+ AI applications with clients, and 7 of them reached production or paid work. I would bring that mix of modelling depth and customer prototyping to your pods.",
+   "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Working with teachers there has taught me to listen before I build and to explain models in plain words. I would welcome a conversation about your behavioural AI work."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "behavioural AI",
+  "clustering",
+  "sequence modelling",
+  "transformers",
+  "natural language processing",
+  "deep learning",
+  "agents",
+  "production-ready code",
+  "client prototypes",
+  "stakeholders",
+  "Spark SQL",
+  "PySpark",
+  "Databricks",
+  "B2B"
+ ],
+ "experience_variant": "base"
+}

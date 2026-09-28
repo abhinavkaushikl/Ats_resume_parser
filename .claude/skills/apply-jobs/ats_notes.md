@@ -12,9 +12,9 @@ Short tips per applicant-tracking system. Detect it from the URL or the page foo
 | Workable | `apply.workable.com/...` | One page, no account usually. |
 | Zalando (own site) | `jobs.zalando.com/en/jobs/<id>` | "Apply" opens an inline form on the left; `find` sees every field. Required: name, email, country code + phone, start date (date input), salary (plain number), EU work-permit select, Zalando-employee select, sensitive-data checkbox. Resume + cover letter uploads. |
 | Recruitee | `*.recruitee.com` | One page, no account. |
-| Join.com | `join.com/companies/...` | Often asks to create an account -> `skipped: login_required`. |
-| Workday | `*.myworkdayjobs.com` | Needs an account -> `skipped: login_required` unless already signed in. |
-| SuccessFactors / Taleo / iCIMS | `career*.successfactors.*`, `taleo.net`, `icims.com` | Usually account + multi-step -> `skipped: login_required` unless already signed in. |
+| Join.com | `join.com/companies/...` | Often asks to create an account -> `needs_account` hand-off. |
+| Workday | `*.myworkdayjobs.com` | Needs an account per company tenant (one per `<company>.myworkdayjobs.com`) -> `needs_account` hand-off unless already signed in. After sign-in: multi-step (My Information, Experience, Questions, Self Identify, Review); "Autofill with Resume" then check every field. |
+| SuccessFactors / Taleo / iCIMS | `career*.successfactors.*`, `taleo.net`, `icims.com` | Usually account + multi-step -> `needs_account` hand-off unless already signed in. |
 | Company's own site (e.g. Zalando) | company domain | Look for "Apply" -> often redirects to one of the above; treat it by the ATS you land on. |
 
 General:

@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Johnson Controls}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Johnson Controls
+
+\textbf{Re: Senior Data Scientist (Agentic AI Platform)}
+
+Dear Hiring Team,
+
+I am applying for the Senior Data Scientist role on your Agentic AI Platform. My data science work today is mostly agentic: multi-agent systems in LangGraph, RAG pipelines and the evaluation that keeps them honest, built on a base of classical ML. The thread through it all is getting models out of notebooks and into production.
+
+Johnson Controls runs the building systems behind data centers, hospitals and factories, and a platform of agents that plan and act across those workflows is a problem I want to work on. It is practical AI with a direct effect on energy use. My fiancée lives in Berlin, and we plan to move to Warsaw together and settle there long term.
+
+At United Health Group I built a multi-agent analytics chatbot that cut manual analysis by 98\%, and evaluation pipelines with LLM evaluators and tracing that reduced human review by 43\%. Earlier, at Viavi, I shipped an SLA breach prediction system with LightGBM, FastAPI and MLflow. I would bring both sides, agents and classical ML, to your platform.
+
+Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for real classrooms has taught me to add guardrails early and release with care. I would welcome a conversation about your platform and team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

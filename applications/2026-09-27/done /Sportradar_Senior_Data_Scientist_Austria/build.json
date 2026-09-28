@@ -1,0 +1,34 @@
+{
+ "company": "Sportradar",
+ "city": "Austria",
+ "role": "Senior Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience variant: timeseries",
+  "Experience bullets reworded: 3"
+ ],
+ "headline": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped demand forecasting with Holt-Winters and anomaly detection with Isolation Forest on 15+ KPIs across 500+ telecom network devices, enabling earlier detection and proactive network planning."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting the probability of a personal-loan application within 7 days of contact, enabling targeted outreach and customer prioritization."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.",
+   "after": "Wrote complex SQL queries with multi-table joins, CTEs and window functions to analyze data, delivering ad-hoc reports and analyses for multiple stakeholder teams."
+  }
+ ],
+ "apply_url": "https://jobs.smartrecruiters.com/Sportradar/744000150313500",
+ "listing_url": "https://jobs.smartrecruiters.com/Sportradar/744000150313500",
+ "resume": "Sportradar_Senior_Data_Scientist_Austria/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Sportradar_Senior_Data_Scientist_Austria/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Sportradar_Senior_Data_Scientist_Austria/project_brief.md"
+}

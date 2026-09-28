@@ -1,0 +1,38 @@
+{
+ "company": "commercetools",
+ "city": "London",
+ "role": "Senior AI Search engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior AI Search Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior AI Engineer",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder re-ranker on positive and negative pairs over dense vector retrieval of AARP survey data, improving search relevance and retrieval accuracy."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+   "after": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, combining semantic retrieval with LLM query understanding and reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker on top of an existing recommendation system for individual and child plans, improving the relevance of renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Built real-time log observability for the COVID QRT team with Elasticsearch and Kibana, improving traceability efficiency by 80%.",
+   "after": "Built real-time log search and observability on Elasticsearch and Kibana for the COVID QRT team, improving traceability efficiency by 80%."
+  }
+ ],
+ "apply_url": "https://job-boards.greenhouse.io/commercetools/jobs/8003157003",
+ "listing_url": "https://job-boards.greenhouse.io/commercetools/jobs/8003157003",
+ "resume": "commercetools_Senior_AI_Search_engineer_London/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "commercetools_Senior_AI_Search_engineer_London/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "commercetools_Senior_AI_Search_engineer_London/project_brief.md"
+}

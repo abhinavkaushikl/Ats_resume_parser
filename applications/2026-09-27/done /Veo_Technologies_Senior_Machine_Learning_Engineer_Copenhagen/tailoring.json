@@ -1,0 +1,66 @@
+{
+ "company": "Veo Technologies",
+ "role": "Senior Machine Learning Engineer",
+ "city": "Copenhagen",
+ "company_profile": "Veo makes AI-powered sports cameras and analysis software that track every player and the ball, giving clubs, coaches and young players video and data from each match.",
+ "title": "Senior Machine Learning Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "summary": "Machine learning engineer with 8+ years on real-world ML projects across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Trains and fine-tunes models in PyTorch and Hugging Face Transformers, builds evaluation schemes that show where models fall short, and writes inference pipelines served with FastAPI, Docker and Kubernetes. Owns the full lifecycle, from preparing training data to validation, deployment and monitoring. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder model on curated positive and negative training pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question",
+   "new": "Built automated evaluation schemes and observability for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection to expose model shortcomings, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+   "new": "Built an event-correlation model clustering alarms with Sentence-BERT embeddings and DBSCAN, tracing cascading network alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed a production SLA breach prediction model with LightGBM, served through FastAPI and tracked in MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  }
+ ],
+ "project": {
+  "name": "Match Event Detection Model",
+  "bullets": [
+   "Built an event-detection model for football tracking data, classifying passes, shots and set pieces from player and ball trajectories with an LSTM in PyTorch and XGBoost baselines.",
+   "Evaluated per-event precision and recall with error analysis on hand-annotated matches, and served batched inference through FastAPI in Docker with MLflow experiment tracking."
+  ],
+  "technologies": [
+   "PyTorch",
+   "LSTM",
+   "XGBoost",
+   "Python",
+   "MLflow",
+   "FastAPI",
+   "Docker"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Machine Learning Engineer role in the AI team. My work has always covered the whole ML lifecycle on real-world data: deciding what to label, training models, building evaluation that shows where they fall short, and shipping inference that holds up in production. That full-cycle ownership is the part I enjoy most.",
+   "Veo turns a single camera into proof of what happened on the pitch, so a young player's run gets seen even when no scout was there. I like that the result of the modelling is fairness for players. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.",
+   "I would bring careful evaluation habits and production experience. At United Health Group I built evaluation pipelines with LLM evaluators and failure detection that cut human review by 43%, and fine-tuned a cross-encoder on positive and negative pairs. At Viavi I deployed a LightGBM prediction system with FastAPI and MLflow that reduced downtime by 67%. Computer vision is where I would grow next.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It taught me to watch how people actually use a model before deciding it works. I would be glad to talk about joining your team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "state-of-the-art machine learning models",
+  "inference pipelines",
+  "cloud and edge",
+  "data annotation",
+  "evaluation schemes",
+  "model performance",
+  "real-world machine learning projects",
+  "computer vision",
+  "MSc",
+  "PyTorch"
+ ],
+ "experience_variant": "base"
+}

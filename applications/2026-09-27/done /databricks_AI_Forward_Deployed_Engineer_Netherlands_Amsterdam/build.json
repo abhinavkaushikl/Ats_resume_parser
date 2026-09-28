@@ -1,0 +1,44 @@
+{
+ "company": "databricks",
+ "city": "Amsterdam",
+ "role": "AI Forward Deployed Engineer - Netherlands",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5",
+  "The company name 'databricks' still appears in the resume - check it."
+ ],
+ "headline": "AI Forward Deployed Engineer",
+ "current_role_title": "Senior GenAI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior GenAI Engineer",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent GenAI chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior GenAI Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and observability pipelines for production GenAI Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+   "after": "Developed a RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Served as a technical advisor to 15+ clients, delivering POCs and consulting across 3+ AIOps and ML platforms and contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered SQL and PySpark data pipelines on large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  }
+ ],
+ "apply_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8813464002",
+ "listing_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8813464002",
+ "resume": "databricks_AI_Forward_Deployed_Engineer_Netherlands_Amsterdam/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "databricks_AI_Forward_Deployed_Engineer_Netherlands_Amsterdam/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "databricks_AI_Forward_Deployed_Engineer_Netherlands_Amsterdam/project_brief.md"
+}

@@ -1,0 +1,33 @@
+{
+ "company": "GoCardless",
+ "city": "London",
+ "role": "Senior Data Scientist, Payment Intelligence",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 3"
+ ],
+ "headline": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, from feature engineering to real-time scoring, using GPT-3.5 for root-cause analysis per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization in lending."
+  }
+ ],
+ "apply_url": "https://job-boards.greenhouse.io/gocardless/jobs/7526068",
+ "listing_url": "https://uk.linkedin.com/jobs/view/senior-data-scientist-payment-intelligence-at-gocardless-4406624878",
+ "resume": "GoCardless_Senior_Data_Scientist_Payment_Intelligence_London/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "GoCardless_Senior_Data_Scientist_Payment_Intelligence_London/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "GoCardless_Senior_Data_Scientist_Payment_Intelligence_London/project_brief.md"
+}

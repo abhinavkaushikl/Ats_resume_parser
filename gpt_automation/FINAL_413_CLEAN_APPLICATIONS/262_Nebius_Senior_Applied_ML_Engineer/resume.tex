@@ -1,0 +1,139 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+  ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off, Ligatures=CommonOff]
+\usepackage[margin=0.5in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\hyphenation{LangGraph LangChain GeoPerformance TimescaleDB}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+\setlist[itemize]{leftmargin=1.2em, itemsep=0pt, topsep=1pt, parsep=0pt, label=\textbullet}
+
+\newcommand{\role}[2]{\textbf{#1} \hfill #2\par}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries ABHINAV KAUSHIK}\\[1pt]
+  \textbf{Senior Applied ML Engineer}\\[1pt]
+  Email: aabhinav.kaushik@gmail.com \quad Phone: +91 87005 71859\\
+  LinkedIn: linkedin.com/in/abhinav-kaushik10/
+\end{center}
+
+\section{Summary}
+Senior AI/ML Engineer with 8+ years building retrieval, ranking, recommendation and production ML systems across Healthcare, Telecom and AIOps. Works with cross-encoders, embeddings, semantic retrieval, Python, SQL and PySpark, alongside production APIs and ML evaluation. Delivers measurable outcomes with stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.
+
+\section{Professional Experience}
+\role{Senior Machine Learning Engineer | United Health Group | Bengaluru, India}{Nov 2025 -- Present}
+\begin{itemize}
+  \item Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.
+  \item Developed a RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90\% match rate.
+  \item Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, increasing conversion by 2\%.
+  \item Built SQL and PySpark data pipelines automating medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95\%.
+\end{itemize}
+\vspace{3pt}
+
+\role{Senior Machine Learning Engineer | Viavi Solutions | Chennai, India}{Sep 2024 -- Nov 2025}
+\begin{itemize}
+  \item Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM
+  reasoning, reaching a 90\% match rate against existing organizational solutions.
+  \item Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading
+  effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5\%.
+  \item Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving
+  into production or paid client work.
+\end{itemize}
+\vspace{3pt}
+
+\role{Data Scientist | Viavi Solutions | Bengaluru, India}{Nov 2021 -- Sep 2024}
+\begin{itemize}
+  \item Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for
+  real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67\%.
+  \item Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using
+  Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.
+  \item Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an
+  11\% increase in POC and mentoring revenue.
+\end{itemize}
+\vspace{3pt}
+
+\role{Data Analyst | Optum | Gurugram, India}{Jun 2021 -- Nov 2021}
+\begin{itemize}
+  \item Implemented a reranker for an existing recommendation system serving individual and child plan
+  recommendations, optimizing renewal suggestions and increasing conversion by 2\%.
+  \item Developed a Python and Flask parser that automated extraction and transformation of raw data into structured
+  datasets, feeding downstream analytics and reporting.
+\end{itemize}
+\vspace{3pt}
+
+\role{Data Engineer | Nippon Data Systems | Gurugram, India}{Nov 2019 -- May 2021}
+\begin{itemize}
+  \item Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets,
+  cutting manual reporting effort by 95\%.
+  \item Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and
+  analyses for multiple stakeholder teams.
+  \item Built real-time log observability for the COVID QRT team with Elasticsearch and Kibana, improving traceability
+  efficiency by 80\%.
+\end{itemize}
+\vspace{3pt}
+
+\role{Associate Consultant | Saksoft | Gurugram, India}{Dec 2017 -- Nov 2019}
+\begin{itemize}
+  \item Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact,
+  enabling targeted outreach and customer prioritization.
+  \item Built customer dashboards for financial and product insights with QlikSense, SQL and SAP HANA, increasing
+  user engagement by 40\%.
+\end{itemize}
+
+\section{Projects}
+\textbf{Think Tree -- ML Study Platform}\par
+\begin{itemize}
+  \item Built a non-profit AI-powered ML study platform for people with ADHD and context-switching challenges, designed
+  to help users organize learning and maintain study context.
+\end{itemize}
+\textbf{RFP Multi-Agent Proposal Automation Platform}\par
+\begin{itemize}
+  \item Built a multi-agent RFP platform where an LLM supervisor orchestrates intent detection, retrieval, proposal
+  generation, document matching and market research, with RAG over historical proposals.
+\end{itemize}
+\textbf{Financial Fraud Detection -- Mar 2025}\par
+\begin{itemize}
+  \item Built a fraud detection and reasoning workflow on the JPMorgan Synthetic Dataset, pairing LightGBM scoring
+  with LLM-generated explanations for interpretable financial-risk analysis.
+\end{itemize}
+\textbf{Restaurant Feedback Analyzer -- Aspect-Based Sentiment Analysis}\par
+\begin{itemize}
+  \item Built an NLP pipeline to extract review aspects and determine sentiment at the aspect level, enabling
+  granular insights into customer experience.
+\end{itemize}
+
+\section{Education}
+\textbf{Master of Science, Machine Learning and AI | Liverpool John Moores University} \hfill Jan 2021 -- Jan 2023\par
+\textbf{Bachelor of Technology, Information Technology | Jamia Hamdard} \hfill Aug 2013 -- Aug 2017\par
+
+\section{Technical Skills}
+\textbf{AI / GenAI:} Generative AI, LLM, RAG, Agentic RAG, Agentic AI, LangGraph, LangChain, Claude, OpenAI, Embeddings, Cross-Encoder, Fine-Tuning, Hugging Face Transformers, NLP, Tool Orchestration, Amazon Textract\par
+\textbf{Machine Learning:} PyTorch, Scikit-learn, XGBoost, LightGBM, Random Forest, Isolation Forest, LSTM, SBERT, DBSCAN, Time Series Forecasting, Demand Forecasting, Anomaly Detection, Statistical Modeling, Regression, Deep Learning\par
+\textbf{Evals / Observability:} LLM Evals, LLM Evaluators, Agent Tracing, Observability, Elasticsearch, Kibana, Log Analysis\par
+\textbf{Programming / Data:} Python, SQL, PySpark, Pandas, NumPy, FastAPI, Flask, Hive, Spark SQL, REST API, Pydantic, Unix\par
+\textbf{MLOps / Cloud:} MLflow, Docker, Kubernetes, Airflow, DVC, Terraform, Jenkins, Bamboo, Bitbucket, GCP, Azure, Vercel\par
+\textbf{Data Platforms:} Databricks, Databricks SQL, Apache Spark, Supabase\par
+\textbf{Databases:} TimescaleDB, MySQL, Vector DB, pgvector, ArangoDB, Cosmos DB\par
+\textbf{Search:} Apache Solr, Lucene Indexing, Information Retrieval\par
+\textbf{BI:} Power BI, QlikSense, SAP HANA\par
+
+\section{Languages}
+English: Native\par
+German: A1 -- Pursuing\par
+
+\section{Additional Information}
+\begin{itemize}
+  \item Network Intern, Airport Authority of India
+  \item Hadoop Intern, Ducat Technologies
+\end{itemize}
+
+\end{document}

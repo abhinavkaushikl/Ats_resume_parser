@@ -1,0 +1,43 @@
+{
+ "company": "Bosch Portugal",
+ "city": "Braga",
+ "role": "Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection of instability and proactive network planning."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, adding GPT-3.5 root-cause analysis and remediation recommendations for each predicted failure, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN for root cause analysis of cascading network alarm floods, improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, turning engineering problems into data-driven solutions and adding to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.",
+   "after": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc analyses and reports that multiple stakeholder teams used for decisions."
+  }
+ ],
+ "apply_url": "https://pt.linkedin.com/jobs/view/data-scientist-f-m-div-at-bosch-portugal-4471450471",
+ "listing_url": "https://pt.linkedin.com/jobs/view/data-scientist-f-m-div-at-bosch-portugal-4471450471",
+ "resume": "Bosch_Portugal_Data_Scientist_f_m_div_Portugal/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Bosch_Portugal_Data_Scientist_f_m_div_Portugal/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Bosch_Portugal_Data_Scientist_f_m_div_Portugal/project_brief.md"
+}

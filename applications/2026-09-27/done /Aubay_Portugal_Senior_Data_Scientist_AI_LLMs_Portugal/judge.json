@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 25, "experience": 21, "company_project": 18, "ats_keywords": 13, "credibility": 8},
+ "score": 85,
+ "decision": "shortlist",
+ "strengths": ["Insurance Claims Multi-Agent Assistant project explicitly uses MCP tools with shared memory, directly answering the JD's agent-communication-protocol requirement", "Multi-agent production systems in LangGraph shown across multiple real roles (UHG, Viavi), not just one project", "RAG over vector databases (pgvector) and cross-encoder/embedding fine-tuning shown in context", "Title exactly matches JD: Senior Data Scientist - AI & LLMs"],
+ "gaps": ["TensorFlow, explicitly named alongside PyTorch and Hugging Face in the JD, does not appear anywhere", "A2A and ACP protocols are not named, only MCP", "AutoGen/CrewAI frameworks not mentioned, only LangGraph/LangChain", "Decision trees/SVMs (classical AI/ML methods the JD calls out) are present only as XGBoost/LightGBM, not SVMs"]}

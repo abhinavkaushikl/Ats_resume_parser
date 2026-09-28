@@ -1,0 +1,77 @@
+{
+ "company": "Redcare Pharmacy",
+ "role": "AI Solutions Engineer/ AI Enablement Engineer",
+ "city": "Germany",
+ "company_profile": "Redcare Pharmacy is a European online pharmacy selling prescription and over-the-counter medicines and health products to consumers across several countries.",
+ "title": "AI Solutions Engineer / AI Enablement Engineer",
+ "current_role_title": "Senior GenAI Engineer",
+ "summary": "GenAI engineer with 8+ years turning business problems into ML and LLM solutions across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Designs LLM applications with prompt engineering, RAG and AI agents in LangGraph, and takes prototypes and POCs into production with evaluation and observability. Works in Python, SQL, PySpark and Databricks alongside business, data and platform teams, and helps stakeholders adopt the tools. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance",
+   "new": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients, translating business needs into solution ideas, with 7 moving into production or paid client work."
+  },
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus",
+   "new": "Deployed a production document-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the workflow behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent AI assistant in LangGraph for AARP medical plans, answering business users' questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant",
+   "new": "Developed an internal retrieval-augmented generation assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Delivered technical proof-of-concepts and consulting for 15+ clients across 3+ AIOps and ML platforms, guiding stakeholders through adoption and contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "project": {
+  "name": "Customer Service Workflow Automation",
+  "bullets": [
+   "Built an AI agent for online retail customer service that answers order, delivery and returns questions using RAG over policy documents and tool calls to order data.",
+   "Evaluated answers with LLM evaluators on real ticket samples before rollout, ran data access through Azure Databricks, and served the agent via FastAPI on Kubernetes."
+  ],
+  "technologies": [
+   "Python",
+   "Azure Databricks",
+   "RAG",
+   "Claude",
+   "LangGraph",
+   "Vector DB",
+   "FastAPI",
+   "Kubernetes"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the AI Solutions Engineer / AI Enablement Engineer role. Most of my recent work has been sitting with business teams, finding the process worth automating, and turning it into a GenAI prototype and then a working tool. The thread through it all is AI that people keep using after launch.",
+   "Redcare Pharmacy gets medicines and health products to people across Europe, and healthcare is where I have done my most meaningful GenAI work. Bringing practical AI into e-commerce and operations there appeals to me. My fiancée lives in Berlin, and we plan to build our life in Germany together and settle there long term.",
+   "At United Health Group I built a LangGraph multi-agent assistant over medical-plan data that cut manual analysis by 98%, working closely with the business users who relied on it. At Viavi I prototyped 15+ AI applications from client requirements, and 7 of them reached production or paid client work.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Teachers adopt a tool only when it fits how they already work, and that is how I approach enablement. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "Generative AI solution design",
+  "prompt engineering",
+  "LLM application development",
+  "retrieval-augmented generation",
+  "AI agents",
+  "workflow automation",
+  "Python",
+  "Azure Databricks",
+  "vector databases",
+  "Kubernetes",
+  "ChatGPT",
+  "Claude",
+  "prototypes",
+  "proof-of-concepts",
+  "change management",
+  "user adoption"
+ ],
+ "experience_variant": "base"
+}

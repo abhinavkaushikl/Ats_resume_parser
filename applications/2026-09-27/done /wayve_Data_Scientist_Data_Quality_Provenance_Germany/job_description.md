@@ -1,0 +1,97 @@
+# Data Scientist, Data Quality & Provenance
+
+- **Company:** wayve
+- **City:** Germany
+- **Visa / relocation:** Visa: yes · Relocation: yes · Source: [company careers page mentions visa/relocation](https://wayve.firststage.co/jobs/0utvHirfRj/view?layout=grid&source=linkedin.com)
+- **Original listing:** https://wayve.firststage.co/jobs?gh_jid=8810531002
+- **JD source (Playwright):** https://wayve.firststage.co/jobs?gh_jid=8810531002
+- **Fetched:** 2026-09-27 11:38
+- **Resume match:** 65% - shortlisted: Solid analytics fit; experimental-statistics depth is the gap.
+- **Matched:** 3+ years data science; production SQL and data pipelines; Python, pandas, scikit-learn; communicating findings
+- **Missing:** rigorous A/B / experimental design; frequentist test assumptions depth; autonomous driving domain
+- **Scored by:** Claude (no Groq key in .env), same rubric as job_match.py
+
+## Job description
+
+See more jobs
+
+Apply Now
+
+# Apply for Data Scientist, Data Quality & Provenance Leonberg, Germany Simulation, Evaluation, Validation
+
+## **About us**
+
+Founded in 2017, Wayve is the leading developer of Embodied AI technology.  Our advanced AI software and foundation models enable vehicles to perceive, understand, and navigate any complex environment, enhancing the usability and safety of automated driving systems.
+
+Our vision is to create autonomy that propels the world forward.  Our intelligent, mapless, and hardware-agnostic AI products are designed for automakers, accelerating the transition from assisted to automated driving.
+
+In our fast-paced environment big problems ignite us—we embrace uncertainty, leaning into complex challenges to unlock groundbreaking solutions. We aim high and stay humble in our pursuit of excellence, constantly learning and evolving as we pave the way for a smarter, safer future.
+
+At Wayve, your contributions matter.  We value diversity, embrace new perspectives, and foster an inclusive work environment; we back each other to deliver impact.
+
+Make Wayve the experience that defines your career!
+
+## The Role
+
+As a Data Scientist supporting AI engineers, you will partner with one or more engineering teams, developing actionable insights that guide improvements to the Wayve AI Driver. Using experimental and observational analyses of real and simulated driving, you will help teams advance the functionality, safety, and performance of the Wayve AI Driver, helping to advance Wayve as the leader in end-to-end AI for autonomous mobility.
+
+This means you might:
+
+* Formulate and iterate upon the performance metrics that organize our engineering efforts and guide progress toward commercial success
+* Design experiments and targeted off-road measurements to ensure that we deliver product requirements to customers while maintaining safety and performance
+* Investigate factors in model training and inference leading to bottlenecks in functionality and performance, identifying and validating hypotheses for unlocking improvements
+
+## **About you**
+
+### Essential:
+
+* 3+ years experience working in a Data Science role.
+* Fluent in querying and building large datasets, writing production-level SQL for use in data-transformation pipelines.
+* Prior experience designing robust real-world experiments (e.g. A/B) and critically evaluating test-statistics
+* Foundations in the fundamentals behind statistics: testing appropriate distributions, testing the assumptions behind frequentist stats
+* Proficient in using a statistical scripting language and data science/ML packages (e.g. python such as pandas, sklearn, statsmodels, scipy or R such as dplyr, caret, stats)
+* Well-versed in summarising, visualising and communicating findings in an accessible and compelling way
+* Track record of influencing team direction through your findings
+* A bias towards deriving actionable insight that can be used to drive prioritisation and strategy for others.
+* Comfortable working asynchronously across time zones with cross-functional partners
+* You are deeply curious about building something new and relish the idea of helping to define AV2.0 and how we build it.
+
+### Desirable:
+
+* Practical experience with machine learning (e.g. PyTorch). Passion to take research ideas to production.
+* Track record of promoting statistical rigour and experimental best practices in your prior roles.
+* Prior experience using causal inference/econometric techniques and bayesian methodologies for hypothesis testing.
+* Prior experience using large datasets with distributed computing (e.g. spark, hadoop or other map-reduce tech)
+* Experience working in a fast-moving tech company or startup.
+
+This role is a full-time role based in Stuttgart, Germany. At Wayve we want the best of all worlds so we operate a hybrid working policy that combines time together in our offices and workshops to fuel innovation, culture, relationships and learning, and time spent working from home.   We operate core working hours so you can determine the schedule that works best for you and your team.
+
+Wayve is committed to creating an inclusive interview experience. If you require any accommodations or adjustments to participate fully in our interview process, please let us know.
+
+We understand that everyone has a unique set of skills and experiences and that not everyone will meet all of the requirements listed above. If you’re passionate about self-driving cars and think you have what it takes to make a positive impact on the world, we encourage you to apply.
+
+At Wayve we're committed to creating a diverse, fair and respectful culture that is inclusive of everyone based on their unique skills and perspectives, and regardless of sex, race, religion or belief, ethnic or national origin, disability, age, citizenship, marital, domestic or civil partnership status, sexual orientation, gender identity, veteran status, pregnancy or related condition  (including breastfeeding) or any other basis as protected by applicable law.
+
+For more information visit Careers at Wayve.
+
+To learn more about what drives us, visit Values at Wayve
+
+For US candidates only, please visit E-Verify Notice and Participation and Right to Work
+
+DISCLAIMER: We will not ask about marriage or pregnancy, care responsibilities or disabilities in any of our job adverts or interviews. However, we do look to capture information about care responsibilities, and disabilities among other diversity information as part of an optional DEI Monitoring form to help us identify areas of improvement in our hiring process and ensure that the process is inclusive and non-discriminatory.
+
+See more jobs
+
+Copyright © OpenDigital Limited 2026
+
+Terms of ServicePrivacy
+
+Step 1: Upload CV
+
+We will use your CV to fill as much of the application form as possible for you.
+
+Drag and drop or choose a .docx, .pdf, .rtf, .txt, .md or .html file to upload
+
+Copyright © OpenDigital Limited 2026
+
+Terms of ServicePrivacy

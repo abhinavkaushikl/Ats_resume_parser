@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - databricks}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+AI Forward Deployed Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+databricks
+
+\textbf{Re: AI Forward Deployed Engineer - Netherlands}
+
+Dear Hiring Team,
+
+I am applying for the AI Forward Deployed Engineer role in Amsterdam. As a Senior GenAI Engineer I have spent recent years putting RAG and multi-agent applications into production, on top of a longer background in data science with Spark, pandas and scikit-learn. My work keeps returning to one question: how do we get a promising GenAI idea through evaluation and into real use?
+
+Databricks sits where data and AI meet for a huge number of organisations, and helping customers build first-of-their-kind applications on that platform is the work I want to do next. My fiancée lives in Berlin, and we plan to move to Amsterdam together and settle there long term.
+
+I would bring production rollouts with measurable results. In my current role I built a multi-agent analytics chatbot in LangGraph that runs PySpark analysis and cut manual analysis by 98\%, with evaluation pipelines that reduced human review by 43\%. Before that, I delivered POCs and consulting for 15+ clients, explaining models to technical and business audiences alike.
+
+Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Teaching through that project has made me better at explaining complex ideas simply, which I would bring to your customers. I would welcome a conversation.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

@@ -1,0 +1,69 @@
+{
+ "company": "Anthropic",
+ "role": "Applied AI Architect, Startups",
+ "city": "London",
+ "company_profile": "Anthropic is an AI safety company that builds the Claude models and helps startups build their products on the Claude Developer Platform.",
+ "title": "Applied AI Architect",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "Senior AI Engineer with 8+ years building and deploying LLM-powered applications in production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Designs LangGraph multi-agent and RAG architectures on Claude, with careful context engineering and evaluation frameworks built on LLM evaluators and tracing. Has prototyped 15+ AI applications from client requirements and delivered technical POCs as a hands-on advisor. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance",
+   "new": "Rapidly prototyped 15+ AI applications from client requirements for AIOps and GeoPerformance clients, with 7 moving into production or paid client work."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question",
+   "new": "Built evaluation frameworks and observability for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus",
+   "new": "Deployed a production lab-extraction agent built on Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms as a trusted technical advisor, contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "project": {
+  "name": "LLM Application Evaluation Harness",
+  "bullets": [
+   "Built an evaluation harness that lets product teams compare LLMs on their own tasks, generating test sets from real traces and scoring answers with LLM evaluators and rubric checks.",
+   "Validated evaluator scores against human-labelled samples, then served the harness as a FastAPI service with tracing dashboards, deployed with Docker on Vercel."
+  ],
+  "technologies": [
+   "Python",
+   "Claude",
+   "OpenAI",
+   "LangGraph",
+   "LLM Evals",
+   "FastAPI",
+   "Docker",
+   "Vercel"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Applied AI Architect role on the Startups team. I am a builder first: I design and ship LLM applications in production, with context engineering and evaluation at the centre, and I have spent years turning client requirements into working prototypes. Helping teams build well on a model connects all of it.",
+   "I build on Claude every day, and Anthropic's focus on reliable, steerable AI is the reason I trust it with healthcare work. Helping startups get it right early, when architecture choices stick, feels like the most useful place for my experience. My fiancée lives in Berlin, and we plan to move to London together and settle there long term.",
+   "I would bring production credibility that holds up in a technical deep dive. At United Health Group I deployed a lab-extraction agent on Claude Opus 4.7 handling about 1,800 lab documents, and built evaluation pipelines with LLM evaluators that cut human review by 43%. At Viavi I prototyped 15+ AI applications from client requirements, with 7 reaching production or paid work.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers taught me to start from what users actually need, which is how I would work with founders. I would be glad to talk about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "Solutions Architect",
+  "Claude Developer Platform",
+  "LLM-powered applications",
+  "context engineering",
+  "evaluation frameworks",
+  "technical evaluations",
+  "AI architectures",
+  "Python",
+  "LLM frameworks",
+  "startups",
+  "technical advisor",
+  "integration patterns"
+ ],
+ "experience_variant": "base"
+}

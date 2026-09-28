@@ -1,0 +1,76 @@
+{
+ "company": "Danske Bank",
+ "role": "AI engineer for agentic AI",
+ "city": "Copenhagen",
+ "company_profile": "A Nordic bank whose Personal Customers AI Centre of Excellence builds conversational AI and self-service assistants for its retail customers.",
+ "title": "AI Engineer for Agentic AI",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "Senior AI Engineer with 8+ years building ML and LLM systems in Python and taking them to production across Healthcare, Telecom and AIOps. Designs LangGraph multi-agent workflows with tool orchestration, RAG pipelines over structured and unstructured data, and conversational agents with multi-turn reasoning, backed by LLM evaluation, tracing and failure detection. Ships with FastAPI, Docker, Kubernetes and Databricks, working with stakeholders to turn business problems into measurable results. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent conversational chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated agent evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant in LangGraph",
+   "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph connecting semantic retrieval over internal data with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+   "new": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, with tool integration into LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  }
+ ],
+ "project": {
+  "name": "Self-Service Multi-Agent Assistant",
+  "bullets": [
+   "Built a multi-agent assistant for retail banking self-service in LangGraph, where a router delegates to specialist agents that call tools through MCP and query a RAG knowledge base.",
+   "Evaluated relevance, faithfulness and hallucination with LLM judges on a regression suite, then deployed on AWS Bedrock behind FastAPI in Docker with structured logging and tracing."
+  ],
+  "technologies": [
+   "AWS Bedrock",
+   "LangGraph",
+   "LangChain",
+   "MCP",
+   "OpenAI API",
+   "FastAPI",
+   "Docker",
+   "LLM Evals"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the AI Engineer for Agentic AI role in Danske Bank's Conversational AI unit. As a Senior AI Engineer I build LangGraph multi-agent systems, RAG pipelines and agent evaluation that run in production. What ties it together is making agents that people can trust to finish a task on their own.",
+   "Danske Bank is moving its AI Assistant from answering questions to letting customers resolve things themselves, which is a hard and useful problem in a regulated setting. I have built for healthcare, so I know how much care that takes. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.",
+   "I would bring two things the role leans on. I built a production multi-agent chatbot in LangGraph with multi-turn reasoning that cut manual analysis by 98%. I also built evaluation and observability pipelines with LLM evaluators and tracing that reduced human review by 43% and catch regressions as prompts and models change.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real people who have no patience for a tool that gets things wrong. I would be glad to talk about how I could help the team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "AI agents",
+  "multi-agent",
+  "LangChain",
+  "LangGraph",
+  "AWS Bedrock",
+  "AWS Agent Core",
+  "RAG pipelines",
+  "vector databases",
+  "embedding models",
+  "tool use",
+  "prompt engineering",
+  "LLM evaluation",
+  "faithfulness",
+  "hallucination detection",
+  "MCP",
+  "Docker",
+  "Kubernetes",
+  "CI/CD",
+  "Databricks"
+ ],
+ "experience_variant": "base"
+}

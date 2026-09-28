@@ -1,0 +1,72 @@
+{
+ "company": "Artificialy",
+ "role": "AI Scientist - LLM Systems",
+ "city": "Switzerland",
+ "company_profile": "Artificialy is a Swiss AI company in Lugano and Zurich that designs and delivers transparent, tailored AI solutions, including LLM systems for clients in the financial sector.",
+ "title": "AI Scientist",
+ "current_role_title": "Senior Applied Scientist",
+ "summary": "Applied AI scientist with 8+ years owning ML and LLM systems from early experimentation through evaluation and delivery, with an MSc in Machine Learning and AI. Designs RAG and agentic systems, fine-tunes cross-encoders for retrieval, and builds LLM evaluation frameworks with LLM evaluators, tracing and error analysis. Works in Python, SQL, PyTorch and Scikit-learn on Azure and GCP, presenting results to technical and non-technical stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated LLM evaluation and observability pipelines for Question Answering and Summary Agents with LLM-as-judge evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant",
+   "new": "Designed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance",
+   "new": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients, from early experimentation on client requirements to delivery, with 7 moving into production or paid client work."
+  },
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+   "new": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated into the enterprise LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+  }
+ ],
+ "project": {
+  "name": "Financial Document Question Answering",
+  "bullets": [
+   "Built a retrieval-augmented assistant answering questions over regulatory and financial reports, pairing dense retrieval with a fine-tuned cross-encoder re-ranker and GPT-4 for cited answers.",
+   "Designed the evaluation with a hand-labelled benchmark, LLM-as-judge scoring for faithfulness and error analysis of failed answers, then served the assistant through FastAPI on Azure."
+  ],
+  "technologies": [
+   "Python",
+   "PyTorch",
+   "Scikit-learn",
+   "Hugging Face Transformers",
+   "OpenAI",
+   "LangGraph",
+   "FastAPI",
+   "Azure"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the AI Scientist - LLM Systems role at Artificialy. My work has moved from classical ML to LLM systems, and I now spend most of my time designing them and, just as importantly, deciding how to evaluate them. Owning a solution from the first experiment to delivery is the part I enjoy most.",
+   "Artificialy builds transparent AI shaped to real industry needs, and financial clients, where every answer must be traceable, bring exactly the discipline I want in my work. My fiancée lives in Berlin, and we plan to move to Switzerland together and settle there long term, working onsite with the team in Lugano or Zurich.",
+   "I would bring evaluation methods already tested in production. At United Health Group I built pipelines with LLM evaluators, tracing and failure detection that reduced human-in-the-loop review by 43%. At Viavi I built a RAG assistant in LangGraph that reached a 90% match rate against existing solutions, and I have paired LightGBM with LLM explanations for fraud detection.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers and students has made me careful about checking that an AI answer really helps before it ships. I would be glad to talk about how I could contribute."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "LLM-based systems",
+  "retrieval-augmented generation",
+  "agentic systems",
+  "fine-tuning",
+  "LLM-as-judge",
+  "benchmarks",
+  "error analysis",
+  "evaluation methodology",
+  "Python",
+  "SQL",
+  "PyTorch",
+  "Scikit-learn",
+  "Azure",
+  "stakeholders",
+  "financial sector"
+ ],
+ "experience_variant": "base"
+}

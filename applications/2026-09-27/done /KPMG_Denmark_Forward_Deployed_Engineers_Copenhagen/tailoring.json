@@ -1,0 +1,71 @@
+{
+ "company": "KPMG Denmark",
+ "role": "Forward Deployed Engineers",
+ "city": "Copenhagen",
+ "company_profile": "KPMG NewTech helps large Danish organisations design, build and adopt AI solutions, working with Anthropic, Microsoft and Google Cloud.",
+ "title": "Forward Deployed Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "Senior AI Engineer with 8+ years building AI solutions with clients and taking them to production across Healthcare, Telecom and AIOps. Runs discovery and POCs with client stakeholders, then builds the solution: Claude-based agents with tool orchestration, LangGraph multi-agent and RAG applications, and evaluation with LLM evaluators and tracing. Writes production Python and ships with FastAPI, Docker and MLflow on Azure and GCP, turning business problems into measurable results. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients",
+   "new": "Prototyped 15+ AI applications from AIOps and GeoPerformance client discovery and requirements, taking 7 into production or paid client work."
+  },
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Delivered hands-on technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+   "new": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS systems, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built evaluation frameworks and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  }
+ ],
+ "project": {
+  "name": "Client Workflow Agent Accelerator",
+  "bullets": [
+   "Built a reusable agent template for client process automation, with Claude calling tools through MCP servers, sub-agents for retrieval and drafting, and RAG over client documents.",
+   "Evaluated each deployment against client-approved test cases with LLM evaluators and tracing, then shipped it on Azure and GCP with FastAPI and Docker for client handover."
+  ],
+  "technologies": [
+   "Claude",
+   "MCP",
+   "LangGraph",
+   "Python",
+   "RAG",
+   "FastAPI",
+   "Azure",
+   "GCP"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Forward Deployed Engineer role at KPMG NewTech. Much of my career has been spent where consulting meets code: running POCs with clients, then building the AI solution myself and taking it into production. Today that means agents built on Claude and LangGraph, running in real healthcare workflows.",
+   "Embedding with a client and building, instead of handing over a slide deck, is the work I enjoy most, and your alliance with Anthropic puts Claude at the centre of it. Turning field builds into reusable assets is how I already try to work. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.",
+   "At Viavi I delivered POCs and consulting for 15+ clients and prototyped 15+ AI applications, 7 of which moved into production or paid work. At United Health Group I built a Claude and Amazon Textract extraction agent that handles about 1,800 lab documents. I would bring that same path from first conversation to production to your clients.",
+   "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building it with teachers has taught me to scope with the people who will use the tool, not around them. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "forward deployed",
+  "client-facing delivery",
+  "discovery and scoping",
+  "Python",
+  "large language models",
+  "agents",
+  "MCP",
+  "sub-agents",
+  "evaluation frameworks",
+  "RAG",
+  "Claude Code",
+  "Anthropic",
+  "production",
+  "enterprise systems"
+ ],
+ "experience_variant": "base"
+}

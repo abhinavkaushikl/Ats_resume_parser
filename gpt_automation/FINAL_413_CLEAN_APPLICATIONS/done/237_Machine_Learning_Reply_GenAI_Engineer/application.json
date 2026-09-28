@@ -1,0 +1,17 @@
+{
+  "status": "applied",
+  "reason": "",
+  "questions_unanswered": [],
+  "answers_given": {
+    "Vor- und Nachname": "Abhinav Kaushik",
+    "E-Mail-Adresse": "aabhinav.kaushik@gmail.com",
+    "Telefonnummer": "India +91 8700571859",
+    "Was ist dein bevorzugter Arbeitsort?": "Munich (job.md location)"
+  },
+  "files_uploaded": ["resume.pdf", "cover_letter.pdf"],
+  "url_used": "https://machinelearningreply.recruitee.com/o/genai-engineer-mwd-5",
+  "ats": "recruitee",
+  "confirmation": "Alles erledigt! Ihre Bewerbung wurde eingesendet!",
+  "flags": ["JD asks for good German (profile: A1) - applied anyway on user's OK"],
+  "timestamp": "2026-09-28T10:30"
+}

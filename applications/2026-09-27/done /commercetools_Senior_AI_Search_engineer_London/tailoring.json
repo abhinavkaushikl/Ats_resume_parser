@@ -1,0 +1,71 @@
+{
+ "company": "commercetools",
+ "role": "Senior AI Search engineer",
+ "city": "London",
+ "company_profile": "commercetools provides an API-first, headless commerce platform that enterprise brands use to build online shopping and product discovery.",
+ "title": "Senior AI Search Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "Senior AI Engineer with 8+ years building search, retrieval and LLM systems in production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Works with Apache Solr, Lucene indexing and Elasticsearch, and builds semantic and hybrid retrieval with embeddings, vector databases and fine-tuned cross-encoder re-rankers. Ships REST APIs with FastAPI on Docker and Kubernetes, with automated evaluation to show whether relevance really improved. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder re-ranker on positive and negative pairs over dense vector retrieval of AARP survey data, improving search relevance and retrieval accuracy."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant",
+   "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, combining semantic retrieval with LLM query understanding and reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Implemented a reranker for an existing recommendation system",
+   "new": "Implemented a reranker on top of an existing recommendation system for individual and child plans, improving the relevance of renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "original": "Built real-time log observability for the COVID QRT",
+   "new": "Built real-time log search and observability on Elasticsearch and Kibana for the COVID QRT team, improving traceability efficiency by 80%."
+  }
+ ],
+ "project": {
+  "name": "Hybrid Product Search Engine",
+  "bullets": [
+   "Built hybrid product search for large e-commerce catalogs, combining keyword retrieval in Elasticsearch with embedding-based vector search and a fine-tuned cross-encoder re-ranker for natural-language queries.",
+   "Measured relevance with NDCG and recall on labelled query sets alongside per-query latency, and served it as a multi-tenant REST API with FastAPI on Kubernetes."
+  ],
+  "technologies": [
+   "Elasticsearch",
+   "Apache Solr",
+   "Vector DB",
+   "Embeddings",
+   "Cross-Encoder",
+   "FastAPI",
+   "Kubernetes",
+   "Python"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior AI Search Engineer role on the Discovery team. The part of my work closest to what you need is retrieval: Solr and Lucene indexing, Elasticsearch, and semantic retrieval with cross-encoder re-ranking. What ties it together is helping people, and now agents, find the right thing when they ask in plain language.",
+   "commercetools sits underneath the storefronts of demanding commerce brands, and search is changing fast as shoppers type full sentences and AI agents call the API directly. Making hybrid retrieval fast, affordable and measurably better is exactly the work I want. My fiancée lives in Berlin, and we plan to move to London together and settle there long term.",
+   "I would bring relevance work. At United Health Group I fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval, and at Optum a reranker on a recommendation system lifted conversion by 2%. At Viavi I built a RAG assistant with semantic retrieval that reached a 90% match rate. Scala would be new, and I would pick it up with the team.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It taught me that a good answer only counts if the person asking can find it. I would be glad to talk about how I could help the Discovery team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "search",
+  "Elasticsearch",
+  "Solr",
+  "OpenSearch",
+  "semantic and hybrid retrieval",
+  "vector search",
+  "Learning to rank",
+  "re-ranker",
+  "search relevance",
+  "query understanding",
+  "REST APIs",
+  "Kubernetes",
+  "Scala",
+  "multi-tenant architecture"
+ ],
+ "experience_variant": "base"
+}

@@ -1,0 +1,43 @@
+{
+ "company": "Wise",
+ "city": "Tallinn",
+ "role": "Senior II Software Engineer - Machine Learning Platform",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior II Software Engineer - Machine Learning Platform",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction service with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents, with LLM evaluators, tracing and failure detection that reduced human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Built real-time log observability for the COVID QRT team with Elasticsearch and Kibana, improving traceability efficiency by 80%.",
+   "after": "Built real-time log observability and monitoring dashboards for the COVID QRT team with Elasticsearch and Kibana, improving traceability efficiency by 80%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered automated SQL and PySpark batch pipelines for BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Developed a Python and Flask parser that automated extraction and transformation of raw data into structured datasets, feeding downstream analytics and reporting.",
+   "after": "Developed a Python and Flask parser service that automated extraction and transformation of raw data into structured datasets for downstream analytics and reporting."
+  }
+ ],
+ "apply_url": "https://jobs.smartrecruiters.com/Wise/744000135268605-senior-ii-software-engineer-machine-learning-platform",
+ "listing_url": "https://ee.linkedin.com/jobs/view/senior-ii-software-engineer-machine-learning-platform-at-wise-4424427306",
+ "resume": "Wise_Senior_II_Software_Engineer_Machine_Learning_Platform_Estonia/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Wise_Senior_II_Software_Engineer_Machine_Learning_Platform_Estonia/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Wise_Senior_II_Software_Engineer_Machine_Learning_Platform_Estonia/project_brief.md"
+}

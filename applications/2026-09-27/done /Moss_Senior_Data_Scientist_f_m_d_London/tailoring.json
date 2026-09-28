@@ -1,0 +1,72 @@
+{
+ "company": "Moss",
+ "role": "Senior Data Scientist (f/m/d)",
+ "city": "London",
+ "company_profile": "Moss is a finance AI platform that automates card issuing, invoice management and expenses for Europe's mid-sized businesses.",
+ "title": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years owning applied ML and LLM systems from problem framing to production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds LLM agents with tool use, RAG and structured outputs for document extraction, alongside classical ML for classification and anomaly detection with scikit-learn, XGBoost, LightGBM and PyTorch. Defines evaluation and monitoring, and iterates with stakeholders until models are adopted. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+   "new": "Deployed a production document-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated evaluation and monitoring pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Owned a production SLA breach classification system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive planning for stakeholders."
+  }
+ ],
+ "project": {
+  "name": "Invoice Extraction and Anomaly Pipeline",
+  "bullets": [
+   "Built an invoice processing pipeline that extracts fields with an LLM into Pydantic structured outputs, classifies spend categories with LightGBM and flags unusual payments with Isolation Forest.",
+   "Evaluated extraction against a hand-labelled gold set with automated tests, robustness checks and cost and latency tracking, then served it through FastAPI with MLflow monitoring."
+  ],
+  "technologies": [
+   "Python",
+   "OpenAI",
+   "Pydantic",
+   "LightGBM",
+   "Isolation Forest",
+   "Scikit-learn",
+   "FastAPI",
+   "MLflow"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist role at Moss. My data science work combines hands-on LLM agents, for extraction and question answering, with classical ML for classification and anomaly detection. The thread through all of it is owning a model from framing the problem to seeing stakeholders actually use it.",
+   "Moss takes manual work off finance teams by automating invoices, cards and expenses, and extraction, classification and anomaly detection on that data is exactly where I have built before. Moss started in Berlin, which I noticed, since my fiancée lives in Berlin. We plan to move to London together and settle there long term.",
+   "At United Health Group I built a document-extraction agent with Claude and Amazon Textract that handles about 1,800 lab documents, with evaluation pipelines that cut human review by 43%. At Viavi I shipped anomaly detection across 500+ network devices and an SLA breach prediction system that reduced downtime by 67%. I would bring that end-to-end ownership to your finance models.",
+   "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to test with real users and keep improving until the tool is adopted. I would welcome a conversation about your Data & AI team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "LLM app/agent",
+  "tool use/function calling",
+  "RAG",
+  "structured outputs",
+  "guardrails",
+  "extraction",
+  "classification",
+  "anomaly detection",
+  "scikit-learn",
+  "XGBoost/LightGBM",
+  "PyTorch",
+  "evaluation & monitoring",
+  "gold sets",
+  "production ownership",
+  "Python"
+ ],
+ "experience_variant": "base"
+}

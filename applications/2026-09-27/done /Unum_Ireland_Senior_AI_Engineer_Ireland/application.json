@@ -1,0 +1,13 @@
+{
+ "status": "needs_account",
+ "reason": "Workday (unum.wd1): Create Account form - email filled; user sets password + verify, ticks terms, clicks Create Account (posting closes 2026-09-30)",
+ "questions_unanswered": [],
+ "answers_given": {
+  "Email": "aabhinav.kaushik@gmail.com"
+ },
+ "files_uploaded": [],
+ "url_used": "https://unum.wd1.myworkdayjobs.com/External/job/Carlow-Carlow-IRE/Senior-AI-Engineer_836175",
+ "ats": "workday",
+ "confirmation": "",
+ "timestamp": "2026-09-28T16:15"
+}

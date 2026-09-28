@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 20, "experience": 21, "company_project": 19, "ats_keywords": 11, "credibility": 8},
+ "score": 79,
+ "decision": "maybe",
+ "strengths": ["New Cold-Start Listing Ranker project directly answers Holidu's named cold-start challenge: two-stage LightGBM LTR + SBERT embeddings, NDCG offline replay, simulated A/B, drift/online-offline tracking in MLflow", "Ranking/reranking experience threads through multiple roles (Optum reranker, UHG cross-encoder reranker), not just the new project", "8+ years well above the 3+ year bar, XGBoost/LightGBM on tabular data shown in skills and bullets", "Resume headline and summary are tailored exactly to 'Rankings & Recommendations'"],
+ "gaps": ["No reinforcement-learning-based ranking shown anywhere, which Holidu names as a core part of its existing pipeline", "AWS (SageMaker/Redshift/Athena) and dbt are absent from the skills sections", "Large-scale search-ranking-system ownership (millions of users, multi-stage production pipeline) is not shown at the scale Holidu describes", "Personalization for anonymous/first-time users is not directly addressed"]}

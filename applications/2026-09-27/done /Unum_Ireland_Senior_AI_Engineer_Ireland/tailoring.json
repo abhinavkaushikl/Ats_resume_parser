@@ -1,0 +1,77 @@
+{
+ "company": "Unum Ireland",
+ "role": "Senior AI Engineer",
+ "city": "Carlow",
+ "company_profile": "Unum Ireland runs the Unum Technology Centre in Carlow, building software and AI solutions for Unum, a US provider of income protection insurance.",
+ "title": "Senior AI Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "Senior AI Engineer with 8+ years delivering production AI and ML solutions across Healthcare, Telecom and AIOps. Designs and ships Generative AI applications, including LangGraph multi-agent systems, RAG knowledge assistants and document-extraction agents, backed by LLMOps practice: automated evaluation, tracing, monitoring and versioning. Builds the APIs and services around them with Python, FastAPI, Docker, Kubernetes and Terraform, working closely with business stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant in LangGraph",
+   "new": "Developed an internal RAG-based knowledge assistant for project discovery in LangGraph, combining vector search with LLM reasoning and reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+   "new": "Deployed a production AI agent for lab extraction with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question",
+   "new": "Built automated LLMOps evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent LLM chatbot in LangGraph for AARP medical plans, answering stakeholders' business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed a production SLA breach prediction API with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  }
+ ],
+ "project": {
+  "name": "Insurance Claims Document Assistant",
+  "bullets": [
+   "Built a RAG and agent-based assistant for insurance claim and policy documents, extracting fields with Amazon Textract and answering questions over a vector index through Claude on AWS Bedrock.",
+   "Evaluated answers with LLM evaluators and tracing, versioned prompts and models in MLflow, and deployed the FastAPI service in Docker on Amazon ECS through Terraform and CI/CD."
+  ],
+  "technologies": [
+   "AWS Bedrock",
+   "Amazon Textract",
+   "Amazon ECS",
+   "LangChain",
+   "pgvector",
+   "MLflow",
+   "FastAPI",
+   "Terraform"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior AI Engineer role at the Unum Technology Centre. For the past year I have built production GenAI in healthcare: an extraction agent for lab documents, a multi-agent analytics chatbot, and the evaluation pipelines that keep them honest. The common thread is taking AI from a promising prototype to something a business relies on.",
+   "Income protection is something people depend on at hard moments, and AI that helps that work run accurately is worth building carefully. My reason for Carlow is also personal: my fiancée lives in Berlin, and we plan to move to Carlow together and settle there long term. A centre that offers room to grow in one place suits that plan.",
+   "I would bring hands-on experience with the architectures on your list. In telecom I built a RAG assistant in LangGraph that reached a 90% match rate against existing solutions, and my current evaluation and tracing pipelines cut human review by 43%. AWS Bedrock and SageMaker are where I would ramp up fastest, building on my GCP and Azure work.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers and children has made me careful about reliability and about how people actually use what I ship. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "Generative AI",
+  "LLMs",
+  "RAG",
+  "AI Agents",
+  "vector search",
+  "MLOps",
+  "LLMOps",
+  "AWS Bedrock",
+  "SageMaker",
+  "Python",
+  "PyTorch",
+  "LangChain",
+  "APIs",
+  "Docker",
+  "Kubernetes",
+  "Terraform"
+ ],
+ "experience_variant": "base"
+}

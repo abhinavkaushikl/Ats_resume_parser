@@ -1,0 +1,43 @@
+{
+ "company": "sennder",
+ "city": "Amsterdam",
+ "role": "Machine Learning Engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Machine Learning Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, pairing it with GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Built anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, helping operations teams detect issues earlier and plan proactively."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Improved an existing recommendation system with a reranker for individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Built an XGBoost propensity model predicting personal-loan applications within 7 days of contact, helping business teams target outreach and prioritize customers."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Turned AIOps and GeoPerformance client pain points into 15+ rapid AI prototypes, with 7 moving into production or paid client work."
+  }
+ ],
+ "apply_url": "https://nl.linkedin.com/jobs/view/machine-learning-engineer-at-sennder-4453121690",
+ "listing_url": "https://nl.linkedin.com/jobs/view/machine-learning-engineer-at-sennder-4453121690",
+ "resume": "sennder_Machine_Learning_Engineer_Amsterdam/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "sennder_Machine_Learning_Engineer_Amsterdam/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "sennder_Machine_Learning_Engineer_Amsterdam/project_brief.md"
+}

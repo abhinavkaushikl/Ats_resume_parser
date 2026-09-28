@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Alipes}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Machine Learning Researcher\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Alipes
+
+\textbf{Re: Machine Learning Researcher}
+
+Dear Hiring Team,
+
+I am applying for the Machine Learning Researcher role in your Equities Quant team. My strongest work is predictive modelling on time series, taken all the way from dataset generation to validation and monitoring in live systems. The thread through my career is building models that are judged by real outcomes.
+
+Alipes has spent years turning financial news and market data into automated decisions, and a team where a model can go from idea to deployment in hours is where I learn fastest. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.
+
+At Viavi I developed time-series forecasting of base-station call handover and SMS handover volumes with LSTM and XGBoost, and built a forecasting feature for our AIOps monitoring product that forecasts univariate KPIs across the network. Earlier I used Holt-Winters for demand forecasting across 500+ network devices, and I would bring that same rigour to your benchmarking work.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to validate carefully before anything reaches a real user. I would be glad to discuss the role and the technical test.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

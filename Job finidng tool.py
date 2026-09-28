@@ -74,6 +74,32 @@ CITIES: dict[str, tuple[str, list[str]]] = {
     "Romania":    ("(Romania OR Bucharest OR București)", ["romania", "românia", "bucharest", "bucurești", "bucuresti", "cluj", "iași", "timișoara", "timisoara", "brașov", "brasov"]),
     "Norway":     ("(Norway OR Oslo OR Norge)", ["norway", "norge", "oslo", "bergen", "trondheim", "stavanger"]),
     "Barcelona":  ("Barcelona", ["barcelona", "catalonia", "cataluña", "catalunya"]),
+    # Whole countries. Berlin and Munich above keep their own entries (matched first).
+    "Germany":    ("(Germany OR Hamburg OR Frankfurt OR Stuttgart OR Cologne)",
+                   ["germany", "deutschland", "hamburg", "frankfurt", "cologne", "köln", "koeln", "stuttgart",
+                    "düsseldorf", "dusseldorf", "duesseldorf", "leipzig", "dresden", "hanover", "hannover",
+                    "nuremberg", "nürnberg", "nuernberg", "karlsruhe", "bonn", "heidelberg", "mannheim", "essen",
+                    "dortmund", "bremen", "potsdam", "darmstadt", "aachen", "freiburg", "münster", "muenster",
+                    "mainz", "wiesbaden", "augsburg", "regensburg", "ingolstadt", "erlangen", "bavaria", "bayern",
+                    "hesse", "hessen", "baden-württemberg", "north rhine-westphalia", "nordrhein-westfalen",
+                    "lower saxony", "niedersachsen", "saxony", "sachsen"]),
+    "Switzerland": ("(Switzerland OR Zurich OR Geneva OR Basel)",
+                   ["switzerland", "schweiz", "suisse", "svizzera", "zurich", "zürich", "zuerich", "geneva",
+                    "genève", "geneve", "basel", "lausanne", "lugano", "winterthur", "lucerne", "luzern"]),
+    "Sweden":     ("(Sweden OR Stockholm OR Gothenburg)",
+                   ["sweden", "sverige", "stockholm", "gothenburg", "göteborg", "goteborg", "malmö", "malmo",
+                    "uppsala"]),
+    "Italy":      ("(Italy OR Milan OR Rome OR Turin)",
+                   ["italy", "italia", "milan", "milano", "rome", "turin", "torino", "bologna", "florence",
+                    "firenze", "naples", "napoli", "lombardy", "lombardia", "lazio"]),
+    # Amsterdam above keeps its own entry (matched first); this catches the rest of the Netherlands.
+    "Netherlands": ("(Netherlands OR Rotterdam OR Utrecht OR Eindhoven)",
+                   ["netherlands", "nederland", "holland", "rotterdam", "utrecht", "eindhoven", "the hague",
+                    "den haag", "delft", "leiden", "groningen", "nijmegen", "tilburg", "haarlem"]),
+    "Luxembourg": ("Luxembourg", ["luxembourg", "luxemburg", "lëtzebuerg"]),
+    "Estonia":    ("(Estonia OR Tallinn)", ["estonia", "eesti", "tallinn", "tartu"]),
+    "Ireland":    ("(Ireland OR Dublin)", ["ireland", "éire", "eire", "dublin", "cork", "galway", "limerick"]),
+    "Portugal":   ("(Portugal OR Lisbon OR Porto)", ["portugal", "lisbon", "lisboa", "porto", "braga"]),
 }
 
 # Career-portal sites searched on Google.
@@ -84,7 +110,7 @@ PORTAL_SITES = [
 ]
 # XING is mostly German-speaking; searching it elsewhere wastes API credits.
 # Use --xing-all-cities to search XING for every city.
-XING_CITIES = {"Berlin", "Munich", "Austria"}
+XING_CITIES = {"Berlin", "Munich", "Austria", "Germany", "Switzerland"}
 SOURCE_NAMES = {"xing.com": "XING", "teamtailor.com": "Teamtailor", "myworkdayjobs.com": "Workday",
                 "join.com": "Join"}
 
@@ -521,6 +547,9 @@ LINKEDIN_LOCATIONS = {
     "Paris": "Paris, Île-de-France, France", "Copenhagen": "Copenhagen, Capital Region of Denmark, Denmark",
     "Warsaw": "Warsaw, Mazowieckie, Poland", "Austria": "Austria", "London": "London, England, United Kingdom",
     "Romania": "Romania", "Norway": "Norway", "Barcelona": "Barcelona, Catalonia, Spain",
+    "Germany": "Germany", "Switzerland": "Switzerland", "Sweden": "Sweden", "Italy": "Italy",
+    "Netherlands": "Netherlands", "Luxembourg": "Luxembourg", "Estonia": "Estonia", "Ireland": "Ireland",
+    "Portugal": "Portugal",
 }
 LINKEDIN_PAGES = 4          # 10 jobs per page
 

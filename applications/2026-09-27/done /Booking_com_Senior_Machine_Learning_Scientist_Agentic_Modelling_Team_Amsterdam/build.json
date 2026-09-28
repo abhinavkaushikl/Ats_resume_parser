@@ -1,0 +1,38 @@
+{
+ "company": "Booking.com",
+ "city": "Amsterdam",
+ "role": "Senior Machine Learning Scientist - Agentic Modelling Team",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior Machine Learning Scientist",
+ "current_role_title": "Senior Applied Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Applied Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, combining multi-turn reasoning, PySpark analysis and live charts to answer business questions, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior Applied Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents, designing LLM evaluators, tracing and failure detection that reduced human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+   "after": "Designed an internal retrieval-augmented Project Discovery Assistant in LangGraph, pairing semantic retrieval with LLM reasoning to reach a 90% match rate against existing organizational solutions."
+  },
+  {
+   "role": "Senior Applied Scientist",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy for LLM applications."
+  }
+ ],
+ "apply_url": "https://jobs.booking.com/booking/jobs/29529?lang=en-us&iis=Job+Board&iisn=Linkedin",
+ "listing_url": "https://nl.linkedin.com/jobs/view/senior-machine-learning-scientist-agentic-modelling-team-at-booking-com-4435122980",
+ "resume": "Booking_com_Senior_Machine_Learning_Scientist_Agentic_Modelling_Team_Amsterdam/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Booking_com_Senior_Machine_Learning_Scientist_Agentic_Modelling_Team_Amsterdam/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Booking_com_Senior_Machine_Learning_Scientist_Agentic_Modelling_Team_Amsterdam/project_brief.md"
+}

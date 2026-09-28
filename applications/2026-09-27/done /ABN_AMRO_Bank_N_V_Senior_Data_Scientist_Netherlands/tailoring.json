@@ -1,0 +1,77 @@
+{
+ "company": "ABN AMRO Bank N.V.",
+ "role": "Senior Data Scientist",
+ "city": "Netherlands",
+ "company_profile": "ABN AMRO is a Dutch bank whose Enterprise Enabling Data Domain builds AI and business insight products for teams across the bank.",
+ "title": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years designing machine learning and LLM solutions and bringing them into production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds generative and agentic AI, including LangGraph multi-agent and RAG systems, alongside classical ML on Databricks, Spark and Azure with MLflow-based MLOps and monitoring. Translates business questions into AI opportunities and advises stakeholders on evaluation and model quality. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production agentic AI analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated evaluation and monitoring pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant",
+   "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, combining vector-based semantic retrieval with LLM reasoning and reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system",
+   "new": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, adding GPT-3.5 for real-time root-cause analysis and remediation advice per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Delivered innovation POCs and advisory for 15+ clients across 3+ AIOps and ML platforms, translating business questions into AI solutions and contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "project": {
+  "name": "Enterprise Metadata Knowledge Assistant",
+  "bullets": [
+   "Built an agentic RAG assistant in LangGraph that answered questions over enterprise data catalogues and metadata, combining vector retrieval with a knowledge graph of dataset lineage and ownership.",
+   "Evaluated answers with LLM evaluators on a labelled question set, tracked runs in MLflow on Databricks, and served the assistant through FastAPI with tracing to support model governance reviews."
+  ],
+  "technologies": [
+   "Azure",
+   "Databricks",
+   "Spark",
+   "Python",
+   "LangGraph",
+   "pgvector",
+   "ArangoDB",
+   "MLflow"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist role in the Enterprise Enabling Data Domain at ABN AMRO. Over more than eight years I have moved from classical machine learning in telecom to LLM and agentic systems in healthcare, and the constant has been the same: take a business question and bring a working AI product into production.",
+   "A bank that wants its data scientists to be the experts other departments turn to, and that takes responsible AI seriously, is where I want to do this work, because the people a model affects rarely see it. My fiancée lives in Berlin, and we plan to move to the Netherlands together and settle there long term.",
+   "In my current data science work at United Health Group I built a LangGraph multi-agent analytics chatbot that answers business questions with PySpark analysis and cut manual analysis by 98%, with evaluation pipelines that reduced human review by 43%. Earlier, at Viavi, I shipped a LightGBM SLA breach model with MLflow that reduced downtime by 67%.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users, carefully, and explaining what a model can and cannot do. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "machine learning",
+  "LLMs",
+  "generative AI",
+  "agentic AI",
+  "Azure Machine Learning",
+  "Databricks",
+  "Spark",
+  "Python",
+  "PyTorch",
+  "scikit-learn",
+  "MLOps",
+  "model deployment",
+  "monitoring",
+  "vector-based retrieval",
+  "knowledge graphs",
+  "responsible AI"
+ ],
+ "experience_variant": "base"
+}

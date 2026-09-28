@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 25, "experience": 22, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 88,
+ "decision": "shortlist",
+ "strengths": ["Enterprise Metadata Knowledge Assistant project matches the JD's own examples almost exactly: metadata structures, knowledge graphs, vector retrieval, model governance, on Azure/Databricks/Spark", "Generative and agentic AI (LangGraph, RAG) shown in production roles, not only in skills", "MLOps, deployment and monitoring shown across multiple roles with concrete metrics", "Explicit stakeholder-advisory language (\"translating business questions into AI solutions\") matches the JD's core ask"],
+ "gaps": ["\"Azure Machine Learning\" is never named specifically; resume only lists generic \"Azure\"", "No explicit responsible-AI / fairness / explainability governance framework named", "Big-data ecosystem experience is implied (Spark, Databricks) but not stated as such", "Knowledge-graph experience rests on one project plus ArangoDB in skills, not a sustained track record"]}

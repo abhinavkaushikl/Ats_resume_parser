@@ -1,0 +1,43 @@
+{
+ "company": "Twilio",
+ "city": "Ireland",
+ "role": "Machine Learning Engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Machine Learning Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production ML service for SLA breach prediction with LightGBM, FastAPI and MLflow tracking, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and monitoring pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production LLM-powered multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder NLP model on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine clustering alarms with Sentence-BERT embeddings and DBSCAN, tracing cascading network alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  }
+ ],
+ "apply_url": "https://ie.linkedin.com/jobs/view/machine-learning-engineer-at-twilio-4431752760",
+ "listing_url": "https://ie.linkedin.com/jobs/view/machine-learning-engineer-at-twilio-4431752760",
+ "resume": "Twilio_Machine_Learning_Engineer_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Twilio_Machine_Learning_Engineer_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Twilio_Machine_Learning_Engineer_Ireland/project_brief.md"
+}

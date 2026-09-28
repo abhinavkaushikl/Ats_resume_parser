@@ -1,0 +1,72 @@
+{
+ "company": "Too Good To Go",
+ "role": "Senior Machine Learning Engineer",
+ "city": "Copenhagen",
+ "company_profile": "Too Good To Go runs a marketplace app that connects consumers with food businesses selling surplus food, with the mission of reducing food waste.",
+ "title": "Senior Machine Learning Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "summary": "Senior Machine Learning Engineer with 8+ years building and deploying ML models to production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Works end to end in Python and SQL, from recommendation reranking, prediction and time-series forecasting with PyTorch, Scikit-learn, LightGBM and XGBoost to running experiments and shipping with Docker, Airflow and MLflow on Azure and GCP. Currently building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Implemented a reranker for an existing recommendation system",
+   "new": "Implemented a reranker for an existing recommendation system, personalizing individual and child plan renewal suggestions for each customer and increasing conversion by 2%."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive planning."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan applications",
+   "new": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, so outreach could be targeted and customers prioritized."
+  }
+ ],
+ "project": {
+  "name": "Marketing Personalization Recommender",
+  "bullets": [
+   "Built a personalized recommendation model for marketplace marketing campaigns, ranking items for each user with LightGBM on behavioural features and PyTorch embeddings of users and items.",
+   "Evaluated ranking quality offline, checked uplift with statistical hypothesis tests on A/B experiments, and scheduled training and batch scoring with Metaflow, Airflow and Docker."
+  ],
+  "technologies": [
+   "Python",
+   "SQL",
+   "PyTorch",
+   "Scikit-learn",
+   "LightGBM",
+   "Metaflow",
+   "Airflow",
+   "Docker"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Machine Learning Engineer role in Consumer Growth. I build ML models and take them into production myself, from a recommendation reranker and prediction systems to forecasting in telecom. I care most about the part after the notebook: experiments, deployment, and whether the model changed anything.",
+   "Too Good To Go turns a very concrete problem, food going to waste, into a product people use every day, and better personalization means more meals saved. That is a result I would be glad to work toward. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.",
+   "I would bring end-to-end ownership. I implemented a reranker for a recommendation system that raised plan renewal conversion by 2%, and deployed a LightGBM prediction model with FastAPI and MLflow that reduced downtime by 67%. I am comfortable with Python, SQL, PyTorch and Airflow in cloud setups.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Like your mission, it is about impact people can feel, and it keeps me building carefully. I would welcome a conversation."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "machine learning models",
+  "marketing personalization",
+  "recommendations",
+  "experiments",
+  "statistical models",
+  "Python",
+  "SQL",
+  "PyTorch",
+  "TensorFlow",
+  "Scikit-learn",
+  "Prophet",
+  "DeepAR",
+  "Metaflow",
+  "Airflow",
+  "statistical hypothesis testing"
+ ],
+ "experience_variant": "base"
+}

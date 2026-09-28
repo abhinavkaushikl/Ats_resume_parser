@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 18, "experience": 20, "company_project": 18, "ats_keywords": 11, "credibility": 9},
+ "score": 76,
+ "decision": "maybe",
+ "strengths": ["Match Event Detection Model project matches Veo's football domain and even mirrors the JD's 'data annotation' ask via hand-annotated matches", "Extensive hands-on real-world ML delivery from concept to deployment, well above what a junior-to-mid role requires", "Evaluation-scheme depth (per-event precision/recall, error analysis) matches the JD's evaluation ask directly", "PyTorch used in context (LSTM) rather than only listed as a skill"],
+ "gaps": ["No computer vision (image/video) experience, which is 'advantageous' for this specific posting and central to Veo's actual product", "No edge inference pipeline experience shown, only server-side FastAPI/Docker serving", "Resume headline (Senior Machine Learning Engineer) reads senior for what is posted as a junior-to-mid role, creating a slight seniority mismatch", "Company-fit project uses pre-extracted trajectory data rather than raw video, so it doesn't demonstrate hands-on model training on the kind of data Veo actually works with"]}

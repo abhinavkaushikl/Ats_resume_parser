@@ -1,0 +1,43 @@
+{
+ "company": "PartnerRe",
+ "city": "Ireland",
+ "role": "Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, turning predictions into targeted outreach and customer prioritization."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Developed and deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for an existing health-plan recommendation system serving individual and child plans, optimizing renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.",
+   "after": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc analyses and data-driven reports for multiple stakeholder teams."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered SQL and PySpark pipelines for wrangling large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  }
+ ],
+ "apply_url": "https://ie.linkedin.com/jobs/view/data-scientist-at-partnerre-4449331035",
+ "listing_url": "https://ie.linkedin.com/jobs/view/data-scientist-at-partnerre-4449331035",
+ "resume": "PartnerRe_Data_Scientist_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "PartnerRe_Data_Scientist_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "PartnerRe_Data_Scientist_Ireland/project_brief.md"
+}

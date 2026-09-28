@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Nexthink}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior AI Machine Learning Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Nexthink
+
+\textbf{Re: Senior AI Machine Learning Engineer}
+
+Dear Hiring Team,
+
+I am applying for the Senior AI Machine Learning Engineer role on the AI Agents team. As a Senior Machine Learning Engineer, I design agentic LLM systems and the evaluation and MLOps work that keeps them reliable in production. My background in AIOps, where I spent years reading network logs and alarms, is what ties it all together.
+
+Nexthink helps IT teams find and fix problems before employees notice them, which is very close to the anomaly detection and root-cause work I did for telecom networks. My fiancée lives in Berlin, and we plan to move to Switzerland together and settle in Lausanne for the long term.
+
+I would bring agents that are measured, not guessed at. In my current role I built evaluation pipelines with LLM evaluators and tracing that cut human review by 43\%. At Viavi I shipped an SLA breach prediction system with LightGBM, FastAPI and MLflow that used GPT-3.5 for root-cause analysis and reduced downtime by 67\%.
+
+Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building it has taught me to design for people who have no patience for tools that break. I would be glad to discuss how I could contribute to your AI Agents team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

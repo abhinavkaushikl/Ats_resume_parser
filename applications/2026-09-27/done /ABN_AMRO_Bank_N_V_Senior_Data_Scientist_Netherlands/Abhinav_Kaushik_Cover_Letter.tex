@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - ABN AMRO Bank N.V.}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+ABN AMRO Bank N.V.
+
+\textbf{Re: Senior Data Scientist}
+
+Dear Hiring Team,
+
+I am applying for the Senior Data Scientist role in the Enterprise Enabling Data Domain at ABN AMRO. Over more than eight years I have moved from classical machine learning in telecom to LLM and agentic systems in healthcare, and the constant has been the same: take a business question and bring a working AI product into production.
+
+A bank that wants its data scientists to be the experts other departments turn to, and that takes responsible AI seriously, is where I want to do this work, because the people a model affects rarely see it. My fiancée lives in Berlin, and we plan to move to the Netherlands together and settle there long term.
+
+In my current data science work at United Health Group I built a LangGraph multi-agent analytics chatbot that answers business questions with PySpark analysis and cut manual analysis by 98\%, with evaluation pipelines that reduced human review by 43\%. Earlier, at Viavi, I shipped a LightGBM SLA breach model with MLflow that reduced downtime by 67\%.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users, carefully, and explaining what a model can and cannot do. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

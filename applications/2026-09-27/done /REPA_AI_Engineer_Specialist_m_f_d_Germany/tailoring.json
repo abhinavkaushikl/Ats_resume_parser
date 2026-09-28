@@ -1,0 +1,76 @@
+{
+ "company": "REPA",
+ "role": "AI Engineer / Specialist",
+ "city": "Bergkirchen",
+ "company_profile": "REPA is a European distributor of spare parts for commercial kitchens, catering equipment and refrigeration, serving service technicians and businesses from warehouses across Europe.",
+ "title": "AI Engineer / Specialist",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "AI Engineer with 8+ years taking ML and generative AI solutions from proof of concept to production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds LLM applications, AI agents and RAG solutions in LangGraph, integrated into business processes through APIs and monitored in production. Works in Python and SQL on structured and unstructured data, deploying on Azure with business and IT teams. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus",
+   "new": "Deployed a production AI agent for unstructured lab documents with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant",
+   "new": "Developed an internal RAG solution in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question",
+   "new": "Built automated evaluation and monitoring pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance",
+   "new": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from business requirements, taking 7 from proof of concept into production or paid client work."
+  },
+  {
+   "original": "Wrote complex SQL queries with multi-table joins, CTEs",
+   "new": "Wrote complex SQL queries with multi-table joins, CTEs and window functions to prepare and analyze data, delivering ad-hoc reports and analyses for multiple stakeholder teams."
+  }
+ ],
+ "project": {
+  "name": "Spare Parts Identification Assistant",
+  "bullets": [
+   "Built a RAG assistant that matches free-text descriptions of faulty equipment to the right spare part numbers, combining semantic search over catalogues and manuals with Azure OpenAI reasoning.",
+   "Evaluated part-match accuracy with LLM evaluators on historical service requests, logged prompts and outputs without personal data, and exposed it through a FastAPI service on Azure."
+  ],
+  "technologies": [
+   "Python",
+   "Azure OpenAI",
+   "RAG",
+   "LangGraph",
+   "pgvector",
+   "SQL",
+   "FastAPI",
+   "Docker"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the AI Engineer / Specialist role in your AI & Innovation team. My recent work is what the role describes: finding a business process worth automating, building a generative AI prototype, and taking it into production with monitoring. The thread across it is AI that creates measurable value.",
+   "REPA keeps commercial kitchens running by getting the right part to a technician quickly, and a catalogue that large is exactly where RAG and AI agents earn their keep. My fiancée lives in Berlin, and we plan to move to Bergkirchen together and settle in Bavaria long term.",
+   "At United Health Group I deployed a document-extraction agent with Claude and Amazon Textract that handles about 1,800 lab documents, integrated with the lab system. At Viavi I prototyped 15+ AI applications from client requirements, and 7 reached production or paid client work.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for real users taught me to take privacy and reliability seriously, which fits your GDPR and AI Act focus. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "generative AI applications",
+  "AI agents",
+  "RAG",
+  "LLMs",
+  "prompt engineering",
+  "Python",
+  "SQL",
+  "APIs",
+  "Microsoft Azure",
+  "Azure OpenAI",
+  "proof of concept to production",
+  "Git",
+  "GDPR",
+  "EU AI Act",
+  "AI governance"
+ ],
+ "experience_variant": "base"
+}

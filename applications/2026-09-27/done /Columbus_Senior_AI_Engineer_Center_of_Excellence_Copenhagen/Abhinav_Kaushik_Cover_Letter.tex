@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Columbus}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior AI Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Columbus
+
+\textbf{Re: Senior AI Engineer - Center of Excellence}
+
+Dear Hiring Team,
+
+I am applying for the Senior AI Engineer role in the Group AI engineering team at Columbus. As a Senior AI Engineer I design LangGraph multi-agent systems and RAG applications that run in production, with evaluation and tracing built in from the start. Most of my work comes back to one question: will this agent still behave well when real people rely on it?
+
+Columbus helps companies move their core processes onto new technology, and the Group AI team is now building the agentic systems their people will work with every day. Being part of a small founding team, close to the decisions, is the work I want next. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.
+
+I would bring production experience in agents and retrieval. I built a multi-agent analytics chatbot in LangGraph that cut manual analysis by 98\%, and evaluation and observability pipelines for question-answering and summary agents that reduced human review by 43\%. I have also fine-tuned a cross-encoder to rerank dense search results, which is where much of RAG quality is won.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers who cannot afford a tool that misbehaves has made me careful about how AI reaches real users. I would be glad to talk about what I could build with the team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

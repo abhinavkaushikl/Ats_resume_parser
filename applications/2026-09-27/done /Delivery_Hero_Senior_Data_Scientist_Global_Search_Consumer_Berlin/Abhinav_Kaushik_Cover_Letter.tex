@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Delivery Hero}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Delivery Hero
+
+\textbf{Re: Senior Data Scientist - (Global Search, Consumer)}
+
+Dear Hiring Team,
+
+I am applying for the Senior Data Scientist role in the Search Ranking team. In my data science work I have improved retrieval and ranking more than once, from fine-tuning a cross-encoder reranker to adding a reranker to a live recommendation system. What ties it together is carrying models from offline experiments into production and watching them there.
+
+Search is where a customer decides in seconds whether the app understood them, and ranking across many markets and languages at Delivery Hero is a problem I want to work on. My fiancée lives in Berlin, and I am building my career in the city where we are making our home.
+
+I would bring production discipline and fast experimentation. My reranker on an existing recommendation system lifted conversion by 2\%, and the automated evaluation pipelines I built for our Question Answering and Summary Agents cut human review by 43\%, the kind of setup that makes reviewing many experiment runs manageable.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me focused on what users actually see, not only on offline metrics. I would be glad to talk about the team's ranking roadmap.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

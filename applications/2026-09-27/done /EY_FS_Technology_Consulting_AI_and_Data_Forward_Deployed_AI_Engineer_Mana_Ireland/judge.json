@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 21, "experience": 16, "company_project": 18, "ats_keywords": 12, "credibility": 9},
+ "score": 76,
+ "decision": "maybe",
+ "strengths": ["Multi-Agent Regulatory Document Assistant project (RAG, vector retrieval, supervisor agent, tracing/audit logs) is a strong, believable fit for EY's financial-services GenAI consulting work", "LangGraph multi-agent orchestration, RAG and fine-tuning all shown in production context, matching the JD's core build asks", "Client-facing delivery evidenced through 15+ AIOps/GeoPerformance client prototypes with 7 reaching production", "MVP scoping with stakeholders explicit in summary, matching 'define MVP scope jointly with stakeholders'"],
+ "gaps": ["No hands-on team-lead/architect or coaching/mentoring evidence, which the JD calls out as a 'must qualify' requirement", "Event-driven systems (Kafka/RabbitMQ) absent from the resume entirely", "No AWS experience shown (GCP/Azure only) against a multi-cloud AWS/Azure/GCP requirement", "No AI governance/EU AI Act or financial-services domain experience"]}

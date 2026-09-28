@@ -1,0 +1,44 @@
+{
+ "company": "Women in Data®",
+ "city": "London",
+ "role": "Data Scientist-Manager",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5",
+  "Title 'Data Scientist - Manager' not used (seniority/fit check); kept 'Senior AI Engineer'."
+ ],
+ "headline": "Senior AI Engineer",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive planning for clients."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical POCs and client consulting for 15+ clients across 3+ AIOps and ML platforms, demonstrating product capabilities and contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients in cross-functional teams, turning client challenges into products with 7 moving into production or paid client work."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, monitoring performance and using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production agentic AI analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  }
+ ],
+ "apply_url": "https://jobs.womenindata.co.uk/job/data-scientist-manager-2-pwc/",
+ "listing_url": "https://uk.linkedin.com/jobs/view/data-scientist-manager-at-women-in-data%C2%AE-4468909256",
+ "resume": "Women_in_Data_Data_Scientist_Manager_London/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Women_in_Data_Data_Scientist_Manager_London/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Women_in_Data_Data_Scientist_Manager_London/project_brief.md"
+}

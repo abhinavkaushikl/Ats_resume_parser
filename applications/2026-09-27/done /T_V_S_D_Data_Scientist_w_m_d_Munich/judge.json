@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 25, "experience": 22, "company_project": 19, "ats_keywords": 11, "credibility": 9},
+ "score": 86,
+ "decision": "shortlist",
+ "strengths": ["Test Report Parsing Assistant project matches TÜV SÜD's inspection/testing domain directly: OCR on scanned test/inspection reports, structured extraction, RAG follow-up", "Full LLM lifecycle shown: OCR/document parsing, embeddings, RAG, guardrails, monitoring for quality/latency/cost, deployed on Azure with FastAPI", "8+ years well beyond the 4-year requirement, with independent end-to-end project ownership", "Concrete, consistent production outcomes across roles (retrieval accuracy, downtime reduction, reporting automation)"],
+ "gaps": ["German only at A1 while the ad itself is written in German, implying German matters more operationally for this posting than the English twin", "Azure DevOps not shown, only Azure", "LangGraph/agentic orchestration not featured in this specific project, unlike the resume's other RAG work"]}

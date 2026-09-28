@@ -1,0 +1,38 @@
+{
+ "company": "KONUX",
+ "city": "Munich",
+ "role": "Senior Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Built and tested anomaly detection and demand forecasting models on 15+ time-series KPIs from 500+ telecom network devices with Isolation Forest and Holt-Winters, enabling earlier detection and proactive planning."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed an SLA breach prediction model into a live production system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine clustering network alarm events with Sentence-BERT and DBSCAN, tracing the cascading effect of alarm floods to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Translated client challenges into technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "apply_url": "https://job-boards.greenhouse.io/konux/jobs/7805858003",
+ "listing_url": "https://de.linkedin.com/jobs/view/senior-data-scientist-m-f-x-at-konux-4440253677",
+ "resume": "KONUX_Senior_Data_Scientist_m_f_x_Munich/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "KONUX_Senior_Data_Scientist_m_f_x_Munich/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "KONUX_Senior_Data_Scientist_m_f_x_Munich/project_brief.md"
+}

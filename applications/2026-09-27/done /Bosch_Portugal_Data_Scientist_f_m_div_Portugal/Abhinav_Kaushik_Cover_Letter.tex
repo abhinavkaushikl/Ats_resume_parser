@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Bosch Portugal}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Bosch Portugal
+
+\textbf{Re: Data Scientist}
+
+Dear Hiring Team,
+
+I am applying for the Data Scientist role at Bosch Car Multimedia. Most of my data science work has been on technical systems: anomaly detection, forecasting and failure prediction on telecom network data, with root-cause analysis built into the output. What ties it together is starting from a messy engineering problem and ending with a model that engineers actually use.
+
+Your team applies AI to quality, yield and predictive maintenance in manufacturing, which is the same kind of problem I solved for networks, with physical products at the end of it. That link is why this role stands out to me. My fiancée lives in Berlin, and we plan to move to Braga together and settle there long term.
+
+I would bring a habit of pairing detection with explanation. At Viavi I shipped anomaly detection and Holt-Winters forecasting on 15+ KPIs across 500+ network devices, and an SLA breach prediction system with LightGBM, FastAPI and MLflow that cut downtime by 67\%. Both meant working closely with engineers to decide what a useful alert looks like.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and checking that a tool helps before scaling it. I would welcome a conversation about how I could support your manufacturing teams.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

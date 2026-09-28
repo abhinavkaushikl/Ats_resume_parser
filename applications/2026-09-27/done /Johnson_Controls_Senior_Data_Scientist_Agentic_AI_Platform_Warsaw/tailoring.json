@@ -1,0 +1,72 @@
+{
+ "company": "Johnson Controls",
+ "role": "Senior Data Scientist (Agentic AI Platform)",
+ "city": "Warsaw",
+ "company_profile": "Johnson Controls provides building systems, thermal management and energy efficiency solutions for data centers, healthcare, manufacturing and other industries.",
+ "title": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years taking ML and LLM systems from prototype to production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds LangGraph multi-agent systems with tool orchestration, RAG pipelines with embeddings, pgvector and re-ranking, and LLM evaluation with tracing and observability. Pairs this with classical ML for classification, regression and forecasting, and ships with FastAPI and MLflow on Azure and Databricks. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, orchestrating tool calls to PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built LLM evaluation and observability pipelines for Question Answering and Summary Agents with LLM-as-judge evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense embedding retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed a production SLA breach prediction model with LightGBM, served with FastAPI and tracked in MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  }
+ ],
+ "project": {
+  "name": "Building Maintenance Agent Platform",
+  "bullets": [
+   "Built a multi-agent assistant for building maintenance teams in LangGraph, with a planner calling tools over equipment data and RAG over service manuals using embeddings, pgvector and re-ranking.",
+   "Evaluated task completion and hallucination with LLM-as-judge pipelines and trajectory review, added human-in-the-loop checkpoints, and served it through FastAPI on Azure with MLflow tracking."
+  ],
+  "technologies": [
+   "LangGraph",
+   "Azure OpenAI",
+   "pgvector",
+   "FastAPI",
+   "MLflow",
+   "Databricks",
+   "Docker",
+   "Python"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist role on your Agentic AI Platform. My data science work today is mostly agentic: multi-agent systems in LangGraph, RAG pipelines and the evaluation that keeps them honest, built on a base of classical ML. The thread through it all is getting models out of notebooks and into production.",
+   "Johnson Controls runs the building systems behind data centers, hospitals and factories, and a platform of agents that plan and act across those workflows is a problem I want to work on. It is practical AI with a direct effect on energy use. My fiancée lives in Berlin, and we plan to move to Warsaw together and settle there long term.",
+   "At United Health Group I built a multi-agent analytics chatbot that cut manual analysis by 98%, and evaluation pipelines with LLM evaluators and tracing that reduced human review by 43%. Earlier, at Viavi, I shipped an SLA breach prediction system with LightGBM, FastAPI and MLflow. I would bring both sides, agents and classical ML, to your platform.",
+   "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for real classrooms has taught me to add guardrails early and release with care. I would welcome a conversation about your platform and team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "multi-agent systems",
+  "LangGraph",
+  "tool calling",
+  "RAG",
+  "embeddings",
+  "pgvector",
+  "re-ranking",
+  "LLM-as-judge",
+  "hallucination detection",
+  "guardrails",
+  "Azure",
+  "MLflow",
+  "FastAPI",
+  "Databricks",
+  "classical ML"
+ ],
+ "experience_variant": "base"
+}

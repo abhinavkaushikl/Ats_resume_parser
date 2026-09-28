@@ -1,0 +1,16 @@
+{"criteria": {"tech_stack": 23, "experience": 20, "company_project": 18, "ats_keywords": 9, "credibility": 8},
+ "score": 78,
+ "decision": "maybe",
+ "strengths": [
+   "Long-Form Media Insight Pipeline project matches the JD's core framing almost exactly (chunking, schema-enforced outputs, retries on malformed responses, AWS Bedrock/Lambda/Step Functions/S3/OpenSearch)",
+   "Production LangGraph multi-agent and RAG systems across multiple roles show real autonomous-agent ownership",
+   "Automated evaluation pipelines for non-deterministic QA/summary agents directly answer the JD's evaluation-framework ask",
+   "Fine-tuning, pgvector/vector-DB and GCP/Azure experience cover several Required Skills items"
+ ],
+ "gaps": [
+   "No video or vision-language multi-modal experience shown, only audio transcription, though the JD's Required Skills explicitly call out video understanding",
+   "SageMaker, DynamoDB and ECS/EKS are never mentioned, even though a few of the other AWS services are covered",
+   "No architect-level title or scope anywhere in the resume; headline stays Senior AI Engineer against the JD's AI Solutions Architect title",
+   "AWS Bedrock/Lambda/Step Functions/OpenSearch appear only in one project's tech line, not in the main Skills section",
+   "No A/B testing for AI systems or open-source AI/ML contributions mentioned"
+ ]}

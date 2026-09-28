@@ -9,10 +9,11 @@ not tailored - they go to GPT via `gpt_automation/company_list.txt`; only if I h
 then tailor it if it reaches 50%+. Run this step **before** cleanup (cleanup deletes
 `skipped/`).
 
-1. Claude writer agents (Opus) write the new title, the tweaked summary, one new company-fit project and
-   the cover letter per job (`tailoring.json`).
-2. `build_resume.py` builds the resume and cover letter PDFs from the base resume - experience, skills and
-   Think Tree unchanged, no company name anywhere, no Groq.
+1. Claude writer agents (Opus) write the new title (and the current role's title by JD family), the
+   tweaked summary, JD-blended rewordings of 3-6 experience bullets, one new company-fit project and the
+   cover letter per job (`tailoring.json`).
+2. `build_resume.py` builds the resume and cover letter PDFs from the base resume - skills and Think Tree
+   unchanged, reworded bullets keep their numbers, no company name anywhere, no Groq.
 3. Claude judge agents (Sonnet, a different model from the writer) score each resume once.
 4. `job_report.py` adds the **Resume** and **Judge** columns to JOB_RESULTS.md.
 

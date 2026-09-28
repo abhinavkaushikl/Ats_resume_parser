@@ -1,0 +1,39 @@
+{
+ "company": "Redcare Pharmacy",
+ "city": "Germany",
+ "role": "Senior AI Engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4",
+  "Title 'Senior AI Engineer' not used (seniority/fit check); kept 'Senior AI Engineer'."
+ ],
+ "headline": "Senior AI Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior AI Engineer",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Deployed a production lab-extraction agent in a regulated healthcare setting with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating 800 Jira tickets and PRD tasks."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection for model quality, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent chatbot in LangGraph with business stakeholders for AARP medical plans, answering questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow for versioning and deployment, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  }
+ ],
+ "apply_url": "https://jobs.smartrecruiters.com/Redcare-Pharmacy/744000149802610",
+ "listing_url": "https://jobs.smartrecruiters.com/Redcare-Pharmacy/744000149802610",
+ "resume": "Redcare_Pharmacy_Senior_AI_Engineer_m_f_d_Germany/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Redcare_Pharmacy_Senior_AI_Engineer_m_f_d_Germany/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Redcare_Pharmacy_Senior_AI_Engineer_m_f_d_Germany/project_brief.md"
+}

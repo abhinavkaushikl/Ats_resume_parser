@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Accenture Nordics}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+AI Decision Science Associate\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Accenture Nordics
+
+\textbf{Re: Ind \& Func AI Decision Science New Associate}
+
+Dear Hiring Team,
+
+I am applying to join the AI \& Advanced Analytics team at Halfspace. My work sits where you describe it, between statistics, machine learning and software: more than eight years of building models and, more recently, Generative AI agents that run in production. What ties it together is turning a messy question into a system people can rely on.
+
+Halfspace began by predicting live football matches and now helps companies make better decisions faster, and I like that the edge comes from careful modelling rather than noise. There is a personal reason as well. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.
+
+I would bring both sides your two units need. At United Health Group I built a LangGraph multi-agent analytics chatbot that cut manual analysis by 98\%, with evaluation pipelines that reduced human review by 43\%. At Viavi I shipped anomaly detection and Holt-Winters forecasting across 500+ network devices, the statistical side of the same craft.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and checking that a tool truly helps them. I would be glad to talk about where I could contribute.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

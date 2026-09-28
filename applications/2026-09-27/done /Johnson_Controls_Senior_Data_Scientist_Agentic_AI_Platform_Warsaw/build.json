@@ -1,0 +1,38 @@
+{
+ "company": "Johnson Controls",
+ "city": "Warsaw",
+ "role": "Senior Data Scientist (Agentic AI Platform)",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, orchestrating tool calls to PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built LLM evaluation and observability pipelines for Question Answering and Summary Agents with LLM-as-judge evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense embedding retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction model with LightGBM, served with FastAPI and tracked in MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  }
+ ],
+ "apply_url": "https://pl.linkedin.com/jobs/view/senior-data-scientist-agentic-ai-platform-at-johnson-controls-4456591021",
+ "listing_url": "https://pl.linkedin.com/jobs/view/senior-data-scientist-agentic-ai-platform-at-johnson-controls-4456591021",
+ "resume": "Johnson_Controls_Senior_Data_Scientist_Agentic_AI_Platform_Warsaw/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Johnson_Controls_Senior_Data_Scientist_Agentic_AI_Platform_Warsaw/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Johnson_Controls_Senior_Data_Scientist_Agentic_AI_Platform_Warsaw/project_brief.md"
+}

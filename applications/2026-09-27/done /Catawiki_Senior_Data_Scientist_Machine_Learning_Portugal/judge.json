@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 24, "experience": 20, "company_project": 18, "ats_keywords": 12, "credibility": 9},
+ "score": 83,
+ "decision": "shortlist",
+ "strengths": ["Marketplace Recommendation Ranking project uses Spark/Airflow/Docker/Kubernetes/PyTorch, matching most of the JD's plus-skill list for this specific role", "Guidance to teams explicit ('guiding teams on ML techniques' at Viavi) matches the 'give guidance and unblock others' requirement", "8+ years and senior title comfortably exceed the 5+ year bar", "Production deployments behind FastAPI/MLflow with measurable business outcomes"],
+ "gaps": ["Real-time serving 'on a large scale' for a consumer marketplace remains thin - evidence is telecom-scale, not consumer-scale", "LightFM, BigQuery, Kafka, nginx (JD plus-skills) not present", "No direct online-marketplace/e-commerce work history, only a fit project", "MySQL appears in skills list only, not tied to a marketplace-relevant bullet"]}

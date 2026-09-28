@@ -1,0 +1,43 @@
+{
+ "company": "Devoteam",
+ "city": "Portugal",
+ "role": "Distributed Cloud / Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, framing the business question as a classification problem to enable targeted outreach and customer prioritization."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Built customer dashboards for financial and product insights with QlikSense, SQL and SAP HANA, increasing user engagement by 40%.",
+   "after": "Built customer dashboards with QlikSense, SQL and SAP HANA that turned financial and product data into clear insights for stakeholders, increasing user engagement by 40%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, surfacing trends for earlier detection and proactive planning."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.",
+   "after": "Wrote complex SQL queries with multi-table joins, CTEs and window functions for data exploration, delivering ad-hoc analyses and reports to multiple stakeholder teams."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Put an SLA breach prediction model into production with LightGBM, FastAPI and MLflow, adding GPT-3.5 for real-time root-cause analysis and remediation recommendations, reducing downtime by 67%."
+  }
+ ],
+ "apply_url": "https://jobs.smartrecruiters.com/Devoteam/744000116410988-distributed-cloud-data-scientist",
+ "listing_url": "https://pt.linkedin.com/jobs/view/distributed-cloud-data-scientist-at-devoteam-4330301711",
+ "resume": "Devoteam_Distributed_Cloud_Data_Scientist_Portugal/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Devoteam_Distributed_Cloud_Data_Scientist_Portugal/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Devoteam_Distributed_Cloud_Data_Scientist_Portugal/project_brief.md"
+}

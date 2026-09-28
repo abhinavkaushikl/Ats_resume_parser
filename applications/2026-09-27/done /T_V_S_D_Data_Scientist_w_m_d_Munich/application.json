@@ -1,0 +1,24 @@
+{
+ "status": "applied",
+ "reason": "SuccessFactors apply+register form; Claude filled fields and uploaded both PDFs, user set password/accepted terms and clicked Apply",
+ "questions_unanswered": [],
+ "answers_given": {
+  "Email": "aabhinav.kaushik@gmail.com",
+  "Name": "Abhinav Kaushik",
+  "Phone": "+91 8700571859",
+  "Country": "India",
+  "Notice period": "30 days; available from 15 November 2026",
+  "Salary expectation": "100,000 EUR gross per year (default, none in JD)",
+  "Severe disability/equal status": "Not specified",
+  "On-site Munich 2-3 days": "Yes",
+  "Profile visibility": "Only recruiters from positions I'm applying for"
+ },
+ "files_uploaded": [
+  "Abhinav_Kaushik_Resume.pdf",
+  "Abhinav_Kaushik_Cover_Letter.pdf"
+ ],
+ "url_used": "https://career55.sapsf.eu/careers?company=tvsdag (job 7641)",
+ "ats": "successfactors",
+ "confirmation": "Your application has been submitted. Thank you!",
+ "timestamp": "2026-09-28T15:05"
+}

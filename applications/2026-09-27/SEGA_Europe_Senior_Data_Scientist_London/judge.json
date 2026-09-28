@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 27, "experience": 22, "company_project": 19, "ats_keywords": 14, "credibility": 9},
+ "score": 91,
+ "decision": "shortlist",
+ "strengths": ["New Enterprise Data Agent Platform project hits nearly every named JD technology at once: LangGraph, RAG, vector search, MCP, MLflow, model-serving/AI gateway", "Production LangGraph multi-agent chatbot and lab-extraction agent show exactly the kind of AI-powered enterprise application the role asks for", "Built LLM evaluation, tracing and prompt-standard pipelines matching the JD's AI governance/evaluation ask", "Consistently presents AI prototypes to technical and non-technical stakeholders, matching the 'evangelize AI' responsibility"],
+ "gaps": ["No explicit Databricks Mosaic AI branding, though Vector Search and Model Serving are both shown", "No mention of Semantic Kernel/LlamaIndex specifically (LangGraph is the framework shown, which the JD accepts)", "No named workshop/demo cadence at enterprise scale beyond stakeholder presentations"]}

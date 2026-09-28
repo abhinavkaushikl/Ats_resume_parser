@@ -1,0 +1,16 @@
+{"criteria": {"tech_stack": 25, "experience": 19, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 85,
+ "decision": "shortlist",
+ "strengths": [
+   "LangGraph multi-agent systems, RAG with pgvector/embeddings/re-ranking, and LLM-as-judge evaluation with tracing all shown in production work, matching the JD's required stack closely",
+   "Building Maintenance Agent Platform project is a strong new company-fit match: planner + tool calling, RAG over service manuals, human-in-the-loop checkpoints, FastAPI on Azure with MLflow",
+   "FastAPI, MLflow, Azure and Databricks used together in multiple roles",
+   "Classical ML (LightGBM, Isolation Forest, forecasting) covers the 'complement agentic workflows' requirement"
+ ],
+ "gaps": [
+   "No mention of Model Context Protocol (MCP) or tool/function-calling standards in this resume variant, despite the JD calling it out explicitly",
+   "No explicit mentoring of junior data scientists or leading code/design reviews",
+   "No LoRA/PEFT fine-tuning or Azure AI Foundry experience shown",
+   "AutoGen, CrewAI, Semantic Kernel not mentioned (LangGraph only)",
+   "No guardrails/prompt-injection defense or governance work called out"
+ ]}

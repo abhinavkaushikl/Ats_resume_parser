@@ -1,0 +1,16 @@
+{"criteria": {"tech_stack": 24, "experience": 18, "company_project": 18, "ats_keywords": 13, "credibility": 8},
+ "score": 81,
+ "decision": "shortlist",
+ "strengths": [
+   "New project (Sponsored Product Ranking Model) explicitly targets sponsored product ranking with learning-to-rank, and calls out leakage, position bias and distribution shift - the exact ML failure modes the JD asks about",
+   "Ranking/reranking experience appears twice (Optum data analyst bullet, new project), reinforcing the core ask",
+   "Full ML lifecycle shown: feature engineering (PySpark), training (LightGBM), offline evaluation, deployment (FastAPI), tracking (MLflow)",
+   "Years of client-facing consulting back up the stakeholder-communication requirement"
+ ],
+ "gaps": [
+   "Audience segmentation, campaign optimization and attribution - three of the four named retail-media use cases - are not addressed anywhere",
+   "All retail-media evidence rests on a single new project rather than real production experience in advertising or retail media",
+   "No live advertising system with advertiser-facing or revenue outcomes is shown",
+   "Building a product 'from the ground up' in an ambiguous early-stage environment is not demonstrated beyond POC-style work",
+   "Resume title reads 'Senior ML Engineer' rather than the JD's 'Senior ML Engineer, Retail Media'"
+ ]}

@@ -1,0 +1,23 @@
+{
+  "status": "applied",
+  "reason": "",
+  "questions_unanswered": [],
+  "answers_given": {
+    "Name": "Abhinav Kaushik",
+    "E-Mail": "aabhinav.kaushik@gmail.com",
+    "Telefon": "+91 8700571859",
+    "Bevorzugter Standort": "München (job.md location)",
+    "Verfügbar ab": "15.11.2026 (start-date rule)",
+    "Gehaltsvorstellung": "100000 (no range in JD -> default)",
+    "LinkedIn-Profil": "https://www.linkedin.com/in/abhinav-kaushik10/",
+    "Wie bist du auf uns aufmerksam geworden?": "LinkedIn",
+    "Gültige Arbeitserlaubnis für Deutschland?": "nein",
+    "Deutsch-Niveau": "A1"
+  },
+  "files_uploaded": ["resume.pdf", "cover_letter.pdf (as 'Andere')"],
+  "url_used": "https://alexander-thamm-gmbh.jobs.personio.de/job/1409088/apply?display=de&language=de",
+  "ats": "personio",
+  "confirmation": "VIELEN DANK - Wir haben Ihre Bewerbung erhalten und werden uns in Kürze bei Ihnen melden!",
+  "flags": ["JD: fluent German 'should bring' (not required); profile A1", "form asked for one combined PDF; sent two files"],
+  "timestamp": "2026-09-28T11:55"
+}

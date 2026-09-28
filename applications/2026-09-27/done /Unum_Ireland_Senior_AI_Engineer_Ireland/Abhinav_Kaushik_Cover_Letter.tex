@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Unum Ireland}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior AI Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Unum Ireland
+
+\textbf{Re: Senior AI Engineer}
+
+Dear Hiring Team,
+
+I am applying for the Senior AI Engineer role at the Unum Technology Centre. For the past year I have built production GenAI in healthcare: an extraction agent for lab documents, a multi-agent analytics chatbot, and the evaluation pipelines that keep them honest. The common thread is taking AI from a promising prototype to something a business relies on.
+
+Income protection is something people depend on at hard moments, and AI that helps that work run accurately is worth building carefully. My reason for Carlow is also personal: my fiancée lives in Berlin, and we plan to move to Carlow together and settle there long term. A centre that offers room to grow in one place suits that plan.
+
+I would bring hands-on experience with the architectures on your list. In telecom I built a RAG assistant in LangGraph that reached a 90\% match rate against existing solutions, and my current evaluation and tracing pipelines cut human review by 43\%. AWS Bedrock and SageMaker are where I would ramp up fastest, building on my GCP and Azure work.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers and children has made me careful about reliability and about how people actually use what I ship. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

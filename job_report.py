@@ -50,7 +50,7 @@ def jd_link(j: dict, date: str) -> str:
     app_file = ROOT / "applications" / date / stem / "application.json"   # written by the apply-jobs skill
     if app_file.exists():
         a = json.loads(app_file.read_text(encoding="utf-8"))
-        badge = {"applied": "✅ applied", "needs_review": "🔍 review", "skipped": "⏭ skipped",
+        badge = {"applied": "✅ applied", "needs_review": "🔍 review", "needs_account": "🔑 account", "skipped": "⏭ skipped",
                  "submit_unconfirmed": "❓ unconfirmed"}.get(a.get("status"), a.get("status", ""))
         reason = "" if a.get("status") == "applied" else f": {cell(a.get('reason', ''))[:80]}"
         apply = f"{badge} {a.get('timestamp', '')[:10]}{reason} ({apply})".replace(" (–)", "")

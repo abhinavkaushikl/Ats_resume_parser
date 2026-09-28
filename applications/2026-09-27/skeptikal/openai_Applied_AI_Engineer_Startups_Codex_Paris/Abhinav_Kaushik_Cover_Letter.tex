@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - openai}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Applied AI Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+openai
+
+\textbf{Re: Applied AI Engineer, Startups (Codex)}
+
+Dear Hiring Team,
+
+I am applying for the Applied AI Engineer role on the Startups team in Paris, focused on Codex. My work has mostly been building AI applications fast, close to the people who use them, and then making them reliable enough to last. Taking an idea from a first demo to a workflow a team relies on is what connects my roles.
+
+Codex is changing how startups write and ship software, and Paris has one of Europe's most active founder communities to share that with. My fiancée lives in Berlin, and we plan to move to Paris together and settle there long term, which makes this role a step for both of us.
+
+I would bring a builder's mindset to the team. At Viavi I prototyped 15+ AI applications from client requirements, and 7 of them moved into production or paid client work. At United Health Group I shipped a lab-extraction agent that automated the work behind 800 Jira tickets, backed by evaluation pipelines that tracked its reliability.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about whether a tool really helps the people using it, which is how I would approach every startup workflow. I would welcome the chance to talk.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

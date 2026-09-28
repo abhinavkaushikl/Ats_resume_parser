@@ -1,0 +1,45 @@
+{
+ "company": "openai",
+ "city": "London",
+ "role": "Applied AI Architect, Large Enterprise",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5",
+  "Title 'Applied AI Architect' not used (seniority/fit check); kept 'Senior AI Engineer'.",
+  "The company name 'openai' still appears in the resume - check it."
+ ],
+ "headline": "Senior AI Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Led discovery with AIOps and GeoPerformance clients and prototyped 15+ AI applications from their requirements, with 7 moving into production or paid client work."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Guided 15+ clients through technical POCs, solution evaluations and consulting across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Took a lab-extraction agent with Claude Opus 4.7 and Amazon Textract into production, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Designed automated evaluation and observability for Question Answering and Summary Agents, using LLM evaluators, tracing and failure detection to reduce human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph answering stakeholders' questions on AARP medical plans with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  }
+ ],
+ "apply_url": "https://jobs.ashbyhq.com/openai/557dd2ec-db6c-49b1-a0aa-193007ebd5b6",
+ "listing_url": "https://jobs.ashbyhq.com/openai/557dd2ec-db6c-49b1-a0aa-193007ebd5b6",
+ "resume": "openai_Applied_AI_Architect_Large_Enterprise_London/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "openai_Applied_AI_Architect_Large_Enterprise_London/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "openai_Applied_AI_Architect_Large_Enterprise_London/project_brief.md"
+}

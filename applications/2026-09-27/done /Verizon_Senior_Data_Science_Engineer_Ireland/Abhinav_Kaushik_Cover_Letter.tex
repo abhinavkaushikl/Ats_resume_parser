@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Verizon}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Science Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Verizon
+
+\textbf{Re: Senior Data Science Engineer}
+
+Dear Hiring Team,
+
+I am applying for the Senior Data Science Engineer role in Data Intelligence. Much of my data science career has been spent on telecom networks: predicting SLA breaches, detecting anomalies across device KPIs and tracing alarm floods to their root cause. The thread through it all is finding the signal in large, noisy data and turning it into a decision someone can act on.
+
+Verizon runs networks that people count on every day, and keeping them dependable is work I know from the inside and want to go deeper into. On the personal side, my fiancée lives in Berlin, and we plan to move to Dublin together and settle there long term. A hybrid role in Dublin lets us build that life while I grow here.
+
+I would bring both classical analytics and newer GenAI work. I built an SLA breach prediction system that reduced downtime by 67\%, and anomaly detection and forecasting over 15+ KPIs on 500+ network devices. More recently I built a multi-agent analytics chatbot that cut manual analysis by 98\%, close to your interest in agentic systems.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and checking that the numbers mean what I think they mean. I would be glad to talk about how I could contribute.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

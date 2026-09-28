@@ -1,0 +1,43 @@
+{
+ "company": "NielsenIQ",
+ "city": "Warsaw",
+ "role": "Senior Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Automated BAU medical-audit reporting with scalable SQL and PySpark data processing pipelines on large healthcare datasets, cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Analysed trends and anomalies across 15+ KPIs on 500+ telecom network devices with Holt-Winters demand forecasting and Isolation Forest, enabling earlier detection and proactive network planning."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.",
+   "after": "Analysed and aggregated large data sources with complex SQL using multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses to multiple stakeholder teams."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Developed a Python and Flask parser that automated extraction and transformation of raw data into structured datasets, feeding downstream analytics and reporting.",
+   "after": "Automated data integration with a Python and Flask parser that extracted and transformed raw data into structured datasets, feeding downstream analytics and reporting."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Built customer dashboards for financial and product insights with QlikSense, SQL and SAP HANA, increasing user engagement by 40%.",
+   "after": "Designed clear data visualizations and customer dashboards for financial and product insights with QlikSense, SQL and SAP HANA, increasing user engagement by 40%."
+  }
+ ],
+ "apply_url": "https://jobs.smartrecruiters.com/NielsenIQ/744000149266456",
+ "listing_url": "https://jobs.smartrecruiters.com/NielsenIQ/744000149266456",
+ "resume": "NielsenIQ_Senior_Data_Scientist_Warsaw/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "NielsenIQ_Senior_Data_Scientist_Warsaw/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "NielsenIQ_Senior_Data_Scientist_Warsaw/project_brief.md"
+}

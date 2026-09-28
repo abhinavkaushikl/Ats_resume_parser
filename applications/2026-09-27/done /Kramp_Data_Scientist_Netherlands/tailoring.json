@@ -1,0 +1,75 @@
+{
+ "company": "Kramp",
+ "role": "Data Scientist",
+ "city": "Varsseveld",
+ "company_profile": "Kramp is a European distributor of agricultural parts building an e-commerce and supply chain platform for farmers, dealers and ag-tech customers.",
+ "title": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years translating business problems into data science solutions and data products, from prototype to production across Healthcare, Telecom and AIOps. Builds recommendation, prediction and demand forecasting models with LightGBM, XGBoost and Python, and ships them with Docker, MLflow and CI/CD on GCP and Azure. Works from SQL and PySpark pipelines to deployed endpoints and measures results with stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Implemented a reranker for an existing recommendation system",
+   "new": "Improved an existing recommender by adding a reranking model for individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Built a production SLA breach prediction data product with LightGBM, served through FastAPI and tracked in MLflow, using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, supporting earlier detection and proactive operations planning."
+  },
+  {
+   "original": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting",
+   "new": "Engineered SQL and PySpark data pipelines on large healthcare datasets, turning BAU medical-audit reporting needs into automated workflows and cutting manual reporting effort by 95%."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients",
+   "new": "Translated client business problems into 15+ AI application prototypes for AIOps and GeoPerformance clients, with 7 moving into production or paid client work."
+  }
+ ],
+ "project": {
+  "name": "Spare Parts Demand Forecasting",
+  "bullets": [
+   "Built a demand forecasting engine for spare parts in B2B e-commerce supply chains, combining LightGBM with Holt-Winters baselines on seasonal sales history to guide warehouse stock planning.",
+   "Evaluated forecasts with rolling backtests against naive baselines, orchestrated training in Kubeflow pipelines on Google Cloud, and served predictions from a Docker endpoint built with Cloud Build."
+  ],
+  "technologies": [
+   "Kubeflow",
+   "Cloud Build",
+   "Docker",
+   "Google Cloud",
+   "LightGBM",
+   "Python",
+   "SQL",
+   "FastAPI"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist role at Kramp. Over eight years I have turned business problems into working data products, from a reranker for a health plan recommendation system to LightGBM prediction and demand forecasting for telecom networks. What ties it together is testing ideas against real outcomes before trusting them.",
+   "Kramp keeps farmers and dealers running by getting the right parts to them quickly, and that mix of e-commerce and supply chain is where good models show up in everyday work. There is a personal reason as well: my fiancée lives in Berlin, and we plan to move to Varsseveld together and settle there long term.",
+   "I would like to take a domain such as recommenders or supply chain and own it end to end. At Viavi I built an SLA breach prediction system with LightGBM, FastAPI and MLflow that reduced downtime by 67%, along with demand forecasting across 500+ network devices. Earlier, a reranker I added lifted conversion by 2%.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and checking that each change actually helps them. I would be glad to talk about how I could contribute to your team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "Python",
+  "SQL",
+  "Docker",
+  "Cloud Build",
+  "Kubeflow",
+  "Google Cloud",
+  "LightGBM",
+  "CI/CD",
+  "Git",
+  "Recommenders",
+  "Search",
+  "Supply Chain",
+  "data products",
+  "experimentation"
+ ],
+ "experience_variant": "base"
+}

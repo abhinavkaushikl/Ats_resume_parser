@@ -1,0 +1,34 @@
+{
+ "company": "Anthropic",
+ "city": "Munich",
+ "role": "Applied AI Architect, Partnerships",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 3",
+  "Title 'Applied AI Architect' not used (seniority/fit check); kept 'Senior AI Engineer'."
+ ],
+ "headline": "Senior AI Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered client-facing technical POCs, solution design and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Prototyped 15+ AI applications from client requirements for AIOps and GeoPerformance clients, translating business needs into working solutions, with 7 moving into production or paid client work."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Deployed a production lab-extraction agent on Claude Opus 4.7 and Amazon Textract, integrated with the enterprise LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  }
+ ],
+ "apply_url": "https://job-boards.greenhouse.io/anthropic/jobs/5426933008",
+ "listing_url": "https://job-boards.greenhouse.io/anthropic/jobs/5426933008",
+ "resume": "anthropic_Applied_AI_Architect_Partnerships_Munich/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "anthropic_Applied_AI_Architect_Partnerships_Munich/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "anthropic_Applied_AI_Architect_Partnerships_Munich/project_brief.md"
+}

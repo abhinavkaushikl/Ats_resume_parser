@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - openai}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior AI Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+openai
+
+\textbf{Re: Applied AI Architect, Large Enterprise}
+
+Dear Hiring Team,
+
+I am applying for the Applied AI Architect role on the Large Enterprise team. For the past few years my work has sat between a client's problem and a working AI system: finding the use case worth building, prototyping it, and staying with it until it runs in production. Getting from a promising demo to real adoption is the thread through my career.
+
+OpenAI's models are now part of how large organizations plan their work, and helping those teams move from evaluation to durable value is where I want to put my experience. My fiancée lives in Berlin, and we plan to move to London together and settle there long term, building our life around this next step.
+
+I would bring hands-on credibility to technical conversations. At Viavi I prototyped 15+ AI applications from client requirements, and 7 of them moved into production or paid client work. At United Health Group I took a lab-extraction agent into production, handling about 1,800 lab documents, with evaluation and tracing built in from the start.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that AI only counts when real people adopt it and it helps them. I would be glad to talk about how I could support your enterprise customers.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

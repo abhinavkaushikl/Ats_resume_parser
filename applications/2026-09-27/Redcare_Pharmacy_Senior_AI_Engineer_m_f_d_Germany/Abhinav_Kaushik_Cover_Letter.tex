@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Redcare Pharmacy}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior AI Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Redcare Pharmacy
+
+\textbf{Re: Senior AI Engineer}
+
+Dear Hiring Team,
+
+I am applying for the Senior AI Engineer role. For the past years I have built ML and generative AI systems in healthcare and telecom and owned them in production, from data pipelines to evaluation and monitoring. The common thread is AI that stays reliable once real people depend on it.
+
+Redcare Pharmacy puts AI close to patients and their medicines, where getting things right matters more than getting them fast. That is the kind of responsibility I want in my next role. My fiancée lives in Berlin, and we plan to build our life in Germany together and settle there long term.
+
+At United Health Group I deployed a lab-extraction agent with Claude and Amazon Textract that handles about 1,800 lab documents, and built evaluation and tracing pipelines that cut human review by 43\%. I would bring the same care for governance and model quality to your roadmap as technical owner.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for vulnerable users taught me to design carefully and test with the people who use the tool. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

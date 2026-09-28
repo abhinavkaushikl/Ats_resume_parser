@@ -1,0 +1,73 @@
+{
+  "company": "Preply",
+  "role": "Senior Applied AI Scientist (AI Learning)",
+  "city": "Barcelona",
+  "company_profile": "Preply is an online language learning marketplace connecting learners with tutors, using AI to personalise learning paths and support practice between lessons.",
+  "title": "Senior Applied AI Scientist",
+  "current_role_title": "Senior Applied Scientist",
+  "summary": "Senior Applied Scientist with 8+ years applying deep learning, NLP and LLMs to production problems across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Fine-tunes transformer models such as cross-encoders, builds RAG and conversational multi-agent applications, and designs automated evaluation to measure quality. Takes work from research and prototyping to deployment on GCP and Azure, collaborating closely with engineers and product stakeholders. Currently building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+      "new": "Engineered a production conversational multi-agent chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+    },
+    {
+      "original": "Built automated evaluation and observability pipelines for Question",
+      "new": "Designed automated evaluation for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, measuring output quality and reducing human-in-the-loop review by 43%."
+    },
+    {
+      "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+      "new": "Fine-tuned a cross-encoder NLP model on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy."
+    },
+    {
+      "original": "Developed an internal RAG-based Project Discovery Assistant in LangGraph",
+      "new": "Developed a RAG-based Project Discovery Assistant in LangGraph, combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+    },
+    {
+      "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+      "new": "Applied Sentence-BERT embeddings and DBSCAN clustering in an event-correlation engine tracing network alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+    }
+  ],
+  "project": {
+    "name": "Conversational Language Practice Tutor",
+    "bullets": [
+      "Built a conversational practice tutor for language learners that analyses lesson transcripts with a fine-tuned open model and generates personalised exercises and feedback using RAG.",
+      "Evaluated feedback quality with LLM evaluators and learner-level progress metrics against a baseline, and deployed the PyTorch model behind a FastAPI service on Google Cloud."
+    ],
+    "technologies": [
+      "PyTorch",
+      "Hugging Face Transformers",
+      "Llama",
+      "RAG",
+      "NLP",
+      "FastAPI",
+      "GCP"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "paragraphs": [
+      "I am applying for the Senior Applied AI Scientist role on the AI Learning team. My work as a Senior Applied Scientist sits between research and production: fine-tuning transformer models, building RAG and conversational agents, and measuring whether they actually help. Learning has become the thread that ties that work to my life outside the office.",
+      "Preply's approach, where AI supports the tutor rather than replacing them, is the kind of educational AI I believe in, and personalised practice between lessons is a problem I have thought about for a long time. My fiancée lives in Berlin, and we plan to move to Barcelona together and settle there long term.",
+      "I would bring NLP work that has reached real users. I fine-tuned a cross-encoder to re-rank dense retrieval over survey data, and built a multi-turn conversational chatbot in LangGraph that cut manual analysis by 98%. I also designed LLM evaluators and tracing that reduced human review by 43%, which is how I would approach measuring learner progress.",
+      "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Watching how those students learn has shaped how I think about personalisation and patience in AI tools. I would love to talk about what I could bring to your team."
+    ],
+    "closing": "Sincerely,"
+  },
+  "jd_keywords": [
+    "deep learning",
+    "NLP",
+    "LLMs",
+    "multimodal AI",
+    "PyTorch",
+    "TensorFlow",
+    "AWS",
+    "Google Cloud",
+    "research to production",
+    "personalized learning",
+    "AI tutors",
+    "RAG",
+    "mentorship"
+  ],
+  "experience_variant": "base"
+}

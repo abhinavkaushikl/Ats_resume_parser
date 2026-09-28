@@ -1,0 +1,72 @@
+{
+  "company": "Delivery Hero",
+  "role": "Senior Data Scientist - (Global Search, Consumer)",
+  "city": "Berlin",
+  "company_profile": "Delivery Hero is a Berlin-based local delivery platform operating in around 65 countries, connecting customers with restaurants and shops.",
+  "title": "Senior Data Scientist",
+  "current_role_title": "Senior Data Scientist",
+  "summary": "Senior Data Scientist with 8+ years applying ML in production across Healthcare, Telecom and AIOps, from offline experimentation and evaluation to deployment and monitoring. Improves retrieval and ranking quality with a fine-tuned cross-encoder reranker, embedding-based dense retrieval and recommendation re-ranking, working in PyTorch, scikit-learn, PySpark and SQL. Also builds LLM agents and automated evaluation pipelines, and explains model trade-offs clearly to non-technical stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+      "new": "Fine-tuned a cross-encoder on pairwise positive and negative examples to re-rank dense embedding retrieval over AARP survey data, improving retrieval accuracy."
+    },
+    {
+      "original": "Implemented a reranker for an existing recommendation system",
+      "new": "Implemented a reranker for a live recommendation system serving individual and child plan recommendations, improving renewal suggestions and increasing conversion by 2%."
+    },
+    {
+      "original": "Built automated evaluation and observability pipelines for Question Answering",
+      "new": "Built automated evaluation and monitoring pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+    },
+    {
+      "original": "Deployed a production SLA breach prediction system",
+      "new": "Deployed and monitored a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+    }
+  ],
+  "project": {
+    "name": "Neural Search Ranking Model",
+    "bullets": [
+      "Built a two-tower retrieval and deep ranking model in PyTorch for product search, learning query and item embeddings and re-ranking candidates with pairwise learning-to-rank.",
+      "Evaluated rankers offline with NDCG and MRR against a gradient-boosted baseline, tracked experiments in MLflow, and served the model through FastAPI with latency and drift monitoring."
+    ],
+    "technologies": [
+      "PyTorch",
+      "Python",
+      "PySpark",
+      "SQL",
+      "LightGBM",
+      "MLflow",
+      "FastAPI",
+      "Vector DB"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "closing": "Sincerely,",
+    "paragraphs": [
+      "I am applying for the Senior Data Scientist role in the Search Ranking team. In my data science work I have improved retrieval and ranking more than once, from fine-tuning a cross-encoder reranker to adding a reranker to a live recommendation system. What ties it together is carrying models from offline experiments into production and watching them there.",
+      "Search is where a customer decides in seconds whether the app understood them, and ranking across many markets and languages at Delivery Hero is a problem I want to work on. My fiancée lives in Berlin, and I am building my career in the city where we are making our home.",
+      "I would bring production discipline and fast experimentation. My reranker on an existing recommendation system lifted conversion by 2%, and the automated evaluation pipelines I built for our Question Answering and Summary Agents cut human review by 43%, the kind of setup that makes reviewing many experiment runs manageable.",
+      "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me focused on what users actually see, not only on offline metrics. I would be glad to talk about the team's ranking roadmap."
+    ]
+  },
+  "jd_keywords": [
+    "search ranking",
+    "Learning to Rank",
+    "Two-Tower",
+    "DCN-V2",
+    "MMoE",
+    "embedding-based retrieval",
+    "NDCG",
+    "MRR",
+    "A/B experimentation",
+    "PyTorch",
+    "scikit-learn",
+    "PySpark",
+    "SQL",
+    "LLM coding agents",
+    "drift detection"
+  ],
+  "experience_variant": "base"
+}

@@ -1,0 +1,16 @@
+{"criteria": {"tech_stack": 21, "experience": 15, "company_project": 16, "ats_keywords": 8, "credibility": 8},
+ "score": 68,
+ "decision": "maybe",
+ "strengths": [
+   "Python, Pandas, PySpark and Azure all shown, matching the required tooling",
+   "Retail Sales Trend Estimation project (reweighting samples, imputing missing outlets, bias diagnostics) is a well-targeted analog to NielsenIQ's sampling/bias-reduction/indirect-estimation work",
+   "Unit-tested pipelines and CLI packaging in Docker match the 'unittest' and 'Docker/Linux command line' asks",
+   "8+ years well exceeds the 3-year requirement"
+ ],
+ "gaps": [
+   "No formal multivariate statistics (parametric/non-parametric) or optimization methodology demonstrated",
+   "'Indirect estimation' and 'generalisation' are not used or evidenced beyond one tailored project — this is a single project standing in for what the JD frames as a core, ongoing methodology focus",
+   "Career background is telecom/healthcare data science, not retail measurement or survey methodology",
+   "Education is MSc Machine Learning and AI, not Statistics/Mathematics/Social Science as the JD's primary ask lists",
+   "Deep learning and GenAI (preferred) are present only in the general skills list, not demonstrated in the tailored project itself"
+ ]}

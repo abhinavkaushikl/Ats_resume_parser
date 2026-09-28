@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 19, "experience": 19, "company_project": 19, "ats_keywords": 13, "credibility": 8},
+ "score": 78,
+ "decision": "maybe",
+ "strengths": ["Search-to-Booking Conversion Model project is essentially the JD's headline Look-to-Book problem: LightGBM on price/availability/session features, evaluated with ranking metrics and a simulated A/B test, scheduled in Airflow and served via FastAPI", "Gradient boosting (LightGBM/XGBoost), classification and regression shown in production context across multiple roles", "SQL and PySpark pipeline work shown at scale (500+ devices, large healthcare datasets)", "Business-problem framing explicit, matching the JD's 'translate business objectives into ML tasks' ask"],
+ "gaps": ["Entity matching and RecSys/ranking depth (KNN, FAISS, Learning-to-Rank, pointwise/pairwise/listwise) - an explicit JD must-have - is entirely absent", "No terabyte-scale big-data evidence specific to travel/B2B pricing", "No prior TravelTech, e-commerce or B2B API domain experience outside the one fit project", "Embedding-based matching mentioned only briefly, not framed as entity matching"]}

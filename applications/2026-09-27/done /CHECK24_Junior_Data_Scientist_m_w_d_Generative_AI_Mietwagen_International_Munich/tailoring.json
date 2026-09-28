@@ -1,0 +1,71 @@
+{
+  "company": "CHECK24",
+  "role": "(Junior) Data Scientist - Generative AI Mietwagen International",
+  "city": "Munich",
+  "company_profile": "CHECK24 is a German comparison portal whose car rental comparison helps customers find and book rental cars, now expanding to international markets.",
+  "title": "Data Scientist - Generative AI",
+  "current_role_title": "Senior Data Scientist",
+  "summary": "Senior Data Scientist with 8+ years building ML and LLM applications from prototype to stable production across Healthcare, Telecom and AIOps. Develops LLM applications that connect external data, APIs and databases, including RAG assistants, document-extraction agents and multi-turn analytics chatbots, and evaluates multi-step flows systematically with LLM evaluators, tracing and monitoring. Writes clean Python, works with Docker, Azure and GCP, and partners closely with product and IT stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+      "new": "Developed a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+    },
+    {
+      "original": "Built automated evaluation and observability pipelines for Question Answering",
+      "new": "Built repeatable evaluation and monitoring pipelines for Question Answering and Summary Agents, measuring answer quality with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+    },
+    {
+      "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+      "new": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with the existing LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+    },
+    {
+      "original": "Developed an internal RAG-based Project Discovery Assistant",
+      "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, grounding LLM reasoning in semantic retrieval and reaching a 90% match rate against existing organizational solutions."
+    }
+  ],
+  "project": {
+    "name": "Multilingual Customer Request Assistant",
+    "bullets": [
+      "Built an LLM assistant that classifies and answers multilingual customer requests and feedback for a travel booking service, using context engineering and RAG over booking policies.",
+      "Evaluated answer quality, latency and cost per language with repeatable LLM evaluator tests and tracing, and served it through FastAPI in Docker on Azure with monitoring."
+    ],
+    "technologies": [
+      "Python",
+      "OpenAI",
+      "LangGraph",
+      "RAG",
+      "FastAPI",
+      "Docker",
+      "Azure",
+      "LLM Evals"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "closing": "Sincerely,",
+    "paragraphs": [
+      "I am applying for the Data Scientist - Generative AI role on your international car rental team. In my current data science work I build LLM applications that people rely on, from a multi-turn analytics chatbot to a document-extraction agent, each with its own evaluation. What connects it all is moving an idea from first test to stable operation.",
+      "Taking a comparison product into new languages and markets is a hard and interesting LLM problem, because answers have to stay reliable in every market. My fiancée lives in Berlin, and we plan to move to Munich together and settle there long term, and I am learning German to make it home.",
+      "I would bring an evaluation-first way of working. The evaluation and monitoring pipelines I built with LLM evaluators and tracing cut human review of our Question Answering and Summary Agents by 43%, and our analytics chatbot cut manual analysis by 98% because it worked on real data through PySpark rather than guessing.",
+      "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that an LLM feature only matters if the person on the other side can trust it. I would be glad to talk about the role."
+    ]
+  },
+  "jd_keywords": [
+    "Generative AI",
+    "LLMs",
+    "context engineering",
+    "integration of external data and systems",
+    "evaluation of multi-step flows",
+    "Python",
+    "Git",
+    "APIs",
+    "Docker",
+    "Azure",
+    "AWS",
+    "databases",
+    "monitoring",
+    "answer quality"
+  ],
+  "experience_variant": "base"
+}

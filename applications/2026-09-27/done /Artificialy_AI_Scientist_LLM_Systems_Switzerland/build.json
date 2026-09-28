@@ -1,0 +1,38 @@
+{
+ "company": "Artificialy",
+ "city": "Switzerland",
+ "role": "AI Scientist - LLM Systems",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "AI Scientist",
+ "current_role_title": "Senior Applied Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Applied Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated LLM evaluation and observability pipelines for Question Answering and Summary Agents with LLM-as-judge evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+   "after": "Designed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients, from early experimentation on client requirements to delivery, with 7 moving into production or paid client work."
+  },
+  {
+   "role": "Senior Applied Scientist",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated into the enterprise LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+  }
+ ],
+ "apply_url": "https://ch.linkedin.com/jobs/view/ai-scientist-llm-systems-at-artificialy-4468574508",
+ "listing_url": "https://ch.linkedin.com/jobs/view/ai-scientist-llm-systems-at-artificialy-4468574508",
+ "resume": "Artificialy_AI_Scientist_LLM_Systems_Switzerland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Artificialy_AI_Scientist_LLM_Systems_Switzerland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Artificialy_AI_Scientist_LLM_Systems_Switzerland/project_brief.md"
+}

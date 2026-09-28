@@ -1,0 +1,73 @@
+{
+ "company": "Redcare Pharmacy",
+ "role": "Senior AI Engineer",
+ "city": "Germany",
+ "company_profile": "Redcare Pharmacy is a European online pharmacy selling prescription and over-the-counter medicines and health products to consumers across several countries.",
+ "title": "Senior AI Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "Senior AI Engineer with 8+ years building production-grade ML and Generative AI systems across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Owns the full AI lifecycle, from SQL and PySpark pipelines to evaluation, deployment with FastAPI, Docker and MLflow, and monitoring with tracing and observability. Ships LangGraph multi-agent and RAG applications in regulated healthcare settings, working closely with product, data and business stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus",
+   "new": "Deployed a production lab-extraction agent in a regulated healthcare setting with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question",
+   "new": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection for model quality, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent chatbot in LangGraph with business stakeholders for AARP medical plans, answering questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow for versioning and deployment, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  }
+ ],
+ "project": {
+  "name": "Medication Information Assistant",
+  "bullets": [
+   "Built a RAG assistant for online pharmacy customer questions on medicine use and interactions, grounding Claude answers in product leaflets with LangGraph and guardrails that escalate uncertain cases.",
+   "Evaluated answers with LLM evaluators against pharmacist-reviewed question sets, versioned prompts and runs in MLflow, and served it through FastAPI in Docker with tracing."
+  ],
+  "technologies": [
+   "Python",
+   "LangGraph",
+   "Claude",
+   "RAG",
+   "pgvector",
+   "MLflow",
+   "FastAPI",
+   "Docker"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior AI Engineer role. For the past years I have built ML and generative AI systems in healthcare and telecom and owned them in production, from data pipelines to evaluation and monitoring. The common thread is AI that stays reliable once real people depend on it.",
+   "Redcare Pharmacy puts AI close to patients and their medicines, where getting things right matters more than getting them fast. That is the kind of responsibility I want in my next role. My fiancée lives in Berlin, and we plan to build our life in Germany together and settle there long term.",
+   "At United Health Group I deployed a lab-extraction agent with Claude and Amazon Textract that handles about 1,800 lab documents, and built evaluation and tracing pipelines that cut human review by 43%. I would bring the same care for governance and model quality to your roadmap as technical owner.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for vulnerable users taught me to design carefully and test with the people who use the tool. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "production-grade Machine Learning",
+  "Generative AI",
+  "end-to-end pipelines",
+  "training",
+  "evaluation",
+  "deployment",
+  "monitoring",
+  "MLOps",
+  "AI Technical Owner",
+  "technical roadmap",
+  "governance",
+  "model quality",
+  "versioning",
+  "observability",
+  "regulated environment",
+  "digital healthcare"
+ ],
+ "experience_variant": "base"
+}

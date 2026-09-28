@@ -1,0 +1,21 @@
+{
+ "status": "applied",
+ "reason": "SuccessFactors (existing EY account signed in by user); profile updated from resume.txt, submitted once",
+ "questions_unanswered": [],
+ "answers_given": {
+  "Work experience": "row1 -> United Health Group / Senior GenAI Engineer / 11/01/2025 present; added Viavi Senior ML Engineer 09/2024-11/2025; row Data Analyst company fixed to Optum",
+  "Education": "Jamia Hamdard dates fixed to 08/2013-08/2017; LJMU name spelling fixed",
+  "Fully eligible to work in Ireland": "No",
+  "Notice period / availability": "30 days notice; available to start from 15 November 2026",
+  "Current annual salary": "50,000 GBP (profile current_salary)",
+  "Require sponsorship": "Yes"
+ },
+ "files_uploaded": [
+  "Abhinav_Kaushik_Resume.pdf",
+  "Abhinav_Kaushik_Cover_Letter.pdf"
+ ],
+ "url_used": "https://career5.successfactors.eu/career?company=EYHRISPRD1&career_ns=job_listing&career_job_req_id=1726066",
+ "ats": "successfactors",
+ "confirmation": "You have successfully submitted your application to this role.",
+ "timestamp": "2026-09-28T14:10"
+}

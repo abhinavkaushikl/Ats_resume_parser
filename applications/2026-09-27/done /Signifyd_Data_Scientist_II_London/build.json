@@ -1,0 +1,38 @@
+{
+ "company": "Signifyd",
+ "city": "London",
+ "role": "Data Scientist II",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Data Scientist II",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, owning it end to end and using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, catching unusual behaviour earlier and supporting proactive network planning."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, giving the business a score to prioritize customers and target outreach."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered SQL and PySpark data pipelines on large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  }
+ ],
+ "apply_url": "https://job-boards.greenhouse.io/signifyd95/jobs/8103276",
+ "listing_url": "https://uk.linkedin.com/jobs/view/data-scientist-ii-at-signifyd-4462043213",
+ "resume": "Signifyd_Data_Scientist_II_London/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Signifyd_Data_Scientist_II_London/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Signifyd_Data_Scientist_II_London/project_brief.md"
+}

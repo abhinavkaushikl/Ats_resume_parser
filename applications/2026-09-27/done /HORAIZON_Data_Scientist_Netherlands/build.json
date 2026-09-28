@@ -1,0 +1,43 @@
+{
+ "company": "HORAIZON",
+ "city": "Delft",
+ "role": "Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Data Scientist",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, turning about 1,800 lab documents into structured data and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Developed a Python and Flask parser that automated extraction and transformation of raw data into structured datasets, feeding downstream analytics and reporting.",
+   "after": "Developed a Python and Flask backend parser that automated extraction and transformation of raw data into structured datasets for downstream analytics and reporting."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Built SQL and PySpark data pipelines on large healthcare datasets that automated BAU medical-audit reporting, cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction system with LightGBM, served as a REST API with FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans that explains data through PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  }
+ ],
+ "apply_url": "https://nl.linkedin.com/jobs/view/data-scientist-at-horaizon-4472043744",
+ "listing_url": "https://nl.linkedin.com/jobs/view/data-scientist-at-horaizon-4472043744",
+ "resume": "HORAIZON_Data_Scientist_Netherlands/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "HORAIZON_Data_Scientist_Netherlands/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "HORAIZON_Data_Scientist_Netherlands/project_brief.md"
+}

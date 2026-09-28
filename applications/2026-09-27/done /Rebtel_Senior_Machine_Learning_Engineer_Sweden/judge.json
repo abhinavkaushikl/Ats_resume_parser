@@ -1,0 +1,16 @@
+{"criteria": {"tech_stack": 25, "experience": 21, "company_project": 18, "ats_keywords": 12, "credibility": 8},
+ "score": 84,
+ "decision": "shortlist",
+ "strengths": [
+   "Company-fit project (Prepaid Churn and Fraud Scoring) matches Rebtel's fraud, top-up and churn asks almost line for line, using LightGBM, Isolation Forest, MLflow, Airflow, FastAPI and Kubernetes",
+   "Telecom domain background across two roles directly matches the JD's stated 'plus'",
+   "LangGraph RAG and multi-agent systems used by real internal/business teams, backed by evaluation harnesses and observability",
+   "8+ years of hands-on production ML ownership (SLA prediction, anomaly detection, forecasting) well above the 5+ year bar"
+ ],
+ "gaps": [
+   "No pricing or segmentation work shown - two of the four classical-ML tracks are covered (forecasting, churn/fraud), pricing and segmentation are not",
+   "Cloud platform (AWS/GCP/Azure) only appears in the skills list, never exercised in a bullet",
+   "Vector DB/embeddings usage described briefly ('embeddings-based semantic retrieval') but not elaborated with a named vector store",
+   "Stakeholder scoping process for classical ML models is mentioned only in the summary, not shown concretely in a bullet",
+   "No mention of feature stores, which the JD calls a plus"
+ ]}

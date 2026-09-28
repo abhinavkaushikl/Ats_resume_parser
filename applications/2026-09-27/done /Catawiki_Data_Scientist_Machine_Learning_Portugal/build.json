@@ -1,0 +1,38 @@
+{
+ "company": "Catawiki",
+ "city": "Lisbon",
+ "role": "Data Scientist - Machine Learning",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Data Scientist - Machine Learning",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, improving the renewal suggestions customers saw and increasing conversion by 2%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, pairing each prediction with real-time GPT-3.5 root-cause analysis and remediation recommendations, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph that answered stakeholders' business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, turning predictions into targeted outreach and customer prioritization for the business."
+  }
+ ],
+ "apply_url": "https://pt.linkedin.com/jobs/view/data-scientist-machine-learning-at-catawiki-4442867866",
+ "listing_url": "https://pt.linkedin.com/jobs/view/data-scientist-machine-learning-at-catawiki-4442867866",
+ "resume": "Catawiki_Data_Scientist_Machine_Learning_Portugal/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Catawiki_Data_Scientist_Machine_Learning_Portugal/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Catawiki_Data_Scientist_Machine_Learning_Portugal/project_brief.md"
+}

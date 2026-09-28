@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Catawiki}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Data Scientist - Machine Learning\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Catawiki
+
+\textbf{Re: Data Scientist - Machine Learning}
+
+Dear Hiring Team,
+
+I am applying for the Data Scientist - Machine Learning role at Catawiki. I am most at home when a model leaves the notebook: I have built a recommendation reranker, prediction systems and LLM applications that run in production and that product teams rely on. The thread through my work is data products that change a decision, not just a report.
+
+A marketplace of special objects is an unusual ML problem, because almost every item is one of a kind and recommendations cannot lean on popularity alone. That puzzle is what draws me to your Data Team. My fiancée lives in Berlin, and we plan to move to Lisbon together and settle there long term.
+
+I would bring an all-round approach, from exploring the data to serving the model. At Optum I added a reranker to a recommendation system that raised conversion by 2\%, and at Viavi I deployed an SLA breach prediction system with LightGBM, FastAPI and MLflow that cut downtime by 67\%. In both, explaining the model to non-technical colleagues mattered as much as the code.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Working with teachers taught me to test ideas with the people who use them and keep what helps. I would be glad to talk about how I could contribute to the Data Team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

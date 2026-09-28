@@ -1,0 +1,15 @@
+{"criteria": {"tech_stack": 27, "experience": 22, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 90,
+ "decision": "shortlist",
+ "strengths": [
+   "New project (Spare Parts Identification Assistant) directly mirrors REPA's business - matching free-text fault descriptions to spare-part numbers - using Azure OpenAI, the JD's named preferred stack",
+   "Summary closely mirrors the JD's own phrasing ('POC to production', 'AI agents and RAG solutions', 'Python and SQL on structured and unstructured data', 'deploying on Azure')",
+   "Explicit POC-to-production conversion rate (7 of 15+ prototypes) answers the JD's evaluate-for-value ask",
+   "Data-privacy awareness noted in the new project ('logged prompts and outputs without personal data'), a good signal for the JD's GDPR/AI Act line"
+ ],
+ "gaps": [
+   "No explicit mention of evaluating AI tools for scalability, security and cost, which the JD lists as a distinct task",
+   "German is only A1 against a stated 'plus'; minor since the JD does not require it",
+   "GDPR/EU AI Act/internal governance compliance is only implied through one phrase, not shown as a demonstrated practice",
+   "Git and application-architecture practices named in the JD are not explicitly called out in any bullet"
+ ]}

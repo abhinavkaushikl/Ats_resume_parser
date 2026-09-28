@@ -1,0 +1,39 @@
+{
+ "company": "Anthropic",
+ "city": "London",
+ "role": "Applied AI Architect, Startups",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4",
+  "Title 'Applied AI Architect' not used (seniority/fit check); kept 'Senior AI Engineer'."
+ ],
+ "headline": "Senior AI Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Rapidly prototyped 15+ AI applications from client requirements for AIOps and GeoPerformance clients, with 7 moving into production or paid client work."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built evaluation frameworks and observability for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Deployed a production lab-extraction agent built on Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms as a trusted technical advisor, contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "apply_url": "https://job-boards.greenhouse.io/anthropic/jobs/5432573008",
+ "listing_url": "https://job-boards.greenhouse.io/anthropic/jobs/5432573008",
+ "resume": "anthropic_Applied_AI_Architect_Startups_London/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "anthropic_Applied_AI_Architect_Startups_London/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "anthropic_Applied_AI_Architect_Startups_London/project_brief.md"
+}

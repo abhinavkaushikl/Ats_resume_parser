@@ -1,0 +1,76 @@
+{
+ "company": "Mastercard",
+ "role": "Senior Data Scientist, AI Engineering",
+ "city": "Dublin",
+ "company_profile": "Mastercard runs a global payments network, and its AI Centre of Excellence builds machine learning and foundation-model capabilities on large-scale transaction data.",
+ "title": "Senior Data Scientist, AI Engineering",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years designing, developing and deploying machine learning solutions from prototype to production across Healthcare, Telecom and AIOps. Solves predictive modelling problems such as propensity, forecasting, recommendation ranking, classification and anomaly detection with XGBoost, LightGBM, Scikit-learn and PyTorch, and uses transformer embeddings in downstream models. Works in Python, SQL, Databricks and Spark and turns results into actionable recommendations for stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan applications",
+   "new": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, giving business teams a clear basis for targeted outreach and customer prioritization."
+  },
+  {
+   "original": "Implemented a reranker for an existing recommendation system",
+   "new": "Implemented a ranking model on top of an existing recommendation system for individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning."
+  },
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN",
+   "new": "Built an event-correlation engine that clusters Sentence-BERT embeddings of alarms with DBSCAN, tracing network alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Designed and deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation, reducing downtime by 67%."
+  }
+ ],
+ "project": {
+  "name": "Merchant Recommendation Ranking System",
+  "bullets": [
+   "Built a merchant recommendation system for cardholders, generating candidates from transaction embeddings learned in PyTorch and re-ranking them with a LightGBM ranker trained on past purchase behaviour.",
+   "Evaluated rankings offline with NDCG and holdout experiments against a popularity baseline, tracked experiments in MLflow and served batch recommendations from Databricks with Spark."
+  ],
+  "technologies": [
+   "Python",
+   "LightGBM",
+   "PyTorch",
+   "Scikit-learn",
+   "Databricks",
+   "Spark",
+   "MLflow",
+   "SQL"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist, AI Engineering role at Mastercard. For eight years I have built predictive models that people actually use, from loan propensity scoring and plan recommendations to network forecasting and anomaly detection. Each project started with a business question and ended with a measured result.",
+   "What draws me to your AI Centre of Excellence is the idea of learning representations from transaction data once and reusing them across use cases, instead of hand-building features every time. My fiancée lives in Berlin, and we plan to move to Dublin together and settle there long term.",
+   "I would bring production modelling experience across several of your use cases. At Optum I added a ranking model to a plan recommendation system that raised conversion by 2%, and at Viavi I clustered alarms using Sentence-BERT embeddings, improving classification by 73.5%. I also built an SLA breach prediction model that reduced downtime by 67%.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers and students has made me careful about checking that a model really helps before calling it done. I would be glad to talk about how I could contribute to your team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "machine learning",
+  "predictive modelling",
+  "experimentation",
+  "forecasting",
+  "propensity modelling",
+  "recommendation systems",
+  "ranking",
+  "anomaly detection",
+  "embeddings",
+  "representation learning",
+  "Python",
+  "SQL",
+  "XGBoost",
+  "LightGBM",
+  "Databricks"
+ ],
+ "experience_variant": "base"
+}

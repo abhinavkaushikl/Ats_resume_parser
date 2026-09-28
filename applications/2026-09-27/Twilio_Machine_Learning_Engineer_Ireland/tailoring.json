@@ -1,0 +1,75 @@
+{
+ "company": "Twilio",
+ "role": "Machine Learning Engineer",
+ "city": "Ireland",
+ "company_profile": "Twilio is a cloud communications platform that helps businesses and developers build personalised customer conversations over voice and messaging.",
+ "title": "Machine Learning Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "summary": "Machine Learning Engineer with 8+ years taking ML and LLM systems from prototype to production across Healthcare, Telecom and AIOps. Builds end-to-end ML pipelines and deployed services in Python and PyTorch, from feature engineering to serving with FastAPI, Docker and MLflow, and puts LLMs inside real software through LangGraph agents, RAG, fine-tuning and automated evaluation with tracing. Explains complex models clearly to technical and business stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed a production ML service for SLA breach prediction with LightGBM, FastAPI and MLflow tracking, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question",
+   "new": "Built automated evaluation and monitoring pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production LLM-powered multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder NLP model on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+   "new": "Built an event-correlation engine clustering alarms with Sentence-BERT embeddings and DBSCAN, tracing cascading network alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  }
+ ],
+ "project": {
+  "name": "Conversation Intent and Summary Pipeline",
+  "bullets": [
+   "Built a conversation analytics pipeline that extracted intents, topics and summaries from customer chat and call transcripts using a fine-tuned BERT classifier and an LLM summarizer.",
+   "Evaluated outputs against labelled test sets and LLM evaluators, tracked experiments in MLflow, and served the models through FastAPI in Docker with latency and quality metrics logged."
+  ],
+  "technologies": [
+   "PyTorch",
+   "Hugging Face Transformers",
+   "MLflow",
+   "FastAPI",
+   "Docker",
+   "GCP",
+   "LLM Evals"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Machine Learning Engineer role on the Conversation Intelligence team. As a senior machine learning engineer I take language models from prototype to production services, most recently an extraction agent that handles about 1,800 lab documents. What ties my work together is turning messy text into something a business can act on.",
+   "Twilio sits inside a huge number of customer conversations, and making sense of voice and messaging data at that scale is the problem I want to spend my next years on. There is a personal side too: my fiancée lives in Berlin, and we plan to move to Ireland together and settle there long term, so a remote role from Ireland fits us well.",
+   "I would bring the habits of shipping and running ML services. In telecom I built an SLA breach prediction service with LightGBM, FastAPI and MLflow that cut downtime by 67%. In healthcare I built evaluation and tracing pipelines for question-answering agents that reduced human review by 43%, because the monitoring matters as much as the model.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to build for real users, test carefully and listen when something does not work for them. I would be glad to talk about how I could help your team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "Python",
+  "PyTorch",
+  "Hugging Face Transformers",
+  "NLP",
+  "LLMs",
+  "end-to-end ML pipelines",
+  "model versioning",
+  "experiment tracking",
+  "production inference",
+  "monitoring",
+  "LangGraph",
+  "LLM fine-tuning",
+  "prompt engineering",
+  "MLOps/LLMOps",
+  "cloud infrastructure"
+ ],
+ "experience_variant": "base"
+}

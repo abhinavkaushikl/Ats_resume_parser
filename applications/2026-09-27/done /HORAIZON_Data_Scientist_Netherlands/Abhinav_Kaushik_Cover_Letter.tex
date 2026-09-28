@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - HORAIZON}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+HORAIZON
+
+\textbf{Re: Data Scientist}
+
+Dear Hiring Team,
+
+I am applying for the Data Scientist role at HORAIZON. I am a data scientist with a background in healthcare data, and much of my work has been end to end: the pipeline, the model and the REST API that serves it. What connects it is turning messy data into something a person can act on.
+
+HORAIZON turns microbiome and omics data into decisions for its customers, and working closer to biology is where my healthcare work has been heading. A small team where each person's work is visible suits how I like to work. My fiancée lives in Berlin, and we plan to move to Delft together and settle there long term.
+
+At United Health Group I deployed an extraction agent with Amazon Textract that turns about 1,800 lab documents into structured data, integrated with the lab system. Earlier I built SQL and PySpark pipelines that cut manual reporting by 95\%. I would bring the same care for reliable pipelines and clear results to your team.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Working with teachers has taught me to explain results plainly and to build for the people who use them. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

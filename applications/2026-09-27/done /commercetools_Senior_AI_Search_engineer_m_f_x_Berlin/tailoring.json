@@ -1,0 +1,35 @@
+{
+ "company": "commercetools",
+ "role": "Senior AI Search engineer",
+ "city": "Berlin",
+ "company_profile": "commercetools builds a headless, API-first commerce platform that large brands use to run product discovery and online shopping at scale.",
+ "title": "Senior AI Search Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "Senior AI Engineer with 8+ years taking ML and LLM systems from prototype to production across Healthcare, Telecom and AIOps. Builds retrieval end to end: semantic and dense retrieval, cross-encoder re-ranking, RAG applications in LangGraph and search with Apache Solr, Lucene indexing and Elasticsearch, served through REST APIs with FastAPI, Docker and Kubernetes. Works closely with product teams to turn user needs into measurable relevance gains. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {"original": "Fine-tuned a cross-encoder on positive and negative pairs", "new": "Fine-tuned a cross-encoder re-ranker on positive and negative pairs to reorder dense retrieval results over AARP survey data, improving search relevance and retrieval accuracy."},
+  {"original": "Developed an internal RAG-based Project Discovery Assistant in LangGraph", "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, pairing semantic retrieval over existing organizational solutions with LLM reasoning to reach a 90% match rate."},
+  {"original": "Built real-time log observability for the COVID QRT", "new": "Built real-time log search and observability on Elasticsearch and Kibana for the COVID QRT team, improving traceability efficiency by 80%."},
+  {"original": "Deployed a production SLA breach prediction system with", "new": "Deployed a production SLA breach prediction system behind a FastAPI service with LightGBM and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."}
+ ],
+ "project": {
+  "name": "Hybrid Product Search Engine",
+  "bullets": [
+   "Built a hybrid product search service for ecommerce catalogs, combining Elasticsearch keyword matching with vector retrieval and query understanding for full-sentence shopper queries.",
+   "Evaluated relevance with offline judgment sets and NDCG across keyword and hybrid modes, re-ranked results with a fine-tuned cross-encoder, and served the API through FastAPI on Kubernetes."
+  ],
+  "technologies": ["Elasticsearch", "Hybrid Search", "Vector Search", "Cross-Encoder", "SBERT", "FastAPI", "Kubernetes", "Python"]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior AI Search Engineer role on your Discovery Team. Most of my recent work comes back to retrieval: re-ranking dense results with a fine-tuned cross-encoder, building RAG assistants that find the right answer in a large body of documents, and running these systems in production. Search that understands what people mean is the thread through all of it.",
+   "commercetools sits underneath the storefronts of large brands, and the change you describe, shoppers typing full sentences and AI agents calling the API, is the problem I most want to work on next. There is a personal reason too: my fiancée lives in Berlin, and I am building my career in the city where we are making our home.",
+   "I would bring hands-on relevance work to the team. At United Health Group I fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval, and at Viavi I built a LangGraph discovery assistant that reached a 90% match rate against existing solutions. I am also comfortable owning the serving side with FastAPI, Docker and Kubernetes.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and checking whether something actually helps them. I would welcome a conversation about where the Discovery Team is taking hybrid retrieval next."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": ["Search Engineering", "Elasticsearch", "Solr", "OpenSearch", "Semantic Search", "Hybrid Search", "Vector Search", "Learning to Rank", "Re-ranker", "Query Understanding", "REST APIs", "Event-driven Architecture", "Scala", "Kubernetes", "Helm"],
+ "experience_variant": "base"
+}

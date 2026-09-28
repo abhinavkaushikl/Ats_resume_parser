@@ -1,0 +1,38 @@
+{
+ "company": "Too Good To Go",
+ "city": "Copenhagen",
+ "role": "Senior Machine Learning Engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior Machine Learning Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "experience_edits": [
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for an existing recommendation system, personalizing individual and child plan renewal suggestions for each customer and increasing conversion by 2%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive planning."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, so outreach could be targeted and customers prioritized."
+  }
+ ],
+ "apply_url": "https://dk.linkedin.com/jobs/view/senior-machine-learning-engineer-at-too-good-to-go-4466189279",
+ "listing_url": "https://dk.linkedin.com/jobs/view/senior-machine-learning-engineer-at-too-good-to-go-4466189279",
+ "resume": "Too_Good_To_Go_Senior_Machine_Learning_Engineer_Copenhagen/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Too_Good_To_Go_Senior_Machine_Learning_Engineer_Copenhagen/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Too_Good_To_Go_Senior_Machine_Learning_Engineer_Copenhagen/project_brief.md"
+}

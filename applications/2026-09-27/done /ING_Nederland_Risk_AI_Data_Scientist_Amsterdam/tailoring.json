@@ -1,0 +1,72 @@
+{
+ "company": "ING Nederland",
+ "role": "Risk AI Data Scientist",
+ "city": "Amsterdam",
+ "company_profile": "ING is a Dutch bank whose Integrated Risk team builds risk identification and credit risk model capabilities used across the group.",
+ "title": "Risk AI Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years taking ML and LLM systems from prototype to production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds RAG over unstructured documents, OCR-based extraction agents and LangGraph agentic workflows, with GenAI evaluation, tracing and fine-tuning on Hugging Face models. Brings classical ML for prediction and financial-risk analysis, clean Python and SQL pipelines on GCP, and clear communication with stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+   "new": "Deployed a production document-extraction agent with Claude Opus 4.7 and Amazon Textract OCR, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated GenAI evaluation and monitoring pipelines for Question Answering and Summary Agents, using LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant in LangGraph",
+   "new": "Developed an internal RAG system in LangGraph for project discovery, combining semantic retrieval over internal documents with LLM reasoning and reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy for question answering."
+  }
+ ],
+ "project": {
+  "name": "Credit Policy RAG Assistant",
+  "bullets": [
+   "Built a RAG assistant over credit policy documents and banking regulations, combining OCR extraction of PDFs, dense retrieval and a fine-tuned cross-encoder re-ranker to answer risk managers' questions.",
+   "Evaluated answers for hallucination, retrieval quality and drift with LLM evaluators and gold question sets, then served it through FastAPI with MLflow tracking on GCP."
+  ],
+  "technologies": [
+   "Python",
+   "Hugging Face Transformers",
+   "PyTorch",
+   "LangGraph",
+   "RAG",
+   "Vector DB",
+   "GCP",
+   "MLflow"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Risk AI Data Scientist role at ING. My recent data science work sits close to what this role needs: RAG over unstructured documents, extraction from PDFs with OCR, and agentic workflows that support expert users. The thread through my career is turning messy data into models that people can trust in production.",
+   "Your Integrated Risk team is building the AI layer that helps risk managers work through credit policies, regulations and model documentation, where precision and governance matter as much as speed. That mix of rigour and real use is what draws me to it. My fiancée lives in Berlin, and we plan to move to Amsterdam together and settle there long term.",
+   "At United Health Group I built a document-extraction agent with Claude and Amazon Textract that handles about 1,800 lab documents, and evaluation pipelines with LLM evaluators that cut human review by 43%. I also built a fraud detection workflow pairing LightGBM with LLM explanations for financial-risk analysis. I would bring the same care for evaluation to your risk models.",
+   "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to build carefully for people who depend on the answers being right. I would welcome a conversation about how I could contribute to your team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "RAG",
+  "LLMs",
+  "NLP",
+  "agentic workflows",
+  "LangChain/LangGraph",
+  "fine-tuning",
+  "Hugging Face",
+  "PyTorch",
+  "unstructured data",
+  "OCR",
+  "hallucinations",
+  "Python",
+  "SQL",
+  "Google Cloud Platform",
+  "model lifecycle governance"
+ ],
+ "experience_variant": "base"
+}

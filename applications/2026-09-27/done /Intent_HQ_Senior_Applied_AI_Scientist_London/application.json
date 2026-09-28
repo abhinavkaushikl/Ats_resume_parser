@@ -1,0 +1,29 @@
+{
+ "status": "applied",
+ "reason": "",
+ "questions_unanswered": [],
+ "answers_given": {
+  "Spark/PySpark/Databricks": "Used extensively in production environments (resume: production PySpark pipelines + Databricks)",
+  "UK right to work without sponsorship": "No",
+  "Years building/evaluating ML models": "8",
+  "Enterprise clients": "Yes (Viavi, 15+ clients)",
+  "AI tooling in production": "RAG, Agentic AI (not LLM fine-tuning - only a cross-encoder in resume)",
+  "ML theory": "Yes",
+  "Current salary": "GBP 50,000 per year (user answer)",
+  "Salary expectations": "EUR 100,000 per year (gross) - profile default, no range in JD",
+  "Notice period": "30 days",
+  "Name": "Abhinav Kaushik",
+  "Email": "aabhinav.kaushik@gmail.com",
+  "Phone": "+91 87005 71859",
+  "Cover letter text": "full cover letter from tailoring.json"
+ },
+ "files_uploaded": [
+  "Abhinav_Kaushik_Resume.pdf",
+  "Abhinav_Kaushik_Cover_Letter.pdf"
+ ],
+ "url_used": "https://intenthq.teamtailor.com/jobs/8360453-senior-applied-ai-scientist",
+ "ats": "teamtailor",
+ "confirmation": "Thanks for applying. We have received your application and we will be reviewing it shortly.",
+ "browser": "chrome-devtools (separate Chrome session)",
+ "timestamp": "2026-09-28T09:13"
+}

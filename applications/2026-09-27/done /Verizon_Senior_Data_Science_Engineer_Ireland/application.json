@@ -1,0 +1,13 @@
+{
+ "status": "applied",
+ "reason": "submitted by the user in Workday (account + autofill by resume done by the user)",
+ "questions_unanswered": [],
+ "answers_given": {},
+ "files_uploaded": [
+  "Abhinav_Kaushik_Resume.pdf"
+ ],
+ "url_used": "https://verizon.wd12.myworkdayjobs.com/verizon-careers/job/Dublin-Ireland/Senior-Data-Science-Engineer_R-1100318/apply",
+ "ats": "workday",
+ "confirmation": "Candidate Home: Senior Data Science Engineer R-1100318 - Applied - September 28, 2026 ('Thanks for submitting your application!')",
+ "timestamp": "2026-09-28T11:40"
+}

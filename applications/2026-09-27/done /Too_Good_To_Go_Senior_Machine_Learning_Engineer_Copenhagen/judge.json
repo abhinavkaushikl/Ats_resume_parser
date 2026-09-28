@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 22, "experience": 18, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 81,
+ "decision": "shortlist",
+ "strengths": ["Marketing Personalization Recommender project matches the exact tech stack (Metaflow, Airflow, Docker, LightGBM) and domain (marketing personalization/recommendation) named in the JD", "Statistical hypothesis testing on A/B experiments shown directly, matching a JD bonus point", "PyTorch, Scikit-learn and production deployment experience shown across multiple roles", "Title matches exactly (Senior Machine Learning Engineer) and resume shows established seniority"],
+ "gaps": ["Prophet/DeepAR not shown anywhere, only generic time-series forecasting tools (Holt-Winters, Isolation Forest)", "TensorFlow absent from the skill set", "Real production personalization/recommendation experience outside the single tailored project is thin (one Data Analyst reranker bullet)", "Redshift, dbt, Snowflake and OpenSearch (bonus stack items) not shown"]}

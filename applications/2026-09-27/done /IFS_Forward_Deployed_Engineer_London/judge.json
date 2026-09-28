@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 24, "experience": 18, "company_project": 19, "ats_keywords": 13, "credibility": 8},
+ "score": 82,
+ "decision": "shortlist",
+ "strengths": ["New Field Service Scheduling Agent project is a near-exact match to the JD's own domain example (field service, work orders, MCP tools) and explicitly uses MCP, which the JD calls out as strongly preferred", "Extensive production RAG, embeddings, vector retrieval and agentic (LangGraph) experience across multiple roles", "Azure, AKS, Docker, Kubernetes, Terraform all present in skills and used in the tailored project", "Direct client-facing delivery experience (Viavi POCs 'from client requirements to shipped systems') mirrors the forward-deployed model", "Resume headline matches the job title exactly"],
+ "gaps": ["No front-end work shown anywhere - the JD explicitly asks for full-lifecycle features 'across front-end and back-end'", "Helm and GitOps/ArgoCD are not present alongside Docker/Kubernetes/Terraform", "Azure Blob Storage and Key Vault are not named specifically", "Event-driven and distributed-systems integration work is only implied, not demonstrated directly"]}

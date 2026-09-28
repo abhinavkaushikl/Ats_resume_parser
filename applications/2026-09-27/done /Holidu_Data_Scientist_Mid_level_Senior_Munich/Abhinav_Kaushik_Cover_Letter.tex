@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Holidu}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Holidu
+
+\textbf{Re: Data Scientist - Mid-level/Senior}
+
+Dear Hiring Team,
+
+I am applying for the Data Scientist role at Holidu at the senior level. As a data scientist I have owned predictive models from the first prototype to production, from gradient boosting on tabular data to demand forecasting. What connects that work is making a model earn its place in a real business decision.
+
+Holidu sits in a marketplace where ranking, pricing and demand all shape whether a host gets booked, and that mix of modelling problems is what I enjoy most. I also like that the team owns its use cases end to end. My fiancée lives in Berlin, and we plan to move to Munich together and settle there long term.
+
+I would bring hands-on depth in the modelling you use. At Viavi I shipped an SLA breach prediction model with LightGBM and MLflow that cut downtime by 67\%, and demand forecasting with Holt-Winters across 500+ network devices. At Optum I added a reranker to a recommendation system that increased conversion by 2\%.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to test ideas with real users and keep what works. I would be glad to talk about which problem area I could take on.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

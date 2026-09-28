@@ -1,0 +1,38 @@
+{
+ "company": "IFS",
+ "city": "London",
+ "role": "Forward Deployed Engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Forward Deployed Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients, working from client requirements to shipped systems, with 7 moving into production or paid client work."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered hands-on technical POCs and consulting with 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with the existing LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  }
+ ],
+ "apply_url": "https://jobs.smartrecruiters.com/IFS1/744000149573989",
+ "listing_url": "https://jobs.smartrecruiters.com/IFS1/744000149573989",
+ "resume": "IFS_Forward_Deployed_Engineer_London/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "IFS_Forward_Deployed_Engineer_London/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "IFS_Forward_Deployed_Engineer_London/project_brief.md"
+}

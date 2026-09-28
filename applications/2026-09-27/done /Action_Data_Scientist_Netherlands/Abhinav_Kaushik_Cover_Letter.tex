@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Action}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Action
+
+\textbf{Re: Data Scientist}
+
+Dear Hiring Team,
+
+I am applying for the Data Scientist role in Action's central Data Analytics team. For more than eight years I have worked on data science end-to-end, from scoping with business teams and exploring messy data to deploying models and watching them in production, most recently as a senior data scientist on healthcare data.
+
+A retailer built on low prices lives or dies by good forecasts and lean operations, which is exactly where models make a visible difference to stores and supply chain. My fiancée lives in Berlin, and we plan to move to Zwaagdijk-Oost together and settle there long term.
+
+I would bring forecasting and production habits. At Viavi I shipped anomaly detection and Holt-Winters demand forecasting on 15+ KPIs across 500+ network devices, and deployed a LightGBM SLA breach model with FastAPI and MLflow that reduced downtime by 67\%. More recently I have built RAG and agentic workflows, useful for teams that want LLMs on top of their data.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to build for the people who use a tool every day, and to keep things simple enough that they do. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

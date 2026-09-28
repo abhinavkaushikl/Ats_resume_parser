@@ -1,0 +1,76 @@
+{
+ "company": "Redcare Pharmacy",
+ "role": "Senior ML Engineer, Retail Media",
+ "city": "Germany",
+ "company_profile": "Redcare Pharmacy is a European online pharmacy selling prescription and over-the-counter medicines and health products to consumers across several countries.",
+ "title": "Senior ML Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "summary": "Machine learning engineer with 8+ years building and operating production ML systems across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Covers the full ML lifecycle, from problem framing and SQL and PySpark feature pipelines to training, evaluation, deployment with FastAPI, Docker and MLflow, and monitoring. Has built ranking and propensity models and explains trade-offs clearly to product and business stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Implemented a reranker for an existing recommendation system",
+   "new": "Implemented a ranking model on top of an existing recommendation system for individual and child plans, optimizing renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval results over AARP survey data, improving ranking and retrieval accuracy."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed and operated a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan applications",
+   "new": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling audience targeting and customer prioritization for outreach."
+  },
+  {
+   "original": "Engineered SQL and PySpark data pipelines automating BAU",
+   "new": "Engineered SQL and PySpark data pipelines on large healthcare datasets automating BAU medical-audit reporting, cutting manual reporting effort by 95%."
+  }
+ ],
+ "project": {
+  "name": "Sponsored Product Ranking Model",
+  "bullets": [
+   "Built a sponsored product ranking model for online retail search, blending organic relevance with advertiser bids using LightGBM learning-to-rank on PySpark-engineered click and purchase features.",
+   "Evaluated offline with time-based splits to avoid leakage, checked for position bias and distribution shift, and served ranking through FastAPI with MLflow-tracked models."
+  ],
+  "technologies": [
+   "Python",
+   "LightGBM",
+   "PySpark",
+   "SQL",
+   "MLflow",
+   "FastAPI",
+   "Docker",
+   "Airflow"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior ML Engineer role on the Retail Media team. I have spent 8+ years building ML systems that run in production, including ranking and propensity models that decide what a customer sees. The thread through my work is taking an unclear product question and making it a reliable system.",
+   "A retail media product built from the ground up inside a large online pharmacy is a rare chance to shape the models and the standards at once. Relevant ads for health products need extra care, which I like. My fiancée lives in Berlin, and we plan to build our life in Germany together and settle there long term.",
+   "At Optum I added a reranker to a plan recommendation system that increased conversion by 2%, and at Viavi I deployed a LightGBM SLA breach model with FastAPI and MLflow that cut downtime by 67%. Retail media is new to me, but ranking, targeting and honest offline evaluation are not.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that a model is only useful when it serves the person on the other side. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "production-grade machine learning systems",
+  "sponsored product ranking",
+  "audience segmentation",
+  "campaign optimization",
+  "attribution",
+  "recommender systems",
+  "ranking",
+  "feature engineering",
+  "ML pipelines",
+  "model deployment",
+  "monitoring",
+  "data leakage",
+  "distribution shifts",
+  "offline metrics",
+  "stakeholder communication"
+ ],
+ "experience_variant": "base"
+}

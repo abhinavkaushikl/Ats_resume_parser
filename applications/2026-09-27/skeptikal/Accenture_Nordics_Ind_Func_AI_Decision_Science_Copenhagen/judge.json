@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 24, "experience": 17, "company_project": 17, "ats_keywords": 11, "credibility": 9},
+ "score": 78,
+ "decision": "maybe",
+ "strengths": ["Reusable ML Deployment Platform project directly demonstrates scalable data/model pipeline design with Airflow, MLflow, Docker, Kubernetes, Terraform and Jenkins CI/CD, matching the JD's engineering scope closely", "Strong cloud and containerization stack (GCP, Azure, Docker, Kubernetes) shown in context across multiple roles", "Senior-level ownership and production delivery consistent with a Team Lead/Consultant expectation"],
+ "gaps": ["JD wants Java or C++ as an alternative to Python; resume shows Python only, with no evidence of the other listed languages", "Core background is applied ML/GenAI engineering rather than platform architecture or distributed-systems engineering, which is the role's primary emphasis", "\"Distributed systems\" and \"performance optimization\" are not evidenced in explicit terms, only inferred from PySpark/Kubernetes usage", "Role reads as an engineering-first team; resume's day-to-day work is closer to applied AI/ML delivery than core platform engineering"]}

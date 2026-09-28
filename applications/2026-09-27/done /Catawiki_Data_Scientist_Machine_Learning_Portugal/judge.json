@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 24, "experience": 20, "company_project": 17, "ats_keywords": 12, "credibility": 9},
+ "score": 82,
+ "decision": "shortlist",
+ "strengths": ["Python/SQL fluency and production ML deployment behind FastAPI/Docker/K8s/MLflow shown in context", "Marketplace Recommendation Ranking project (SBERT + LightGBM two-stage recommender on GCP/Kubernetes) mirrors Catawiki's marketplace domain directly", "Explains models to non-technical stakeholders stated in summary and in consulting bullets", "8+ years comfortably exceeds the 3+ year bar"],
+ "gaps": ["No evidence of real-time model serving at large consumer scale (millions of users/events) - JD's own 'large scale real-time' bar is only thinly met via telecom SLA/anomaly work", "Kafka and nginx (JD plus-skills) absent", "No online-marketplace/e-commerce production experience, only a standalone project", "CI/CD only implied via Jenkins/Bamboo/Bitbucket tools, not stated explicitly"]}

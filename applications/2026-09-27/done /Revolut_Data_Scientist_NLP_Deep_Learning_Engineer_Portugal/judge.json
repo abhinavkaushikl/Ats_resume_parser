@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 28, "experience": 21, "company_project": 18, "ats_keywords": 13, "credibility": 8},
+ "score": 88,
+ "decision": "shortlist",
+ "strengths": ["Resume headline matches the JD title exactly: 'Data Scientist (NLP Deep Learning Engineer)'", "Deep learning within NLP/LLMs is shown throughout (SBERT clustering, fine-tuned cross-encoder, transformer-based agents), not just claimed", "New Banking Support Copilot project (fine-tuned BERT classifier + RAG-based LLM replies) is a close, believable match for Revolut's own digital-banking chatbot/copilot ambitions", "Building AI features from scratch (multi-agent chatbots, evaluation pipelines) directly mirrors the JD's 'building AI-driven features from scratch' responsibility"],
+ "gaps": ["No evidence of training deep NLP models from scratch at scale - the fine-tuning shown is on top of pretrained transformers, not ground-up model development", "No additional programming languages (Java, Scala, C++) mentioned anywhere, a named nice-to-have", "No large-tech-company (>$15B) experience", "Probability/statistics fundamentals are implied through modelling work but not explicitly called out anywhere"]}

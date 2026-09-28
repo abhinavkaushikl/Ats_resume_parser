@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Danske Bank}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist GenAI\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Danske Bank
+
+\textbf{Re: Senior data scientist GenAI}
+
+Dear Hiring Team,
+
+I am applying for the Senior Data Scientist GenAI role in Danske Bank's Conversational AI unit. As a data scientist working in NLP and GenAI, I have built RAG systems, conversational agents and the evaluation behind them, all in production. My work keeps returning to one question: how do we know the model's answer is right?
+
+Danske Bank is turning its AI Assistant into something customers can use to get things done, and doing it in banking means evaluation and responsible AI cannot be an afterthought. That fits how I like to work. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.
+
+I would bring hands-on depth in retrieval and evaluation. I fine-tuned a cross-encoder to re-rank dense retrieval and improve retrieval accuracy, and I built evaluation pipelines with LLM judges for question-answering and summary agents that reduced human review by 43\%. I am comfortable explaining those results to product teams and mentoring others on them.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to design for the people using a system, not the demo. I would be glad to talk about how I could contribute to the unit.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

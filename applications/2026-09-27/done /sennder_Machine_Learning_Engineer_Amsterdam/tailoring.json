@@ -1,0 +1,76 @@
+{
+  "company": "sennder",
+  "role": "Machine Learning Engineer",
+  "city": "Amsterdam",
+  "company_profile": "sennder is a European digital freight forwarder running road logistics on one platform that connects shippers with carriers.",
+  "title": "Machine Learning Engineer",
+  "current_role_title": "Senior Machine Learning Engineer",
+  "summary": "Senior Machine Learning Engineer with 8+ years across Healthcare, Telecom and AIOps, owning models end to end from prototype to production. Combines statistical modelling and classical ML for prediction, forecasting, recommendation re-ranking and anomaly detection with LLM applications and AI agents, choosing the right approach for each problem. Works in Python, SQL and PySpark, deploys with FastAPI, Docker and MLflow, and builds dashboards and prototypes with product and business stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Deployed a production SLA breach prediction system",
+      "new": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, pairing it with GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+    },
+    {
+      "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+      "new": "Built anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, helping operations teams detect issues earlier and plan proactively."
+    },
+    {
+      "original": "Implemented a reranker for an existing recommendation system",
+      "new": "Improved an existing recommendation system with a reranker for individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%."
+    },
+    {
+      "original": "Developed an XGBoost propensity model predicting personal-loan applications",
+      "new": "Built an XGBoost propensity model predicting personal-loan applications within 7 days of contact, helping business teams target outreach and prioritize customers."
+    },
+    {
+      "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance",
+      "new": "Turned AIOps and GeoPerformance client pain points into 15+ rapid AI prototypes, with 7 moving into production or paid client work."
+    }
+  ],
+  "project": {
+    "name": "Freight Price Estimation Model",
+    "bullets": [
+      "Built a price estimation and capacity forecasting model for road freight lanes, combining LightGBM regression on lane, distance and seasonality features with Holt-Winters baselines.",
+      "Validated it with backtesting and hypothesis tests against rule-based pricing, served estimates through FastAPI with MLflow tracking, and shared results in a Streamlit dashboard."
+    ],
+    "technologies": [
+      "Python",
+      "SQL",
+      "LightGBM",
+      "Streamlit",
+      "Jupyter",
+      "FastAPI",
+      "MLflow",
+      "Pandas"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "closing": "Sincerely,",
+    "paragraphs": [
+      "I am applying for the Machine Learning Engineer role on your ML team. Most of my work sits between data science and engineering: exploring the data until the problem is clear, building the model, then taking it into production myself. That end-to-end habit is the thread through my 8+ years in Healthcare, Telecom and AIOps.",
+      "What draws me to sennder is that it owns the platform, the operations and the data behind road freight, so a pricing or carrier forecasting model meets real outcomes quickly. My fiancée lives in Berlin, and we plan to move to Amsterdam together and settle there long term.",
+      "I would bring models that people actually use. At Viavi I built an SLA breach prediction system with LightGBM, FastAPI and MLflow that cut downtime by 67%, and at Optum I added a reranker to a live recommendation system that lifted conversion by 2%. I also build LLM agents, so I know when an LLM helps and when a simple model wins.",
+      "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Working with those teachers taught me to start from the user's workflow before writing any code. I would be glad to talk about how I could help your team."
+    ]
+  },
+  "jd_keywords": [
+    "pricing engine",
+    "carrier forecasting",
+    "recommender systems",
+    "statistical analysis",
+    "hypothesis testing",
+    "regression and classification",
+    "Python",
+    "SQL",
+    "Git",
+    "Snowflake",
+    "Streamlit",
+    "PowerBI",
+    "LLMs",
+    "AI agents",
+    "production deployment"
+  ],
+  "experience_variant": "base"
+}

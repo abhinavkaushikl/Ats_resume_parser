@@ -1,0 +1,43 @@
+{
+ "company": "wayve",
+ "city": "Germany",
+ "role": "Data Scientist, Data Quality & Provenance",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered production SQL and PySpark data-transformation pipelines on large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.",
+   "after": "Wrote complex SQL queries with multi-table joins, CTEs and window functions to query and build datasets, delivering ad-hoc analyses and findings for multiple stakeholder teams."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Defined performance metrics and automated evaluation for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Analysed 15+ KPIs across 500+ telecom network devices with Isolation Forest anomaly detection and Holt-Winters forecasting, enabling earlier detection and proactive network planning."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph that answered stakeholders' questions on AARP medical plans with PySpark analysis and live charts, cutting manual analysis by 98%."
+  }
+ ],
+ "apply_url": "https://wayve.firststage.co/jobs?gh_jid=8810531002",
+ "listing_url": "https://wayve.firststage.co/jobs?gh_jid=8810531002",
+ "resume": "wayve_Data_Scientist_Data_Quality_Provenance_Germany/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "wayve_Data_Scientist_Data_Quality_Provenance_Germany/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "wayve_Data_Scientist_Data_Quality_Provenance_Germany/project_brief.md"
+}

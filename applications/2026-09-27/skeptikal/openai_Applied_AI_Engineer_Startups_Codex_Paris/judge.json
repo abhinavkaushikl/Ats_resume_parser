@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 16, "experience": 14, "company_project": 13, "ats_keywords": 5, "credibility": 8},
+ "score": 56,
+ "decision": "reject",
+ "strengths": ["Builds real agentic/LLM applications (LangGraph, Claude, GPT) and has taken 15+ prototypes to production", "Comfortable turning technical work into results for stakeholders (client POCs, demos)", "New project (agentic developer workflow kit) sits in a dev-tools niche adjacent to Codex", "Consistent, concrete track record with real production ownership"],
+ "gaps": ["No early-stage startup founding/working experience - core requirement for this role", "No evidence of public talks, live demos, workshops or hackathons - this is central to the job and entirely absent", "Not an active, demonstrated user of Codex specifically (or any named AI coding tool)", "JD's own vocabulary (startups, developer relations, workshops, hackathons, community) barely appears", "Role is developer-advocacy flavored; resume reads as an enterprise ML/AI engineer, not a community-facing engineer"]}

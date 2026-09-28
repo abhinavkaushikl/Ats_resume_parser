@@ -1,0 +1,23 @@
+{
+ "status": "applied",
+ "reason": "Workday guest application (autofill with resume), submitted once",
+ "questions_unanswered": [],
+ "answers_given": {
+  "How did you hear": "Kramp Website",
+  "Name": "Abhinav Kaushik",
+  "Country": "India",
+  "City": "New Delhi",
+  "Address Line 1": "cleared (autofill had put 'Data Scientist')",
+  "Email": "aabhinav.kaushik@gmail.com",
+  "Phone": "Mobile, India +91 8700571859",
+  "Terms and conditions consent": "Yes"
+ },
+ "files_uploaded": [
+  "Abhinav_Kaushik_Resume.pdf",
+  "Abhinav_Kaushik_Cover_Letter.pdf"
+ ],
+ "url_used": "https://kramp.wd502.myworkdayjobs.com/Krampcareers/job/Utrecht-NL/Data-Scientist_REQ0015097",
+ "ats": "workday",
+ "confirmation": "Congratulations! Your application has successfully been submitted. (Job_Application_ID=40b184142a399000c84713739f400000)",
+ "timestamp": "2026-09-28T16:00"
+}

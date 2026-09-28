@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 22, "experience": 15, "company_project": 18, "ats_keywords": 9, "credibility": 8},
+ "score": 72,
+ "decision": "maybe",
+ "strengths": ["Coding Agent Evaluation Harness project directly matches the JD's ask for systematic evaluation of AI coding systems: representative SE tasks, automated graders, sandboxed Docker environments", "Evaluation, tracing and failure-detection experience transfers well to Codex's evaluation-systems focus", "Consulting/POC delivery for 15+ clients shows some customer-facing technical work", "Python-first production engineering background lines up with the core language requirement"],
+ "gaps": ["No German fluency shown (only 'German: A1, Pursuing'), and the JD explicitly requires fluent English and German", "No JavaScript/TypeScript experience, which the JD values alongside Python", "No evidence of being an active daily user of AI coding tools with a point of view, beyond building evaluation harnesses for them", "Experience is enterprise data/ML delivery, not software-engineering-org enablement or SDLC tooling at scale", "No workshops or hands-on developer enablement sessions mentioned"]}

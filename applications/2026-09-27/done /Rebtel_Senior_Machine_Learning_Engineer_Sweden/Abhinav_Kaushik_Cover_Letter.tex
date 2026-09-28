@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Rebtel}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Machine Learning Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Rebtel
+
+\textbf{Re: Senior Machine Learning Engineer}
+
+Dear Hiring Team,
+
+I am applying for the Senior Machine Learning Engineer role on your ML/AI subteam. My work has always sat on both of your tracks: classical models that keep operations healthy, and LLM systems that people actually use. What ties it together is owning a model after the demo, when it has to keep working.
+
+Rebtel lets people call home and send top-ups to family across borders, and I spent years in telecom seeing how much a reliable connection matters. Helping shape how AI is done from the ground up is rare. My fiancée lives in Berlin, and we plan to move to Stockholm together and settle there long term.
+
+At Viavi I built an SLA breach prediction system with LightGBM, FastAPI and MLflow that cut downtime by 67\%, and I kept it running. At United Health Group I built evaluation and tracing for question answering agents that reduced human review by 43\%. I would bring both habits to churn, fraud and your support agents.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and measuring whether a tool helps. I would be glad to talk about how I could help the team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

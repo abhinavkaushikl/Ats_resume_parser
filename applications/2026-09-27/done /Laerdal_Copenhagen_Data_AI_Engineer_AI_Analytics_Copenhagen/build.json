@@ -1,0 +1,38 @@
+{
+ "company": "Laerdal Copenhagen",
+ "city": "Copenhagen",
+ "role": "Data AI Engineer (AI & Analytics)",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Data AI Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior AI Engineer",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production agentic data analyst in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection to keep answers trustworthy, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered SQL and PySpark data pipelines on large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.",
+   "after": "Wrote complex SQL queries with multi-table joins, CTEs and window functions over the reporting data model, delivering ad-hoc reports and analyses for multiple stakeholder teams."
+  }
+ ],
+ "apply_url": "https://dk.linkedin.com/jobs/view/data-ai-engineer-ai-analytics-at-laerdal-copenhagen-4467399055",
+ "listing_url": "https://dk.linkedin.com/jobs/view/data-ai-engineer-ai-analytics-at-laerdal-copenhagen-4467399055",
+ "resume": "Laerdal_Copenhagen_Data_AI_Engineer_AI_Analytics_Copenhagen/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Laerdal_Copenhagen_Data_AI_Engineer_AI_Analytics_Copenhagen/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Laerdal_Copenhagen_Data_AI_Engineer_AI_Analytics_Copenhagen/project_brief.md"
+}

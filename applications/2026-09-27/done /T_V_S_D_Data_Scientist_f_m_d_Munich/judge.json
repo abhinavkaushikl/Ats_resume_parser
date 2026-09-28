@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 26, "experience": 22, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 89,
+ "decision": "shortlist",
+ "strengths": ["Technical Standards Conversational Assistant project is a near-exact domain match: inspection/compliance RAG over scanned technical documents with OCR, guardrails and Azure deployment", "End-to-end LLM engineering shown across roles: prompt design, RAG retrieval, guardrails, systematic evaluation (LLM judges, faithfulness)", "8+ years well above the 4-year requirement, with clear ownership of projects end to end and cross-functional stakeholder work", "Azure, FastAPI, Docker stack matches JD's tooling and is used in context, not just listed"],
+ "gaps": ["German listed only at A1 against a 'highly desirable' requirement", "Azure DevOps specifically not shown, only Azure", "No explicit multi-domain (medical technology, elevators, automotive) breadth beyond one company-fit project"]}

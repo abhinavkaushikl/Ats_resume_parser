@@ -1,0 +1,75 @@
+{
+ "company": "Verizon",
+ "role": "Senior Data Science Engineer",
+ "city": "Dublin",
+ "company_profile": "Verizon is a telecommunications company running large mobile and fixed networks for consumers and businesses.",
+ "title": "Senior Data Science Engineer",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years turning large datasets into actionable insights and production models across Telecom, Healthcare and AIOps, with an MSc in Machine Learning and AI. Has built anomaly detection, forecasting and SLA breach prediction for telecom networks, big-data analysis in SQL and PySpark, and dashboards in Power BI and QlikSense. Also develops GenAI solutions and agentic systems, including LangGraph multi-agent chatbots and fine-tuned retrieval models. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, enabling earlier detection of network issues and proactive planning."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 to generate real-time root-cause analysis and remediation per breach, reducing network downtime by 67%."
+  },
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+   "new": "Built an event-correlation engine clustering network alarms with Sentence-BERT and DBSCAN, tracing the cascading effect of alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, turning business questions into PySpark analysis and live charts through multi-turn reasoning, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Wrote complex SQL queries with multi-table joins, CTEs",
+   "new": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc analyses and actionable insights for multiple stakeholder teams."
+  }
+ ],
+ "project": {
+  "name": "Network Reliability Insights Assistant",
+  "bullets": [
+   "Built an agentic analytics assistant for telecom network reliability that queried KPI and alarm data in SQL, flagged anomalies with Isolation Forest and explained likely causes through an LLM.",
+   "Validated anomaly flags against labelled incidents, tracked experiments in MLflow, stored results in Google BigQuery and surfaced them through Looker dashboards and a FastAPI service."
+  ],
+  "technologies": [
+   "Python",
+   "SQL",
+   "Google BigQuery",
+   "Looker",
+   "LangGraph",
+   "Isolation Forest",
+   "MLflow",
+   "FastAPI"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Science Engineer role in Data Intelligence. Much of my data science career has been spent on telecom networks: predicting SLA breaches, detecting anomalies across device KPIs and tracing alarm floods to their root cause. The thread through it all is finding the signal in large, noisy data and turning it into a decision someone can act on.",
+   "Verizon runs networks that people count on every day, and keeping them dependable is work I know from the inside and want to go deeper into. On the personal side, my fiancée lives in Berlin, and we plan to move to Dublin together and settle there long term. A hybrid role in Dublin lets us build that life while I grow here.",
+   "I would bring both classical analytics and newer GenAI work. I built an SLA breach prediction system that reduced downtime by 67%, and anomaly detection and forecasting over 15+ KPIs on 500+ network devices. More recently I built a multi-agent analytics chatbot that cut manual analysis by 98%, close to your interest in agentic systems.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and checking that the numbers mean what I think they mean. I would be glad to talk about how I could contribute."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "data scientist",
+  "statistical modeler",
+  "Big Data",
+  "actionable insights",
+  "visual dashboards",
+  "data quality",
+  "network reliability",
+  "Looker",
+  "SQL",
+  "Google BigQuery",
+  "Python",
+  "GenAI solutions",
+  "agentic systems",
+  "LLM fine-tuning"
+ ],
+ "experience_variant": "base"
+}

@@ -1,0 +1,14 @@
+{"criteria": {"tech_stack": 28, "experience": 21, "company_project": 19, "ats_keywords": 13, "credibility": 8},
+ "score": 89,
+ "decision": "shortlist",
+ "strengths": [
+   "Banking Policy Q&A Agent project covers nearly every valued bonus item at once: vector DB, LangGraph, AWS Bedrock, Hugging Face, Docker, Kubernetes, in a banking/financial-services domain",
+   "Every core must-have (Python, ML/DL/GenAI, LLMs, RAG, LangChain/LangGraph, PyTorch, APIs, SQL/NoSQL) appears in both skills and production bullets",
+   "Title matches exactly (Artificial Intelligence Engineer), and 8+ years is well above what's implied",
+   "Multi-agent/agentic AI systems shown repeatedly across roles, not just the tailored project"
+ ],
+ "gaps": [
+   "No SageMaker experience; only Bedrock covers the AWS bonus item",
+   "No French language mentioned, though it is listed as valued",
+   "Posting is in Portuguese with no explicit language requirement stated; the resume gives no signal either way on Portuguese proficiency"
+ ]}

@@ -1,0 +1,35 @@
+{
+ "status": "needs_review",
+ "reason": "Workday step 4 (Application Questions) filled except one required question with no profile answer; tab left open, not submitted",
+ "questions_unanswered": [
+  {
+   "label": "Have you played any of our games?",
+   "type": "select",
+   "options": [
+    "Yes",
+    "No"
+   ]
+  }
+ ],
+ "answers_given": {
+  "How did you hear": "SEGA Careers (Career Websites)",
+  "Previously employed by SEGA": "No",
+  "Phone": "+91 8700571859",
+  "Work experience": "6 roles, companies/locations corrected from resume.txt",
+  "Education": "Liverpool John Moores University (MS); Jamia Hamdard (BS - closest to B.Tech IT)",
+  "English": "5 - Fluent (all), fluent ticked",
+  "LinkedIn": "https://www.linkedin.com/in/abhinav-kaushik10/",
+  "Right to work": "I require support with a visa",
+  "Relocate": "Yes",
+  "Notice period": "30 days",
+  "Salary": "100000 EUR per year (gross) - default, no pay in JD",
+  "What attracted you": "cover letter paragraph 2 verbatim"
+ },
+ "files_uploaded": [
+  "Abhinav_Kaushik_Resume.pdf"
+ ],
+ "url_used": "https://sega.wd3.myworkdayjobs.com/en-US/SEGA_Careers/job/London%2C-W4-5AN/Senior-Data-Scientist_JR100176/apply/autofillWithResume",
+ "ats": "workday",
+ "confirmation": "",
+ "timestamp": "2026-09-28T12:45"
+}

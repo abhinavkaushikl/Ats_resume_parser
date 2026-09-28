@@ -1,0 +1,38 @@
+{
+ "company": "Delivery Hero",
+ "city": "Berlin",
+ "role": "Senior Data Scientist - (Global Search, Consumer)",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Data Scientist",
+   "before": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy.",
+   "after": "Fine-tuned a cross-encoder on pairwise positive and negative examples to re-rank dense embedding retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for a live recommendation system serving individual and child plan recommendations, improving renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and monitoring pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed and monitored a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  }
+ ],
+ "apply_url": "https://jobs.smartrecruiters.com/DeliveryHero/744000146944229-senior-data-scientist-global-search-consumer-",
+ "listing_url": "https://de.linkedin.com/jobs/view/senior-data-scientist-global-search-consumer-at-delivery-hero-4460945922",
+ "resume": "Delivery_Hero_Senior_Data_Scientist_Global_Search_Consumer_Berlin/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Delivery_Hero_Senior_Data_Scientist_Global_Search_Consumer_Berlin/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Delivery_Hero_Senior_Data_Scientist_Global_Search_Consumer_Berlin/project_brief.md"
+}

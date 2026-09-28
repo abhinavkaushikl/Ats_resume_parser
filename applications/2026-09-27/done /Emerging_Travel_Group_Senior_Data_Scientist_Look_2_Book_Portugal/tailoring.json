@@ -1,0 +1,75 @@
+{
+ "company": "Emerging Travel Group",
+ "role": "Senior Data Scientist (Look-2-Book)",
+ "city": "Portugal",
+ "company_profile": "Emerging Travel Group is a travel-tech company building online hotel booking platforms and B2B APIs for travel agents, companies and individual travellers.",
+ "title": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years building ML models end to end, from SQL and PySpark pipelines to production services, across Healthcare, Telecom and AIOps. Works with gradient boosting (LightGBM, XGBoost), classification, regression, reranking and embeddings, turning business problems into clear ML tasks with stakeholders. Ships models with FastAPI, Airflow and MLflow and keeps them measurable in production. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production SLA breach prediction system with",
+   "new": "Deployed a LightGBM classification model predicting SLA breaches in production with FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Implemented a reranker for an existing recommendation system",
+   "new": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, ranking renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan applications",
+   "new": "Developed an XGBoost propensity model predicting the probability of a personal-loan application within 7 days of contact, turning a business goal into a clear ML task for targeted outreach."
+  },
+  {
+   "original": "Engineered SQL and PySpark data pipelines automating BAU",
+   "new": "Engineered SQL and PySpark data pipelines over large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense embedding retrieval over AARP survey data, improving ranking and retrieval accuracy."
+  }
+ ],
+ "project": {
+  "name": "Search-to-Booking Conversion Model",
+  "bullets": [
+   "Built a model predicting the probability that a hotel search converts into a booking, using LightGBM on price, availability and session features with embedding-based matching of room descriptions.",
+   "Evaluated it offline with ranking metrics and a simulated A/B test on held-out searches, then scheduled training in Airflow and served scores through a FastAPI microservice."
+  ],
+  "technologies": [
+   "LightGBM",
+   "PySpark",
+   "SQL",
+   "Airflow",
+   "FastAPI",
+   "Sentence-BERT",
+   "MLflow",
+   "Python"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist (Look-2-Book) role. I build classic ML end to end, from SQL and PySpark pipelines to LightGBM and XGBoost models running behind production APIs. What connects my work is turning a vague business question into a model that people can act on.",
+   "Emerging Travel Group builds the booking platforms that hotels, agents and travellers rely on, and predicting whether a search turns into a booking is the kind of problem I like: a clear metric, real revenue and messy data. My fiancée lives in Berlin, and we plan to move to Portugal together and settle there long term.",
+   "At Viavi I deployed a LightGBM system that predicted SLA breaches and reduced downtime by 67%, served with FastAPI and MLflow. At Optum I built a reranker on top of an existing recommendation system that lifted renewal conversion by 2%. I would bring the same habit of tying models to business outcomes to your look-to-book work.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers and children has taught me to check what a model does for real users before trusting a metric. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "classic Machine Learning",
+  "Gradient Boosting",
+  "LightGBM",
+  "Classification",
+  "Regression",
+  "Ranking",
+  "Recommendation Systems",
+  "embeddings",
+  "SQL",
+  "PySpark",
+  "Airflow",
+  "Python microservices",
+  "A/B tests",
+  "production"
+ ],
+ "experience_variant": "base"
+}

@@ -1,0 +1,43 @@
+{
+ "company": "Picnic Technologies",
+ "city": "Amsterdam",
+ "role": "Senior Machine Learning Engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior Machine Learning Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Designed and deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped demand forecasting and anomaly detection on 15+ KPIs across 500+ telecom network devices using Holt-Winters and Isolation Forest, enabling proactive network planning and earlier detection."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for an existing recommendation system serving individual and child plan suggestions, improving the ranking of renewal recommendations and increasing conversion by 2%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered SQL and PySpark data pipelines for business stakeholders, automating BAU medical-audit reporting on large healthcare datasets and cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, helping business teams prioritise customers and target outreach."
+  }
+ ],
+ "apply_url": "https://nl.linkedin.com/jobs/view/senior-machine-learning-engineer-at-picnic-technologies-4284413550",
+ "listing_url": "https://nl.linkedin.com/jobs/view/senior-machine-learning-engineer-at-picnic-technologies-4284413550",
+ "resume": "Picnic_Technologies_Senior_Machine_Learning_Engineer_Amsterdam/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Picnic_Technologies_Senior_Machine_Learning_Engineer_Amsterdam/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Picnic_Technologies_Senior_Machine_Learning_Engineer_Amsterdam/project_brief.md"
+}

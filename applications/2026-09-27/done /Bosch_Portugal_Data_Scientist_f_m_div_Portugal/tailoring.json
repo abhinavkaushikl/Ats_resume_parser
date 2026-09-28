@@ -1,0 +1,76 @@
+{
+ "company": "Bosch Portugal",
+ "role": "Data Scientist",
+ "city": "Braga",
+ "company_profile": "Bosch Car Multimedia in Portugal develops and produces automotive electronics, applying AI and industrial analytics to quality, yield and process improvement in manufacturing.",
+ "title": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Data Scientist with 8+ years turning engineering and operational problems into production ML across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds anomaly detection, root-cause analysis, failure prediction and time-series forecasting in Python, SQL, PySpark and scikit-learn, and takes models to deployment with MLflow and Docker. Presents insights that engineers and business stakeholders can act on. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection of instability and proactive network planning."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system",
+   "new": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, adding GPT-3.5 root-cause analysis and remediation recommendations for each predicted failure, reducing downtime by 67%."
+  },
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+   "new": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN for root cause analysis of cascading network alarm floods, improving semantic alarm classification by 73.5%."
+  },
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, turning engineering problems into data-driven solutions and adding to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "original": "Wrote complex SQL queries with multi-table joins",
+   "new": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc analyses and reports that multiple stakeholder teams used for decisions."
+  }
+ ],
+ "project": {
+  "name": "Manufacturing Quality Anomaly Detection",
+  "bullets": [
+   "Built an anomaly detection and failure prediction pipeline for manufacturing sensor and test data, combining Isolation Forest with XGBoost classifiers and feature importance to point engineers to likely root causes.",
+   "Validated models with time-based splits and hypothesis tests against historical quality records, tracked experiments in MLflow on Databricks and served predictions to engineering teams through FastAPI."
+  ],
+  "technologies": [
+   "Python",
+   "Scikit-learn",
+   "XGBoost",
+   "Databricks",
+   "MLflow",
+   "Pandas",
+   "SQL",
+   "FastAPI"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist role at Bosch Car Multimedia. Most of my data science work has been on technical systems: anomaly detection, forecasting and failure prediction on telecom network data, with root-cause analysis built into the output. What ties it together is starting from a messy engineering problem and ending with a model that engineers actually use.",
+   "Your team applies AI to quality, yield and predictive maintenance in manufacturing, which is the same kind of problem I solved for networks, with physical products at the end of it. That link is why this role stands out to me. My fiancée lives in Berlin, and we plan to move to Braga together and settle there long term.",
+   "I would bring a habit of pairing detection with explanation. At Viavi I shipped anomaly detection and Holt-Winters forecasting on 15+ KPIs across 500+ network devices, and an SLA breach prediction system with LightGBM, FastAPI and MLflow that cut downtime by 67%. Both meant working closely with engineers to decide what a useful alert looks like.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and checking that a tool helps before scaling it. I would welcome a conversation about how I could support your manufacturing teams."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "anomaly detection",
+  "root cause analysis",
+  "predictive maintenance",
+  "failure prediction",
+  "forecasting",
+  "feature engineering",
+  "model explainability",
+  "hypothesis testing",
+  "Python",
+  "SQL",
+  "Scikit-learn",
+  "PyTorch",
+  "MLOps",
+  "Databricks",
+  "time-series data"
+ ],
+ "experience_variant": "base"
+}

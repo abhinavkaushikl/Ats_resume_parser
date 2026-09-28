@@ -1,0 +1,72 @@
+{
+ "company": "Vinted",
+ "role": "Senior Data Scientist, Buyer",
+ "city": "Amsterdam",
+ "company_profile": "Vinted runs a leading European marketplace for second-hand fashion, connecting millions of members who buy and sell pre-loved items across 20+ markets.",
+ "title": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years building production ML across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds retrieval, ranking and recommendation models, from gradient boosting with LightGBM and XGBoost to fine-tuned cross-encoder rerankers over dense retrieval, with rigorous offline evaluation. Works in Python, SQL and PySpark on large datasets and partners with product and engineering stakeholders to turn business problems into ML objectives. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Implemented a reranker for an existing recommendation system",
+   "new": "Implemented a reranker for an existing recommendation system, personalizing individual and child plan recommendations and renewal suggestions, increasing conversion by 2%."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder neural reranker on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval relevance and accuracy."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant",
+   "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph pairing semantic dense retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan",
+   "new": "Developed a gradient boosting propensity model in XGBoost predicting personal-loan applications within 7 days of contact, ranking customers for targeted outreach and prioritization."
+  }
+ ],
+ "project": {
+  "name": "Marketplace Search Ranking System",
+  "bullets": [
+   "Built a multi-stage search ranking system for a peer-to-peer resale catalog of unique listings, pairing SBERT dense retrieval with a LightGBM learning-to-rank model and cross-encoder reranker.",
+   "Evaluated ranking quality offline with NDCG and recall on held-out search sessions, then served the ranker through FastAPI over Elasticsearch retrieval, tracked in MLflow."
+  ],
+  "technologies": [
+   "Python",
+   "LightGBM",
+   "PyTorch",
+   "SBERT",
+   "Elasticsearch",
+   "SQL",
+   "FastAPI",
+   "MLflow"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist role in the Buyer domain. The part of my experience closest to your needs is retrieval and ranking: a reranker for recommendations, dense retrieval with a fine-tuned cross-encoder, and gradient boosting models tied to conversion. Across all of it, I have tried to connect a model change to a business number.",
+   "Vinted's catalog is unusual: almost every listing is one of a kind, so search and recommendations cannot lean on repeat inventory the way normal e-commerce does. I find that problem genuinely interesting, and I like that better matching keeps clothes in use. My fiancée lives in Berlin, and we plan to move to Amsterdam together and settle there long term.",
+   "I would bring ranking and evaluation work that has run in production. At Optum I added a reranker to an existing recommendation system and lifted conversion by 2%, and at United Health Group I fine-tuned a cross-encoder to re-rank dense retrieval. At Viavi I built a RAG assistant with semantic retrieval that reached a 90% match rate.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that a recommendation only matters if a real person finds it useful. I would be glad to talk about how I could help the Buyer teams."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "retrieval",
+  "ranking",
+  "personalization",
+  "gradient boosting",
+  "two-tower",
+  "sequence models",
+  "neural rerankers",
+  "Learning-to-Rank",
+  "semantic search",
+  "Python",
+  "SQL",
+  "offline evaluation",
+  "A/B testing",
+  "Elasticsearch",
+  "information retrieval"
+ ],
+ "experience_variant": "base"
+}

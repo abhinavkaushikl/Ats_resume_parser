@@ -1,0 +1,71 @@
+{
+ "company": "IFS",
+ "role": "Senior Lead Agentic AI Engineer – Construction & Engineering",
+ "city": "London",
+ "company_profile": "IFS builds enterprise software, including workforce, project delivery and scheduling systems that construction and engineering companies use to run major programs.",
+ "title": "Senior Lead Agentic AI Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "Senior AI Engineer with 8+ years taking ML and LLM systems from prototype to production, most recently shipping agentic, LLM-backed features end to end. Designs and builds LangGraph multi-agent and RAG applications with evaluation harnesses, tracing and observability, deployed with FastAPI, Docker and Kubernetes. Works directly with clients to turn half-formed requirements into working software, and owns what he ships in production. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+   "new": "Deployed and ran a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, using agentic reasoning over PySpark analysis and live charts to answer business questions, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built evaluation harnesses and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients",
+   "new": "Prototyped 15+ AI applications directly from AIOps and GeoPerformance client requirements, taking 7 into production or paid client work."
+  }
+ ],
+ "project": {
+  "name": "Project Schedule Risk Assistant",
+  "bullets": [
+   "Built a LangGraph agent for construction project scheduling that reads plans, progress notes and resource data through RAG and tools, flagging delay risks for planners and project managers.",
+   "Evaluated agent answers with an LLM-as-judge harness and planner-reviewed test cases, then served it through FastAPI on Docker and Kubernetes with tracing on every run."
+  ],
+  "technologies": [
+   "LangGraph",
+   "RAG",
+   "Claude",
+   "FastAPI",
+   "Kubernetes",
+   "Docker",
+   "LLM Evals",
+   "Python"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Lead Agentic AI Engineer role in your Construction & Engineering team. Over the past year I have shipped agentic, LLM-backed features into production healthcare workflows, from a document-extraction agent to a multi-agent analytics chatbot. What ties my work together is owning systems end to end, from the first design to running them in production.",
+   "IFS builds the scheduling, project delivery and workforce software that construction firms rely on to run major programs, where a wrong answer costs real money on site. Building in a forward-deployed way, close to the planners who use the product, is how I work best. My fiancée lives in Berlin, and we plan to move to London together and settle there long term.",
+   "I would bring hands-on agentic engineering in production. At United Health Group I built a lab-extraction agent with Claude and Amazon Textract that handles about 1,800 lab documents. At Viavi I prototyped 15+ AI applications straight from client requirements, and 7 of them reached production or paid work. I would bring that habit of testing ideas with customers into your team.",
+   "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers and students has taught me to design for real users and to release carefully. I would welcome a conversation about how I could help lead your team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "agentic engineering",
+  "LLM integration",
+  "RAG",
+  "agentic architectures",
+  "evaluation harnesses",
+  "context engineering",
+  "Claude Code",
+  "Cursor",
+  "Kubernetes",
+  "CI/CD",
+  "observability",
+  "APIs",
+  "forward-deployed",
+  "full stack"
+ ],
+ "experience_variant": "base"
+}

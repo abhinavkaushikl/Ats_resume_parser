@@ -1,0 +1,79 @@
+{
+ "company": "Accenture the Netherlands",
+ "role": "Data Science & Machine Learning Engineering Consultant",
+ "city": "Amsterdam",
+ "company_profile": "Accenture Strategy & Consulting advises clients in the Netherlands and abroad on data platforms and builds scalable AI and machine learning solutions for them.",
+ "title": "Data Science & Machine Learning Engineering Consultant",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "summary": "Machine learning engineer and data scientist with 8+ years turning business requirements into data and AI solutions across Healthcare, Telecom and AIOps, including client POCs and consulting. Builds scalable SQL and PySpark data pipelines, ML models from Random Forest and XGBoost to neural networks in PyTorch, and GenAI agents with LangGraph and RAG. Productionizes models on GCP and Azure with Docker, MLflow and FastAPI, working closely with stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, translating business requirements into data solutions and contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance",
+   "new": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from their business requirements, with 7 moving into production or paid client work."
+  },
+  {
+   "original": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting",
+   "new": "Engineered scalable SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Built a production multi-agent analytics chatbot in LangGraph that supports decision-making on AARP medical plans, answering business questions with PySpark analysis and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Productionized an SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  }
+ ],
+ "project": {
+  "name": "Customer Churn Prediction Accelerator",
+  "bullets": [
+   "Built a reusable churn prediction accelerator on Databricks, with PySpark pipelines preparing customer data and Random Forest and XGBoost models ranking at-risk accounts for retention teams.",
+   "Evaluated models with cross-validation and business-facing lift reports, then deployed them to Azure through Docker, the MLflow model registry and a FastAPI scoring endpoint with Git-based CI."
+  ],
+  "technologies": [
+   "Python",
+   "SQL",
+   "Spark",
+   "Azure",
+   "Docker",
+   "MLflow",
+   "Databricks",
+   "Scikit-learn"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Science & Machine Learning Engineering Consultant role in Accenture's AI & Data team. Much of my career has been client-facing: taking a business problem, shaping it into a data solution and building it through to production. That mix of advising and building is the work I enjoy most.",
+   "Accenture's Strategy & Consulting practice works with some of the largest organisations in the Netherlands on their data platforms and AI, which gives the variety of problems I am looking for. My fiancée lives in Berlin, and we plan to move to Amsterdam together and settle there long term.",
+   "At Viavi I delivered POCs and consulting for 15+ clients, which grew POC and mentoring revenue by 11%, and prototyped 15+ AI applications, with 7 reaching production or paid work. On the engineering side, I built SQL and PySpark pipelines that cut manual reporting effort by 95%. I would bring that same end-to-end delivery to your clients.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Working with teachers taught me to listen first and build only what people will really use, the same habit I bring to clients. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "SQL",
+  "Python",
+  "Machine Learning",
+  "Neural Networks",
+  "Random Forest",
+  "Azure",
+  "AWS",
+  "GCP",
+  "PyTorch",
+  "Git",
+  "DevOps",
+  "Spark",
+  "Docker",
+  "API frameworks",
+  "data pipelines",
+  "stakeholder management",
+  "GenAI",
+  "AI agents"
+ ],
+ "experience_variant": "base"
+}

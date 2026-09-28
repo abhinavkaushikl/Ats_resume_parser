@@ -1,0 +1,43 @@
+{
+ "company": "Mastercard",
+ "city": "Dublin",
+ "role": "Senior Data Scientist, AI Engineering",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior Data Scientist, AI Engineering",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, giving business teams a clear basis for targeted outreach and customer prioritization."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a ranking model on top of an existing recommendation system for individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine that clusters Sentence-BERT embeddings of alarms with DBSCAN, tracing network alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Designed and deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation, reducing downtime by 67%."
+  }
+ ],
+ "apply_url": "https://ie.linkedin.com/jobs/view/senior-data-scientist-ai-engineering-at-mastercard-4468990890",
+ "listing_url": "https://ie.linkedin.com/jobs/view/senior-data-scientist-ai-engineering-at-mastercard-4468990890",
+ "resume": "Mastercard_Senior_Data_Scientist_AI_Engineering_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Mastercard_Senior_Data_Scientist_AI_Engineering_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Mastercard_Senior_Data_Scientist_AI_Engineering_Ireland/project_brief.md"
+}

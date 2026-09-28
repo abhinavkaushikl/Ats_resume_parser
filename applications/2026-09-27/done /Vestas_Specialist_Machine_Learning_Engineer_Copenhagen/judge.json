@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 26, "experience": 22, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 89,
+ "decision": "shortlist",
+ "strengths": ["Agentic Maintenance Triage Assistant project matches Vestas' industrial domain and the JD's exact stack: LangGraph agentic reasoning, Azure, Terraform/IaC, Docker, Kubernetes, human-in-the-loop", "Deep, repeated production GenAI/agentic delivery across roles (multi-agent chatbot, RAG assistant), matching the JD's 'build, productize and scale agentic systems' ask", "8+ years well above the 5-year requirement, with full-lifecycle ownership from framing to deployment and monitoring", "Observability/drift-monitoring and CI/CD-through-Terraform shown directly, matching the JD's competencies list"],
+ "gaps": ["Snowflake not shown anywhere, only Azure for cloud/data platform", "TensorFlow absent from the skill set (only PyTorch/Scikit-learn among the named frameworks)", "No wind/energy domain knowledge, though the role itself is corporate AI/ML engineering rather than turbine engineering"]}

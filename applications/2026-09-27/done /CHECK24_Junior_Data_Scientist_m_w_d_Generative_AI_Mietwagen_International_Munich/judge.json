@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 25, "experience": 18, "company_project": 19, "ats_keywords": 8, "credibility": 9},
+ "score": 79,
+ "decision": "maybe",
+ "strengths": ["Multilingual Customer Request Assistant project is a direct domain match: multilingual customer requests for a travel booking service with context engineering and RAG over booking policies, mirroring CHECK24's international Mietwagen use case", "Evaluates answer quality, latency and cost per language with repeatable LLM evaluator tests, matching the JD's quality-measurement ask closely", "Strong production LLM delivery shown across multiple roles: APIs, databases, Docker, Azure, monitoring", "Clean, consistent Python/production track record over 8+ years"],
+ "gaps": ["JD explicitly requires fluent (verhandlungssicher) German; resume states German: A1, a hard, contradicted requirement", "Role is Junior-level; resume profile is senior, a seniority/scope mismatch that a recruiter would likely flag", "No explicit mention of Git workflows or writing clean, maintainable (vs. prototype) code as the JD asks", "AWS not shown as a cloud platform (only Azure/GCP), though Azure alone likely satisfies the ask"]}

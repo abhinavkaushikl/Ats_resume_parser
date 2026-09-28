@@ -9,13 +9,16 @@ Check once per company and country, not once per job.
 .venv/bin/python sponsor_registers.py jobs/jobs_<today>_<HHMM>.md
 ```
 
-It matches every company against the official registers (UK -> London, Dutch IND -> Amsterdam, Danish
-SIRI -> Copenhagen) and the employer lists for Germany (Berlin, Munich) and Spain (Barcelona), downloads
+It matches every company against the official registers (UK -> London, Dutch IND -> Amsterdam and rest of
+the Netherlands, Danish SIRI -> Copenhagen, Irish employment permits issued to companies -> Ireland,
+Portuguese Tech Visa certified companies (still valid) -> Portugal) and the employer lists for Germany
+(Berlin, Munich, rest of Germany), Spain (Barcelona), Sweden and Estonia (Switzerland, Italy and Luxembourg
+have no list - research them on the web as usual), downloads
 them if older than 7 days, caches every listed company in `jobs/visa_companies.json` and writes
 `jobs/register_hits_<today>.json`. Use it like this - don't research what it already answered:
 - **exact, official register** -> Visa: yes, source = the register. Done, no web search.
-- **exact, DE / ES employer list** -> Visa: yes ⚠️ weak (source = the list entry). Germany is the main
-  target: for every Berlin / Munich job marked weak, try one search for a stronger source (company
+- **exact, DE / ES / SE employer list** -> Visa: yes ⚠️ weak (source = the list entry). Germany is the main
+  target: for every German job (Berlin, Munich, Germany) marked weak, try one search for a stronger source (company
   careers page, the JD, an official statement) to drop the ⚠️ (weak jobs are still processed, but flagged).
 - **candidate** (similar name, e.g. "Amazon Science" vs "Amazon UK Services Ltd") -> decide by eye; one
   search only if unclear.
@@ -27,7 +30,9 @@ them if older than 7 days, caches every listed company in `jobs/visa_companies.j
 1. **The job description** says visa sponsorship / relocation / expat support is offered ("visa",
    "relocation", "expat package", "30% ruling", "Blue Card"), or not.
 2. **Official sponsor registers:** UK Home Office register of licensed sponsors (London), Dutch IND
-   recognised sponsors (Amsterdam), Danish SIRI fast-track list (Copenhagen).
+   recognised sponsors (Netherlands), Danish SIRI fast-track list (Copenhagen), Irish DETE employment permits
+   issued to companies (Ireland), Portuguese IAPMEI Tech Visa certified companies (Portugal). A register hit
+   never overrules the JD: if the ad says no sponsorship or existing work rights, drop it.
 3. **The company's own** careers / benefits / FAQ pages (visa, relocation, expat, Blue Card).
 4. **Third-party pages:** Relocate.me, Glassdoor, Make it in Germany, employee reviews.
 

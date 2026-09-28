@@ -1,0 +1,15 @@
+{"criteria": {"tech_stack": 20, "experience": 20, "company_project": 18, "ats_keywords": 11, "credibility": 8},
+ "score": 77,
+ "decision": "maybe",
+ "strengths": [
+   "Insurance Claims Document Assistant project lands squarely in Unum's income-protection insurance domain, using RAG, agents, AWS Bedrock and vector search",
+   "Title matches exactly (Senior AI Engineer) and 8+ years exceeds the 7+ year requirement",
+   "MLOps/LLMOps practice (MLflow versioning, CI/CD, Terraform, tracing) matches the lifecycle-management ask",
+   "LangChain, PyTorch and Scikit-learn are present in both skills and production use"
+ ],
+ "gaps": [
+   "Strong AWS experience is called out twice in the JD (SageMaker, Bedrock, Lambda, ECS/EKS, S3); resume shows only Bedrock, ECS and Textract, with no SageMaker, Lambda, EKS or S3",
+   "No enterprise knowledge-assistant or responsible-AI/governance language",
+   "APIs/microservices shown via FastAPI but no explicit multi-service architecture depth",
+   "No insurance-industry experience outside the one tailored project"
+ ]}

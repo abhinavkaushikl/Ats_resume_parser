@@ -1,0 +1,38 @@
+{
+ "company": "Bolt",
+ "city": "Tallinn",
+ "role": "Applied AI Engineer, Operations Automation",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Applied AI Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior AI Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built evaluation suites and observability for production Question Answering and Summary Agents, with LLM evaluators, agent tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Shipped and operated a production lab-document extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction system pairing a LightGBM model with GPT-3.5 root-cause analysis and remediation per breach, served via FastAPI and MLflow, reducing downtime by 67%."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, automating business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  }
+ ],
+ "apply_url": "https://bolt.eu/en/careers/positions/815e1eb0-51f6-4ba1-af7d-5371dcdffe2e/",
+ "listing_url": "https://ee.linkedin.com/jobs/view/applied-ai-engineer-operations-automation-at-bolt-4470327015",
+ "resume": "Bolt_Applied_AI_Engineer_Operations_Automation_Estonia/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Bolt_Applied_AI_Engineer_Operations_Automation_Estonia/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Bolt_Applied_AI_Engineer_Operations_Automation_Estonia/project_brief.md"
+}

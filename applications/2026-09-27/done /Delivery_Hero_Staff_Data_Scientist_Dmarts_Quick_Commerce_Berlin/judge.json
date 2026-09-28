@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 20, "experience": 13, "company_project": 17, "ats_keywords": 7, "credibility": 8},
+ "score": 65,
+ "decision": "maybe",
+ "strengths": ["New Store Demand Forecasting Engine project is a close domain match: quick-commerce replenishment, promotion/seasonality/stock-out features, Airflow retraining, MLflow tracking", "Multi-year forecasting track record with Holt-Winters, LSTM and XGBoost in a production telecom setting", "Python, Docker, GCP, Airflow, MLflow all present in both skills and bullets", "LLM experience is broad and current (LangGraph, RAG, evaluators)"],
+ "gaps": ["8+ years shown vs. 9+ years required, and no staff-level ML-platform-architecture ownership or cross-org ML strategy is shown", "TensorFlow absent; Kubeflow and AWS not present (GCP-only)", "Optimization models (vs. forecasting alone) are not demonstrated", "Resume headline reads 'Senior AI Engineer', not aligned to the Staff Data Scientist title", "No evidence of influencing stakeholders across organizational boundaries without direct authority at the scale implied"]}

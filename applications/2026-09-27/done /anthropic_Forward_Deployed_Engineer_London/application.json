@@ -1,0 +1,32 @@
+{
+ "status": "applied",
+ "reason": "",
+ "questions_unanswered": [],
+ "answers_given": {
+  "Name": "Abhinav Kaushik",
+  "Email": "aabhinav.kaushik@gmail.com",
+  "Phone": "+91 8700571859",
+  "In-person 25%": "Yes",
+  "Earliest start": "15 November 2026",
+  "AI Policy": "Yes",
+  "Why Anthropic": "cover letter paragraph 2 verbatim",
+  "Visa sponsorship": "Yes",
+  "Future sponsorship": "Yes",
+  "Additional Information": "full cover letter text from tailoring.json",
+  "LinkedIn": "https://www.linkedin.com/in/abhinav-kaushik10/",
+  "Open to relocation": "Yes",
+  "Work address": "relocating",
+  "Interviewed before": "No",
+  "Built/deployed LLM app in enterprise production": "Yes (resume)",
+  "Embedded onsite with enterprise customer": "Yes (user answer)",
+  "8+ years customer-facing / consulting": "Yes (user answer)"
+ },
+ "files_uploaded": [
+  "Abhinav_Kaushik_Resume.pdf"
+ ],
+ "url_used": "https://job-boards.greenhouse.io/anthropic/jobs/5423029008",
+ "ats": "greenhouse",
+ "confirmation": "Thank you for applying! Your application has been received. If there is a fit, someone from our Recruiting team will notify you.",
+ "browser": "chrome-devtools (separate Chrome session)",
+ "timestamp": "2026-09-28T09:04"
+}

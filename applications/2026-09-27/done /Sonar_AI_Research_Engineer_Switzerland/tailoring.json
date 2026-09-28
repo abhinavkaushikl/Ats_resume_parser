@@ -1,0 +1,78 @@
+{
+ "company": "Sonar",
+ "role": "AI Research Engineer",
+ "city": "Switzerland",
+ "company_profile": "Sonar builds code quality and AI code verification tools that help developers and enterprises make human and AI-generated code reliable, secure and maintainable.",
+ "title": "AI Research Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "AI Engineer with 8+ years taking ML and LLM systems from early prototype to production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds RAG pipelines, semantic search and multi-agent LLM applications, fine-tunes models such as cross-encoders for re-ranking, and designs automated evaluations with clear success metrics. Works in Python with PyTorch, Hugging Face Transformers, Docker and MLflow, turning research ideas into working products with engineering teams. Currently building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder on a dataset of positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated evaluation pipelines with LLM evaluators, tracing and failure detection to benchmark Question Answering and Summary Agents, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant in LangGraph",
+   "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph pairing semantic search with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients",
+   "new": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients, taking ideas from early concept to working prototypes, with 7 moving into production or paid client work."
+  },
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+   "new": "Built an event-correlation engine clustering alarms with Sentence-BERT embeddings and DBSCAN to trace cascading network alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+  }
+ ],
+ "project": {
+  "name": "LLM Code Issue Detection Benchmark",
+  "bullets": [
+   "Built an LLM pipeline that flags bugs and security vulnerabilities in source code, combining retrieval over similar code snippets with prompting and a LoRA fine-tuned open-source code model.",
+   "Assembled a versioned, labelled benchmark with precision and recall metrics, compared results against static analysis baselines, and exposed the best model through a FastAPI service."
+  ],
+  "technologies": [
+   "Python",
+   "PyTorch",
+   "Hugging Face Transformers",
+   "LoRA",
+   "RAG",
+   "Vector DB",
+   "DVC",
+   "FastAPI"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the AI Research Engineer role in the Data & Agentic team. My work sits between research and product: I build LLM and RAG systems, fine-tune smaller models where they help, and set up the evaluations that tell us whether an idea is worth shipping. Most of it started as a quick prototype and ended up in production.",
+   "Code verification matters to me because more and more code is written by AI assistants, and that only works when the review behind it can be trusted. There is also a personal reason: my fiancée lives in Berlin, and we plan to move to Geneva, Switzerland together and settle there long term.",
+   "I would bring a practical research habit. I fine-tuned a cross-encoder on positive and negative pairs to improve retrieval, and built evaluation pipelines with LLM evaluators and tracing that cut human review by 43%. At a previous role I prototyped 15+ AI applications, and 7 of them moved into production or paid client work.",
+   "Alongside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that research only matters once it works for real users. I would be happy to talk about how I could contribute."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "LLMs",
+  "agentic",
+  "static analysis",
+  "Python",
+  "Java",
+  "fine-tuning",
+  "LoRA",
+  "QLoRA",
+  "prompt engineering",
+  "RAG",
+  "vector databases",
+  "semantic search",
+  "benchmarks",
+  "datasets",
+  "success metrics",
+  "prototypes",
+  "AWS"
+ ],
+ "experience_variant": "base"
+}

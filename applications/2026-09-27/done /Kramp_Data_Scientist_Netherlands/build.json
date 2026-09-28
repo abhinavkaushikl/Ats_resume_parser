@@ -1,0 +1,43 @@
+{
+ "company": "Kramp",
+ "city": "Varsseveld",
+ "role": "Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Improved an existing recommender by adding a reranking model for individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Built a production SLA breach prediction data product with LightGBM, served through FastAPI and tracked in MLflow, using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, supporting earlier detection and proactive operations planning."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered SQL and PySpark data pipelines on large healthcare datasets, turning BAU medical-audit reporting needs into automated workflows and cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Translated client business problems into 15+ AI application prototypes for AIOps and GeoPerformance clients, with 7 moving into production or paid client work."
+  }
+ ],
+ "apply_url": "https://nl.linkedin.com/jobs/view/data-scientist-at-kramp-4450738416",
+ "listing_url": "https://nl.linkedin.com/jobs/view/data-scientist-at-kramp-4450738416",
+ "resume": "Kramp_Data_Scientist_Netherlands/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Kramp_Data_Scientist_Netherlands/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Kramp_Data_Scientist_Netherlands/project_brief.md"
+}

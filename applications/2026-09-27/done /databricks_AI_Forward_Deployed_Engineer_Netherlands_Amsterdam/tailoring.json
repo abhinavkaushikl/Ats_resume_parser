@@ -1,0 +1,76 @@
+{
+  "company": "databricks",
+  "role": "AI Forward Deployed Engineer - Netherlands",
+  "city": "Amsterdam",
+  "company_profile": "Databricks is a data and AI company whose Data + AI Platform lets organisations build and scale data and AI applications, analytics and agents.",
+  "title": "AI Forward Deployed Engineer",
+  "current_role_title": "Senior GenAI Engineer",
+  "summary": "Senior AI Engineer with 8+ years of hands-on data science and ML engineering, taking GenAI applications to production across Healthcare, Telecom and AIOps. Builds RAG and multi-agent systems in LangGraph and LangChain, fine-tunes models such as cross-encoders, and ships them with evaluation and tracing. Works across Apache Spark, PySpark, pandas, scikit-learn and PyTorch with deployments on GCP and Azure, and explains technical work to technical and non-technical stakeholders. Currently building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+      "new": "Engineered a production multi-agent GenAI chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+    },
+    {
+      "original": "Built automated evaluation and observability pipelines for Question",
+      "new": "Built automated evaluation and observability pipelines for production GenAI Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+    },
+    {
+      "original": "Developed an internal RAG-based Project Discovery Assistant in LangGraph",
+      "new": "Developed a RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+    },
+    {
+      "original": "Delivered technical POCs and consulting for 15+ clients",
+      "new": "Served as a technical advisor to 15+ clients, delivering POCs and consulting across 3+ AIOps and ML platforms and contributing to an 11% increase in POC and mentoring revenue."
+    },
+    {
+      "original": "Engineered SQL and PySpark data pipelines automating BAU",
+      "new": "Engineered SQL and PySpark data pipelines on large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+    }
+  ],
+  "project": {
+    "name": "Natural Language SQL Agent",
+    "bullets": [
+      "Built a text-to-SQL agent that turns business questions into Spark SQL over lakehouse tables, combining schema retrieval, few-shot prompting and LangChain tool calls for self-correction.",
+      "Evaluated generated queries against a curated question set using execution accuracy and LLM judges, tracked runs in MLflow and deployed the agent as a FastAPI service on Azure."
+    ],
+    "technologies": [
+      "LangChain",
+      "Apache Spark",
+      "Spark SQL",
+      "MLflow",
+      "Hugging Face",
+      "FastAPI",
+      "Azure",
+      "Python"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "paragraphs": [
+      "I am applying for the AI Forward Deployed Engineer role in Amsterdam. As a Senior GenAI Engineer I have spent recent years putting RAG and multi-agent applications into production, on top of a longer background in data science with Spark, pandas and scikit-learn. My work keeps returning to one question: how do we get a promising GenAI idea through evaluation and into real use?",
+      "Databricks sits where data and AI meet for a huge number of organisations, and helping customers build first-of-their-kind applications on that platform is the work I want to do next. My fiancée lives in Berlin, and we plan to move to Amsterdam together and settle there long term.",
+      "I would bring production rollouts with measurable results. In my current role I built a multi-agent analytics chatbot in LangGraph that runs PySpark analysis and cut manual analysis by 98%, with evaluation pipelines that reduced human review by 43%. Before that, I delivered POCs and consulting for 15+ clients, explaining models to technical and business audiences alike.",
+      "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Teaching through that project has made me better at explaining complex ideas simply, which I would bring to your customers. I would welcome a conversation."
+    ],
+    "closing": "Sincerely,"
+  },
+  "jd_keywords": [
+    "GenAI applications",
+    "RAG",
+    "multi-agent systems",
+    "Text2SQL",
+    "fine-tuning",
+    "HuggingFace",
+    "LangChain",
+    "evaluation",
+    "pandas",
+    "scikit-learn",
+    "PyTorch",
+    "AWS, Azure, or GCP",
+    "Apache Spark",
+    "LLMOps",
+    "technical advisor"
+  ],
+  "experience_variant": "base"
+}

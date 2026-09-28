@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Accenture Nordics}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+AI Decision Science Consultant\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Accenture Nordics
+
+\textbf{Re: Ind \& Func AI Decision Science Team Lead/Consultant}
+
+Dear Hiring Team,
+
+I am applying to join the Engineering team at Halfspace as an AI Decision Science Consultant. Over more than eight years I have moved from data engineering into ML and AI engineering, building the pipelines and services that let models leave the notebook and do real work. That path, from raw data to running systems, is what ties my work together.
+
+Halfspace started by predicting live football matches and now brings the same precision to business decisions, a place where engineering quality decides the outcome. That is the standard I want to work to. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.
+
+I would bring a builder's view of AI infrastructure. At Viavi I deployed an SLA breach prediction service with LightGBM, FastAPI and MLflow that reduced downtime by 67\%. Earlier I wrote SQL and PySpark pipelines that cut manual healthcare reporting effort by 95\%, work that taught me how much reliable data plumbing matters to every scientist downstream.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers with very little time has made me careful about reliability and plain design. I would welcome a conversation about how I could help your team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

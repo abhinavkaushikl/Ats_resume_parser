@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 14, "experience": 10, "company_project": 16, "ats_keywords": 8, "credibility": 8},
+ "score": 56,
+ "decision": "reject",
+ "strengths": ["New Business Process Knowledge Graph project directly targets SAP's Order-to-Cash domain and links ERP master data to a knowledge graph", "Strong, in-context RAG/embeddings/vector-DB and production AI/ML track record", "Solid Python/SQL/PySpark/Databricks depth matching required tooling", "MSc in Machine Learning and AI satisfies the quantitative-degree requirement"],
+ "gaps": ["No hands-on ontology or semantic-model design experience - this is the job's central requirement", "No graph query language shown (SPARQL, Cypher or GQL) - explicitly required", "No RDF/OWL/SHACL or triple-store vs property-graph trade-off knowledge", "No SAP data model, Datasphere, HANA Cloud or SAP-specific platform experience", "8+ years is in applied AI/data science generally, not specifically knowledge engineering or semantic systems as the JD frames the requirement"]}

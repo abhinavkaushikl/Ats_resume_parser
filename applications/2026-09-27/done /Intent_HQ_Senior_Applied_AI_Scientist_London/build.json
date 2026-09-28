@@ -1,0 +1,38 @@
+{
+ "company": "Intent HQ",
+ "city": "London",
+ "role": "Senior Applied AI Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior Applied AI Scientist",
+ "current_role_title": "Senior Applied Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine clustering alarm text with Sentence-BERT and DBSCAN, tracing the cascading effect of network alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Prototyped 15+ AI applications with AIOps and GeoPerformance clients, turning their requirements into working prototypes, with 7 moving into production or paid client work."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical POCs and consulting to 15+ client stakeholders across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact from customer behaviour, enabling targeted outreach and customer prioritization."
+  }
+ ],
+ "apply_url": "https://intenthq.teamtailor.com/jobs/8360453-senior-applied-ai-scientist",
+ "listing_url": "https://uk.linkedin.com/jobs/view/senior-applied-ai-scientist-at-intent-hq-4466891063",
+ "resume": "Intent_HQ_Senior_Applied_AI_Scientist_London/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Intent_HQ_Senior_Applied_AI_Scientist_London/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Intent_HQ_Senior_Applied_AI_Scientist_London/project_brief.md"
+}

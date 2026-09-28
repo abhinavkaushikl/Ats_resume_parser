@@ -1,0 +1,38 @@
+{
+ "company": "Holidu",
+ "city": "Munich",
+ "role": "Data Scientist - Mid-level/Senior",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Designed and deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped demand forecasting and anomaly detection models on 15+ KPIs across 500+ telecom network devices using Holt-Winters and Isolation Forest, enabling earlier detection and proactive network planning."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, improving the ranking of renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Built an XGBoost propensity model on tabular customer data predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization."
+  }
+ ],
+ "apply_url": "https://de.linkedin.com/jobs/view/data-scientist-%E2%80%93-mid-level-senior-at-holidu-4472049063",
+ "listing_url": "https://de.linkedin.com/jobs/view/data-scientist-%E2%80%93-mid-level-senior-at-holidu-4472049063",
+ "resume": "Holidu_Data_Scientist_Mid_level_Senior_Munich/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Holidu_Data_Scientist_Mid_level_Senior_Munich/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Holidu_Data_Scientist_Mid_level_Senior_Munich/project_brief.md"
+}

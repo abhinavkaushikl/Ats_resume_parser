@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Kramp}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Kramp
+
+\textbf{Re: Data Scientist}
+
+Dear Hiring Team,
+
+I am applying for the Data Scientist role at Kramp. Over eight years I have turned business problems into working data products, from a reranker for a health plan recommendation system to LightGBM prediction and demand forecasting for telecom networks. What ties it together is testing ideas against real outcomes before trusting them.
+
+Kramp keeps farmers and dealers running by getting the right parts to them quickly, and that mix of e-commerce and supply chain is where good models show up in everyday work. There is a personal reason as well: my fiancée lives in Berlin, and we plan to move to Varsseveld together and settle there long term.
+
+I would like to take a domain such as recommenders or supply chain and own it end to end. At Viavi I built an SLA breach prediction system with LightGBM, FastAPI and MLflow that reduced downtime by 67\%, along with demand forecasting across 500+ network devices. Earlier, a reranker I added lifted conversion by 2\%.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and checking that each change actually helps them. I would be glad to talk about how I could contribute to your team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

@@ -1,0 +1,69 @@
+{
+ "company": "Fin",
+ "role": "Senior Machine Learning Scientist",
+ "city": "Dublin",
+ "company_profile": "Fin, now part of Salesforce, builds an AI customer service agent that resolves support issues end to end for businesses, alongside the Intercom help desk.",
+ "title": "Senior Machine Learning Scientist",
+ "current_role_title": "Senior Applied Scientist",
+ "summary": "Senior Applied Scientist with 8+ years of broad applied machine learning, from supervised models and unsupervised clustering to transformer-based NLP, with an MSc in Machine Learning and AI. Frames product problems as ML tasks, runs offline evaluation to check an approach works, and ships prototypes to production with engineers. Recent work covers LLM agents, automated evaluation and cross-encoder re-ranking. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+   "new": "Built an event-correlation engine that clustered network alarms with Sentence-BERT and DBSCAN, tracing alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built offline evaluation and observability pipelines for Question Answering and Summary Agents using LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a transformer cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance",
+   "new": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients, framing each client need as an ML problem, with 7 moving into production or paid client work."
+  }
+ ],
+ "project": {
+  "name": "Support Conversation Topic Discovery",
+  "bullets": [
+   "Built a topic discovery system for customer support conversations, embedding tickets with Sentence-BERT and clustering them with DBSCAN to surface recurring issues an AI agent could not resolve.",
+   "Evaluated cluster quality offline against labelled samples and an LLM judge, compared it with a supervised baseline, then served results through FastAPI with SQL-backed reports."
+  ],
+  "technologies": [
+   "Python",
+   "Sentence-BERT",
+   "DBSCAN",
+   "Scikit-learn",
+   "PyTorch",
+   "SQL",
+   "Matplotlib",
+   "FastAPI"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Machine Learning Scientist role on Fin's Machine Learning team. I am an applied scientist who has worked across supervised models, unsupervised clustering and transformer-based NLP, and my recent work is on LLM agents and how to evaluate them. What ties it together is finding the right ML framing for a product problem and proving it offline.",
+   "Fin answers customer questions end to end, and every model you ship is measured by whether a real customer got help. That is the feedback loop I want to work inside. My fiancée lives in Berlin, and we plan to move to Dublin together and settle there long term.",
+   "At Viavi I built an event-correlation engine with Sentence-BERT and DBSCAN that improved alarm classification by 73.5%, a problem that started unclear and needed the right framing. At United Health Group I built evaluation pipelines with LLM evaluators and tracing that cut human review by 43%.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to test ideas with real users early and to be careful about what ships. I would welcome a conversation about the team's work."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "applied machine learning",
+  "ML framing",
+  "exploratory data analysis",
+  "offline evaluation",
+  "experiment design",
+  "prototypes to production",
+  "NLP",
+  "deep learning",
+  "clustering",
+  "transformer neural networks",
+  "SQL",
+  "MSc"
+ ],
+ "experience_variant": "base"
+}

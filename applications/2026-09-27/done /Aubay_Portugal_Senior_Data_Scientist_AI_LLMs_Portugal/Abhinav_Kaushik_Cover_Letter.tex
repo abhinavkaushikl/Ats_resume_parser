@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Aubay Portugal}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist - AI \& LLMs\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Aubay Portugal
+
+\textbf{Re: Senior Data Scientist - AI \& LLMs}
+
+Dear Hiring Team,
+
+I am applying for the Senior Data Scientist - AI \& LLMs role at Aubay Portugal. Over more than eight years I have gone from classical machine learning in telecom to multi-agent and RAG systems in healthcare, and what connects the work is building AI that holds up once real users depend on it.
+
+Aubay's projects sit inside the systems that banks, insurers and telecom operators run on, which is the kind of setting where I have done my best work. My fiancée lives in Berlin, and we plan to move to Portugal together and settle there long term, so a team with a close, informal culture appeals to both of us.
+
+In my current data science work at United Health Group I built a LangGraph multi-agent analytics chatbot that cut manual analysis by 98\%, and fine-tuned a cross-encoder to re-rank vector retrieval. At Viavi I built a RAG assistant in LangGraph that reached a 90\% match rate against existing solutions.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building it for teachers has made me careful about testing agents with the people who will use them. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

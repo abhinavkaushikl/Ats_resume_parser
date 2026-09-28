@@ -1,0 +1,71 @@
+{
+ "company": "TÜV SÜD",
+ "role": "Data Scientist",
+ "city": "Munich",
+ "company_profile": "TÜV SÜD is a testing, inspection and certification group whose digital unit builds data science and LLM solutions across domains such as medical technology, elevators and automotive.",
+ "title": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Data Scientist with 8+ years applying ML and LLM methods in corporate and consulting settings across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds conversational AI end to end: prompt design, RAG retrieval pipelines, document extraction with OCR, and systematic evaluation with LLM evaluators and tracing. Leads projects with non-technical stakeholders and ships in Python on Azure with FastAPI, Docker and MLflow. Currently building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+   "new": "Deployed a production document-extraction agent with Claude Opus 4.7 and Amazon Textract OCR, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production conversational multi-agent chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built systematic evaluation and monitoring pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Delivered technical POCs and data science consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "project": {
+  "name": "Technical Standards Conversational Assistant",
+  "bullets": [
+   "Built a conversational RAG assistant answering inspection and compliance questions from scanned technical documents, using OCR, embeddings and LangGraph with guardrails on retrieval and answers.",
+   "Evaluated faithfulness with a curated question set and LLM judges, monitored quality, latency and cost per query, and deployed on Azure with FastAPI and Docker."
+  ],
+  "technologies": [
+   "Python",
+   "Azure",
+   "LangGraph",
+   "RAG",
+   "Embeddings",
+   "OCR",
+   "FastAPI",
+   "Docker"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist role in your digital team. Over the past years I have moved from classical data science to building LLM solutions end to end, most recently conversational agents and document extraction in healthcare. The common thread is taking a real business process and making it work reliably with data.",
+   "TÜV SÜD's work on safety across medical technology, elevators and automotive is the kind of setting where careful evaluation matters more than flashy demos. My fiancée lives in Berlin, and we plan to move to Munich together and settle there long term, so a role in Germany suits us both. I am also learning German.",
+   "I would bring hands-on experience with the full LLM lifecycle. I deployed a document-extraction agent using Claude and Amazon Textract that handles about 1,800 lab documents, and built evaluation and tracing pipelines that cut human review by 43%. I work comfortably with non-technical stakeholders from first scoping to rollout.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It shapes how I build: close to the people who use it, and carefully. I would be glad to talk about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "LLM solutions",
+  "conversational AI",
+  "prompt design",
+  "retrieval pipelines",
+  "guardrails",
+  "systematic evaluation",
+  "OCR / document parsing",
+  "embeddings",
+  "Python",
+  "software engineering",
+  "RAG",
+  "Microsoft Azure",
+  "Azure DevOps",
+  "stakeholders"
+ ],
+ "experience_variant": "base"
+}

@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 25, "experience": 18, "company_project": 18, "ats_keywords": 13, "credibility": 9},
+ "score": 83,
+ "decision": "shortlist",
+ "strengths": ["LLM evaluation owned end-to-end across roles (evaluators, tracing, failure detection) directly matching the JD's core ask", "Newest project is an e-commerce customer-support LLM troubleshooting agent evaluated with LLM-as-judge and offline A/B comparison, a near-exact domain match for Care AI", "Production Claude/GPT integration and agentic coding workflows (Claude) explicitly shown", "Strong, consistent quantitative outcomes across 8+ years, MSc in a quantitative field"],
+ "gaps": ["Proven mentoring/leading of scientists and engineers is only shown as client-POC mentoring, not team leadership, versus the JD's explicit ask", "No e-commerce/marketplace-scale customer care experience, only one adjacent project", "Software engineering fundamentals (testing, code review) are implied via MLflow/Docker but never stated explicitly", "A/B testing on customer behavior/sentiment is shown once, not as a recurring practice"]}

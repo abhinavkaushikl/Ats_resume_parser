@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - commercetools}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior AI Search Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+commercetools
+
+\textbf{Re: Senior AI Search engineer}
+
+Dear Hiring Team,
+
+I am applying for the Senior AI Search Engineer role on your Discovery Team in Munich. Much of my recent work has been about retrieval: re-ranking dense results with a fine-tuned cross-encoder, building RAG assistants over large document sets, and keeping those systems healthy in production. Helping people find what they mean, not only what they type, runs through all of it.
+
+commercetools powers the commerce layer behind large brands, and taking semantic and hybrid retrieval to general availability while queries turn into sentences and agents is the kind of problem I want to spend the next years on. My fiancée lives in Berlin, and we plan to move to Munich together and settle there long term.
+
+I would bring practical relevance work to the team. At United Health Group I fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval, and at Viavi I built a LangGraph discovery assistant with a 90\% match rate against existing solutions. I also enjoy the serving side, with FastAPI, Docker and Kubernetes.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to build for real users and to check carefully whether a feature actually helps. I would be glad to talk about the Discovery Team's plans for hybrid retrieval.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

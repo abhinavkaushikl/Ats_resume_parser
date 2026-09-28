@@ -1,0 +1,77 @@
+{
+ "company": "Devoteam",
+ "role": "Distributed Cloud / Data Scientist",
+ "city": "Portugal",
+ "company_profile": "Devoteam is a digital transformation consultancy working with organisations across EMEA on cloud, data and cyber security.",
+ "title": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Data Scientist with 8+ years building statistical models and machine learning across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Frames business questions as data problems, builds classification, regression, clustering and forecasting models in Python, SQL and PySpark, and tells the story through Power BI and QlikSense dashboards. Puts models into production with MLflow, Docker, GCP and Azure. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan",
+   "new": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, framing the business question as a classification problem to enable targeted outreach and customer prioritization."
+  },
+  {
+   "original": "Built customer dashboards for financial and product insights",
+   "new": "Built customer dashboards with QlikSense, SQL and SAP HANA that turned financial and product data into clear insights for stakeholders, increasing user engagement by 40%."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, surfacing trends for earlier detection and proactive planning."
+  },
+  {
+   "original": "Wrote complex SQL queries with multi-table joins",
+   "new": "Wrote complex SQL queries with multi-table joins, CTEs and window functions for data exploration, delivering ad-hoc analyses and reports to multiple stakeholder teams."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system",
+   "new": "Put an SLA breach prediction model into production with LightGBM, FastAPI and MLflow, adding GPT-3.5 for real-time root-cause analysis and remediation recommendations, reducing downtime by 67%."
+  }
+ ],
+ "project": {
+  "name": "Campaign A/B Test Analysis",
+  "bullets": [
+   "Built a campaign experiment analysis pipeline that designed A/B tests with power calculations and estimated treatment effects with regression and hypothesis tests on customer response data.",
+   "Checked results with bootstrap confidence intervals and balance tests between groups, then shared findings with stakeholders through Power BI dashboards backed by SQL and PySpark on Databricks."
+  ],
+  "technologies": [
+   "Python",
+   "SQL",
+   "Power BI",
+   "PySpark",
+   "Databricks",
+   "Scikit-learn",
+   "Matplotlib",
+   "Statistical Modeling"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist role in Devoteam's Distributed Cloud team. My data science work has mostly been about framing a business question as a data problem, building the statistical or ML model that answers it, and explaining the result so people act on it. That last step is the one I care about most.",
+   "Devoteam works across many client projects, and that variety suits me: at Viavi I delivered POCs and consulting for 15+ clients and enjoyed moving between domains. Your Tech for People idea also matches why I do this work. My fiancée lives in Berlin, and we plan to move to Portugal together and settle there long term.",
+   "I would bring models that reach production and stories that land. At Viavi I shipped anomaly detection and forecasting on 15+ KPIs across 500+ network devices, and an SLA breach prediction system with LightGBM, FastAPI and MLflow that cut downtime by 67%. Earlier, my QlikSense and SQL dashboards raised user engagement by 40%.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that analysis only matters when it helps a real person decide something. I would be glad to talk about how I could support your clients."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "statistical models",
+  "machine learning",
+  "classification",
+  "regression",
+  "clustering",
+  "hypothesis testing",
+  "experimental design",
+  "Python",
+  "SQL",
+  "data visualization",
+  "Power BI",
+  "storytelling",
+  "Spark",
+  "MLOps",
+  "GCP",
+  "Azure"
+ ],
+ "experience_variant": "base"
+}

@@ -1,0 +1,32 @@
+{
+ "status": "needs_review",
+ "reason": "SuccessFactors apply+register form (job 462) partly filled, not submitted (tab lost); 3 required questions not in profile; password/terms for user",
+ "questions_unanswered": [
+  {
+   "label": "Please rate your R expertise: a) Can teach others without web assistance b) Can write code without Google c) Can read programs d) Can learn R quickly",
+   "type": "text",
+   "options": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "label": "How many formal courses in statistics, machine learning, or advanced modeling have you had?",
+   "type": "text",
+   "options": []
+  },
+  {
+   "label": "Do you require any reasonable accommodations to support you during the application process?",
+   "type": "select",
+   "options": []
+  }
+ ],
+ "answers_given": {},
+ "files_uploaded": [],
+ "url_used": "https://careers.partnerre.com/job/Dublin-Data-Scientist/1423589933/ (Apply -> career5.successfactors.eu company C0002079929P)",
+ "ats": "successfactors",
+ "confirmation": "",
+ "timestamp": "2026-09-28T15:40"
+}

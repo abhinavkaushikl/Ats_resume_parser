@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Sportradar}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Sportradar
+
+\textbf{Re: Senior Data Scientist}
+
+Dear Hiring Team,
+
+I am applying for the Senior Data Scientist role in the Quants team. Most of my career has been predictive modelling on messy real-world data, with a strong focus on time-series forecasting in telecom. I enjoy the whole cycle: cleaning the data, building the model, and then checking honestly whether it holds up.
+
+Sports betting markets are one of the clearest tests of a predictive model, because every price is checked against what actually happens. That appeals to me a lot. On the personal side, my fiancée lives in Berlin, and we plan to move to Austria together and settle there long term.
+
+I would bring forecasting experience that has run in production. I built LSTM and XGBoost models forecasting call and SMS handover volumes for base stations, developed a univariate KPI forecasting feature for an AIOps monitoring product, and ran Holt-Winters demand forecasting across 500+ network devices.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to build for the people who rely on the result, not for the demo. I would welcome the chance to talk with your team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

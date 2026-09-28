@@ -1,6 +1,6 @@
 ---
 name: tailor-resumes
-description: Tailored resume + cover letter for every shortlisted job, written by Claude (no Groq) - for each job description in jobs/jd_visa/<date>/ Claude writes the new title, a tweaked summary and one new company-fit project, a script builds the LaTeX/PDF, and a separate Claude judge scores it. Use when the user asks to tailor / generate resumes for the shortlisted jobs, or runs /tailor-resumes; also step 5 of /job-hunt.
+description: Tailored resume + cover letter for every shortlisted job, written by Claude (no Groq) - for each job description in jobs/jd_visa/<date>/ Claude writes the new title (resume, current role and cover letter), a tweaked summary, JD-blended rewordings of experience bullets and one new company-fit project, a script builds the LaTeX/PDF, and a separate Claude judge scores it. Use when the user asks to tailor / generate resumes for the shortlisted jobs, or runs /tailor-resumes; also step 5 of /job-hunt.
 model: sonnet
 ---
 
@@ -9,13 +9,17 @@ model: sonnet
 Project folder: `/Users/abhinav/Ats_resume_parser`. Date: today unless I give one (`/tailor-resumes 2026-09-25`).
 
 Claude does the writing and the judging; `build_resume.py` does everything else (no LLM calls): it takes
-the base resume, changes only the title, summary and one new project, renders the LaTeX template and
-compiles the PDF. No Groq is used.
+the base resume, changes only the title, the current role's title, the summary, the reworded experience
+bullets and one new project, renders the LaTeX template and compiles the PDF. No Groq is used.
 
 ## Rules for every resume (subtle tailoring)
 
-- **Changes:** title (the JD's job title), summary (tweaked toward the JD, clear), ONE new project fitting
-  the company's profile, and the cover letter.
+- **Changes:** title (the JD's job title, in the resume and cover letter), the current (United Health
+  Group) role's title by JD family (Data Scientist JD -> Senior Data Scientist, AI Engineer JD -> Senior
+  AI Engineer, ML Engineer -> Senior Machine Learning Engineer), summary (tweaked toward the JD, clear),
+  3-6 experience bullets reworded so the JD's words blend in naturally (same facts, same numbers, max 2
+  lines - the build skips any edit that changes a number), ONE new project fitting the company's
+  profile, and the cover letter.
 - **Common thread - Think Tree:** the summary always ends with one sentence on ThinkTree.AI (non-profit
   AI learning platform used by NGO teachers to support students with ADHD), and the cover letter's last
   paragraph tells the same story.
@@ -25,9 +29,12 @@ compiles the PDF. No Groq is used.
 - **Experience version:** for a JD heavy on time series / forecasting, the build swaps in the fixed
   time-series bullets from `resume_variants.json` (Viavi: call / SMS handover forecasting with LSTM and
   XGBoost instead of the SLA bullet, plus the univariate AIOps KPI forecasting feature). These are my own
-  words - writers never write or edit experience bullets. The build picks the version from the JD the
+  words - writers never reword the variant bullets. The build picks the version from the JD the
   same way the scorer does; `"experience_variant"` in tailoring.json overrides it.
-- **Never changes:** other experience bullets, skills, education, the other projects. **Think Tree** (my free
+- **Languages:** "German: A1" is shown only for jobs in Germany / Austria / Switzerland or a JD that
+  mentions German; elsewhere the section lists English only. The build decides this from the JD's
+  Location line - writers do nothing.
+- **Never changes:** other roles' titles, dates and companies, skills, education, the other projects. **Think Tree** (my free
   ADHD app, a charity tool) is never edited, trimmed or moved - the build keeps it first.
 - **Invisible:** the company's name appears nowhere in the resume or in the file names, and no company
   product / brand words. The build also removes the name if it slips in.
@@ -78,7 +85,8 @@ writer only for the missing ones.
 ```
 
 Builds the resume PDF, cover letter PDF, `resume.txt` and `project_brief.md` per job. Read its warnings:
-a title rejected by the seniority check or a trimmed bullet is fine; a company-name warning or a failed
+a title rejected by the seniority check, a trimmed bullet or a skipped experience edit is fine
+(the base bullet is kept); a company-name warning or a failed
 build is not - fix that job's `tailoring.json` and run the command again (it only builds what's missing;
 `--rebuild` rebuilds all).
 
@@ -106,8 +114,9 @@ If `jobs/visa_jobs_<date>.json` exists (a /job-hunt run), rebuild the results so
 .venv/bin/python job_report.py jobs/visa_jobs_<date>.json
 ```
 
-Spot-check two resumes (`resume.txt`): no company name, Think Tree unchanged, only title / summary /
-one new project differ from `_base_resume.txt`.
+Spot-check two resumes (`resume.txt`, and `experience_edits` in `build.json` for before/after): no
+company name, Think Tree unchanged, the reworded bullets read naturally and keep their facts, and only
+title / current role title / summary / reworded bullets / one new project differ from `_base_resume.txt`.
 
 Reply with: how many resumes were made, a table (job, judge score, resume link), the lowest scores with
 their main gap from `judge.json`, and any failures. Remind me that each folder has a `project_brief.md` to

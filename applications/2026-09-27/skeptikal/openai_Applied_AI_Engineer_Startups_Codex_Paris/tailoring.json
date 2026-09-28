@@ -1,0 +1,35 @@
+{
+ "company": "openai",
+ "role": "Applied AI Engineer, Startups (Codex)",
+ "city": "Paris",
+ "company_profile": "OpenAI is an AI research and deployment company whose models and tools, including the Codex coding agent, help startups and developers build and ship software.",
+ "title": "Applied AI Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "Senior AI Engineer with 8+ years building practical AI applications and moving them from prototype to production across Healthcare, Telecom and AIOps. Builds agents, integrations and automations with LangGraph, Claude and GPT models, and tracks their reliability with LLM evaluators, tracing and observability. Has prototyped 15+ AI applications from client requirements and enjoys making complex technical ideas easy to act on. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {"original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients", "new": "Prototyped 15+ AI applications with AIOps and GeoPerformance clients, turning their requirements into working builds, with 7 moving into production or paid client work."},
+  {"original": "Delivered technical POCs and consulting for 15+ clients", "new": "Delivered hands-on technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."},
+  {"original": "Deployed a production lab-extraction agent with Claude Opus 4.7", "new": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, automating the work behind 800 Jira tickets and PRD tasks across about 1,800 lab documents."},
+  {"original": "Built automated evaluation and observability pipelines for Question Answering", "new": "Built automated evaluation and observability pipelines that checked the reliability of Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."}
+ ],
+ "project": {
+  "name": "Agentic Developer Workflow Kit",
+  "bullets": [
+   "Built a set of agentic developer workflows for early-stage teams, using GPT-4 with repository context and tool calls to automate code review, test writing and small refactors.",
+   "Evaluated each workflow against existing test suites and LLM evaluators with tracing, then shared them as reusable code examples and a FastAPI service used for live walkthroughs."
+  ],
+  "technologies": ["GPT-4", "LLM APIs", "Python", "LangGraph", "LLM Evals", "FastAPI", "Docker"]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Applied AI Engineer role on the Startups team in Paris, focused on Codex. My work has mostly been building AI applications fast, close to the people who use them, and then making them reliable enough to last. Taking an idea from a first demo to a workflow a team relies on is what connects my roles.",
+   "Codex is changing how startups write and ship software, and Paris has one of Europe's most active founder communities to share that with. My fiancée lives in Berlin, and we plan to move to Paris together and settle there long term, which makes this role a step for both of us.",
+   "I would bring a builder's mindset to the team. At Viavi I prototyped 15+ AI applications from client requirements, and 7 of them moved into production or paid client work. At United Health Group I shipped a lab-extraction agent that automated the work behind 800 Jira tickets, backed by evaluation pipelines that tracked its reliability.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about whether a tool really helps the people using it, which is how I would approach every startup workflow. I would welcome the chance to talk."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": ["Codex", "AI Coding Tools", "Startups", "Technical Talks", "Live Demos", "Workshops", "Integrations", "Automations", "Developer Tools", "Software Engineering", "Evaluation", "Reliability", "Reusable Code Examples", "Customer Feedback"],
+ "experience_variant": "base"
+}

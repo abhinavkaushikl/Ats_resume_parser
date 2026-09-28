@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Back Market}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Back Market
+
+\textbf{Re: Senior Data Scientist - Care AI}
+
+Dear Hiring Team,
+
+I am applying for the Senior Data Scientist role on the AI for Care team. Most of my recent data science work comes back to one question: how do you know an LLM system is actually doing its job? I have built these systems and, more importantly, the evaluations that decide whether they ship.
+
+Back Market gives devices a second life, and helping a customer fix a phone instead of returning it is a small change with a real effect on waste. That is work I want to be part of. My fiancée lives in Berlin, and we plan to move to Paris together and settle there long term.
+
+At United Health Group I built evaluation and observability pipelines for Question Answering and Summary Agents that reduced human-in-the-loop review by 43\%, and a LangGraph analytics chatbot that cut manual analysis by 98\%. I would bring the same habit of measuring first to your troubleshooting and care agents, and share it with the wider team.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that an AI tool is only good if the person on the other side feels helped, which is the heart of customer care. I would be glad to talk further.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

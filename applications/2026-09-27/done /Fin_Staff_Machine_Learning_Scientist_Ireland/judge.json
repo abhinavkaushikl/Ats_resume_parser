@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 24, "experience": 12, "company_project": 16, "ats_keywords": 6, "credibility": 8},
+ "score": 66,
+ "decision": "maybe",
+ "strengths": ["NLP, clustering (DBSCAN) and transformer (cross-encoder, SBERT) work shown in real production bullets, not just listed", "MSc in ML/AI and 8+ years applied ML experience clearly exceed the 5-8 year ask", "New Support Resolution Prediction project lands squarely in Fin/Intercom's own domain (predicting support-agent resolution)", "Strong, concrete production metrics throughout (98%, 67%, 73.5%) read as credible"],
+ "gaps": ["No evidence of being 'the primary technical leader for a team' or of hiring/mentoring engineers - a required, staff-specific bullet the JD asks for twice", "Resume headline stays 'Senior AI Engineer'; no bullet uses staff-level framing (raising technical bar, driving team standards)", "Bonus PhD / research-environment background and Bayesian/RL depth are absent", "Experience reads as strong senior IC, one level below the staff/team-leadership scope this JD is written for"]}

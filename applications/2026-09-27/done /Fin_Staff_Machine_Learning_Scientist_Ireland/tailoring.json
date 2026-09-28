@@ -1,0 +1,70 @@
+{
+ "company": "Fin",
+ "role": "Staff Machine Learning Scientist",
+ "city": "Dublin",
+ "company_profile": "Fin, now part of Salesforce, builds an AI customer service agent that resolves support issues end to end for businesses, alongside the Intercom help desk.",
+ "title": "Staff Machine Learning Scientist",
+ "current_role_title": "Senior Applied Scientist",
+ "summary": "Senior Applied Scientist with 8+ years of applied machine learning, taking supervised models, unsupervised clustering and transformer-based NLP from research to shipped products, with an MSc in Machine Learning and AI. Built the evaluation pipelines for production LLM agents, guided technical POCs for 15+ clients and moved prototypes into production with engineering and product teams. Brings strong Python and SQL, scientific thinking and comfort with ambiguity. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built the evaluation and observability pipelines that set the quality bar for Question Answering and Summary Agents, using LLM evaluators, tracing and failure detection to reduce human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Delivered technical POCs, consulting and mentoring for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+   "new": "Built an event-correlation engine that clustered network alarms with Sentence-BERT and DBSCAN, tracing alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance",
+   "new": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients, finding where ML could create value and moving 7 into production or paid client work."
+  }
+ ],
+ "project": {
+  "name": "Support Resolution Prediction Model",
+  "bullets": [
+   "Built a model predicting whether an AI support agent will resolve a customer conversation, combining transformer embeddings of the conversation with LightGBM to route likely failures to human agents.",
+   "Evaluated it offline on historical conversations with calibration and precision-recall analysis, designed an experiment to measure routing impact, then served it through FastAPI with MLflow."
+  ],
+  "technologies": [
+   "PyTorch",
+   "Hugging Face Transformers",
+   "LightGBM",
+   "Scikit-learn",
+   "SQL",
+   "FastAPI",
+   "MLflow",
+   "Matplotlib"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Staff Machine Learning Scientist role on Fin's Machine Learning team. I am an applied scientist with 8+ years across supervised models, clustering and transformer-based NLP, and lately I have shaped how LLM systems get built and evaluated. The thread through my work is turning ambiguous product questions into models that ship.",
+   "Fin is an AI agent judged on one thing, whether the customer's issue is actually resolved, and that clarity is rare and useful for an ML team. I want to help raise the bar on how those models are framed and tested. My fiancée lives in Berlin, and we plan to move to Dublin together and settle there long term.",
+   "At United Health Group I built the evaluation and tracing pipelines for our QA and summary agents, cutting human review by 43% and giving the team a shared way to judge quality. At Viavi I prototyped 15+ AI applications for clients, and 7 reached production or paid work.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers and children has made me careful about what ships and why. I would be glad to talk about how I could help your team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "applied ML",
+  "technical leader",
+  "mentoring",
+  "technical standards",
+  "ML framing",
+  "exploratory data analysis",
+  "offline evaluation",
+  "prototypes to production",
+  "NLP",
+  "deep learning",
+  "clustering",
+  "SQL",
+  "MSc"
+ ],
+ "experience_variant": "base"
+}

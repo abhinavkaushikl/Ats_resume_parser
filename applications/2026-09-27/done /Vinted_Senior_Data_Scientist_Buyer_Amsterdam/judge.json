@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 24, "experience": 19, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 84,
+ "decision": "shortlist",
+ "strengths": ["Marketplace Search Ranking System project reproduces Vinted's exact challenge: multi-stage ranking over a peer-to-peer catalog of unique listings, with dense retrieval, LTR and reranking", "Elasticsearch usage matches one of the JD's named serving technologies, used in context not just listed", "Offline evaluation with NDCG/recall on held-out sessions matches the JD's rigorous offline-evaluation ask", "Gradient boosting (LightGBM) and deep learning (SBERT, cross-encoder) both shown in production, matching the JD's core technical ask"],
+ "gaps": ["No two-tower architecture or sequence-based user modeling shown, both explicitly named in the JD", "Vespa and Triton (named serving options) not shown, only Elasticsearch/FastAPI serving", "No explicit high-throughput, millisecond-latency serving metrics, which the JD emphasizes for search/recommendation engines", "Scale claims (hundreds of millions of listings) not matched by an equivalent scale number in the resume's own project"]}

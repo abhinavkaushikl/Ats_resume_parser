@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Vestas}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Specialist, Machine Learning Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 27, 2026
+
+Hiring Team\\
+Vestas
+
+\textbf{Re: Specialist, Machine Learning Engineer}
+
+Dear Hiring Team,
+
+I am applying for the Specialist, Machine Learning Engineer role in the AI/ML Chapter. I design and ship ML, GenAI and agentic systems into production, most recently multi-agent LLM applications in healthcare after years of predictive ML in telecom. The thread through all of it is turning a promising use case into a service people depend on.
+
+Vestas applies AI to renewable energy, where better operations have a direct effect on the climate, and building agentic workflows for that is work I would find meaningful. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term. I have also worked closely with teams in India, which fits your setup.
+
+I would bring experience across the full lifecycle. I built a LangGraph multi-agent chatbot that cut manual analysis by 98\%, with evaluation and tracing pipelines that reduced human review by 43\%. Earlier I put a LightGBM prediction system into production with FastAPI and MLflow, and I use Docker, Kubernetes and Terraform day to day.
+
+Alongside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me grounded in building for real users, carefully. I would be glad to talk about how I could contribute to the team.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

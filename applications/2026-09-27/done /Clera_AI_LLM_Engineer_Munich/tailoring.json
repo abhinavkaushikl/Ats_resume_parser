@@ -1,0 +1,72 @@
+{
+  "company": "Clera",
+  "role": "AI/LLM Engineer",
+  "city": "Munich",
+  "company_profile": "Clera builds a B2B SaaS platform that automates quoting and order processing for distributors and manufacturers.",
+  "title": "AI/LLM Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "summary": "Senior AI Engineer with 8+ years building AI agents, NLP and LLM applications end to end, from data pipelines to production backends, across Healthcare, Telecom and AIOps. Designs LangGraph agents and RAG systems, works with embeddings, fine-tunes cross-encoders for reranking to improve retrieval relevance, and processes unstructured documents with Amazon Textract and PySpark. Ships with FastAPI, Docker, Kubernetes and Terraform on Azure and GCP. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+      "new": "Fine-tuned a cross-encoder on positive and negative pairs to rerank dense embedding retrieval over AARP survey data, improving search relevance and retrieval accuracy."
+    },
+    {
+      "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+      "new": "Built and deployed a production lab-extraction agent end to end with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating 800 Jira tickets and PRD tasks."
+    },
+    {
+      "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+      "new": "Built an event-correlation engine using Sentence-BERT embeddings and DBSCAN to cluster alarms, tracing network alarm floods back to the root event and improving semantic alarm classification by 73.5%."
+    },
+    {
+      "original": "Engineered SQL and PySpark data pipelines automating BAU",
+      "new": "Built SQL and PySpark data pipelines processing large healthcare datasets for BAU medical-audit reporting, cutting manual reporting effort by 95%."
+    }
+  ],
+  "project": {
+    "name": "Order Document Processing Agent",
+    "bullets": [
+      "Built an AI agent that turns unstructured purchase requests and order emails into structured quotes, matching line items to a product catalog with embeddings and a fine-tuned reranker.",
+      "Evaluated extraction and product-match quality against human-labelled orders, and served the agent through a FastAPI backend in Docker on Kubernetes with Terraform-managed infrastructure."
+    ],
+    "technologies": [
+      "Python",
+      "LangGraph",
+      "Embeddings",
+      "Cross-Encoder",
+      "FastAPI",
+      "Docker",
+      "Kubernetes",
+      "Terraform"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "closing": "Sincerely,",
+    "paragraphs": [
+      "I am applying for the AI/LLM Engineer role. I build AI agents end to end, from the data pipeline that feeds them to the backend they run on, and most recently shipped an agent that reads unstructured lab documents into structured records. The thread in my work is getting language models to do dependable work on messy real data.",
+      "Clera automates quoting and order processing for distributors and manufacturers, which is exactly the kind of document and product-matching problem I like solving in a small team close to the product. My fiancée lives in Berlin, and we plan to move to Munich together and settle there long term.",
+      "I would bring two things I have already done. I fine-tuned a cross-encoder to rerank dense retrieval, which improved retrieval accuracy, and I built SQL and PySpark pipelines over large healthcare datasets that cut manual reporting effort by 95%. RLHF and DPO would be new for me, and I would learn them quickly.",
+      "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to ship small, test with real users and fix what they find. I would welcome a conversation about the role."
+    ]
+  },
+  "jd_keywords": [
+    "AI agents",
+    "embeddings",
+    "fine-tune LLMs",
+    "classification and reranking",
+    "product search relevance",
+    "RLHF",
+    "DPO",
+    "data pipelines",
+    "unstructured data",
+    "NLP",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "AWS, Azure or GCP",
+    "backend"
+  ],
+  "experience_variant": "base"
+}

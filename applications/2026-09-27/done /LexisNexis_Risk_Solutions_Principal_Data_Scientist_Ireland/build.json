@@ -1,0 +1,44 @@
+{
+ "company": "LexisNexis Risk Solutions",
+ "city": "Dublin",
+ "role": "Principal Data Scientist",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5",
+  "Title 'Principal Data Scientist' not used (seniority/fit check); kept 'Senior AI Engineer'."
+ ],
+ "headline": "Senior AI Engineer",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Built and deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, adding GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Engineered robust SQL and PySpark data pipelines over large healthcare datasets, automating BAU medical-audit reporting and cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Built an XGBoost predictive model scoring the propensity of personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Guided technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, presenting results to client stakeholders and contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.",
+   "after": "Explored and prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, taking 7 into production or paid client work."
+  }
+ ],
+ "apply_url": "https://ie.linkedin.com/jobs/view/principal-data-scientist-at-lexisnexis-risk-solutions-4468914309",
+ "listing_url": "https://ie.linkedin.com/jobs/view/principal-data-scientist-at-lexisnexis-risk-solutions-4468914309",
+ "resume": "LexisNexis_Risk_Solutions_Principal_Data_Scientist_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "LexisNexis_Risk_Solutions_Principal_Data_Scientist_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "LexisNexis_Risk_Solutions_Principal_Data_Scientist_Ireland/project_brief.md"
+}

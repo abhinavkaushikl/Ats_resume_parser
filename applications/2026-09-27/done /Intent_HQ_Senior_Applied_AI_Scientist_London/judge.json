@@ -1,0 +1,15 @@
+{"criteria": {"tech_stack": 25, "experience": 20, "company_project": 16, "ats_keywords": 12, "credibility": 9},
+ "score": 82,
+ "decision": "shortlist",
+ "strengths": [
+   "Sequence modelling (LSTM), transformers and NLP explicitly shown in bullets, not just skills list",
+   "Client prototyping (15+ AIOps/GeoPerformance clients) and non-technical stakeholder translation directly match the JD's core ask",
+   "Customer Behaviour Segmentation project (transformer-encoded activity sequences, DBSCAN clustering for churn/engagement) closely mirrors Intent HQ's behavioural-AI domain",
+   "PySpark, Spark SQL and Databricks are used in production, matching the JD's desirable stack"
+ ],
+ "gaps": [
+   "No CausalAI framework experience (dowhy, econml) anywhere in the resume",
+   "No experience at a behavioural-data / customer-intent product company at Intent HQ's scale (325M+ profiles)",
+   "Headline experience is Healthcare/Telecom, not customer decisioning or marketing-tech domains",
+   "B2B product experience not demonstrated"
+ ]}

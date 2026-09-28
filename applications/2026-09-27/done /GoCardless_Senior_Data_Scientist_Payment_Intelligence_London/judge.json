@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 20, "experience": 19, "company_project": 18, "ats_keywords": 10, "credibility": 8},
+ "score": 75,
+ "decision": "maybe",
+ "strengths": ["New Payment Fraud Sequence Model project is a strong domain match: LSTM sequence model, LightGBM on account features, time-based splits, simulated A/B, GCP Vertex AI, MLflow drift monitoring", "Full-lifecycle ownership demonstrated repeatedly (SLA breach system: feature engineering to real-time production scoring, 67% downtime reduction)", "Prior fraud-detection work (JPMorgan synthetic dataset project) reinforces the fraud angle", "Clear communication of ML trade-offs to non-technical stakeholders shown throughout"],
+ "gaps": ["BigQuery and Vertex AI appear only in the new project's tech line, not in the resume's core skills sections", "Sequence/deep-learning fraud modelling is shown once (new project) rather than as an established production pattern; no graph-based models at all", "Fintech/payments domain experience is thin - one new project versus a career in healthcare/telecom", "No PhD/advanced STEM beyond MSc explicitly tied to sophisticated architectures claim"]}

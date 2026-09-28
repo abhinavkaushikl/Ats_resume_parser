@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 26, "experience": 18, "company_project": 19, "ats_keywords": 13, "credibility": 8},
+ "score": 84,
+ "decision": "shortlist",
+ "strengths": ["Enterprise Workflow MCP Server project directly delivers what the JD asks for: MCP servers, sub-agents and agent skills used in production healthcare workflows", "Healthcare background across three roles (UHG, Optum, Nippon) is a named plus in the JD", "Integrating an agent into an existing enterprise system (LIMS) shows the 'work within customer systems' pattern the JD describes", "Consulting/POC delivery for 15+ clients shows some customer-facing technical experience"],
+ "gaps": ["No dedicated FDE or pre-sales role; client work reads as internal consulting rather than embedding with strategic external customers", "No second language (TypeScript/Java) alongside Python, which the JD lists as a plus", "Limited language around navigating organizational ambiguity or driving repeatable deployment patterns across multiple customers", "No travel or in-person deployment experience mentioned"]}

@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 26, "experience": 21, "company_project": 19, "ats_keywords": 13, "credibility": 8},
+ "score": 87,
+ "decision": "shortlist",
+ "strengths": ["New LLM Code Issue Detection Benchmark project is a near-exact match to Sonar's core problem: LoRA fine-tuned code model, bug/vulnerability flagging, versioned labelled benchmark scored against static-analysis baselines", "Covers nearly the JD's full LLM-technique list in context: LoRA fine-tuning, RAG, vector DB, semantic search, PyTorch, Hugging Face Transformers", "8+ years of applied AI experience well above the 2-year minimum, with a strong record of research-to-production delivery", "History of building rigorous evaluation pipelines with precision/recall-style metrics"],
+ "gaps": ["No Java shown, only a 'strong plus' in the JD but explicitly named", "No AWS-specific cloud infrastructure experience (resume shows GCP/Azure)", "Large-scale code-centric data pipeline experience shown only at project scale, not the massive scale the JD implies", "Code-analysis/static-analysis domain experience is new (one project), not from a prior role"]}

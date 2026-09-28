@@ -1,0 +1,76 @@
+{
+ "company": "Bolt",
+ "role": "Senior AI / Agent Engineer",
+ "city": "Estonia",
+ "company_profile": "Bolt is a European mobility platform for ride-hailing, food delivery, scooters, e-bikes and car-sharing, used by customers and driver and courier partners across many countries.",
+ "title": "Senior AI / Agent Engineer",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "Senior AI Engineer with 8+ years taking ML and LLM systems from prototype to production across Healthcare, Telecom and AIOps. Ships production AI agents in LangGraph that work across systems, with automated LLM evaluation, tracing, failure detection and human-in-the-loop review. Builds retrieval with embeddings, vector stores and cross-encoder re-ranking, served through FastAPI and Docker, and explains agent trade-offs to engineers and business stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+   "new": "Shipped a production lab-extraction agent integrated with LIMS, built on Claude Opus 4.7 and Amazon Textract, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph, orchestrating PySpark analysis, multi-turn reasoning and live charts to answer business questions, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Established automated evaluation and observability for Question Answering and Summary Agents, with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank embedding-based dense retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant",
+   "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, combining semantic retrieval with multi-step LLM reasoning and reaching a 90% match rate against existing organizational solutions."
+  }
+ ],
+ "project": {
+  "name": "HR Workflow Automation Agent",
+  "bullets": [
+   "Built a LangGraph agent that automates multi-step HR requests across HRIS and payroll APIs, using typed tool contracts, Pydantic input validation, idempotent retries and human approval gates before writes.",
+   "Evaluated the agent with an LLM-evaluator regression suite and audit-logged tool-call traces, then served it through FastAPI and Docker with an event-driven queue for async actions."
+  ],
+  "technologies": [
+   "LangGraph",
+   "Claude",
+   "FastAPI",
+   "Pydantic",
+   "Docker",
+   "LLM Evals",
+   "Agent Tracing",
+   "pgvector"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior AI / Agent Engineer role on Bolt's new People systems team. Over the past year I have shipped production AI agents at United Health Group, including a lab-extraction agent wired into LIMS, together with the evaluation and tracing that make them safe to trust. The thread through my work is turning unpredictable model behaviour into systems people can rely on.",
+   "Bolt helps people move through their cities every day, and the People processes behind that deserve the same reliability as the product. Agents that touch payroll and employee records need scoped permissions and a human in the loop, which is the work I enjoy most. My fiancée lives in Berlin, and we plan to move to Estonia together and settle there long term.",
+   "On a new team I would help set the patterns early: clear tool contracts, regression suites and audit trails before scale. I built evaluation and observability pipelines with LLM evaluators and tracing that reduced human-in-the-loop review by 43%, and a LangGraph analytics chatbot that cut manual analysis by 98%.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Building for teachers and children has taught me to design for the person on the other side and to be careful about what a system is allowed to do. I would be glad to talk about how I could help the team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "AI agents",
+  "LLM-powered automation",
+  "tool/function calling",
+  "agent evaluation",
+  "observability",
+  "human-in-the-loop",
+  "event-driven architecture",
+  "retrieval",
+  "embeddings",
+  "vector stores",
+  "re-ranking",
+  "audit trails",
+  "APIs",
+  "cloud infrastructure",
+  "mentoring"
+ ],
+ "experience_variant": "base"
+}

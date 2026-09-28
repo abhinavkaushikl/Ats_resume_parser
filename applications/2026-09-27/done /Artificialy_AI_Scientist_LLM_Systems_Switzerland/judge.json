@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 29, "experience": 22, "company_project": 19, "ats_keywords": 13, "credibility": 9},
+ "score": 92,
+ "decision": "shortlist",
+ "strengths": ["Financial Document Question Answering project hits nearly every JD requirement simultaneously: RAG, fine-tuned cross-encoder re-ranking, LLM-as-judge evaluation, hand-labelled benchmarks, error analysis, financial-sector domain, and Azure deployment", "Hands-on RAG, agentic systems and fine-tuning experience is shown repeatedly across real production roles, not just this one project", "Python, SQL, PyTorch and Scikit-learn are all evidenced in context across multiple roles", "8+ years of senior ownership and production delivery matches or exceeds the 5+ years requirement, with client-facing communication experience"],
+ "gaps": ["No journal publications (nice-to-have) are present", "PhD not held, though a Master's degree satisfies the stated qualification"]}

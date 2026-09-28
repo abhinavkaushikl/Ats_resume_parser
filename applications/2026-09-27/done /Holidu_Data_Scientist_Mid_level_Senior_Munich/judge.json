@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 18, "experience": 20, "company_project": 18, "ats_keywords": 8, "credibility": 8},
+ "score": 72,
+ "decision": "maybe",
+ "strengths": ["New Rental Demand and Pricing Model project matches Holidu's own problem areas almost exactly: vacation-rental booking demand forecasting plus price elasticity/recommendation", "Extensive end-to-end predictive-model ownership from prototype to production (SLA prediction, demand forecasting, reranking)", "XGBoost/LightGBM on large tabular data shown in both skills and multiple production bullets", "Comfortable in Python, SQL, Airflow, MLflow matching the core of Holidu's stack"],
+ "gaps": ["AWS (SageMaker, Redshift, Athena) is entirely absent - this is the company's named tech stack and the resume shows GCP/Azure instead", "dbt appears only in the new project's technology line, not as an established skill", "Price optimization is demonstrated in a single project, not in production experience", "Resume headline 'Senior Data Scientist' has no explicit price-optimization or travel/marketplace track record outside the one project"]}

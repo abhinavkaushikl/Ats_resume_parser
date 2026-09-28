@@ -1,0 +1,73 @@
+{
+  "company": "anthropic",
+  "role": "Applied AI Engineer, Startups",
+  "city": "London",
+  "company_profile": "Anthropic is an AI safety company building reliable, interpretable and steerable AI systems, offering its Claude models to businesses and developers through the Claude Developer Platform.",
+  "title": "Applied AI Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "summary": "Senior AI Engineer with 8+ years building production LLM applications across Healthcare, Telecom and AIOps, from prototype to deployment. Designs agent architectures in LangGraph, RAG systems and document-extraction agents, with careful prompting and automated evaluation frameworks, tracing and observability. Has worked hands-on with client teams on technical POCs for 15+ clients, turning requirements into architectures and shipped Python applications with FastAPI, Docker and MLflow. Currently building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Deployed a production lab-extraction agent with Claude Opus",
+      "new": "Deployed a production lab-extraction agent built on Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+    },
+    {
+      "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+      "new": "Engineered a production multi-agent chatbot in LangGraph for AARP medical plans, designing the agent architecture for multi-turn reasoning, PySpark analysis and live charts, cutting manual analysis by 98%."
+    },
+    {
+      "original": "Built automated evaluation and observability pipelines for Question",
+      "new": "Designed automated evaluation frameworks and observability for Question Answering and Summary Agents, using LLM evaluators, tracing and failure detection to reduce human-in-the-loop review by 43%."
+    },
+    {
+      "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients",
+      "new": "Prototyped 15+ AI applications with AIOps and GeoPerformance clients, turning their requirements into working builds, with 7 moving into production or paid client work."
+    },
+    {
+      "original": "Delivered technical POCs and consulting for 15+ clients",
+      "new": "Partnered with 15+ clients to scope and deliver technical POCs and consulting across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+    }
+  ],
+  "project": {
+    "name": "Agent Evaluation Reference Kit",
+    "bullets": [
+      "Built a reusable reference implementation of a tool-using agent with prompt templates and context engineering patterns, helping product teams prototype LLM features for healthcare and fintech use cases.",
+      "Evaluated agent behaviour with a custom evaluation suite of LLM graders and tracing, documented the architecture with diagrams and sample code, and served the agent through FastAPI."
+    ],
+    "technologies": [
+      "Python",
+      "Claude API",
+      "LangGraph",
+      "LLM Evals",
+      "Agent Tracing",
+      "FastAPI",
+      "Docker"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "paragraphs": [
+      "I am applying for the Applied AI Engineer role on the Startups team. As a Senior AI Engineer I build LLM applications that go into production: agents, retrieval, evaluation and the plumbing around them. Much of my career has also been spent next to client engineers, scoping a problem with them and then writing the code together.",
+      "Anthropic's focus on reliable, steerable models matches how I already work, since I build on Claude daily and care most about a system behaving the same on the hundredth run as on the first. On a personal note, my fiancée lives in Berlin, and we plan to move to London together and settle there long term.",
+      "For startup teams building on Claude, I would bring practical agent design and evaluation. In my current role I shipped a lab-extraction agent on Claude Opus 4.7 that handles about 1,800 lab documents, and built evaluation pipelines that cut human review by 43%. At Viavi I delivered POCs for 15+ clients, which taught me to explain trade-offs plainly.",
+      "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about safety and about building for people who depend on the tool. I would welcome a conversation about the role."
+    ],
+    "closing": "Sincerely,"
+  },
+  "jd_keywords": [
+    "Python",
+    "LLM-powered applications",
+    "prompting",
+    "context engineering",
+    "agent architectures",
+    "evaluation frameworks",
+    "deployment at scale",
+    "prototypes",
+    "architecture reviews",
+    "technical documentation",
+    "customer-facing",
+    "pre-sales",
+    "workshops"
+  ],
+  "experience_variant": "base"
+}

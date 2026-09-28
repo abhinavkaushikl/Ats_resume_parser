@@ -1,0 +1,76 @@
+{
+ "company": "Danske Bank",
+ "role": "Senior data scientist GenAI",
+ "city": "Copenhagen",
+ "company_profile": "A Nordic bank whose Personal Customers AI Centre of Excellence builds adviser and customer-facing GenAI solutions for its retail customers.",
+ "title": "Senior Data Scientist GenAI",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years in machine learning and NLP, taking LLM and GenAI solutions from prototype to production across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds RAG pipelines with embeddings, vector search and fine-tuned cross-encoder reranking, plus multi-turn conversational and summary agents measured with LLM judges and automated evaluation. Deploys with Python, Docker, Kubernetes and Databricks, and explains results clearly to stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated evaluation pipelines for Question Answering and Summary Agents with LLM judges, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive and negative pairs",
+   "new": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense embedding retrieval over AARP survey data, improving retrieval accuracy."
+  },
+  {
+   "original": "Built an event-correlation engine clustering alarms with Sentence-BERT",
+   "new": "Built an NLP event-correlation engine clustering alarms with Sentence-BERT embeddings and DBSCAN to trace network alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent conversational chatbot in LangGraph for AARP medical plans, handling multi-turn business questions with PySpark analysis and live charts, cutting manual analysis by 98%."
+  }
+ ],
+ "project": {
+  "name": "Conversation Masking and Summarisation Pipeline",
+  "bullets": [
+   "Built an NLP pipeline for customer-service chat transcripts that masks personal data with a fine-tuned BERT NER model and summarises multi-turn conversations with an LLM for advisers.",
+   "Evaluated masking with entity-level precision, recall and exact match and summaries with ROUGE and LLM judges for faithfulness, then served the pipeline with FastAPI and Docker, tracking runs in MLflow."
+  ],
+  "technologies": [
+   "Hugging Face Transformers",
+   "BERT",
+   "LangChain",
+   "OpenAI API",
+   "ROUGE",
+   "FastAPI",
+   "Docker",
+   "MLflow"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist GenAI role in Danske Bank's Conversational AI unit. As a data scientist working in NLP and GenAI, I have built RAG systems, conversational agents and the evaluation behind them, all in production. My work keeps returning to one question: how do we know the model's answer is right?",
+   "Danske Bank is turning its AI Assistant into something customers can use to get things done, and doing it in banking means evaluation and responsible AI cannot be an afterthought. That fits how I like to work. My fiancée lives in Berlin, and we plan to move to Copenhagen together and settle there long term.",
+   "I would bring hands-on depth in retrieval and evaluation. I fine-tuned a cross-encoder to re-rank dense retrieval and improve retrieval accuracy, and I built evaluation pipelines with LLM judges for question-answering and summary agents that reduced human review by 43%. I am comfortable explaining those results to product teams and mentoring others on them.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It has taught me to design for the people using a system, not the demo. I would be glad to talk about how I could contribute to the unit."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "NLP",
+  "GenAI",
+  "LLMs",
+  "RAG",
+  "vector databases",
+  "embeddings",
+  "transformers",
+  "LangChain",
+  "OpenAI APIs",
+  "Hugging Face",
+  "NER",
+  "summarisation",
+  "LLM judges",
+  "faithfulness",
+  "hallucination detection",
+  "A/B testing",
+  "Docker",
+  "Kubernetes",
+  "Databricks"
+ ],
+ "experience_variant": "base"
+}

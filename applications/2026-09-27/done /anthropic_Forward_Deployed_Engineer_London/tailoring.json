@@ -1,0 +1,74 @@
+{
+  "company": "anthropic",
+  "role": "Forward Deployed Engineer",
+  "city": "London",
+  "company_profile": "Anthropic is an AI safety company building reliable, interpretable and steerable AI systems, deploying its Claude models with enterprise customers.",
+  "title": "Forward Deployed Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "summary": "Senior AI Engineer with 8+ years building production LLM applications inside enterprise environments across Healthcare, Telecom and AIOps. Ships agents on Claude, LangGraph multi-agent systems and RAG applications with advanced prompting, tool orchestration and automated evaluation frameworks, integrated with existing systems such as LIMS. Combines Python engineering with consulting experience, working directly with stakeholders to understand their workflows and turn business problems into measurable results. Currently building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Deployed a production lab-extraction agent with Claude Opus",
+      "new": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract inside the existing LIMS workflow, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks."
+    },
+    {
+      "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+      "new": "Engineered a production multi-agent chatbot in LangGraph for AARP medical plans that answered business users' questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+    },
+    {
+      "original": "Built automated evaluation and observability pipelines for Question",
+      "new": "Designed automated evaluation frameworks and observability for Question Answering and Summary Agents, using LLM evaluators, tracing and failure detection to reduce human-in-the-loop review by 43%."
+    },
+    {
+      "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients",
+      "new": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients from discovery of their requirements, with 7 moving into production or paid client work."
+    },
+    {
+      "original": "Delivered technical POCs and consulting for 15+ clients",
+      "new": "Delivered technical POCs and consulting directly with 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+    }
+  ],
+  "project": {
+    "name": "Enterprise Workflow MCP Server",
+    "bullets": [
+      "Built an MCP server exposing document search and extraction tools to sub-agents, letting an LLM orchestrator automate multi-step back-office workflows in healthcare operations.",
+      "Evaluated tool calls and final answers with LLM evaluators and tracing on real workflow tasks, then packaged the tools as reusable agent skills served with FastAPI in Docker."
+    ],
+    "technologies": [
+      "Python",
+      "MCP",
+      "Claude API",
+      "LangGraph",
+      "LLM Evals",
+      "Agent Tracing",
+      "FastAPI",
+      "Docker"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "paragraphs": [
+      "I am applying for the Forward Deployed Engineer role in London. As a Senior AI Engineer in healthcare, I build Claude-based agents that live inside real enterprise systems rather than in demos. The common thread in my work is sitting close to the people who run a workflow, understanding it properly, and then shipping the tool that changes it.",
+      "Anthropic's forward deployed team does this with its most strategic customers, and helping shape how that motion works is the part that draws me most. On a personal note, my fiancée lives in Berlin, and we plan to move to London together and settle there long term.",
+      "I would bring production experience from regulated environments. In my current role I deployed a lab-extraction agent on Claude Opus 4.7 and Amazon Textract, integrated with the lab's LIMS and handling about 1,800 documents. At Viavi I delivered technical POCs and consulting for 15+ clients, which taught me discovery, patience and how to explain trade-offs to non-engineers.",
+      "Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It reminds me that a deployment only counts when the people using it trust it. I would be glad to talk about how I could help your customers ship with Claude."
+    ],
+    "closing": "Sincerely,"
+  },
+  "jd_keywords": [
+    "Python",
+    "production LLM applications",
+    "prompt engineering",
+    "agent development",
+    "evaluation frameworks",
+    "deployment at scale",
+    "MCP servers",
+    "sub-agents",
+    "agent skills",
+    "customer discovery",
+    "enterprise AI deployment",
+    "healthcare",
+    "stakeholders"
+  ],
+  "experience_variant": "base"
+}

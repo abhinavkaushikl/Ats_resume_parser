@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 24, "experience": 16, "company_project": 17, "ats_keywords": 10, "credibility": 8},
+ "score": 75,
+ "decision": "maybe",
+ "strengths": ["IT Issue Triage Agent project is domain-adjacent to Nexthink's digital-employee-experience product: inspects logs, retrieves past fixes with RAG, deployed on AWS with CI", "Strong data intuition shown through years of log analysis and anomaly detection on network KPIs", "MLOps practice (MLflow, Docker, CI, versioned prompt/embedding configs) matches the JD's reproducible-pipeline ask closely", "LangChain, PyTorch and Python core stack all present in context, not just skills"],
+ "gaps": ["No reinforcement learning mentioned anywhere, an explicit JD requirement", "Only the most recent ~1-2 years of experience are LLM-specific; the JD asks for 5+ years hands-on in LLM-powered production applications specifically, not just ML overall", "No explicit mentoring of junior engineers described, only mentoring-linked revenue at a prior employer", "Feature stores not mentioned"]}

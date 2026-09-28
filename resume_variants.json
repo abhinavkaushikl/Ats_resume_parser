@@ -4,9 +4,9 @@
   "experience": [
    {
     "company": "Viavi Solutions",
-    "title": "Senior Machine Learning Engineer",
+    "title": "Data Scientist",
     "replace": {
-     "Deployed a production-grade SLA breach prediction system": "Developed time-series forecasting of base-station call handover and SMS handover volumes using LSTM and XGBoost."
+     "Deployed a production SLA breach prediction system": "Developed time-series forecasting of base-station call handover and SMS handover volumes using LSTM and XGBoost."
     },
     "add": [
      "Developed a forecasting feature for the AIOps monitoring product, forecasting univariate KPIs across the network."

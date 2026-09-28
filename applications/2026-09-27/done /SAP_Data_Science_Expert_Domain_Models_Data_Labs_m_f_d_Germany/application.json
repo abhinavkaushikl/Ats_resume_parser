@@ -1,0 +1,11 @@
+{
+ "status": "needs_account",
+ "reason": "SAP SuccessFactors: apply link redirects to careers home (not signed in); SAP notes it is moving to SmartRecruiters",
+ "questions_unanswered": [],
+ "answers_given": {},
+ "files_uploaded": [],
+ "url_used": "https://careers.sap.com/talentcommunity/apply/1431659633/?locale=en_US",
+ "ats": "successfactors",
+ "confirmation": "",
+ "timestamp": "2026-09-28T13:30"
+}

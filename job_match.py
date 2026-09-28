@@ -59,19 +59,23 @@ class Match(BaseModel):
 
 
 @lru_cache
-def _ctx(variant: str | None = None) -> tuple[LLMClient, str]:
-    """The LLM client and the resume text - with the experience variant for this kind of JD, e.g. the
-    time-series bullets for a forecasting-heavy JD (resume_variants.json), so the job is scored against
-    the same resume that would be sent."""
+def _resume(variant: str | None = None) -> str:
+    """The resume text - with the experience variant for this kind of JD, e.g. the time-series bullets for
+    a forecasting-heavy JD (resume_variants.json), so the job is scored against the resume that would be sent."""
     s = get_settings()
     resume = apply_variant(load_base(s.base_resume_path, s.base_resume_fixes), variant).as_text()
     if s.extra_skills:
         resume += f"\n\nOther skills the candidate has: {s.extra_skills}"
-    return LLMClient(s), resume
+    return resume
+
+
+def _ctx(variant: str | None = None) -> tuple[LLMClient, str]:
+    """The LLM client and the resume text for this variant."""
+    return LLMClient(get_settings()), _resume(variant)
 
 
 def _cache_file(jd: str) -> Path:
-    _, resume = _ctx(pick_variant(jd))
+    resume = _resume(pick_variant(jd))  # no LLM client: a cache lookup works without an API key
     key = hashlib.sha256(f"{SYSTEM}\n{resume}\n{jd.strip()[:MAX_JD_CHARS]}".encode()).hexdigest()[:16]
     return CACHE / f"match_{key}.json"
 

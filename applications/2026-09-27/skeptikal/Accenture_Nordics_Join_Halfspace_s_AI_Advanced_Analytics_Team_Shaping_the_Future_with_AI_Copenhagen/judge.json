@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 27, "experience": 20, "company_project": 18, "ats_keywords": 12, "credibility": 9},
+ "score": 86,
+ "decision": "shortlist",
+ "strengths": ["Agentic Experiment Analysis Assistant project directly covers both units the JD lists: GenAI/agents (LangGraph) and Advanced Analytics (power analysis, significance testing, regression - explicit experimental design and statistical modelling)", "Python and core AI/ML libraries shown in production use across every role, not just the skills list", "MLOps and model deployment practices (FastAPI, MLflow, Docker) demonstrated repeatedly", "Title and summary align tightly with the JD's own language (AI Decision Science Associate)"],
+ "gaps": ["JD is an Early Career / New Associate posting; candidate's 8+ years and senior titles are well above the stated level, which may read as a mismatch to the hiring bar rather than a strength", "Optimization as a distinct discipline (beyond experimental design) is only lightly evidenced"]}

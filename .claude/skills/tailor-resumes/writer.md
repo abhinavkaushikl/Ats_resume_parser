@@ -1,8 +1,9 @@
 # Writer: tailoring.json for one job
 
-You tailor Abhinav's resume to one job description. You write ONLY four things: the title, the summary,
-one new project, and the cover letter. A script builds the resume from the base resume plus your file -
-everything else stays exactly as it is.
+You tailor Abhinav's resume to one job description. You write: the title (plus the current role's
+title), the summary, rewordings of existing experience bullets, one new project, and the cover letter.
+A script builds the resume from the base resume plus your file - everything else (skills, education,
+the other projects, Think Tree) stays exactly as it is.
 
 Read first: the base resume (path given to you) and the job description file. From the JD's header lines
 take Company, City and the role (the `# ` title line).
@@ -16,7 +17,34 @@ must not be able to tell it was written for their company.
 
 The JD's job title exactly as the JD writes it, without gender tags "(m/f/d)", locations or team names.
 E.g. "Senior Machine Learning Engineer". (The build keeps the base title if the JD title claims more
-seniority than the resume shows - Staff, Principal, Lead, Head.)
+seniority than the resume shows - Staff, Principal, Lead, Head.) The same title heads the cover letter.
+
+**Current role title (`current_role_title`).** The United Health Group role (base: "Senior AI Engineer")
+takes the title family the JD asks for, always "Senior" + one of these, exactly:
+- Data Scientist JD -> "Senior Data Scientist"
+- AI Engineer / GenAI / LLM Engineer JD -> "Senior AI Engineer" (or "Senior GenAI Engineer" when the JD
+  says GenAI)
+- Machine Learning / MLOps Engineer JD -> "Senior Machine Learning Engineer"
+- Applied Scientist / Research Scientist JD -> "Senior Applied Scientist"
+Anything else -> "Senior AI Engineer". Other roles' titles never change. In the cover letter, refer to
+his current work with the same title family (a Data Scientist letter says data science, not AI engineering).
+
+## Experience bullets (blend the JD in)
+
+Reword existing experience bullets so the JD's own words and priorities come through naturally - same
+work, the JD's vocabulary. Put them in `experience_edits`, one entry per bullet you change:
+`{"original": "<the bullet's first 6-10 words, copied exactly>", "new": "<the full reworded bullet>"}`.
+- Pick the 3-6 bullets closest to the JD's must-haves; leave the others alone. A Data Scientist JD pulls
+  toward analysis, experimentation, modelling, SQL and stakeholders; an AI Engineer JD toward agents,
+  RAG, evaluation and production serving.
+- Same facts only: the same system, tools and outcome. You may swap in the JD's term for the same thing
+  ("stakeholders", "production ML", "LLM applications"), reorder, or bring forward a tool the bullet
+  already names. Never add a tool, domain, scale or claim the bullet doesn't show.
+- **Exactly the same numbers** as the original (98%, 1,800, Opus 4.7, GPT-3.5 ...), none added or dropped -
+  the build skips any edit whose numbers differ.
+- At most 2 lines on the page (225 characters), past tense, starts with a verb, reads like the rest of
+  the resume (no keyword chains). No company name.
+- Never edit the time-series variant bullets (the build skips them).
 
 ## Summary
 
@@ -56,7 +84,7 @@ Decide which experience version the resume uses and put it in `"experience_varia
   forecasting feature for the AIOps monitoring product, forecasting univariate KPIs across the network"
   is added. Write the summary with this experience in mind (forecasting first).
 - `"base"` otherwise.
-You never write or change experience bullets yourself.
+The variant bullets are Abhinav's own words - never reword those; other bullets may be reworded (above).
 
 ## Cover letter
 
@@ -103,7 +131,8 @@ Write `tailoring.json` in the job's output folder, valid JSON:
 ```json
 {"company": "<from JD header>", "role": "<JD title>", "city": "<from JD header>",
  "company_profile": "<1 sentence: what the company does, for whom>",
- "title": "", "summary": "",
+ "title": "", "current_role_title": "Senior AI Engineer", "summary": "",
+ "experience_edits": [{"original": "<first 6-10 words of a base bullet, exact>", "new": "<reworded bullet>"}],
  "project": {"name": "", "bullets": ["", ""], "technologies": [""]},
  "cover_letter": {"greeting": "Dear Hiring Team,", "paragraphs": ["<intro>", "<motivation + company>", "<contribution>", "<Think Tree + close>"], "closing": "Sincerely,"},
  "jd_keywords": ["<8-15 of the JD's key skills/tools, JD wording>"],
@@ -111,7 +140,8 @@ Write `tailoring.json` in the job's output folder, valid JSON:
 ```
 
 Check before saving: the company name appears only in "company", "company_profile" and the cover
-letter; the project has exactly 2 bullets; the summary adds nothing the resume doesn't show (the Think
+letter; the project has exactly 2 bullets; `current_role_title` is one of the five titles above; each
+experience edit's "original" is copied exactly from the base resume and its "new" keeps the same numbers; the summary adds nothing the resume doesn't show (the Think
 Tree sentence is the one allowed addition: "used by NGO teachers" is true, from Abhinav); the summary's
 last sentence and the letter's 4th paragraph both mention Think Tree; the letter has exactly 4
 paragraphs, none over about 65 words, and paragraph 2 contains "fiancée", "Berlin" and the job's city.

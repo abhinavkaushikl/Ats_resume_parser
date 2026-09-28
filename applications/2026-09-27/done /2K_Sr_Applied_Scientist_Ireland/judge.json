@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 27, "experience": 19, "company_project": 18, "ats_keywords": 12, "credibility": 8},
+ "score": 84,
+ "decision": "shortlist",
+ "strengths": ["Sequential Player Skill Model project directly hits matchmaking, skill rating and embedding-based representation learning from sequential match data, evaluated against an Elo baseline", "PyTorch, deep learning, embeddings (SBERT, fine-tuned cross-encoder) shown in production roles, not just listed", "Production ML deployment experience at senior level with Python, SQL, Spark", "Title alignment: Senior Applied Scientist matches Sr. Applied Scientist"],
+ "gaps": ["No real (non-project) experience in gaming, sports analytics or recommender/ranking systems at a company", "\"Representation learning\" and \"self-/semi-supervised learning\" are not used verbatim anywhere, only implied", "No graph-based approaches or Transformer sequence models, only LSTM", "No cloud/serving experience specifically framed around game-scale systems", "Leadership of technical discussions / cross-team model-deployment advocacy is thin"]}

@@ -1,0 +1,49 @@
+{
+ "company": "Mastercard",
+ "city": "Dublin",
+ "role": "Lead Data Scientist, AI Engineering",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 6",
+  "Title 'Lead Data Scientist, AI Engineering' not used (seniority/fit check); kept 'Senior AI Engineer'."
+ ],
+ "headline": "Senior AI Engineer",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Associate Consultant",
+   "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+   "after": "Built an XGBoost propensity model predicting personal-loan applications within 7 days of contact, turning predictions into targeted outreach and customer prioritization."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Delivered anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Added a ranking model to an existing recommendation system for individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine clustering Sentence-BERT embeddings of alarms with DBSCAN to trace network alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Drove a production SLA breach prediction system from problem definition to deployment with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Delivered technical POCs, consulting and mentoring for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "apply_url": "https://careers.mastercard.com/us/en/job/R-277460/Lead-Data-Scientist-AI-Engineering",
+ "listing_url": "https://ie.linkedin.com/jobs/view/lead-data-scientist-ai-engineering-at-mastercard-4460731681",
+ "resume": "Mastercard_Lead_Data_Scientist_AI_Engineering_Ireland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Mastercard_Lead_Data_Scientist_AI_Engineering_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Mastercard_Lead_Data_Scientist_AI_Engineering_Ireland/project_brief.md"
+}

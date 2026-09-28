@@ -1,0 +1,74 @@
+{
+ "company": "SEGA Europe",
+ "role": "Senior Data Scientist",
+ "city": "London",
+ "company_profile": "SEGA Europe is the European publishing arm of SEGA, a games publisher whose London Data Services team builds data and AI capabilities for its studios and business teams.",
+ "title": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years taking ML and LLM systems from prototype to production across Healthcare, Telecom and AIOps. Designs and ships LangGraph agents and RAG applications over enterprise data, with automated LLM evaluation, tracing and observability, alongside classical ML for prediction and forecasting. Works in Python, SQL and PySpark on Databricks with MLflow, and presents prototypes to technical and non-technical stakeholders. Currently building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering stakeholder questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built evaluation frameworks and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant in LangGraph",
+   "new": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic search with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients",
+   "new": "Prototyped 15+ AI applications with AIOps and GeoPerformance stakeholders, turning their business requirements into working solutions, with 7 moving into production or paid client work."
+  }
+ ],
+ "project": {
+  "name": "Enterprise Data Agent Platform",
+  "bullets": [
+   "Built a LangGraph agent that answers business questions over lakehouse tables and internal documents, combining RAG with vector search and tools exposed through MCP servers.",
+   "Evaluated answers with LLM judges against a curated question set, tracked prompts and runs in MLflow, and served the agent behind an AI gateway through model serving endpoints."
+  ],
+  "technologies": [
+   "Databricks",
+   "MLflow",
+   "LangGraph",
+   "MCP",
+   "Vector Search",
+   "Python",
+   "SQL",
+   "PySpark"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist role in your Data Services team. For the past year I have built LLM agents and RAG applications on enterprise data in healthcare, after several years of classical data science in telecom. What connects all of it is getting AI out of the demo stage and into the hands of the people who need it.",
+   "SEGA Europe publishes games from studios like Creative Assembly and Sports Interactive, and helping shape how AI is adopted across publishing and studio teams is the kind of problem I want next. There is a personal side too: my fiancée lives in Berlin, and we plan to move to London together and settle there long term.",
+   "I would bring hands-on experience building agentic systems that business teams actually use. At my current role I built a LangGraph analytics chatbot that answers questions with PySpark analysis and live charts, and I set up LLM evaluation and tracing that cut human review by 43%. I also enjoy the workshop side: explaining what these systems can and cannot do.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users, carefully and with their feedback. I would be glad to talk about how I could help your team."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "Large Language Models",
+  "AI agents",
+  "agentic AI",
+  "RAG",
+  "Model Context Protocol (MCP)",
+  "Databricks",
+  "Mosaic AI",
+  "Vector Search",
+  "Model Serving",
+  "MLflow",
+  "LangChain",
+  "LangGraph",
+  "Python",
+  "SQL",
+  "PySpark",
+  "evaluation frameworks",
+  "embeddings"
+ ],
+ "experience_variant": "base"
+}

@@ -1,0 +1,40 @@
+{
+ "company": "Delivery Hero",
+ "city": "Berlin",
+ "role": "Staff Data Scientist, Dmarts - Quick Commerce",
+ "pages": 2,
+ "warnings": [
+  "Experience variant: timeseries",
+  "Experience bullets reworded: 4",
+  "Title 'Staff Data Scientist' not used (seniority/fit check); kept 'Senior AI Engineer'."
+ ],
+ "headline": "Senior AI Engineer",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Productionized demand forecasting and anomaly detection on 15+ KPIs across 500+ telecom network devices with Holt-Winters and Isolation Forest, enabling proactive network planning and earlier detection."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for an existing personalized recommendation system serving individual and child plans, optimizing renewal suggestions and increasing conversion by 2%."
+  },
+  {
+   "role": "Data Engineer",
+   "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+   "after": "Designed end-to-end SQL and PySpark data workflows automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Advised 15+ clients through technical POCs and consulting across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "apply_url": "https://jobs.smartrecruiters.com/DeliveryHero/744000137801469-staff-data-scientist-dmarts-quick-commerce",
+ "listing_url": "https://de.linkedin.com/jobs/view/staff-data-scientist-dmarts-quick-commerce-at-delivery-hero-4439974686",
+ "resume": "Delivery_Hero_Staff_Data_Scientist_Dmarts_Quick_Commerce_Berlin/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Delivery_Hero_Staff_Data_Scientist_Dmarts_Quick_Commerce_Berlin/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Delivery_Hero_Staff_Data_Scientist_Dmarts_Quick_Commerce_Berlin/project_brief.md"
+}

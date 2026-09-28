@@ -1,0 +1,38 @@
+{
+ "company": "Nexthink",
+ "city": "Switzerland",
+ "role": "Senior AI Machine Learning Engineer",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 4"
+ ],
+ "headline": "Senior AI Machine Learning Engineer",
+ "current_role_title": "Senior Machine Learning Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production agentic analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Created automated evaluations and success metrics for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine over network alarm logs, clustering alarms with Sentence-BERT and DBSCAN to trace alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Deployed a production SLA breach prediction system with LightGBM, served via FastAPI and tracked in MLflow, using GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+  }
+ ],
+ "apply_url": "https://jobs.smartrecruiters.com/Nexthink/744000130034719-senior-ai-machine-learning-engineer",
+ "listing_url": "https://ch.linkedin.com/jobs/view/senior-ai-machine-learning-engineer-at-nexthink-4422984564",
+ "resume": "Nexthink_Senior_AI_Machine_Learning_Engineer_Switzerland/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Nexthink_Senior_AI_Machine_Learning_Engineer_Switzerland/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Nexthink_Senior_AI_Machine_Learning_Engineer_Switzerland/project_brief.md"
+}

@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 26, "experience": 21, "company_project": 19, "ats_keywords": 12, "credibility": 8},
+ "score": 86,
+ "decision": "shortlist",
+ "strengths": ["Support Refund Decision Agent project mirrors the JD's own scenario almost exactly: mobility-marketplace refund decisions, LLM judge calibrated against human labels, A/B-tested rollout gate, LightGBM handling cheaper routine cases", "Shipped and operated production LLM/agent systems with eval suites, tracing and failure detection across multiple real roles", "Explicit classic-ML-vs-LLM cost trade-off shown (LightGBM for routine cases vs LLM for complex ones)", "Fine-tuning experience (cross-encoder) answers the \"add fine-tuning where policy isn't enough\" ask"],
+ "gaps": ["No explicit mention of catching or preventing reward hacking / verifier gaming", "No post-training experience (RLVR, GRPO, DPO, LoRA) — listed as nice-to-have", "No DSPy/GEPA/TextGrad program-optimisation experience", "\"Ceiling estimate vs realistic estimate\" style reporting is not evidenced"]}

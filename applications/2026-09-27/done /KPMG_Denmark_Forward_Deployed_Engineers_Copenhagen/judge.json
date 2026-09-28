@@ -1,0 +1,15 @@
+{"criteria": {"tech_stack": 23, "experience": 17, "company_project": 18, "ats_keywords": 11, "credibility": 8},
+ "score": 77,
+ "decision": "maybe",
+ "strengths": [
+   "Client Workflow Agent Accelerator project is an excellent match: Claude calling tools through MCP servers, sub-agents, RAG over client documents, shipped for client handover",
+   "Direct experience with Claude, MCP, LangGraph, RAG, FastAPI, Azure and GCP in production",
+   "Headline 'Forward Deployed Engineer' matches the JD title exactly",
+   "Track record of embedding with clients end-to-end (15+ AIOps/GeoPerformance clients from discovery to production or paid work)"
+ ],
+ "gaps": [
+   "No Danish language ability shown; the JD explicitly requires fluency in English and Danish",
+   "No formal management-consulting background; experience is technical AI engineering with client delivery, not a consulting firm career",
+   "No explicit mention of Claude Code or Cursor as personal coding tools",
+   "No commercial/account-growth experience (proposal shaping, client relationship building at Senior Manager/Director level)"
+ ]}

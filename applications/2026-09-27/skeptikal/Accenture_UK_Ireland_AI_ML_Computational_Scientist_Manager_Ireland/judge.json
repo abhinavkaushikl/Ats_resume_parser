@@ -1,0 +1,5 @@
+{"criteria": {"tech_stack": 22, "experience": 17, "company_project": 14, "ats_keywords": 8, "credibility": 8},
+ "score": 69,
+ "decision": "maybe",
+ "strengths": ["Distributed Predictive Maintenance Pipeline project shows PySpark + PyTorch + Kubernetes + Airflow distributed training/inference, a real approximation of the JD's distributed-computing ask", "Deep learning, GenAI and LLM API experience (Claude, GPT-3.5) shown in production", "Client-facing consulting track record (15+ AIOps/GeoPerformance clients, POCs) matches Accenture's consulting model directly", "Cloud deployment on GCP and Azure with MLOps tooling"],
+ "gaps": ["No true HPC, engineering simulation or scientific-compute experience; only Spark/Kubernetes-style distributed data pipelines", "No C++ or Java, both explicitly listed as preferred languages", "\"Monitoring, alerting, automatic bug filing and auditing\" at production scale is only partially evidenced (drift monitoring in one project)", "No grid computing or distributed-networks experience"]}

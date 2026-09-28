@@ -1,0 +1,43 @@
+{
+ "company": "Back Market",
+ "city": "Paris",
+ "role": "Senior Data Scientist - Care AI",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Data Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Owned automated evaluation and observability pipelines for Question Answering and Summary Agents, measuring LLM behavior with evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph that answered stakeholders' business questions on AARP medical plans with PySpark analysis and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+   "after": "Led technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, mentoring client teams and contributing to an 11% increase in POC and mentoring revenue."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+   "after": "Productionized an SLA breach prediction system with LightGBM, FastAPI and MLflow, integrating GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing conversion by 2%.",
+   "after": "Implemented a reranker for an existing recommendation system serving individual and child plan recommendations, optimizing renewal suggestions and increasing customer conversion by 2%."
+  }
+ ],
+ "apply_url": "https://you.ashbyhq.com/backmarket/e9f21f66-04b4-484c-8006-15ef920bac66",
+ "listing_url": "https://fr.linkedin.com/jobs/view/senior-data-scientist-care-ai-at-back-market-4453156123",
+ "resume": "Back_Market_Senior_Data_Scientist_Care_AI_Paris/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Back_Market_Senior_Data_Scientist_Care_AI_Paris/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Back_Market_Senior_Data_Scientist_Care_AI_Paris/project_brief.md"
+}
