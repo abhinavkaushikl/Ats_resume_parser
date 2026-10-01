@@ -1,0 +1,20 @@
+{
+ "score": 80,
+ "matched": [
+  "Enterprise AI architecture",
+  "Client-facing consulting",
+  "RAG implementations",
+  "Agentic AI/multi‑agent frameworks",
+  "AI platforms (LangGraph, LangChain)",
+  "Cloud experience (GCP, Azure)",
+  "Docker/Kubernetes",
+  "Python"
+ ],
+ "missing": [
+  "Explicit pre‑sales leadership & proposal authoring",
+  "Demonstrated model‑risk understanding",
+  "Documented strong presentation/stakeholder pitching experience"
+ ],
+ "blockers": [],
+ "reason": "The candidate shows solid AI architecture, RAG/agent work, and cloud/MLOps skills but lacks clear evidence of pre‑sales lead and model‑risk expertise."
+}

@@ -1,0 +1,17 @@
+{
+ "score": 90,
+ "matched": [
+  "Bachelor's degree in related field",
+  "Python",
+  "SQL",
+  "Spark/Hadoop",
+  "PostgreSQL (TimescaleDB/pgvector)",
+  "Power BI",
+  "Flask",
+  "JSON/APIs handling",
+  "RAG/chatbot experience"
+ ],
+ "missing": [],
+ "blockers": [],
+ "reason": "All core requirements are clearly demonstrated; experience aligns well with the role despite limited explicit IoT/digital‑twin exposure."
+}

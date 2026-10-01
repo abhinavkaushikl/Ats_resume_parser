@@ -1,0 +1,14 @@
+{
+ "score": 78,
+ "matched": [
+  "Bachelor's degree in quantitative field",
+  "AI/ML development experience",
+  "MLOps experience",
+  "Cloud deployment and production lifecycle ownership",
+  "Python proficiency",
+  "API integration"
+ ],
+ "missing": [],
+ "blockers": [],
+ "reason": "Strong overall fit with required skills, but lacks explicit TensorRT/ONNX inference optimization and maritime domain experience."
+}

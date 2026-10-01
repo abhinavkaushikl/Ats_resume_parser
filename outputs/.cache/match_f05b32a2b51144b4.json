@@ -1,0 +1,13 @@
+{
+ "score": 90,
+ "matched": [
+  "6-8 years experience in ML/data mining",
+  "Advanced quantitative MSc degree",
+  "Deep learning, transformer and ranking expertise",
+  "Large‑scale data processing and production ML deployment",
+  "Experimentation/evaluation pipelines"
+ ],
+ "missing": [],
+ "blockers": [],
+ "reason": "The candidate meets all core requirements with strong relevant experience, though lacks explicit graph‑retrieval and A/B testing details."
+}

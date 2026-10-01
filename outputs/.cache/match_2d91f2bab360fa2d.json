@@ -1,0 +1,21 @@
+{
+ "score": 38,
+ "matched": [
+  "Production Python development",
+  "Building LLM/RAG applications with LangGraph/LangChain",
+  "Fine‑tuning and Hugging Face Transformers usage",
+  "FastAPI, Docker, MLflow for deployment"
+ ],
+ "missing": [
+  "Distributed training frameworks (FSDP/ZeRO/DDP)",
+  "GPU kernel optimization (CUDA/Triton)",
+  "LLM inference frameworks (vLLM, TensorRT‑LLM, llama.cpp)",
+  "Profiling tools (Nsight, GPU benchmarking)",
+  "Model compression techniques (quantization, pruning, mixed precision)",
+  "Hands‑on experience turning research‑grade code into production‑grade ML infrastructure"
+ ],
+ "blockers": [
+  "No demonstrated experience with low‑level GPU performance engineering or distributed LLM training required for the role"
+ ],
+ "reason": "Strong in AI application engineering but lacks the required GPU/LLM infrastructure and performance‑optimization experience."
+}

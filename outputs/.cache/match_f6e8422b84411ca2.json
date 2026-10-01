@@ -1,0 +1,15 @@
+{
+ "score": 80,
+ "matched": [
+  "Strong applied-science and ML expertise",
+  "Production ML system design and deployment",
+  "Advanced algorithm development",
+  "System design/architecture and technical leadership",
+  "Strong coding skills (Python)"
+ ],
+ "missing": [
+  "Java programming experience"
+ ],
+ "blockers": [],
+ "reason": "Solid ML and production experience but lacks Java and direct geospatial/POI background, still a good fit."
+}

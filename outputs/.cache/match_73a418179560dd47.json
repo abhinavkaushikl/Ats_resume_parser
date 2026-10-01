@@ -1,0 +1,16 @@
+{
+ "score": 48,
+ "matched": [
+  "4+ years professional ML/software development",
+  "Python and deep-learning/ML experience",
+  "Production ownership"
+ ],
+ "missing": [
+  "Hands-on ads-ranking model experience at scale",
+  "Ranking and calibration experience in advertising"
+ ],
+ "blockers": [
+  "No ads-ranking experience"
+ ],
+ "reason": "Strong ML background but lacks required ads-ranking domain experience."
+}

@@ -542,11 +542,11 @@
  },
  "CGI Nederland|Netherlands": {
   "visa": "yes",
-  "relocation": "not stated",
+  "relocation": "",
   "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
   "official": true,
-  "note": "IND recognised sponsor (CGI Nederland B.V.)",
-  "checked": "2026-09-27T10:48:24.433915+00:00"
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
  },
  "anthropic|UK": {
   "visa": "yes",
@@ -735,7 +735,7 @@
   "src": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json",
   "official": false,
   "register": "known sponsor list (Germany)",
-  "checked": "2026-09-27T05:57:30.540203+00:00"
+  "checked": "2026-09-29T14:25:30.485656+00:00"
  },
  "CHECK24|Germany": {
   "visa": "weak",
@@ -743,7 +743,7 @@
   "src": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json",
   "official": false,
   "register": "known sponsor list (Germany)",
-  "checked": "2026-09-27T05:57:30.540203+00:00"
+  "checked": "2026-09-29T14:25:30.485656+00:00"
  },
  "TÜV SÜD|Germany": {
   "visa": "weak",
@@ -847,7 +847,7 @@
   "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
   "official": true,
   "register": "UK sponsor register",
-  "checked": "2026-09-27T05:57:30.540203+00:00"
+  "checked": "2026-09-29T14:25:30.485656+00:00"
  },
  "GoCardless|UK": {
   "visa": "yes",
@@ -895,7 +895,7 @@
   "src": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json",
   "official": false,
   "register": "known sponsor list (Germany)",
-  "checked": "2026-09-27T05:57:30.540203+00:00"
+  "checked": "2026-09-29T14:25:30.485656+00:00"
  },
  "Spotify|Sweden": {
   "visa": "weak",
@@ -1351,11 +1351,11 @@
  },
  "Sogeti|Netherlands": {
   "visa": "yes",
-  "relocation": "not stated",
+  "relocation": "",
   "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
   "official": true,
-  "note": "IND recognised sponsor (Sogeti Nederland B.V.)",
-  "checked": "2026-09-27T10:48:24.433915+00:00"
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
  },
  "Wise|Estonia": {
   "visa": "yes",
@@ -1575,11 +1575,11 @@
  },
  "Quora|Ireland": {
   "visa": "yes",
-  "relocation": "not stated",
-  "src": "https://enterprise.gov.ie/en/publications/employment-permit-statistics-2025.html",
+  "relocation": "",
+  "src": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/",
   "official": true,
-  "note": "Irish employment permits issued 2025 (Quora Ireland Limited)",
-  "checked": "2026-09-27T10:48:24.433915+00:00"
+  "register": "Irish employment permits issued",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
  },
  "Mastercard|Ireland": {
   "visa": "yes",
@@ -1852,5 +1852,444 @@
   "official": false,
   "note": "JD: EU citizenship or Portuguese work visa required",
   "checked": "2026-09-27T10:48:24.433915+00:00"
+ },
+ "sonarsource|": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://www.arbeitnow.com/jobs/companies/sonarsource/ai-research-engineer-bochum-410881",
+  "official": false,
+  "checked": "2026-09-29T13:35:51.554484+00:00"
+ },
+ "Qode|": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://jaabz.com/jobs/172477-product-owner-payments-in-marketplace-relocate-to-hcmc-vn",
+  "official": false,
+  "checked": "2026-09-29T13:46:14.820770+00:00"
+ },
+ "xebiacee|Romania": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T13:46:33.987611+00:00"
+ },
+ "Capgemini|": {
+  "visa": "no",
+  "relocation": "yes",
+  "src": "https://www.capgemini.com/ca-en/careers/career-paths/students-and-graduates/join-the-capgemini-team/",
+  "official": true,
+  "checked": "2026-09-29T13:54:19.054992+00:00"
+ },
+ "University of Luxembourg|": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "http://unilorinforum.com/luxembourg-study-visa-for-immigrants-visa-sponsorship-in-luxembourg/",
+  "official": false,
+  "checked": "2026-09-29T13:54:33.571589+00:00"
+ },
+ "Institute of Foundation Models|": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://jaabz.com/jobs/277104-website-developer-visual-designer",
+  "official": false,
+  "checked": "2026-09-29T13:54:49.228704+00:00"
+ },
+ "NVIDIA|": {
+  "visa": "",
+  "relocation": "yes",
+  "src": "https://www.movebuddha.com/blog/nvidia-relocation-package/",
+  "official": false,
+  "checked": "2026-09-29T14:02:52.885810+00:00"
+ },
+ "team.blue|": {
+  "visa": "yes",
+  "relocation": "no",
+  "src": "https://nlcareers.team.blue/jobs?location=Proserve",
+  "official": true,
+  "checked": "2026-09-29T14:03:13.036058+00:00"
+ },
+ "Sogeti|": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "http://unilorinforum.com/sogeti-sverige-ab-sweden-skilled-worker-visa-retail-careers/",
+  "official": false,
+  "checked": "2026-09-29T14:03:27.931292+00:00"
+ },
+ "Michael Page|": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://pageimmigration.com/",
+  "official": false,
+  "checked": "2026-09-29T14:04:26.461692+00:00"
+ },
+ "ByteDance|": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T14:04:42.286145+00:00"
+ },
+ "BCG Platinion|Germany": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T14:13:16.625659+00:00"
+ },
+ "Experts Inside AG|Austria": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T14:13:35.635700+00:00"
+ },
+ "Decskill|": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T14:13:52.230734+00:00"
+ },
+ "PwC Italy|": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T14:17:29.998353+00:00"
+ },
+ "JetBrains|Germany": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://www.jetbrains.com/careers/locations/germany/",
+  "official": true,
+  "checked": "2026-09-29T14:17:47.701463+00:00"
+ },
+ "Google|": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T14:18:04.039809+00:00"
+ },
+ "Gartner|": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T14:18:22.814036+00:00"
+ },
+ "TikTok|": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T14:18:39.749629+00:00"
+ },
+ "Seatrium|": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T14:18:56.225121+00:00"
+ },
+ "SAP|": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://germanyhub.in/jobs/software-engineer-sap-9177",
+  "official": false,
+  "checked": "2026-09-29T14:19:09.870066+00:00"
+ },
+ "HelloFresh|Poland": {
+  "visa": "yes",
+  "relocation": "yes",
+  "src": "https://careers.hellofresh.com/global/en/internalmobility",
+  "official": true,
+  "checked": "2026-09-29T14:19:28.882009+00:00"
+ },
+ "Lutech|": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T14:19:43.360027+00:00"
+ },
+ "Orange Business|Belgium": {
+  "visa": "",
+  "relocation": "",
+  "src": "",
+  "official": false,
+  "checked": "2026-09-29T14:20:05.544296+00:00"
+ },
+ "IQVIA|Spain": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://migratemate.co/companies-that-sponsor/iqvia/consultant",
+  "official": false,
+  "checked": "2026-09-29T14:20:21.298945+00:00"
+ },
+ "BMW Group|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json",
+  "official": false,
+  "register": "known sponsor list (Germany)",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Anthropic|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://www.arbeitnow.co.uk/jobs/companies/anthropic/applied-ai-engineer-startups-london-419360",
+  "official": false,
+  "register": "known sponsor list (Germany)",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Metyis|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "HighRadius|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Wypoon Technologies|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Magno IT Recruitment|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "TomTom|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Google|Denmark": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies",
+  "official": true,
+  "register": "SIRI fast-track certified",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Quantcast|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Capgemini|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Robert Half|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Hunter Bond|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Howden|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Information Tech Consultants|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "MarketCast|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "RELX|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Few&Far|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Oho Group|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Wise|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Anaplan|UK": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers",
+  "official": true,
+  "register": "UK sponsor register",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Tchibo|Germany": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json",
+  "official": false,
+  "register": "known sponsor list (Germany)",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "King|Sweden": {
+  "visa": "weak",
+  "relocation": "",
+  "src": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/sweden.json",
+  "official": false,
+  "register": "known sponsor list (Sweden)",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "A2Z-CM N.V.|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Capgemini|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Wolters Kluwer|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "KPN|Netherlands": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants",
+  "official": true,
+  "register": "IND recognised sponsor",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "CrowdStrike|Ireland": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/",
+  "official": true,
+  "register": "Irish employment permits issued",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "AstraZeneca|Ireland": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/",
+  "official": true,
+  "register": "Irish employment permits issued",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Gartner|Ireland": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/",
+  "official": true,
+  "register": "Irish employment permits issued",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Medtronic|Ireland": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/",
+  "official": true,
+  "register": "Irish employment permits issued",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Element Six|Ireland": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/",
+  "official": true,
+  "register": "Irish employment permits issued",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "ServiceNow|Ireland": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/",
+  "official": true,
+  "register": "Irish employment permits issued",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
+ },
+ "Red Hat|Ireland": {
+  "visa": "yes",
+  "relocation": "",
+  "src": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/",
+  "official": true,
+  "register": "Irish employment permits issued",
+  "checked": "2026-09-29T14:25:30.485656+00:00"
  }
 }

@@ -1,0 +1,16 @@
+{
+ "score": 90,
+ "matched": [
+  "Bachelor's degree",
+  "7+ years troubleshooting technical issues",
+  "Experience leading technical delivery and debugging",
+  "Enterprise integrations/cloud infrastructure/AI-ML deployment",
+  "Python debugging/readability",
+  "System design and orchestration experience"
+ ],
+ "missing": [
+  "Explicit JavaScript experience"
+ ],
+ "blockers": [],
+ "reason": "Strong alignment with required AI/ML, cloud, and delivery expertise; only minor gap in listed JavaScript experience."
+}

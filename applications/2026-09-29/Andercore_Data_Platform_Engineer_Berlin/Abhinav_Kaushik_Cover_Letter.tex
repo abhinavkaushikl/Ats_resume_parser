@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Andercore}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior AI Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 29, 2026
+
+Hiring Team\\
+Andercore
+
+\textbf{Re: Data Platform Engineer}
+
+Dear Hiring Team,
+
+I am applying for the data platform role at Andercore. I started my career building SQL and PySpark pipelines on large healthcare datasets and have since spent years shipping ML and AI systems that only work when the data underneath them is clean and trusted. That is the thread through my work: the model is only as good as the platform feeding it.
+
+Andercore is taking a supply chain that needed four or five intermediaries and running it on software and agents, and your pricing and agents depend directly on the data. I like that data is not a support function there. My fiancée lives in Berlin, and joining Andercore in Berlin means building my career in the city where we are making our home.
+
+As a Data Engineer I built SQL and PySpark pipelines that automated medical-audit reporting and cut manual effort by 95\%, and set up real-time log observability with Elasticsearch and Kibana. Later I shipped demand forecasting and anomaly detection on 15+ KPIs across 500+ network devices. I would bring both sides: a platform the business can trust, and a foundation ready for pricing and demand sensing.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me focused on building for real users and testing with the people who rely on the tool. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

@@ -1,0 +1,15 @@
+{
+ "score": 80,
+ "matched": [
+  "Strong data-science/statistics background (MSc in ML & AI)",
+  "Experience with machine learning and quantitative modeling (multiple ML projects, LightGBM, XGBoost, LSTM, etc.)",
+  "Strong Python/programming skills (Python, PySpark, FastAPI, etc.)",
+  "Ability to work with large and complex datasets (SQL, PySpark, Spark, Databricks)",
+  "Strong communication and client collaboration (client-facing roles, senior stakeholder presentations)"
+ ],
+ "missing": [
+  "Explicit experience with mathematical optimization"
+ ],
+ "blockers": [],
+ "reason": "The candidate meets all core requirements and has relevant consulting experience, but lacks demonstrated optimization work."
+}

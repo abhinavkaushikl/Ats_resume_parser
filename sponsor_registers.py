@@ -286,15 +286,21 @@ def check(company: str, city: str) -> dict | None:
 
 
 def parse_jobs(path: Path) -> list[tuple[str, str]]:
-    """(city, company) pairs from a job-list / visa file (## <City> (n) headings, table rows)."""
-    pairs, city = [], ""
+    """(city, company) pairs from a job-list / visa file (## <City> (n) headings, table rows).
+    The company column is taken from the table header, so column order can change."""
+    pairs, city, col = [], "", 2
     for line in path.read_text(encoding="utf-8").splitlines():
-        if line.startswith("# Removed"):
+        if line.startswith("# Removed") or line.startswith("# Dropped"):
             break
-        if m := re.match(r"## (\w+) \(", line):
+        if m := re.match(r"## ([\w ]+?) \(", line):
             city = m.group(1)
+        if line.startswith("|") and "Company" in line and "](" not in line:
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            col = cells.index("Company") if "Company" in cells else col
         if line.startswith("| ") and "](" in line:
-            pairs.append((city, line.split(" | ")[2].strip()))
+            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            if col < len(cells):
+                pairs.append((city, cells[col]))
     return list(dict.fromkeys(pairs))
 
 

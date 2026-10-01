@@ -1,0 +1,23 @@
+{
+ "score": 32,
+ "matched": [
+  "MLflow",
+  "Docker",
+  "Kubernetes",
+  "AWS/Azure/GCP experience",
+  "LLM fine‑tuning and RAG applications"
+ ],
+ "missing": [
+  "10+ years of dedicated MLOps/ML infrastructure ownership",
+  "Large‑scale LLM serving (vLLM, Triton, TGI) experience",
+  "Deep GPU scheduling/operator expertise in Kubernetes",
+  "Hands‑on on‑premise/air‑gapped deployment experience",
+  "GPU systems depth (CUDA, NCCL, quantization)"
+ ],
+ "blockers": [
+  "Insufficient years of pure MLOps experience",
+  "No evidence of large‑scale LLM serving infrastructure",
+  "No demonstrated on‑prem/air‑gapped or deep GPU expertise"
+ ],
+ "reason": "Key required experience and depth in MLOps, large‑scale LLM serving, and GPU/air‑gapped infrastructure are missing."
+}

@@ -1,0 +1,18 @@
+{
+ "score": 78,
+ "matched": [
+  "Bachelor's degree in a quantitative field",
+  "AI/ML development experience (8+ years)",
+  "MLOps experience (MLflow, Docker, Kubernetes, Airflow, DVC, Terraform)",
+  "Cloud deployment and production lifecycle ownership (GCP, Azure, FastAPI)",
+  "Python proficiency",
+  "API integration experience"
+ ],
+ "missing": [
+  "AWS experience",
+  "TensorRT inference optimization",
+  "ONNX model format experience"
+ ],
+ "blockers": [],
+ "reason": "Strong AI/ML and MLOps background but lacks explicit AWS and inference‑optimization tool experience."
+}

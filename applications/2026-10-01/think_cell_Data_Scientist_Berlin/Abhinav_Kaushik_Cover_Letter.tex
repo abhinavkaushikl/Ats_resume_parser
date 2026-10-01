@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - think-cell Software}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Data Scientist\\
+Bengaluru, India \textbar{} +91 87005 71859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+October 1, 2026
+
+Hiring Team\\
+think-cell Software
+
+\textbf{Re: Data Scientist}
+
+Dear Hiring Team,
+
+I am applying for the Data Scientist role in your Data Team. I have spent eight years building models that other people have to act on: risk scores, breach predictions, demand forecasts and propensity models, and more recently LLM and agent systems in production. The part I care about is the last mile, whether anyone actually changes a decision because of it.
+
+My reason for applying is specific. My fiancée lives in Berlin and I am moving there to start my life with her, so I am looking for one team in the city to build the next years of my career with. think-cell is the kind of place I want that to be: a senior data team with real ownership inside an established business.
+
+I would be useful to you quickly on customer, product and behavioural data. At Optum I rebuilt a member risk model with engineered features and real cross-validation, lifting AUC from 0.74 to 0.81. At United Health Group I built a multi-agent analytics chatbot in LangGraph that answers business questions with PySpark analysis and live charts, cutting manual analysis by 98\%.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Teachers tell me within a day when a feature does not help a student, and that is the feedback loop I try to build into any model I own. I would be glad to talk about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

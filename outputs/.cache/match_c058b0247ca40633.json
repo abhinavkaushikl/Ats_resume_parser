@@ -1,0 +1,16 @@
+{
+ "score": 88,
+ "matched": [
+  "Strong production data‑science/ML experience",
+  "Python and SQL proficiency",
+  "Large‑scale data skills (PySpark, Spark, Databricks)",
+  "Statistical and modeling knowledge (time‑series, forecasting, regression)",
+  "Demonstrated business impact with measurable results",
+  "Stakeholder communication and technical leadership (senior roles, mentorship)"
+ ],
+ "missing": [
+  "Explicit experimentation/A‑B testing experience"
+ ],
+ "blockers": [],
+ "reason": "The candidate meets all core requirements with extensive production ML work, Python/SQL, large‑scale data handling and proven business impact, lacking only clear A/B testing experience."
+}

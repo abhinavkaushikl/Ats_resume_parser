@@ -1,0 +1,17 @@
+{
+ "score": 32,
+ "matched": [
+  "Master's degree in a related field",
+  "Customer-facing consulting experience",
+  "Strong analytical and communication skills",
+  "Business English proficiency"
+ ],
+ "missing": [
+  "Biopharma R&D experience",
+  "Japanese language proficiency"
+ ],
+ "blockers": [
+  "Japanese language requirement not met"
+ ],
+ "reason": "Missing required Japanese language skill and specific biopharma R&D experience makes the candidate a poor fit."
+}

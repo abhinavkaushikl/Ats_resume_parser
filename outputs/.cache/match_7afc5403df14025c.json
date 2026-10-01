@@ -1,0 +1,14 @@
+{
+ "score": 78,
+ "matched": [
+  "Strong data-science/analytics background",
+  "Python/SQL skills",
+  "Statistical modeling experience",
+  "Client-facing/consulting experience"
+ ],
+ "missing": [
+  "Specific marketing/customer/product analytics domain experience"
+ ],
+ "blockers": [],
+ "reason": "The candidate meets core data science, technical, and consulting requirements but lacks direct marketing/retail analytics experience."
+}

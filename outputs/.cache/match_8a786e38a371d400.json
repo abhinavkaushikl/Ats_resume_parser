@@ -1,0 +1,16 @@
+{
+ "score": 80,
+ "matched": [
+  "Professional AI/ML architecture experience",
+  "Strong LLM/RAG/embedding/agent knowledge",
+  "Enterprise integration experience",
+  "Cloud architecture (GCP, Azure)",
+  "Technical communication"
+ ],
+ "missing": [
+  "Explicit enterprise architecture certifications or frameworks",
+  "AI governance experience"
+ ],
+ "blockers": [],
+ "reason": "The candidate demonstrates solid AI/ML architecture, LLM/RAG/agent work, and cloud integration, but lacks formal enterprise architecture credentials."
+}

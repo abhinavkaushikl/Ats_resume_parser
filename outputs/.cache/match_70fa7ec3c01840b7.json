@@ -1,0 +1,20 @@
+{
+ "score": 55,
+ "matched": [
+  "4+ years professional ML/software development",
+  "Python deep-learning experience (PyTorch)",
+  "Production ownership and deployment",
+  "ML engineering fundamentals"
+ ],
+ "missing": [
+  "Hands‑on ads‑ranking model experience at scale",
+  "CTR/CVR prediction and calibration",
+  "A/B testing/experiment management",
+  "TensorFlow (optional)",
+  "Domain experience with large‑scale advertising systems"
+ ],
+ "blockers": [
+  "No demonstrated experience building or deploying ads‑ranking models or CTR/CVR systems"
+ ],
+ "reason": "Solid ML background but lacks the core ads‑ranking experience required for the role."
+}

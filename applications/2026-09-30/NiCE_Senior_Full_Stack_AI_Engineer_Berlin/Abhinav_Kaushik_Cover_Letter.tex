@@ -1,0 +1,49 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - NiCE}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Full-Stack AI Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}
+
+September 30, 2026
+
+Hiring Team\\
+NiCE Labs -- AI Innovation
+
+\textbf{Re: AI Innovation Engineer (Requisition 11563)}
+
+Dear Hiring Team,
+
+I am applying to the AI Innovation pillar at NiCE Labs. The loop you describe -- spot a capability, build it, measure it against real metrics, then kill it or hand it off -- is how I already work. At Viavi I prototyped 15+ AI applications from ambiguous requirements and carried 7 into production or paid client work; the other 8 were stopped, which was the right call and the reason the 7 shipped.
+
+My fiancée lives in Berlin and we are making our home there, so a Berlin-based team is where I want to build. Cognigy interests me because conversational agents are where the gap between a promising model and a dependable product is widest, and closing that gap is the work. I have shipped LLM systems that real users depended on, not notebooks, and I have killed enough of my own prototypes to argue from evidence rather than enthusiasm.
+
+Two things I would bring on day one. I build agent loops at the level below the framework -- message arrays, tool calling, context management, prompt caching -- and I designed the automated evaluation and observability pipelines for our Question Answering and Summary agents, with LLM evaluators and tracing that cut human review by 43\%. I am also full-stack in practice: I built 21+ automated TypeScript and Next.js mockup generators that turn a ticket into a clickable React prototype, so I can take a concept from API to a demo UI that feels like a product without waiting on anyone, and I wire tools into agents over MCP.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It is my own zero-to-one bet, shipped to real users and revised whenever their feedback contradicts my plan. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

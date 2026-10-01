@@ -1,0 +1,15 @@
+{
+ "score": 78,
+ "matched": [
+  "Python",
+  "SQL",
+  "large-scale analytics experience",
+  "strong product sense and stakeholder communication"
+ ],
+ "missing": [
+  "A/B testing and experimental design",
+  "statistical inference"
+ ],
+ "blockers": [],
+ "reason": "The candidate meets core technical and communication requirements but lacks explicit A/B testing and experimental design experience."
+}

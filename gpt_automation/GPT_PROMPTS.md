@@ -10,7 +10,7 @@ Use them in order for each job:
 4. **Judge** - a strict recruiter scores the tailored resume (use a different chat / model than step 3).
 
 For every prompt paste: the prompt, then the job's details / JD where it says `<<< ... >>>`, and the
-**base resume** from `base_resume/base_resume.txt`. The jobs come from `company_list.txt`.
+**base resume** from `base_resume/base_resume.txt`. The jobs come from `company_list.md`.
 
 ---
 

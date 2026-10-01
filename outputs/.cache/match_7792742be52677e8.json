@@ -1,0 +1,20 @@
+{
+ "score": 78,
+ "matched": [
+  "8+ years AI engineering experience",
+  "Production AI applications built and shipped",
+  "LLM and agentic AI work (Claude, LangGraph)",
+  "RAG and document extraction agents",
+  "Automated evaluation and observability pipelines",
+  "MLOps tools (Docker, Kubernetes, MLflow, CI/CD)",
+  "Python, SQL, PySpark, FastAPI"
+ ],
+ "missing": [
+  "Explicit experience building code‑generation agents for software engineering",
+  "Designing parallel agent orchestration frameworks for codebase changes",
+  "Deep integration with enterprise CI/CD pipelines and code review systems",
+  "Experience with software‑engineering metrics, regression testing of generated code"
+ ],
+ "blockers": [],
+ "reason": "Strong AI/LLM production background but lacks direct experience in building the parallel agent‑orchestration framework for software engineering the role demands."
+}

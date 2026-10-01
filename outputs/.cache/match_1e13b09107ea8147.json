@@ -1,0 +1,19 @@
+{
+ "score": 35,
+ "matched": [
+  "MSc in Machine Learning and AI",
+  "Python programming",
+  "Data science experience",
+  "Customer-facing consulting roles",
+  "Healthcare/medical domain experience"
+ ],
+ "missing": [
+  "Japanese language proficiency",
+  "Explicit biopharma R&D experience",
+  "R programming"
+ ],
+ "blockers": [
+  "No Japanese language skill listed"
+ ],
+ "reason": "Missing required Japanese language ability and specific pharma R&D background makes the candidate a poor fit despite relevant data science and consulting experience."
+}

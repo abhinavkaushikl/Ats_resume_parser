@@ -1,0 +1,15 @@
+{
+ "score": 78,
+ "matched": [
+  "Python",
+  "SQL",
+  "large-scale analytics experience",
+  "stakeholder communication"
+ ],
+ "missing": [
+  "A/B testing / experimental design",
+  "statistical inference"
+ ],
+ "blockers": [],
+ "reason": "Good overall fit with strong Python/SQL and large‑scale analytics, but lacks explicit A/B testing and statistical inference experience."
+}

@@ -1,6 +1,6 @@
 ---
 name: job-hunt
-description: Daily AI/ML job hunt for Abhinav, end to end - find jobs posted in the last 24 hours, keep only companies that sponsor visas (with a Google check and deeper research), get the full job descriptions (company site first, else LinkedIn public page), score the visa yes / weak-yes ones against the base resume, write one results file with analysis, and generate a subtly tailored resume + cover letter for every one at 50%+ (visa-unclear jobs only go to a company list for GPT). Use when the user asks to run the job hunt, fetch today's jobs, or runs /job-hunt.
+description: Daily AI/ML job hunt for Abhinav - find every job posted in the last 24 hours and tag each one for visa sponsorship (visa / weak / unknown), all in ONE dated Markdown file, jobs/jobs_<date>.md. No job descriptions are downloaded and nothing is scored; Abhinav collects the JDs himself and hands them over, and only then is a tailored resume + cover letter written (visa or weak jobs). Use when the user asks to run the job hunt, fetch today's jobs, or runs /job-hunt.
 model: sonnet
 ---
 
@@ -9,67 +9,61 @@ model: sonnet
 Run the whole job hunt in this project folder (`/Users/abhinav/Ats_resume_parser`) without asking me
 questions along the way. If I added notes when starting (e.g. "only Berlin and Amsterdam"), apply them.
 
-Base resume: `Abhinav_kaushik_AI_ML.pdf` (Senior AI / GenAI / LLM engineer).
-The end result is ONE file: `JOB_RESULTS.md` in the project root, plus the job-description files of the
-shortlisted jobs and a tailored resume + cover letter for each (`applications/<date>/`).
-- **Visa yes or weak yes** (`Visa: yes`, with or without ⚠️ weak): Claude handles these - JD fetched
-  and scored; **50%+ match -> resume + cover letter**, below 50% -> no resume (still listed). Weak ones
-  stay flagged ⚠️ (confirm with the recruiter).
-- **Visa unclear** (no evidence even after the Google question and deeper research): **handed to GPT,
-  not Claude** - no JD, no score, no resume. Claude only writes `gpt_automation/company_list.txt`
-  (step 3 c) and I run GPT on it from the `gpt_automation/` folder. If I hand a job back, step 3 e.
-- Dropped: company says no, existing right to work required, or a recruitment agency hiding the employer.
-Everything else is working data and is cleaned up at the end.
+**What I want: ONE file, `jobs/jobs_<today>.md`.** Every job posted in the last 24 hours with company
+name, job title, city, posting time and the posting URL - and a visa tag per job:
+
+| Tag | Meaning |
+|---|---|
+| `visa` | sponsors (register, JD, company page) |
+| `weak` | some evidence only, confirm with the recruiter |
+| `unknown` | nothing found after the Google question and deeper research |
+| dropped | says no, requires existing work rights, or an agency hiding the employer - bottom section |
+
+**Your job stops there.** Do **not** download, fetch, extract or score job descriptions - that is not
+your job, I do it by hand. No `jd_extractor.py`, no `job_match.py`, no scoring, no Groq, no
+`JOB_RESULTS.md`, no `gpt_automation/company_list.txt`, no second list anywhere. One file per day, in
+`jobs/`, with the date in its name.
+
+**Tailoring happens later, only when I hand you a JD** (step 4): I paste or save the job description of a
+job I picked from the list, and you tailor the resume + cover letter for it exactly as before
+(`applications/<date>/`). Only `visa` and `weak` jobs are tailored.
 
 ## How to run
 
 Do the steps in order. Before each step, read its file in `steps/` and follow it exactly. After each step,
-give me one status line (e.g. "Step 2 done - 88 of 261 jobs kept after visa check").
+give me one status line (e.g. "Step 2 done - 88 of 261 jobs tagged visa, 40 weak, 90 unknown").
 
-1. [steps/1-find-jobs.md](steps/1-find-jobs.md) - find today's jobs, first resume filter
-2. [steps/2-visa-check.md](steps/2-visa-check.md) - visa sponsorship check + deeper research with Google
-3. [steps/3-job-descriptions.md](steps/3-job-descriptions.md) - full JDs (company site, else LinkedIn), scored
-4. [steps/4-results.md](steps/4-results.md) - JOB_RESULTS.md + written analysis
-5. [steps/5-tailor-resumes.md](steps/5-tailor-resumes.md) - tailored resume + cover letter for every shortlisted job
-6. [steps/6-cleanup-and-reply.md](steps/6-cleanup-and-reply.md) - delete working files, reply to me
+1. [steps/1-find-jobs.md](steps/1-find-jobs.md) - find the last 24 hours' jobs, write the one dated file
+2. [steps/2-visa-check.md](steps/2-visa-check.md) - fill the Visa column in that same file
+3. [steps/3-reply.md](steps/3-reply.md) - reply with the counts and the link to the file
+4. [steps/4-tailor-on-demand.md](steps/4-tailor-on-demand.md) - **only when I hand over a JD**, not part of the daily run
 
-Long scripts (job search, extraction) run in the background; wait for them to finish before the next step.
+The job search runs in the background (about 10 minutes); wait for it before step 2.
 
 ## Ground rules (whole run)
 
 - **Last 24 hours only.** Never widen the time window.
-- **LinkedIn separate.** Keep LinkedIn jobs in their own section in every list and in the results.
-- **Job descriptions: company site first, then LinkedIn.** Try the company's own site or ATS (Playwright)
-  first. If it isn't there, read LinkedIn's public job page - never log in, never use my account, go slowly,
-  and stop using LinkedIn for the rest of the run if it rate-limits (the extractor does this by itself).
-- **Honest scores.** Never make the scorer more lenient, never pick a higher re-score, never tell the scorer
-  what score to aim for. A job that needs experience I don't have should score low - report it as it is.
-- **Right resume version before judging.** A JD heavy on time series / forecasting (forecasting in the
-  title, or time-series terms clearly outweigh LLM / GenAI terms) is scored against the **time-series
-  version** of my resume (`resume_variants.json`: the Viavi SLA bullet swapped for base-station call /
-  SMS handover forecasting with LSTM and XGBoost, plus the univariate AIOps KPI forecasting feature) -
-  that is real experience the base resume leaves out. Don't reject a forecasting job just because the
-  base resume under-shows it; reject only when it's still a genuine misfit with that version.
-- **Visa: keep any hope.** Keep a company with even slight public evidence of sponsorship (flag weak
-  evidence); drop only explicit "no", "must already have work rights", or agencies hiding the employer.
-- **Don't destroy work mid-run.** Never delete `jobs/jd_visa/<today>/` while the run is going; re-run steps
-  on top of what is there (scores are cached in `outputs/.cache/`). Only one run of each script at a time -
-  check with `pgrep -fl <script>` before starting one. If another session is running the same scripts,
-  stop and tell me instead of starting a second copy.
-- **One results file.** Don't create other report files for me; everything I need goes in JOB_RESULTS.md.
-  The only other file is `gpt_automation/company_list.txt`, the company list for GPT.
+- **One file, one place.** `jobs/jobs_<today>.md`. Steps 1 and 2 write the same file - step 2 edits the
+  Visa column in place, it never creates a second list. No other report, anywhere.
+- **No job descriptions.** Never fetch, save, summarise or score a JD. The list has the posting URL; that
+  is all I need. Never run `jd_extractor.py`, `job_match.py`, `unclear_visa_match.py`, `visa_jobs_json.py`,
+  `job_report.py` or `tailor_all.py` in this skill.
+- **No Groq.** Nothing in this skill calls an LLM scorer. `GROQ_API_KEY` is not needed any more.
+- **LinkedIn separate.** LinkedIn jobs stay in their own part of the file. Never log in to LinkedIn.
+- **Visa: keep any hope.** Tag `visa` or `weak` on even slight public evidence; `unknown` when nothing is
+  found. Drop only an explicit "no", "must already have work rights", or an agency hiding the employer.
+- **Don't destroy the file.** Never delete or overwrite `jobs/jobs_<today>.md` once step 2 has tagged it;
+  re-running step 1 on the same day rewrites it, so only do that if I ask. Only one copy of
+  `daily_jobs.py` at a time - check `pgrep -fl daily_jobs` before starting it.
 - If a step fails, say what failed and why, continue with what you have, and list it in the final reply.
 
-## Scripts (all in the project root, run with `.venv/bin/python`)
+## Scripts (project root, run with `.venv/bin/python`)
 
 | Script | Does |
 |---|---|
-| `daily_jobs.py` | Last-24h jobs from company feeds + LinkedIn; writes `jobs/jobs_<date>_<HHMM>.md` (table + JD links to `jobs/jd/`) and `jobs/daily/jobs_<date>.md` (scored, below-60% listed as skipped) |
-| `sponsor_registers.py <list.md>` | Step 2 first: matches companies against the UK / NL / DK sponsor registers and the DE / ES employer lists (auto-downloaded weekly to `jobs/registers/`), caches hits in `jobs/visa_companies.json` |
-| `jd_extractor.py <list.md>` | Full JDs: company site (Playwright), else LinkedIn's public page (no login); each scored on save: 60%+ -> `jobs/jd_visa/<date>/`, below -> `skipped/` |
-| `job_match.py <folder>` | Re-scores every JD file in a folder (cached) |
-| `unclear_visa_match.py <visa.md>` | Writes `jobs/unclear_<date>.md`: the jobs whose visa status stayed unclear, for `jd_extractor.py` - so they're processed like the rest |
-| `visa_jobs_json.py <visa.md>` | Collects everything into `jobs/visa_jobs_<date>.json` |
-| `job_report.py <json>` | Writes `JOB_RESULTS.md` (keeps a same-day `## Analysis` section when rebuilt; adds Resume / Judge links once tailored) |
-| `build_resume.py --date <d>` | Builds resume + cover letter PDFs from Claude's `tailoring.json` files (tailor-resumes skill, step 5) |
-| `tailor_all.py` | Alternative: the older Groq pipeline for all shortlisted JDs (slow on Groq's free tier) |
+| `daily_jobs.py --hours 24 [--cities ...]` | The only search script: company feeds + LinkedIn's public search, last 24h, writes **only** `jobs/jobs_<today>.md` (company, job, city, opened, link; empty Visa column). No JD downloads, no scoring. |
+| `sponsor_registers.py jobs/jobs_<today>.md` | Step 2 first: matches every company against the official registers (UK / NL IND / DK / IE / PT) and the DE / ES / SE / EE employer lists (auto-downloaded weekly to `jobs/registers/`), caches hits in `jobs/visa_companies.json` |
+| `build_resume.py --date <d>` | Step 4 only: builds resume + cover letter PDFs from Claude's `tailoring.json` files |
+
+Everything else in the root (`jd_extractor.py`, `job_match.py`, `visa_jobs_json.py`, `job_report.py`,
+`tailor_all.py`) is **not** used by this skill.

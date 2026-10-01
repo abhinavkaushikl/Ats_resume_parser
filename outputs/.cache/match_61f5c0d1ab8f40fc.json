@@ -1,0 +1,21 @@
+{
+ "score": 92,
+ "matched": [
+  "Python",
+  "SQL",
+  "distributed data processing (PySpark, Spark SQL)",
+  "production ML/GenAI experience",
+  "cloud deployment (GCP, Azure)",
+  "containerized deployment (Docker, Kubernetes)",
+  "RAG development",
+  "vector database experience (pgvector, TimescaleDB, ArangoDB, Cosmos DB)",
+  "MLOps workflows (MLflow, Airflow, DVC)"
+ ],
+ "missing": [
+  "Ray",
+  "Hadoop/Trino (production)",
+  "AWS-specific services (Bedrock, SageMaker, EKS/EC2 GPU)"
+ ],
+ "blockers": [],
+ "reason": "The candidate meets all core requirements with extensive production ML/GenAI, RAG, Python/SQL, distributed processing and cloud/container experience, only lacking several preferred AWS‑centric tools."
+}

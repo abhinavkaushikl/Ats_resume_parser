@@ -1,0 +1,16 @@
+{
+ "score": 90,
+ "matched": [
+  "Strong software engineering experience",
+  "Python backend development",
+  "AI application integration and production services",
+  "API development",
+  "Data processing pipelines",
+  "Cloud/container skills (Docker, Kubernetes, GCP, Azure)"
+ ],
+ "missing": [
+  "Explicit testing experience"
+ ],
+ "blockers": [],
+ "reason": "The candidate demonstrates extensive Python‑based AI product work, RAG and production deployment, meeting all core requirements; only testing is not explicitly shown."
+}

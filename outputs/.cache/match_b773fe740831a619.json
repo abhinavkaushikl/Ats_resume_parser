@@ -1,0 +1,17 @@
+{
+ "score": 78,
+ "matched": [
+  "strong technical/software/data background",
+  "experience with enterprise integrations",
+  "customer-facing delivery",
+  "ability to analyze data and configure AI solutions",
+  "strong communication and problem solving"
+ ],
+ "missing": [
+  "finance/order-to-cash domain experience",
+  "ERP systems integration experience",
+  "explicit willingness to travel across Europe"
+ ],
+ "blockers": [],
+ "reason": "Solid AI engineering and integration experience but lacks finance/ERP background and stated travel willingness."
+}

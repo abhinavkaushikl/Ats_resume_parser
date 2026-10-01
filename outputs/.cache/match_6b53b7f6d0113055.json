@@ -1,0 +1,15 @@
+{
+ "score": 32,
+ "matched": [
+  "Experience designing enterprise AI/GenAI solutions",
+  "Understanding of LLMs, RAG, and AI agents",
+  "Strong software/AI engineering and stakeholder skills"
+ ],
+ "missing": [
+  "CRM/Salesforce architecture and integration experience"
+ ],
+ "blockers": [
+  "No demonstrated Salesforce/CRM experience, which is a required qualification"
+ ],
+ "reason": "Candidate lacks the required Salesforce/CRM integration background, a core must‑have for the role."
+}

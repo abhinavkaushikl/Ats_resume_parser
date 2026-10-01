@@ -1,0 +1,21 @@
+{
+ "score": 35,
+ "matched": [
+  "Bachelor's degree (related field)",
+  "3+ years data engineering experience",
+  "SQL proficiency",
+  "Python programming",
+  "Cloud experience (GCP, Azure)",
+  "Data pipeline development"
+ ],
+ "missing": [
+  "Mandarin language proficiency",
+  "R programming",
+  "Supply chain domain knowledge (preferred)",
+  "Pharmaceutical industry experience (preferred)"
+ ],
+ "blockers": [
+  "No evidence of Mandarin language ability, a required skill"
+ ],
+ "reason": "The candidate lacks the required Mandarin language capability, a hard blocker despite relevant data engineering experience."
+}

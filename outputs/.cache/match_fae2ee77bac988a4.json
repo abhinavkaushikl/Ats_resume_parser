@@ -1,0 +1,19 @@
+{
+ "score": 84,
+ "matched": [
+  "Enterprise AI architecture experience",
+  "Client-facing project delivery",
+  "RAG and agentic solutions (LangGraph, LangChain)",
+  "Claude/Anthropic usage",
+  "Cloud platforms (GCP, Azure)",
+  "Docker/Kubernetes",
+  "Python development",
+  "Vector database experience"
+ ],
+ "missing": [
+  "Explicit pre‑sales / proposal writing experience",
+  "Demonstrated model‑risk governance"
+ ],
+ "blockers": [],
+ "reason": "Strong AI architecture and agentic/RAG background with Claude and cloud skills, but lacks clear pre‑sales and model‑risk credentials, keeping it a good but not perfect fit."
+}

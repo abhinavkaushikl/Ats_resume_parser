@@ -1,0 +1,21 @@
+{
+ "score": 90,
+ "matched": [
+  "Strong Python development",
+  "LLM applications and agents (LangGraph, LangChain)",
+  "RAG and retrieval",
+  "API integration (FastAPI, REST)",
+  "Data pipelines (SQL, PySpark)",
+  "Cloud experience (AWS via Amazon Textract, GCP, Azure)",
+  "Docker and containerization",
+  "CI/CD tools (Jenkins, Bamboo, Bitbucket)",
+  "Version control",
+  "Testing and observability pipelines"
+ ],
+ "missing": [
+  "Deep cybersecurity experience",
+  "Extensive hands‑on AWS services beyond Textract"
+ ],
+ "blockers": [],
+ "reason": "The resume demonstrates strong Python, LLM/agent, API, cloud and DevOps skills matching the core role, with only minor gaps in dedicated cybersecurity and broader AWS usage."
+}

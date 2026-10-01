@@ -1,0 +1,13 @@
+{
+ "score": 92,
+ "matched": [
+  "Hands‑on AI/data/platform engineering experience",
+  "ML/LLM development and production deployment",
+  "MLOps lifecycle knowledge",
+  "Enterprise integration and API experience",
+  "Agile collaborative work"
+ ],
+ "missing": [],
+ "blockers": [],
+ "reason": "The resume demonstrates extensive production ML/LLM work, MLOps tooling, API integrations and agile delivery, fully covering the job’s core requirements."
+}

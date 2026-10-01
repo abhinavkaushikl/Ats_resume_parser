@@ -13,18 +13,19 @@ hands only these to you.
 | `GPT_PROMPTS.md` | permanent | The prompts: 0 JD, 1 visa check, 2 match score, 3 resume + cover letter, 4 judge |
 | `base_resume/base_resume.txt` | permanent | Base resume as text (use this) |
 | `base_resume/Abhinav_kaushik_AI_ML.pdf` | permanent | The original resume PDF |
-| `company_list.txt` | each run | The jobs to process (replaced every run) |
+| `company_list.md` | each run | The jobs to process (replaced every run) |
 | `jd_scores_<date>.md` | each run (if present) | Claude's resume-match score per job (Prompt 2 already done), best first |
 | `jds/<date>/` | each run (if present) | The full job descriptions for those jobs (Prompt 0 already done) |
-| `archive/company_list_<date>.txt` | history | Earlier runs' lists |
+| `archive/company_list_<date>.md` | history | Earlier runs' lists (older ones are `.txt`) |
 
-`company_list.txt`: lines starting with `#` are comments. Every other line is one job:
-`Company | Job | City | Source | What was checked | Link`
+`company_list.md`: one Markdown table, one job per row:
+`| Company | Job | City | Source | What was checked | Link |`
+Below it: companies with no posting link (search their careers page) and the dropped ones (not for processing).
 (Source = company site or LinkedIn; What was checked = the registers / searches that found nothing.)
 
 ## Command
 
-**"Process the companies in company_list.txt"** - for every job line, in order, company by company
+**"Process the companies in company_list.md"** - for every job row, in order, company by company
 (one visa check per company and city, reused for its other jobs):
 
 If `jd_scores_<date>.md` exists: use its JD files and scores - skip Prompt 0 and Prompt 2, and only

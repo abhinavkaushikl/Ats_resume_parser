@@ -7,7 +7,7 @@
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
 
-\hyphenation{LangGraph LangChain GeoPerformance TimescaleDB}
+\hyphenation{LangGraph LangChain GeoPerformance TimescaleDB GridSearchCV LightGBM BigQuery scikit-learn}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
@@ -27,14 +27,13 @@
 \end{center}
 
 \section{Summary}
-Senior AI Engineer with 8+ years taking ML and LLM systems from prototype to production across Healthcare, Telecom
-and AIOps, with an MSc in Machine Learning and AI from Liverpool John Moores University. Designs and ships LangGraph
-multi-agent and RAG applications, document-extraction agents and analytics chatbots with automated LLM evaluation,
-tracing and observability, alongside classical ML for prediction, anomaly detection and time-series forecasting.
-Works across the full AI engineering lifecycle, from SQL and PySpark data pipelines to fine-tuning and deployment with
-FastAPI, Docker and MLflow, turning business problems into measurable results with stakeholders. Looking for
-opportunities in Berlin and willing to relocate. Currently building ThinkTree.AI, a non-profit AI-powered learning
-platform designed to support students with ADHD and context-switching challenges.
+Senior AI Engineer with 8+ years taking ML, NLP, LLM and agentic AI systems from prototype to production across Healthcare,
+Telecom and AIOps, with an MSc in Machine Learning and AI from Liverpool John Moores University. Designs and ships
+LangGraph multi-agent and RAG applications, production agents, NLP and document-extraction workflows, and analytics chatbots
+with automated LLM evaluation, tracing and observability, alongside classical ML for prediction, anomaly detection, demand forecasting and time-series
+forecasting. Experienced in leading technical delivery and taking AI solutions from customer requirements and POCs through
+production. Currently building ThinkTree.AI, a non-profit AI-powered learning platform designed to support students with ADHD
+and context-switching challenges.
 
 \section{Professional Experience}
 \role{Senior AI Engineer | United Health Group | Bengaluru, India}{Nov 2025 -- Present}
@@ -43,47 +42,58 @@ platform designed to support students with ADHD and context-switching challenges
   handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.
   \item Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business
   questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98\%.
+  \item Built a mock-generator pipeline for customer delivery, producing 36+ discipline-specific UI mockups from Jira
+  stories and requirements using HTML, Next.js and Claude 4.6 to accelerate solution prototyping and stakeholder review.
   \item Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM
   evaluators, tracing and failure detection, reducing human-in-the-loop review by 43\%.
-  \item Fine-tuned a cross-encoder on positive and negative pairs to re-rank dense retrieval over AARP survey data,
-  improving retrieval accuracy.
+  \item Fine-tuned a cross-encoder on positive/negative pairs to re-rank AARP survey retrieval, using Databricks
+  notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy.
 \end{itemize}
 \vspace{3pt}
 
 \role{Senior Machine Learning Engineer | Viavi Solutions | Chennai, India}{Sep 2024 -- Nov 2025}
 \begin{itemize}
+  \item Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for
+  real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67\%.
   \item Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM
   reasoning, reaching a 90\% match rate against existing organizational solutions.
-  \item Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading
+  \item Built and deployed an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading
   effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5\%.
-  \item Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving
-  into production or paid client work.
+  \item Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client
+  requirements, with 7 moving into production or paid client work.
+  \item Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration
+  tests and automated checks so model releases stayed repeatable and reviewed before reaching production.
 \end{itemize}
 \vspace{3pt}
 
 \role{Data Scientist | Viavi Solutions | Bengaluru, India}{Nov 2021 -- Sep 2024}
 \begin{itemize}
-  \item Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for
-  real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67\%.
   \item Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using
   Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.
-  \item Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an
-  11\% increase in POC and mentoring revenue.
+  \item Contributed to network-device inventory demand forecasting using predictive models to improve planning and reduce
+  revenue-at-risk; targeted a conservative ~10\% reduction in excess/at-risk inventory and higher ARPU.
+  \item Trained and deployed a production time-series forecasting framework combining LSTM and XGBoost to model call
+  quality, SMS delivery rates and network efficiency metrics for the Delta cellular network.
+  \item Engineered a unified time-series data pipeline in SQL and Python to ingest call logs, SMS delivery statistics
+  and signal metrics across multiple time intervals, joined by user ID and network location for downstream forecasting.
 \end{itemize}
 \vspace{3pt}
 
 \role{Data Analyst | Optum | Gurugram, India}{Jun 2021 -- Nov 2021}
-\begin{itemize}
-  \item Implemented a reranker for an existing recommendation system serving individual and child plan
-  recommendations, optimizing renewal suggestions and increasing conversion by 2\%.
-  \item Developed a Python and Flask parser that automated extraction and transformation of raw data into structured
-  datasets, feeding downstream analytics and reporting.
+\begin{itemize}\sloppy
+  \item Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features,
+  GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.
+  \item Optimized hospital staff scheduling in Python as a mixed-integer linear program with shift-coverage
+  constraints, and modelled patient wait times with queueing statistics to balance staffing levels against demand.
+  \item Analyzed member plan utilization and renewal behavior across individual and child plan segments using
+  BigQuery, building segmentation queries and reporting pipelines that fed downstream analytics and member risk
+  modelling.
 \end{itemize}
 \vspace{3pt}
 
 \role{Data Engineer | Nippon Data Systems | Gurugram, India}{Nov 2019 -- May 2021}
 \begin{itemize}
-  \item Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets,
+  \item Engineered SQL, PySpark and Airflow pipelines automating BAU medical-audit reporting on large healthcare datasets,
   cutting manual reporting effort by 95\%.
   \item Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and
   analyses for multiple stakeholder teams.
@@ -94,10 +104,12 @@ platform designed to support students with ADHD and context-switching challenges
 
 \role{Associate Consultant | Saksoft | Gurugram, India}{Dec 2017 -- Nov 2019}
 \begin{itemize}
-  \item Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact,
-  enabling targeted outreach and customer prioritization.
-  \item Built customer dashboards for financial and product insights with QlikSense, SQL and SAP HANA, increasing
-  user engagement by 40\%.
+  \item Built customer dashboards for financial and product insights using QlikSense, SQL and SAP HANA, increasing user engagement by 40\%.
+  \item Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach.
+  \item Wrote complex SAP HANA SQL with CTEs, joins, subqueries, window functions and aggregations to extract and
+  validate financial modelling data.
+  \item Built reusable SQL data-preparation workflows across financial and product datasets, refining queries and filters
+  to surface relevant signals for financial teams.
 \end{itemize}
 
 \section{Projects}
@@ -128,11 +140,11 @@ platform designed to support students with ADHD and context-switching challenges
 
 \section{Technical Skills}
 \textbf{AI / GenAI:} Generative AI, LLM, RAG, Agentic RAG, Agentic AI, LangGraph, LangChain, Claude, OpenAI, Embeddings, Cross-Encoder, Fine-Tuning, Hugging Face Transformers, NLP, Tool Orchestration, Amazon Textract\par
-\textbf{Machine Learning:} PyTorch, Scikit-learn, XGBoost, LightGBM, Random Forest, Isolation Forest, LSTM, SBERT, DBSCAN, Time Series Forecasting, Demand Forecasting, Anomaly Detection, Statistical Modeling, Regression, Deep Learning\par
+\textbf{Machine Learning:} PyTorch, Scikit-learn, XGBoost, LightGBM, Random Forest, Isolation Forest, LSTM, SBERT, DBSCAN, Time Series Forecasting, Demand Forecasting, Anomaly Detection, Statistical Modeling, Regression, Deep Learning, A/B Testing\par
 \textbf{Evals / Observability:} LLM Evals, LLM Evaluators, Agent Tracing, Observability, Elasticsearch, Kibana, Log Analysis\par
 \textbf{Programming / Data:} Python, SQL, PySpark, Pandas, NumPy, FastAPI, Flask, Hive, Spark SQL, REST API, Pydantic, Unix\par
-\textbf{MLOps / Cloud:} MLflow, Docker, Kubernetes, Airflow, DVC, Terraform, Jenkins, Bamboo, Bitbucket, GCP, Azure, Vercel\par
-\textbf{Data Platforms:} Databricks, Databricks SQL, Apache Spark, Supabase\par
+\textbf{MLOps / Cloud:} MLflow, Docker, Kubernetes, Airflow, DVC, Terraform, Jenkins, Bamboo, Bitbucket, CI/CD, GCP, Azure, Vercel\par
+\textbf{Data Platforms:} Databricks, Databricks SQL, Databricks Vector Search, BigQuery, Apache Spark, Supabase\par
 \textbf{Databases:} TimescaleDB, MySQL, Vector DB, pgvector, ArangoDB, Cosmos DB\par
 \textbf{Search:} Apache Solr, Lucene Indexing, Information Retrieval\par
 \textbf{BI:} Power BI, QlikSense, SAP HANA\par

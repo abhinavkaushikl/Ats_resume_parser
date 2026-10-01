@@ -1,0 +1,21 @@
+{
+ "score": 15,
+ "matched": [
+  "MSc in Machine Learning and AI",
+  "Extensive generative AI and LLM experience (Claude, OpenAI, LangGraph, RAG)",
+  "Enterprise‑scale cloud experience (GCP, Azure, Docker, Kubernetes, Terraform)",
+  "DevSecOps/CI‑CD tooling (Git, Jenkins, Airflow, MLflow)",
+  "AI model lifecycle, evaluation and observability"
+ ],
+ "missing": [
+  "10+ years of relevant consulting/lead engineering experience (resume shows ~8 years)",
+  "Fluency in Dutch",
+  "EU nationality and current residence in the Netherlands",
+  "Explicit security, privacy, compliance and governance experience for mission‑critical systems",
+  "Domain experience in ports, logistics or maritime"
+ ],
+ "blockers": [
+  "Candidate is not an EU national, not based in the Netherlands, and does not list Dutch language proficiency"
+ ],
+ "reason": "Location/language requirements are hard blockers despite strong technical background."
+}

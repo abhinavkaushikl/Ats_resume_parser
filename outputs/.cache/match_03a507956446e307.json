@@ -1,0 +1,16 @@
+{
+ "score": 92,
+ "matched": [
+  ">1 year AI/ML engineering experience",
+  "Python programming",
+  "Git proficiency",
+  "LLM-based system development with prompt engineering",
+  "Orchestration framework experience (LangGraph, LangChain)",
+  "RAG pipeline design and implementation",
+  "Data science fundamentals including data quality, lineage, governance",
+  "English fluency"
+ ],
+ "missing": [],
+ "blockers": [],
+ "reason": "The resume clearly demonstrates all required skills and experience for the AI Solutions Engineer role, with no hard blockers."
+}

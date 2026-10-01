@@ -1,0 +1,24 @@
+{
+ "score": 78,
+ "matched": [
+  "5+ years building/operating production ML systems",
+  "Python",
+  "Spark/Databricks",
+  "MLflow",
+  "Kubernetes",
+  "Docker",
+  "CI/CD (Jenkins/Bamboo)",
+  "Observability (Elasticsearch/Kibana)",
+  "Production ML pipelines",
+  "Product delivery experience"
+ ],
+ "missing": [
+  "Go programming",
+  "Kafka",
+  "Feature store experience",
+  "Daily use of AI coding tools (Claude Code, Cursor, Copilot)",
+  "Explicit feature‑store integration work"
+ ],
+ "blockers": [],
+ "reason": "Strong ML engineering background and production experience, but lacks several required backend technologies and AI‑coding tool usage."
+}

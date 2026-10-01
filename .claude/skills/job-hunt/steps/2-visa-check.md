@@ -1,47 +1,51 @@
-# Step 2 - Visa sponsorship check
+# Step 2 - Visa check: fill the Visa column in the same file
 
-Input: `jobs/jobs_<today>_<HHMM>.md` from step 1, minus the jobs the daily file skipped below 60%.
-Check once per company and country, not once per job.
+Input and output are the **same file**: `jobs/jobs_<today>.md` from step 1. You edit the `Visa` cell of
+every row in place and add the dropped companies at the bottom. Never write a second list
+(no `_visa.md`, no `research_<date>_sponsors.md`, no JSON report).
+
+Check once per company and country, not once per job - all rows of the same company in the same country
+get the same tag.
 
 ## 0. Sponsor lists first (script, no tokens)
 
 ```
-.venv/bin/python sponsor_registers.py jobs/jobs_<today>_<HHMM>.md
+.venv/bin/python sponsor_registers.py jobs/jobs_<today>.md
 ```
 
-It matches every company against the official registers (UK -> London, Dutch IND -> Amsterdam and rest of
-the Netherlands, Danish SIRI -> Copenhagen, Irish employment permits issued to companies -> Ireland,
-Portuguese Tech Visa certified companies (still valid) -> Portugal) and the employer lists for Germany
-(Berlin, Munich, rest of Germany), Spain (Barcelona), Sweden and Estonia (Switzerland, Italy and Luxembourg
-have no list - research them on the web as usual), downloads
-them if older than 7 days, caches every listed company in `jobs/visa_companies.json` and writes
-`jobs/register_hits_<today>.json`. Use it like this - don't research what it already answered:
-- **exact, official register** -> Visa: yes, source = the register. Done, no web search.
-- **exact, DE / ES / SE employer list** -> Visa: yes ⚠️ weak (source = the list entry). Germany is the main
-  target: for every German job (Berlin, Munich, Germany) marked weak, try one search for a stronger source (company
-  careers page, the JD, an official statement) to drop the ⚠️ (weak jobs are still processed, but flagged).
+It matches every company against the official registers (UK -> London, Dutch IND -> Amsterdam and the rest
+of the Netherlands, Danish SIRI -> Copenhagen, Irish employment permits -> Ireland, Portuguese Tech Visa
+certified companies -> Portugal) and the employer lists for Germany (Berlin, Munich, rest of Germany),
+Spain (Barcelona), Sweden and Estonia (Switzerland, Italy and Luxembourg have no list - research them on
+the web as usual), downloads them if older than 7 days, caches every listed company in
+`jobs/visa_companies.json` and writes `jobs/register_hits_<today>.json`. Use it like this - don't research
+what it already answered:
+
+- **exact, official register** -> `visa`, source = the register. Done, no web search.
+- **exact, DE / ES / SE employer list** -> `weak`. Germany is the main target: for every German job
+  (Berlin, Munich, Germany) tagged weak, try one search for a stronger source (company careers page, the
+  JD page, an official statement) to promote it to `visa`.
 - **candidate** (similar name, e.g. "Amazon Science" vs "Amazon UK Services Ltd") -> decide by eye; one
   search only if unclear.
 - **none** -> research as below. In London, not being on the register usually means no Skilled Worker
-  sponsorship - check the legal entity name once before removing.
+  sponsorship - check the legal entity name once before dropping it.
 
 ## a. Evidence, strongest first
 
-1. **The job description** says visa sponsorship / relocation / expat support is offered ("visa",
-   "relocation", "expat package", "30% ruling", "Blue Card"), or not.
-2. **Official sponsor registers:** UK Home Office register of licensed sponsors (London), Dutch IND
-   recognised sponsors (Netherlands), Danish SIRI fast-track list (Copenhagen), Irish DETE employment permits
-   issued to companies (Ireland), Portuguese IAPMEI Tech Visa certified companies (Portugal). A register hit
-   never overrules the JD: if the ad says no sponsorship or existing work rights, drop it.
+1. **The posting page** says visa sponsorship / relocation / expat support is offered ("visa",
+   "relocation", "expat package", "30% ruling", "Blue Card"), or not. Reading the visa line off a posting
+   page you already have open is fine - but do **not** save, extract or score the job description.
+2. **Official sponsor registers** (as above). A register hit never overrules the posting: if the ad says no
+   sponsorship or existing work rights are required, drop it.
 3. **The company's own** careers / benefits / FAQ pages (visa, relocation, expat, Blue Card).
 4. **Third-party pages:** Relocate.me, Glassdoor, Make it in Germany, employee reviews.
 
 Ignore US-only H-1B data. Reuse answers in `jobs/visa_companies.json` that are under 30 days old and have
 a source link.
 
-## b. Google question before dropping anyone
+## b. Google question before tagging anyone `unknown`
 
-Before removing a company for "no public info", ask Google the plain question:
+Before leaving a company as unknown, ask Google the plain question:
 
 ```
 Does <company> sponsor visa in <country>?
@@ -53,69 +57,49 @@ If Claude in Chrome is not connected, say so once in the status line and use web
 question instead. Never try to get around Google's robot checks.
 
 Note: in Germany, Poland and Austria no sponsor licence is needed, so a large tech employer hiring in
-English is a reasonable "weak yes" only if some page actually says it hires internationally.
+English is a reasonable `weak` only if some page actually says it hires internationally.
 
-## c. Decide
+## c. Decide the tag
 
-- **Keep** if there is even slight public evidence: register, JD, company page, Google verdict,
-  third-party page, relocation or expat support. Mark it weak when it rests only on a third-party page or on
+- `visa` - register, the posting, or the company's own page says sponsorship / relocation for foreigners.
+- `weak` - evidence rests only on a third-party page, on an employer list (DE / ES / SE / EE), or on
   relocation support without a visa mention.
-- **Remove** only if: the company says it does not sponsor, the job requires existing work rights, or it's
-  a recruitment agency / job board that hides the employer.
-- Companies with no evidence after the Google question go in the "no public info" list.
+- `unknown` - nothing found after the Google question and the deeper round in (e).
+- **dropped** - the company says it does not sponsor, the job requires existing work rights, or it is a
+  recruitment agency / job board hiding the employer. Remove the row from its city table and list it in
+  the bottom section instead.
 
-## d. Write the visa file
+## d. Write it into the file
 
-Write `jobs/jobs_<today>_<HHMM>_visa.md` (same HHMM as the input). Format - the scripts parse it:
+Edit `jobs/jobs_<today>.md` in place:
+
+- Each row's first cell becomes the tag, with the source link appended after it:
+  `| visa · [IND register](https://...) | Acme GmbH | [Senior AI Engineer](url) | Berlin | ... |`
+  For `weak`, write `weak · confirm with recruiter · [source](url)`. For `unknown`, write
+  `unknown · checked: registers, careers page, Google` - no link needed.
+- Keep the `| Visa | Company | Job | City | Opened | Link |` header, the `## <City> (n)` headings and the
+  two parts (company sites, LinkedIn) exactly as they are - the register script parses them.
+- Fill the `# Dropped - no sponsorship` section at the end of the file:
 
 ```
-# AI / ML / Data Science jobs - last 24h - visa sponsorship checked
-
-Source list: jobs_<today>_<HHMM>.md (...). Visa check run <today>.
-
-**N jobs kept** (...) ...
-
-## <City> (<n>)
-
-| | Title | Company | Level | Location | Opened | Visa / Relocation | JD | Source |
-|---|---|---|---|---|---|---|---|---|
-<the job's row copied from the input file, with the Visa / Relocation cell replaced by:>
-Visa: yes (<condition, if any>) · Relocation: yes / no / not stated · Source: [<name>](<link>)
-<append " ⚠️ weak source, confirm with recruiter" for weak evidence>
-
-... company-site jobs first, then a separate LinkedIn part ...
-
-# Removed - no public visa info
+# Dropped - no sponsorship
 
 ## Says no sponsorship / residents only (n)
-- Company (City) - reason
+- Company (City) - reason · [source](url)
 ## Recruitment agency or job board - the real employer isn't named (n)
 - Company (City)
-## No public visa-sponsorship info found (n)
-- Company (City)
 ```
 
-The `Source list:` line, the `## <City> (` headings, the copied table rows (the `[JD](...)` link must stay)
-and the `- Company (City)` lines must be exactly like this.
-Save new answers to `jobs/visa_companies.json` (key `"<company>|<country>"`, with `visa`, `relocation`,
-`src`, `official`, `checked`).
+- Update the counts line under the title: `N jobs · X visa · Y weak · Z unknown · D dropped`.
+- Save every new answer to `jobs/visa_companies.json` (key `"<company>|<country>"`, with `visa`,
+  `relocation`, `src`, `official`, `checked`) so the next run reuses it.
 
-## e. Deeper research on the removed companies
+## e. Deeper research before settling on `unknown`
 
-For every company in "No public visa-sponsorship info found", do a second, deeper round: the Google
-question again plus company-specific searches (careers page, "visa", "relocation", "expat",
-"Blue Card", the national register). Save one entry per company and city (agencies and "says no" without searching) to
-`jobs/visa_research_<today>.json`:
+For every company still unknown, do a second, deeper round: the Google question again plus
+company-specific searches (careers page, "visa", "relocation", "expat", "Blue Card", the national
+register). Companies that turn out to sponsor are promoted to `visa` / `weak` in the same file; the rest
+keep `unknown`. Don't research agencies or companies that already said no. Keep the evidence in
+`jobs/visa_companies.json` - not in a separate research file.
 
-```json
-[{"company": "...", "city": "...", "country": "...", "verdict": "yes|weak|no|unclear|agency",
-  "note": "one line of evidence", "source": "https://..."}]
-```
-
-For every `yes` / `weak` company, copy its rows from the input file into
-`jobs/research_<today>_sponsors.md` (same table format as the visa file, one `## <City> (n)` section per
-city). The visa cell must use the visa file's format - `Visa: yes · Relocation: ... · Source: [...](...)`,
-with ` ⚠️ weak source, confirm with recruiter` appended for weak ones - the scripts read it to tell
-confirmed from weak.
-
-Status line: "Step 2 done - K of N jobs kept (W weak), R added back by deeper research, X removed."
+Status line: "Step 2 done - N jobs tagged: X visa, Y weak, Z unknown, D dropped (R promoted by deeper research)."

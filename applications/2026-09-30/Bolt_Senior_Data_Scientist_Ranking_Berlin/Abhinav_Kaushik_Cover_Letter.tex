@@ -1,0 +1,49 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Bolt}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}
+
+September 30, 2026
+
+Hiring Team\\
+Bolt
+
+\textbf{Re: Senior Data Scientist -- Ranking and Recommendations, Bolt Food}
+
+Dear Hiring Team,
+
+I am applying for the ranking and recommendations role on Bolt Food. Re-ranking is the thread through my work: I shipped a re-ranker into a live plan-recommendation system that had to serve customer relevance and renewal targets at the same time, and more recently fine-tuned a cross-encoder over a dense retrieval stage. The home screen problem you describe, deciding what a customer sees and in what order, is the version of this I want to work on next.
+
+My fiancée lives in Berlin and that is where we are making our home, so I am building my career in the city where my life already is. On the substance of how you work I need no convincing: sitting next to the operations and engineering teams whose decisions the models automate is how I have always worked best, and at Viavi the POCs that survived were the ones where I was in the room with the people who owned the outcome.
+
+Two things I would bring. First, I have taken models the whole way: an SLA-breach prediction system on LightGBM, FastAPI and MLflow that cut downtime by 67\%, and forecasting and anomaly detection across 500+ devices monitored in production. Second, I build the evaluation before the model. The offline evaluation and observability pipelines I designed for our agents cut human review by 43\%, and that habit is what stops a ranking change from shipping on a hunch.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Watching real users ignore features I was sure about has done more for my product sense than any metric dashboard. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

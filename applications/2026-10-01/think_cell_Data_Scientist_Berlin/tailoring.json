@@ -1,0 +1,80 @@
+{
+ "company": "think-cell Software",
+ "role": "Data Scientist",
+ "city": "Berlin",
+ "company_profile": "think-cell is a Berlin software company, founded in 2002, whose tools integrate with Microsoft Office so professionals can build presentations, charts and diagrams quickly.",
+ "title": "Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Data Scientist with 8+ years turning product and business questions into statistical and machine-learning models across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Works in SQL and Python on feature engineering, predictive and diagnostic modelling, and validation that stays honest about leakage and uncertainty. Owns models end to end, from outcome definition to operationalization and monitoring, and partners with stakeholders so findings turn into decisions. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph for medical plans, turning stakeholders' business questions into PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, operationalized for recurring use with GPT-3.5 giving root-cause analysis and remediation per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, deriving robust signals that drove earlier detection and proactive planning."
+  },
+  {
+   "original": "Optimized a scikit-learn Random Forest classifier for member risk stratification",
+   "new": "Optimized a scikit-learn Random Forest for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold cross-validation, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+  },
+  {
+   "original": "Analyzed member plan utilization and renewal behavior across individual",
+   "new": "Analyzed member plan utilization and renewal behaviour across plan segments in SQL on BigQuery, testing assumptions about the drivers and building reusable segmentation queries that fed downstream risk modelling."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan",
+   "new": "Developed an XGBoost propensity model scoring the likelihood of a personal-loan application within 7 days of contact, giving commercial teams a clear signal for targeted outreach."
+  }
+ ],
+ "project": {
+  "name": "Product Usage Churn Scoring Engine",
+  "bullets": [
+   "Built a churn and renewal risk scoring engine for a desktop software product, engineering behavioural usage features from licence and telemetry data with LightGBM and logistic regression.",
+   "Validated it with time-based splits and leakage checks, calibrated the scores with uncertainty bands, and operationalized recurring scoring in Airflow with MLflow tracking and drift monitoring for commercial teams."
+  ],
+  "technologies": [
+   "SQL",
+   "Python",
+   "pandas",
+   "scikit-learn",
+   "LightGBM",
+   "Airflow",
+   "MLflow",
+   "Power BI"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist role in your Data Team. I have spent eight years building models that other people have to act on: risk scores, breach predictions, demand forecasts and propensity models, and more recently LLM and agent systems in production. The part I care about is the last mile, whether anyone actually changes a decision because of it.",
+   "My reason for applying is specific. My fiancée lives in Berlin and I am moving there to start my life with her, so I am looking for one team in the city to build the next years of my career with. think-cell is the kind of place I want that to be: a senior data team with real ownership inside an established business.",
+   "I would be useful to you quickly on customer, product and behavioural data. At Optum I rebuilt a member risk model with engineered features and real cross-validation, lifting AUC from 0.74 to 0.81. At United Health Group I built a multi-agent analytics chatbot in LangGraph that answers business questions with PySpark analysis and live charts, cutting manual analysis by 98%.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Teachers tell me within a day when a feature does not help a student, and that is the feedback loop I try to build into any model I own. I would be glad to talk about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "SQL",
+  "Python",
+  "statistical modelling",
+  "predictive modelling",
+  "feature engineering",
+  "model evaluation",
+  "validation",
+  "data leakage",
+  "uncertainty",
+  "diagnostic models",
+  "behavioural data",
+  "operationalization",
+  "monitoring",
+  "reusable analytical assets",
+  "stakeholder management"
+ ],
+ "experience_variant": "base"
+}

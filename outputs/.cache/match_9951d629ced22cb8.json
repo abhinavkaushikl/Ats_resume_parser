@@ -1,0 +1,26 @@
+{
+ "score": 82,
+ "matched": [
+  "8+ years software engineering experience",
+  "Strong Python",
+  "FastAPI/Flask",
+  "SQL (TimescaleDB/pgvector)",
+  "Docker",
+  "AWS deployment",
+  "CI/CD (Jenkins, Bamboo)",
+  "Git",
+  "LLM integration (Claude, OpenAI GPT‑3.5)",
+  "RAG applications",
+  "Vector databases (pgvector)",
+  "AI agents and multi‑step workflows (LangGraph)",
+  "Production backend systems"
+ ],
+ "missing": [
+  "Redis experience",
+  "Explicit PostgreSQL listed",
+  "Django (optional)",
+  "Gemini API experience"
+ ],
+ "blockers": [],
+ "reason": "Strong overall fit with solid production AI/LLM backend experience; only minor gaps in Redis and explicit PostgreSQL mention."
+}

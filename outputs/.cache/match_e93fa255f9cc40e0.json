@@ -1,0 +1,20 @@
+{
+ "score": 78,
+ "matched": [
+  "Bachelor's degree (B.Tech IT)",
+  "Python",
+  "SQL",
+  "Spark/Hadoop (PySpark, Hadoop intern)",
+  "Power BI",
+  "Flask (and FastAPI)",
+  "RAG/chatbot (LangGraph, LangChain)",
+  "APIs/large datasets"
+ ],
+ "missing": [
+  "Explicit PostgreSQL experience",
+  "Industrial/IoT/SCADA domain experience",
+  "Digital‑twin or real‑time industrial analytics"
+ ],
+ "blockers": [],
+ "reason": "Strong technical fit on core tools and RAG, but lacks direct industrial IoT/Digital‑Twin experience and explicit PostgreSQL work."
+}

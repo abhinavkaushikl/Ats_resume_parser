@@ -1,0 +1,22 @@
+{
+ "score": 15,
+ "matched": [
+  "5+ years IT/software consulting experience",
+  "Python development",
+  "Git, testing, PRs, CI/CD (Jenkins, Bamboo, Bitbucket)",
+  "Cloud-native systems, APIs, containers (Docker, Kubernetes, GCP, Azure)",
+  "Logging and observability (Elasticsearch, Kibana)"
+ ],
+ "missing": [
+  "TypeScript/JavaScript or C# or Java experience",
+  "EU nationality",
+  "Netherlands residency",
+  "Dutch language fluency",
+  "Explicit security/privacy experience"
+ ],
+ "blockers": [
+  "EU nationality requirement not met",
+  "Dutch fluency requirement not met"
+ ],
+ "reason": "Key screening criteria (EU citizenship, Dutch language) are missing, making the candidate a poor fit despite solid technical experience."
+}

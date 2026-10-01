@@ -1,0 +1,15 @@
+{
+ "score": 80,
+ "matched": [
+  "Strong applied-science and ML expertise",
+  "Production ML system design and deployment",
+  "Advanced algorithm development",
+  "System design/architecture and technical leadership",
+  "Strong coding skills (Python)"
+ ],
+ "missing": [
+  "Java experience"
+ ],
+ "blockers": [],
+ "reason": "The candidate meets all core ML and production requirements and shows technical leadership, but lacks demonstrated Java and geospatial experience."
+}

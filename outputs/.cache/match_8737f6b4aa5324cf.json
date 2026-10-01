@@ -1,0 +1,17 @@
+{
+ "score": 80,
+ "matched": [
+  "6+ years AI/ML experience",
+  "GenAI and prompt engineering experience",
+  "Traditional ML and forecasting knowledge",
+  "Rapid prototyping and business-oriented AI delivery",
+  "Strong communication and stakeholder skills"
+ ],
+ "missing": [
+  "Experience with Google Cloud AI services (e.g., Gemini)",
+  "Looker Studio familiarity",
+  "Explicit conversational AI platform experience"
+ ],
+ "blockers": [],
+ "reason": "Strong overall fit with required AI/ML skills, but lacks specific Google Cloud AI tool experience."
+}

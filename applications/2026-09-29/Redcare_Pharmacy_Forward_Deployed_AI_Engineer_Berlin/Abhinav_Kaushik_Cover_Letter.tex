@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Redcare Pharmacy}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Forward Deployed AI Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 29, 2026
+
+Hiring Team\\
+Redcare Pharmacy
+
+\textbf{Re: Forward Deployed AI Engineer}
+
+Dear Hiring Team,
+
+I am applying for the Forward Deployed AI Engineer role because it describes the job I already do. At Optum I work as a Forward Deployed AI Engineer with Labcorp, a healthcare client, where I sit with their lab teams, learn how the work really happens, and build agentic AI systems that change it. My thread is simple: stay with a problem until the new process works in production.
+
+Redcare Pharmacy brings medicines and health products to people across Europe, and every process behind that, from prescriptions to customer care, has real people waiting at the end of it. That is where I want AI to make a difference. My fiancée lives in Berlin, and joining Redcare in Berlin means building my career in the city where we are making our home.
+
+At Labcorp I mapped a manual lab document workflow with the team, then shipped an agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, that handles about 1,800 lab documents and absorbed the work behind 800 Jira tickets. I also built evaluation and tracing for our QA and summary agents that cut human review by 43\%. I would bring that same loop to Redcare: discovery with the business, a working system, then evaluation and monitoring so it keeps working.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and testing with the people who depend on the tool. I would welcome a conversation about how I could help your business teams.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

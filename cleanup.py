@@ -33,7 +33,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 JOBS = ROOT / "jobs"
-KEEP = {JOBS / "seen.json", JOBS / "discovered_companies.yaml", JOBS / "visa_companies.json"}
+KEEP = {JOBS / "seen.json", JOBS / "discovered_companies.yaml", JOBS / "visa_companies.json",
+        *JOBS.glob("jobs_????-??-??.md")}   # the dated job lists are the deliverable of /job-hunt
 RUNNING = "jd_extractor.py|job_match.py|daily_jobs.py|tailor_all.py|build_resume.py|unclear_visa_match.py"
 
 

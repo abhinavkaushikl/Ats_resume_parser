@@ -1,0 +1,24 @@
+{
+ "score": 25,
+ "matched": [
+  "5+ years IT/software consulting experience",
+  "Python development",
+  "Git and CI/CD tools (Bitbucket, Jenkins, Bamboo)",
+  "Cloud-native experience (GCP, Azure, Docker, Kubernetes)",
+  "API development (FastAPI, Flask, REST)",
+  "Observability/logging (Elasticsearch, Kibana)"
+ ],
+ "missing": [
+  "Explicit testing experience",
+  "Security/privacy expertise",
+  "EU nationality",
+  "Netherlands residence",
+  "Dutch language fluency"
+ ],
+ "blockers": [
+  "EU nationality",
+  "Netherlands-based location",
+  "Dutch fluency"
+ ],
+ "reason": "Key screening criteria (EU nationality, Netherlands location, Dutch fluency) are not met, making the candidate a poor fit despite relevant technical experience."
+}

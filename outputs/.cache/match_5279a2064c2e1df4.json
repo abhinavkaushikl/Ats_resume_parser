@@ -1,0 +1,20 @@
+{
+ "score": 90,
+ "matched": [
+  "MSc in Machine Learning and AI (relevant degree)",
+  "Production AI/LLM applications (lab‑extraction agent, multi‑agent analytics chatbot)",
+  "Retrieval‑augmented generation and embeddings (LangGraph RAG projects)",
+  "Vector/database experience (pgvector, TimescaleDB, Elasticsearch)",
+  "Python expertise and modern ML frameworks (PyTorch, FastAPI, MLflow)",
+  "Handling unstructured healthcare/clinical data (lab documents, medical plans)",
+  "LLM evaluation and observability pipelines (LLM evaluators, tracing)",
+  "Collaboration with cross‑functional teams (scientists, product managers, engineers)",
+  "Documentation and model governance practices"
+ ],
+ "missing": [
+  "Explicit regulatory/COA domain experience",
+  "Demonstrated GDPR or data‑privacy compliance work"
+ ],
+ "blockers": [],
+ "reason": "Strong alignment with core AI/LLM production, RAG, evaluation, and healthcare experience; only minor gaps in regulatory‑specific exposure."
+}

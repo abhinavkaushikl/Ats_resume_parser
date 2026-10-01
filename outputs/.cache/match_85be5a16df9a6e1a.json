@@ -1,0 +1,17 @@
+{
+ "score": 80,
+ "matched": [
+  "Strong production data-science/ML experience",
+  "Python",
+  "SQL",
+  "Large-scale data skills (Spark, Databricks, PySpark)",
+  "Demonstrated business impact from ML/analytics",
+  "Stakeholder communication and leadership"
+ ],
+ "missing": [
+  "Explicit experimentation/A‑B testing experience",
+  "Travel/e‑commerce domain experience"
+ ],
+ "blockers": [],
+ "reason": "The candidate shows solid production ML, Python/SQL, large‑scale data work and business impact, but lacks direct e‑commerce/travel and explicit experimentation experience."
+}

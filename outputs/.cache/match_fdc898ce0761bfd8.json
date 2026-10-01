@@ -1,0 +1,18 @@
+{
+ "score": 35,
+ "matched": [
+  "AI algorithms and deep learning",
+  "Python development",
+  "Knowledge of transformers/LLMs"
+ ],
+ "missing": [
+  "C/C++ or shell programming experience",
+  "Embedded systems/SoC experience",
+  "Explicit strong customer‑facing troubleshooting experience"
+ ],
+ "blockers": [
+  "Lack of embedded systems/SoC experience",
+  "No demonstrated C/C++/shell skills"
+ ],
+ "reason": "Key requirements like embedded/SoC work and C/C++ skills are absent, making the candidate a poor fit for this role"
+}

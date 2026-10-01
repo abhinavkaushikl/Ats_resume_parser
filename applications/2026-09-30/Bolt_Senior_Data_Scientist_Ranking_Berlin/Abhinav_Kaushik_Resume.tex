@@ -1,0 +1,153 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+  ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off, Ligatures=CommonOff]
+\usepackage[margin=0.5in,top=0.45in,bottom=0.45in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\hyphenation{LangGraph LangChain GeoPerformance TimescaleDB}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+\setlist[itemize]{leftmargin=1.2em, itemsep=0pt, topsep=1pt, parsep=0pt, label=\textbullet}
+
+\newcommand{\role}[2]{\textbf{#1} \hfill #2\par}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries ABHINAV KAUSHIK}\\[1pt]
+  \textbf{Senior Data Scientist}\\[1pt]
+  Email: aabhinav.kaushik@gmail.com \quad Phone: +91 87005 71859\\
+  LinkedIn: linkedin.com/in/abhinav-kaushik10/
+\end{center}
+
+\section{Summary}
+Senior Data Scientist with 8+ years building ranking, retrieval and recommendation systems and taking them from
+research to production, with an MSc in Machine Learning and AI from Liverpool John Moores University. Works across
+the recommender stack: embedding-based candidate generation and vector search, learning-to-rank re-rankers,
+gradient boosting with LightGBM and XGBoost, and re-rankers shipped into a live recommendation system against
+commercial targets. Strong Python, SQL and PySpark, with production delivery through Docker, Airflow, MLflow and
+AWS, plus offline evaluation pipelines and metric design that decide what ships. Drives technical direction across
+candidate generation, ranking features, logging and evaluation, turning ambiguous product problems into measurable
+objectives with product, engineering and analytics stakeholders, and uses Claude Code and Cursor to move faster.
+Looking for opportunities in Berlin and willing to relocate. Currently building ThinkTree.AI, a non-profit
+AI-powered learning platform designed to support students with ADHD and context-switching challenges.
+
+\section{Professional Experience}
+\role{Senior Data Scientist | United Health Group | Bengaluru, India}{Nov 2025 -- Present}
+\begin{itemize}
+  \item Fine-tuned a cross-encoder re-ranker in PyTorch on positive and negative pairs over a dense bi-encoder
+  retrieval stage for AARP survey data, improving retrieval accuracy -- a learning-to-rank layer on top of
+  embedding-based candidate generation.
+  \item Engineered a production multi-agent analytics system in LangGraph and PySpark for AARP medical plans,
+  answering business questions with multi-turn reasoning and live charts, cutting manual analysis by 98\%.
+  \item Designed automated offline evaluation and observability pipelines with LLM evaluators, tracing and failure
+  detection, reducing human-in-the-loop review by 43\% and making model changes measurable before release.
+  \item Shipped a production document-extraction system with Claude Opus 4.7 and Amazon Textract on AWS, integrated
+  with LIMS via REST API, processing 1,800 lab documents and automating 800 Jira tickets.
+\end{itemize}
+\vspace{3pt}
+
+\role{Senior Machine Learning Engineer | Viavi Solutions | Chennai, India}{Sep 2024 -- Nov 2025}
+\begin{itemize}
+  \item Built an event-correlation engine clustering alarms with Sentence-BERT bi-encoder embeddings and DBSCAN to
+  trace cascading network alarm floods back to the root event, improving semantic classification by 73.5\%.
+  \item Built an internal Project Discovery Assistant combining vector search over embeddings with LLM re-ranking
+  and reasoning, reaching a 90\% match rate against existing organizational solutions.
+  \item Drove technical direction on 15+ ML applications from ambiguous requirements, owning problem discovery,
+  feature and model choice, offline evaluation and delivery, with 7 reaching production or paid client work.
+\end{itemize}
+\vspace{3pt}
+
+\role{Data Scientist | Viavi Solutions | Bengaluru, India}{Nov 2021 -- Sep 2024}
+\begin{itemize}
+  \item Deployed a production SLA breach prediction system with LightGBM gradient boosting, FastAPI, Docker and
+  MLflow, using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67\%.
+  \item Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using
+  Isolation Forest and Holt-Winters, retrained on Airflow schedules and monitored in production for drift.
+  \item Delivered technical POCs and consulting for 15+ clients across 3+ ML platforms, aligning stakeholders on
+  scope and success metrics and contributing to an 11\% increase in POC and mentoring revenue.
+\end{itemize}
+\vspace{3pt}
+
+\role{Data Analyst | Optum | Gurugram, India}{Jun 2021 -- Nov 2021}
+\begin{itemize}
+  \item Implemented a re-ranker over the candidate set of a production recommendation system serving individual and
+  child plan recommendations, engineering ranking features that balanced customer relevance against renewal targets
+  and lifting conversion by 2\%.
+  \item Developed a Python and Flask parser that automated extraction and transformation of raw data into structured
+  datasets, feeding downstream analytics and reporting.
+\end{itemize}
+\vspace{3pt}
+
+\role{Data Engineer | Nippon Data Systems | Gurugram, India}{Nov 2019 -- May 2021}
+\begin{itemize}
+  \item Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets,
+  cutting manual reporting effort by 95\%.
+  \item Wrote complex SQL with multi-table joins, CTEs and window functions, delivering ad-hoc analyses for multiple
+  stakeholder teams.
+\end{itemize}
+\vspace{3pt}
+
+\role{Associate Consultant | Saksoft | Gurugram, India}{Dec 2017 -- Nov 2019}
+\begin{itemize}
+  \item Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact,
+  enabling targeted outreach and customer prioritization.
+  \item Built customer dashboards for financial and product insights with QlikSense, SQL and SAP HANA, increasing
+  user engagement by 40\%.
+\end{itemize}
+
+\section{Projects}
+\textbf{Think Tree -- ML Study Platform}\par
+\begin{itemize}
+  \item Built a non-profit AI-powered ML study platform for people with ADHD and context-switching challenges,
+  designed to help users organize learning and maintain study context.
+\end{itemize}
+\textbf{Multi-Objective Home-Feed Ranking Prototype}\par
+\begin{itemize}
+  \item Built a personalised home-feed ranker over a marketplace catalogue: two-tower embedding candidate generation
+  with vector search, a LightGBM learning-to-rank re-ranker, and multi-objective blending of customer relevance
+  against commercial guardrails, with cold-start exploration and offline NDCG and recall evaluation to decide what
+  would be worth testing online.
+\end{itemize}
+\textbf{RFP Multi-Agent Proposal Automation Platform}\par
+\begin{itemize}
+  \item Built a multi-agent RFP platform where an LLM supervisor orchestrates intent detection, retrieval,
+  proposal generation, document matching and market research, with RAG over historical proposals.
+\end{itemize}
+\textbf{Financial Fraud Detection -- Mar 2025}\par
+\begin{itemize}
+  \item Built a fraud detection and reasoning workflow on the JPMorgan Synthetic Dataset, pairing LightGBM scoring
+  with LLM-generated explanations for interpretable financial-risk analysis.
+\end{itemize}
+
+\section{Education}
+\textbf{Master of Science, Machine Learning and AI | Liverpool John Moores University} \hfill Jan 2021 -- Jan 2023\par
+\textbf{Bachelor of Technology, Information Technology | Jamia Hamdard} \hfill Aug 2013 -- Aug 2017\par
+
+\section{Technical Skills}
+\textbf{Ranking / Recommenders:} Learning-to-Rank, Recommender Systems, Personalisation, Re-Ranking, Candidate Generation, Collaborative Filtering, Two-Tower Models, Cross-Encoder, Embeddings, Vector Search, Cold-Start, Multi-Objective Optimisation, Information Retrieval, Apache Solr, Lucene Indexing\par
+\textbf{Machine Learning:} PyTorch, Scikit-learn, XGBoost, LightGBM, Gradient Boosting, Random Forest, Isolation Forest, LSTM, SBERT, DBSCAN, Time Series Forecasting, Demand Forecasting, Anomaly Detection, Deep Learning\par
+\textbf{Experimentation / Evaluation:} Offline and Online Evaluation, A/B Testing, Experiment Design, Statistical Inference, Statistical Modeling, NDCG, Precision and Recall, Model Monitoring, Drift Detection, LLM Evals, Tracing\par
+\textbf{Programming / Data:} Python, SQL, PySpark, Apache Spark, Pandas, NumPy, Spark SQL, Hive, FastAPI, Flask, REST API, Pydantic, Unix\par
+\textbf{MLOps / Cloud:} AWS, SageMaker, Amazon Textract, Docker, Kubernetes, Airflow, MLflow, DVC, Terraform, Jenkins, Bitbucket, GCP, Azure\par
+\textbf{AI / GenAI:} LLM, RAG, Agentic AI, LangGraph, LangChain, Claude, OpenAI, Fine-Tuning, Hugging Face Transformers, NLP\par
+\textbf{AI Coding Tools:} Claude Code, Cursor\par
+\textbf{Databases:} PostgreSQL, TimescaleDB, MySQL, Vector DB, pgvector, ArangoDB, Cosmos DB\par
+\textbf{BI:} Power BI, QlikSense, SAP HANA\par
+
+\section{Languages}
+English: Native\par
+
+\section{Additional Information}
+\begin{itemize}
+  \item Network Intern, Airport Authority of India
+  \item Hadoop Intern, Ducat Technologies
+\end{itemize}
+
+\end{document}

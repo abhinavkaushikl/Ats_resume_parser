@@ -1,0 +1,137 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off, Ligatures=CommonOff]
+\fi
+\usepackage[margin=0.5in,top=0.4in,bottom=0.4in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Resume}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0pt}{}[\vspace{1pt}\hrule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+\setlist[itemize]{leftmargin=1.2em, itemsep=0pt, topsep=1pt, parsep=0pt, label=\textbullet}
+
+\newcommand{\role}[4]{\textbf{#1} \textbar{} #2 \hfill #3 \textbar{} #4\par}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries ABHINAV KAUSHIK}\\[2pt]
+  {\large Senior Data Scientist}\\[2pt]
+  Bengaluru, India \textbar{} +91 87005 71859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+\end{center}
+
+\section{Summary}
+Senior Data Scientist with 8+ years applying machine learning to real-world data across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds regression and classification models with ensemble methods (XGBoost, LightGBM, Random Forest), alongside time-series forecasting, optimization and statistics, working from SQL, BigQuery and Spark data pipelines to production models served with FastAPI and MLflow. Turns business problems into modelling solutions together with stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.
+
+\section{Professional Experience}
+\role{Senior Data Scientist}{United Health Group}{Bengaluru, India}{Nov 2025 - Present}
+\begin{itemize}
+  \item Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.
+  \item Built a production multi-agent LangGraph analytics chatbot for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live matplotlib and plotly charts, cutting manual analysis by 98\%.
+  \item Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43\%.
+\end{itemize}
+\vspace{3pt}
+\role{Senior Machine Learning Engineer}{Viavi Solutions}{Chennai, India}{Sep 2024 - Nov 2025}
+\begin{itemize}
+  \item Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90\% match rate against existing organizational solutions.
+  \item Built an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5\%.
+  \item Prototyped 15+ AI applications for AIOps and GeoPerformance clients from client requirements, with 7 moving into production or paid client work.
+\end{itemize}
+\vspace{3pt}
+\role{Data Scientist}{Viavi Solutions}{Bengaluru, India}{Nov 2021 - Sep 2024}
+\begin{itemize}
+  \item Deployed a production SLA breach classification model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67\%.
+  \item Shipped time-series demand forecasting and anomaly detection on 15+ KPIs across 500+ telecom network devices with Holt-Winters and Isolation Forest, enabling earlier detection and proactive network planning.
+  \item Built a demand-forecasting pipeline on CDR data for the Delta cellular network with LSTM (TensorFlow) and XGBoost regression, improving capacity allocation with a 43\% efficiency gain in call quality and SMS delivery.
+  \item Built location-intelligence analytics in Python with GeoPandas, pandas, NumPy, matplotlib and plotly for near-real-time traffic monitoring, used by network teams across LATAM and NAM to spot congestion hotspots.
+\end{itemize}
+\vspace{3pt}
+\role{Data Analyst}{Optum}{Gurugram, India}{Jun 2021 - Nov 2021}
+\begin{itemize}
+  \item Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.
+  \item Optimized hospital staff scheduling in Python as a mixed-integer linear program with shift-coverage constraints, and modelled patient wait times with queueing statistics to balance staffing levels against demand.
+  \item Analyzed member plan utilization and renewal behavior across individual and child plan segments using BigQuery, building segmentation queries and reporting pipelines that fed downstream analytics and member risk modelling.
+\end{itemize}
+\vspace{3pt}
+\role{Data Engineer}{Nippon Data Systems}{Gurugram, India}{Nov 2019 - May 2021}
+\begin{itemize}
+  \item Engineered SQL and PySpark pipelines on large healthcare datasets to automate BAU medical-audit reporting with automated visualizations, cutting manual reporting effort by 95\%.
+  \item Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.
+  \item Built a real-time Kibana dashboard on Elasticsearch for government COVID QRT teams to monitor district-level infection hotspots and coordinate medicine-logistics dispatch, cutting reporting lag by 80\%.
+\end{itemize}
+\vspace{3pt}
+\role{Associate Consultant}{Saksoft}{Gurugram, India}{Dec 2017 - Nov 2019}
+\begin{itemize}
+  \item Built a CatBoost classification model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.
+  \item Built customer dashboards for financial and product insights with QlikSense, SQL and SAP HANA, increasing user engagement by 40\%.
+\end{itemize}
+
+
+\section{Projects}
+\textbf{Think Tree} \textbar{} ML Study Platform\par
+\begin{itemize}
+  \item Built a non-profit AI-powered ML study platform for people with ADHD and context-switching challenges, designed to help users organize learning and maintain study context.
+\end{itemize}
+\textbf{Courier ETA Prediction Engine}\par
+\begin{itemize}
+  \item Built an ETA prediction model for on-demand last-mile logistics, combining order, distance and courier-supply features in LightGBM and XGBoost regression with quantile estimates of late-arrival risk, reducing median prediction error by 17\% against a rolling-average baseline.
+  \item Automated retraining and batch prediction with PySpark and Airflow on BigQuery, tracked experiments in MLflow, and evaluated with time-based backtesting.
+  \item \textbf{Technologies:} BigQuery, Spark, Python, scikit-learn, LightGBM, XGBoost, MLflow, Airflow
+\end{itemize}
+\textbf{RFP Multi-Agent Proposal Automation Platform}\par
+\begin{itemize}
+  \item Built a multi-agent RFP platform where an LLM supervisor orchestrates intent detection, retrieval, proposal generation, document matching and market research, with RAG over historical proposals.
+\end{itemize}
+\textbf{Financial Fraud Detection} \textbar{} Mar 2025\par
+\begin{itemize}
+  \item Built a fraud detection and reasoning workflow on the JPMorgan Synthetic Dataset, pairing LightGBM scoring with LLM-generated explanations for interpretable financial-risk analysis.
+\end{itemize}
+\textbf{Restaurant Feedback Analyzer} \textbar{} Aspect-Based Sentiment Analysis\par
+\begin{itemize}
+  \item Built an NLP pipeline to extract review aspects and determine sentiment at the aspect level, enabling granular insights into customer experience.
+\end{itemize}
+
+\section{Education}
+\textbf{Master of Science, Machine Learning and AI} \textbar{} Liverpool John Moores University \hfill Jan 2021 - Jan 2023\par
+\textbf{Bachelor of Technology, Information Technology} \textbar{} Jamia Hamdard \hfill Aug 2013 - Aug 2017\par
+
+\section{Technical Skills}
+\textbf{Machine Learning:} Scikit-learn, XGBoost, LightGBM, CatBoost, Random Forest, Ensemble Models, Regression, Classification, Time Series Forecasting, Demand Forecasting, Anomaly Detection, Statistical Modeling, Isolation Forest, LSTM, TensorFlow, Keras, PyTorch, SBERT, DBSCAN, Deep Learning\par
+\textbf{Optimization:} Linear and Integer Programming, Scheduling Optimization, Queueing Models\par
+\textbf{Programming / Data:} Python, SQL, PySpark, Pandas, NumPy, Matplotlib, Plotly, GeoPandas, FastAPI, Flask, Hive, Spark SQL, REST API, Pydantic, Unix\par
+\textbf{Data Platforms:} BigQuery, Apache Spark, Databricks, Databricks SQL, Supabase\par
+\textbf{MLOps / Cloud:} MLflow, Docker, Kubernetes, Airflow, DVC, Terraform, Jenkins, Bamboo, Bitbucket, GCP, Azure, Vercel\par
+\textbf{AI / GenAI:} Generative AI, LLM, RAG, Agentic RAG, Agentic AI, LangGraph, LangChain, Claude, OpenAI, Embeddings, Cross-Encoder, Fine-Tuning, Hugging Face Transformers, NLP, Tool Orchestration, Amazon Textract\par
+\textbf{Evals / Observability:} LLM Evals, LLM Evaluators, Agent Tracing, Observability, Elasticsearch, Kibana, Log Analysis\par
+\textbf{Databases:} TimescaleDB, MySQL, Vector DB, pgvector, ArangoDB, Cosmos DB\par
+\textbf{Search:} Apache Solr, Lucene Indexing, Information Retrieval\par
+\textbf{BI:} Power BI, QlikSense, SAP HANA\par
+
+\section{Languages}
+English: Native\par
+German: A1, Pursuing\par
+
+\section{Additional Information}
+\begin{itemize}
+  \item Network Intern, Airport Authority of India
+  \item Hadoop Intern, Ducat Technologies
+\end{itemize}
+
+\end{document}

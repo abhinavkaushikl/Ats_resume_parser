@@ -1,0 +1,17 @@
+{
+ "score": 90,
+ "matched": [
+  "6+ years AI/ML experience",
+  "GenAI and prompt engineering (via LangGraph/LangChain/RAG agents)",
+  "Traditional ML and forecasting (LightGBM, XGBoost, time‑series)",
+  "Rapid prototyping and productionizing AI solutions",
+  "Stakeholder communication and business impact",
+  "Google Cloud exposure (GCP listed)"
+ ],
+ "missing": [
+  "Explicit experience with Gemini",
+  "Looker Studio"
+ ],
+ "blockers": [],
+ "reason": "The candidate meets all core requirements and has strong relevant experience, with only minor gaps in preferred Google‑specific tools."
+}

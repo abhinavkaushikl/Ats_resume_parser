@@ -1,0 +1,22 @@
+{
+ "score": 22,
+ "matched": [
+  "8+ years AI/ML experience",
+  "Python proficiency",
+  "Production ML pipeline ownership",
+  "Use of PyTorch and deep learning frameworks"
+ ],
+ "missing": [
+  "PhD-level training",
+  "Top‑20 university degree",
+  "Quantitative finance domain experience",
+  "Large‑scale distributed/multi‑GPU training",
+  "C++/CUDA optimization experience"
+ ],
+ "blockers": [
+  "No PhD",
+  "Education not from top‑20 university",
+  "Lacks quantitative finance experience"
+ ],
+ "reason": "Missing required PhD, top‑tier academic background, and quant‑finance deep‑learning experience makes the candidate a poor fit."
+}

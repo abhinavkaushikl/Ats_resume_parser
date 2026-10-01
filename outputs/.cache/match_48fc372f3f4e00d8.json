@@ -1,0 +1,16 @@
+{
+ "score": 88,
+ "matched": [
+  "Strong Python development",
+  "LLM applications, agents, RAG and orchestration",
+  "API development and data integration (FastAPI, REST)",
+  "DevOps/CI/CD and containerization (Docker, Kubernetes, Jenkins, Bitbucket)",
+  "Problem solving and communication"
+ ],
+ "missing": [
+  "Explicit AWS cloud services experience",
+  "Cybersecurity experience"
+ ],
+ "blockers": [],
+ "reason": "The candidate meets all core requirements with extensive AI, LLM, and DevOps experience, lacking only direct AWS and cybersecurity exposure."
+}

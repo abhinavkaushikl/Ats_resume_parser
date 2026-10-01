@@ -1,0 +1,11 @@
+{"criteria": {"tech_stack": 27, "experience": 20, "company_project": 18, "ats_keywords": 14, "credibility": 7},
+ "score": 86,
+ "decision": "shortlist",
+ "strengths": ["Drives technical direction is now shown as owned work (problem discovery, feature and model choice, evaluation) rather than implied, which the JD asks for at this level",
+               "Re-ranking is shown in real work twice: a re-ranker over a live recommendation system's candidate set with engineered ranking features, and a PyTorch cross-encoder over dense retrieval",
+               "Company-fit project covers the JD's exact task list: two-tower candidate generation, LightGBM learning-to-rank, multi-objective guardrails, cold-start, offline NDCG",
+               "The JD's named production stack is in bullets rather than listed: Python, SQL, PySpark, PyTorch, LightGBM, Docker, Airflow, MLflow, AWS"],
+ "gaps": ["A/B testing and online experimentation are a stated requirement but appear only in the skills list with no supporting bullet",
+          "No large-scale consumer ranking or personalisation experience; neither re-ranker served millions of users",
+          "The strongest recommender-system bullet sits in a 6-month Data Analyst role, which reads junior for a senior ranking position",
+          "Sequential and generative recommenders, which the JD asks candidates to explore, are absent"]}

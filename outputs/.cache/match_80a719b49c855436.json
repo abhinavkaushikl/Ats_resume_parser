@@ -1,0 +1,18 @@
+{
+ "score": 80,
+ "matched": [
+  "Bachelor's degree (B.Tech)",
+  "8-10 years relevant experience",
+  "AI/ML and Generative AI implementation",
+  "LLM/RAG and agentic AI projects",
+  "Experience with software development, APIs, cloud (GCP/Azure), Docker/Kubernetes",
+  "Stakeholder interaction and client-facing work"
+ ],
+ "missing": [
+  "Explicit solution consulting/presales experience",
+  "Formal people‑management or team‑leadership role",
+  "Established AI/Data function building"
+ ],
+ "blockers": [],
+ "reason": "Strong technical AI background and experience length match, but lacks clear consulting/presales and formal leadership credentials."
+}

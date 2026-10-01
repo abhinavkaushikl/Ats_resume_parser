@@ -215,6 +215,10 @@ def build(folder: Path, settings) -> dict:
     jd_head = jd_text[:3000]
     link = lambda k: (m.group(1).strip() if (m := re.search(rf"^- \*\*{re.escape(k)}:\*\* (\S+)", jd_head, re.M)) else None)
     listing_url, apply_url = link("Original listing"), link("JD source (Playwright)")
+    # Also parse the "**Application:** [text](url)" format used by skill-provided JD summaries.
+    if not listing_url:
+        if m := re.search(r"^\*\*Application:\*\*\s+\[.*?\]\((\S+?)\)", jd_head, re.M):
+            listing_url = m.group(1).rstrip(")")
     plan = SimpleNamespace(analysis=SimpleNamespace(role=t.get("role", ""), company=company, location=city,
                                                     company_profile=t.get("company_profile", ""),
                                                     apply_url=apply_url or listing_url))

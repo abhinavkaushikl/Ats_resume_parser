@@ -1,0 +1,13 @@
+{
+ "score": 92,
+ "matched": [
+  "Hands‑on AI/data/platform engineering experience",
+  "ML/LLM development and production deployment",
+  "MLOps lifecycle knowledge (MLflow, Docker, Kubernetes, Airflow, DVC)",
+  "Enterprise integration and API experience (FastAPI, REST, LIMS, Jira)",
+  "Collaborative agile project work"
+ ],
+ "missing": [],
+ "blockers": [],
+ "reason": "The resume demonstrates extensive production ML/LLM work, MLOps pipelines, API integration and multi‑agent systems, fully meeting the job’s core requirements."
+}

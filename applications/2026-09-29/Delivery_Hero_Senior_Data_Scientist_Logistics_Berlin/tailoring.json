@@ -1,0 +1,78 @@
+{
+ "company": "Delivery Hero",
+ "role": "Senior Data Scientist",
+ "city": "Berlin",
+ "company_profile": "Delivery Hero is a Berlin-headquartered local delivery platform operating in around 65 countries, connecting customers with restaurants, grocery and retail through its courier network.",
+ "title": "Senior Data Scientist",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior Data Scientist with 8+ years applying machine learning to real-world data across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds regression and classification models with XGBoost, LightGBM and Random Forest, alongside time-series forecasting and anomaly detection, working from SQL and PySpark data pipelines to production models served with FastAPI and MLflow. Turns business problems into modelling solutions together with stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Deployed a production SLA breach prediction system with LightGBM",
+   "new": "Deployed a production SLA breach classification model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped time-series demand forecasting and anomaly detection on 15+ KPIs across 500+ telecom network devices with Holt-Winters and Isolation Forest, enabling earlier detection and proactive network planning."
+  },
+  {
+   "original": "Developed an XGBoost propensity model predicting personal-loan",
+   "new": "Built a CatBoost classification model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization."
+  },
+  {
+   "original": "Engineered SQL and PySpark data pipelines automating",
+   "new": "Engineered SQL and PySpark pipelines on large healthcare datasets to automate BAU medical-audit reporting with automated visualizations, cutting manual reporting effort by 95%."
+  },
+  {
+   "original": "Delivered technical POCs and consulting for 15+ clients",
+   "new": "Translated client business problems into ML solutions through technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+  }
+ ],
+ "project": {
+  "name": "Courier ETA Prediction Engine",
+  "bullets": [
+   "Built an ETA prediction model for on-demand last-mile logistics, combining order, distance and courier-supply features in LightGBM and XGBoost regression with quantile estimates of late-arrival risk.",
+   "Evaluated it with time-based backtesting against historical baselines, tracked experiments in MLflow, and automated retraining and batch prediction with PySpark and Airflow on BigQuery data."
+  ],
+  "technologies": [
+   "BigQuery",
+   "Spark",
+   "Python",
+   "scikit-learn",
+   "LightGBM",
+   "XGBoost",
+   "MLflow",
+   "Airflow"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Senior Data Scientist role in your Logistics team. For over eight years I have applied machine learning to messy, real-world data in healthcare, telecom and AIOps, most often with gradient-boosted models that end up running in production. What ties it together is turning an operational problem into a model people can act on.",
+   "Last-mile delivery is a problem where every prediction lands on a real courier and a customer waiting at the door, and that closeness to the outcome is what draws me to Delivery Hero. My fiancée lives in Berlin, and this role would let me build my career in the city where we are making our home.",
+   "At Viavi I built an SLA breach prediction system with LightGBM, served through FastAPI and MLflow, that reduced downtime by 67%, and shipped Holt-Winters forecasting and anomaly detection on 15+ KPIs across 500+ network devices. I would bring the same habit to your squad: frame the problem with stakeholders, start with the simplest model that works, then automate its retraining.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and checking results with the people who rely on them. I would welcome a conversation about the role."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "machine learning",
+  "regression",
+  "classification",
+  "ensemble models",
+  "XGBoost",
+  "LightGBM",
+  "Random Forest",
+  "time-series forecasting",
+  "statistics",
+  "Python",
+  "scikit-learn",
+  "pandas",
+  "SQL",
+  "BigQuery",
+  "Spark",
+  "model retraining",
+  "stakeholders"
+ ],
+ "experience_variant": "base"
+}

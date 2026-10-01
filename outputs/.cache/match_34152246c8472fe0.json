@@ -1,0 +1,18 @@
+{
+ "score": 38,
+ "matched": [
+  "Strong production Python fundamentals",
+  "Hands‑on experience building LLM‑based applications",
+  "Experience with PyTorch"
+ ],
+ "missing": [
+  "Strong understanding of GPU memory, compute, profiling and bottlenecks",
+  "Experience with LLM inference optimization, distributed training or kernel optimization",
+  "Experience with quantization, pruning, mixed‑precision or model compression",
+  "Experience with CUDA/Triton, vLLM, TensorRT‑LLM, llama.cpp, FSDP/ZeRO/DDP, NCCL, Nsight"
+ ],
+ "blockers": [
+  "No evidence of GPU‑level profiling or model‑compression work required for the role"
+ ],
+ "reason": "The candidate shows solid Python and LLM application experience but lacks the required GPU‑focused optimization and compression expertise."
+}

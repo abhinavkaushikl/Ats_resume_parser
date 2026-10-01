@@ -1,0 +1,24 @@
+{
+ "score": 45,
+ "matched": [
+  "MSc in Machine Learning and AI",
+  "B.Tech in Information Technology",
+  "Python",
+  "SQL",
+  "Spark",
+  "CI/CD (Jenkins, Bamboo, Bitbucket)",
+  "Terraform",
+  "Data Engineering experience"
+ ],
+ "missing": [
+  "3+ years Databricks experience",
+  "Azure cloud experience",
+  "Expert-level Databricks expertise",
+  "Diploma in computer science (degree satisfied)"
+ ],
+ "blockers": [
+  "No demonstrated Azure experience",
+  "No proven 3+ years Databricks experience"
+ ],
+ "reason": "Key must‑haves (Azure and Databricks experience) are absent, limiting fit despite strong ML and data engineering background."
+}

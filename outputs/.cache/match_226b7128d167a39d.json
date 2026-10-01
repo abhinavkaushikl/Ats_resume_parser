@@ -1,0 +1,19 @@
+{
+ "score": 20,
+ "matched": [
+  "Python",
+  "Machine Learning experience",
+  "Data Scientist/Researcher roles",
+  "SQL and data pipeline experience"
+ ],
+ "missing": [
+  "Fluent Japanese language proficiency",
+  "Willingness to work on-site in Tokyo/Japan",
+  "Specific domain experience (e.g., finance, media, or e‑commerce)"
+ ],
+ "blockers": [
+  "Japanese language only A1 (beginner) – job requires at least intermediate/advanced Japanese",
+  "Current location in India with no indication of relocation to Japan"
+ ],
+ "reason": "Critical language and location requirements are not met despite relevant technical skills."
+}

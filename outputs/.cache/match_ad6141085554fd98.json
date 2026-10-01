@@ -1,0 +1,24 @@
+{
+ "score": 80,
+ "matched": [
+  "5+ years professional experience",
+  "English native proficiency",
+  "Bachelor's degree in IT (related field)",
+  "Python with scikit-learn, PyTorch, XGBoost",
+  "Generative AI experience (LLMs, Claude, OpenAI)",
+  "LangChain/LangGraph and RAG architectures",
+  "MLflow and Airflow pipeline orchestration",
+  "Docker and Kubernetes containerization",
+  "CI/CD tools (Jenkins)",
+  "MLOps tooling (MLflow, DVC)",
+  "Observability platforms (Elasticsearch, Kibana)"
+ ],
+ "missing": [
+  "Demonstrated production deployments on Azure cloud platform",
+  "Explicit experience with Responsible AI / explainability practices",
+  "Experience with Tecton or Feast",
+  "Hands‑on work with data labeling tools"
+ ],
+ "blockers": [],
+ "reason": "Strong overall fit but lacks concrete Azure deployment examples, keeping the score in the good‑fit range."
+}

@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Delivery Hero}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Data Scientist\\
+Bengaluru, India \textbar{} +91 87005 71859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+September 29, 2026
+
+Hiring Team\\
+Delivery Hero
+
+\textbf{Re: Senior Data Scientist}
+
+Dear Hiring Team,
+
+I am applying for the Senior Data Scientist role in your Logistics team. For over eight years I have applied machine learning to messy, real-world data in healthcare, telecom and AIOps, most often with gradient-boosted models that end up running in production. What ties it together is turning an operational problem into a model people can act on.
+
+Last-mile delivery is a problem where every prediction lands on a real courier and a customer waiting at the door, and that closeness to the outcome is what draws me to Delivery Hero. My fiancée lives in Berlin, and this role would let me build my career in the city where we are making our home.
+
+At Viavi I built an SLA breach prediction system with LightGBM, served through FastAPI and MLflow, that reduced downtime by 67\%, and shipped Holt-Winters forecasting and anomaly detection on 15+ KPIs across 500+ network devices. I would bring the same habit to your squad: frame the problem with stakeholders, start with the simplest model that works, then automate its retraining.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It keeps me honest about building for real users and checking results with the people who rely on them. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

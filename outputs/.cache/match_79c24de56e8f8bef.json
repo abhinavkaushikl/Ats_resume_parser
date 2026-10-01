@@ -1,0 +1,19 @@
+{
+ "score": 80,
+ "matched": [
+  "5+ years solution/enterprise architecture experience",
+  "Customer-facing consulting background",
+  "Predictive AI expertise",
+  "GenAI expertise",
+  "MLOps, evaluation, model serving, observability",
+  "Python experience",
+  "Kubernetes experience"
+ ],
+ "missing": [
+  "OpenShift experience",
+  "Kubeflow Pipelines",
+  "vLLM/LLM-d"
+ ],
+ "blockers": [],
+ "reason": "Strong overall fit with relevant AI, MLOps, and consulting experience, but lacks explicit OpenShift and Kubeflow/vLLM exposure."
+}

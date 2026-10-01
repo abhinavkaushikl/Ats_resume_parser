@@ -119,7 +119,7 @@ def match_lines(m: Match, min_match: int = MIN_MATCH) -> list[str]:
 
 
 def _jd_body(text: str) -> str:
-    return text.split("## Job description", 1)[-1]
+    return re.split(r"## Job description", text, maxsplit=1, flags=re.I)[-1]
 
 
 def main():
@@ -137,7 +137,7 @@ def main():
         m = score(_jd_body(text))
         # Refresh the match lines in the file header, then keep it in the folder or move it to skipped/.
         text = re.sub(r"^- \*\*(Resume match|Matched|Missing|Blockers):\*\*.*\n", "", text, flags=re.M)
-        text = text.replace("\n## Job description", "\n".join([""] + match_lines(m, a.min)) + "\n\n## Job description", 1)
+        text = re.sub(r"\n(## Job description)", lambda _: "\n".join([""] + match_lines(m, a.min)) + "\n\n## Job Description", text, count=1, flags=re.I)
         dest = (a.folder if m.score >= a.min else skipped) / f.name
         dest.parent.mkdir(exist_ok=True)
         dest.write_text(text, encoding="utf-8")

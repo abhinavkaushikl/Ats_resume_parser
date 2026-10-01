@@ -1,0 +1,19 @@
+{
+ "score": 55,
+ "matched": [
+  "strong data-science/AI background",
+  "advanced analytics and ML skills",
+  "stakeholder management experience",
+  "lead cross-functional project delivery"
+ ],
+ "missing": [
+  "formal leadership/people‑management experience",
+  "experience with marketing/customer or commercial datasets",
+  "marketing analytics, segmentation, targeting, experimentation",
+  "demonstrated impact on commercial ROI"
+ ],
+ "blockers": [
+  "candidate is based in India/ Berlin and does not indicate willingness or ability to work in Japan or Japanese language proficiency"
+ ],
+ "reason": "Good technical fit but lacks marketing/customer domain experience and location/language alignment, resulting in a partial match."
+}

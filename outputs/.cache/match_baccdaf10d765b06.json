@@ -1,0 +1,18 @@
+{
+ "score": 78,
+ "matched": [
+  "5+ years software engineering experience",
+  "Production GenAI/AI-agent applications",
+  "CI/CD, testing, infrastructure-as-code (Docker, Kubernetes, Terraform, Jenkins)",
+  "Observability pipelines (Elasticsearch, Kibana)",
+  "Python backend development (FastAPI, Flask)",
+  "LangGraph/LangChain experience",
+  "Vector/search systems (pgvector, ArangoDB)",
+  "Cloud platforms (AWS, Azure, GCP)"
+ ],
+ "missing": [
+  "Strong frontend engineering (TypeScript, Node.js, React)"
+ ],
+ "blockers": [],
+ "reason": "Solid AI/agent and cloud-native background but lacks demonstrated frontend stack required for full‑stack role."
+}

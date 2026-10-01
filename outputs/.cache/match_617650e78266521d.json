@@ -1,0 +1,16 @@
+{
+ "score": 52,
+ "matched": [
+  "Strong production Python and software‑engineering fundamentals",
+  "Hands‑on experience building production ML/LLM applications (LangGraph/RAG agents)",
+  "Experience with PyTorch and Hugging Face Transformers",
+  "Production deployment using FastAPI, Docker, Kubernetes, MLflow"
+ ],
+ "missing": [
+  "Strong understanding of GPU memory, compute, profiling and bottlenecks",
+  "Experience with LLM inference optimization (quantization, pruning, mixed‑precision)",
+  "Experience with distributed training or GPU infrastructure (CUDA/Triton, vLLM, TensorRT‑LLM, llama.cpp, FSDP/ZeRO/DDP, NCCL)"
+ ],
+ "blockers": [],
+ "reason": "Candidate has solid production ML/AI engineering experience but lacks the GPU‑focused optimization and model‑compression expertise central to the role."
+}

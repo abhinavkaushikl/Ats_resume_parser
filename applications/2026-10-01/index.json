@@ -1,0 +1,51 @@
+{
+ "think_cell_Data_Scientist_Berlin": {
+  "company": "think-cell Software",
+  "city": "Berlin",
+  "role": "Data Scientist",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 6"
+  ],
+  "headline": "Data Scientist",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Senior Data Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for medical plans, turning stakeholders' business questions into PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+    "after": "Deployed a production SLA breach prediction model with LightGBM, FastAPI and MLflow, operationalized for recurring use with GPT-3.5 giving root-cause analysis and remediation per breach, reducing downtime by 67%."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, deriving robust signals that drove earlier detection and proactive planning."
+   },
+   {
+    "role": "Data Analyst",
+    "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+    "after": "Optimized a scikit-learn Random Forest for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold cross-validation, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+   },
+   {
+    "role": "Data Analyst",
+    "before": "Analyzed member plan utilization and renewal behavior across individual and child plan segments using BigQuery, building segmentation queries and reporting pipelines that fed downstream analytics and member risk modelling.",
+    "after": "Analyzed member plan utilization and renewal behaviour across plan segments in SQL on BigQuery, testing assumptions about the drivers and building reusable segmentation queries that fed downstream risk modelling."
+   },
+   {
+    "role": "Associate Consultant",
+    "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach.",
+    "after": "Developed an XGBoost propensity model scoring the likelihood of a personal-loan application within 7 days of contact, giving commercial teams a clear signal for targeted outreach."
+   }
+  ],
+  "apply_url": null,
+  "listing_url": null,
+  "resume": "think_cell_Data_Scientist_Berlin/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "think_cell_Data_Scientist_Berlin/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "think_cell_Data_Scientist_Berlin/project_brief.md",
+  "hr_score": 86
+ }
+}

@@ -100,6 +100,13 @@ CITIES: dict[str, tuple[str, list[str]]] = {
     "Estonia":    ("(Estonia OR Tallinn)", ["estonia", "eesti", "tallinn", "tartu"]),
     "Ireland":    ("(Ireland OR Dublin)", ["ireland", "éire", "eire", "dublin", "cork", "galway", "limerick"]),
     "Portugal":   ("(Portugal OR Lisbon OR Porto)", ["portugal", "lisbon", "lisboa", "porto", "braga"]),
+    # Gulf and Asia (added 2026-09-29)
+    "Dubai":      ("Dubai", ["dubai"]),
+    "Abu Dhabi":  ("(\"Abu Dhabi\")", ["abu dhabi", "abudhabi"]),
+    "Qatar":      ("(Qatar OR Doha)", ["qatar", "doha"]),
+    "Kuwait":     ("(Kuwait OR \"Kuwait City\")", ["kuwait"]),
+    "Singapore":  ("Singapore", ["singapore"]),
+    "Japan":      ("(Japan OR Tokyo OR Osaka)", ["japan", "tokyo", "osaka", "yokohama", "kyoto", "fukuoka", "nagoya"]),
 }
 
 # Career-portal sites searched on Google.
@@ -550,6 +557,8 @@ LINKEDIN_LOCATIONS = {
     "Germany": "Germany", "Switzerland": "Switzerland", "Sweden": "Sweden", "Italy": "Italy",
     "Netherlands": "Netherlands", "Luxembourg": "Luxembourg", "Estonia": "Estonia", "Ireland": "Ireland",
     "Portugal": "Portugal",
+    "Dubai": "Dubai, United Arab Emirates", "Abu Dhabi": "Abu Dhabi, United Arab Emirates",
+    "Qatar": "Qatar", "Kuwait": "Kuwait", "Singapore": "Singapore", "Japan": "Japan",
 }
 LINKEDIN_PAGES = 4          # 10 jobs per page
 
@@ -567,10 +576,14 @@ def fetch_linkedin(cities: list[str], hours: int) -> list[Job]:
         n = 0
         for page in range(LINKEDIN_PAGES):
             time.sleep(random.uniform(1, 2))
-            r = requests.get("https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search",
-                             params={"keywords": keywords, "location": LINKEDIN_LOCATIONS[city],
-                                     "f_TPR": f"r{hours * 3600}", "start": page * 10},
-                             headers=BROWSER_HEADERS, timeout=TIMEOUT)
+            try:
+                r = requests.get("https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search",
+                                 params={"keywords": keywords, "location": LINKEDIN_LOCATIONS[city],
+                                         "f_TPR": f"r{hours * 3600}", "start": page * 10},
+                                 headers=BROWSER_HEADERS, timeout=TIMEOUT)
+            except requests.RequestException as exc:   # timeout / connection drop: skip this city
+                print(f"  ! LinkedIn {city}: {type(exc).__name__}")
+                break
             if r.status_code == 429:
                 print("  ! LinkedIn rate limit reached; skipping the remaining LinkedIn searches")
                 return out

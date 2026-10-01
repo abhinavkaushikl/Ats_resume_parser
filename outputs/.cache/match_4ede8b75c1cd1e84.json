@@ -1,0 +1,15 @@
+{
+ "score": 78,
+ "matched": [
+  "AI/ML architecture and engineering background",
+  "Program/technical leadership experience (led pilots and production deployments)",
+  "Enterprise data pipelines, APIs, and cloud/A I‑platform knowledge (FastAPI, PySpark, MLflow, GCP/Azure)",
+  "Stakeholder and business outcome communication"
+ ],
+ "missing": [
+  "Direct supply‑chain/middle‑mile/last‑mile operations experience",
+  "Specific large‑scale transportation transformation projects"
+ ],
+ "blockers": [],
+ "reason": "Strong AI/ML and leadership experience but lacks the required logistics/transportation domain background."
+}

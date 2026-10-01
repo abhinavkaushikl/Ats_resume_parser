@@ -1,0 +1,14 @@
+{
+ "score": 92,
+ "matched": [
+  "Software/AI development experience",
+  "Python programming",
+  "AI/ML and GenAI application experience",
+  "Customer-facing consulting and multidisciplinary team work",
+  "Cloud platforms (GCP, Azure)",
+  "RAG and agentic workflow implementation (LangGraph, LangChain)"
+ ],
+ "missing": [],
+ "blockers": [],
+ "reason": "The resume demonstrates extensive Python‑based AI/GenAI development, enterprise solution delivery and consulting experience, directly matching the role’s core requirements and preferred skills."
+}

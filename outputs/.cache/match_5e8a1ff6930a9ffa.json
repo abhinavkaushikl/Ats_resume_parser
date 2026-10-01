@@ -1,0 +1,16 @@
+{
+ "score": 90,
+ "matched": [
+  "Professional AI/ML architecture experience",
+  "Strong LLM/RAG/embedding/agent knowledge",
+  "Enterprise architecture and integration skills",
+  "Cloud architecture (Azure)",
+  "Technical communication"
+ ],
+ "missing": [
+  "AI architecture certifications",
+  "Explicit AI governance experience"
+ ],
+ "blockers": [],
+ "reason": "The candidate demonstrates extensive AI architecture work with LLM/RAG/agents, enterprise integration, and cloud platforms, meeting all core requirements."
+}

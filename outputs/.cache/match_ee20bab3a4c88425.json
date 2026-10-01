@@ -1,0 +1,13 @@
+{
+ "score": 92,
+ "matched": [
+  "2+ years software development experience",
+  "Strong programming fundamentals (Python, SQL, PySpark)",
+  "Proven communication and problem‑solving skills (lead projects, stakeholder collaboration)",
+  "Experience with AI agents, RAG, LLM APIs",
+  "Cloud platform experience (GCP, Azure)"
+ ],
+ "missing": [],
+ "blockers": [],
+ "reason": "The candidate exceeds all must‑haves and has direct AI‑agent, RAG, and cloud experience, making them a strong fit."
+}

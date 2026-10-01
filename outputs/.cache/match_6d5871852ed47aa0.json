@@ -1,0 +1,23 @@
+{
+ "score": 92,
+ "matched": [
+  "Bachelor's/Master's degree in related field",
+  "7+ years relevant experience",
+  "MLOps expertise (MLflow, Docker, Kubernetes, Terraform, Airflow)",
+  "Cloud-native and distributed systems experience (GCP, Azure, Spark, PySpark)",
+  "Python development (FastAPI, Flask)",
+  "Machine learning framework experience (PyTorch, scikit‑learn, LightGBM)",
+  "Full ML lifecycle experience (training, versioning, deployment, monitoring)",
+  "CI/CD and Infrastructure as Code (Jenkins, Bamboo, Terraform)",
+  "Leadership of major technical projects",
+  "Production troubleshooting and root‑cause analysis",
+  "Strong communication and cross‑team collaboration"
+ ],
+ "missing": [
+  "Explicit TensorFlow experience",
+  "Explicit event‑streaming/Kafka experience",
+  "Formal documented coaching/mentoring activities"
+ ],
+ "blockers": [],
+ "reason": "The candidate meets all core requirements and shows strong relevant experience, with only minor optional gaps."
+}

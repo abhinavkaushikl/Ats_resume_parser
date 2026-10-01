@@ -1,0 +1,12 @@
+{"criteria": {"tech_stack": 26, "experience": 22, "company_project": 17, "ats_keywords": 13, "credibility": 8},
+ "score": 86,
+ "decision": "shortlist",
+ "strengths": ["Job title matches the JD exactly in both the header and the current role",
+               "Both halves of the JD's stack now appear in bullets: Python/FastAPI/Docker/Kubernetes/GCP/MLflow backend and React/Next.js front-end",
+               "21+ Next.js and HTML mockup generators show Jira/PRD requirements translated to shipped product, a named JD responsibility",
+               "SLA-managed production services and 'supporting data scientists to production' map directly to two named JD responsibilities"],
+ "gaps": ["TypeScript and Node.js appear only in the skills list, never used in a bullet",
+          "PostgreSQL and Kubeflow appear only in the skills list despite PostgreSQL being in the JD's core stack",
+          "JD asks for mentoring on testing and monitoring; 'test' appears once and only inside the mentoring claim itself",
+          "JD asks to improve software architecture; the word 'architecture' appears nowhere in the resume",
+          "No ad-tech or marketing domain experience; the only domain signal is a personal project"]}

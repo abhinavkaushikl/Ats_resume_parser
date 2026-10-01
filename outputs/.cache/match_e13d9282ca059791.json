@@ -1,0 +1,18 @@
+{
+ "score": 35,
+ "matched": [
+  "5+ years production GenAI/LLM delivery",
+  "Deep agentic workflow and RAG expertise",
+  "LLMOps evaluation and monitoring",
+  "Vector database experience",
+  "Docker/Kubernetes delivery"
+ ],
+ "missing": [
+  "Experience serving open-source Llama/Mistral models on GPU",
+  "Fluency in French"
+ ],
+ "blockers": [
+  "Fluency in French not demonstrated"
+ ],
+ "reason": "The candidate lacks mandatory French fluency and explicit experience with Llama/Mistral GPU serving, which are hard blockers despite strong GenAI background."
+}

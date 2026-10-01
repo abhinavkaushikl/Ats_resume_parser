@@ -1,0 +1,12 @@
+{"criteria": {"tech_stack": 25, "experience": 23, "company_project": 18, "ats_keywords": 13, "credibility": 9},
+ "score": 88,
+ "decision": "shortlist",
+ "strengths": ["Agent internals the JD names as its hardest bar all appear in context: agent loops, tool calling, context management, prompt caching",
+               "Production LLM systems real users depended on, not demos: extraction agent, multi-agent chatbot, internally adopted RAG assistant",
+               "Prototype-validate-kill-or-handoff pattern is shown with real numbers (15+ prototypes, 7 to production, rest dropped), matching how NiCE Labs operates",
+               "Full-stack from API to demo UI is evidenced by 21+ HTML and Next.js mockup generators, plus AI-assisted development with Claude Code and Cursor"],
+ "gaps": ["MCP appears nowhere, though the team open-sourced a Cognigy Platform MCP server and lists MCP work as an advantage",
+          "TypeScript and Node.js appear only in the skills list; the JD says its stack centers on TypeScript/Node.js and React",
+          "No voice or real-time AI experience (streaming, STT/TTS, voice-to-voice), a listed advantage",
+          "No open-source agent tooling or public harness/eval work shown",
+          "Conversational AI and customer-experience background is adjacent (analytics chatbot) rather than CX-product native"]}

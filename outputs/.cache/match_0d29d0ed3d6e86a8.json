@@ -1,0 +1,21 @@
+{
+ "score": 80,
+ "matched": [
+  "Master's degree in ML/AI",
+  "Extensive LLM experience (Claude, OpenAI, LangGraph, LangChain)",
+  "Python development",
+  "PyTorch usage",
+  "NLP algorithm design and implementation",
+  "ML infrastructure (MLflow, Docker, FastAPI)",
+  "Production deployment of AI systems"
+ ],
+ "missing": [
+  "PhD or equivalent research experience",
+  "Published research papers in top conferences",
+  "Explicit work on LLM efficiency/modularity",
+  "Multi‑modal model integration",
+  "Optimization for performance‑constrained environments"
+ ],
+ "blockers": [],
+ "reason": "Strong LLM and AI engineering background meets core requirements, but lacks preferred research publications and specific efficiency/multi‑modal work."
+}

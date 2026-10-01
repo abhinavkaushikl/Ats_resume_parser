@@ -1,0 +1,22 @@
+{
+ "score": 86,
+ "matched": [
+  "Python",
+  "SQL",
+  "distributed data processing (PySpark, Spark)",
+  "production ML/GenAI experience",
+  "cloud deployment (GCP, Azure)",
+  "containerized deployment (Docker, Kubernetes)",
+  "RAG development",
+  "vector databases (pgvector, ArangoDB)",
+  "LLM workflows (LangGraph, Claude, OpenAI)",
+  "MLOps/DevOps workflows (MLflow, Airflow, CI/CD)"
+ ],
+ "missing": [
+  "AWS specific services (Bedrock, SageMaker, EKS/EC2 GPU)",
+  "Ray",
+  "Trino"
+ ],
+ "blockers": [],
+ "reason": "Strong fit in core applied data‑science, production ML/GenAI, RAG and MLOps, but lacks explicit AWS/Bedrock/SageMaker experience."
+}

@@ -57,9 +57,13 @@ mkdir -p applications/<date>
 - **Resume match 50% or more** (the `Resume match` line) - note 50, not the 60% shortlist cut, so 50-59%
   jobs in `skipped/` count too.
 
-Tailor only jobs that meet **both**. Do **not** tailor visa-unclear jobs - they have no JD (the job
-hunt sends them to GPT via `gpt_automation/company_list.txt`). Tailor one only when I hand it back
-(then its JD is fetched and scored first, job-hunt step 3 e, and it needs 50%+ like the rest). Jobs below 50% are never tailored.
+Tailor only jobs that meet **both**. Jobs below 50% are never tailored.
+
+**JDs I handed over have no score** - they come from `/job-hunt` step 4 (I pick a job from
+`jobs/jobs_<date>.md`, collect its JD myself and give it to you) and their header says
+`Resume match: not scored (job chosen by me)`. Tailor every one of those: I chose the job, so the 50%
+rule does not apply. Their visa line must still start `Visa: yes` (`⚠️ weak` is fine). Skip step 5
+below for them - a hand-over run has no `jobs/visa_jobs_<date>.json` and no `JOB_RESULTS.md`.
 
 For each job to tailor, the output folder is `applications/<date>/<file stem>/` (create it). Skip jobs
 whose folder already has `build.json` unless I asked to redo them. Give me a status line: "N jobs to

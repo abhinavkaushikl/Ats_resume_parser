@@ -1,0 +1,20 @@
+{
+ "score": 35,
+ "matched": [
+  "5+ years professional experience",
+  "production GenAI/LLM delivery",
+  "agentic workflow and RAG expertise",
+  "LLMOps evaluation and monitoring",
+  "vector databases",
+  "Docker/Kubernetes",
+  "English fluency"
+ ],
+ "missing": [
+  "experience serving open-source Llama/Mistral models on GPU",
+  "French fluency"
+ ],
+ "blockers": [
+  "French fluency is mandatory and not present in resume"
+ ],
+ "reason": "Missing required French language skill and no evidence of Llama/Mistral GPU deployment, making the candidate a poor fit."
+}

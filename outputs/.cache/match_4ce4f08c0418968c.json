@@ -1,0 +1,14 @@
+{
+ "score": 80,
+ "matched": [
+  "4-6+ years senior engineering experience shipping production software",
+  "Experience with technically complex systems and integrations",
+  "Architected and operated agents in production (purpose, scope, evals)",
+  "Built automated evaluation and observability pipelines for agents"
+ ],
+ "missing": [
+  "Explicit experience reviewing agent-generated PRs and providing sign‑off"
+ ],
+ "blockers": [],
+ "reason": "Strong production and agent experience but lacks clear evidence of PR review/sign‑off responsibilities."
+}

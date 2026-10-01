@@ -1,0 +1,17 @@
+{
+ "score": 80,
+ "matched": [
+  "Strong data‑science/statistics background (MSc in ML & AI)",
+  "8+ years ML/AI experience",
+  "Python programming",
+  "Experience with large/complex datasets (SQL, PySpark, Spark)",
+  "Machine learning and quantitative modeling (LightGBM, XGBoost, LSTM, etc.)",
+  "Client collaboration and stakeholder communication"
+ ],
+ "missing": [
+  "Explicit optimization experience",
+  "Formal consulting experience"
+ ],
+ "blockers": [],
+ "reason": "Resume meets core data‑science and ML requirements and shows relevant Python and big‑data work, but lacks clear optimization and consulting background."
+}

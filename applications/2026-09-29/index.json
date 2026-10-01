@@ -1,0 +1,46 @@
+{
+ "Delivery_Hero_Senior_Data_Scientist_Logistics_Berlin": {
+  "company": "Delivery Hero",
+  "city": "Berlin",
+  "role": "Senior Data Scientist",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Senior Data Scientist",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Data Scientist",
+    "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+    "after": "Deployed a production SLA breach classification model with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped time-series demand forecasting and anomaly detection on 15+ KPIs across 500+ telecom network devices with Holt-Winters and Isolation Forest, enabling earlier detection and proactive network planning."
+   },
+   {
+    "role": "Associate Consultant",
+    "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization.",
+    "after": "Built an XGBoost classification model predicting personal-loan applications within 7 days of contact, enabling targeted outreach and customer prioritization."
+   },
+   {
+    "role": "Data Engineer",
+    "before": "Engineered SQL and PySpark data pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+    "after": "Engineered SQL and PySpark pipelines on large healthcare datasets to automate BAU medical-audit reporting, cutting manual reporting effort by 95%."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Delivered technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue.",
+    "after": "Translated client business problems into ML solutions through technical POCs and consulting for 15+ clients across 3+ AIOps and ML platforms, contributing to an 11% increase in POC and mentoring revenue."
+   }
+  ],
+  "apply_url": null,
+  "listing_url": null,
+  "resume": "Delivery_Hero_Senior_Data_Scientist_Logistics_Berlin/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Delivery_Hero_Senior_Data_Scientist_Logistics_Berlin/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Delivery_Hero_Senior_Data_Scientist_Logistics_Berlin/project_brief.md",
+  "hr_score": null
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "score": 78,
+ "matched": [
+  "6-8 years ML/AI experience",
+  "Advanced quantitative MSc degree",
+  "Deep learning and transformer expertise",
+  "Ranking and re‑ranking experience",
+  "Large‑scale data processing (PySpark, Databricks) and production ML deployment (FastAPI, Docker, MLflow)",
+  "Python and SQL proficiency",
+  "RAG and LLM integration"
+ ],
+ "missing": [
+  "Direct real‑time personalization/recommender system experience",
+  "Knowledge‑graph or graph‑retrieval expertise",
+  "Online learning component development",
+  "Explicit A/B experiment design and statistical analysis"
+ ],
+ "blockers": [],
+ "reason": "Meets core technical and experience requirements but lacks specific personalization, graph retrieval, and online‑learning background."
+}

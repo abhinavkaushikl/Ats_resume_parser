@@ -1,0 +1,19 @@
+{
+ "score": 80,
+ "matched": [
+  "5+ years experience",
+  "customer-facing consulting",
+  "predictive AI",
+  "GenAI",
+  "MLOps",
+  "model serving",
+  "observability",
+  "Kubernetes",
+  "Python"
+ ],
+ "missing": [
+  "OpenShift experience"
+ ],
+ "blockers": [],
+ "reason": "Strong AI, MLOps, and consulting background but lacks explicit OpenShift experience required for the role."
+}

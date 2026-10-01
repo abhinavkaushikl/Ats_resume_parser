@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "tech_stack": 30,
+    "experience": 20,
+    "company_project": 20,
+    "ats_keywords": 15,
+    "credibility": 10
+  },
+  "score": 95,
+  "decision": "shortlist",
+  "strengths": [
+    "Comprehensive Python/NumPy/pandas/scikit\u2011learn/Matplotlib/Plotly stack used in production work",
+    "Relevant Courier ETA prediction project with correct logistics domain, right tools (LightGBM, XGBoost, BigQuery, Spark, Airflow, MLflow) and a clear 17% error\u2011reduction metric",
+    "8+ years of ML experience covering regression, classification, ensemble models and time\u2011series forecasting",
+    "Clear, quantifiable outcomes throughout the resume"
+  ],
+  "gaps": [
+    "Most recent 2\u2011year roles focus heavily on LLM/GenAI applications rather than classical logistics ML",
+    "Operations Research experience is mentioned only briefly (linear/integer programming) and not demonstrated in a logistics context",
+    "No explicit evidence of large\u2011scale production monitoring or automated retraining pipelines for the ETA model beyond the project description",
+    "Limited exposure to the massive scale (hundreds of thousands of couriers, millions of orders) typical for Delivery Hero",
+    "German language proficiency is low (A1), which may affect collaboration in Berlin"
+  ]
+}

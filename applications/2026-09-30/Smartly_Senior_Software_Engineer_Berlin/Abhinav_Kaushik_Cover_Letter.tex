@@ -1,0 +1,49 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Smartly}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Senior Software Engineer\\
+New Delhi, India \textbar{} +91 8700571859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}
+
+September 30, 2026
+
+Hiring Team\\
+Smartly
+
+\textbf{Re: Senior Software Engineer -- AI Platform Team}
+
+Dear Hiring Team,
+
+I am applying for the Senior Software Engineer role on Smartly's AI Platform Team. For the past eight years I have been designing and shipping Python backend services that take ML models from a data scientist's notebook into production: REST APIs, microservice deployments, SLA-managed pipelines and the MLOps tooling that keeps them reliable. That is the exact surface your team is building on.
+
+My fiancée lives in Berlin, and we are building our life there together; joining Smartly in Berlin is not a relocation I need to be persuaded about. Smartly sits at the intersection of creative performance and campaign data in a way few companies do, and I want to work on the AI infrastructure that drives real advertising outcomes, not just surface-level integrations.
+
+Two things I would bring. At United Health Group I deployed a production Python backend that processed 1,800 lab documents and automated the work behind 800 Jira tickets; at Viavi I shipped an SLA-breach prediction service on FastAPI, Kubernetes and MLflow that cut downtime by 67\%, with data scientists depending on it daily. I have also built 21+ automated TypeScript and Next.js mockup generators, so I can work across your React frontend as readily as the Python services, and I have mentored teams on testing and monitoring rather than leaving those to whoever is on call.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. The product runs on the same stack I would bring to Smartly, and building it for real users keeps me grounded in what production software actually demands. I would welcome a conversation about the role.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}
