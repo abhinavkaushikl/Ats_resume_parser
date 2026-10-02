@@ -4,13 +4,16 @@
 chat, dropped in a file, or named ("tailor the Acme one, JD below"). I pick the jobs from
 `jobs/jobs_<date>.md` and collect their JDs myself; you never fetch one.
 
-## a. Check the job is allowed
+## a. Note the job's tag, don't gate on it
 
-Find the job's row in `jobs/jobs_<date>.md`. Tailor it only if its tag is `visa` or `weak` (weak stays
-flagged ⚠️ - I confirm with the recruiter). If the tag is `unknown`, say so in one line and tailor it
-anyway only if I tell you to. Never tailor a dropped job unless I say the visa situation changed.
+Find the job's row in `jobs/jobs_<date>.md` and carry its tag (`visa` / `weak` / `unknown`) into the JD
+header you write in (b). That is all: a JD I hand over is a job I chose, so **don't refuse to tailor it**.
+If the tag is `unknown` or the job was dropped, say so in one line and carry on.
 
-There is no resume score in this flow, so there is no 50% rule: a JD I hand over is a job I chose.
+Rating the job - the visa evidence and how well my current resume fits - is a **separate command**,
+`/visa_match_score <date>`, which writes a report and stops. If I want that, I run it myself between (b)
+and (c) and verify it. Never score a resume or re-check a visa here, and never make tailoring depend on
+either.
 
 ## b. Save the JD where the tailor skill reads it
 
@@ -37,10 +40,9 @@ Paste my text as it is - don't summarise, shorten or rewrite it, and don't add a
 
 ## c. Tailor
 
-Load the **tailor-resumes** skill and follow it for that date, with one difference: the job selection is
-**the JDs I handed over** (the files you just wrote), not "visa yes and 50%+" - skip its scoring-based
-selection rule and its step 5 (`job_report.py` / `JOB_RESULTS.md` - there is no results file in this
-flow).
+Load the **tailor-resumes** skill and follow it for that date. It builds every JD in
+`jobs/jd_visa/<date>/` - the files you just wrote - and gates on nothing. Skip its step 5
+(`job_report.py` / `JOB_RESULTS.md`): there is no results file in this flow.
 
 So, per job: Opus writer agent -> `tailoring.json` -> `.venv/bin/python build_resume.py --date <date>` ->
 Sonnet judge agent -> `judge.json`. Writer and judge stay different models, the judge scores once and the

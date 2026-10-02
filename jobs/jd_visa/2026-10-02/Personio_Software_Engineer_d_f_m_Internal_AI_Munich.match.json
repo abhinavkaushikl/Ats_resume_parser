@@ -1,0 +1,22 @@
+{
+ "score": 78,
+ "verdict": "good",
+ "matched": [
+  "4+ years production software/ML",
+  "Strong Python and FastAPI",
+  "Agentic workflows and RAG with LangGraph",
+  "LLM APIs",
+  "Evals and observability",
+  "Docker/CI/CD",
+  "Production agents with tooling"
+ ],
+ "missing": [
+  "MCP",
+  "AWS (resume shows GCP/Azure)",
+  "React/TypeScript",
+  "Secure auth handling evidence"
+ ],
+ "blockers": [],
+ "reason": "Very close to the day-to-day work of building production agents and RAG with evals; only MCP and AWS are not shown.",
+ "variant": "base"
+}

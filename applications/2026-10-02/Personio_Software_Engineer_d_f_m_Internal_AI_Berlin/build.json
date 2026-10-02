@@ -1,0 +1,43 @@
+{
+ "company": "Personio",
+ "city": "Berlin",
+ "role": "Software Engineer (d/f/m) - Internal AI",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5"
+ ],
+ "headline": "Software Engineer - Internal AI",
+ "current_role_title": "Senior AI Engineer",
+ "experience_edits": [
+  {
+   "role": "Senior AI Engineer",
+   "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+   "after": "Shipped a production lab-extraction agent end to end with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent chatbot in LangGraph that answers internal business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, catching quality drops and reducing manual review by 43%."
+  },
+  {
+   "role": "Senior AI Engineer",
+   "before": "Built a mock-generator pipeline for customer delivery, producing 36+ discipline-specific UI mockups from Jira stories and requirements using HTML, Next.js and Claude 4.6 to accelerate solution prototyping and stakeholder review.",
+   "after": "Built an internal mock-generator tool producing 36+ discipline-specific UI mockups from Jira stories and requirements with HTML, Next.js and Claude 4.6, speeding up prototyping and stakeholder review."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+   "after": "Built CI/CD pipelines for service and model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so releases stayed repeatable and reviewed."
+  }
+ ],
+ "apply_url": "https://www.personio.com/careers/1387be54-7a61-4015-b603-11ea35803a49/",
+ "listing_url": "https://de.linkedin.com/jobs/view/software-engineer-d-f-m-internal-ai-at-personio-4453460182",
+ "resume": "Personio_Software_Engineer_d_f_m_Internal_AI_Berlin/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Personio_Software_Engineer_d_f_m_Internal_AI_Berlin/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Personio_Software_Engineer_d_f_m_Internal_AI_Berlin/project_brief.md"
+}

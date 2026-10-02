@@ -1,0 +1,19 @@
+{
+ "score": 33,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "ML model lifecycle",
+  "model performance analysis",
+  "mentoring/leadership"
+ ],
+ "missing": [
+  "deep learning image models",
+  "document verification / KYC",
+  "computer vision datasets",
+  "fintech risk domain"
+ ],
+ "blockers": [],
+ "reason": "Role is computer-vision document verification; the resume has no image/CV work.",
+ "variant": "base"
+}

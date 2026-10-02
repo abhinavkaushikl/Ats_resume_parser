@@ -1,0 +1,21 @@
+{
+ "score": 80,
+ "verdict": "good",
+ "matched": [
+  "4+ years production",
+  "Strong Python/FastAPI",
+  "LangGraph agents and RAG",
+  "Observability and evals",
+  "Docker/CI/CD",
+  "Cloud (GCP/Azure)"
+ ],
+ "missing": [
+  "AWS",
+  "MCP",
+  "React/TypeScript",
+  "Software engineering (vs ML) track record"
+ ],
+ "blockers": [],
+ "reason": "Strong match on agentic LangGraph/RAG, evals and production Python; AWS and MCP not shown.",
+ "variant": "base"
+}

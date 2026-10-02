@@ -1,0 +1,21 @@
+{
+ "score": 50,
+ "verdict": "partial",
+ "matched": [
+  "Python",
+  "Terraform",
+  "Docker/Kubernetes/CI-CD",
+  "LLM evals and observability",
+  "Elasticsearch/Kibana monitoring",
+  "CS-adjacent degrees"
+ ],
+ "missing": [
+  "AWS",
+  "LLM gateways (LiteLLM), Langfuse, Datadog",
+  "platform engineering/DevOps/SRE role history",
+  "API cost management and rate limiting governance"
+ ],
+ "blockers": [],
+ "reason": "Candidate is an AI/ML engineer with some MLOps and observability, not a platform/DevOps engineer.",
+ "variant": "base"
+}

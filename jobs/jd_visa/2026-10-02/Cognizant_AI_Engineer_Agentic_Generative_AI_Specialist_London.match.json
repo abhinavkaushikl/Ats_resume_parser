@@ -1,0 +1,25 @@
+{
+ "score": 68,
+ "verdict": "reasonable",
+ "matched": [
+  "LangGraph agentic systems",
+  "LLM/RAG/Q&A",
+  "Hugging Face, PyTorch, LangChain",
+  "Vector DBs",
+  "Fine-tuning",
+  "MLOps/deployment",
+  "Agent tracing/evals",
+  "Git/Docker/Kubernetes",
+  "GCP/Azure"
+ ],
+ "missing": [
+  "Azure AI Agent Service / Copilot Studio / AI Foundry",
+  "AutoGen/CrewAI",
+  "AWS Bedrock",
+  "Azure AI Search / Fabric",
+  "Consulting workshops and client-facing thought leadership"
+ ],
+ "blockers": [],
+ "reason": "Strong agentic/RAG match, but the Microsoft Azure/Copilot Studio stack and consulting emphasis are not shown.",
+ "variant": "base"
+}

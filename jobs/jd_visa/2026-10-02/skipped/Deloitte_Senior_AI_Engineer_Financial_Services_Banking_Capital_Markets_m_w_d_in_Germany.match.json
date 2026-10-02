@@ -1,0 +1,21 @@
+{
+ "score": 30,
+ "verdict": "poor",
+ "matched": [
+  "2+ yrs AI systems",
+  "NLP, predictive analytics, anomaly detection",
+  "Python, PyTorch",
+  "Document extraction (OCR)"
+ ],
+ "missing": [
+  "German very good written and spoken (A1 only)",
+  "Financial services/audit domain",
+  "TensorFlow",
+  "Travel willingness/agile not shown"
+ ],
+ "blockers": [
+  "German required, resume shows A1 only"
+ ],
+ "reason": "Skills match but fluent German is a hard requirement the resume does not meet.",
+ "variant": "base"
+}

@@ -1,0 +1,22 @@
+{
+ "score": 45,
+ "verdict": "partial",
+ "matched": [
+  "Fraud detection",
+  "Anomaly detection",
+  "ML",
+  "A/B testing",
+  "Statistical modeling",
+  "Python/SQL"
+ ],
+ "missing": [
+  "Econometrics",
+  "Attribution modeling",
+  "Advertising/marketing data",
+  "Bot/adversarial fraud investigation",
+  "Causal inference depth"
+ ],
+ "blockers": [],
+ "reason": "Some fraud and anomaly work, but attribution and econometrics core to the role are absent.",
+ "variant": "base"
+}

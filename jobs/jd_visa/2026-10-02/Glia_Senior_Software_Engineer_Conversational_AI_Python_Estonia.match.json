@@ -1,0 +1,24 @@
+{
+ "score": 66,
+ "verdict": "reasonable",
+ "matched": [
+  "production AI systems",
+  "LLM agentic flows and tool use",
+  "retrieval and grounding",
+  "evaluation and observability",
+  "Python",
+  "Docker/Kubernetes/Terraform/Jenkins",
+  "FastAPI",
+  "technical leadership"
+ ],
+ "missing": [
+  "real-time/voice AI and latency work",
+  "Elixir",
+  "TypeScript/React production",
+  "AWS, DataDog, Kafka, DynamoDB",
+  "Pacific-time overlap"
+ ],
+ "blockers": [],
+ "reason": "Solid agentic-AI and evals match, lacking voice/low-latency work and parts of the stack.",
+ "variant": "base"
+}

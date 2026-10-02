@@ -1,0 +1,18 @@
+{
+ "score": 62,
+ "verdict": "reasonable",
+ "matched": [
+  "Data pipelines (SQL/Python/PySpark)",
+  "Forecasting tools",
+  "Metrics/reporting",
+  "English",
+  "AI tools use"
+ ],
+ "missing": [
+  "Graduate-level role, little stated hard requirements",
+  "Evidence of top-tier academic/competitive signals"
+ ],
+ "blockers": [],
+ "reason": "Resume comfortably covers the data pipeline/forecasting scope of a graduate-level role, though the role is junior and the bar is non-technical.",
+ "variant": "base"
+}

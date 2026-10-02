@@ -1,0 +1,21 @@
+{
+ "score": 30,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "LLM fine-tuning and agentic workflows (small scale)",
+  "Master's in ML/AI",
+  "English"
+ ],
+ "missing": [
+  "5+ years running LLM lifecycle on multi-node systems (training, serving)",
+  "Academic/research partner engagement and publications",
+  "NVIDIA stack (NeMo, TensorRT-LLM, Triton)",
+  "Pre-sales / solutions architect experience"
+ ],
+ "blockers": [
+  "Requires 5+ years multi-node LLM training/serving; resume shows API-based LLM apps only"
+ ],
+ "reason": "Customer-facing research-HPC solutions architect role needing multi-node LLM training experience the resume does not show.",
+ "variant": "base"
+}

@@ -1,0 +1,21 @@
+{
+ "score": 60,
+ "verdict": "reasonable",
+ "matched": [
+  "GenAI/RAG/agents",
+  "LangChain",
+  "LLM evals",
+  "customer POCs",
+  "fine-tuning",
+  "cloud experience (GCP/Azure)"
+ ],
+ "missing": [
+  "AWS Bedrock/SageMaker",
+  "executive-level customer advisory/pre-sales",
+  "automotive/manufacturing domain",
+  "formal solutions architecture role"
+ ],
+ "blockers": [],
+ "reason": "Strong GenAI technical match but no AWS stack, no SA/executive advisory role history.",
+ "variant": "base"
+}

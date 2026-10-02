@@ -1,0 +1,20 @@
+{
+ "score": 12,
+ "verdict": "poor",
+ "matched": [
+  "PyTorch",
+  "deep learning basics",
+  "data pipelines"
+ ],
+ "missing": [
+  "computer vision / 3D perception",
+  "LiDAR/multi-view geometry/tracking",
+  "auto-labelling pipelines",
+  "shipped CV systems"
+ ],
+ "blockers": [
+  "Different field: CV perception for ADAS"
+ ],
+ "reason": "Computer-vision/3D perception role; resume has no CV work.",
+ "variant": "base"
+}

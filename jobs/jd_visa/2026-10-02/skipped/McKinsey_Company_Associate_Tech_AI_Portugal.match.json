@@ -1,0 +1,18 @@
+{
+ "score": 15,
+ "verdict": "poor",
+ "matched": [
+  "advanced degree",
+  "4+ years tech/AI"
+ ],
+ "missing": [
+  "fluent Portuguese required",
+  "consulting/PowerPoint-driven client work",
+  "travel to on-site client environments"
+ ],
+ "blockers": [
+  "Fluent Portuguese required; not shown"
+ ],
+ "reason": "Consulting associate role requiring fluent Portuguese; different profile.",
+ "variant": "base"
+}

@@ -1,0 +1,20 @@
+{
+ "score": 8,
+ "verdict": "poor",
+ "matched": [
+  "LLM/agent evaluation experience"
+ ],
+ "missing": [
+  "PhD with 2+ years post-PhD",
+  "Top-tier publications",
+  "Post-training and alignment research (RL, preference optimization, reward modeling)",
+  "Model distillation",
+  "Independent research agenda"
+ ],
+ "blockers": [
+  "PhD required",
+  "Research publication record required"
+ ],
+ "reason": "Research scientist role in AI alignment requiring a PhD and top-tier publications; resume has neither.",
+ "variant": "base"
+}

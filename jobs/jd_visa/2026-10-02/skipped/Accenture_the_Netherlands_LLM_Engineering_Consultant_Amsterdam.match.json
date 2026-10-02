@@ -1,0 +1,19 @@
+{
+ "score": 30,
+ "verdict": "poor",
+ "matched": [
+  "LLM fine-tuning/deployment",
+  "Python, SQL, PyTorch",
+  "3-5 yrs AI/ML",
+  "Bachelor's"
+ ],
+ "missing": [
+  "Dutch (exceptional written and spoken)",
+  "TensorFlow"
+ ],
+ "blockers": [
+  "Dutch required, resume shows none"
+ ],
+ "reason": "Technical fit is strong but fluent Dutch is a required language the resume lacks.",
+ "variant": "base"
+}

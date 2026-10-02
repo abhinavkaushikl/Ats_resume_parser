@@ -1,0 +1,20 @@
+{
+ "score": 64,
+ "verdict": "reasonable",
+ "matched": [
+  "8+ years ML",
+  "Python/PyTorch/scikit-learn",
+  "NLP and BERT-family (SBERT)",
+  "Production deployment",
+  "Bachelor's degree"
+ ],
+ "missing": [
+  "NER/POS/parsing NLP tasks",
+  "spaCy/TensorFlow",
+  "Contract/legal document NLP",
+  "Computer vision"
+ ],
+ "blockers": [],
+ "reason": "Experience level and NLP/ML stack fit, but classic NLP tasks and legal-document domain are not shown.",
+ "variant": "base"
+}

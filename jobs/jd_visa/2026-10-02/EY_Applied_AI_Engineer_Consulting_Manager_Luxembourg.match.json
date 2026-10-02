@@ -1,0 +1,24 @@
+{
+ "score": 70,
+ "verdict": "good",
+ "matched": [
+  "Python",
+  "RAG pipelines and agents",
+  "LLMs, embeddings, vector DBs",
+  "Docker/Kubernetes",
+  "Spark/Databricks",
+  "Evals/observability",
+  "5+ years",
+  "Client delivery experience"
+ ],
+ "missing": [
+  "TypeScript",
+  "Azure cloud engineering / IAM / secure networking",
+  "Consulting-firm experience",
+  "French/German (plus)",
+  "Kafka/streaming"
+ ],
+ "blockers": [],
+ "reason": "Good technical fit on RAG/agents/Databricks, with gaps in Azure, TypeScript and formal consulting.",
+ "variant": "base"
+}

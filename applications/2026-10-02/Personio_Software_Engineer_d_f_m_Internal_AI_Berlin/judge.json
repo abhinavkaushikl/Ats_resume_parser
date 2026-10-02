@@ -1,0 +1,22 @@
+{
+ "criteria": {
+  "tech_stack": 25,
+  "experience": 22,
+  "company_project": 18,
+  "ats_keywords": 12,
+  "credibility": 9
+ },
+ "score": 86,
+ "decision": "shortlist",
+ "strengths": [
+  "LangGraph, RAG, FastAPI, Docker, CI/CD production bullets",
+  "Agent platform project with MCP, evals and auth directly mirrors role"
+ ],
+ "gaps": [
+  "AWS not shown; cloud is GCP/Azure",
+  "MCP only in project, not in role bullets or skills",
+  "Secure auth and rollback claimed only in a project",
+  "Software engineering title/backend depth thinner than data science history",
+  "Internal HR/ops automation not in real roles"
+ ]
+}

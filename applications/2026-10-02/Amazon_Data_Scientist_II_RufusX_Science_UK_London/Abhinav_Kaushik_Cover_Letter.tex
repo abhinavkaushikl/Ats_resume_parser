@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Amazon}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Data Scientist II\\
+Bengaluru, India \textbar{} +91 87005 71859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+October 2, 2026
+
+Hiring Team\\
+Amazon
+
+\textbf{Re: Data Scientist II, RufusX Science UK}
+
+Dear Hiring Team,
+
+I am applying for the Data Scientist II role in your science team in London. Most of my work has been measuring and improving systems people actually use: predictive models in healthcare, anomaly detection across telecom networks, and lately the evaluation of language model systems in production. The thread is proving whether a model helps before anyone celebrates it.
+
+Amazon is putting conversational AI in front of shoppers at a scale where a small measurement mistake gets expensive quickly, and that is the kind of problem I want to spend my time on. My fiancée lives in Berlin, and we plan to move to London together and settle there long term, so this is a step we are making carefully.
+
+At United Health Group I built automated evaluation pipelines for question answering and summarisation agents, using LLM evaluators and failure detection, which cut human review by 43\%. Earlier I tuned a Random Forest for member risk stratification and lifted AUC from 0.74 to 0.81, and clustered telecom alarms with Sentence-BERT embeddings to find root events.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Watching real students use it keeps me honest about metrics, because either the thing helps someone or it does not. I would be glad to talk about what the team is measuring and where I could help.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

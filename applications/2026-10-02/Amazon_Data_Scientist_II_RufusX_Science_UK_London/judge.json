@@ -1,0 +1,23 @@
+{
+ "criteria": {
+  "tech_stack": 21,
+  "experience": 18,
+  "company_project": 15,
+  "ats_keywords": 10,
+  "credibility": 8
+ },
+ "score": 72,
+ "decision": "maybe",
+ "strengths": [
+  "Python/SQL, A/B testing, statistical modeling and LLM evaluation shown in work",
+  "Shopping-assistant evaluation project matches Rufus domain",
+  "MSc in ML and AI meets degree requirement"
+ ],
+ "gaps": [
+  "No AWS services (S3, Redshift, SageMaker, EMR, Lambda) anywhere; only GCP/Azure",
+  "No causal inference, recommender systems, knowledge graphs or multimodal work",
+  "No large-technology-company data scientist role; experience is at smaller firms and not Amazon scale",
+  "Newest project is a plausible but self-described framework with no scale or outcome numbers",
+  "A/B testing appears mainly in skills list and project, not in role bullets"
+ ]
+}

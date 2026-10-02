@@ -1,0 +1,23 @@
+{
+ "score": 76,
+ "verdict": "good",
+ "matched": [
+  "4+ years ML/data science",
+  "Python",
+  "Time-series forecasting",
+  "Anomaly detection",
+  "AI agents/LLM",
+  "Demand forecasting inventory",
+  "Cloud",
+  "Data pipelines"
+ ],
+ "missing": [
+  "Supply chain/demand planning process depth",
+  "External data source integration",
+  "Pharma datasets",
+  "SAP planning"
+ ],
+ "blockers": [],
+ "reason": "Forecasting, anomaly detection and agents match well; supply chain planning and external data sensing are only partly shown.",
+ "variant": "time-series"
+}

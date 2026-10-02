@@ -1,0 +1,19 @@
+{
+ "score": 72,
+ "verdict": "good",
+ "matched": [
+  "Python",
+  "LLM/RAG hands-on",
+  "AI agents and orchestration",
+  "Git/CI practices",
+  "English"
+ ],
+ "missing": [
+  "Consulting/scale-up environment",
+  "Knowledge graphs/ontologies (plus)",
+  "Junior level (1-2 yrs) far below candidate seniority"
+ ],
+ "blockers": [],
+ "reason": "Requirements all met and exceeded, but this is a junior analyst role.",
+ "variant": "base"
+}

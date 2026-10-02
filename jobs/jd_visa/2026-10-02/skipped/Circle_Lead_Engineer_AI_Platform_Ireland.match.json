@@ -1,0 +1,21 @@
+{
+ "score": 55,
+ "verdict": "partial",
+ "matched": [
+  "LLM agent evals and tracing",
+  "Production agents (LangGraph)",
+  "Eval/observability pipelines",
+  "CI/CD",
+  "Python"
+ ],
+ "missing": [
+  "Ruby on Rails",
+  "Team leadership/management",
+  "Braintrust/LangSmith",
+  "Annotation/labeling workflows",
+  "7+ years software engineering"
+ ],
+ "blockers": [],
+ "reason": "Strong eval/observability match but no people management, no Rails and no named eval frameworks.",
+ "variant": "base"
+}

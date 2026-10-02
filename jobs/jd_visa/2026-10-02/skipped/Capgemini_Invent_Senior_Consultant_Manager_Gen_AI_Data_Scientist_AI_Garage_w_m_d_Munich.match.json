@@ -1,0 +1,20 @@
+{
+ "score": 28,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "GenAI/ML projects",
+  "prototype to production",
+  "quantitative degree"
+ ],
+ "missing": [
+  "very good German required (resume A1)",
+  "AI strategy/consulting experience",
+  "pre-sales offerings"
+ ],
+ "blockers": [
+  "Very good German required; resume shows A1 only"
+ ],
+ "reason": "German proficiency hard blocker despite relevant GenAI/data science skills.",
+ "variant": "base"
+}

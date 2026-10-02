@@ -1,0 +1,20 @@
+{
+ "score": 86,
+ "verdict": "strong",
+ "matched": [
+  "LLMs and API integrations",
+  "LangGraph/LangChain",
+  "Python",
+  "building and evaluating AI solutions",
+  "agentic workflows",
+  "prompt/eval and output validation",
+  "POCs and MVPs"
+ ],
+ "missing": [
+  "TypeScript (only via Next.js mockup work)",
+  "publishing/content-generation domain"
+ ],
+ "blockers": [],
+ "reason": "Near-exact match on LangGraph, agentic workflows, evals and POC-to-production delivery.",
+ "variant": "base"
+}

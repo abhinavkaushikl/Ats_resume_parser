@@ -1,0 +1,21 @@
+{
+ "score": 48,
+ "verdict": "partial",
+ "matched": [
+  "Data Scientist experience",
+  "SQL/Python",
+  "ML and statistical modeling",
+  "A/B testing",
+  "AI in analytics tools (chatbot)"
+ ],
+ "missing": [
+  "Causal inference",
+  "Cohort analysis / marketing measurement",
+  "Randomized controlled trial assessment at scale",
+  "Audience segmentation for marketing",
+  "R"
+ ],
+ "blockers": [],
+ "reason": "Solid DS and SQL/Python base, but the role is causal-inference marketing measurement which the resume barely shows.",
+ "variant": "base"
+}

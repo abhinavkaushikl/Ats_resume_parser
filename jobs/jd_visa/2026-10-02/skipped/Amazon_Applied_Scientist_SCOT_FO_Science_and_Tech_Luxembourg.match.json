@@ -1,0 +1,20 @@
+{
+ "score": 25,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "some MILP scheduling exercise",
+  "forecasting"
+ ],
+ "missing": [
+  "PhD / research publications",
+  "large-scale mathematical programming and decomposition",
+  "combinatorial optimization at scale",
+  "optimization solvers"
+ ],
+ "blockers": [
+  "PhD or equivalent research experience"
+ ],
+ "reason": "Operations-research optimization scientist role; resume shows only one small MILP project and no research record.",
+ "variant": "base"
+}

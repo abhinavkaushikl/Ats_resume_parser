@@ -1,0 +1,22 @@
+{
+ "score": 66,
+ "verdict": "reasonable",
+ "matched": [
+  "ML systems",
+  "Python",
+  "LLM eval harnesses",
+  "Prompt/LLM evaluation",
+  "Human-in-the-loop",
+  "Fraud detection project",
+  "Monitoring"
+ ],
+ "missing": [
+  "Team leadership/mentoring",
+  "AML/financial crime domain",
+  "Shadow testing at scale",
+  "Lead-level scope"
+ ],
+ "blockers": [],
+ "reason": "Strong LLM evaluation match, but no AML domain and no demonstrated team leadership for a lead role.",
+ "variant": "base"
+}

@@ -1,0 +1,44 @@
+{
+ "company": "Amazon",
+ "city": "London",
+ "role": "Data Scientist II, RufusX Science UK",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5",
+  "The company name 'Amazon' still appears in the resume - check it."
+ ],
+ "headline": "Data Scientist II",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Data Analyst",
+   "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+   "after": "Tuned a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Analyzed member plan utilization and renewal behavior across individual and child plan segments using BigQuery, building segmentation queries and reporting pipelines that fed downstream analytics and member risk modelling.",
+   "after": "Analyzed member plan utilization and renewal behavior across individual and child plan segments in BigQuery SQL, building segmentation queries and reporting pipelines that fed downstream analytics and member risk modelling."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering stakeholder questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated evaluation benchmarks and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "role": "Senior Machine Learning Engineer",
+   "before": "Built and deployed an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+   "after": "Built an event-correlation engine clustering alarms with Sentence-BERT embeddings and DBSCAN to trace cascading alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+  }
+ ],
+ "apply_url": "https://www.amazon.jobs/en/jobs/10451596/data-scientist-ii-rufusx-science-uk",
+ "listing_url": "https://uk.linkedin.com/jobs/view/data-scientist-ii-rufusx-science-uk-at-amazon-4455794614",
+ "resume": "Amazon_Data_Scientist_II_RufusX_Science_UK_London/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Amazon_Data_Scientist_II_RufusX_Science_UK_London/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Amazon_Data_Scientist_II_RufusX_Science_UK_London/project_brief.md"
+}

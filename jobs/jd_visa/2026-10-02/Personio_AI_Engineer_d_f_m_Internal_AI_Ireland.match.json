@@ -1,0 +1,22 @@
+{
+ "score": 78,
+ "verdict": "good",
+ "matched": [
+  "4+ years production software",
+  "Python",
+  "LangGraph agentic workflows",
+  "RAG pipelines",
+  "Observability and evals",
+  "Docker/CI/CD",
+  "Production deployments"
+ ],
+ "missing": [
+  "AWS",
+  "MCP",
+  "Software engineering (apps/auth) end to end",
+  "React/TypeScript"
+ ],
+ "blockers": [],
+ "reason": "Strong agentic/RAG production fit with minor gaps in AWS, MCP and full application engineering.",
+ "variant": "base"
+}

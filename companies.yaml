@@ -3,6 +3,10 @@
 # only matching titles in the chosen cities and time window. Add or remove slugs freely.
 
 greenhouse:
+  - point72
+  - aisquared
+  - grvty
+  - onestudyteam
   - intercom
   - intercomreferrals
   - awin
@@ -67,6 +71,8 @@ greenhouse:
   - ketryx
 
 lever:
+  - vogo
+  - yuno
   - researchgate
   - mistral
   - vestiairecollective
@@ -92,6 +98,11 @@ lever:
   - palantir
 
 ashby:
+  - limbic
+  - Abound
+  - Clera
+  - "Hippocratic AI"
+  - litellm
   - airapps
   - perplexity
   - featherlessai
@@ -133,6 +144,12 @@ ashby:
   - savvymoney
 
 smartrecruiters:
+  - SIGNASportsUnited
+  - PublicisGroupe
+  - QIMA
+  - Spotcap
+  - HMGroup
+  - Meilleurtaux
   - SIXT
   - smartrecruiters
   - AntonPaar1
@@ -152,6 +169,11 @@ smartrecruiters:
   - Endava
 
 workable:
+  - integrant
+  - inventyou-ab
+  - albi
+  - weekday-1
+  - tiger-analytics
   - enjins
   - unitary
   - huggingface
@@ -159,6 +181,11 @@ workable:
   - quantumloopai
 
 personio:
+  - neoshare
+  - dida
+  - tuev-ai-lab
+  - beroe-inc
+  - agile-robots-se
   - aconium
   - mediaire
   - nia
@@ -176,6 +203,14 @@ personio:
   - feld-m
 
 recruitee:
+  - field33
+  - natuvion
+  - attendi
+  - igh
+  - athora
+  - veneficusbv
+  - investnl
+  - brlriskconsulting
   - kaizo
   - sentiance1
   - adesso1

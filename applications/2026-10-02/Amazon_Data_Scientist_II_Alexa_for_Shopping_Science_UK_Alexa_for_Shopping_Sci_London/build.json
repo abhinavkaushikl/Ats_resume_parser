@@ -1,0 +1,44 @@
+{
+ "company": "Amazon",
+ "city": "London",
+ "role": "Data Scientist II, Alexa for Shopping Science UK",
+ "pages": 2,
+ "warnings": [
+  "Experience bullets reworded: 5",
+  "The company name 'Amazon' still appears in the resume - check it."
+ ],
+ "headline": "Data Scientist II",
+ "current_role_title": "Senior Data Scientist",
+ "experience_edits": [
+  {
+   "role": "Senior Data Scientist",
+   "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+   "after": "Engineered a production multi-agent analytics chatbot in LangGraph for medical plans, answering stakeholder business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+   "after": "Built automated benchmarks and observability pipelines for Question Answering and Summary Agents, scoring generation quality with LLM evaluators, tracing and failure detection, reducing human review by 43%."
+  },
+  {
+   "role": "Senior Data Scientist",
+   "before": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank AARP survey retrieval, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy.",
+   "after": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank survey search results, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy."
+  },
+  {
+   "role": "Data Scientist",
+   "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+   "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, surfacing earlier signals for proactive network planning."
+  },
+  {
+   "role": "Data Analyst",
+   "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+   "after": "Tuned a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+  }
+ ],
+ "apply_url": "https://www.amazon.jobs/en/jobs/10451597",
+ "listing_url": "https://uk.linkedin.com/jobs/view/data-scientist-ii-alexa-for-shopping-science-uk-alexa-for-shopping-science-uk-at-amazon-4455909325",
+ "resume": "Amazon_Data_Scientist_II_Alexa_for_Shopping_Science_UK_Alexa_for_Shopping_Sci_London/Abhinav_Kaushik_Resume.pdf",
+ "cover_letter": "Amazon_Data_Scientist_II_Alexa_for_Shopping_Science_UK_Alexa_for_Shopping_Sci_London/Abhinav_Kaushik_Cover_Letter.pdf",
+ "project_brief": "Amazon_Data_Scientist_II_Alexa_for_Shopping_Science_UK_Alexa_for_Shopping_Sci_London/project_brief.md"
+}

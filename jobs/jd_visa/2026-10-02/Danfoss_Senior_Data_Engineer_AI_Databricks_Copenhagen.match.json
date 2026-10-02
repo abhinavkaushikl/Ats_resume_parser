@@ -1,0 +1,20 @@
+{
+ "score": 70,
+ "verdict": "good",
+ "matched": [
+  "Databricks, Vector Search",
+  "SQL and Python",
+  "ETL pipelines (Airflow, PySpark)",
+  "GenAI",
+  "forecasting",
+  "stakeholder work"
+ ],
+ "missing": [
+  "Unity Catalog/data governance",
+  "platform ownership at scale",
+  "Genie spaces"
+ ],
+ "blockers": [],
+ "reason": "Solid Databricks/SQL/Python/ETL and GenAI fit but no Unity Catalog or governance evidence.",
+ "variant": "base"
+}

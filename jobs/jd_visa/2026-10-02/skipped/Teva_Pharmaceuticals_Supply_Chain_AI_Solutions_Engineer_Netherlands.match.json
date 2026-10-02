@@ -1,0 +1,22 @@
+{
+ "score": 58,
+ "verdict": "partial",
+ "matched": [
+  "Python and analytics",
+  "anomaly detection and KPI monitoring",
+  "AI agents",
+  "demand forecasting",
+  "root-cause analysis automation",
+  "cross-functional work",
+  "MILP exposure",
+  "healthcare/regulated domain"
+ ],
+ "missing": [
+  "SAP IBP / supply planning",
+  "supply chain AI experience",
+  "optimization and planning environments (minimal)"
+ ],
+ "blockers": [],
+ "reason": "Agent plus anomaly-detection fit, but no supply-chain planning or SAP IBP experience.",
+ "variant": "base"
+}

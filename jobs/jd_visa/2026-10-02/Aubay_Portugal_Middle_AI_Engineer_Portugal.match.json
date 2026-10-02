@@ -1,0 +1,17 @@
+{
+ "score": 88,
+ "verdict": "strong",
+ "matched": [
+  "3+ years AI engineering",
+  "LLM tracing and observability",
+  "GenAI/OpenAI",
+  "Production Python",
+  "English"
+ ],
+ "missing": [
+  "Banking/insurance domain (not required)"
+ ],
+ "blockers": [],
+ "reason": "Direct match on every listed requirement including LLM tracing and production Python.",
+ "variant": "base"
+}

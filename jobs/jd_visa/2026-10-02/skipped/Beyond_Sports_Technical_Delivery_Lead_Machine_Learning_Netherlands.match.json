@@ -1,0 +1,21 @@
+{
+ "score": 52,
+ "verdict": "partial",
+ "matched": [
+  "Production ML deployment",
+  "PyTorch",
+  "MLflow and CI/CD",
+  "GCP/Azure",
+  "LSTM sequence models",
+  "Time-series data"
+ ],
+ "missing": [
+  "Leading/mentoring engineering squads (only light evidence)",
+  "Transformers/GNN/diffusion generative models in practice",
+  "On-site Alkmaar",
+  "AWS"
+ ],
+ "blockers": [],
+ "reason": "Good ML production and PyTorch base but the lead role needs squad leadership and generative/sequence modelling not shown.",
+ "variant": "time-series"
+}

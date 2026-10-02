@@ -1,0 +1,21 @@
+{
+ "score": 66,
+ "verdict": "reasonable",
+ "matched": [
+  "Master's in ML/AI",
+  "Python/SQL",
+  "NLP/LLM work",
+  "A/B testing",
+  "ML in production",
+  "GenAI evaluation"
+ ],
+ "missing": [
+  "Causal inference / experimentation at scale",
+  "AWS services (S3, Redshift, SageMaker)",
+  "Recommender systems / knowledge graphs",
+  "Large-tech-company DS role"
+ ],
+ "blockers": [],
+ "reason": "Solid ML, NLP and eval background but no recommender, causal inference or AWS evidence.",
+ "variant": "base"
+}

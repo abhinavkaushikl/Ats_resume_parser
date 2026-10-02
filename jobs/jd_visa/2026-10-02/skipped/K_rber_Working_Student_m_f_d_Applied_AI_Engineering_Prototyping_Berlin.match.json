@@ -1,0 +1,19 @@
+{
+ "score": 30,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "LLM/agents/RAG",
+  "pgvector",
+  "MLflow",
+  "Prototyping"
+ ],
+ "missing": [
+  "Current university enrollment"
+ ],
+ "blockers": [
+  "Working student role requires current university enrollment; resume shows MSc finished 2023 and 8+ yrs experience"
+ ],
+ "reason": "Skills exceed the role but a working-student position requires current enrollment, which the resume does not show.",
+ "variant": "base"
+}

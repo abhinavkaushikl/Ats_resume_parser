@@ -1,0 +1,21 @@
+{
+ "score": 52,
+ "verdict": "partial",
+ "matched": [
+  "3+ years industry",
+  "Master's degree",
+  "ML and statistics",
+  "Production ML models",
+  "Python, forecasting/optimization-adjacent work"
+ ],
+ "missing": [
+  "Ad-tech / bidding / marketing optimization experience",
+  "Algorithm development at millions-of-requests scale",
+  "Operations research / optimization depth",
+  "Data structures and algorithms proficiency evidence",
+  "Staff-level scope"
+ ],
+ "blockers": [],
+ "reason": "Master's and production ML fit, but no ad-tech or large-scale algorithm-development evidence for a Senior/Staff scientist role.",
+ "variant": "base"
+}

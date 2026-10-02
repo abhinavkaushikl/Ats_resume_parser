@@ -1,0 +1,23 @@
+{
+ "score": 30,
+ "verdict": "poor",
+ "matched": [
+  "3+ years ML development",
+  "LLMs, RAG, agentic AI",
+  "Python/Git",
+  "NLP and deep learning",
+  "Azure"
+ ],
+ "missing": [
+  "PhD in AI/ML/CS",
+  "Hybrid / mechanistic modelling with domain knowledge",
+  "Food and biobased domain",
+  "Project leadership and research acquisition",
+  "Dutch-language environment (C1 English stated)"
+ ],
+ "blockers": [
+  "PhD required; resume has an MSc only"
+ ],
+ "reason": "Strong ML/LLM skills but a PhD is required and the role is research-project leadership in food science.",
+ "variant": "base"
+}

@@ -1,0 +1,21 @@
+{
+ "score": 15,
+ "verdict": "poor",
+ "matched": [
+  "Production ML systems",
+  "LLMs and ML infra",
+  "CI/experiment tracking (MLflow)"
+ ],
+ "missing": [
+  "Leading a team of ~50 people",
+  "Hiring and developing team leads",
+  "Business cases / senior stakeholder management",
+  "Distributed training of multi-billion parameter models",
+  "Kotlin"
+ ],
+ "blockers": [
+  "Requires large-scale people leadership (~50 reports); no management experience shown"
+ ],
+ "reason": "Head-of-ML leadership role; the resume shows only individual-contributor work.",
+ "variant": "base"
+}

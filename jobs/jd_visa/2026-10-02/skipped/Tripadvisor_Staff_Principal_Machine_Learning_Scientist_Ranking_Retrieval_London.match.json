@@ -1,0 +1,22 @@
+{
+ "score": 35,
+ "verdict": "poor",
+ "matched": [
+  "Master's",
+  "8+ years ML",
+  "Python/PyTorch",
+  "Embeddings and cross-encoder re-ranking",
+  "Spark",
+  "GCP"
+ ],
+ "missing": [
+  "Multi-task ranking (MTL/MMoE)",
+  "Sequential recommendation systems",
+  "Graph neural networks",
+  "Staff/principal technical leadership at millions-of-users scale",
+  "TensorFlow, Ray, AWS"
+ ],
+ "blockers": [],
+ "reason": "Retrieval re-ranking touch only; no recommender, MTL or GNN experience for a staff/principal ranking role.",
+ "variant": "base"
+}

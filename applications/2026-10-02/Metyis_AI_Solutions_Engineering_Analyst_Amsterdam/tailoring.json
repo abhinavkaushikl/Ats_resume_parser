@@ -1,0 +1,76 @@
+{
+ "company": "Metyis",
+ "role": "AI Solutions Engineering Analyst",
+ "city": "Amsterdam",
+ "company_profile": "Metyis is a global firm delivering AI and data, digital commerce and marketing solutions in long-term partnerships with its clients.",
+ "title": "AI Solutions Engineering Analyst",
+ "current_role_title": "Senior AI Engineer",
+ "summary": "AI engineer with 8+ years building AI solutions from prototype to deployment across healthcare, telecom and AIOps, with an MSc in Machine Learning and AI. Works across the full AI stack: data and context foundations, RAG pipelines, prompt and retrieval strategies, LLM agents and orchestration, with automated evaluation, tracing and monitoring, and explains the trade-offs to business stakeholders. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Developed an internal RAG-based Project Discovery Assistant in LangGraph",
+   "new": "Developed an internal RAG-based project discovery assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank",
+   "new": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank survey retrieval in a RAG pipeline, using Databricks notebooks and Vector Search for embeddings and retrieval, improving question-answering accuracy."
+  },
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph for medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated testing and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+  },
+  {
+   "original": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients",
+   "new": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from business requirements, with 7 moving into production or paid client work."
+  }
+ ],
+ "project": {
+  "name": "Enterprise Knowledge Retrieval Assistant",
+  "bullets": [
+   "Built a retrieval-augmented assistant over scattered internal documents for client operations teams, combining embeddings, a cross-encoder re-ranker and prompt templates per use case.",
+   "Tested retrieval and answer quality against labelled question sets with LLM judges, documented the prompts and findings, and deployed it behind a Python API with usage monitoring."
+  ],
+  "technologies": [
+   "Python",
+   "RAG",
+   "LangGraph",
+   "Embeddings",
+   "pgvector",
+   "Prompt Engineering",
+   "FastAPI",
+   "Git"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the AI Solutions Engineering Analyst role in Amsterdam. My work has been exactly the stack described in the posting: data and knowledge foundations, RAG pipelines, prompts and context strategies, and agents that have to keep working once a client depends on them. I have built these from first prototype through to deployment.",
+   "A partnership model is what interests me here, because the AI problems worth solving usually sit inside someone else's operations and need patience to understand. I have worked that way with clients across three regions. My fiancée lives in Berlin, and we plan to move to Amsterdam together and settle there long term, so I am looking for somewhere to stay and grow.",
+   "Two things I could contribute from day one. I developed an internal RAG assistant in LangGraph that reached a 90% match rate against existing organizational solutions, and I built automated testing and observability for question answering agents with LLM evaluators, reducing manual review by 43%. I also prototyped 15+ client AI applications, 7 of which became real work.",
+   "In my own time I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It is a reminder that an AI solution is only good if a non-technical person can rely on it. I would be glad to talk about the use cases your team is taking on next."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "AI solutions",
+  "RAG",
+  "LLMs",
+  "prompt engineering",
+  "context strategies",
+  "AI agents",
+  "orchestration workflows",
+  "knowledge bases",
+  "data quality",
+  "Python",
+  "Git",
+  "prototyping to deployment",
+  "monitoring",
+  "knowledge graphs",
+  "documentation"
+ ],
+ "experience_variant": "base"
+}

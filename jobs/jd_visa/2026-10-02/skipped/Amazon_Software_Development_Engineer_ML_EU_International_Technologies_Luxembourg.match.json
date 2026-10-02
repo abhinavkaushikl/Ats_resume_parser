@@ -1,0 +1,20 @@
+{
+ "score": 25,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "PyTorch",
+  "MLOps",
+  "NLP"
+ ],
+ "missing": [
+  "Graduated within last 24 months / graduating soon",
+  "CS fundamentals (DSA, OOD) not shown",
+  "Entry-level role"
+ ],
+ "blockers": [
+  "Recent-graduate requirement (graduated 2017/2023)"
+ ],
+ "reason": "Early-career new-grad role requiring recent graduation; candidate is a senior, not eligible.",
+ "variant": "base"
+}

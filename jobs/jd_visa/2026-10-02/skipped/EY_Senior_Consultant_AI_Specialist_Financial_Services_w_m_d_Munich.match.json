@@ -1,0 +1,21 @@
+{
+ "score": 22,
+ "verdict": "poor",
+ "matched": [
+  "GenAI/LLM",
+  "ML deployment and monitoring",
+  "cloud data engineering",
+  "MLOps",
+  "fraud detection project"
+ ],
+ "missing": [
+  "German C1 required (resume A1)",
+  "consulting/AI strategy",
+  "financial services domain"
+ ],
+ "blockers": [
+  "German C1 required; resume shows A1"
+ ],
+ "reason": "German C1 hard blocker despite strong GenAI/ML delivery match.",
+ "variant": "base"
+}

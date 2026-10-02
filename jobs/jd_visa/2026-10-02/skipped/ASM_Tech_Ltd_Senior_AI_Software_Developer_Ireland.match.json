@@ -1,0 +1,23 @@
+{
+ "score": 55,
+ "verdict": "partial",
+ "matched": [
+  "Python",
+  "SQL",
+  "REST APIs",
+  "LLM evaluation",
+  "prompt engineering",
+  "workflow automation",
+  "CI/CD",
+  "Unix"
+ ],
+ "missing": [
+  "Java",
+  "JavaScript/Android/Chrome extension/Firebase",
+  "Oracle",
+  "general web/mobile software development background"
+ ],
+ "blockers": [],
+ "reason": "Strong Python/SQL/LLM-eval match but the role is a general Java/JS/Android software developer role the resume does not show.",
+ "variant": "base"
+}

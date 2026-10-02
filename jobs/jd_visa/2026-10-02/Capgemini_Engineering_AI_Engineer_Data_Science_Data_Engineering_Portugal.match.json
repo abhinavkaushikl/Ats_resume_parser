@@ -1,0 +1,21 @@
+{
+ "score": 82,
+ "verdict": "good",
+ "matched": [
+  "Python",
+  "SQL and data pipelines",
+  "ML in production",
+  "MLOps/CI/CD",
+  "GCP/BigQuery",
+  "Telecom domain",
+  "Data science + data engineering background",
+  "Master's degree"
+ ],
+ "missing": [
+  "Deep GCP cloud-native architecture",
+  "Data governance/security specifics"
+ ],
+ "blockers": [],
+ "reason": "Strong fit: telecom ML, pipelines, MLOps and GCP experience match nearly every requirement.",
+ "variant": "base"
+}

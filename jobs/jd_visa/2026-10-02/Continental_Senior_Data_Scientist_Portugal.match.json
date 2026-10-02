@@ -1,0 +1,20 @@
+{
+ "score": 80,
+ "verdict": "good",
+ "matched": [
+  "4+ yrs data science",
+  "Python, SQL",
+  "ML, deep learning, time-series",
+  "Airflow, MLOps, model deployment",
+  "Cloud/big data (Databricks, GCP, Spark)",
+  "Dashboarding (Power BI)",
+  "Mentoring/POC leadership"
+ ],
+ "missing": [
+  "Agile methods (Scrum/Kanban) not stated",
+  "Automotive/fleet mobility domain"
+ ],
+ "blockers": [],
+ "reason": "Strong match on classical ML, time-series, MLOps and Python/SQL; minor gaps in agile and domain.",
+ "variant": "base"
+}

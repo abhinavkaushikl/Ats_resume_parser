@@ -1,0 +1,21 @@
+{
+ "score": 12,
+ "verdict": "poor",
+ "matched": [
+  "PyTorch usage",
+  "Hugging Face Transformers"
+ ],
+ "missing": [
+  "C++ programming",
+  "Multithreading/thread-safe code",
+  "Compilers and data structures",
+  "Distributed DL framework internals",
+  "HPC/performance optimization"
+ ],
+ "blockers": [
+  "C++ required, none shown",
+  "Different field (framework/compiler engineering)"
+ ],
+ "reason": "Low-level C++ framework and compiler engineering role, very different from the candidate's applied ML work.",
+ "variant": "base"
+}

@@ -1,0 +1,24 @@
+{
+ "score": 35,
+ "verdict": "poor",
+ "matched": [
+  "Master's in quantitative field",
+  "3+ years data science/analytics",
+  "Python",
+  "Power BI listed as skill",
+  "Stakeholder collaboration",
+  "Anomaly detection"
+ ],
+ "missing": [
+  "Current residency in the Netherlands (required)",
+  "Strong Power BI dashboard expertise (only listed, experience is QlikSense)",
+  "AML / transaction monitoring domain",
+  "OOP/software engineering best practice evidence"
+ ],
+ "blockers": [
+  "Requires current residency in the Netherlands; resume is India-based",
+  "Fixed-term contract not suited to relocation"
+ ],
+ "reason": "Reasonable analytics/Python fit, but required current Netherlands residency and Power BI-centric dashboard work are not shown.",
+ "variant": "base"
+}

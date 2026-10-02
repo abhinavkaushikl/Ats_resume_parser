@@ -1,0 +1,22 @@
+{
+ "score": 35,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "LangChain/LangGraph",
+  "RAG",
+  "LLMOps",
+  "Docker/Kubernetes",
+  "Azure/GCP"
+ ],
+ "missing": [
+  "Very good German (resume A1)",
+  "Supply chain / consulting experience",
+  "n8n/Make.com, Microsoft 365/Power Platform integration"
+ ],
+ "blockers": [
+  "Very good German required; resume shows A1"
+ ],
+ "reason": "Strong GenAI stack fit but a required very good German level is not shown.",
+ "variant": "base"
+}

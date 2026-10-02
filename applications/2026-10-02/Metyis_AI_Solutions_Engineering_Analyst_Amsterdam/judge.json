@@ -1,0 +1,22 @@
+{
+ "criteria": {
+  "tech_stack": 25,
+  "experience": 21,
+  "company_project": 18,
+  "ats_keywords": 12,
+  "credibility": 9
+ },
+ "score": 85,
+ "decision": "shortlist",
+ "strengths": [
+  "RAG, LangGraph, LLM agents and eval shown",
+  "Prompt/retrieval project aligned with the role"
+ ],
+ "gaps": [
+  "Git and prompt engineering missing from skills list",
+  "Prompt documentation and knowledge-sharing work not evidenced in roles",
+  "Seniority far above a junior 1-2 year role",
+  "Consulting stakeholder translation thin",
+  "Monitoring of AI solutions limited to evaluators"
+ ]
+}

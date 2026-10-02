@@ -1,0 +1,2972 @@
+[
+ {
+  "company": "Clera",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Scalable GmbH",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "sumup",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "supermodular.ai",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Clera",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Scalable GmbH",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "supermodular.ai",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "none",
+  "names": [],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Körber",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "exact",
+  "names": [
+   "Körber AG"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "Bayer",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "exact",
+  "names": [
+   "Bayer AG"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "Otera",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "PPRO",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "EY",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "T-Systems International",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "exact",
+  "names": [
+   "T-Systems International GmbH"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "Accenture DACH",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "XFT GmbH",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "team.blue",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Shine",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "FLEX Capital",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Test AG 2019",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Taktile",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Zalando",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "exact",
+  "names": [
+   "Zalando SE"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "Annapurna",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "sennder",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "MHP – A Porsche Company",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Amazon Music",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "candidate",
+  "names": [
+   "Amazon Deutschland Services GmbH",
+   "amazon logistik achim"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "Atlantic",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "GEMA",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Personio",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "exact",
+  "names": [
+   "Personio GmbH"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "DRIVE Consulting",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "thinkcell",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "JetBrains",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Airteam Aerial Intelligence",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "BE Consultancy Group",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "All European Careers",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "candidate",
+  "names": [
+   "All for One Group AG"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "Zero to One Search / Recruitment Agency",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "SoTalent",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Stiftung Warentest",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Domino Data Lab",
+  "city": "Berlin",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Slalom",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Women Building Bio",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "PPRO",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "EY",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "NVIDIA",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "osapiens",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "celver AG",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "TRUSTEQ GmbH",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "valantic",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Deloitte",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "candidate",
+  "names": [
+   "Deloitte GmbH Wirtschaftsprüfungsgesellschaft"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "Amazon Web Services (AWS)",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "candidate",
+  "names": [
+   "Amazon Deutschland Services GmbH",
+   "amazon logistik achim"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "Avanade",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "MHP – A Porsche Company",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "BMW Group",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "exact",
+  "names": [
+   "BMW AG"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "Personio",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "exact",
+  "names": [
+   "Personio GmbH"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "Accso",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Capgemini Invent",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Skaylink",
+  "city": "Munich",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Vrije Universiteit Amsterdam (VU Amsterdam)",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Haystack",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Accenture the Netherlands",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "candidate",
+  "names": [
+   "Accenture B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Devoteam",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "That Recruitment Company",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Metyis",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Metyis B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Wypoon Technologies",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Wypoon Technologies B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Netflix",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Netflix International B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "PwC Nederland",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Adyen",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Adyen N.V.",
+   "Adyen Netherlands B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "JetBrains",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "JetBrains N.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Booking.com",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Booking.com B.V.",
+   "Booking.com Holding",
+   "Booking.com International B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "McKinsey & Company",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "McKinsey & Company Netherlands"
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Datacation",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Datacation B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Xebia",
+  "city": "Amsterdam",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Xebia Nederland B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Accenture Nordics",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "candidate",
+  "names": [
+   "Accenture A/S"
+  ],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "Online Minds",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "BCG X",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "Nykredit",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "Ramboll",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "exact",
+  "names": [
+   "Rambøll Danmark A/S"
+  ],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "Dalux",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "Lundbeck",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "Twoday",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "DTU - Technical University of Denmark",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "Better Collective",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "exact",
+  "names": [
+   "Better Collective ApS"
+  ],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "Danske Bank",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "exact",
+  "names": [
+   "Danske Bank A/S"
+  ],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "Danfoss",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "exact",
+  "names": [
+   "DANFOSS A/S"
+  ],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "Pandora",
+  "city": "Copenhagen",
+  "register": "DK",
+  "official": true,
+  "label": "SIRI fast-track certified",
+  "match": "exact",
+  "names": [
+   "Pandora A/S"
+  ],
+  "source": "https://www.nyidanmark.dk/en-GB/Words%20and%20Concepts%20Front%20Page/SIRI/Certified%20companies"
+ },
+ {
+  "company": "ByteDance",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "none",
+  "names": [],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Accenture UK & Ireland",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "Accenture (UK) Limited",
+   "Accenture Song Brand UK Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Sky",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "Sky UK Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Waymo",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "Waymo UK Ltd"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Isomorphic Labs",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "Isomorphic Labs Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Wayve",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "Wayve Technologies Ltd"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "StackAdapt",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "StackAdapt UK Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Wave Mobile Money",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "WAVE PHARMA LIMITED",
+   "WAVE PHOTONICS LTD",
+   "WAVE Trauma Centre",
+   "Wave Creators Limited",
+   "Wave Direct Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Harnham",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "Harnham Search and Selection Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Wise",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "UK Wise Group Ltd",
+   "WISE"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Thomson Reuters",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "Thomson Bethune Ltd",
+   "Thomson Dental Care Limited",
+   "Thomson Foundation",
+   "Thomson Gray Ltd",
+   "Thomson House School"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Netcompany",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "Netcompany UK Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Humand Talent",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "none",
+  "names": [],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Amazon",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "Amazon Charitable Trust",
+   "Amazon Filters Ltd",
+   "Amazon UK Services Ltd"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Tripadvisor",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "TripAdvisor Ltd"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "ŌURA",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "none",
+  "names": [],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Nicholson Glover",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "NICHOLSON HOUSE LISBURN LTD",
+   "NICHOLSON NAIRN ARCHITECTS",
+   "Nicholson & Co. Ltd",
+   "Nicholson Search and Selection Ltd",
+   "Nicholson-Smith Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Moonpig",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "Moonpig.com Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Solvo.ai",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "Solvo.ai Ltd."
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Fireworks AI",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "none",
+  "names": [],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Cognizant",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "Cognizant Business Logics Limited",
+   "Cognizant Worldwide Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Capgemini Invent",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "Capgemini UK PLC"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Cloudflare",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "Cloudflare Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Dataiku",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "Dataiku Ltd"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "microTECH Global LTD",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "Microtech MCR Limited",
+   "Microtech Support Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Reply",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "Reply Limited"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "G-Research",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "none",
+  "names": [],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "JPMorganChase",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "none",
+  "names": [],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "James Adams",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "candidate",
+  "names": [
+   "JAMES ALLAN & SONS SCOTLAND LTD",
+   "JAMES FREW LTD",
+   "JAMES KIDS HOME LIMITED",
+   "JAMES LEWIS LTD",
+   "JAMES NAIL LIMITED T/a J & Co Nail Bar"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "Dex",
+  "city": "London",
+  "register": "UK",
+  "official": true,
+  "label": "UK sponsor register",
+  "match": "exact",
+  "names": [
+   "DEX INTERNATIONAL LIMITED"
+  ],
+  "source": "https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers"
+ },
+ {
+  "company": "GamblingCareers.com",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Soletanche Freyssinet",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "VistaCreate",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "VINCI",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Kech Development",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "King",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "AstraZeneca",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Universia España",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "COSMO CONSULT",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Accenture España",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "OneSpan",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "SEREM Consultoría Empresarial",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "UL Solutions",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "team.blue",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "eDreams ODIGEO",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "exact",
+  "names": [
+   "eDreams ODIGEO",
+   "edreams odigeo"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/spain.json"
+ },
+ {
+  "company": "VINCI Energies",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "h&k / Smart Tech. Human Touch",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Bending Spoons",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "BCNC GROUP",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Product Madness 📱🎮",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "DiR Corporate",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Domino Data Lab",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Zurich Insurance",
+  "city": "Barcelona",
+  "register": "ES",
+  "official": false,
+  "label": "known sponsor list (Spain)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "TaskVerse",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Mecklenburgische Versicherungs-Gesellschaft a. G.",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "SEW Eurodrive",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "CGI",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Technische Hochschule Augsburg",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "candidate",
+  "names": [
+   "Technische Universität München (TUM)"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "EY",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "SPRYFOX",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "team.blue",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Privatmolkerei Bauer GmbH & Co KG",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Thryving Women in Tech",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "THRYVE",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Luxoft Germany",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Deloitte",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "candidate",
+  "names": [
+   "Deloitte GmbH Wirtschaftsprüfungsgesellschaft"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/germany.json"
+ },
+ {
+  "company": "SciPro",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "hyrUP GmbH",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Leibniz-Rechenzentrum",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "adesso SE",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Accso",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "4flow",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "develop",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "NeuralAgent",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "EVI Energieversorgung Hildesheim GmbH & Co. KG",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "REPA",
+  "city": "Germany",
+  "register": "DE",
+  "official": false,
+  "label": "known sponsor list (Germany)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Agria",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Embark Studios",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Ericsson",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Sopra Steria",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Neo4j",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "ElevenLabs",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Arm",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "GlobalLogic",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Northmill Bank",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Viaplay Group",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Knightec Group",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Maandag Nordic",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Forefront",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Telavox",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Hexagon Manufacturing Intelligence",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Softronic",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "AI Sweden",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Amazon Web Services (AWS)",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Jobgether",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Danske Bank",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Hair Hut",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Databricks",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Black Sheep Recruitment Sweden",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Uppsala universitet (Uppsala University)",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "King",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "exact",
+  "names": [
+   "King"
+  ],
+  "source": "https://github.com/SiaExplains/visa-sponsorship-companies/blob/main/countries/sweden.json"
+ },
+ {
+  "company": "Uppsala University",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "H&M",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "BearingPoint",
+  "city": "Sweden",
+  "register": "SE",
+  "official": false,
+  "label": "known sponsor list (Sweden)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "PromptHeroes.ai",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "MACEE",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Macee B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Kramp",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "candidate",
+  "names": [
+   "Kramp Groep B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Jobster",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Sogelink Group",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Hexagon Manufacturing Intelligence",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "ilionx",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "IlionX Group B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Datacation",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Datacation B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Lely",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Lely International N.V.",
+   "Lely Nederland N.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "SurePay",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "SurePay B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Capgemini Engineering",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "candidate",
+  "names": [
+   "Capgemini Nederland B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Dustin",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Dustin Netherlands B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "4Dotnet",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "4DotNet B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Booston.io",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Teva Pharmaceuticals",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "candidate",
+  "names": [
+   "Teva Pharmaceuticals Europe B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Wiraa",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Beyond Sports",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Beyond Sports B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "bol",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "candidate",
+  "names": [
+   "Bol Accountants B.V.",
+   "Bol.com B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Univé Zuid-Nederland",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "candidate",
+  "names": [
+   "Univé Dichtbij Organisatie B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "RebelsAI",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "adesso Netherlands",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Veldsink Groep",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Scan Sys",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "candidate",
+  "names": [
+   "Scan Modul B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Doghouse Recruitment",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "none",
+  "names": [],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Wageningen University & Research",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "candidate",
+  "names": [
+   "Wageningen Universiteit/ Wageningen University"
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Xebia",
+  "city": "Netherlands",
+  "register": "NL",
+  "official": true,
+  "label": "IND recognised sponsor",
+  "match": "exact",
+  "names": [
+   "Xebia Nederland B.V."
+  ],
+  "source": "https://ind.nl/en/public-register-recognised-sponsors/public-register-regular-labour-and-highly-skilled-migrants"
+ },
+ {
+  "company": "Luminor Group",
+  "city": "Estonia",
+  "register": "EE",
+  "official": false,
+  "label": "known sponsor list (Estonia)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Glia",
+  "city": "Estonia",
+  "register": "EE",
+  "official": false,
+  "label": "known sponsor list (Estonia)",
+  "match": "exact",
+  "names": [
+   "glia"
+  ],
+  "source": "https://relocate.me/companies-hiring/glia"
+ },
+ {
+  "company": "Zendesk",
+  "city": "Estonia",
+  "register": "EE",
+  "official": false,
+  "label": "known sponsor list (Estonia)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Jobgether",
+  "city": "Estonia",
+  "register": "EE",
+  "official": false,
+  "label": "known sponsor list (Estonia)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Gauss & Neumann",
+  "city": "Estonia",
+  "register": "EE",
+  "official": false,
+  "label": "known sponsor list (Estonia)",
+  "match": "none",
+  "names": [],
+  "source": ""
+ },
+ {
+  "company": "Accenture UK & Ireland",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "candidate",
+  "names": [
+   "Accenture Global Solutions Limited",
+   "Accenture International Limited",
+   "Accenture Limited"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "ASM Tech Ltd",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "exact",
+  "names": [
+   "ASM Tech Ltd"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Reperio Human Capital",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "The Coca-Cola Company",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "candidate",
+  "names": [
+   "THE CHINA KING LTD",
+   "THE CULTURED FOOD COMPANY LIMITED",
+   "THE LEFT BANK BISTRO LIMITED",
+   "THE LITTLE PETER AFTER SCHOOL  LIMITED",
+   "THE LUXURY & CLASSIC MOTOR COMPANY LIMITED"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "ElevenLabs",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Analog Devices",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "exact",
+  "names": [
+   "Analog Devices International Unlimited Company"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Amazon Web Services (AWS)",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "candidate",
+  "names": [
+   "Amazon Data Services Ireland Limited",
+   "Amazon Development Centre Ireland Limited",
+   "Amazon Ireland Support Services Limited",
+   "Amazon Web Services EMEA SARL"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Docusign",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "candidate",
+  "names": [
+   "DocuSign International (EMEA) Limited"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Sabeo",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "UL Solutions",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Taktile",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Intel",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "exact",
+  "names": [
+   "Intel Ireland Limited"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "nineDots.io",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Methodius IT Recruitment",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Amazon",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "candidate",
+  "names": [
+   "Amazon Data Services Ireland Limited",
+   "Amazon Development Centre Ireland Limited",
+   "Amazon Ireland Support Services Limited",
+   "Amazon Web Services EMEA SARL"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Jobgether",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Sun Life",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "candidate",
+  "names": [
+   "Sun & Moon Ltd",
+   "Sun Life Information Services Ireland Limited"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Workday",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "exact",
+  "names": [
+   "Workday Limited"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Qualcomm",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Personio",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "exact",
+  "names": [
+   "Personio Group SE"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "E-Frontiers",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "CareerWise Recruitment",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Salesforce",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "RECRUITERS",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "none",
+  "names": [],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Vantage",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "candidate",
+  "names": [
+   "Vantage Resources Limited"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Circle",
+  "city": "Ireland",
+  "register": "IE",
+  "official": true,
+  "label": "Irish employment permits issued",
+  "match": "candidate",
+  "names": [
+   "Circle Internet Financial Trading Company Limited",
+   "Circle K Ireland Energy Limited",
+   "Circle K Procurement and Brands Limited"
+  ],
+  "source": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/statistics/"
+ },
+ {
+  "company": "Mars Shot - Redefining Limits",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Capgemini Engineering",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "ElevenLabs",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Devoteam",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Deloitte",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "candidate",
+  "names": [
+   "Deloitte Technology, S.A."
+  ],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "BMC Software",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Aubay Portugal",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "InnoTech",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "ISS Tech Team",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "NuroTrace",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Wire IT",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Vantiva",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "EY",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Hays",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "SGI",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Neotalent Conclusion",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Decskill",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Continental",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "candidate",
+  "names": [
+   "CONTINENTAL SOLUTION CENTER PORTUGAL, UNIPESSOAL LDA",
+   "Continental Engineering Services Portugal Unipessoal Lda."
+  ],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Jobgether",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "GRiT Solutions",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "SPD Technology",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "KCS iT",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Zendesk",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "McKinsey & Company",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "CodeWin",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Euphoric",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Inoweiser",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Iterable",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Acuity Analytics",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ },
+ {
+  "company": "Circle",
+  "city": "Portugal",
+  "register": "PT",
+  "official": true,
+  "label": "Portugal Tech Visa certified",
+  "match": "none",
+  "names": [],
+  "source": "https://www.iapmei.pt/pt/saber-mais/empreendedorismo-e-inovacao/empreendedorismo/tech-visa/"
+ }
+]

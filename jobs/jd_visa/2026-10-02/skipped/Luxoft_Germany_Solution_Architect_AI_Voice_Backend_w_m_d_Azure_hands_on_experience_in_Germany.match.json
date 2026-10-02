@@ -1,0 +1,20 @@
+{
+ "score": 38,
+ "verdict": "poor",
+ "matched": [
+  "LLM/RAG/agentic production systems",
+  "Terraform, CI/CD",
+  "Azure, Cosmos DB, Kubernetes",
+  "Technical leadership of delivery"
+ ],
+ "missing": [
+  "5+ yrs as Solution/Enterprise Architect",
+  "Deep Azure (AKS, Azure OpenAI, Managed Identity, Monitor, DevOps)",
+  "Voice/ASR/TTS AI",
+  "Architecture decision records/architecture board",
+  "Automotive domain"
+ ],
+ "blockers": [],
+ "reason": "AI/LLM overlap but role is a senior cloud architect with deep Azure and voice AI the resume does not show.",
+ "variant": "base"
+}

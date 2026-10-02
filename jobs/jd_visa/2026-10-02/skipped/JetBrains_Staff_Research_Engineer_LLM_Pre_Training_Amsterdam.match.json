@@ -1,0 +1,22 @@
+{
+ "score": 25,
+ "verdict": "poor",
+ "matched": [
+  "PyTorch",
+  "Production ML systems",
+  "NLP, Hugging Face",
+  "Kubernetes, CI/CD"
+ ],
+ "missing": [
+  "Distributed training of multi-billion parameter models",
+  "Training LLMs from scratch on GPU cluster",
+  "Strong NLP/transformer theory depth",
+  "Staff-level research engineering",
+  "RLHF, vLLM, Kubeflow"
+ ],
+ "blockers": [
+  "Core requirement of LLM pre-training at scale not shown"
+ ],
+ "reason": "Pre-training research role; resume shows applied LLM/RAG work but no foundation-model training.",
+ "variant": "base"
+}

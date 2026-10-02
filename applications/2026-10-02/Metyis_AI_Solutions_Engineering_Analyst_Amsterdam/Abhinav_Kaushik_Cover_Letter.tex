@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Metyis}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+AI Solutions Engineering Analyst\\
+Bengaluru, India \textbar{} +91 87005 71859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+October 2, 2026
+
+Hiring Team\\
+Metyis
+
+\textbf{Re: AI Solutions Engineering Analyst}
+
+Dear Hiring Team,
+
+I am applying for the AI Solutions Engineering Analyst role in Amsterdam. My work has been exactly the stack described in the posting: data and knowledge foundations, RAG pipelines, prompts and context strategies, and agents that have to keep working once a client depends on them. I have built these from first prototype through to deployment.
+
+A partnership model is what interests me here, because the AI problems worth solving usually sit inside someone else's operations and need patience to understand. I have worked that way with clients across three regions. My fiancée lives in Berlin, and we plan to move to Amsterdam together and settle there long term, so I am looking for somewhere to stay and grow.
+
+Two things I could contribute from day one. I developed an internal RAG assistant in LangGraph that reached a 90\% match rate against existing organizational solutions, and I built automated testing and observability for question answering agents with LLM evaluators, reducing manual review by 43\%. I also prototyped 15+ client AI applications, 7 of which became real work.
+
+In my own time I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It is a reminder that an AI solution is only good if a non-technical person can rely on it. I would be glad to talk about the use cases your team is taking on next.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

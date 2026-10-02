@@ -1,0 +1,22 @@
+{
+ "score": 25,
+ "verdict": "poor",
+ "matched": [
+  "GenAI/LLM solutions",
+  "MLOps",
+  "Cloud (Azure/GCP)",
+  "Agentic tools (Claude)",
+  "Degree + 2 yrs"
+ ],
+ "missing": [
+  "German at least C1",
+  "Financial services consulting",
+  "Technology strategy/AI roadmaps",
+  "AWS"
+ ],
+ "blockers": [
+  "German C1 required, resume shows A1"
+ ],
+ "reason": "Skills align but German C1 is mandatory and the role is strategy consulting for financial services.",
+ "variant": "base"
+}

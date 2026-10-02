@@ -1,0 +1,22 @@
+{
+ "score": 62,
+ "verdict": "reasonable",
+ "matched": [
+  "MSc ML",
+  "Python",
+  "models for business application",
+  "agentic AI/LLM",
+  "forecasting/predictive analytics",
+  "Spark",
+  "production systems"
+ ],
+ "missing": [
+  "patents or top-tier publications",
+  "Java/C++",
+  "CV experience",
+  "numerical optimization/algorithms depth"
+ ],
+ "blockers": [],
+ "reason": "Good agentic/ML production fit but no publications and little research profile.",
+ "variant": "base"
+}

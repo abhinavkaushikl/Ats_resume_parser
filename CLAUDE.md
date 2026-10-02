@@ -13,7 +13,8 @@ cover letter for the good matches. Everything runs from this folder with `.venv/
 |---|---|---|
 | `/job-hunt [notes]` | `.claude/skills/job-hunt/` | Daily run, last 24 hours, steps 1-3 below: one tagged list, `jobs/jobs_<date>.md` |
 | `/job-hunt-custom <1d-4w> [notes]` | `.claude/skills/job-hunt-custom/` | Same pipeline over a chosen window (max 672h); skips jobs already in `applications/*/` or `jobs/jd_visa/*/`; lean mode for windows > 7 days |
-| `/tailor-resumes [date]` | `.claude/skills/tailor-resumes/` | Step 4 on its own: resume + cover letter for the jobs whose JD I handed over |
+| `/visa_match_score [date]` | `.claude/skills/visa_match_score/` | Step 4: rates the JDs I handed over - visa tag + honest resume-match score into each JD header, report `jobs/jd_visa/<date>/VISA_MATCH.md`, then **stops**. Builds nothing |
+| `/tailor-resumes [date]` | `.claude/skills/tailor-resumes/` | Step 5: resume + cover letter for **every** JD in `jobs/jd_visa/<date>/`. Gates on nothing - no visa check, no scoring |
 | `/apply-jobs [date] [company\|retry\|accounts]` | `.claude/skills/apply-jobs/` | Step 5, run by hand: applies in Chrome to the prepared `applications/<date>/*/` jobs only; unknown answers -> marked for my review |
 
 Notes after a command (e.g. `only Berlin, Amsterdam`) are applied to the whole run
@@ -33,11 +34,20 @@ Notes after a command (e.g. `only Berlin, Amsterdam`) are applied to the whole r
 
 -- then I collect the JDs of the jobs I want, by hand, and hand them to Claude --
 
-4 tailor         /job-hunt step 4 or /tailor-resumes: JD saved to jobs/jd_visa/<date>/,
-      |          Opus writers -> build_resume.py -> Sonnet judges
-      |          visa or weak jobs only, no score rule       -> applications/<date>/<Company>_<Title>_<City>/
-5 apply (manual) /apply-jobs: Chrome, .env + apply_profile.yaml -> applications/<date>/<job>/application.json
+4 rate (separate) /visa_match_score: for each JD in jobs/jd_visa/<date>/ - visa tag from the JD text
+      |           itself + registers + cache + Google, and an honest 0-100 match of the BASE resume
+      |           (Claude scores it, never job_match.py / Groq). Headers filled in place
+      |           -> jobs/jd_visa/<date>/VISA_MATCH.md, then STOP. I verify it myself
+5 tailor          /tailor-resumes (or /job-hunt step 4c): builds EVERY JD in the folder, no gate
+      |           Opus writers -> build_resume.py -> Sonnet judges
+      |                                                     -> applications/<date>/<Company>_<Title>_<City>/
+6 apply (manual)  /apply-jobs: Chrome, .env + apply_profile.yaml -> applications/<date>/<job>/application.json
 ```
+
+**Rating and building are two different tasks.** `/visa_match_score` decides *whether* a job is worth it
+and stops; `/tailor-resumes` builds what I put in the folder and judges only its own output. The
+`judge.json` score (tailored resume, after the build) and the `match.json` score (base resume, before it)
+are different numbers - never copy one into the other.
 
 Step details live in `.claude/skills/job-hunt/steps/1-...4-*.md` - edit those to change behaviour
 (cities and roles: step 1; visa rules: step 2).
@@ -48,17 +58,25 @@ Step details live in `.claude/skills/job-hunt/steps/1-...4-*.md` - edit those to
 - **One file, one place.** `/job-hunt` writes only `jobs/jobs_<date>.md` - steps 1 and 2 write that same
   file (step 2 fills the Visa column in place). No `JOB_RESULTS.md`, no `_visa.md`, no research file, no
   `gpt_automation/company_list.txt`, no second list anywhere.
-- **No job descriptions, no scoring.** Claude never fetches, saves or scores a JD in the hunt: the list
-  carries the posting URL and I collect the JDs myself. `jd_extractor.py`, `job_match.py`,
-  `unclear_visa_match.py`, `visa_jobs_json.py`, `job_report.py` and `tailor_all.py` are not used.
-- **No Groq.** Nothing in the hunt or the tailoring calls Groq; `GROQ_API_KEY` is no longer needed.
+- **No job descriptions, no scoring in the hunt.** Claude never fetches, saves or scores a JD in
+  `/job-hunt`: the list carries the posting URL and I collect the JDs myself. Scoring happens only in
+  `/visa_match_score`, on the JDs I handed over, and only in Claude's own head.
+  `jd_extractor.py`, `job_match.py`, `unclear_visa_match.py`, `visa_jobs_json.py`, `job_report.py` and
+  `tailor_all.py` are not used anywhere.
+- **No Groq.** Nothing in the hunt, the rating or the tailoring calls Groq; `GROQ_API_KEY` is no longer
+  needed. `job_match.py` is banned because it scores through `ats_tailor/llm.py`, which is a Groq client -
+  `/visa_match_score` scores with Claude instead, using the same rubric (`visa_match_score/scorer.md`).
 - **LinkedIn separate** in the list (Part 2) and in the reply. Never log in.
 - **Visa: keep any hope.** Tag `visa` / `weak` on even slight evidence, `unknown` when nothing is found.
   Drop only an explicit "no", "must already have work rights", or agencies hiding the employer. Evidence
   keywords: visa, relocation, **expat** (expat package, 30% ruling), Blue Card.
-- **Tailoring is on request only.** A JD I hand over is a job I chose: it gets a resume + cover letter if
-  its tag is `visa` or `weak`, with no match-score rule (`Resume match: not scored (job chosen by me)`).
-- **Honest judge.** Never make the judge more lenient, never pick a higher re-score.
+- **Tailoring is on request only, and it gates on nothing.** A JD in `jobs/jd_visa/<date>/` is a job I
+  chose, so it gets a resume + cover letter - whatever its visa tag or match score says. `/tailor-resumes`
+  must not read those header lines to decide, and must not re-check or re-score anything.
+- **Rating stops at the report.** `/visa_match_score` writes `VISA_MATCH.md` and stops: it never starts
+  tailoring, never writes under `applications/`, and never offers to. I verify the report first.
+- **Honest judge, honest scorer.** Never make either more lenient, never pick a higher re-score, and never
+  re-run one to get a nicer number.
 - **Time-series resume version** (`resume_variants.json`, `ats_tailor/variants.py`) for forecasting-heavy
   JDs - real experience the base resume leaves out, not a kinder score.
 - **One copy of each script at a time** (`pgrep -fl <script>`); never overwrite a tagged

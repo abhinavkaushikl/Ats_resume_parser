@@ -1,0 +1,23 @@
+{
+ "score": 25,
+ "verdict": "poor",
+ "matched": [
+  "GenAI/LLM solutions",
+  "MLOps",
+  "Cloud (GCP/Azure)",
+  "Data engineering 2+ years",
+  "Technical degree"
+ ],
+ "missing": [
+  "German at C1 level (resume shows A1)",
+  "Financial services consulting",
+  "AWS",
+  "AI strategy/roadmap consulting",
+  "Workshop leadership with clients"
+ ],
+ "blockers": [
+  "German C1 required; resume shows A1 only"
+ ],
+ "reason": "Skills overlap on GenAI, MLOps and data engineering, but C1 German is a hard requirement the resume does not meet.",
+ "variant": "base"
+}

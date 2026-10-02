@@ -1,0 +1,19 @@
+{
+ "score": 48,
+ "verdict": "partial",
+ "matched": [
+  "Python and ML libraries",
+  "MLflow, Airflow",
+  "Spark, Docker, Kubernetes, Terraform",
+  "Production ML deployment and CI/CD"
+ ],
+ "missing": [
+  "6+ yrs building ML platform infrastructure (feature stores, serving, experimentation)",
+  "Metaflow, Kubeflow, Tecton, Chronon",
+  "Kafka/Flink streaming",
+  "AWS"
+ ],
+ "blockers": [],
+ "reason": "Has MLOps tooling basics but lacks the 6+ years of ML platform infrastructure, streaming and AWS the role requires.",
+ "variant": "base"
+}

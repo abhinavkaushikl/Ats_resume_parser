@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Personio}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Software Engineer - Internal AI\\
+Bengaluru, India \textbar{} +91 87005 71859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+October 2, 2026
+
+Hiring Team\\
+Personio
+
+\textbf{Re: Software Engineer (d/f/m) - Internal AI}
+
+Dear Hiring Team,
+
+I am applying for the Software Engineer role on your Internal AI team. The work you describe is what I already do: production agents and automations owned end to end, from the architecture call through to monitoring them months later. I have built them in Python for operations teams who use them every day, not for a demo.
+
+The idea of a company running its own functions on an internal AI operating system is a rare thing to get to build, and the honest constraint of internal users is what makes it good engineering. My fiancée lives in Berlin, so I would be building my career in the city where we are making our home, which matters to me as much as the role.
+
+Two things I have shipped are close to this. I built a lab-extraction agent in production with Claude Opus 4.7 and Amazon Textract that handles about 1,800 documents and automated the work behind 800 Jira tickets, and evaluation pipelines with LLM evaluators and tracing that cut manual review by 43\%.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It is a good reminder that judgment about where AI helps and where it is overkill matters more than the model you pick. I would be glad to talk about what the team is building next.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

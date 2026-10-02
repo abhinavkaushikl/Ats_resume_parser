@@ -1,0 +1,23 @@
+{
+ "score": 74,
+ "verdict": "good",
+ "matched": [
+  "Python",
+  "FastAPI",
+  "REST APIs",
+  "Docker/Kubernetes",
+  "RAG/vector DBs/LangChain",
+  "OpenAI/Claude integration",
+  "CI/CD and testing",
+  "3+ years"
+ ],
+ "missing": [
+  "Kafka/event-driven architectures",
+  "MCP servers",
+  "Java/Spring Boot",
+  "Portugal-based requirement (candidate in India)"
+ ],
+ "blockers": [],
+ "reason": "Most must-haves shown; missing Kafka, MCP and Java and must already be in Portugal.",
+ "variant": "base"
+}

@@ -50,24 +50,27 @@ mkdir -p applications/<date>
 .venv/bin/python resume_tailor.py --show-base > applications/<date>/_base_resume.txt
 ```
 
-**Which jobs get a resume (my rule).** Look at every JD `.md` file in `jobs/jd_visa/<date>/` **and** in
-`jobs/jd_visa/<date>/skipped/` (not README/SHORTLIST) and read two header lines:
-- **Visa yes or weak yes:** the `Visa / relocation` line starts `Visa: yes` (a `⚠️ weak` flag is fine)
-  and does not say "unclear".
-- **Resume match 50% or more** (the `Resume match` line) - note 50, not the 60% shortlist cut, so 50-59%
-  jobs in `skipped/` count too.
+**Which jobs get a resume: every JD at the top of the folder.** Take every JD `.md` file directly in
+`jobs/jd_visa/<date>/`, excluding `README.md`, `SHORTLIST.md`, `KEPT.md` and `VISA_MATCH.md`. A JD sitting
+there is a job I kept, so it gets a resume.
 
-Tailor only jobs that meet **both**. Jobs below 50% are never tailored.
+**Never descend into the sub-folders.** `skipped/` (rejected by `/visa_match_score` - below the match cut,
+or the JD refuses sponsorship), `no_jd_body/` (no job description to work from) and `deselected/` (I took
+it off the list by hand) are all *out*. Building from them would produce applications I explicitly did not
+want. Count the files first and tell me the number before you start writing.
 
-**JDs I handed over have no score** - they come from `/job-hunt` step 4 (I pick a job from
-`jobs/jobs_<date>.md`, collect its JD myself and give it to you) and their header says
-`Resume match: not scored (job chosen by me)`. Tailor every one of those: I chose the job, so the 50%
-rule does not apply. Their visa line must still start `Visa: yes` (`⚠️ weak` is fine). Skip step 5
-below for them - a hand-over run has no `jobs/visa_jobs_<date>.json` and no `JOB_RESULTS.md`.
+**This skill does not judge whether a job is worth applying to.** Don't read the `Visa / relocation` or
+`Resume match` header lines to decide anything, don't skip a JD for a low score, an `unclear` visa or a
+missing score line, and don't re-check a visa or re-score a resume here. That is `/visa_match_score`'s
+job, I run it first and I verify its report before starting this skill - so by the time you are tailoring,
+the selection is already made. If a JD looks like a bad fit, build it anyway and say so in the final
+reply, in one line.
 
-For each job to tailor, the output folder is `applications/<date>/<file stem>/` (create it). Skip jobs
-whose folder already has `build.json` unless I asked to redo them. Give me a status line: "N jobs to
-tailor (visa confirmed, 50%+)".
+Skip step 5 below unless `jobs/visa_jobs_<date>.json` exists - a hand-over run has no results file and no
+`JOB_RESULTS.md`.
+
+For each job, the output folder is `applications/<date>/<file stem>/` (create it). Skip jobs whose folder
+already has `build.json` unless I asked to redo them. Give me a status line: "N jobs to tailor."
 
 ### 2. Write (writer agents, parallel)
 

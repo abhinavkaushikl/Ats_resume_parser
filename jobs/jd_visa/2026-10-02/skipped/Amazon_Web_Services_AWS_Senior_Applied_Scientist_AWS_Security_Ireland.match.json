@@ -1,0 +1,26 @@
+{
+ "score": 35,
+ "verdict": "poor",
+ "matched": [
+  "Master's degree",
+  "3+ years building ML models for business",
+  "Production ML deployment",
+  "Python",
+  "GenAI applications",
+  "Spark"
+ ],
+ "missing": [
+  "EU Member state national (required)",
+  "6+ years applied research",
+  "Patents/peer-reviewed publications",
+  "Cybersecurity domain",
+  "Petabyte-scale log inference",
+  "AWS (GCP/Azure shown)"
+ ],
+ "blockers": [
+  "Requires EU Member state nationality - not shown",
+  "6+ years applied research and publications not shown"
+ ],
+ "reason": "Skills overlap on GenAI and ML deployment, but required EU nationality, applied-research seniority and publications are not shown.",
+ "variant": "base"
+}

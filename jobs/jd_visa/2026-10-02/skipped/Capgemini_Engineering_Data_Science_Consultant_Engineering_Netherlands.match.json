@@ -1,0 +1,20 @@
+{
+ "score": 35,
+ "verdict": "poor",
+ "matched": [
+  "Data science and AI/ML",
+  "LLMs",
+  "MSc in ML and AI",
+  "Stakeholder communication"
+ ],
+ "missing": [
+  "EU passport holders only",
+  "Manufacturing/R&D scientific computing domain",
+  "Applied mathematics/scientific computing"
+ ],
+ "blockers": [
+  "EU passport only (client screening)"
+ ],
+ "reason": "General data science fit but EU-passport-only restriction and R&D/manufacturing domain gap.",
+ "variant": "base"
+}

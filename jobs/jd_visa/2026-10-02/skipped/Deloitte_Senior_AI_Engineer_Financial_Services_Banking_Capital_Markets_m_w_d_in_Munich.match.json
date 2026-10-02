@@ -1,0 +1,22 @@
+{
+ "score": 30,
+ "verdict": "poor",
+ "matched": [
+  "2+ years AI systems implementation",
+  "NLP, predictive analytics, anomaly detection",
+  "PyTorch, Python",
+  "Agile/project delivery",
+  "Degree in AI/ML"
+ ],
+ "missing": [
+  "German very good in speech and writing (resume shows A1)",
+  "Financial services sector experience",
+  "TensorFlow, R, MATLAB",
+  "Willingness to travel"
+ ],
+ "blockers": [
+  "German required (very good); resume shows A1 only"
+ ],
+ "reason": "Technical match is fine but fluent German is a stated requirement and the resume shows only A1.",
+ "variant": "base"
+}

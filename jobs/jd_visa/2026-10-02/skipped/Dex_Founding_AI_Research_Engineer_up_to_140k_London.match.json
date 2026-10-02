@@ -1,0 +1,21 @@
+{
+ "score": 58,
+ "verdict": "partial",
+ "matched": [
+  "Python",
+  "8+ years ML/NLP/LLM",
+  "retrieval and RAG systems",
+  "production end-to-end ownership",
+  "SQL and vector/NoSQL DBs",
+  "cloud"
+ ],
+ "missing": [
+  "PhD or research-paper implementation / novel research",
+  "long-term memory systems",
+  "real-time screen reasoning",
+  "AWS-style cloud (GCP/Azure shown)"
+ ],
+ "blockers": [],
+ "reason": "Strong LLM/retrieval production background but the role is novel applied research owned end to end, which the resume only partly shows.",
+ "variant": "base"
+}

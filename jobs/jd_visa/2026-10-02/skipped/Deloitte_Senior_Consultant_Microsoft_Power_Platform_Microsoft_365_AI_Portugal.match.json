@@ -1,0 +1,22 @@
+{
+ "score": 8,
+ "verdict": "poor",
+ "matched": [
+  "REST APIs",
+  "Git/CI/CD",
+  "generative AI"
+ ],
+ "missing": [
+  "Power Apps/Power Automate/Dataverse/Power Fx",
+  "C#/.NET or TypeScript",
+  "SharePoint/Teams/M365",
+  "Portuguese",
+  "Copilot Studio"
+ ],
+ "blockers": [
+  "Required Portuguese not shown",
+  "Different field: Power Platform low-code"
+ ],
+ "reason": "Low-code Microsoft Power Platform role, different field from AI/ML engineering.",
+ "variant": "base"
+}

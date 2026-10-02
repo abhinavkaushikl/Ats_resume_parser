@@ -1,0 +1,22 @@
+{
+ "score": 35,
+ "verdict": "poor",
+ "matched": [
+  "MSc in ML",
+  "Python, PyTorch",
+  "A/B testing",
+  "Production ML",
+  "6+ years applied ML"
+ ],
+ "missing": [
+  "Recommender systems and ranking",
+  "Reinforcement learning / bandits",
+  "Multi-objective optimization",
+  "Causal ML",
+  "Publication record",
+  "AWS recommender engines at scale"
+ ],
+ "blockers": [],
+ "reason": "Core recommender, RL/bandit and causal ML expertise are not shown; only generic ML and A/B testing overlap.",
+ "variant": "base"
+}

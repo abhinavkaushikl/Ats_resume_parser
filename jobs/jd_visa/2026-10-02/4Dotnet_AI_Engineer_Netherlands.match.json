@@ -1,0 +1,21 @@
+{
+ "score": 72,
+ "verdict": "good",
+ "matched": [
+  "Python",
+  "LLM/GenAI",
+  "RAG, embeddings, vector DBs",
+  "LangChain",
+  "agents/chatbots",
+  "Azure (GCP/Azure cloud)",
+  "production AI delivery"
+ ],
+ "missing": [
+  "Azure OpenAI / Azure AI Services",
+  "Semantic Kernel",
+  "client-facing consulting evidence"
+ ],
+ "blockers": [],
+ "reason": "Strong GenAI/RAG/agent match; lacks explicit Azure OpenAI and posting is Dutch with no stated language requirement.",
+ "variant": "base"
+}

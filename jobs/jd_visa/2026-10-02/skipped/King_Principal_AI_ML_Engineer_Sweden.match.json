@@ -1,0 +1,20 @@
+{
+ "score": 38,
+ "verdict": "poor",
+ "matched": [
+  "production AI/ML systems with business impact",
+  "A/B testing",
+  "Python",
+  "MLOps and observability"
+ ],
+ "missing": [
+  "causal inference",
+  "personalization and decisioning systems",
+  "experimentation platforms",
+  "principal-level cross-team architecture leadership",
+  "game domain"
+ ],
+ "blockers": [],
+ "reason": "Principal decisioning/causal-inference role; resume shows production ML but no causal inference or personalization.",
+ "variant": "base"
+}

@@ -1,0 +1,22 @@
+{
+ "score": 60,
+ "verdict": "partial",
+ "matched": [
+  "5+ years ML",
+  "Python/PyTorch",
+  "Spark pipelines",
+  "Production ML",
+  "Hugging Face fine-tuning",
+  "LangGraph and LLM evals",
+  "Degree"
+ ],
+ "missing": [
+  "AWS (EMR, SageMaker)",
+  "Differential privacy / anonymization / de-identification",
+  "NER models",
+  "GDPR/Responsible AI"
+ ],
+ "blockers": [],
+ "reason": "Core ML stack matches but AWS and the privacy/anonymization focus are absent.",
+ "variant": "base"
+}

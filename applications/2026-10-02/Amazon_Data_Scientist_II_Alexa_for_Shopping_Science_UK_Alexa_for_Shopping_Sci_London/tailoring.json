@@ -1,0 +1,76 @@
+{
+ "company": "Amazon",
+ "role": "Data Scientist II, Alexa for Shopping Science UK",
+ "city": "London",
+ "company_profile": "Amazon runs an AI-driven shopping assistant that helps customers research, compare and buy products through conversation across text, images and video.",
+ "title": "Data Scientist II",
+ "current_role_title": "Senior Data Scientist",
+ "summary": "Senior data scientist with 8+ years taking machine learning, NLP and LLM systems from analysis into production across healthcare, telecom and AIOps, with an MSc in Machine Learning and AI. Works day to day in Python, SQL and PySpark on statistical modelling, forecasting, anomaly detection and A/B testing, and on benchmarking and evaluation of LLM and retrieval systems that stakeholders act on. Alongside this, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+ "experience_edits": [
+  {
+   "original": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP",
+   "new": "Engineered a production multi-agent analytics chatbot in LangGraph for medical plans, answering stakeholder business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+  },
+  {
+   "original": "Built automated evaluation and observability pipelines for Question Answering",
+   "new": "Built automated benchmarks and observability pipelines for Question Answering and Summary Agents, scoring generation quality with LLM evaluators, tracing and failure detection, reducing human review by 43%."
+  },
+  {
+   "original": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank",
+   "new": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank survey search results, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy."
+  },
+  {
+   "original": "Shipped anomaly detection and demand forecasting on 15+ KPIs",
+   "new": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, surfacing earlier signals for proactive network planning."
+  },
+  {
+   "original": "Optimized a scikit-learn Random Forest classifier for member risk",
+   "new": "Tuned a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+  }
+ ],
+ "project": {
+  "name": "Conversational Shopping Assistant Benchmark",
+  "bullets": [
+   "Built an evaluation benchmark for a conversational retail assistant answering product questions, pairing catalogue retrieval with LLM judges scored against human-labelled answer sets.",
+   "Measured quality, retrieval relevance and failure modes per query type, reporting results through automated analysis notebooks and dashboards used to decide which model variant to ship."
+  ],
+  "technologies": [
+   "Python",
+   "SQL",
+   "LLM Evaluators",
+   "A/B Testing",
+   "Information Retrieval",
+   "Embeddings",
+   "Pandas",
+   "PySpark"
+  ]
+ },
+ "cover_letter": {
+  "greeting": "Dear Hiring Team,",
+  "paragraphs": [
+   "I am applying for the Data Scientist II role in your shopping science team in London. For eight years my work has sat on the measurement side of machine learning: statistical modelling, forecasting and experimentation in telecom and healthcare, and more recently the evaluation of LLM assistants running in production. The thread is simple, I build something and then prove whether it actually works.",
+   "Conversational shopping is where my work has been heading anyway: large unstructured datasets, retrieval, language models, and experiments deciding what ships to customers. The city matters to me as well. My fiancée lives in Berlin, and we plan to move to London together and settle there for the long term, so I am looking for a team to grow with rather than a stop along the way.",
+   "For medical plans I engineered a multi-agent analytics chatbot in LangGraph that answers business questions with PySpark analysis and live charts, cutting manual analysis by 98%. I also built automated evaluation pipelines with LLM evaluators and tracing that reduced human review by 43%. Both were about turning fuzzy quality questions into numbers people trust.",
+   "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Teachers have no patience for a feature that half works, which has taught me to listen first and ship carefully. I would be glad to talk about how I could help measure and improve your shopping assistant."
+  ],
+  "closing": "Sincerely,"
+ },
+ "jd_keywords": [
+  "data analysis",
+  "statistical modeling",
+  "machine learning",
+  "A/B testing",
+  "causal inference",
+  "experimentation",
+  "NLP",
+  "large language models",
+  "information retrieval",
+  "recommender systems",
+  "SQL",
+  "Python",
+  "metrics and dashboards",
+  "GenAI benchmarks",
+  "ETL pipelines"
+ ],
+ "experience_variant": "base"
+}

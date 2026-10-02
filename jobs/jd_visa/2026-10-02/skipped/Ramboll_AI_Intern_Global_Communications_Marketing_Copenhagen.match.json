@@ -1,0 +1,19 @@
+{
+ "score": 20,
+ "verdict": "poor",
+ "matched": [
+  "Hands-on AI/LLM prototyping",
+  "Python"
+ ],
+ "missing": [
+  "Marketing and communications domain",
+  "Internship/early-career level",
+  "Stakeholder coordination across marketing function",
+  "Prompt libraries and enablement material"
+ ],
+ "blockers": [
+  "Intern-level marketing/communications role versus senior engineer career"
+ ],
+ "reason": "Early-careers intern role in marketing communications; far below level and in a different field.",
+ "variant": "base"
+}

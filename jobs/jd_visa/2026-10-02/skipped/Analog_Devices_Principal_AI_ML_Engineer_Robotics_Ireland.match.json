@@ -1,0 +1,21 @@
+{
+ "score": 8,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "PyTorch",
+  "Docker/Kubernetes/CI-CD"
+ ],
+ "missing": [
+  "robotics, robot policies, RL, task planning",
+  "computer vision / sensor fusion",
+  "ROS, simulators",
+  "10+ years robotics with 3+ years leadership"
+ ],
+ "blockers": [
+  "completely different field (robotics)",
+  "principal-level robotics experience"
+ ],
+ "reason": "Principal robotics role; resume has no robotics, CV or RL experience.",
+ "variant": "base"
+}

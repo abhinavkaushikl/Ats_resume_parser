@@ -1,0 +1,21 @@
+{
+ "score": 35,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "Production ML/MLOps",
+  "Cloud (GCP, Azure)",
+  "Code quality, CI/CD"
+ ],
+ "missing": [
+  "Fluent Dutch",
+  "Must live in North Brabant, Limburg or Gelderland",
+  "AWS",
+  "Consulting client experience"
+ ],
+ "blockers": [
+  "Dutch fluency and NL residence required, no relocation provided"
+ ],
+ "reason": "Engineering fit is fine but Dutch fluency and local residency with no relocation make it a poor practical match.",
+ "variant": "base"
+}

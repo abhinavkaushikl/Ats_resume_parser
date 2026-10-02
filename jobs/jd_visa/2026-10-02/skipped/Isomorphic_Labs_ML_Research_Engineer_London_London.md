@@ -1,0 +1,133 @@
+# ML Research Engineer, London
+
+- **Company:** Isomorphic Labs
+- **City:** London
+- **Visa / relocation:** Visa: yes · Relocation: not stated · Source: [UK sponsor register](https://www.gov.uk/government/publications/register-of-licensed-sponsors-workers)
+- **Original listing:** https://uk.linkedin.com/jobs/view/ml-research-engineer-london-at-isomorphic-labs-4402028669
+- **JD source (Playwright):** https://job-boards.greenhouse.io/isomorphiclabs/jobs/5578430004
+- **Fetched:** 2026-10-02 07:59
+- **Resume match:** not scored
+
+## Job description
+
+Back to jobs
+
+# ML Research Engineer, London
+
+London
+
+Isomorphic Labs is applying frontier AI to help unlock deeper scientific insights, faster breakthroughs, and life-changing medicines with an ambition to solve all disease.
+
+The future is coming. A future enabled and enriched by the incredible power of machine learning. A future in which diseases are curtailed or cured starting with better and faster drug discovery.
+
+Come and be part of an interdisciplinary team driving groundbreaking innovation and play a meaningful role in contributing towards us achieving our ambitious goals, while being a part of an inspiring and collaborative culture.
+
+The world we want tomorrow is the one we’re building today. It starts with the culture at this company. It starts with you.
+
+### **About Iso**
+
+Isomorphic Labs (IsoLabs) was launched in 2021 to advance human health by building on and beyond the Nobel-winning AlphaFold system. Since then, our interdisciplinary team of drug discovery experts and machine learning specialists has built powerful new predictive and generative AI models that accelerate scientific discovery at digital speed.
+
+Our name comes from the belief that there is an underlying symmetry between biology and information science. By harnessing AI’s powerful capabilities, we can use it to model complex biological phenomena to help design novel molecules, anticipate how drugs will perform and develop innovative medicines to treat and cure some of the world’s most devastating diseases.
+
+We have built a world-leading drug design engine comprising AI models that are capable of working across multiple therapeutic areas and drug modalities. We are continually innovating on model architecture and developing cutting-edge capabilities to advance rational drug design.
+
+Every day, and with each new breakthrough, we’re getting closer to the promise of digital biology, and achieving our ambitious mission to one day solve all disease with the help of AI.
+
+## **Research Engineering (Machine Learning), London**
+
+**We are looking for Research Engineers with different levels of experience - Mid through to Senior, Staff, Principal or equivalent levels.**
+
+### **Your impact**
+
+This is an exciting opportunity for you to contribute to frontier research at the intersection of AI and drug design.
+
+Working in a highly creative, iterative environment, you will be partnering with scientists and engineers to advance foundational models that will transform the biopharmaceutical world as we know it.
+
+You will draw upon your existing engineering and Machine Learning experience whilst learning from those around you, to apply novel techniques and ideas to newly encountered computational biology and chemistry problems.
+
+### **What you will do**
+
+**Implementation & Optimisation:**
+
+* Translate research concepts into practical implementations by developing and optimising state-of-the-art AI models, and building and maintaining robust codebases, data pipelines, and infrastructure for training and evaluation.
+
+**Experimentation & Evaluation:**
+
+* Design, implement, and run experiments to evaluate the performance and robustness of ML models, using a full spectrum of state-of-the-art machine learning methods. Evaluating, tuning, and maintaining AI/ML models (which includes collecting and preparing data as needed)
+
+**Evaluation & Inference:**
+
+* Implement algorithms and software to analyse and evaluate the performance of AI models.
+* Optimising performance of AI/ML models such as Diffusion models, Transformers, GNNs, leveraging a deep understanding of the AI/ML hardware+software stack
+* Advise on how to bring AI/ML models to production and/or integrating them into product offerings, and monitoring and refining their behavior.
+* Developing specialised tools/frameworks/infrastructure to aid in the work above
+
+**Collaboration & Knowledge Sharing:**
+
+* Work closely with research scientists and engineers, contributing to team discussions, sharing knowledge, and actively participating in code reviews to foster a collaborative environment.
+
+**Innovation & Impact:**
+
+* Proactively identify and address technical challenges, stay updated on the latest AI advancements, and focus on developing solutions that enable scaling our wider foundation and applied model platforms.
+* Ability to execute on independent engineering projects and software development towards research goals.
+
+### **Skills and Qualifications**
+
+#### Essential
+
+* Academic Background: Advanced degree (Master’s or PhD) in a highly quantitative field (Computer Science, AI, Physics, Mathematics, etc.) or equivalent practical experience.
+* ML Fundamentals: Deep understanding of machine learning principles and techniques.
+* Framework Expertise: Strong proficiency in deep learning frameworks such as JAX or PyTorch.
+* Modern Architectures: Hands-on experience building and working with modern model architectures (e.g., Transformers, GNNs, Diffusion Models).
+* Full ML Lifecycle: Experience taking models from conception to production (scoping, data analysis, training, debugging, evaluation, benchmarking, and deployment).
+* Engineering Excellence: Excellent software development skills with strong algorithms and data structures fundamentals.
+* Collaboration & Communication: An excellent team player with strong written and verbal communication skills, able to collaborate seamlessly in a cross-disciplinary environment.
+* Agency: Self-directed with an ability to navigate ambiguity, propose and own complex projects, learn the necessary context, and readily adapt to new domains and developments.
+
+**Nice to have**
+
+* Proven Research Record: A history of scientific contributions (e.g., publications at NeurIPS, ICML, ICLR, CVPR) or significant contributions to state-of-the-art AI models.
+* Scale & Performance: Experience training models across distributed systems (multi-GPU/multi-node) and optimising training and inference performance (e.g., XLA, Triton, CUDA, Pallas).
+* Domain Knowledge: A strong interest in, or knowledge of, biochemistry, computational biology, or drug discovery fundamentals.
+* Industry Experience: Proven track record working in reputable tech companies or research labs.
+* Applied ML: Experience developing models developed for real-world applications.
+* Infrastructure: Solid technical infrastructure knowledge and experience with low-level engineering (e.g., GCP, Kubernetes, Docker)
+
+### **Culture and values**
+
+We are guided by our shared values. It's not about finding people who think and act in the same way. These values help to guide our work and will continue to strengthen it.
+
+**Thoughtful**Thoughtful at Iso is about curiosity, creativity and care. It is about good people doing good, rigorous and future-making science every single day.
+
+**Brave**Brave at Iso is about fearlessness, but it’s also about initiative and integrity. The scale of the challenge demands nothing less.
+
+**Determined**Determined at Iso is the way we pursue our goal. It’s a confidence in our hypothesis, as well as the urgency and agility needed to deliver on it. Because disease won’t wait, so neither should we.
+
+**Together**Together at Iso is about connection, collaboration across fields and catalytic relationships. It’s knowing that transformation is a group project, and remembering that what we’re doing will have a real impact on real people everywhere.
+
+### **Creating an extraordinary company**
+
+We believe that to be successful we need a team with a range of skills and talents. We're building an environment where collaboration is fundamental, learning is shared and every employee feels supported and able to thrive. We value unique experiences, knowledge, backgrounds, and perspectives, and harness these qualities to create extraordinary impact.
+
+We are committed to equal employment opportunities regardless of sex, race, religion or belief, ethnic or national origin, disability, age, citizenship, marital, domestic or civil partnership status, sexual orientation, gender identity, pregnancy or related condition (including breastfeeding) or any other basis protected by applicable law. If you have a disability or additional need that requires accommodation, please do not hesitate to let us know.
+
+### **Hybrid working**
+
+It’s hugely important for us to share knowledge and build strong relationships with each other, and we find it easier to do this if we spend time together in person. This is why we follow a hybrid model, and **would require you to be able to come into the office 3 days a week** (currently Tuesday, Wednesday, and one other day depending on which team you’re in). If you have additional needs that would prevent you from following this hybrid approach, we’d be happy to talk through these if you’re selected for an initial screening call.
+
+**Please note that when you submit an application, your data will be processed in line with our privacy policy.**
+
+>> Click to view other open roles at Isomorphic Labs
+
+Create a Job Alert
+
+Interested in building your career at Isomorphic Labs? Get future opportunities sent straight to your email.
+
+Create alert
+
+## Apply for this job
+
+\*
+
+indicates a required field

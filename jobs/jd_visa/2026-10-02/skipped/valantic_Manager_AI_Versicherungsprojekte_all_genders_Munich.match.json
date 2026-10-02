@@ -1,0 +1,20 @@
+{
+ "score": 25,
+ "verdict": "poor",
+ "matched": [
+  "AI use-case delivery to production",
+  "6+ years in technology",
+  "GenAI/agentic systems"
+ ],
+ "missing": [
+  "Very good German (resume shows A1)",
+  "Insurance domain depth and regulation (VAG, BaFin)",
+  "DACH insurance network",
+  "Manager-level / business development"
+ ],
+ "blockers": [
+  "German required (very good); resume shows A1 only"
+ ],
+ "reason": "Delivery experience fits, but fluent German, insurance domain and DACH network are required and not shown.",
+ "variant": "base"
+}

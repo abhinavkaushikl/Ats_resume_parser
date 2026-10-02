@@ -1,0 +1,50 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\else
+  \usepackage{fontspec}
+  % Kerning off: kerned pairs ("A WS", "T ree") split words for ATS text extraction.
+  \setmainfont{lmroman10-regular}[Extension=.otf, BoldFont=lmroman10-bold,
+    ItalicFont=lmroman10-italic, BoldItalicFont=lmroman10-bolditalic, Kerning=Off]
+\fi
+\usepackage[margin=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Abhinav Kaushik - Cover Letter - Amazon}, pdfauthor={Abhinav Kaushik}}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+\raggedright
+
+\begin{document}
+
+{\Large\bfseries Abhinav Kaushik}\\
+Data Scientist II\\
+Bengaluru, India \textbar{} +91 87005 71859 \textbar{} \href{mailto:aabhinav.kaushik@gmail.com}{aabhinav.kaushik@gmail.com} \textbar{} \href{https://www.linkedin.com/in/abhinav-kaushik10/}{LinkedIn}  
+
+October 2, 2026
+
+Hiring Team\\
+Amazon
+
+\textbf{Re: Data Scientist II, Alexa for Shopping Science UK}
+
+Dear Hiring Team,
+
+I am applying for the Data Scientist II role in your shopping science team in London. For eight years my work has sat on the measurement side of machine learning: statistical modelling, forecasting and experimentation in telecom and healthcare, and more recently the evaluation of LLM assistants running in production. The thread is simple, I build something and then prove whether it actually works.
+
+Conversational shopping is where my work has been heading anyway: large unstructured datasets, retrieval, language models, and experiments deciding what ships to customers. The city matters to me as well. My fiancée lives in Berlin, and we plan to move to London together and settle there for the long term, so I am looking for a team to grow with rather than a stop along the way.
+
+For medical plans I engineered a multi-agent analytics chatbot in LangGraph that answers business questions with PySpark analysis and live charts, cutting manual analysis by 98\%. I also built automated evaluation pipelines with LLM evaluators and tracing that reduced human review by 43\%. Both were about turning fuzzy quality questions into numbers people trust.
+
+Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. Teachers have no patience for a feature that half works, which has taught me to listen first and ship carefully. I would be glad to talk about how I could help measure and improve your shopping assistant.
+
+Sincerely,\\[4pt]
+Abhinav Kaushik
+
+\end{document}

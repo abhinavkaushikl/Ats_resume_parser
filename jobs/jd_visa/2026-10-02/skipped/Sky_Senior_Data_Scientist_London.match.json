@@ -1,0 +1,20 @@
+{
+ "score": 77,
+ "verdict": "good",
+ "matched": [
+  "Forecasting and predictive modelling",
+  "Scikit-learn and PyTorch",
+  "MLOps",
+  "Cloud deployment",
+  "GenAI and agentic workflows",
+  "Clustering"
+ ],
+ "missing": [
+  "Customer analytics (churn, LTV, segmentation)",
+  "Optimisation at scale",
+  "Stakeholder-facing marketing/CRM work"
+ ],
+ "blockers": [],
+ "reason": "Strong ML, forecasting and agent skills; lacks customer-churn/LTV domain work.",
+ "variant": "base"
+}

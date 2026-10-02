@@ -1,0 +1,20 @@
+{
+ "score": 58,
+ "verdict": "partial",
+ "matched": [
+  "Master's in ML",
+  "Python",
+  "Forecasting",
+  "LLMs/information retrieval",
+  "Models for business applications",
+  "Unix"
+ ],
+ "missing": [
+  "Patents or publications at top-tier venues",
+  "Numerical optimization/algorithms depth",
+  "Java/C++"
+ ],
+ "blockers": [],
+ "reason": "Relevant forecasting/IR/LLM experience but no publications or patents and applied-science research depth is not shown.",
+ "variant": "base"
+}

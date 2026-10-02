@@ -1,0 +1,20 @@
+{
+ "score": 45,
+ "verdict": "partial",
+ "matched": [
+  "8+ yrs data science/ML/GenAI",
+  "GenAI document extraction and agentic AI",
+  "Python, SQL",
+  "Healthcare data",
+  "MS in technical field"
+ ],
+ "missing": [
+  "People management of a data science team",
+  "Snowflake, Dataiku",
+  "Director-level business partnering/change management",
+  "Employee benefits/insurance domain"
+ ],
+ "blockers": [],
+ "reason": "Relevant GenAI and healthcare experience but this is a Director role requiring team management that the resume does not show.",
+ "variant": "base"
+}

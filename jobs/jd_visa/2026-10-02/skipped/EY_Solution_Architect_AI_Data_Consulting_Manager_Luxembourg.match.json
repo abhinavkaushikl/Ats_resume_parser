@@ -1,0 +1,22 @@
+{
+ "score": 25,
+ "verdict": "poor",
+ "matched": [
+  "RAG/agents/MLOps knowledge",
+  "Master's degree",
+  "Document extraction"
+ ],
+ "missing": [
+  "Fluent French (mandatory)",
+  "Azure AI stack (Azure OpenAI, Semantic Kernel, Fabric)",
+  "6+ years solution architecture",
+  "Client-facing consulting/CIO engagement",
+  "EU AI regulation knowledge"
+ ],
+ "blockers": [
+  "Fluent French mandatory; not on resume",
+  "Azure-specific architecture role"
+ ],
+ "reason": "French is mandatory and the role is client-facing Azure solution architecture, which the resume does not show.",
+ "variant": "base"
+}

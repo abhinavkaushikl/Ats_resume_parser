@@ -1,0 +1,24 @@
+{
+ "score": 90,
+ "verdict": "strong",
+ "matched": [
+  "LangGraph agents and RAG",
+  "LLM evaluation (LLM evaluators)",
+  "tracing/observability",
+  "Python and APIs",
+  "GCP",
+  "CI/CD",
+  "MLflow",
+  "fine-tuning and NLP",
+  "5+ years DS/ML",
+  "degree"
+ ],
+ "missing": [
+  "Google ADK",
+  "context engineering as formal discipline",
+  "Vertex AI/Kubeflow"
+ ],
+ "blockers": [],
+ "reason": "Direct match on agents, RAG, LLM evals, tracing, GCP and Python.",
+ "variant": "base"
+}

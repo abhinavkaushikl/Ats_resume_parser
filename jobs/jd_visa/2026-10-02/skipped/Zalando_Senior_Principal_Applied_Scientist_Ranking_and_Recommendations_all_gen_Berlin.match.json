@@ -1,0 +1,24 @@
+{
+ "score": 15,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "PyTorch",
+  "A/B testing",
+  "MSc ML"
+ ],
+ "missing": [
+  "PhD or equivalent research record",
+  "recommender systems/ranking",
+  "reinforcement learning/bandits",
+  "multi-objective optimization",
+  "publications",
+  "AWS",
+  "principal-level scientific leadership"
+ ],
+ "blockers": [
+  "Requires PhD-level/principal research record and recommender specialization"
+ ],
+ "reason": "Principal-level recommender/RL research role with no matching experience.",
+ "variant": "base"
+}

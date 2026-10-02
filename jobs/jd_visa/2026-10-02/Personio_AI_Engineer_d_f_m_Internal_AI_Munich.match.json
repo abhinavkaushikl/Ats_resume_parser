@@ -1,0 +1,21 @@
+{
+ "score": 82,
+ "verdict": "good",
+ "matched": [
+  "Python",
+  "LangGraph agentic workflows and RAG",
+  "production AI with testing and observability",
+  "evals",
+  "Docker and CI/CD",
+  "4+ years shipping"
+ ],
+ "missing": [
+  "AWS (GCP/Azure shown)",
+  "MCP",
+  "React/TypeScript internal interfaces",
+  "secure auth handling"
+ ],
+ "blockers": [],
+ "reason": "Strong agentic/RAG/eval match with minor cloud and MCP gaps.",
+ "variant": "base"
+}

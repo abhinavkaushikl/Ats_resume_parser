@@ -1,0 +1,23 @@
+{
+ "score": 15,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "SQL",
+  "Pandas/NumPy",
+  "scikit-learn",
+  "Spark/Hive",
+  "Power BI"
+ ],
+ "missing": [
+  "Very good German",
+  "Automotive/supply chain interest",
+  "Current student status"
+ ],
+ "blockers": [
+  "Very good German required (resume shows A1)",
+  "Working-student role requires enrolled student; candidate is a senior engineer"
+ ],
+ "reason": "Working-student position needing very good German and student status; far below the candidate's level.",
+ "variant": "base"
+}

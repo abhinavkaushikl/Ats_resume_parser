@@ -1,0 +1,22 @@
+{
+ "score": 22,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "PyTorch",
+  "Production ML deployment",
+  "LLM experience"
+ ],
+ "missing": [
+  "PhD or MSc with strong publication record",
+  "Foundation model training data mixtures and scaling laws",
+  "JAX/large-scale deep learning training",
+  "Data-selection algorithms for fine-tuning/RL",
+  "Autonomous driving, C++"
+ ],
+ "blockers": [
+  "PhD or strong publication record required; resume has MSc and no publications"
+ ],
+ "reason": "Foundation-model training research role; resume shows applied LLM engineering, not large-scale training research.",
+ "variant": "base"
+}

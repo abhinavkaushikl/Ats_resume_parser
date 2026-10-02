@@ -1,0 +1,25 @@
+{
+ "score": 58,
+ "verdict": "partial",
+ "matched": [
+  "3+ years production AI/ML",
+  "Python",
+  "LangChain/LangGraph",
+  "RAG systems",
+  "OpenAI API and prompt engineering",
+  "FastAPI",
+  "LLM evaluation",
+  "English"
+ ],
+ "missing": [
+  "ASR engine (Whisper/Azure Speech) and TTS experience",
+  "Azure OpenAI / Azure AI Search / AKS",
+  "Audio processing (pyAudio/librosa)",
+  "Kafka",
+  "Edge inference / quantization",
+  "German (nice to have)"
+ ],
+ "blockers": [],
+ "reason": "RAG, LangGraph and evals match well, but the must-have ASR/TTS speech experience is absent.",
+ "variant": "base"
+}

@@ -1,0 +1,18 @@
+{
+ "score": 58,
+ "verdict": "partial",
+ "matched": [
+  "data pipelines",
+  "SQL/Python",
+  "forecasting",
+  "analytics/reporting",
+  "AI usage"
+ ],
+ "missing": [
+  "graduate-level role vs 8+ years seniority",
+  "no domain/product analytics evidence for consumer apps"
+ ],
+ "blockers": [],
+ "reason": "Generic data-science role aimed at graduates; skills match but level mismatch.",
+ "variant": "base"
+}

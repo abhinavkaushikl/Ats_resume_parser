@@ -1,0 +1,21 @@
+{
+ "score": 22,
+ "verdict": "poor",
+ "matched": [
+  "Machine learning/AI",
+  "Production deployment"
+ ],
+ "missing": [
+  "12+ years experience",
+  "Signal processing and estimation",
+  "Embedded/real-time systems",
+  "Battery/control systems/electrochemistry",
+  "Algorithm architecture leadership"
+ ],
+ "blockers": [
+  "Different field (battery/embedded algorithms)",
+  "12+ years required; resume ~8"
+ ],
+ "reason": "Principal embedded battery algorithm role, a different field and seniority.",
+ "variant": "base"
+}

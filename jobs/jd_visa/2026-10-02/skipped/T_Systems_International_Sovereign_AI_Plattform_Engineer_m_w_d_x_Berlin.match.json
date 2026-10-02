@@ -1,0 +1,22 @@
+{
+ "score": 12,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "Docker/Kubernetes basics",
+  "LLM apps",
+  "Terraform basics"
+ ],
+ "missing": [
+  "German C1 required (resume A1)",
+  "5+ years platform/DevOps/SRE",
+  "Ansible, Helm, GitOps",
+  "GPU platform and model serving",
+  "on-prem/air-gapped deployment"
+ ],
+ "blockers": [
+  "German C1 required; resume shows A1"
+ ],
+ "reason": "German C1 blocker plus a platform/infrastructure role outside the candidate's ML/LLM application experience.",
+ "variant": "base"
+}

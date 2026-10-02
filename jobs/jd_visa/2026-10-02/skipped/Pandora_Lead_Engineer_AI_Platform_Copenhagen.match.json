@@ -1,0 +1,24 @@
+{
+ "score": 50,
+ "verdict": "partial",
+ "matched": [
+  "Python",
+  "Kubernetes/Docker",
+  "Terraform",
+  "MLflow",
+  "Databricks",
+  "LLM APIs/RAG/vector search/embeddings",
+  "CI/CD",
+  "Azure"
+ ],
+ "missing": [
+  "Azure networking (VNet/NSG/private endpoints)",
+  "PostgreSQL",
+  "AI gateway configuration",
+  "2+ years platform tech leadership",
+  "deep Kubernetes/Terraform expert level"
+ ],
+ "blockers": [],
+ "reason": "Overlaps on stack and LLM integration but lacks platform-lead and Azure networking depth.",
+ "variant": "base"
+}

@@ -1,0 +1,23 @@
+{
+ "score": 20,
+ "verdict": "poor",
+ "matched": [
+  "Python/sklearn/PyTorch",
+  "SQL/Spark",
+  "Qlik",
+  "cloud (GCP/Azure)",
+  "AI/DS experience"
+ ],
+ "missing": [
+  "Very good German",
+  "Manager-level consulting experience",
+  "Travel willingness",
+  "Trustworthy AI advisory"
+ ],
+ "blockers": [
+  "Very good German required (resume shows A1)",
+  "Manager/consulting role"
+ ],
+ "reason": "German-language blocker plus a consulting manager role the resume does not reflect.",
+ "variant": "base"
+}

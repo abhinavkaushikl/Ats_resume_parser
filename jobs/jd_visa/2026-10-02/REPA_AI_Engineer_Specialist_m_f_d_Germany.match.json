@@ -1,0 +1,20 @@
+{
+ "score": 80,
+ "verdict": "good",
+ "matched": [
+  "GenAI apps, AI agents, RAG",
+  "Python, SQL, REST APIs",
+  "End-to-end PoC to production",
+  "Master's in ML and AI",
+  "Monitoring/quality of deployed AI",
+  "Git, cloud (Azure/GCP)"
+ ],
+ "missing": [
+  "Azure OpenAI not shown",
+  "GDPR/EU AI Act compliance not shown",
+  "German (plus only)"
+ ],
+ "blockers": [],
+ "reason": "Strong match on RAG, agents, Python and production delivery; minor gaps in Azure OpenAI and EU compliance.",
+ "variant": "base"
+}

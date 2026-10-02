@@ -1,0 +1,1564 @@
+{
+ "4Dotnet_AI_Engineer_Netherlands": {
+  "company": "4Dotnet",
+  "city": "Netherlands",
+  "role": "AI Engineer",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "AI Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated into the existing LIMS application, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions through PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, combining embeddings and semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM, translating client requirements into working solutions, with 7 moving into production or paid client work."
+   }
+  ],
+  "apply_url": "https://www.4dotnet.nl/vacature-ai-engineer",
+  "listing_url": "https://nl.linkedin.com/jobs/view/ai-engineer-at-4dotnet-4471340321",
+  "resume": "4Dotnet_AI_Engineer_Netherlands/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "4Dotnet_AI_Engineer_Netherlands/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "4Dotnet_AI_Engineer_Netherlands/project_brief.md",
+  "hr_score": 85
+ },
+ "Accenture_Nordics_AI_Data_Scientist_Copenhagen": {
+  "company": "Accenture Nordics",
+  "city": "Copenhagen",
+  "role": "AI Data Scientist",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "AI Data Scientist",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Senior Data Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph that answered business stakeholders' questions with PySpark analysis, multi-turn reasoning and live visualisations, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents, testing model output quality with LLM evaluators, tracing and failure detection, reducing human review by 43%."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ network devices with Isolation Forest and Holt-Winters, giving planning teams earlier warning and a basis for proactive decisions."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM, translating business requirements into working analytics and AI solutions, with 7 reaching production or paid work."
+   },
+   {
+    "role": "Data Analyst",
+    "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+    "after": "Tuned a scikit-learn Random Forest model for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold cross-validation, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+   }
+  ],
+  "apply_url": "https://dk.linkedin.com/jobs/view/ai-data-scientist-at-accenture-nordics-4472831618",
+  "listing_url": "https://dk.linkedin.com/jobs/view/ai-data-scientist-at-accenture-nordics-4472831618",
+  "resume": "Accenture_Nordics_AI_Data_Scientist_Copenhagen/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Accenture_Nordics_AI_Data_Scientist_Copenhagen/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Accenture_Nordics_AI_Data_Scientist_Copenhagen/project_brief.md",
+  "hr_score": 85
+ },
+ "Accenture_UK_Ireland_Data_Scientist_Manager_London": {
+  "company": "Accenture UK & Ireland",
+  "city": "London",
+  "role": "Data Scientist (Manager)",
+  "pages": 2,
+  "warnings": [
+   "Experience variant: timeseries",
+   "Experience bullets reworded: 5",
+   "Title 'Data Scientist (Manager)' not used (seniority/fit check); kept 'Senior AI Engineer'."
+  ],
+  "headline": "Senior AI Engineer",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ network devices with Isolation Forest and Holt-Winters, giving planners earlier detection and a defensible basis for capacity decisions."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Contributed to network-device inventory demand forecasting using predictive models to improve planning and reduce revenue-at-risk; targeted a conservative 10% reduction in excess/at-risk inventory and higher ARPU.",
+    "after": "Contributed to network-device inventory demand forecasting with driver-based predictive models to improve planning and reduce revenue-at-risk, targeting a conservative 10% reduction in excess inventory and higher ARPU."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Trained and deployed a production time-series forecasting framework combining LSTM and XGBoost to model call quality, SMS delivery rates and network efficiency metrics for the Delta cellular network.",
+    "after": "Trained and deployed a production time-series forecasting framework combining LSTM and XGBoost to forecast call quality, SMS delivery rates and network efficiency metrics for the Delta cellular network."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Engineered a unified time-series data pipeline in SQL and Python to ingest call logs, SMS delivery statistics and signal metrics across multiple time intervals, joined by user ID and network location for downstream forecasting.",
+    "after": "Engineered a unified multi-source time-series pipeline in SQL and Python, ingesting call logs, SMS delivery statistics and signal metrics across intervals, joined by user ID and network location for forecasting."
+   },
+   {
+    "role": "Data Analyst",
+    "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+    "after": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold cross-validation, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+   }
+  ],
+  "apply_url": "https://uk.linkedin.com/jobs/view/data-scientist-manager-at-accenture-uk-ireland-4472828610",
+  "listing_url": "https://uk.linkedin.com/jobs/view/data-scientist-manager-at-accenture-uk-ireland-4472828610",
+  "resume": "Accenture_UK_Ireland_Data_Scientist_Manager_London/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Accenture_UK_Ireland_Data_Scientist_Manager_London/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Accenture_UK_Ireland_Data_Scientist_Manager_London/project_brief.md",
+  "hr_score": 76
+ },
+ "Amazon_Applied_Scientist_AI_Ops_Integration_Ireland": {
+  "company": "Amazon",
+  "city": "Ireland",
+  "role": "Applied Scientist, AI Ops Integration",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5",
+   "The company name 'Amazon' still appears in the resume - check it."
+  ],
+  "headline": "Applied Scientist",
+  "current_role_title": "Senior Applied Scientist",
+  "experience_edits": [
+   {
+    "role": "Senior Applied Scientist",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed an autonomous lab-extraction agent in production with Claude Opus 4.7 and Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior Applied Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics system in LangGraph for medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Prototyped 15+ AI applications for AIOps and network performance clients across NAM, EMEA and LATAM from ambiguous requirements, with 7 moving into production or paid client work."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+    "after": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 to reason about root causes and recommend remediation per breach, reducing downtime by 67%."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped predictive analytics for anomaly detection and demand forecasting on 15+ KPIs across 500+ network devices with Isolation Forest and Holt-Winters, enabling earlier detection and proactive planning."
+   }
+  ],
+  "apply_url": "https://ie.linkedin.com/jobs/view/applied-scientist-ai-ops-integration-at-amazon-4455922186",
+  "listing_url": "https://ie.linkedin.com/jobs/view/applied-scientist-ai-ops-integration-at-amazon-4455922186",
+  "resume": "Amazon_Applied_Scientist_AI_Ops_Integration_Ireland/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Amazon_Applied_Scientist_AI_Ops_Integration_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Amazon_Applied_Scientist_AI_Ops_Integration_Ireland/project_brief.md",
+  "hr_score": 80
+ },
+ "Amazon_Data_Scientist_II_Alexa_for_Shopping_Science_UK_Alexa_for_Shopping_Sci_London": {
+  "company": "Amazon",
+  "city": "London",
+  "role": "Data Scientist II, Alexa for Shopping Science UK",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5",
+   "The company name 'Amazon' still appears in the resume - check it."
+  ],
+  "headline": "Data Scientist II",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Senior Data Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for medical plans, answering stakeholder business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated benchmarks and observability pipelines for Question Answering and Summary Agents, scoring generation quality with LLM evaluators, tracing and failure detection, reducing human review by 43%."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank AARP survey retrieval, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy.",
+    "after": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank survey search results, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, surfacing earlier signals for proactive network planning."
+   },
+   {
+    "role": "Data Analyst",
+    "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+    "after": "Tuned a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+   }
+  ],
+  "apply_url": "https://www.amazon.jobs/en/jobs/10451597",
+  "listing_url": "https://uk.linkedin.com/jobs/view/data-scientist-ii-alexa-for-shopping-science-uk-alexa-for-shopping-science-uk-at-amazon-4455909325",
+  "resume": "Amazon_Data_Scientist_II_Alexa_for_Shopping_Science_UK_Alexa_for_Shopping_Sci_London/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Amazon_Data_Scientist_II_Alexa_for_Shopping_Science_UK_Alexa_for_Shopping_Sci_London/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Amazon_Data_Scientist_II_Alexa_for_Shopping_Science_UK_Alexa_for_Shopping_Sci_London/project_brief.md",
+  "hr_score": 77
+ },
+ "Amazon_Data_Scientist_II_RufusX_Science_UK_London": {
+  "company": "Amazon",
+  "city": "London",
+  "role": "Data Scientist II, RufusX Science UK",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5",
+   "The company name 'Amazon' still appears in the resume - check it."
+  ],
+  "headline": "Data Scientist II",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Data Analyst",
+    "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+    "after": "Tuned a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+   },
+   {
+    "role": "Data Analyst",
+    "before": "Analyzed member plan utilization and renewal behavior across individual and child plan segments using BigQuery, building segmentation queries and reporting pipelines that fed downstream analytics and member risk modelling.",
+    "after": "Analyzed member plan utilization and renewal behavior across individual and child plan segments in BigQuery SQL, building segmentation queries and reporting pipelines that fed downstream analytics and member risk modelling."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering stakeholder questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation benchmarks and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built and deployed an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+    "after": "Built an event-correlation engine clustering alarms with Sentence-BERT embeddings and DBSCAN to trace cascading alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+   }
+  ],
+  "apply_url": "https://www.amazon.jobs/en/jobs/10451596/data-scientist-ii-rufusx-science-uk",
+  "listing_url": "https://uk.linkedin.com/jobs/view/data-scientist-ii-rufusx-science-uk-at-amazon-4455794614",
+  "resume": "Amazon_Data_Scientist_II_RufusX_Science_UK_London/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Amazon_Data_Scientist_II_RufusX_Science_UK_London/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Amazon_Data_Scientist_II_RufusX_Science_UK_London/project_brief.md",
+  "hr_score": 72
+ },
+ "Amazon_Web_Services_AWS_Sr_Solutions_Architect_GenAI_Automotive_Manufacturing_GenAI_Munich": {
+  "company": "Amazon Web Services (AWS)",
+  "city": "Munich",
+  "role": "Sr Solutions Architect GenAI",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5",
+   "Title 'Sr Solutions Architect GenAI' not used (seniority/fit check); kept 'Senior AI Engineer'."
+  ],
+  "headline": "Senior AI Engineer",
+  "current_role_title": "Senior GenAI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior GenAI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Textract, orchestrating document reasoning and tool calls into LIMS, handling about 1,800 lab documents and the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior GenAI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph, orchestrating multistep reasoning, PySpark analysis and live charts to answer business questions over enterprise data, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior GenAI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents, benchmarking output quality with LLM evaluators, agent tracing and failure detection, reducing human review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG-based knowledge assistant in LangGraph combining semantic retrieval over project documents with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance customers across NAM, EMEA and LATAM, starting from customer requirements and demos, with 7 moving into production or paid customer work."
+   }
+  ],
+  "apply_url": "https://www.amazon.jobs/en/jobs/10473719/sr-solutions-architect-genai-automotive-manufacturing-genai",
+  "listing_url": "https://de.linkedin.com/jobs/view/sr-solutions-architect-genai-automotive-manufacturing-genai-at-amazon-web-services-aws-4455798501",
+  "resume": "Amazon_Web_Services_AWS_Sr_Solutions_Architect_GenAI_Automotive_Manufacturing_GenAI_Munich/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Amazon_Web_Services_AWS_Sr_Solutions_Architect_GenAI_Automotive_Manufacturing_GenAI_Munich/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Amazon_Web_Services_AWS_Sr_Solutions_Architect_GenAI_Automotive_Manufacturing_GenAI_Munich/project_brief.md",
+  "hr_score": 67
+ },
+ "Aubay_Portugal_Middle_AI_Engineer_Portugal": {
+  "company": "Aubay Portugal",
+  "city": "Portugal",
+  "role": "Middle AI Engineer",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Middle AI Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for question-answering and summary agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered and shipped a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with multi-turn reasoning, PySpark analysis and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production lab-extraction agent in Python with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG-based project discovery assistant in LangGraph, combining semantic retrieval with LLM reasoning and reaching a 90% match rate against existing organizational solutions."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for model and service deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests so releases stayed repeatable and reviewed before production."
+   }
+  ],
+  "apply_url": "https://pt.linkedin.com/jobs/view/middle-ai-engineer-at-aubay-portugal-4474369271",
+  "listing_url": "https://pt.linkedin.com/jobs/view/middle-ai-engineer-at-aubay-portugal-4474369271",
+  "resume": "Aubay_Portugal_Middle_AI_Engineer_Portugal/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Aubay_Portugal_Middle_AI_Engineer_Portugal/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Aubay_Portugal_Middle_AI_Engineer_Portugal/project_brief.md",
+  "hr_score": 85
+ },
+ "Aubay_Portugal_Senior_Data_Scientist_AI_Engineer_Portugal": {
+  "company": "Aubay Portugal",
+  "city": "Portugal",
+  "role": "Senior Data Scientist/AI Engineer",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Senior Data Scientist/AI Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph with multi-turn state and memory, answering business questions on medical plans with PySpark analysis and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production document-extraction agent with Claude Opus 4.7 and Amazon Textract, orchestrating tools against LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal agentic RAG assistant in LangGraph combining semantic retrieval with LLM reasoning over project knowledge, reaching a 90% match rate against existing organizational solutions."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, agent tracing and failure detection, reducing human-in-the-loop review by 43%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank AARP survey retrieval, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy.",
+    "after": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank survey retrieval, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy."
+   }
+  ],
+  "apply_url": "https://pt.linkedin.com/jobs/view/senior-data-scientist-ai-engineer-at-aubay-portugal-4474354704",
+  "listing_url": "https://pt.linkedin.com/jobs/view/senior-data-scientist-ai-engineer-at-aubay-portugal-4474354704",
+  "resume": "Aubay_Portugal_Senior_Data_Scientist_AI_Engineer_Portugal/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Aubay_Portugal_Senior_Data_Scientist_AI_Engineer_Portugal/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Aubay_Portugal_Senior_Data_Scientist_AI_Engineer_Portugal/project_brief.md",
+  "hr_score": 84
+ },
+ "Bending_Spoons_Data_scientist_Warsaw": {
+  "company": "Bending Spoons",
+  "city": "Warsaw",
+  "role": "Data scientist",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Data Scientist",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Data Engineer",
+    "before": "Engineered SQL, PySpark and Airflow pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+    "after": "Designed SQL, PySpark and Airflow pipelines for recurring medical-audit reporting on large healthcare datasets, keeping the reported numbers accurate and cutting manual reporting effort by 95%."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Engineered a unified time-series data pipeline in SQL and Python to ingest call logs, SMS delivery statistics and signal metrics across multiple time intervals, joined by user ID and network location for downstream forecasting.",
+    "after": "Built a unified time-series data pipeline in SQL and Python ingesting call logs, SMS delivery statistics and signal metrics, joined by user ID and network location to keep downstream forecasting reliable."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, which product and planning teams used to act earlier."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered an internal multi-agent analytics chatbot in LangGraph for medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Data Engineer",
+    "before": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.",
+    "after": "Wrote complex SQL with multi-table joins, CTEs and window functions, delivering ad-hoc analyses and reports that several stakeholder teams used for planning decisions."
+   }
+  ],
+  "apply_url": "https://jobs.bendingspoons.com/positions/69d8b3196288fd924641f5df",
+  "listing_url": "https://pl.linkedin.com/jobs/view/data-scientist-at-bending-spoons-4472548491",
+  "resume": "Bending_Spoons_Data_scientist_Warsaw/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Bending_Spoons_Data_scientist_Warsaw/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Bending_Spoons_Data_scientist_Warsaw/project_brief.md",
+  "hr_score": 80
+ },
+ "Better_Collective_Senior_AI_Engineer_Denmark_Copenhagen": {
+  "company": "Better Collective",
+  "city": "Copenhagen",
+  "role": "Senior AI Engineer - Denmark",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5",
+   "Title 'Senior AI Engineer' not used (seniority/fit check); kept 'Senior AI Engineer'."
+  ],
+  "headline": "Senior AI Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Prototyped 15+ AI applications as POCs and MVPs for AIOps and GeoPerformance clients across NAM, EMEA and LATAM, with 7 moving into production or paid client work."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production document-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, orchestrating PySpark analysis, multi-turn reasoning and live chart generation, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, output validation, tracing and failure detection, cutting human-in-the-loop review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+   }
+  ],
+  "apply_url": "https://bettercollective.recruitee.com/o/senior-ai-engineer-denmark",
+  "listing_url": "https://dk.linkedin.com/jobs/view/senior-ai-engineer-denmark-at-better-collective-4463381455",
+  "resume": "Better_Collective_Senior_AI_Engineer_Denmark_Copenhagen/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Better_Collective_Senior_AI_Engineer_Denmark_Copenhagen/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Better_Collective_Senior_AI_Engineer_Denmark_Copenhagen/project_brief.md",
+  "hr_score": 85
+ },
+ "Capgemini_Engineering_AI_Engineer_Data_Science_Data_Engineering_Portugal": {
+  "company": "Capgemini Engineering",
+  "city": "Portugal",
+  "role": "AI Engineer (Data Science / Data Engineering)",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "AI Engineer (Data Science / Data Engineering)",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+    "after": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow for telecom operations, using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD and MLOps pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and monitored in production."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Engineered a unified time-series data pipeline in SQL and Python to ingest call logs, SMS delivery statistics and signal metrics across multiple time intervals, joined by user ID and network location for downstream forecasting.",
+    "after": "Engineered a unified time-series data pipeline in SQL and Python to ingest call logs, SMS delivery statistics and signal metrics, modelled by user ID and network location for downstream analytics."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, giving network teams earlier detection and proactive planning."
+   },
+   {
+    "role": "Data Engineer",
+    "before": "Engineered SQL, PySpark and Airflow pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+    "after": "Engineered SQL, PySpark and Airflow pipelines automating large-scale healthcare audit reporting, with data-quality checks on every load, cutting manual reporting effort by 95%."
+   }
+  ],
+  "apply_url": "https://pt.linkedin.com/jobs/view/ai-engineer-data-science-data-engineering-at-capgemini-engineering-4472975066",
+  "listing_url": "https://pt.linkedin.com/jobs/view/ai-engineer-data-science-data-engineering-at-capgemini-engineering-4472975066",
+  "resume": "Capgemini_Engineering_AI_Engineer_Data_Science_Data_Engineering_Portugal/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Capgemini_Engineering_AI_Engineer_Data_Science_Data_Engineering_Portugal/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Capgemini_Engineering_AI_Engineer_Data_Science_Data_Engineering_Portugal/project_brief.md",
+  "hr_score": 83
+ },
+ "Capgemini_Invent_Data_Science_AI_Senior_Consultant_London": {
+  "company": "Capgemini Invent",
+  "city": "London",
+  "role": "Data Science & AI Senior Consultant",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Data Science & AI Senior Consultant",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM, working from client requirements to demonstrations, with 7 moving into production or paid client work."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering stakeholder questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an agentic RAG project discovery assistant in LangGraph, combining semantic retrieval with LLM reasoning and reaching a 90% match rate against existing organizational solutions."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped anomaly detection and time-series demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive planning."
+   },
+   {
+    "role": "Data Analyst",
+    "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+    "after": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold cross-validation, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+   }
+  ],
+  "apply_url": "https://careers.capgemini.com/job/London-Data-Science-&-AI-Senior-Consultant/1432830133/",
+  "listing_url": "https://uk.linkedin.com/jobs/view/data-science-ai-senior-consultant-at-capgemini-invent-4469935218",
+  "resume": "Capgemini_Invent_Data_Science_AI_Senior_Consultant_London/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Capgemini_Invent_Data_Science_AI_Senior_Consultant_London/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Capgemini_Invent_Data_Science_AI_Senior_Consultant_London/project_brief.md",
+  "hr_score": 79
+ },
+ "Cognizant_AI_Engineer_Agentic_Generative_AI_Specialist_London": {
+  "company": "Cognizant",
+  "city": "London",
+  "role": "AI Engineer - Agentic & Generative AI Specialist",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "AI Engineer - Agentic & Generative AI Specialist",
+  "current_role_title": "Senior GenAI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior GenAI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent workflow in LangGraph for medical plans, answering business questions with PySpark analysis, multi-turn reasoning, tool use and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior GenAI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed an enterprise document-extraction agent to production with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior GenAI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, agent tracing and error analysis, reducing human-in-the-loop review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed a retrieval-augmented assistant in LangGraph combining semantic retrieval with LLM reasoning to raise answer precision, reaching a 90% match rate against existing organizational solutions."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Prototyped 15+ AI applications for AIOps and network performance clients across NAM, EMEA and LATAM, shaping use cases with them from first workshop to delivery, with 7 reaching production or paid client work."
+   }
+  ],
+  "apply_url": "https://careers.cognizant.com/apj-en/jobs/00068137621/ai-engineer-agentic-generative-ai-specialist/",
+  "listing_url": "https://uk.linkedin.com/jobs/view/ai-engineer-%E2%80%93-agentic-generative-ai-specialist-at-cognizant-4463855951",
+  "resume": "Cognizant_AI_Engineer_Agentic_Generative_AI_Specialist_London/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Cognizant_AI_Engineer_Agentic_Generative_AI_Specialist_London/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Cognizant_AI_Engineer_Agentic_Generative_AI_Specialist_London/project_brief.md",
+  "hr_score": 78
+ },
+ "Continental_Senior_Data_Scientist_Portugal": {
+  "company": "Continental",
+  "city": "Portugal",
+  "role": "(Senior) Data Scientist",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Senior Data Scientist",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+    "after": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, adding GPT-3.5 root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Led 15+ AI proofs of concept for AIOps and GeoPerformance clients across NAM, EMEA and LATAM, from customer requirements to feasibility and scope, with 7 moving into production or paid client work."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and maintainable in production."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped time-series anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive planning."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for medical plans, answering business stakeholder questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   }
+  ],
+  "apply_url": "https://jobs.smartrecruiters.com/Continental/744000144240592--senior-data-scientist",
+  "listing_url": "https://pt.linkedin.com/jobs/view/senior-data-scientist-at-continental-4474316354",
+  "resume": "Continental_Senior_Data_Scientist_Portugal/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Continental_Senior_Data_Scientist_Portugal/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Continental_Senior_Data_Scientist_Portugal/project_brief.md",
+  "hr_score": 83
+ },
+ "Danfoss_Senior_Data_Engineer_AI_Databricks_Copenhagen": {
+  "company": "Danfoss",
+  "city": "Copenhagen",
+  "role": "Senior Data Engineer - AI & Databricks",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Senior Data Engineer - AI & Databricks",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Data Engineer",
+    "before": "Engineered SQL, PySpark and Airflow pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%.",
+    "after": "Engineered scalable SQL, PySpark and Airflow ETL pipelines automating BAU medical-audit reporting on large healthcare datasets, cutting manual reporting effort by 95%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank AARP survey retrieval, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy.",
+    "after": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank AARP survey retrieval, using Databricks notebooks and Databricks Vector Search for embeddings and retrieval, improving downstream question-answering accuracy."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Engineered a unified time-series data pipeline in SQL and Python to ingest call logs, SMS delivery statistics and signal metrics across multiple time intervals, joined by user ID and network location for downstream forecasting.",
+    "after": "Engineered a unified time-series data pipeline in SQL and Python to ingest call logs, SMS delivery statistics and signal metrics across multiple intervals, joined by user ID and network location for downstream models."
+   },
+   {
+    "role": "Data Engineer",
+    "before": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.",
+    "after": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for business stakeholders across multiple teams."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business stakeholder questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   }
+  ],
+  "apply_url": "https://joincommunity.danfoss.com/gb/en/job/DNSDOPGLOBAL50167EXTERNALENGB/Senior-Data-Engineer-AI-Databricks",
+  "listing_url": "https://dk.linkedin.com/jobs/view/senior-data-engineer-ai-databricks-at-danfoss-4474158005",
+  "resume": "Danfoss_Senior_Data_Engineer_AI_Databricks_Copenhagen/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Danfoss_Senior_Data_Engineer_AI_Databricks_Copenhagen/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Danfoss_Senior_Data_Engineer_AI_Databricks_Copenhagen/project_brief.md",
+  "hr_score": 71
+ },
+ "Dataiku_Data_Scientist_London": {
+  "company": "Dataiku",
+  "city": "London",
+  "role": "Data Scientist",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Data Scientist",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM, scoping each one with the client and co-developing it, with 7 moving into production or paid client work."
+   },
+   {
+    "role": "Data Analyst",
+    "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+    "after": "Tuned a scikit-learn Random Forest model for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold cross-validation, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph answering business questions with Python and PySpark analysis, multi-turn reasoning and live charts for non-technical users, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ network devices using Isolation Forest and Holt-Winters, taking the models from design through to deployment with planning teams."
+   },
+   {
+    "role": "Data Engineer",
+    "before": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc reports and analyses for multiple stakeholder teams.",
+    "after": "Wrote complex SQL queries with multi-table joins, CTEs and window functions, delivering ad-hoc analyses and walking several stakeholder teams through what the numbers meant for them."
+   }
+  ],
+  "apply_url": "https://uk.linkedin.com/jobs/view/data-scientist-at-dataiku-4463047950",
+  "listing_url": "https://uk.linkedin.com/jobs/view/data-scientist-at-dataiku-4463047950",
+  "resume": "Dataiku_Data_Scientist_London/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Dataiku_Data_Scientist_London/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Dataiku_Data_Scientist_London/project_brief.md",
+  "hr_score": 79
+ },
+ "Devoteam_Distributed_Cloud_AI_Machine_Learning_Engineer_Portugal": {
+  "company": "Devoteam",
+  "city": "Portugal",
+  "role": "Distributed Cloud / AI/Machine Learning Engineer",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "AI/Machine Learning Engineer",
+  "current_role_title": "Senior Machine Learning Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+    "after": "Deployed an end-to-end SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations, reducing downtime by 67%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed reproducible and reviewed before production."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built and deployed an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+    "after": "Built and deployed an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace cascading alarm floods back to the root event, improving semantic alarm classification by 73.5%."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped anomaly detection and demand forecasting models on 15+ KPIs across 500+ telecom network devices with Isolation Forest and Holt-Winters, monitored in production for earlier detection and planning."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Engineered a unified time-series data pipeline in SQL and Python to ingest call logs, SMS delivery statistics and signal metrics across multiple time intervals, joined by user ID and network location for downstream forecasting.",
+    "after": "Engineered a unified time-series data pipeline in SQL and Python, ingesting call logs, SMS delivery statistics and signal metrics across intervals, joined by user ID and network location for downstream models."
+   }
+  ],
+  "apply_url": "https://jobs.smartrecruiters.com/Devoteam/744000100393940-distributed-cloud-ai-machine-learning-engineer",
+  "listing_url": "https://pt.linkedin.com/jobs/view/distributed-cloud-ai-machine-learning-engineer-at-devoteam-4346282039",
+  "resume": "Devoteam_Distributed_Cloud_AI_Machine_Learning_Engineer_Portugal/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Devoteam_Distributed_Cloud_AI_Machine_Learning_Engineer_Portugal/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Devoteam_Distributed_Cloud_AI_Machine_Learning_Engineer_Portugal/project_brief.md",
+  "hr_score": 83
+ },
+ "Docusign_Senior_Machine_Learning_Engineer_Ireland": {
+  "company": "Docusign",
+  "city": "Ireland",
+  "role": "Senior Machine Learning Engineer",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Senior Machine Learning Engineer",
+  "current_role_title": "Senior Machine Learning Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production document-processing system with Claude Opus 4.7 and Amazon Textract to extract structured fields from unstructured documents, handling about 1,800 lab documents and the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank AARP survey retrieval, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy.",
+    "after": "Fine-tuned a cross-encoder transformer on positive and negative pairs to re-rank survey retrieval, using Databricks notebooks and Vector Search for embeddings, improving downstream question-answering accuracy."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built and deployed an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+    "after": "Built and deployed an event-correlation engine clustering text alarms with Sentence-BERT embeddings and DBSCAN to trace alarm floods back to the root event, improving semantic classification by 73.5%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and monitoring pipelines for Question Answering and Summary models with LLM evaluators, precision and recall tracking and failure detection, reducing human review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+    "after": "Deployed and monitored a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis per breach, reducing downtime by 67%."
+   }
+  ],
+  "apply_url": "https://ie.linkedin.com/jobs/view/senior-machine-learning-engineer-at-docusign-4377925914",
+  "listing_url": "https://ie.linkedin.com/jobs/view/senior-machine-learning-engineer-at-docusign-4377925914",
+  "resume": "Docusign_Senior_Machine_Learning_Engineer_Ireland/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Docusign_Senior_Machine_Learning_Engineer_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Docusign_Senior_Machine_Learning_Engineer_Ireland/project_brief.md",
+  "hr_score": 77
+ },
+ "Dustin_AI_Engineer_Marketing_solutions_Netherlands": {
+  "company": "Dustin",
+  "city": "Netherlands",
+  "role": "AI Engineer - Marketing solutions",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "AI Engineer - Marketing solutions",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production document-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with an internal system, handling about 1,800 documents and automating the work behind 800 Jira tickets and PRD tasks."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built a mock-generator pipeline for customer delivery, producing 36+ discipline-specific UI mockups from Jira stories and requirements using HTML, Next.js and Claude 4.6 to accelerate solution prototyping and stakeholder review.",
+    "after": "Built a content-generation pipeline producing 36+ discipline-specific UI mockups from stories and requirements with HTML, Next.js and Claude 4.6 to speed up prototyping and stakeholder review."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, keeping them reliable and reducing human review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG assistant in LangGraph combining semantic retrieval over past solutions with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+   }
+  ],
+  "apply_url": "https://jobs.dustin.com/jobs/8354438-ai-engineer-marketing-solutions",
+  "listing_url": "https://nl.linkedin.com/jobs/view/ai-engineer-marketing-solutions-at-dustin-4465097651",
+  "resume": "Dustin_AI_Engineer_Marketing_solutions_Netherlands/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Dustin_AI_Engineer_Marketing_solutions_Netherlands/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Dustin_AI_Engineer_Marketing_solutions_Netherlands/project_brief.md",
+  "hr_score": 84
+ },
+ "EY_Applied_AI_Engineer_Consulting_Manager_Luxembourg": {
+  "company": "EY",
+  "city": "Luxembourg",
+  "role": "Applied AI Engineer - Consulting Manager",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 6",
+   "Title 'Applied AI Engineer - Consulting Manager' not used (seniority/fit check); kept 'Senior AI Engineer'."
+  ],
+  "headline": "Senior AI Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS through APIs, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG-based Project Discovery Assistant in LangGraph, pairing embedding retrieval and grounding with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation, monitoring and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so releases stayed repeatable and reviewed before reaching production."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM, shaping MVP scope from client requirements, with 7 moving into production or paid client work."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering stakeholder questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   }
+  ],
+  "apply_url": "https://careers.ey.com/ey/job/Luxembourg-Applied-AI-Engineer-Consulting-Manager-L-1855/1420614433/",
+  "listing_url": "https://lu.linkedin.com/jobs/view/applied-ai-engineer-consulting-manager-at-ey-4446735210",
+  "resume": "EY_Applied_AI_Engineer_Consulting_Manager_Luxembourg/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "EY_Applied_AI_Engineer_Consulting_Manager_Luxembourg/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "EY_Applied_AI_Engineer_Consulting_Manager_Luxembourg/project_brief.md",
+  "hr_score": 83
+ },
+ "Glia_Senior_Software_Engineer_Conversational_AI_Python_Estonia": {
+  "company": "Glia",
+  "city": "Estonia",
+  "role": "Senior Software Engineer - Conversational AI (Python)",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Senior Software Engineer - Conversational AI (Python)",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent conversational system in LangGraph, orchestrating multi-turn reasoning, tool calls and PySpark analysis to answer customer questions with live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, catching degraded answers and reducing human review by 43%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, calling an existing system of record as a tool, handling about 1,800 documents and the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG-based assistant in LangGraph pairing semantic retrieval with grounded LLM reasoning so answers stayed tied to source documents, reaching a 90% match rate against existing solutions."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so releases stayed reliable and reviewed before reaching production."
+   }
+  ],
+  "apply_url": "https://ee.linkedin.com/jobs/view/senior-software-engineer-conversational-ai-python-at-glia-4472955260",
+  "listing_url": "https://ee.linkedin.com/jobs/view/senior-software-engineer-conversational-ai-python-at-glia-4472955260",
+  "resume": "Glia_Senior_Software_Engineer_Conversational_AI_Python_Estonia/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Glia_Senior_Software_Engineer_Conversational_AI_Python_Estonia/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Glia_Senior_Software_Engineer_Conversational_AI_Python_Estonia/project_brief.md",
+  "hr_score": 70
+ },
+ "KCS_iT_AI_Engineer_Portugal": {
+  "company": "KCS iT",
+  "city": "Portugal",
+  "role": "AI Engineer",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "AI Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS through APIs, handling about 1,800 lab documents and the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph with tool orchestration over PySpark analysis, multi-turn reasoning and live charts for AARP medical plans, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG-based project discovery assistant in LangGraph, combining vector search over past projects with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+    "after": "Deployed a production SLA breach prediction system served through FastAPI with LightGBM and MLflow, calling GPT-3.5 for real-time root-cause analysis and remediation per breach, reducing downtime by 67%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for model and API deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks before anything reached production."
+   }
+  ],
+  "apply_url": "https://pt.linkedin.com/jobs/view/ai-engineer-at-kcs-it-4472534590",
+  "listing_url": "https://pt.linkedin.com/jobs/view/ai-engineer-at-kcs-it-4472534590",
+  "resume": "KCS_iT_AI_Engineer_Portugal/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "KCS_iT_AI_Engineer_Portugal/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "KCS_iT_AI_Engineer_Portugal/project_brief.md",
+  "hr_score": 76
+ },
+ "McKinsey_Company_Senior_Data_Science_Analyst_OptimusAI_Amsterdam": {
+  "company": "McKinsey & Company",
+  "city": "Amsterdam",
+  "role": "Senior Data Science Analyst",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Senior Data Science Analyst",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ network devices with Isolation Forest and Holt-Winters, enabling earlier detection and proactive capacity planning."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+    "after": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations, reducing downtime by 67%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production analytics chatbot in LangGraph for medical plans, answering stakeholder questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Data Analyst",
+    "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+    "after": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold cross-validation, raising AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+   }
+  ],
+  "apply_url": "https://nl.linkedin.com/jobs/view/senior-data-science-analyst-optimusai-at-mckinsey-company-4437849004",
+  "listing_url": "https://nl.linkedin.com/jobs/view/senior-data-science-analyst-optimusai-at-mckinsey-company-4437849004",
+  "resume": "McKinsey_Company_Senior_Data_Science_Analyst_OptimusAI_Amsterdam/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "McKinsey_Company_Senior_Data_Science_Analyst_OptimusAI_Amsterdam/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "McKinsey_Company_Senior_Data_Science_Analyst_OptimusAI_Amsterdam/project_brief.md",
+  "hr_score": 76
+ },
+ "Metyis_AI_Solutions_Engineering_Analyst_Amsterdam": {
+  "company": "Metyis",
+  "city": "Amsterdam",
+  "role": "AI Solutions Engineering Analyst",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "AI Solutions Engineering Analyst",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG-based project discovery assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank AARP survey retrieval, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy.",
+    "after": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank survey retrieval in a RAG pipeline, using Databricks notebooks and Vector Search for embeddings and retrieval, improving question-answering accuracy."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated testing and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from business requirements, with 7 moving into production or paid client work."
+   }
+  ],
+  "apply_url": "https://www.metyis.com/job/ai-solutions-engineering-analyst-junior-amsterdam-2",
+  "listing_url": "https://nl.linkedin.com/jobs/view/ai-solutions-engineering-analyst-at-metyis-4463868669",
+  "resume": "Metyis_AI_Solutions_Engineering_Analyst_Amsterdam/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Metyis_AI_Solutions_Engineering_Analyst_Amsterdam/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Metyis_AI_Solutions_Engineering_Analyst_Amsterdam/project_brief.md",
+  "hr_score": 85
+ },
+ "Moonpig_Data_Scientist_London": {
+  "company": "Moonpig",
+  "city": "London",
+  "role": "Data Scientist",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 6"
+  ],
+  "headline": "Data Scientist",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Data Analyst",
+    "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+    "after": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+   },
+   {
+    "role": "Associate Consultant",
+    "before": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, enabling targeted outreach.",
+    "after": "Developed an XGBoost propensity model predicting personal-loan applications within 7 days of contact, engineering customer behaviour features to target outreach at the most likely applicants."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering commercial questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated offline evaluation and monitoring pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and reproducible checks so model releases stayed reviewed before reaching production."
+   },
+   {
+    "role": "Data Analyst",
+    "before": "Analyzed member plan utilization and renewal behavior across individual and child plan segments using BigQuery, building segmentation queries and reporting pipelines that fed downstream analytics and member risk modelling.",
+    "after": "Analyzed member plan utilization and renewal behavior across individual and child plan segments in BigQuery SQL, building segmentation queries and reporting pipelines that fed downstream analytics and risk modelling."
+   }
+  ],
+  "apply_url": "https://uk.linkedin.com/jobs/view/data-scientist-at-moonpig-4472916502",
+  "listing_url": "https://uk.linkedin.com/jobs/view/data-scientist-at-moonpig-4472916502",
+  "resume": "Moonpig_Data_Scientist_London/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Moonpig_Data_Scientist_London/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Moonpig_Data_Scientist_London/project_brief.md",
+  "hr_score": 83
+ },
+ "Personio_AI_Engineer_d_f_m_Internal_AI_Ireland": {
+  "company": "Personio",
+  "city": "Ireland",
+  "role": "AI Engineer",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "AI Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS and owned end to end, handling about 1,800 documents and the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph, answering business teams' questions with PySpark analysis, multi-turn reasoning and live charts, cutting their manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built a mock-generator pipeline for customer delivery, producing 36+ discipline-specific UI mockups from Jira stories and requirements using HTML, Next.js and Claude 4.6 to accelerate solution prototyping and stakeholder review.",
+    "after": "Built an internal mock-generator tool producing 36+ discipline-specific UI mockups from Jira stories and requirements with HTML, Next.js and Claude 4.6, shortening the prototyping loop for delivery teams."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, catching quality degradation and cutting human review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing internal solutions."
+   }
+  ],
+  "apply_url": "https://ie.linkedin.com/jobs/view/ai-engineer-d-f-m-internal-ai-at-personio-4453470123",
+  "listing_url": "https://ie.linkedin.com/jobs/view/ai-engineer-d-f-m-internal-ai-at-personio-4453470123",
+  "resume": "Personio_AI_Engineer_d_f_m_Internal_AI_Ireland/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Personio_AI_Engineer_d_f_m_Internal_AI_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Personio_AI_Engineer_d_f_m_Internal_AI_Ireland/project_brief.md",
+  "hr_score": 82
+ },
+ "Personio_AI_Engineer_d_f_m_Internal_AI_Munich": {
+  "company": "Personio",
+  "city": "Munich",
+  "role": "AI Engineer (d/f/m) - Internal AI",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "AI Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered and owned a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for question-answering and summary agents with LLM evaluators, tracing and failure detection, catching degradation and reducing human review by 43%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production document-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with an internal lab system, handling about 1,800 documents and the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built a mock-generator pipeline for customer delivery, producing 36+ discipline-specific UI mockups from Jira stories and requirements using HTML, Next.js and Claude 4.6 to accelerate solution prototyping and stakeholder review.",
+    "after": "Built an internal mock-generator tool producing 36+ discipline-specific UI mockups from Jira stories and requirements with HTML, Next.js and Claude 4.6, speeding up prototyping and stakeholder review."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for model and service deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests so releases stayed repeatable and reviewed before production."
+   }
+  ],
+  "apply_url": "https://www.personio.com/careers/69740bbd-7caa-44bb-8cda-bf7f2844b55b/",
+  "listing_url": "https://de.linkedin.com/jobs/view/ai-engineer-d-f-m-internal-ai-at-personio-4453477098",
+  "resume": "Personio_AI_Engineer_d_f_m_Internal_AI_Munich/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Personio_AI_Engineer_d_f_m_Internal_AI_Munich/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Personio_AI_Engineer_d_f_m_Internal_AI_Munich/project_brief.md",
+  "hr_score": 86
+ },
+ "Personio_Software_Engineer_d_f_m_Internal_AI_Berlin": {
+  "company": "Personio",
+  "city": "Berlin",
+  "role": "Software Engineer (d/f/m) - Internal AI",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Software Engineer - Internal AI",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Shipped a production lab-extraction agent end to end with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent chatbot in LangGraph that answers internal business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, catching quality drops and reducing manual review by 43%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built a mock-generator pipeline for customer delivery, producing 36+ discipline-specific UI mockups from Jira stories and requirements using HTML, Next.js and Claude 4.6 to accelerate solution prototyping and stakeholder review.",
+    "after": "Built an internal mock-generator tool producing 36+ discipline-specific UI mockups from Jira stories and requirements with HTML, Next.js and Claude 4.6, speeding up prototyping and stakeholder review."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for service and model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so releases stayed repeatable and reviewed."
+   }
+  ],
+  "apply_url": "https://www.personio.com/careers/1387be54-7a61-4015-b603-11ea35803a49/",
+  "listing_url": "https://de.linkedin.com/jobs/view/software-engineer-d-f-m-internal-ai-at-personio-4453460182",
+  "resume": "Personio_Software_Engineer_d_f_m_Internal_AI_Berlin/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Personio_Software_Engineer_d_f_m_Internal_AI_Berlin/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Personio_Software_Engineer_d_f_m_Internal_AI_Berlin/project_brief.md",
+  "hr_score": 86
+ },
+ "Personio_Software_Engineer_d_f_m_Internal_AI_Ireland": {
+  "company": "Personio",
+  "city": "Ireland",
+  "role": "Software Engineer (d/f/m) - Internal AI",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Software Engineer - Internal AI",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Owned a production document-extraction agent end to end with Claude Opus 4.7 and Amazon Textract, integrated with internal systems, handling about 1,800 documents and automating work behind 800 Jira tickets and PRD tasks."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for medical plans, answering internal business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built an evaluation and observability platform for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, catching quality degradation and reducing human review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so releases stayed repeatable and reviewed before reaching production."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG assistant in LangGraph combining semantic retrieval with LLM reasoning and tool calls, reaching a 90% match rate against existing organizational solutions."
+   }
+  ],
+  "apply_url": "https://ie.linkedin.com/jobs/view/software-engineer-d-f-m-internal-ai-at-personio-4453481033",
+  "listing_url": "https://ie.linkedin.com/jobs/view/software-engineer-d-f-m-internal-ai-at-personio-4453481033",
+  "resume": "Personio_Software_Engineer_d_f_m_Internal_AI_Ireland/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Personio_Software_Engineer_d_f_m_Internal_AI_Ireland/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Personio_Software_Engineer_d_f_m_Internal_AI_Ireland/project_brief.md",
+  "hr_score": 78
+ },
+ "Personio_Software_Engineer_d_f_m_Internal_AI_Munich": {
+  "company": "Personio",
+  "city": "Munich",
+  "role": "Software Engineer (d/f/m) - Internal AI",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Software Engineer - Internal AI",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated end to end with the LIMS application, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, orchestrating tools for PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, catching quality degradation and cutting human review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so model releases stayed repeatable and reviewed before reaching production.",
+    "after": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests, monitoring and automated checks so releases stayed repeatable and reviewed before production."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed an internal RAG-based Project Discovery Assistant in LangGraph for colleagues across the business, combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing solutions."
+   }
+  ],
+  "apply_url": "https://www.personio.com/careers/1387be54-7a61-4015-b603-11ea35803a49/",
+  "listing_url": "https://de.linkedin.com/jobs/view/software-engineer-d-f-m-internal-ai-at-personio-4453474119",
+  "resume": "Personio_Software_Engineer_d_f_m_Internal_AI_Munich/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Personio_Software_Engineer_d_f_m_Internal_AI_Munich/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Personio_Software_Engineer_d_f_m_Internal_AI_Munich/project_brief.md",
+  "hr_score": 83
+ },
+ "REPA_AI_Engineer_Specialist_m_f_d_Germany": {
+  "company": "REPA",
+  "city": "Germany",
+  "role": "AI Engineer / Specialist",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5",
+   "The company name 'REPA' still appears in the resume - check it."
+  ],
+  "headline": "AI Engineer / Specialist",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated into an existing business system through APIs, handling about 1,800 documents and the work behind 800 Jira tickets."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph, answering business questions with PySpark analysis over structured data, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, monitoring quality and reducing human review by 43%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Prototyped 15+ AI applications for AIOps and GeoPerformance clients across NAM, EMEA and LATAM from client requirements, with 7 moving into production or paid client work.",
+    "after": "Prototyped 15+ AI applications from business requirements for AIOps and GeoPerformance clients across NAM, EMEA and LATAM, judging each on business value and cost, with 7 reaching production or paid work."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank AARP survey retrieval, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy.",
+    "after": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank survey retrieval, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy."
+   }
+  ],
+  "apply_url": "https://jobs.smartrecruiters.com/REPAGROUP/744000144725420-ai-engineer-specialist-m-f-d-",
+  "listing_url": "https://de.linkedin.com/jobs/view/ai-engineer-specialist-m-f-d-at-repa-4454647667",
+  "resume": "REPA_AI_Engineer_Specialist_m_f_d_Germany/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "REPA_AI_Engineer_Specialist_m_f_d_Germany/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "REPA_AI_Engineer_Specialist_m_f_d_Germany/project_brief.md",
+  "hr_score": 83
+ },
+ "Teva_Pharmaceuticals_Machine_Learning_External_Sensing_Engineer_Netherlands": {
+  "company": "Teva Pharmaceuticals",
+  "city": "Netherlands",
+  "role": "Machine Learning & External Sensing Engineer",
+  "pages": 2,
+  "warnings": [
+   "Experience variant: timeseries",
+   "Experience bullets reworded: 5"
+  ],
+  "headline": "Machine Learning & External Sensing Engineer",
+  "current_role_title": "Senior Machine Learning Engineer",
+  "experience_edits": [
+   {
+    "role": "Data Scientist",
+    "before": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ telecom network devices using Isolation Forest and Holt-Winters, enabling earlier detection and proactive network planning.",
+    "after": "Shipped anomaly detection and demand forecasting on 15+ KPIs across 500+ network devices using Isolation Forest and Holt-Winters, enabling predictive alerting and proactive planning."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Contributed to network-device inventory demand forecasting using predictive models to improve planning and reduce revenue-at-risk; targeted a conservative 10% reduction in excess/at-risk inventory and higher ARPU.",
+    "after": "Contributed to network-device inventory demand forecasting with predictive models to improve supply planning and reduce revenue-at-risk, targeting a conservative 10% reduction in excess inventory and higher ARPU."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Trained and deployed a production time-series forecasting framework combining LSTM and XGBoost to model call quality, SMS delivery rates and network efficiency metrics for the Delta cellular network.",
+    "after": "Trained and deployed a production time-series forecasting framework combining LSTM and XGBoost to forecast call quality, SMS delivery rates and network efficiency metrics for the Delta cellular network."
+   },
+   {
+    "role": "Data Scientist",
+    "before": "Engineered a unified time-series data pipeline in SQL and Python to ingest call logs, SMS delivery statistics and signal metrics across multiple time intervals, joined by user ID and network location for downstream forecasting.",
+    "after": "Engineered a unified time-series pipeline in SQL and Python, integrating structured call logs, SMS delivery statistics and signal metrics across intervals, joined by user ID and location for forecasting."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Built and deployed an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace the cascading effect of network alarm floods back to the root event, improving semantic alarm classification by 73.5%.",
+    "after": "Built and deployed an event-correlation engine clustering alarms with Sentence-BERT and DBSCAN to trace cascading signal floods back to the root event, improving semantic alarm classification by 73.5%."
+   }
+  ],
+  "apply_url": "https://www.careers.teva/careers/job/563602813005300-machine-learning-external-sensing-engineer-haarlem-netherlands?domain=tevapharm.com",
+  "listing_url": "https://nl.linkedin.com/jobs/view/machine-learning-external-sensing-engineer-at-teva-pharmaceuticals-4436391435",
+  "resume": "Teva_Pharmaceuticals_Machine_Learning_External_Sensing_Engineer_Netherlands/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Teva_Pharmaceuticals_Machine_Learning_External_Sensing_Engineer_Netherlands/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Teva_Pharmaceuticals_Machine_Learning_External_Sensing_Engineer_Netherlands/project_brief.md",
+  "hr_score": 82
+ },
+ "Wise_Lead_Data_Scientist_AML_Handling_London": {
+  "company": "Wise",
+  "city": "London",
+  "role": "Lead Data Scientist - AML Handling",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5",
+   "Title 'Lead Data Scientist' not used (seniority/fit check); kept 'Senior AI Engineer'."
+  ],
+  "headline": "Senior AI Engineer",
+  "current_role_title": "Senior Data Scientist",
+  "experience_edits": [
+   {
+    "role": "Senior Data Scientist",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation harnesses and observability for Question Answering and Summary Agents with LLM evaluators, tracing and failure mode detection, reducing human-in-the-loop review by 43%."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics assistant in LangGraph for medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+    "after": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 to draft root-cause analysis and remediation recommendations for operators, reducing downtime by 67%."
+   },
+   {
+    "role": "Senior Data Scientist",
+    "before": "Fine-tuned a cross-encoder on positive/negative pairs to re-rank AARP survey retrieval, using Databricks notebooks and Vector Search for embeddings and retrieval, improving downstream question-answering accuracy.",
+    "after": "Fine-tuned a cross-encoder on positive and negative pairs to re-rank survey retrieval, using Databricks notebooks and Vector Search for embeddings, improving downstream question-answering accuracy."
+   },
+   {
+    "role": "Data Analyst",
+    "before": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold CV, lifting AUC from 0.74 to 0.81 and recall from 0.62 to 0.73.",
+    "after": "Optimized a scikit-learn Random Forest classifier for member risk stratification with 12+ engineered features, GridSearchCV and 5-fold cross-validation, raising AUC from 0.74 to 0.81 and recall from 0.62 to 0.73."
+   }
+  ],
+  "apply_url": "https://jobs.smartrecruiters.com/Wise/744000152971678-lead-data-scientist-aml-handling",
+  "listing_url": "https://uk.linkedin.com/jobs/view/lead-data-scientist-aml-handling-at-wise-4472565861",
+  "resume": "Wise_Lead_Data_Scientist_AML_Handling_London/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "Wise_Lead_Data_Scientist_AML_Handling_London/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "Wise_Lead_Data_Scientist_AML_Handling_London/project_brief.md",
+  "hr_score": 79
+ },
+ "eDreams_ODIGEO_Senior_AI_Engineer_Barcelona": {
+  "company": "eDreams ODIGEO",
+  "city": "Barcelona",
+  "role": "Senior AI Engineer",
+  "pages": 2,
+  "warnings": [
+   "Experience bullets reworded: 5",
+   "Title 'Senior AI Engineer' not used (seniority/fit check); kept 'Senior AI Engineer'."
+  ],
+  "headline": "Senior AI Engineer",
+  "current_role_title": "Senior AI Engineer",
+  "experience_edits": [
+   {
+    "role": "Senior AI Engineer",
+    "before": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP medical plans, answering business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%.",
+    "after": "Engineered a production multi-agent analytics chatbot in LangGraph for medical plans, answering user questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, reducing human-in-the-loop review by 43%.",
+    "after": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM-as-judge evaluators, call tracing and failure detection, reducing human review by 43%."
+   },
+   {
+    "role": "Senior AI Engineer",
+    "before": "Deployed a production lab-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets and PRD tasks.",
+    "after": "Shipped a production document-extraction agent with Claude Opus 4.7 and Amazon Textract, integrated with an internal system, handling about 1,800 documents and automating the work behind 800 Jira tickets and PRD tasks."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Developed an internal RAG-based Project Discovery Assistant in LangGraph combining semantic retrieval with LLM reasoning, reaching a 90% match rate against existing organizational solutions.",
+    "after": "Developed a RAG-based discovery assistant in LangGraph combining semantic search with LLM reasoning and tools, reaching a 90% match rate against existing organizational solutions."
+   },
+   {
+    "role": "Senior Machine Learning Engineer",
+    "before": "Deployed a production SLA breach prediction system with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%.",
+    "after": "Deployed a production SLA breach prediction service with LightGBM, FastAPI and MLflow, using GPT-3.5 for real-time root-cause analysis and remediation recommendations per breach, reducing downtime by 67%."
+   }
+  ],
+  "apply_url": "https://www.edreamsodigeocareers.com/job/ai-engineer/",
+  "listing_url": "https://es.linkedin.com/jobs/view/senior-ai-engineer-at-edreams-odigeo-4444583296",
+  "resume": "eDreams_ODIGEO_Senior_AI_Engineer_Barcelona/Abhinav_Kaushik_Resume.pdf",
+  "cover_letter": "eDreams_ODIGEO_Senior_AI_Engineer_Barcelona/Abhinav_Kaushik_Cover_Letter.pdf",
+  "project_brief": "eDreams_ODIGEO_Senior_AI_Engineer_Barcelona/project_brief.md",
+  "hr_score": 88
+ }
+}

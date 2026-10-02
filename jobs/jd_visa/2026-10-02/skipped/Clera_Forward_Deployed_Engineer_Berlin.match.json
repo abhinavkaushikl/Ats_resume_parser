@@ -1,0 +1,18 @@
+{
+ "score": 40,
+ "verdict": "partial",
+ "matched": [
+  "customer-facing POC delivery",
+  "workflow-to-AI automation",
+  "production shipping",
+  "Postgres-adjacent DBs"
+ ],
+ "missing": [
+  "TypeScript/Node.js/NestJS/Prisma/React stack",
+  "forward-deployed role title experience",
+  "fintech/fund accounting"
+ ],
+ "blockers": [],
+ "reason": "Customer-delivery experience fits but the required TypeScript/Node stack is not shown.",
+ "variant": "base"
+}

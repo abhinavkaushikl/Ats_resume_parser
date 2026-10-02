@@ -1,0 +1,22 @@
+{
+ "score": 15,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "Agent building and LLM evaluation",
+  "CI/CD"
+ ],
+ "missing": [
+  "PhD degree (formal requirement)",
+  "Research background and publications",
+  "LLM post-training / agentic RL / distillation",
+  "Multimodal LLMs",
+  "Leading MSc/PhD students"
+ ],
+ "blockers": [
+  "PhD required",
+  "Academic postdoc role"
+ ],
+ "reason": "Postdoc position formally requiring a PhD and research publications; the resume has an MSc and industry work only.",
+ "variant": "base"
+}

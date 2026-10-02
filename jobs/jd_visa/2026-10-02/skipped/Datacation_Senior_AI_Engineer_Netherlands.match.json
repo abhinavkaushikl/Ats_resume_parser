@@ -1,0 +1,20 @@
+{
+ "score": 30,
+ "verdict": "poor",
+ "matched": [
+  "5+ years DS/ML",
+  "Azure/Python/SQL",
+  "GenAI, agents, RAG, MLOps",
+  "Databricks"
+ ],
+ "missing": [
+  "Excellent Dutch, spoken and written",
+  "Formal coaching of colleagues",
+  "Consulting setting"
+ ],
+ "blockers": [
+  "Dutch language required, not on resume"
+ ],
+ "reason": "Technical fit is good but fluent Dutch is a hard requirement the resume lacks.",
+ "variant": "base"
+}

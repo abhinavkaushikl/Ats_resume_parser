@@ -1,0 +1,19 @@
+{
+ "score": 10,
+ "verdict": "poor",
+ "matched": [
+  "Python, PyTorch, pandas, scikit-learn"
+ ],
+ "missing": [
+  "PhD in computational chemistry/biology",
+  "Biomolecule/protein language model expertise",
+  "Bioinformatics tools (mmseqs, foldseek)",
+  "Drug discovery experience"
+ ],
+ "blockers": [
+  "PhD required",
+  "Different field (biomolecular ML)"
+ ],
+ "reason": "Drug-discovery biomolecule ML role requiring a PhD and domain expertise the resume lacks.",
+ "variant": "base"
+}

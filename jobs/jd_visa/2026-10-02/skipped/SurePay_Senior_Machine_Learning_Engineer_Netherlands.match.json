@@ -1,0 +1,22 @@
+{
+ "score": 52,
+ "verdict": "partial",
+ "matched": [
+  "8+ years ML/data experience",
+  "Production ML deployment (FastAPI, MLflow, Docker)",
+  "Python",
+  "Terraform, CI/CD",
+  "Anomaly detection and fraud detection project",
+  "PyTorch, scikit-learn, Spark"
+ ],
+ "missing": [
+  "AWS SageMaker (GCP/Azure shown)",
+  "Real-time streaming pipelines and online feature store",
+  "Sub-millisecond latency microservice APIs",
+  "Fraud/AML industry production experience",
+  "TensorFlow, CloudFormation"
+ ],
+ "blockers": [],
+ "reason": "Solid MLOps and anomaly-detection base, but no AWS SageMaker, real-time streaming or low-latency serving evidence.",
+ "variant": "base"
+}

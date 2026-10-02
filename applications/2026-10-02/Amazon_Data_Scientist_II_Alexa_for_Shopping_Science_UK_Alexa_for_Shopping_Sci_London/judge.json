@@ -1,0 +1,22 @@
+{
+ "criteria": {
+  "tech_stack": 21,
+  "experience": 19,
+  "company_project": 17,
+  "ats_keywords": 11,
+  "credibility": 9
+ },
+ "score": 77,
+ "decision": "maybe",
+ "strengths": [
+  "GenAI benchmarking and LLM evaluator work matches the preferred qualification",
+  "Python, SQL, A/B testing, statistical modelling shown in roles"
+ ],
+ "gaps": [
+  "AWS services (S3, Redshift, SageMaker, EMR, Lambda) not shown; only Textract",
+  "No R, recommender systems, knowledge graph or multimodal work",
+  "No large-tech-company data scientist role shown",
+  "Benchmark project is a side project, not production shopping assistant work",
+  "No multi-team cross-disciplinary evidence"
+ ]
+}

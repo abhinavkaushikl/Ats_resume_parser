@@ -1,0 +1,23 @@
+{
+ "score": 30,
+ "verdict": "poor",
+ "matched": [
+  "Python",
+  "Evals",
+  "Agent tracing/observability",
+  "Production ML"
+ ],
+ "missing": [
+  "Reinforcement learning implementation",
+  "Post-training data pipelines",
+  "Reward modeling / trajectory data",
+  "Frontier lab or post-training background",
+  "ML team leadership"
+ ],
+ "blockers": [
+  "Visa sponsorship not available",
+  "No RL / post-training experience"
+ ],
+ "reason": "Founding post-training/RL role with no RL or post-training evidence in the resume and no visa sponsorship.",
+ "variant": "base"
+}

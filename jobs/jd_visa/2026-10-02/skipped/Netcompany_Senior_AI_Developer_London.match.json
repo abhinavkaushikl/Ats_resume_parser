@@ -1,0 +1,22 @@
+{
+ "score": 50,
+ "verdict": "partial",
+ "matched": [
+  "Python, SQL",
+  "scikit-learn, PyTorch",
+  "XGBoost, random forest, anomaly detection, time series forecasting",
+  "MLOps, observability for AI",
+  "Cross-validation/evaluation"
+ ],
+ "missing": [
+  "C#",
+  "Azure ML / SageMaker / Vertex AI services",
+  "Public sector experience",
+  "Eligibility for UK Security Clearance"
+ ],
+ "blockers": [
+  "Security clearance eligibility required"
+ ],
+ "reason": "Good ML overlap but C# is missing, there is no public-sector background, and clearance eligibility is doubtful.",
+ "variant": "base"
+}

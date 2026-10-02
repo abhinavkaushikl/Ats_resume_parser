@@ -1,0 +1,22 @@
+{
+ "score": 70,
+ "verdict": "good",
+ "matched": [
+  "3+ years advanced analytics",
+  "Python",
+  "MLOps pipelines",
+  "CI/CD",
+  "Docker/Kubernetes",
+  "Terraform",
+  "Degree",
+  "Time-series/anomaly detection"
+ ],
+ "missing": [
+  "Heavy industry/process plant experience",
+  "Ansible",
+  "Consulting-style executive presentations"
+ ],
+ "blockers": [],
+ "reason": "Good technical match on Python, MLOps and DevOps, lacking industrial process and consulting background.",
+ "variant": "base"
+}

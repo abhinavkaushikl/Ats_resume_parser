@@ -1,0 +1,23 @@
+{
+ "score": 82,
+ "verdict": "good",
+ "matched": [
+  "3+ years ML engineering",
+  "Python",
+  "PyTorch/scikit-learn",
+  "MLOps (MLflow, Docker, Kubernetes)",
+  "SQL",
+  "Spark",
+  "GCP/Azure",
+  "MSc",
+  "Model monitoring"
+ ],
+ "missing": [
+  "TensorFlow",
+  "SageMaker/Vertex AI/Azure ML named services",
+  "Kubeflow"
+ ],
+ "blockers": [],
+ "reason": "Close match on ML engineering and MLOps with only framework-specific gaps.",
+ "variant": "base"
+}

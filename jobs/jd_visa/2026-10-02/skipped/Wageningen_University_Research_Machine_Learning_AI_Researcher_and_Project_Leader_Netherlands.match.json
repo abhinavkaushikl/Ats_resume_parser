@@ -1,0 +1,21 @@
+{
+ "score": 35,
+ "verdict": "poor",
+ "matched": [
+  "3+ yrs ML development",
+  "LLMs, RAG, agentic AI",
+  "Python, Git, Azure/GCP",
+  "English C1"
+ ],
+ "missing": [
+  "PhD in AI/ML/CS",
+  "Hybrid/physics-based modelling",
+  "Research proposal and project acquisition leadership",
+  "Food/biobased domain"
+ ],
+ "blockers": [
+  "PhD required, candidate has MSc"
+ ],
+ "reason": "GenAI/ML skills match but a PhD is required and the role is applied research and project acquisition.",
+ "variant": "base"
+}

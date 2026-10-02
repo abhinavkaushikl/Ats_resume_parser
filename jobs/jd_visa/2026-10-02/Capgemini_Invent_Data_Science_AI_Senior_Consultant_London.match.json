@@ -1,0 +1,20 @@
+{
+ "score": 68,
+ "verdict": "reasonable",
+ "matched": [
+  "Agentic & Gen AI delivered to production",
+  "NLP and time-series analysis",
+  "Python, PySpark",
+  "GCP, Azure, Databricks",
+  "Client requirement-to-POC delivery"
+ ],
+ "missing": [
+  "Consulting firm experience",
+  "Stakeholder/presentation track record in client-facing consulting",
+  "Agentic platforms listed (Copilot Studio, UiPath)",
+  "UK residency 5+ years (preferred, security clearance)"
+ ],
+ "blockers": [],
+ "reason": "Strong match on agentic/GenAI, NLP, time series, Databricks and cloud; lacks formal consulting background and UK residency preference.",
+ "variant": "base"
+}

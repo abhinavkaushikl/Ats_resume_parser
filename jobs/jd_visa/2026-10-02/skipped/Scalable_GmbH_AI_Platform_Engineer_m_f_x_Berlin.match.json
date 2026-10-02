@@ -1,0 +1,22 @@
+{
+ "score": 50,
+ "verdict": "partial",
+ "matched": [
+  "Python",
+  "Terraform",
+  "Docker",
+  "CI/CD",
+  "LLM observability/tracing",
+  "Degree"
+ ],
+ "missing": [
+  "LLM gateway (LiteLLM)",
+  "Langfuse/Datadog",
+  "AWS",
+  "Platform engineering/SRE experience",
+  "API cost management/rate limiting"
+ ],
+ "blockers": [],
+ "reason": "Observability and DevOps overlap but the role is platform/SRE focused with LLM gateway tooling the resume does not show.",
+ "variant": "base"
+}

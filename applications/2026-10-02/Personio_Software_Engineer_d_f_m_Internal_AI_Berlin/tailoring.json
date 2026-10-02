@@ -1,0 +1,76 @@
+{
+  "company": "Personio",
+  "role": "Software Engineer (d/f/m) - Internal AI",
+  "city": "Berlin",
+  "company_profile": "Personio builds an HR platform for small and medium-sized organisations, and its Internal AI team builds the agents and automations the company's own functions run on.",
+  "title": "Software Engineer - Internal AI",
+  "current_role_title": "Senior AI Engineer",
+  "summary": "Senior AI engineer with 8+ years shipping production software and applied AI across Healthcare, Telecom and AIOps, with an MSc in Machine Learning and AI. Builds agentic workflows and RAG pipelines with LLM APIs and LangGraph in Python, owns them end to end with FastAPI, Docker and CI/CD, and keeps them reliable with automated evaluation, tracing and monitoring. Outside work, I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD.",
+  "experience_edits": [
+    {
+      "original": "Deployed a production lab-extraction agent with Claude Opus 4.7",
+      "new": "Shipped a production lab-extraction agent end to end with Claude Opus 4.7 and Amazon Textract, integrated with LIMS, handling about 1,800 lab documents and automating the work behind 800 Jira tickets."
+    },
+    {
+      "original": "Engineered a production multi-agent analytics chatbot in LangGraph for AARP",
+      "new": "Engineered a production multi-agent chatbot in LangGraph that answers internal business questions with PySpark analysis, multi-turn reasoning and live charts, cutting manual analysis by 98%."
+    },
+    {
+      "original": "Built automated evaluation and observability pipelines for Question Answering",
+      "new": "Built automated evaluation and observability pipelines for Question Answering and Summary Agents with LLM evaluators, tracing and failure detection, catching quality drops and reducing manual review by 43%."
+    },
+    {
+      "original": "Built a mock-generator pipeline for customer delivery, producing 36+",
+      "new": "Built an internal mock-generator tool producing 36+ discipline-specific UI mockups from Jira stories and requirements with HTML, Next.js and Claude 4.6, speeding up prototyping and stakeholder review."
+    },
+    {
+      "original": "Built CI/CD pipelines for model deployment with Jenkins, Bitbucket",
+      "new": "Built CI/CD pipelines for service and model deployment with Jenkins, Bitbucket and Docker, adding unit and integration tests and automated checks so releases stayed repeatable and reviewed."
+    }
+  ],
+  "project": {
+    "name": "Internal Operations Agent Platform",
+    "bullets": [
+      "Built an internal agent platform that automates cross-functional back-office workflows, combining LangGraph orchestration, retrieval over internal documents and tool connectors exposed through MCP.",
+      "Defined done with secure auth, error handling and rollback, evaluated each agent with an automated eval harness, and ran the services in containers with monitoring."
+    ],
+    "technologies": [
+      "Python",
+      "LangGraph",
+      "MCP",
+      "FastAPI",
+      "Pydantic",
+      "Docker",
+      "CI/CD",
+      "pgvector"
+    ]
+  },
+  "cover_letter": {
+    "greeting": "Dear Hiring Team,",
+    "paragraphs": [
+      "I am applying for the Software Engineer role on your Internal AI team. The work you describe is what I already do: production agents and automations owned end to end, from the architecture call through to monitoring them months later. I have built them in Python for operations teams who use them every day, not for a demo.",
+      "The idea of a company running its own functions on an internal AI operating system is a rare thing to get to build, and the honest constraint of internal users is what makes it good engineering. My fiancée lives in Berlin, so I would be building my career in the city where we are making our home, which matters to me as much as the role.",
+      "Two things I have shipped are close to this. I built a lab-extraction agent in production with Claude Opus 4.7 and Amazon Textract that handles about 1,800 documents and automated the work behind 800 Jira tickets, and evaluation pipelines with LLM evaluators and tracing that cut manual review by 43%.",
+      "Outside work I am building ThinkTree.AI, a non-profit AI learning platform used by NGO teachers to support students with ADHD. It is a good reminder that judgment about where AI helps and where it is overkill matters more than the model you pick. I would be glad to talk about what the team is building next."
+    ],
+    "closing": "Sincerely,"
+  },
+  "jd_keywords": [
+    "production software",
+    "Python",
+    "agentic workflows",
+    "RAG pipelines",
+    "LLM APIs",
+    "LangGraph",
+    "MCP",
+    "agent orchestration",
+    "eval platform",
+    "observability",
+    "secure auth",
+    "Docker",
+    "CI/CD",
+    "internal tools",
+    "automations"
+  ],
+  "experience_variant": "base"
+}

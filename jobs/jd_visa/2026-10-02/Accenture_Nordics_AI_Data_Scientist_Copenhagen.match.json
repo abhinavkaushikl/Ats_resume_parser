@@ -1,0 +1,20 @@
+{
+ "score": 65,
+ "verdict": "reasonable",
+ "matched": [
+  "Python/SQL",
+  "ML fundamentals",
+  "Master's degree",
+  "Power BI",
+  "GenAI/LLMs",
+  "scikit-learn/PyTorch",
+  "Azure/GCP"
+ ],
+ "missing": [
+  "Nordic language (advantage only)",
+  "Analyst-level entry role is below candidate seniority"
+ ],
+ "blockers": [],
+ "reason": "Junior analyst role the candidate clearly exceeds; all must-haves met but level mismatch.",
+ "variant": "base"
+}

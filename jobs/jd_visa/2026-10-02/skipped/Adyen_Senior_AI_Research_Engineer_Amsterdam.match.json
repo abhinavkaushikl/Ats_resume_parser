@@ -1,0 +1,19 @@
+{
+ "score": 58,
+ "verdict": "partial",
+ "matched": [
+  "GenAI/LLM production experience",
+  "agents for data analysis",
+  "production-grade Python",
+  "classical ML"
+ ],
+ "missing": [
+  "Implementing research papers into production",
+  "Embedded in scientific research community / publications",
+  "Foundation model development",
+  "Fintech/payments domain"
+ ],
+ "blockers": [],
+ "reason": "Strong applied LLM/agent production work, but the role wants research-community depth and paper implementation the resume does not show.",
+ "variant": "base"
+}

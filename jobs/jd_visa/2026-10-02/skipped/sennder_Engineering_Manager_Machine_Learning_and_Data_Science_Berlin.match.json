@@ -1,0 +1,24 @@
+{
+ "score": 20,
+ "verdict": "poor",
+ "matched": [
+  "Python/SQL/Git",
+  "Production ML deployment",
+  "Airflow",
+  "PyTorch",
+  "LangChain",
+  "Senior IC for 7+ years (approximately)"
+ ],
+ "missing": [
+  "3+ years managing ML/DS teams",
+  "Recommender systems / pricing algorithms",
+  "Snowflake, Datadog",
+  "Experience coaching and scaling a team",
+  "Logistics domain"
+ ],
+ "blockers": [
+  "Requires 3+ years of people management; none shown on resume"
+ ],
+ "reason": "Engineering manager role needing proven team leadership, which the resume does not show.",
+ "variant": "base"
+}

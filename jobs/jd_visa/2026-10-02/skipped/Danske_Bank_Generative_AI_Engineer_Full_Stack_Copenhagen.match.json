@@ -1,0 +1,24 @@
+{
+ "score": 55,
+ "verdict": "partial",
+ "matched": [
+  "Python",
+  "RAG with LangChain/Hugging Face",
+  "NLP/LLMs",
+  "Docker/Kubernetes",
+  "Terraform/CI/CD",
+  "Azure",
+  "Elasticsearch",
+  "PyTorch"
+ ],
+ "missing": [
+  "React/TypeScript full-stack",
+  "Banking/risk domain",
+  "AWS (Azure only partial)"
+ ],
+ "blockers": [
+  "Requires valid Danish work permit"
+ ],
+ "reason": "Strong GenAI/RAG fit but full-stack React/TypeScript is missing and a Danish work permit is required.",
+ "variant": "base"
+}

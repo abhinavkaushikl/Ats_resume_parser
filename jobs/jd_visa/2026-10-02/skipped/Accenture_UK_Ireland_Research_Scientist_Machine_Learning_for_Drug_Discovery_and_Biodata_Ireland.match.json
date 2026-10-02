@@ -1,0 +1,24 @@
+{
+ "score": 28,
+ "verdict": "poor",
+ "matched": [
+  "Python/PyTorch",
+  "SQL",
+  "deep learning",
+  "LLMs/RAG/agents (optional)",
+  "Flask"
+ ],
+ "missing": [
+  "Drug discovery / molecule generation (graph ML, diffusion)",
+  "Multi-omics / bioinformatics",
+  "GPU/parallel computing",
+  "PhD or research prototypes",
+  "Linux/git depth"
+ ],
+ "blockers": [
+  "Different field: computational chemistry/bioinformatics research",
+  "PhD or equivalent research experience"
+ ],
+ "reason": "Applied LLM/ML engineer without any life-science research or molecular ML background.",
+ "variant": "base"
+}
